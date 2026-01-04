@@ -1,0 +1,46 @@
+{
+  "namespace": "Microsoft.Extensions.WebEncoders",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.WebEncoders"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+      "clrName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+      "tsEmitName": "WebEncoderOptions",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions::TextEncoderSettings:System.Text.Encodings.Web.TextEncoderSettings",
+          "clrName": "TextEncoderSettings",
+          "tsEmitName": "textEncoderSettings",
+          "normalizedSignature": "TextEncoderSettings|:System.Text.Encodings.Web.TextEncoderSettings|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

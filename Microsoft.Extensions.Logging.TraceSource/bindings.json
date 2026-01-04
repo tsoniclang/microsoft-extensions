@@ -1,0 +1,133 @@
+{
+  "namespace": "Microsoft.Extensions.Logging.TraceSource",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Logging.TraceSource:Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+      "clrName": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+      "tsEmitName": "TraceSourceLoggerProvider",
+      "assemblyName": "Microsoft.Extensions.Logging.TraceSource",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.TraceSource:Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
+          "clrName": "CreateLogger",
+          "tsEmitName": "createLogger",
+          "metadataToken": 100663312,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
+          "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.TraceSource:Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663318,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
+          "clrName": "CreateLogger",
+          "tsEmitName": "createLogger$view",
+          "metadataToken": 100663370,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
+          "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.TraceSource:Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider::.ctor(System.Diagnostics.SourceSwitch):void",
+          "metadataToken": 100663310,
+          "canonicalSignature": "(System.Diagnostics.SourceSwitch):void",
+          "normalizedSignature": "constructor|(System.Diagnostics.SourceSwitch):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.TraceSource:Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider::.ctor(System.Diagnostics.SourceSwitch,System.Diagnostics.TraceListener):void",
+          "metadataToken": 100663311,
+          "canonicalSignature": "(System.Diagnostics.SourceSwitch,System.Diagnostics.TraceListener):void",
+          "normalizedSignature": "constructor|(System.Diagnostics.SourceSwitch,System.Diagnostics.TraceListener):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "createLogger",
+          "isStatic": false,
+          "tsSignatureId": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource",
+            "metadataToken": 100663312
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource",
+            "metadataToken": 100663318
+          }
+        },
+        {
+          "tsName": "createLogger$view",
+          "isStatic": false,
+          "tsSignatureId": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+            "metadataToken": 100663370
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Diagnostics.SourceSwitch):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource",
+            "metadataToken": 100663310
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Diagnostics.SourceSwitch,System.Diagnostics.TraceListener):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Logging.TraceSource.TraceSourceLoggerProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Logging.TraceSource",
+            "metadataToken": 100663311
+          }
+        }
+      ]
+    }
+  ]
+}

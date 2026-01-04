@@ -1,0 +1,212 @@
+{
+  "namespace": "Microsoft.Extensions.Logging.Configuration",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Logging.Configuration"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration\u00601",
+      "clrName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration\u00601",
+      "tsEmitName": "ILoggerProviderConfiguration_1",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration\u00601::Configuration:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Configuration",
+          "tsEmitName": "configuration",
+          "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfiguration|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
+      "clrName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
+      "tsEmitName": "ILoggerProviderConfigurationFactory",
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory::GetConfiguration(System.Type):Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "GetConfiguration",
+          "tsEmitName": "getConfiguration",
+          "normalizedSignature": "GetConfiguration|(System.Type):Microsoft.Extensions.Configuration.IConfiguration|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource\u00602",
+      "clrName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource\u00602",
+      "tsEmitName": "LoggerProviderOptionsChangeTokenSource_2",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 2,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource\u00601::GetChangeToken():Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "GetChangeToken",
+          "tsEmitName": "getChangeToken$view",
+          "normalizedSignature": "GetChangeToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource\u00601",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource\u00602::GetChangeToken():Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "GetChangeToken",
+          "tsEmitName": "getChangeToken",
+          "normalizedSignature": "GetChangeToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "provenance": "BaseOverload",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource\u00601::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource\u00601"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(ILoggerProviderConfiguration_1):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
+      "clrName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
+      "tsEmitName": "LoggerProviderOptions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions::RegisterProviderOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+          "clrName": "RegisterProviderOptions",
+          "tsEmitName": "registerProviderOptions",
+          "normalizedSignature": "RegisterProviderOptions|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 2,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    },
+    {
+      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
+      "clrName": "Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
+      "tsEmitName": "LoggingBuilderConfigurationExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions::AddConfiguration(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void",
+          "clrName": "AddConfiguration",
+          "tsEmitName": "addConfiguration",
+          "normalizedSignature": "AddConfiguration|(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

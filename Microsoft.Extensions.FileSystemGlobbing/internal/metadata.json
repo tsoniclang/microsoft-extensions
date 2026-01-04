@@ -1,0 +1,511 @@
+{
+  "namespace": "Microsoft.Extensions.FileSystemGlobbing",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.FileSystemGlobbing"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+      "tsEmitName": "FilePatternMatch",
+      "kind": "Struct",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Equals(Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Equals(System.Object):System.Boolean",
+          "clrName": "Equals",
+          "tsEmitName": "equals",
+          "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::GetHashCode():System.Int32",
+          "clrName": "GetHashCode",
+          "tsEmitName": "getHashCode",
+          "normalizedSignature": "GetHashCode|():System.Int32|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Path:System.String",
+          "clrName": "Path",
+          "tsEmitName": "path",
+          "normalizedSignature": "Path|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Stem:System.String",
+          "clrName": "Stem",
+          "tsEmitName": "stem",
+          "normalizedSignature": "Stem|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+      "tsEmitName": "InMemoryDirectoryInfo",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "EnumerateFileSystemInfos",
+          "tsEmitName": "enumerateFileSystemInfos2",
+          "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::GetDirectory(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "GetDirectory",
+          "tsEmitName": "getDirectory",
+          "normalizedSignature": "GetDirectory|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::GetFile(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+          "clrName": "GetFile",
+          "tsEmitName": "getFile",
+          "normalizedSignature": "GetFile|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1",
+          "clrName": "EnumerateFileSystemInfos",
+          "tsEmitName": "enumerateFileSystemInfos",
+          "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1|static=false",
+          "provenance": "BaseOverload",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::FullName:System.String",
+          "clrName": "FullName",
+          "tsEmitName": "fullName",
+          "normalizedSignature": "FullName|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::ParentDirectory:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "ParentDirectory",
+          "tsEmitName": "parentDirectory",
+          "normalizedSignature": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+      "tsEmitName": "Matcher",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::AddInclude(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "clrName": "AddInclude",
+          "tsEmitName": "addInclude",
+          "normalizedSignature": "AddInclude|(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::AddExclude(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "clrName": "AddExclude",
+          "tsEmitName": "addExclude",
+          "normalizedSignature": "AddExclude|(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "clrName": "Execute",
+          "tsEmitName": "execute",
+          "normalizedSignature": "Execute|(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.StringComparison):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.StringComparison,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+      "tsEmitName": "PatternMatchingResult",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult::Files:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Files",
+          "tsEmitName": "files",
+          "normalizedSignature": "Files|:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult::HasMatches:System.Boolean",
+          "clrName": "HasMatches",
+          "tsEmitName": "hasMatches",
+          "normalizedSignature": "HasMatches|:System.Boolean|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+      "tsEmitName": "MatcherExtensions",
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::AddExcludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void",
+          "clrName": "AddExcludePatterns",
+          "tsEmitName": "addExcludePatterns",
+          "normalizedSignature": "AddExcludePatterns|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::AddIncludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void",
+          "clrName": "AddIncludePatterns",
+          "tsEmitName": "addIncludePatterns",
+          "normalizedSignature": "AddIncludePatterns|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::GetResultsInFullPath(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetResultsInFullPath",
+          "tsEmitName": "getResultsInFullPath",
+          "normalizedSignature": "GetResultsInFullPath|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 2,
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "clrName": "Match",
+          "tsEmitName": "match",
+          "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 3,
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": []
+    }
+  ]
+}

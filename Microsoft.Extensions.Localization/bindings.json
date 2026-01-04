@@ -1,0 +1,1233 @@
+{
+  "namespace": "Microsoft.Extensions.Localization",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.IResourceNamesCache",
+      "clrName": "Microsoft.Extensions.Localization.IResourceNamesCache",
+      "tsEmitName": "IResourceNamesCache",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.IResourceNamesCache::GetOrAdd(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetOrAdd",
+          "tsEmitName": "getOrAdd",
+          "metadataToken": 100663314,
+          "canonicalSignature": "(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetOrAdd|(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.IResourceNamesCache",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getOrAdd",
+          "isStatic": false,
+          "tsSignatureId": "GetOrAdd|(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IResourceNamesCache",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663314
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer",
+      "clrName": "Microsoft.Extensions.Localization.IStringLocalizer",
+      "tsEmitName": "IStringLocalizer",
+      "assemblyName": "Microsoft.Extensions.Localization.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings",
+          "metadataToken": 100663301,
+          "canonicalSignature": "(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::get_Item(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::get_Item(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getAllStrings",
+          "isStatic": false,
+          "tsSignatureId": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "tsName": "get_Item",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "get_Item2",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 0
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+      "clrName": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+      "tsEmitName": "IStringLocalizer_1",
+      "assemblyName": "Microsoft.Extensions.Localization.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings",
+          "metadataToken": 100663301,
+          "canonicalSignature": "(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer\u00601::get_Item(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer\u00601::get_Item(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getAllStrings",
+          "isStatic": false,
+          "tsSignatureId": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "tsName": "get_Item",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "get_Item2",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 0
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizerFactory",
+      "clrName": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+      "tsEmitName": "IStringLocalizerFactory",
+      "assemblyName": "Microsoft.Extensions.Localization.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizerFactory::Create(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663302,
+          "canonicalSignature": "(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
+          "normalizedSignature": "Create|(System.Type):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizerFactory::Create(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer",
+          "normalizedSignature": "Create|(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.Type):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663302
+          }
+        },
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663303
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.LocalizationOptions",
+      "clrName": "Microsoft.Extensions.Localization.LocalizationOptions",
+      "tsEmitName": "LocalizationOptions",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.LocalizationOptions::ResourcesPath:System.String",
+          "clrName": "ResourcesPath",
+          "tsEmitName": "resourcesPath",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ResourcesPath|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.LocalizationOptions::.ctor():void",
+          "metadataToken": 100663315,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizationOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "resourcesPath",
+          "isStatic": false,
+          "tsSignatureId": "ResourcesPath|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 385875971
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizationOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663315
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString",
+      "clrName": "Microsoft.Extensions.Localization.LocalizedString",
+      "tsEmitName": "LocalizedString",
+      "assemblyName": "Microsoft.Extensions.Localization.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::ToString():System.String",
+          "clrName": "ToString",
+          "tsEmitName": "toString",
+          "metadataToken": 100663312,
+          "canonicalSignature": "():System.String",
+          "normalizedSignature": "ToString|():System.String|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::Value:System.String",
+          "clrName": "Value",
+          "tsEmitName": "value",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Value|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::ResourceNotFound:System.Boolean",
+          "clrName": "ResourceNotFound",
+          "tsEmitName": "resourceNotFound",
+          "metadataToken": 385875973,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "ResourceNotFound|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::SearchedLocation:System.String",
+          "clrName": "SearchedLocation",
+          "tsEmitName": "searchedLocation",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "SearchedLocation|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::.ctor(System.String,System.String):void",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(System.String,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::.ctor(System.String,System.String,System.Boolean):void",
+          "metadataToken": 100663305,
+          "canonicalSignature": "(System.String,System.String,System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::.ctor(System.String,System.String,System.Boolean,System.String):void",
+          "metadataToken": 100663306,
+          "canonicalSignature": "(System.String,System.String,System.Boolean,System.String):void",
+          "normalizedSignature": "constructor|(System.String,System.String,System.Boolean,System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663312
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "value",
+          "isStatic": false,
+          "tsSignatureId": "Value|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 385875972
+          }
+        },
+        {
+          "tsName": "resourceNotFound",
+          "isStatic": false,
+          "tsSignatureId": "ResourceNotFound|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 385875973
+          }
+        },
+        {
+          "tsName": "searchedLocation",
+          "isStatic": false,
+          "tsSignatureId": "SearchedLocation|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 385875974
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663304
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.Boolean):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663305
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.String,System.Boolean,System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663306
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceLocationAttribute",
+      "clrName": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
+      "tsEmitName": "ResourceLocationAttribute",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceLocationAttribute::ResourceLocation:System.String",
+          "clrName": "ResourceLocation",
+          "tsEmitName": "resourceLocation",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ResourceLocation|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceLocationAttribute::.ctor(System.String):void",
+          "metadataToken": 100663318,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "resourceLocation",
+          "isStatic": false,
+          "tsSignatureId": "ResourceLocation|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 385875972
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663318
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+      "clrName": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+      "tsEmitName": "ResourceManagerStringLocalizer",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings",
+          "metadataToken": 100663325,
+          "canonicalSignature": "(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings$view",
+          "metadataToken": 100663301,
+          "canonicalSignature": "(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::get_Item(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::get_Item(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::.ctor(System.Resources.ResourceManager,System.Reflection.Assembly,System.String,Microsoft.Extensions.Localization.IResourceNamesCache,Microsoft.Extensions.Logging.ILogger):void",
+          "metadataToken": 100663320,
+          "canonicalSignature": "(System.Resources.ResourceManager,System.Reflection.Assembly,System.String,Microsoft.Extensions.Localization.IResourceNamesCache,Microsoft.Extensions.Logging.ILogger):void",
+          "normalizedSignature": "constructor|(System.Resources.ResourceManager,System.Reflection.Assembly,System.String,Microsoft.Extensions.Localization.IResourceNamesCache,Microsoft.Extensions.Logging.ILogger):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getAllStrings",
+          "isStatic": false,
+          "tsSignatureId": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663325
+          }
+        },
+        {
+          "tsName": "getAllStrings$view",
+          "isStatic": false,
+          "tsSignatureId": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "tsName": "get_Item",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "get_Item2",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Resources.ResourceManager,System.Reflection.Assembly,System.String,Microsoft.Extensions.Localization.IResourceNamesCache,Microsoft.Extensions.Logging.ILogger):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663320
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+      "clrName": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+      "tsEmitName": "ResourceManagerStringLocalizerFactory",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::Create(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663333,
+          "canonicalSignature": "(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
+          "normalizedSignature": "Create|(System.Type):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::Create(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Create",
+          "tsEmitName": "create",
+          "metadataToken": 100663334,
+          "canonicalSignature": "(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer",
+          "normalizedSignature": "Create|(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizerFactory::Create(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Create",
+          "tsEmitName": "create$view2",
+          "metadataToken": 100663302,
+          "canonicalSignature": "(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
+          "normalizedSignature": "Create|(System.Type):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizerFactory::Create(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Create",
+          "tsEmitName": "create$view",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer",
+          "normalizedSignature": "Create|(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::.ctor(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Localization.LocalizationOptions,Microsoft.Extensions.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "metadataToken": 100663329,
+          "canonicalSignature": "(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Localization.LocalizationOptions,Microsoft.Extensions.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Localization.LocalizationOptions,Microsoft.Extensions.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.Type):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663333
+          }
+        },
+        {
+          "tsName": "create",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663334
+          }
+        },
+        {
+          "tsName": "create$view2",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.Type):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663302
+          }
+        },
+        {
+          "tsName": "create$view",
+          "isStatic": false,
+          "tsSignatureId": "Create|(System.String,System.String):Microsoft.Extensions.Localization.IStringLocalizer|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663303
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Localization.LocalizationOptions,Microsoft.Extensions.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663329
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceNamesCache",
+      "clrName": "Microsoft.Extensions.Localization.ResourceNamesCache",
+      "tsEmitName": "ResourceNamesCache",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceNamesCache::GetOrAdd(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetOrAdd",
+          "tsEmitName": "getOrAdd",
+          "metadataToken": 100663343,
+          "canonicalSignature": "(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetOrAdd|(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceNamesCache",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.IResourceNamesCache::GetOrAdd(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetOrAdd",
+          "tsEmitName": "getOrAdd$view",
+          "metadataToken": 100663314,
+          "canonicalSignature": "(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetOrAdd|(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.IResourceNamesCache",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceNamesCache::.ctor():void",
+          "metadataToken": 100663342,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceNamesCache",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getOrAdd",
+          "isStatic": false,
+          "tsSignatureId": "GetOrAdd|(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceNamesCache",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663343
+          }
+        },
+        {
+          "tsName": "getOrAdd$view",
+          "isStatic": false,
+          "tsSignatureId": "GetOrAdd|(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IResourceNamesCache",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663314
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.ResourceNamesCache",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663342
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.RootNamespaceAttribute",
+      "clrName": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
+      "tsEmitName": "RootNamespaceAttribute",
+      "assemblyName": "Microsoft.Extensions.Localization",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.RootNamespaceAttribute::RootNamespace:System.String",
+          "clrName": "RootNamespace",
+          "tsEmitName": "rootNamespace",
+          "metadataToken": 385875975,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "RootNamespace|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.RootNamespaceAttribute::.ctor(System.String):void",
+          "metadataToken": 100663344,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "rootNamespace",
+          "isStatic": false,
+          "tsSignatureId": "RootNamespace|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 385875975
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization",
+            "metadataToken": 100663344
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizer\u00601",
+      "clrName": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+      "tsEmitName": "StringLocalizer_1",
+      "assemblyName": "Microsoft.Extensions.Localization.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizer\u00601::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings",
+          "metadataToken": 100663319,
+          "canonicalSignature": "(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings$view",
+          "metadataToken": 100663301,
+          "canonicalSignature": "(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizer\u00601::get_Item(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizer\u00601::get_Item(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "get_Item",
+          "tsEmitName": "get_Item2",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizer\u00601::.ctor(Microsoft.Extensions.Localization.IStringLocalizerFactory):void",
+          "metadataToken": 100663316,
+          "canonicalSignature": "(Microsoft.Extensions.Localization.IStringLocalizerFactory):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Localization.IStringLocalizerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getAllStrings",
+          "isStatic": false,
+          "tsSignatureId": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663319
+          }
+        },
+        {
+          "tsName": "getAllStrings$view",
+          "isStatic": false,
+          "tsSignatureId": "GetAllStrings|(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663301
+          }
+        },
+        {
+          "tsName": "get_Item",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "get_Item2",
+          "isStatic": false,
+          "tsSignatureId": "get_Item|(System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Localization.IStringLocalizerFactory):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663316
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizerExtensions",
+      "clrName": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+      "tsEmitName": "StringLocalizerExtensions",
+      "assemblyName": "Microsoft.Extensions.Localization.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizerExtensions::GetString(Microsoft.Extensions.Localization.IStringLocalizer,System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "GetString",
+          "tsEmitName": "getString",
+          "metadataToken": 100663313,
+          "canonicalSignature": "(Microsoft.Extensions.Localization.IStringLocalizer,System.String):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "GetString|(Microsoft.Extensions.Localization.IStringLocalizer,System.String):Microsoft.Extensions.Localization.LocalizedString|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizerExtensions::GetString(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "clrName": "GetString",
+          "tsEmitName": "getString",
+          "metadataToken": 100663314,
+          "canonicalSignature": "(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString",
+          "normalizedSignature": "GetString|(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizerExtensions::GetAllStrings(Microsoft.Extensions.Localization.IStringLocalizer):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "tsEmitName": "getAllStrings",
+          "metadataToken": 100663315,
+          "canonicalSignature": "(Microsoft.Extensions.Localization.IStringLocalizer):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(Microsoft.Extensions.Localization.IStringLocalizer):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "getString",
+          "isStatic": true,
+          "tsSignatureId": "GetString|(Microsoft.Extensions.Localization.IStringLocalizer,System.String):Microsoft.Extensions.Localization.LocalizedString|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663313
+          }
+        },
+        {
+          "tsName": "getString",
+          "isStatic": true,
+          "tsSignatureId": "GetString|(Microsoft.Extensions.Localization.IStringLocalizer,System.String,System.Object[]):Microsoft.Extensions.Localization.LocalizedString|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663314
+          }
+        },
+        {
+          "tsName": "getAllStrings",
+          "isStatic": true,
+          "tsSignatureId": "GetAllStrings|(Microsoft.Extensions.Localization.IStringLocalizer):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
+            "metadataToken": 100663315
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "namespace": "Microsoft.Extensions.Logging.EventLog",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Logging.EventLog"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
+      "clrName": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
+      "tsEmitName": "EventLogLoggerProvider",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
+          "clrName": "CreateLogger",
+          "tsEmitName": "createLogger",
+          "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 0,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider::SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider):System.Void",
+          "clrName": "SetScopeProvider",
+          "tsEmitName": "setScopeProvider",
+          "normalizedSignature": "SetScopeProvider|(Microsoft.Extensions.Logging.IExternalScopeProvider):System.Void|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
+          "clrName": "CreateLogger",
+          "tsEmitName": "createLogger$view",
+          "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.Extensions.Logging.ILoggerProvider",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ISupportExternalScope::SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider):System.Void",
+          "clrName": "SetScopeProvider",
+          "tsEmitName": "setScopeProvider$view",
+          "normalizedSignature": "SetScopeProvider|(Microsoft.Extensions.Logging.IExternalScopeProvider):System.Void|static=false",
+          "provenance": "ExplicitView",
+          "emitScope": "ViewOnly",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "sourceInterface": "Microsoft.Extensions.Logging.ISupportExternalScope",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.EventLog.EventLogSettings):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        },
+        {
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Logging.EventLog.EventLogSettings,Microsoft.Extensions.Logging.EventLog,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogSettings",
+      "clrName": "Microsoft.Extensions.Logging.EventLog.EventLogSettings",
+      "tsEmitName": "EventLogSettings",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogSettings::LogName:System.String",
+          "clrName": "LogName",
+          "tsEmitName": "logName",
+          "normalizedSignature": "LogName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogSettings::SourceName:System.String",
+          "clrName": "SourceName",
+          "tsEmitName": "sourceName",
+          "normalizedSignature": "SourceName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogSettings::MachineName:System.String",
+          "clrName": "MachineName",
+          "tsEmitName": "machineName",
+          "normalizedSignature": "MachineName|:System.String|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogSettings::Filter:System.Func_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Filter",
+          "tsEmitName": "filter",
+          "normalizedSignature": "Filter|:System.Func_3[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        }
+      ]
+    }
+  ]
+}

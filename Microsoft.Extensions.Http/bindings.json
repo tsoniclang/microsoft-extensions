@@ -1,0 +1,378 @@
+{
+  "namespace": "Microsoft.Extensions.Http",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter",
+      "clrName": "Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter",
+      "tsEmitName": "IHttpMessageHandlerBuilderFilter",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter::Configure(System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Configure",
+          "tsEmitName": "configure",
+          "metadataToken": 100663508,
+          "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Configure|(System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "configure",
+          "isStatic": false,
+          "tsSignatureId": "Configure|(System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663508
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601",
+      "clrName": "Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601",
+      "tsEmitName": "ITypedHttpClientFactory_1",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601::CreateClient(System.Net.Http.HttpClient):TClient",
+          "clrName": "CreateClient",
+          "tsEmitName": "createClient",
+          "metadataToken": 100663509,
+          "canonicalSignature": "(System.Net.Http.HttpClient):TClient",
+          "normalizedSignature": "CreateClient|(System.Net.Http.HttpClient):TClient|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createClient",
+          "isStatic": false,
+          "tsSignatureId": "CreateClient|(System.Net.Http.HttpClient):TClient|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663509
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions",
+      "clrName": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+      "tsEmitName": "HttpClientFactoryOptions",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions::HttpMessageHandlerBuilderActions:System.Collections.Generic.IList_1[[System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HttpMessageHandlerBuilderActions",
+          "tsEmitName": "httpMessageHandlerBuilderActions",
+          "metadataToken": 385876009,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HttpMessageHandlerBuilderActions|:System.Collections.Generic.IList_1[[System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions::HttpClientActions:System.Collections.Generic.IList_1[[System.Action_1[[System.Net.Http.HttpClient,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "HttpClientActions",
+          "tsEmitName": "httpClientActions",
+          "metadataToken": 385876010,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.Action_1[[System.Net.Http.HttpClient,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "HttpClientActions|:System.Collections.Generic.IList_1[[System.Action_1[[System.Net.Http.HttpClient,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions::HandlerLifetime:System.TimeSpan",
+          "clrName": "HandlerLifetime",
+          "tsEmitName": "handlerLifetime",
+          "metadataToken": 385876011,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "HandlerLifetime|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions::ShouldRedactHeaderValue:System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "ShouldRedactHeaderValue",
+          "tsEmitName": "shouldRedactHeaderValue",
+          "metadataToken": 385876012,
+          "canonicalSignature": ":System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "ShouldRedactHeaderValue|:System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions::SuppressHandlerScope:System.Boolean",
+          "clrName": "SuppressHandlerScope",
+          "tsEmitName": "suppressHandlerScope",
+          "metadataToken": 385876013,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "SuppressHandlerScope|:System.Boolean|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpClientFactoryOptions::.ctor():void",
+          "metadataToken": 100663497,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "httpMessageHandlerBuilderActions",
+          "isStatic": false,
+          "tsSignatureId": "HttpMessageHandlerBuilderActions|:System.Collections.Generic.IList_1[[System.Action_1[[Microsoft.Extensions.Http.HttpMessageHandlerBuilder,Microsoft.Extensions.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876009
+          }
+        },
+        {
+          "tsName": "httpClientActions",
+          "isStatic": false,
+          "tsSignatureId": "HttpClientActions|:System.Collections.Generic.IList_1[[System.Action_1[[System.Net.Http.HttpClient,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876010
+          }
+        },
+        {
+          "tsName": "handlerLifetime",
+          "isStatic": false,
+          "tsSignatureId": "HandlerLifetime|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "shouldRedactHeaderValue",
+          "isStatic": false,
+          "tsSignatureId": "ShouldRedactHeaderValue|:System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "suppressHandlerScope",
+          "isStatic": false,
+          "tsSignatureId": "SuppressHandlerScope|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876013
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663497
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+      "clrName": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+      "tsEmitName": "HttpMessageHandlerBuilder",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::Build():System.Net.Http.HttpMessageHandler",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100663505,
+          "canonicalSignature": "():System.Net.Http.HttpMessageHandler",
+          "normalizedSignature": "Build|():System.Net.Http.HttpMessageHandler|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876016,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::PrimaryHandler:System.Net.Http.HttpMessageHandler",
+          "clrName": "PrimaryHandler",
+          "tsEmitName": "primaryHandler",
+          "metadataToken": 385876017,
+          "canonicalSignature": ":System.Net.Http.HttpMessageHandler",
+          "normalizedSignature": "PrimaryHandler|:System.Net.Http.HttpMessageHandler|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::AdditionalHandlers:System.Collections.Generic.IList_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "AdditionalHandlers",
+          "tsEmitName": "additionalHandlers",
+          "metadataToken": 385876018,
+          "canonicalSignature": ":System.Collections.Generic.IList_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "AdditionalHandlers|:System.Collections.Generic.IList_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::Services:System.IServiceProvider",
+          "clrName": "Services",
+          "tsEmitName": "services",
+          "metadataToken": 385876019,
+          "canonicalSignature": ":System.IServiceProvider",
+          "normalizedSignature": "Services|:System.IServiceProvider|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "build",
+          "isStatic": false,
+          "tsSignatureId": "Build|():System.Net.Http.HttpMessageHandler|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663505
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876016
+          }
+        },
+        {
+          "tsName": "primaryHandler",
+          "isStatic": false,
+          "tsSignatureId": "PrimaryHandler|:System.Net.Http.HttpMessageHandler|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876017
+          }
+        },
+        {
+          "tsName": "additionalHandlers",
+          "isStatic": false,
+          "tsSignatureId": "AdditionalHandlers|:System.Collections.Generic.IList_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876018
+          }
+        },
+        {
+          "tsName": "services",
+          "isStatic": false,
+          "tsSignatureId": "Services|:System.IServiceProvider|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 385876019
+          }
+        }
+      ]
+    }
+  ]
+}

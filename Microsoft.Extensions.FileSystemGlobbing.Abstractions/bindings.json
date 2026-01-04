@@ -1,0 +1,572 @@
+{
+  "namespace": "Microsoft.Extensions.FileSystemGlobbing.Abstractions",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+      "tsEmitName": "DirectoryInfoBase",
+      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "EnumerateFileSystemInfos",
+          "tsEmitName": "enumerateFileSystemInfos",
+          "metadataToken": 100663464,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase::GetDirectory(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "GetDirectory",
+          "tsEmitName": "getDirectory",
+          "metadataToken": 100663465,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "normalizedSignature": "GetDirectory|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase::GetFile(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+          "clrName": "GetFile",
+          "tsEmitName": "getFile",
+          "metadataToken": 100663466,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+          "normalizedSignature": "GetFile|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "enumerateFileSystemInfos",
+          "isStatic": false,
+          "tsSignatureId": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663464
+          }
+        },
+        {
+          "tsName": "getDirectory",
+          "isStatic": false,
+          "tsSignatureId": "GetDirectory|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663465
+          }
+        },
+        {
+          "tsName": "getFile",
+          "isStatic": false,
+          "tsSignatureId": "GetFile|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663466
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "fullName",
+          "isStatic": false,
+          "tsSignatureId": "FullName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "parentDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876013
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+      "tsEmitName": "DirectoryInfoWrapper",
+      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "EnumerateFileSystemInfos",
+          "tsEmitName": "enumerateFileSystemInfos2",
+          "metadataToken": 100663470,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::GetDirectory(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "GetDirectory",
+          "tsEmitName": "getDirectory",
+          "metadataToken": 100663471,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "normalizedSignature": "GetDirectory|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::GetFile(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+          "clrName": "GetFile",
+          "tsEmitName": "getFile",
+          "metadataToken": 100663472,
+          "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+          "normalizedSignature": "GetFile|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1",
+          "clrName": "EnumerateFileSystemInfos",
+          "tsEmitName": "enumerateFileSystemInfos",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1",
+          "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876005,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::FullName:System.String",
+          "clrName": "FullName",
+          "tsEmitName": "fullName",
+          "metadataToken": 385876006,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "FullName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::ParentDirectory:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "ParentDirectory",
+          "tsEmitName": "parentDirectory",
+          "metadataToken": 385876007,
+          "canonicalSignature": ":Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "normalizedSignature": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper::.ctor(System.IO.DirectoryInfo):void",
+          "metadataToken": 100663468,
+          "canonicalSignature": "(System.IO.DirectoryInfo):void",
+          "normalizedSignature": "constructor|(System.IO.DirectoryInfo):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "enumerateFileSystemInfos2",
+          "isStatic": false,
+          "tsSignatureId": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663470
+          }
+        },
+        {
+          "tsName": "getDirectory",
+          "isStatic": false,
+          "tsSignatureId": "GetDirectory|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663471
+          }
+        },
+        {
+          "tsName": "getFile",
+          "isStatic": false,
+          "tsSignatureId": "GetFile|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663472
+          }
+        },
+        {
+          "tsName": "enumerateFileSystemInfos",
+          "isStatic": false,
+          "tsSignatureId": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 0
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876005
+          }
+        },
+        {
+          "tsName": "fullName",
+          "isStatic": false,
+          "tsSignatureId": "FullName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876006
+          }
+        },
+        {
+          "tsName": "parentDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876007
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.IO.DirectoryInfo):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663468
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
+      "tsEmitName": "FileInfoBase",
+      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "fullName",
+          "isStatic": false,
+          "tsSignatureId": "FullName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "parentDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876013
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+      "tsEmitName": "FileInfoWrapper",
+      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876008,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper::FullName:System.String",
+          "clrName": "FullName",
+          "tsEmitName": "fullName",
+          "metadataToken": 385876009,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "FullName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper::ParentDirectory:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "ParentDirectory",
+          "tsEmitName": "parentDirectory",
+          "metadataToken": 385876010,
+          "canonicalSignature": ":Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "normalizedSignature": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper::.ctor(System.IO.FileInfo):void",
+          "metadataToken": 100663477,
+          "canonicalSignature": "(System.IO.FileInfo):void",
+          "normalizedSignature": "constructor|(System.IO.FileInfo):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876008
+          }
+        },
+        {
+          "tsName": "fullName",
+          "isStatic": false,
+          "tsSignatureId": "FullName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876009
+          }
+        },
+        {
+          "tsName": "parentDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876010
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.IO.FileInfo):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 100663477
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+      "tsEmitName": "FileSystemInfoBase",
+      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385876011,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase::FullName:System.String",
+          "clrName": "FullName",
+          "tsEmitName": "fullName",
+          "metadataToken": 385876012,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "FullName|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase::ParentDirectory:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "clrName": "ParentDirectory",
+          "tsEmitName": "parentDirectory",
+          "metadataToken": 385876013,
+          "canonicalSignature": ":Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
+          "normalizedSignature": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedProperties": [
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "fullName",
+          "isStatic": false,
+          "tsSignatureId": "FullName|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "parentDirectory",
+          "isStatic": false,
+          "tsSignatureId": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
+            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+            "metadataToken": 385876013
+          }
+        }
+      ]
+    }
+  ]
+}

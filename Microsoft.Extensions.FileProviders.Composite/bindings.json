@@ -1,0 +1,117 @@
+{
+  "namespace": "Microsoft.Extensions.FileProviders.Composite",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+      "clrName": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+      "tsEmitName": "CompositeDirectoryContents",
+      "assemblyName": "Microsoft.Extensions.FileProviders.Composite",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetEnumerator",
+          "tsEmitName": "getEnumerator",
+          "metadataToken": 100663306,
+          "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+          "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents::Exists:System.Boolean",
+          "clrName": "Exists",
+          "tsEmitName": "exists",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+          "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite"
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents::Exists:System.Boolean",
+          "clrName": "Exists",
+          "tsEmitName": "exists$view",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.FileProviders.IDirectoryContents",
+          "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents::.ctor(System.Collections.Generic.IList_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):void",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.Collections.Generic.IList_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+          "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "getEnumerator",
+          "isStatic": false,
+          "tsSignatureId": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
+            "metadataToken": 100663306
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "exists",
+          "isStatic": false,
+          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "exists$view",
+          "isStatic": false,
+          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileProviders.IDirectoryContents",
+            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
+            "metadataToken": 385875971
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.String):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.FileProviders.Composite.CompositeDirectoryContents",
+            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
+            "metadataToken": 100663303
+          }
+        }
+      ]
+    }
+  ]
+}
