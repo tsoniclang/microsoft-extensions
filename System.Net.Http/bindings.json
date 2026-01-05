@@ -1,0 +1,161 @@
+{
+  "namespace": "System.Net.Http",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpClientFactory",
+      "clrName": "System.Net.Http.IHttpClientFactory",
+      "tsEmitName": "IHttpClientFactory",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpClientFactory::CreateClient(System.String):System.Net.Http.HttpClient",
+          "clrName": "CreateClient",
+          "tsEmitName": "createClient",
+          "metadataToken": 100663319,
+          "canonicalSignature": "(System.String):System.Net.Http.HttpClient",
+          "normalizedSignature": "CreateClient|(System.String):System.Net.Http.HttpClient|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Net.Http.IHttpClientFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createClient",
+          "isStatic": false,
+          "tsSignatureId": "CreateClient|(System.String):System.Net.Http.HttpClient|static=false",
+          "target": {
+            "declaringClrType": "System.Net.Http.IHttpClientFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663319
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpMessageHandlerFactory",
+      "clrName": "System.Net.Http.IHttpMessageHandlerFactory",
+      "tsEmitName": "IHttpMessageHandlerFactory",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpMessageHandlerFactory::CreateHandler(System.String):System.Net.Http.HttpMessageHandler",
+          "clrName": "CreateHandler",
+          "tsEmitName": "createHandler",
+          "metadataToken": 100663320,
+          "canonicalSignature": "(System.String):System.Net.Http.HttpMessageHandler",
+          "normalizedSignature": "CreateHandler|(System.String):System.Net.Http.HttpMessageHandler|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Net.Http.IHttpMessageHandlerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createHandler",
+          "isStatic": false,
+          "tsSignatureId": "CreateHandler|(System.String):System.Net.Http.HttpMessageHandler|static=false",
+          "target": {
+            "declaringClrType": "System.Net.Http.IHttpMessageHandlerFactory",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663320
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions",
+      "clrName": "System.Net.Http.HttpClientFactoryExtensions",
+      "tsEmitName": "HttpClientFactoryExtensions",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions::CreateClient(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
+          "clrName": "CreateClient",
+          "tsEmitName": "createClient",
+          "metadataToken": 100663317,
+          "canonicalSignature": "(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
+          "normalizedSignature": "CreateClient|(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Net.Http.HttpClientFactoryExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createClient",
+          "isStatic": true,
+          "tsSignatureId": "CreateClient|(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient|static=true",
+          "target": {
+            "declaringClrType": "System.Net.Http.HttpClientFactoryExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663317
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions",
+      "clrName": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
+      "tsEmitName": "HttpMessageHandlerFactoryExtensions",
+      "assemblyName": "Microsoft.Extensions.Http",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions::CreateHandler(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
+          "clrName": "CreateHandler",
+          "tsEmitName": "createHandler",
+          "metadataToken": 100663318,
+          "canonicalSignature": "(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
+          "normalizedSignature": "CreateHandler|(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": true
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createHandler",
+          "isStatic": true,
+          "tsSignatureId": "CreateHandler|(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler|static=true",
+          "target": {
+            "declaringClrType": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
+            "declaringAssemblyName": "Microsoft.Extensions.Http",
+            "metadataToken": 100663318
+          }
+        }
+      ]
+    }
+  ]
+}

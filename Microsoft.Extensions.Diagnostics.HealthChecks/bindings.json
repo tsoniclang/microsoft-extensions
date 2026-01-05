@@ -1,0 +1,1298 @@
+{
+  "namespace": "Microsoft.Extensions.Diagnostics.HealthChecks",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+      "tsEmitName": "HealthStatus",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus::value__System.Int32",
+          "clrName": "value__",
+          "tsEmitName": "value__",
+          "metadataToken": 67108888,
+          "normalizedSignature": "value__|System.Int32|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus::UnhealthyMicrosoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "Unhealthy",
+          "tsEmitName": "unhealthy",
+          "metadataToken": 67108889,
+          "normalizedSignature": "Unhealthy|Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus::DegradedMicrosoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "Degraded",
+          "tsEmitName": "degraded",
+          "metadataToken": 67108890,
+          "normalizedSignature": "Degraded|Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus::HealthyMicrosoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "Healthy",
+          "tsEmitName": "healthy",
+          "metadataToken": 67108891,
+          "normalizedSignature": "Healthy|Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=true|const=true",
+          "isStatic": true,
+          "isReadOnly": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedFields": [
+        {
+          "tsName": "value__",
+          "isStatic": false,
+          "tsSignatureId": "value__|System.Int32|static=false|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 67108888
+          }
+        },
+        {
+          "tsName": "unhealthy",
+          "isStatic": true,
+          "tsSignatureId": "Unhealthy|Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 67108889
+          }
+        },
+        {
+          "tsName": "degraded",
+          "isStatic": true,
+          "tsSignatureId": "Degraded|Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 67108890
+          }
+        },
+        {
+          "tsName": "healthy",
+          "isStatic": true,
+          "tsSignatureId": "Healthy|Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=true|const=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 67108891
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck",
+      "tsEmitName": "IHealthCheck",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck::CheckHealthAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "CheckHealthAsync",
+          "tsEmitName": "checkHealthAsync",
+          "metadataToken": 100663343,
+          "canonicalSignature": "(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "CheckHealthAsync|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "checkHealthAsync",
+          "isStatic": false,
+          "tsSignatureId": "CheckHealthAsync|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663343
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheckPublisher",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheckPublisher",
+      "tsEmitName": "IHealthCheckPublisher",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheckPublisher::PublishAsync(Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "PublishAsync",
+          "tsEmitName": "publishAsync",
+          "metadataToken": 100663344,
+          "canonicalSignature": "(Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "PublishAsync|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheckPublisher",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "publishAsync",
+          "isStatic": false,
+          "tsSignatureId": "PublishAsync|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheckPublisher",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663344
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+      "tsEmitName": "HealthCheckResult",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Healthy(System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "clrName": "Healthy",
+          "tsEmitName": "healthy",
+          "metadataToken": 100663324,
+          "canonicalSignature": "(System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "normalizedSignature": "Healthy|(System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Degraded(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "clrName": "Degraded",
+          "tsEmitName": "degraded",
+          "metadataToken": 100663325,
+          "canonicalSignature": "(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "normalizedSignature": "Degraded|(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Unhealthy(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "clrName": "Unhealthy",
+          "tsEmitName": "unhealthy",
+          "metadataToken": 100663326,
+          "canonicalSignature": "(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "normalizedSignature": "Unhealthy|(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Data:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Data|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Description:System.String",
+          "clrName": "Description",
+          "tsEmitName": "description",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Exception:System.Exception",
+          "clrName": "Exception",
+          "tsEmitName": "exception",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.Exception",
+          "normalizedSignature": "Exception|:System.Exception|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Status:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "Status",
+          "tsEmitName": "status",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "normalizedSignature": "Status|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::.ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663319,
+          "canonicalSignature": "(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "healthy",
+          "isStatic": true,
+          "tsSignatureId": "Healthy|(System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663324
+          }
+        },
+        {
+          "tsName": "degraded",
+          "isStatic": true,
+          "tsSignatureId": "Degraded|(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663325
+          }
+        },
+        {
+          "tsName": "unhealthy",
+          "isStatic": true,
+          "tsSignatureId": "Unhealthy|(System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663326
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "data",
+          "isStatic": false,
+          "tsSignatureId": "Data|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "description",
+          "isStatic": false,
+          "tsSignatureId": "Description|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875978
+          }
+        },
+        {
+          "tsName": "exception",
+          "isStatic": false,
+          "tsSignatureId": "Exception|:System.Exception|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "status",
+          "isStatic": false,
+          "tsSignatureId": "Status|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875980
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663319
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+      "tsEmitName": "HealthReportEntry",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::Data:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Data",
+          "tsEmitName": "data",
+          "metadataToken": 385875984,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Data|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::Description:System.String",
+          "clrName": "Description",
+          "tsEmitName": "description",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Description|:System.String|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::Duration:System.TimeSpan",
+          "clrName": "Duration",
+          "tsEmitName": "duration",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Duration|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::Exception:System.Exception",
+          "clrName": "Exception",
+          "tsEmitName": "exception",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.Exception",
+          "normalizedSignature": "Exception|:System.Exception|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::Status:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "Status",
+          "tsEmitName": "status",
+          "metadataToken": 385875988,
+          "canonicalSignature": ":Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "normalizedSignature": "Status|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::Tags:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Tags",
+          "tsEmitName": "tags",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Tags|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::.ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663334,
+          "canonicalSignature": "(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry::.ctor(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663335,
+          "canonicalSignature": "(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 6,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "data",
+          "isStatic": false,
+          "tsSignatureId": "Data|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875984
+          }
+        },
+        {
+          "tsName": "description",
+          "isStatic": false,
+          "tsSignatureId": "Description|:System.String|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "duration",
+          "isStatic": false,
+          "tsSignatureId": "Duration|:System.TimeSpan|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "exception",
+          "isStatic": false,
+          "tsSignatureId": "Exception|:System.Exception|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875987
+          }
+        },
+        {
+          "tsName": "status",
+          "isStatic": false,
+          "tsSignatureId": "Status|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875988
+          }
+        },
+        {
+          "tsName": "tags",
+          "isStatic": false,
+          "tsSignatureId": "Tags|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875989
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663334
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663335
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
+      "tsEmitName": "HealthCheckContext",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext::Registration:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "clrName": "Registration",
+          "tsEmitName": "registration",
+          "metadataToken": 385875969,
+          "canonicalSignature": ":Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "normalizedSignature": "Registration|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext::.ctor():void",
+          "metadataToken": 100663301,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "registration",
+          "isStatic": false,
+          "tsSignatureId": "Registration|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875969
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663301
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+      "tsEmitName": "HealthCheckPublisherOptions",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions::Delay:System.TimeSpan",
+          "clrName": "Delay",
+          "tsEmitName": "delay",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Delay|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions::Period:System.TimeSpan",
+          "clrName": "Period",
+          "tsEmitName": "period",
+          "metadataToken": 385875978,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Period|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions::Predicate:System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Predicate",
+          "tsEmitName": "predicate",
+          "metadataToken": 385875979,
+          "canonicalSignature": ":System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Predicate|:System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions::Timeout:System.TimeSpan",
+          "clrName": "Timeout",
+          "tsEmitName": "timeout",
+          "metadataToken": 385875980,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Timeout|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions::.ctor():void",
+          "metadataToken": 100663352,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "delay",
+          "isStatic": false,
+          "tsSignatureId": "Delay|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "period",
+          "isStatic": false,
+          "tsSignatureId": "Period|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 385875978
+          }
+        },
+        {
+          "tsName": "predicate",
+          "isStatic": false,
+          "tsSignatureId": "Predicate|:System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 385875979
+          }
+        },
+        {
+          "tsName": "timeout",
+          "isStatic": false,
+          "tsSignatureId": "Timeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 385875980
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 100663352
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+      "tsEmitName": "HealthCheckRegistration",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::Factory:System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Factory",
+          "tsEmitName": "factory",
+          "metadataToken": 385875970,
+          "canonicalSignature": ":System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Factory|:System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::FailureStatus:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "FailureStatus",
+          "tsEmitName": "failureStatus",
+          "metadataToken": 385875971,
+          "canonicalSignature": ":Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "normalizedSignature": "FailureStatus|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::Timeout:System.TimeSpan",
+          "clrName": "Timeout",
+          "tsEmitName": "timeout",
+          "metadataToken": 385875972,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "Timeout|:System.TimeSpan|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::Delay:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Delay",
+          "tsEmitName": "delay",
+          "metadataToken": 385875973,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Delay|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::Period:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Period",
+          "tsEmitName": "period",
+          "metadataToken": 385875974,
+          "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Period|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::Name:System.String",
+          "clrName": "Name",
+          "tsEmitName": "name",
+          "metadataToken": 385875975,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::Tags:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Tags",
+          "tsEmitName": "tags",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Tags|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::.ctor(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663302,
+          "canonicalSignature": "(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::.ctor(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663303,
+          "canonicalSignature": "(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::.ctor(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663304,
+          "canonicalSignature": "(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration::.ctor(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "metadataToken": 100663305,
+          "canonicalSignature": "(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void",
+          "normalizedSignature": "constructor|(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "factory",
+          "isStatic": false,
+          "tsSignatureId": "Factory|:System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875970
+          }
+        },
+        {
+          "tsName": "failureStatus",
+          "isStatic": false,
+          "tsSignatureId": "FailureStatus|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875971
+          }
+        },
+        {
+          "tsName": "timeout",
+          "isStatic": false,
+          "tsSignatureId": "Timeout|:System.TimeSpan|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875972
+          }
+        },
+        {
+          "tsName": "delay",
+          "isStatic": false,
+          "tsSignatureId": "Delay|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875973
+          }
+        },
+        {
+          "tsName": "period",
+          "isStatic": false,
+          "tsSignatureId": "Period|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "name",
+          "isStatic": false,
+          "tsSignatureId": "Name|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875975
+          }
+        },
+        {
+          "tsName": "tags",
+          "isStatic": false,
+          "tsSignatureId": "Tags|:System.Collections.Generic.ISet_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875976
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663302
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663303
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663304
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663305
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+      "tsEmitName": "HealthCheckService",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService::CheckHealthAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "CheckHealthAsync",
+          "tsEmitName": "checkHealthAsync",
+          "metadataToken": 100663361,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "CheckHealthAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService::CheckHealthAsync(System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "CheckHealthAsync",
+          "tsEmitName": "checkHealthAsync",
+          "metadataToken": 100663362,
+          "canonicalSignature": "(System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "CheckHealthAsync|(System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "checkHealthAsync",
+          "isStatic": false,
+          "tsSignatureId": "CheckHealthAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 100663361
+          }
+        },
+        {
+          "tsName": "checkHealthAsync",
+          "isStatic": false,
+          "tsSignatureId": "CheckHealthAsync|(System.Func_2[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 100663362
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
+      "tsEmitName": "HealthCheckServiceOptions",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions::Registrations:System.Collections.Generic.ICollection_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Registrations",
+          "tsEmitName": "registrations",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.Collections.Generic.ICollection_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Registrations|:System.Collections.Generic.ICollection_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions::.ctor():void",
+          "metadataToken": 100663365,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "registrations",
+          "isStatic": false,
+          "tsSignatureId": "Registrations|:System.Collections.Generic.ICollection_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 385875981
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
+            "metadataToken": 100663365
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+      "clrName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+      "tsEmitName": "HealthReport",
+      "assemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport::Entries:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "Entries",
+          "tsEmitName": "entries",
+          "metadataToken": 385875981,
+          "canonicalSignature": ":System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "Entries|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport::Status:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "clrName": "Status",
+          "tsEmitName": "status",
+          "metadataToken": 385875982,
+          "canonicalSignature": ":Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
+          "normalizedSignature": "Status|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport::TotalDuration:System.TimeSpan",
+          "clrName": "TotalDuration",
+          "tsEmitName": "totalDuration",
+          "metadataToken": 385875983,
+          "canonicalSignature": ":System.TimeSpan",
+          "normalizedSignature": "TotalDuration|:System.TimeSpan|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport::.ctor(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.TimeSpan):void",
+          "metadataToken": 100663328,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.TimeSpan):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.TimeSpan):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport::.ctor(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.TimeSpan):void",
+          "metadataToken": 100663329,
+          "canonicalSignature": "(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.TimeSpan):void",
+          "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.TimeSpan):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "entries",
+          "isStatic": false,
+          "tsSignatureId": "Entries|:System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875981
+          }
+        },
+        {
+          "tsName": "status",
+          "isStatic": false,
+          "tsSignatureId": "Status|:Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875982
+          }
+        },
+        {
+          "tsName": "totalDuration",
+          "isStatic": false,
+          "tsSignatureId": "TotalDuration|:System.TimeSpan|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 385875983
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.TimeSpan):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663328
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.TimeSpan):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
+            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+            "metadataToken": 100663329
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "namespace": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.FileSystemGlobbing"
+  ],
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+      "tsEmitName": "PatternBuilder",
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::Build(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "normalizedSignature": "Build|(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern|static=false",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "arity": 0,
+          "parameterCount": 1,
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::ComparisonType:System.StringComparison",
+          "clrName": "ComparisonType",
+          "tsEmitName": "comparisonType",
+          "normalizedSignature": "ComparisonType|:System.StringComparison|static=false|accessor=get",
+          "provenance": "Original",
+          "emitScope": "ClassSurface",
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0
+        },
+        {
+          "normalizedSignature": "constructor|(System.StringComparison):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1
+        }
+      ]
+    }
+  ]
+}

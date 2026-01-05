@@ -1,0 +1,1036 @@
+{
+  "namespace": "Microsoft.Extensions.Configuration.Xml",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+      "clrName": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+      "tsEmitName": "XmlConfigurationProvider",
+      "assemblyName": "Microsoft.Extensions.Configuration.Xml",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::Load(System.IO.Stream):System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load2",
+          "metadataToken": 100663346,
+          "canonicalSignature": "(System.IO.Stream):System.Void",
+          "normalizedSignature": "Load|(System.IO.Stream):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
+          "clrName": "TryGet",
+          "tsEmitName": "tryGet$view",
+          "metadataToken": 100663343,
+          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
+          "clrName": "Set",
+          "tsEmitName": "set$view",
+          "metadataToken": 100663344,
+          "canonicalSignature": "(System.String,System.String):System.Void",
+          "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "GetReloadToken",
+          "tsEmitName": "getReloadToken$view",
+          "metadataToken": 100663345,
+          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
+          "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load$view",
+          "metadataToken": 100663346,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Load|():System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetChildKeys",
+          "tsEmitName": "getChildKeys$view",
+          "metadataToken": 100663347,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
+          "clrName": "GetChildKeys",
+          "tsEmitName": "getChildKeys",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
+          "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "GetReloadToken",
+          "tsEmitName": "getReloadToken",
+          "metadataToken": 0,
+          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
+          "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::Load():System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Load|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::Set(System.String,System.String):System.Void",
+          "clrName": "Set",
+          "tsEmitName": "set_",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String):System.Void",
+          "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
+          "clrName": "TryGet",
+          "tsEmitName": "tryGet",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::.ctor(Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource):void",
+          "metadataToken": 100663343,
+          "canonicalSignature": "(Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "load2",
+          "isStatic": false,
+          "tsSignatureId": "Load|(System.IO.Stream):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663346
+          }
+        },
+        {
+          "tsName": "tryGet$view",
+          "isStatic": false,
+          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663343
+          }
+        },
+        {
+          "tsName": "set$view",
+          "isStatic": false,
+          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663344
+          }
+        },
+        {
+          "tsName": "getReloadToken$view",
+          "isStatic": false,
+          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663345
+          }
+        },
+        {
+          "tsName": "load$view",
+          "isStatic": false,
+          "tsSignatureId": "Load|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663346
+          }
+        },
+        {
+          "tsName": "getChildKeys$view",
+          "isStatic": false,
+          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663347
+          }
+        },
+        {
+          "tsName": "getChildKeys",
+          "isStatic": false,
+          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "getReloadToken",
+          "isStatic": false,
+          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "load",
+          "isStatic": false,
+          "tsSignatureId": "Load|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "set_",
+          "isStatic": false,
+          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "tryGet",
+          "isStatic": false,
+          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 100663321
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 100663326
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "source",
+          "isStatic": false,
+          "tsSignatureId": "Source|:Microsoft.Extensions.Configuration.FileConfigurationSource|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875973
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663343
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
+      "clrName": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
+      "tsEmitName": "XmlConfigurationSource",
+      "assemblyName": "Microsoft.Extensions.Configuration.Xml",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100663347,
+          "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Build",
+          "tsEmitName": "build$view",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource::.ctor():void",
+          "metadataToken": 100663348,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "build",
+          "isStatic": false,
+          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663347
+          }
+        },
+        {
+          "tsName": "build$view",
+          "isStatic": false,
+          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663354
+          }
+        },
+        {
+          "tsName": "ensureDefaults",
+          "isStatic": false,
+          "tsSignatureId": "EnsureDefaults|(Microsoft.Extensions.Configuration.IConfigurationBuilder):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 100663344
+          }
+        },
+        {
+          "tsName": "resolveFileProvider",
+          "isStatic": false,
+          "tsSignatureId": "ResolveFileProvider|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 100663345
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "fileProvider",
+          "isStatic": false,
+          "tsSignatureId": "FileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875974
+          }
+        },
+        {
+          "tsName": "path",
+          "isStatic": false,
+          "tsSignatureId": "Path|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875975
+          }
+        },
+        {
+          "tsName": "optional",
+          "isStatic": false,
+          "tsSignatureId": "Optional|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875976
+          }
+        },
+        {
+          "tsName": "reloadOnChange",
+          "isStatic": false,
+          "tsSignatureId": "ReloadOnChange|:System.Boolean|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "reloadDelay",
+          "isStatic": false,
+          "tsSignatureId": "ReloadDelay|:System.Int32|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875978
+          }
+        },
+        {
+          "tsName": "onLoadException",
+          "isStatic": false,
+          "tsSignatureId": "OnLoadException|:System.Action_1[[Microsoft.Extensions.Configuration.FileLoadExceptionContext,Microsoft.Extensions.Configuration.FileExtensions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+            "metadataToken": 385875979
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663348
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+      "clrName": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+      "tsEmitName": "XmlDocumentDecryptor",
+      "assemblyName": "Microsoft.Extensions.Configuration.Xml",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor::CreateDecryptingXmlReader(System.IO.Stream,System.Xml.XmlReaderSettings):System.Xml.XmlReader",
+          "clrName": "CreateDecryptingXmlReader",
+          "tsEmitName": "createDecryptingXmlReader",
+          "metadataToken": 100663352,
+          "canonicalSignature": "(System.IO.Stream,System.Xml.XmlReaderSettings):System.Xml.XmlReader",
+          "normalizedSignature": "CreateDecryptingXmlReader|(System.IO.Stream,System.Xml.XmlReaderSettings):System.Xml.XmlReader|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor::InstanceMicrosoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+          "clrName": "Instance",
+          "tsEmitName": "instance",
+          "metadataToken": 67108884,
+          "normalizedSignature": "Instance|Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor|static=true|const=false",
+          "isStatic": true,
+          "isReadOnly": true,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
+        }
+      ],
+      "events": [],
+      "constructors": [],
+      "exposedMethods": [
+        {
+          "tsName": "createDecryptingXmlReader",
+          "isStatic": false,
+          "tsSignatureId": "CreateDecryptingXmlReader|(System.IO.Stream,System.Xml.XmlReaderSettings):System.Xml.XmlReader|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663352
+          }
+        }
+      ],
+      "exposedFields": [
+        {
+          "tsName": "instance",
+          "isStatic": true,
+          "tsSignatureId": "Instance|Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor|static=true|const=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 67108884
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+      "clrName": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+      "tsEmitName": "XmlStreamConfigurationProvider",
+      "assemblyName": "Microsoft.Extensions.Configuration.Xml",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::Read(System.IO.Stream,Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Read",
+          "tsEmitName": "read",
+          "metadataToken": 100663356,
+          "canonicalSignature": "(System.IO.Stream,Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Read|(System.IO.Stream,Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::Load(System.IO.Stream):System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load2",
+          "metadataToken": 100663357,
+          "canonicalSignature": "(System.IO.Stream):System.Void",
+          "normalizedSignature": "Load|(System.IO.Stream):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
+          "clrName": "TryGet",
+          "tsEmitName": "tryGet$view",
+          "metadataToken": 100663343,
+          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
+          "clrName": "Set",
+          "tsEmitName": "set$view",
+          "metadataToken": 100663344,
+          "canonicalSignature": "(System.String,System.String):System.Void",
+          "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "GetReloadToken",
+          "tsEmitName": "getReloadToken$view",
+          "metadataToken": 100663345,
+          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
+          "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load$view",
+          "metadataToken": 100663346,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Load|():System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "GetChildKeys",
+          "tsEmitName": "getChildKeys$view",
+          "metadataToken": 100663347,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
+          "clrName": "GetChildKeys",
+          "tsEmitName": "getChildKeys",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
+          "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "GetReloadToken",
+          "tsEmitName": "getReloadToken",
+          "metadataToken": 0,
+          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
+          "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::Load():System.Void",
+          "clrName": "Load",
+          "tsEmitName": "load",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Load|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::Set(System.String,System.String):System.Void",
+          "clrName": "Set",
+          "tsEmitName": "set_",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String):System.Void",
+          "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
+          "clrName": "TryGet",
+          "tsEmitName": "tryGet",
+          "metadataToken": 0,
+          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 2,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false,
+          "parameterModifiers": [
+            {
+              "index": 1,
+              "modifier": "out"
+            }
+          ]
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::.ctor(Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource):void",
+          "metadataToken": 100663355,
+          "canonicalSignature": "(Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "read",
+          "isStatic": true,
+          "tsSignatureId": "Read|(System.IO.Stream,Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663356
+          }
+        },
+        {
+          "tsName": "load2",
+          "isStatic": false,
+          "tsSignatureId": "Load|(System.IO.Stream):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663357
+          }
+        },
+        {
+          "tsName": "tryGet$view",
+          "isStatic": false,
+          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663343
+          }
+        },
+        {
+          "tsName": "set$view",
+          "isStatic": false,
+          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663344
+          }
+        },
+        {
+          "tsName": "getReloadToken$view",
+          "isStatic": false,
+          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663345
+          }
+        },
+        {
+          "tsName": "load$view",
+          "isStatic": false,
+          "tsSignatureId": "Load|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663346
+          }
+        },
+        {
+          "tsName": "getChildKeys$view",
+          "isStatic": false,
+          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663347
+          }
+        },
+        {
+          "tsName": "getChildKeys",
+          "isStatic": false,
+          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "getReloadToken",
+          "isStatic": false,
+          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "load",
+          "isStatic": false,
+          "tsSignatureId": "Load|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "set_",
+          "isStatic": false,
+          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "tryGet",
+          "isStatic": false,
+          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 0
+          }
+        },
+        {
+          "tsName": "toString",
+          "isStatic": false,
+          "tsSignatureId": "ToString|():System.String|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+            "metadataToken": 100663377
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "source",
+          "isStatic": false,
+          "tsSignatureId": "Source|:Microsoft.Extensions.Configuration.StreamConfigurationSource|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+            "metadataToken": 385876003
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663355
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
+      "clrName": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
+      "tsEmitName": "XmlStreamConfigurationSource",
+      "assemblyName": "Microsoft.Extensions.Configuration.Xml",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Build",
+          "tsEmitName": "build",
+          "metadataToken": 100663372,
+          "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Build",
+          "tsEmitName": "build$view",
+          "metadataToken": 100663354,
+          "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource::.ctor():void",
+          "metadataToken": 100663373,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "build",
+          "isStatic": false,
+          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663372
+          }
+        },
+        {
+          "tsName": "build$view",
+          "isStatic": false,
+          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+            "metadataToken": 100663354
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "stream",
+          "isStatic": false,
+          "tsSignatureId": "Stream|:System.IO.Stream|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+            "metadataToken": 385876004
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
+            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+            "metadataToken": 100663373
+          }
+        }
+      ]
+    }
+  ]
+}

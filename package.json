@@ -1,0 +1,29 @@
+{
+  "name": "@tsonic/microsoft-extensions",
+  "version": "0.1.0",
+  "description": "TypeScript type definitions for Microsoft.Extensions.* (Hosting/DI/Logging/Configuration/Options) for .NET 10",
+  "type": "module",
+  "keywords": [
+    "dotnet",
+    "typescript",
+    "types",
+    "tsonic",
+    "microsoft-extensions",
+    "dependency-injection",
+    "logging",
+    "configuration",
+    "hosting",
+    "options"
+  ],
+  "author": "Tsonic Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsoniclang/microsoft-extensions.git"
+  },
+  "peerDependencies": {
+    "@tsonic/core": "^0.6.0",
+    "@tsonic/dotnet": "^0.8.4"
+  }
+}
+

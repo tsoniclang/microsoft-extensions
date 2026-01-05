@@ -1,0 +1,858 @@
+{
+  "namespace": "Microsoft.Extensions.Hosting.Internal",
+  "types": [
+    {
+      "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+      "clrName": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+      "tsEmitName": "ApplicationLifetime",
+      "assemblyName": "Microsoft.Extensions.Hosting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::StopApplication():System.Void",
+          "clrName": "StopApplication",
+          "tsEmitName": "stopApplication",
+          "metadataToken": 100663424,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "StopApplication|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::NotifyStarted():System.Void",
+          "clrName": "NotifyStarted",
+          "tsEmitName": "notifyStarted",
+          "metadataToken": 100663425,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "NotifyStarted|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::NotifyStopped():System.Void",
+          "clrName": "NotifyStopped",
+          "tsEmitName": "notifyStopped",
+          "metadataToken": 100663426,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "NotifyStopped|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::StopApplication():System.Void",
+          "clrName": "StopApplication",
+          "tsEmitName": "stopApplication$view",
+          "metadataToken": 100663353,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "StopApplication|():System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::StopApplication():System.Void",
+          "clrName": "StopApplication",
+          "tsEmitName": "stopApplication$view",
+          "metadataToken": 100663367,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "StopApplication|():System.Void|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::ApplicationStarted:System.Threading.CancellationToken",
+          "clrName": "ApplicationStarted",
+          "tsEmitName": "applicationStarted",
+          "metadataToken": 385875999,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::ApplicationStopping:System.Threading.CancellationToken",
+          "clrName": "ApplicationStopping",
+          "tsEmitName": "applicationStopping",
+          "metadataToken": 385876000,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::ApplicationStopped:System.Threading.CancellationToken",
+          "clrName": "ApplicationStopped",
+          "tsEmitName": "applicationStopped",
+          "metadataToken": 385876001,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::ApplicationStarted:System.Threading.CancellationToken",
+          "clrName": "ApplicationStarted",
+          "tsEmitName": "applicationStarted$view",
+          "metadataToken": 385875975,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::ApplicationStopping:System.Threading.CancellationToken",
+          "clrName": "ApplicationStopping",
+          "tsEmitName": "applicationStopping$view",
+          "metadataToken": 385875976,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::ApplicationStopped:System.Threading.CancellationToken",
+          "clrName": "ApplicationStopped",
+          "tsEmitName": "applicationStopped$view",
+          "metadataToken": 385875977,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::ApplicationStarted:System.Threading.CancellationToken",
+          "clrName": "ApplicationStarted",
+          "tsEmitName": "applicationStarted$view",
+          "metadataToken": 385875985,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::ApplicationStopping:System.Threading.CancellationToken",
+          "clrName": "ApplicationStopping",
+          "tsEmitName": "applicationStopping$view",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::ApplicationStopped:System.Threading.CancellationToken",
+          "clrName": "ApplicationStopped",
+          "tsEmitName": "applicationStopped$view",
+          "metadataToken": 385875987,
+          "canonicalSignature": ":System.Threading.CancellationToken",
+          "normalizedSignature": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ApplicationLifetime::.ctor(Microsoft.Extensions.Logging.ILogger_1[[Microsoft.Extensions.Hosting.Internal.ApplicationLifetime,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663420,
+          "canonicalSignature": "(Microsoft.Extensions.Logging.ILogger_1[[Microsoft.Extensions.Hosting.Internal.ApplicationLifetime,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILogger_1[[Microsoft.Extensions.Hosting.Internal.ApplicationLifetime,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "stopApplication",
+          "isStatic": false,
+          "tsSignatureId": "StopApplication|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663424
+          }
+        },
+        {
+          "tsName": "notifyStarted",
+          "isStatic": false,
+          "tsSignatureId": "NotifyStarted|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663425
+          }
+        },
+        {
+          "tsName": "notifyStopped",
+          "isStatic": false,
+          "tsSignatureId": "NotifyStopped|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663426
+          }
+        },
+        {
+          "tsName": "stopApplication$view",
+          "isStatic": false,
+          "tsSignatureId": "StopApplication|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 100663353
+          }
+        },
+        {
+          "tsName": "stopApplication$view",
+          "isStatic": false,
+          "tsSignatureId": "StopApplication|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 100663367
+          }
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "applicationStarted",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385875999
+          }
+        },
+        {
+          "tsName": "applicationStopping",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385876000
+          }
+        },
+        {
+          "tsName": "applicationStopped",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385876001
+          }
+        },
+        {
+          "tsName": "applicationStarted$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875975
+          }
+        },
+        {
+          "tsName": "applicationStopping$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875976
+          }
+        },
+        {
+          "tsName": "applicationStopped$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875977
+          }
+        },
+        {
+          "tsName": "applicationStarted$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875985
+          }
+        },
+        {
+          "tsName": "applicationStopping$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875986
+          }
+        },
+        {
+          "tsName": "applicationStopped$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875987
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Logging.ILogger_1[[Microsoft.Extensions.Hosting.Internal.ApplicationLifetime,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663420
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+      "clrName": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+      "tsEmitName": "ConsoleLifetime",
+      "assemblyName": "Microsoft.Extensions.Hosting",
+      "metadataToken": 0,
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime::WaitForStartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "WaitForStartAsync",
+          "tsEmitName": "waitForStartAsync",
+          "metadataToken": 100663436,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WaitForStartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime::StopAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "StopAsync",
+          "tsEmitName": "stopAsync",
+          "metadataToken": 100663440,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "StopAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime::Dispose():System.Void",
+          "clrName": "Dispose",
+          "tsEmitName": "dispose",
+          "metadataToken": 100663441,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Dispose|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "arity": 0,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostLifetime::WaitForStartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "WaitForStartAsync",
+          "tsEmitName": "waitForStartAsync$view",
+          "metadataToken": 100663398,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "WaitForStartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ViewOnly",
+          "arity": 0,
+          "parameterCount": 1,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "isExtensionMethod": false
+        }
+      ],
+      "properties": [],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime::.ctor(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "metadataToken": 100663429,
+          "canonicalSignature": "(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "isStatic": false,
+          "parameterCount": 4,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.ConsoleLifetime::.ctor(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "metadataToken": 100663430,
+          "canonicalSignature": "(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "isStatic": false,
+          "parameterCount": 5,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        }
+      ],
+      "exposedMethods": [
+        {
+          "tsName": "waitForStartAsync",
+          "isStatic": false,
+          "tsSignatureId": "WaitForStartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663436
+          }
+        },
+        {
+          "tsName": "stopAsync",
+          "isStatic": false,
+          "tsSignatureId": "StopAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663440
+          }
+        },
+        {
+          "tsName": "dispose",
+          "isStatic": false,
+          "tsSignatureId": "Dispose|():System.Void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663441
+          }
+        },
+        {
+          "tsName": "waitForStartAsync$view",
+          "isStatic": false,
+          "tsSignatureId": "WaitForStartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 100663398
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663429
+          }
+        },
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Hosting.IHostEnvironment,Microsoft.Extensions.Hosting.IHostApplicationLifetime,Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.ConsoleLifetime",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663430
+          }
+        }
+      ]
+    },
+    {
+      "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+      "clrName": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+      "tsEmitName": "HostingEnvironment",
+      "assemblyName": "Microsoft.Extensions.Hosting",
+      "metadataToken": 0,
+      "methods": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.HostingEnvironment::EnvironmentName:System.String",
+          "clrName": "EnvironmentName",
+          "tsEmitName": "environmentName",
+          "metadataToken": 385876009,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.HostingEnvironment::ApplicationName:System.String",
+          "clrName": "ApplicationName",
+          "tsEmitName": "applicationName",
+          "metadataToken": 385876010,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.HostingEnvironment::ContentRootPath:System.String",
+          "clrName": "ContentRootPath",
+          "tsEmitName": "contentRootPath",
+          "metadataToken": 385876011,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.HostingEnvironment::ContentRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
+          "clrName": "ContentRootFileProvider",
+          "tsEmitName": "contentRootFileProvider",
+          "metadataToken": 385876012,
+          "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
+          "normalizedSignature": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::EnvironmentName:System.String",
+          "clrName": "EnvironmentName",
+          "tsEmitName": "environmentName$view",
+          "metadataToken": 385875993,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::ApplicationName:System.String",
+          "clrName": "ApplicationName",
+          "tsEmitName": "applicationName$view",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::ContentRootPath:System.String",
+          "clrName": "ContentRootPath",
+          "tsEmitName": "contentRootPath$view",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::ContentRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
+          "clrName": "ContentRootFileProvider",
+          "tsEmitName": "contentRootFileProvider$view",
+          "metadataToken": 385875996,
+          "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
+          "normalizedSignature": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::EnvironmentName:System.String",
+          "clrName": "EnvironmentName",
+          "tsEmitName": "environmentName$view",
+          "metadataToken": 385875989,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::ApplicationName:System.String",
+          "clrName": "ApplicationName",
+          "tsEmitName": "applicationName$view",
+          "metadataToken": 385875990,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::ContentRootPath:System.String",
+          "clrName": "ContentRootPath",
+          "tsEmitName": "contentRootPath$view",
+          "metadataToken": 385875991,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::ContentRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
+          "clrName": "ContentRootFileProvider",
+          "tsEmitName": "contentRootFileProvider$view",
+          "metadataToken": 385875992,
+          "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
+          "normalizedSignature": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "emitScope": "ViewOnly",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        }
+      ],
+      "fields": [],
+      "events": [],
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Internal.HostingEnvironment::.ctor():void",
+          "metadataToken": 100663467,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+        }
+      ],
+      "exposedProperties": [
+        {
+          "tsName": "environmentName",
+          "isStatic": false,
+          "tsSignatureId": "EnvironmentName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385876009
+          }
+        },
+        {
+          "tsName": "applicationName",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385876010
+          }
+        },
+        {
+          "tsName": "contentRootPath",
+          "isStatic": false,
+          "tsSignatureId": "ContentRootPath|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385876011
+          }
+        },
+        {
+          "tsName": "contentRootFileProvider",
+          "isStatic": false,
+          "tsSignatureId": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 385876012
+          }
+        },
+        {
+          "tsName": "environmentName$view",
+          "isStatic": false,
+          "tsSignatureId": "EnvironmentName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875993
+          }
+        },
+        {
+          "tsName": "applicationName$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875994
+          }
+        },
+        {
+          "tsName": "contentRootPath$view",
+          "isStatic": false,
+          "tsSignatureId": "ContentRootPath|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875995
+          }
+        },
+        {
+          "tsName": "contentRootFileProvider$view",
+          "isStatic": false,
+          "tsSignatureId": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875996
+          }
+        },
+        {
+          "tsName": "environmentName$view",
+          "isStatic": false,
+          "tsSignatureId": "EnvironmentName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875989
+          }
+        },
+        {
+          "tsName": "applicationName$view",
+          "isStatic": false,
+          "tsSignatureId": "ApplicationName|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875990
+          }
+        },
+        {
+          "tsName": "contentRootPath$view",
+          "isStatic": false,
+          "tsSignatureId": "ContentRootPath|:System.String|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875991
+          }
+        },
+        {
+          "tsName": "contentRootFileProvider$view",
+          "isStatic": false,
+          "tsSignatureId": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+            "metadataToken": 385875992
+          }
+        }
+      ],
+      "exposedConstructors": [
+        {
+          "isStatic": false,
+          "tsSignatureId": "constructor|():void|static=false",
+          "target": {
+            "declaringClrType": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment",
+            "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+            "metadataToken": 100663467
+          }
+        }
+      ]
+    }
+  ]
+}
