@@ -45,6 +45,8 @@ export { EventLoggerFactoryExtensions$instance as EventLoggerFactoryExtensions }
 export { EventSourceLoggerFactoryExtensions$instance as EventSourceLoggerFactoryExtensions } from './Microsoft.Extensions.Logging/internal/index.js';
 export { TraceSourceFactoryExtensions$instance as TraceSourceFactoryExtensions } from './Microsoft.Extensions.Logging/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

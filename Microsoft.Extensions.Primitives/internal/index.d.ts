@@ -155,7 +155,7 @@ export const StringValues: {
 export type StringValues = StringValues$instance;
 
 export interface StringValues_Enumerator$instance {
-    readonly current: string | undefined;
+    readonly current: string;
     dispose(): void;
     moveNext(): boolean;
     reset(): void;
