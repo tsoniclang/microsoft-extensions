@@ -26,6 +26,8 @@ export { LocalizedString as LocalizedString } from './Microsoft.Extensions.Local
 export { StringLocalizerExtensions$instance as StringLocalizerExtensions } from './Microsoft.Extensions.Localization/internal/index.js';
 export { StringLocalizer_1 as StringLocalizer } from './Microsoft.Extensions.Localization/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

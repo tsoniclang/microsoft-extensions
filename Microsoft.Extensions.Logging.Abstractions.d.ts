@@ -18,6 +18,9 @@ export { LogEntry_1 as LogEntry } from './Microsoft.Extensions.Logging.Abstracti
 export { NullLoggerFactory as NullLoggerFactory } from './Microsoft.Extensions.Logging.Abstractions/internal/index.js';
 export { NullLoggerProvider as NullLoggerProvider } from './Microsoft.Extensions.Logging.Abstractions/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const NullLogger: typeof Internal.NullLogger;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

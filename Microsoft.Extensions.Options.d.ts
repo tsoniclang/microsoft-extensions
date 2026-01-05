@@ -46,6 +46,8 @@ export { ConfigureFromConfigurationOptions_1 as ConfigureFromConfigurationOption
 export { NamedConfigureFromConfigurationOptions_1 as NamedConfigureFromConfigurationOptions } from './Microsoft.Extensions.Options/internal/index.js';
 export { DataAnnotationValidateOptions_1 as DataAnnotationValidateOptions } from './Microsoft.Extensions.Options/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

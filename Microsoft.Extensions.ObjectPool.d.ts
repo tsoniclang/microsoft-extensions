@@ -22,6 +22,9 @@ export { ObjectPoolProviderExtensions$instance as ObjectPoolProviderExtensions }
 export { PooledObjectPolicy_1 as PooledObjectPolicy } from './Microsoft.Extensions.ObjectPool/internal/index.js';
 export { StringBuilderPooledObjectPolicy as StringBuilderPooledObjectPolicy } from './Microsoft.Extensions.ObjectPool/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+export const ObjectPool: typeof Internal.ObjectPool$instance;
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

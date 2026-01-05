@@ -74,6 +74,8 @@ export { OptionsBuilderDataAnnotationsExtensions$instance as OptionsBuilderDataA
 export { ValidationServiceCollectionExtensions$instance as ValidationServiceCollectionExtensions } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
 export { EncoderServiceCollectionExtensions$instance as EncoderServiceCollectionExtensions } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
 
+// Multi-arity family value exports (arity-0 constructors/static namespaces)
+
 // Multi-arity family sentinel (detects unspecified type parameters)
 declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;

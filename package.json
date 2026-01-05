@@ -1,6 +1,6 @@
 {
   "name": "@tsonic/microsoft-extensions",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript type definitions for Microsoft.Extensions.* (Hosting/DI/Logging/Configuration/Options) for .NET 10",
   "type": "module",
   "keywords": [
@@ -26,4 +26,3 @@
     "@tsonic/dotnet": "^0.8.4"
   }
 }
-
