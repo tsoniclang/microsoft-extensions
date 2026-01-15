@@ -13,7 +13,7 @@ import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 
 export interface IPooledObjectPolicy_1$instance<T> {
     create(): T;
-    return_(obj: T): boolean;
+    return(obj: T): boolean;
 }
 
 
@@ -27,8 +27,8 @@ export interface IResettable$instance {
 export type IResettable = IResettable$instance;
 
 export interface DefaultObjectPool_1$instance<T> extends ObjectPool_1<T> {
-    get_(): T;
-    return_(obj: T): void;
+    get(): T;
+    return(obj: T): void;
 }
 
 
@@ -56,7 +56,7 @@ export type DefaultObjectPoolProvider = DefaultObjectPoolProvider$instance;
 
 export interface DefaultPooledObjectPolicy_1$instance<T> extends PooledObjectPolicy_1$instance<T> {
     create(): T;
-    return_(obj: T): boolean;
+    return(obj: T): boolean;
 }
 
 
@@ -73,8 +73,8 @@ export type DefaultPooledObjectPolicy_1<T> = DefaultPooledObjectPolicy_1$instanc
 
 
 export interface LeakTrackingObjectPool_1$instance<T> extends ObjectPool_1<T> {
-    get_(): T;
-    return_(obj: T): void;
+    get(): T;
+    return(obj: T): void;
 }
 
 
@@ -99,8 +99,8 @@ export const LeakTrackingObjectPoolProvider: {
 export type LeakTrackingObjectPoolProvider = LeakTrackingObjectPoolProvider$instance;
 
 export interface ObjectPool_1$instance<T> {
-    get_(): T;
-    return_(obj: T): void;
+    get(): T;
+    return(obj: T): void;
 }
 
 
@@ -124,7 +124,7 @@ export type ObjectPoolProvider = ObjectPoolProvider$instance;
 
 export interface PooledObjectPolicy_1$instance<T> {
     create(): T;
-    return_(obj: T): boolean;
+    return(obj: T): boolean;
 }
 
 

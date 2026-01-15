@@ -24,7 +24,7 @@
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat::DefaultMicrosoft.Extensions.Logging.Console.ConsoleLoggerFormat",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108909,
           "normalizedSignature": "Default|Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat|static=true|const=true",
           "isStatic": true,
@@ -58,7 +58,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat|static=true|const=true",
           "target": {
@@ -180,7 +180,7 @@
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.LoggerColorBehavior::DefaultMicrosoft.Extensions.Logging.Console.LoggerColorBehavior",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108947,
           "normalizedSignature": "Default|Microsoft.Extensions.Logging.Console.LoggerColorBehavior|static=true|const=true",
           "isStatic": true,
@@ -225,7 +225,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|Microsoft.Extensions.Logging.Console.LoggerColorBehavior|static=true|const=true",
           "target": {

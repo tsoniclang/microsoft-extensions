@@ -26,7 +26,7 @@ export type IValidatableInfo = IValidatableInfo$instance;
 
 export interface IValidatableInfoResolver$instance {
     tryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
-    tryGetValidatableTypeInfo(type_: Type, validatableInfo: IValidatableInfo): boolean;
+    tryGetValidatableTypeInfo(type: Type, validatableInfo: IValidatableInfo): boolean;
 }
 
 
@@ -145,7 +145,7 @@ export interface ValidationOptions$instance {
     maxDepth: int;
     readonly resolvers: IList<IValidatableInfoResolver>;
     tryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
-    tryGetValidatableTypeInfo(type_: Type, validatableTypeInfo: IValidatableInfo): boolean;
+    tryGetValidatableTypeInfo(type: Type, validatableTypeInfo: IValidatableInfo): boolean;
 }
 
 

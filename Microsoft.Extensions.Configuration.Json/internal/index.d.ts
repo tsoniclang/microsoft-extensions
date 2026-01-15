@@ -23,7 +23,7 @@ export interface JsonConfigurationProvider$instance extends FileConfigurationPro
     getReloadToken(): IChangeToken;
     load(stream: Stream): void;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 
@@ -62,7 +62,7 @@ export interface JsonStreamConfigurationProvider$instance extends StreamConfigur
     getReloadToken(): IChangeToken;
     load(stream: Stream): void;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 

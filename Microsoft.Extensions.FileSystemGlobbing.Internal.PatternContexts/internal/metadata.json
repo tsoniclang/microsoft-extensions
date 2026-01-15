@@ -195,7 +195,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -494,7 +494,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear::Declare(System.Action_2):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -666,7 +666,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude::Declare(System.Action_2):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -753,7 +753,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_2",
+          "tsEmitName": "declare2",
           "normalizedSignature": "Declare|(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -870,7 +870,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude::Declare(System.Action_2):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -1090,7 +1090,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::Declare(System.Action_2):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -1246,7 +1246,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude::Declare(System.Action_2):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -1333,7 +1333,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_2",
+          "tsEmitName": "declare2",
           "normalizedSignature": "Declare|(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1450,7 +1450,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude::Declare(System.Action_2):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "normalizedSignature": "Declare|(System.Action_2):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",

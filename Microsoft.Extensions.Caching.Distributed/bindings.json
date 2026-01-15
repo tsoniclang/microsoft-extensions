@@ -39,7 +39,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::Set(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663349,
           "canonicalSignature": "(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -67,7 +67,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663351,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -95,7 +95,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663353,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -175,7 +175,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "target": {
@@ -195,7 +195,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):System.Byte[]|static=false",
           "target": {
@@ -215,7 +215,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "target": {
@@ -266,7 +266,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663351,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -294,7 +294,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663353,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -354,7 +354,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):System.Byte[]|static=false",
           "target": {
@@ -374,7 +374,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "target": {
@@ -534,7 +534,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Get(System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663318,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -562,7 +562,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -755,7 +755,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):System.Byte[]|static=false",
           "target": {
@@ -775,7 +775,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "target": {
@@ -1013,7 +1013,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void|static=true",
@@ -1129,7 +1129,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": true,
           "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void|static=true",
           "target": {

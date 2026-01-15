@@ -1390,7 +1390,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Get(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1406,7 +1406,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Get(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1444,7 +1444,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1460,7 +1460,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1476,7 +1476,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1492,7 +1492,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1508,7 +1508,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",

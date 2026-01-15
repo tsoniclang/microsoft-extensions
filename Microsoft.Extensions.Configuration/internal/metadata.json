@@ -354,7 +354,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -864,7 +864,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -1680,7 +1680,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2661,7 +2661,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -3134,7 +3134,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -3391,7 +3391,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration):T|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3407,7 +3407,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):T|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3423,7 +3423,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration,System.Type):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Type):System.Object|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -3439,7 +3439,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration,System.Type,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Type,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Object|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",

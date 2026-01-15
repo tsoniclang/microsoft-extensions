@@ -24,7 +24,7 @@ export interface XmlConfigurationProvider$instance extends FileConfigurationProv
     getReloadToken(): IChangeToken;
     load(stream: Stream): void;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 
@@ -76,7 +76,7 @@ export interface XmlStreamConfigurationProvider$instance extends StreamConfigura
     getReloadToken(): IChangeToken;
     load(stream: Stream): void;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 

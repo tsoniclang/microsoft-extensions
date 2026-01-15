@@ -45,7 +45,7 @@ export enum PathType {
 
 
 export enum SessionAuthentication {
-    default_ = 0,
+    default = 0,
     negotiate = 1,
     kerberos = 2,
     ntlm = 3

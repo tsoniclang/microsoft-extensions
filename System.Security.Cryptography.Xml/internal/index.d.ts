@@ -197,8 +197,8 @@ export interface EncryptedType$instance {
     keyInfo: KeyInfo;
     get mimeType(): string | undefined;
     set mimeType(value: string);
-    get type_(): string | undefined;
-    set type_(value: string);
+    get type(): string | undefined;
+    set type(value: string);
     addProperty(ep: EncryptionProperty): void;
     getXml(): XmlElement;
     loadXml(value: XmlElement): void;
@@ -407,8 +407,8 @@ export const KeyInfoNode: {
 export type KeyInfoNode = KeyInfoNode$instance;
 
 export interface KeyInfoRetrievalMethod$instance extends KeyInfoClause {
-    get type_(): string | undefined;
-    set type_(value: string);
+    get type(): string | undefined;
+    set type(value: string);
     uri: string;
     getXml(): XmlElement;
     loadXml(value: XmlElement): void;
@@ -471,8 +471,8 @@ export interface Reference$instance {
     get id(): string | undefined;
     set id(value: string);
     transformChain: TransformChain;
-    get type_(): string | undefined;
-    set type_(value: string);
+    get type(): string | undefined;
+    set type(value: string);
     uri: string;
     addTransform(transform: Transform): void;
     getXml(): XmlElement;
@@ -652,7 +652,7 @@ export interface Transform$instance {
     readonly propagatedNamespaces: Hashtable;
     getDigestedOutput(hash: HashAlgorithm): byte[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     getXml(): XmlElement;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
@@ -686,7 +686,7 @@ export interface XmlDecryptionTransform$instance extends Transform {
     readonly outputTypes: Type[];
     addExceptUri(uri: string): void;
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -703,7 +703,7 @@ export interface XmlDsigBase64Transform$instance extends Transform {
     readonly inputTypes: Type[];
     readonly outputTypes: Type[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -721,7 +721,7 @@ export interface XmlDsigC14NTransform$instance extends Transform {
     readonly outputTypes: Type[];
     getDigestedOutput(hash: HashAlgorithm): byte[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -750,7 +750,7 @@ export interface XmlDsigEnvelopedSignatureTransform$instance extends Transform {
     readonly inputTypes: Type[];
     readonly outputTypes: Type[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -771,7 +771,7 @@ export interface XmlDsigExcC14NTransform$instance extends Transform {
     readonly outputTypes: Type[];
     getDigestedOutput(hash: HashAlgorithm): byte[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -803,7 +803,7 @@ export interface XmlDsigXPathTransform$instance extends Transform {
     readonly inputTypes: Type[];
     readonly outputTypes: Type[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -820,7 +820,7 @@ export interface XmlDsigXsltTransform$instance extends Transform {
     readonly inputTypes: Type[];
     readonly outputTypes: Type[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }
@@ -840,7 +840,7 @@ export interface XmlLicenseTransform$instance extends Transform {
     readonly inputTypes: Type[];
     readonly outputTypes: Type[];
     getOutput(): unknown;
-    getOutput(type_: Type): unknown;
+    getOutput(type: Type): unknown;
     loadInnerXml(nodeList: XmlNodeList): void;
     loadInput(obj: unknown): void;
 }

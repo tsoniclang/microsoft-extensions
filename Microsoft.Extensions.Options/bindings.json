@@ -257,7 +257,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsMonitor\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663390,
           "canonicalSignature": "(System.String):TOptions",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
@@ -304,7 +304,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):TOptions|static=false",
           "target": {
@@ -458,7 +458,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsSnapshot\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663396,
           "canonicalSignature": "(System.String):TOptions",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
@@ -491,7 +491,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):TOptions|static=false",
           "target": {
@@ -3752,7 +3752,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.OptionsManager\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663442,
           "canonicalSignature": "(System.String):TOptions",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
@@ -3824,7 +3824,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):TOptions|static=false",
           "target": {
@@ -3888,7 +3888,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.OptionsMonitor\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663448,
           "canonicalSignature": "(System.String):TOptions",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
@@ -4002,7 +4002,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|(System.String):TOptions|static=false",
           "target": {

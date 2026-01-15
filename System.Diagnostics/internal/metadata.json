@@ -431,7 +431,7 @@
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Delete(System.String):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|(System.String):System.Void|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -447,7 +447,7 @@
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Delete(System.String,System.String):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "normalizedSignature": "Delete|(System.String,System.String):System.Void|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",

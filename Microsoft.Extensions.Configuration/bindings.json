@@ -469,7 +469,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -539,7 +539,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {
@@ -1215,7 +1215,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663325,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -1401,7 +1401,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {
@@ -2448,7 +2448,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663371,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -2608,7 +2608,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {
@@ -3797,7 +3797,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -3971,7 +3971,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {
@@ -4524,7 +4524,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -4678,7 +4678,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {
@@ -4982,7 +4982,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfiguration):T",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration):T|static=true",
@@ -4996,7 +4996,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfiguration,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):T",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):T|static=true",
@@ -5010,7 +5010,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration,System.Type):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663340,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfiguration,System.Type):System.Object",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Type):System.Object|static=true",
@@ -5024,7 +5024,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration,System.Type,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663341,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfiguration,System.Type,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Object",
           "normalizedSignature": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Type,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Object|static=true",
@@ -5140,7 +5140,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(Microsoft.Extensions.Configuration.IConfiguration):T|static=true",
           "target": {
@@ -5150,7 +5150,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):T|static=true",
           "target": {
@@ -5160,7 +5160,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Type):System.Object|static=true",
           "target": {
@@ -5170,7 +5170,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(Microsoft.Extensions.Configuration.IConfiguration,System.Type,System.Action_1[[Microsoft.Extensions.Configuration.BinderOptions,Microsoft.Extensions.Configuration.Binder,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Object|static=true",
           "target": {

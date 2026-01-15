@@ -22,7 +22,7 @@ import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposabl
 import type { JsonWriterOptions } from "@tsonic/dotnet/System.Text.Json.js";
 
 export enum ConsoleLoggerFormat {
-    default_ = 0,
+    default = 0,
     systemd = 1
 }
 
@@ -34,7 +34,7 @@ export enum ConsoleLoggerQueueFullMode {
 
 
 export enum LoggerColorBehavior {
-    default_ = 0,
+    default = 0,
     enabled = 1,
     disabled = 2
 }

@@ -2231,7 +2231,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Get(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663412,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object",
           "normalizedSignature": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object|static=true",
@@ -2245,7 +2245,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Get(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663413,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem",
           "normalizedSignature": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem|static=true",
@@ -2279,7 +2279,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663415,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem|static=true",
@@ -2293,7 +2293,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663416,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem|static=true",
@@ -2307,7 +2307,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663417,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem|static=true",
@@ -2321,7 +2321,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663418,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem|static=true",
@@ -2335,7 +2335,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 100663419,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
@@ -2409,7 +2409,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object|static=true",
           "target": {
@@ -2419,7 +2419,7 @@
           }
         },
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": true,
           "tsSignatureId": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem|static=true",
           "target": {
@@ -2439,7 +2439,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": true,
           "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem|static=true",
           "target": {
@@ -2449,7 +2449,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": true,
           "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem|static=true",
           "target": {
@@ -2459,7 +2459,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": true,
           "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem|static=true",
           "target": {
@@ -2469,7 +2469,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": true,
           "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem|static=true",
           "target": {
@@ -2479,7 +2479,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": true,
           "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
           "target": {

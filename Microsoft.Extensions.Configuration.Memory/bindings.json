@@ -157,7 +157,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -306,7 +306,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {

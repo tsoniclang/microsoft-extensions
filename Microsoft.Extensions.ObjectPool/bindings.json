@@ -25,7 +25,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 100663319,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
@@ -53,7 +53,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Boolean|static=false",
           "target": {
@@ -113,7 +113,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663301,
           "canonicalSignature": "():T",
           "normalizedSignature": "Get|():T|static=false",
@@ -127,7 +127,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 100663302,
           "canonicalSignature": "(T):System.Void",
           "normalizedSignature": "Return|(T):System.Void|static=false",
@@ -166,7 +166,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|():T|static=false",
           "target": {
@@ -176,7 +176,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Void|static=false",
           "target": {
@@ -377,7 +377,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 100663309,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
@@ -444,7 +444,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Boolean|static=false",
           "target": {
@@ -496,7 +496,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663322,
           "canonicalSignature": "():T",
           "normalizedSignature": "Get|():T|static=false",
@@ -510,7 +510,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 100663323,
           "canonicalSignature": "(T):System.Void",
           "normalizedSignature": "Return|(T):System.Void|static=false",
@@ -539,7 +539,7 @@
       ],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|():T|static=false",
           "target": {
@@ -549,7 +549,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Void|static=false",
           "target": {
@@ -700,7 +700,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "metadataToken": 100663326,
           "canonicalSignature": "():T",
           "normalizedSignature": "Get|():T|static=false",
@@ -714,7 +714,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 100663327,
           "canonicalSignature": "(T):System.Void",
           "normalizedSignature": "Return|(T):System.Void|static=false",
@@ -732,7 +732,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "get_",
+          "tsName": "get",
           "isStatic": false,
           "tsSignatureId": "Get|():T|static=false",
           "target": {
@@ -742,7 +742,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Void|static=false",
           "target": {
@@ -840,7 +840,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 100663336,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
@@ -896,7 +896,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Boolean|static=false",
           "target": {
@@ -951,7 +951,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Return(System.Text.StringBuilder):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_2",
+          "tsEmitName": "return2",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Text.StringBuilder):System.Boolean",
           "normalizedSignature": "Return|(System.Text.StringBuilder):System.Boolean|static=false",
@@ -1007,7 +1007,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "metadataToken": 0,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
@@ -1075,7 +1075,7 @@
           }
         },
         {
-          "tsName": "return_2",
+          "tsName": "return2",
           "isStatic": false,
           "tsSignatureId": "Return|(System.Text.StringBuilder):System.Boolean|static=false",
           "target": {
@@ -1115,7 +1115,7 @@
           }
         },
         {
-          "tsName": "return_",
+          "tsName": "return",
           "isStatic": false,
           "tsSignatureId": "Return|(T):System.Boolean|static=false",
           "target": {

@@ -51,7 +51,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::Set(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -83,7 +83,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -115,7 +115,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -196,7 +196,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -228,7 +228,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -377,7 +377,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Get(System.String):System.Byte[]",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -409,7 +409,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -700,7 +700,7 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void|static=true",
           "provenance": "Original",
           "emitScope": "ClassSurface",
