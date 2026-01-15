@@ -870,7 +870,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2519,7 +2519,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2904,7 +2904,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "provenance": "Original",
           "emitScope": "ClassSurface",

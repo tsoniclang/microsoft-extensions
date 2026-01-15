@@ -157,7 +157,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.CommandLine:Microsoft.Extensions.Configuration.CommandLine.CommandLineConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",

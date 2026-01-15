@@ -67,7 +67,7 @@ export interface IConfigurationProvider$instance {
     getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     getReloadToken(): IChangeToken;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 
@@ -146,7 +146,7 @@ export interface ChainedConfigurationProvider$instance {
     getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     getReloadToken(): IChangeToken;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 
@@ -261,7 +261,7 @@ export interface ConfigurationProvider$instance {
     getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     getReloadToken(): IChangeToken;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     toString(): string;
     tryGet(key: string, value: string): boolean;
 }
@@ -359,7 +359,7 @@ export interface FileConfigurationProvider$instance extends ConfigurationProvide
     getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     getReloadToken(): IChangeToken;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     toString(): string;
     tryGet(key: string, value: string): boolean;
 }
@@ -424,7 +424,7 @@ export interface StreamConfigurationProvider$instance extends ConfigurationProvi
     getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     getReloadToken(): IChangeToken;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 
@@ -482,14 +482,14 @@ export abstract class ConfigurationBinder$instance {
     static bind(configuration: IConfiguration, instance: unknown, configureOptions: Action<BinderOptions>): void;
     static bind(configuration: IConfiguration, instance: unknown): void;
     static bind(configuration: IConfiguration, key: string, instance: unknown): void;
-    static get_<T>(configuration: IConfiguration, configureOptions: Action<BinderOptions>): T | undefined;
-    static get_(configuration: IConfiguration, type_: Type, configureOptions: Action<BinderOptions>): unknown | undefined;
-    static get_(configuration: IConfiguration, type_: Type): unknown | undefined;
-    static get_<T>(configuration: IConfiguration): T | undefined;
+    static get<T>(configuration: IConfiguration, configureOptions: Action<BinderOptions>): T | undefined;
+    static get(configuration: IConfiguration, type: Type, configureOptions: Action<BinderOptions>): unknown | undefined;
+    static get(configuration: IConfiguration, type: Type): unknown | undefined;
+    static get<T>(configuration: IConfiguration): T | undefined;
     static getValue<T>(configuration: IConfiguration, key: string, defaultValue: T): T | undefined;
     static getValue<T>(configuration: IConfiguration, key: string): T | undefined;
-    static getValue(configuration: IConfiguration, type_: Type, key: string, defaultValue: unknown): unknown | undefined;
-    static getValue(configuration: IConfiguration, type_: Type, key: string): unknown | undefined;
+    static getValue(configuration: IConfiguration, type: Type, key: string, defaultValue: unknown): unknown | undefined;
+    static getValue(configuration: IConfiguration, type: Type, key: string): unknown | undefined;
 }
 
 

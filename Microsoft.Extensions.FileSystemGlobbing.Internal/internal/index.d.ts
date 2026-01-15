@@ -38,7 +38,7 @@ export interface IPattern$instance {
 export type IPattern = IPattern$instance;
 
 export interface IPatternContext$instance {
-    declare_(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     popDirectory(): void;
     pushDirectory(directory: DirectoryInfoBase): void;
     test(directory: DirectoryInfoBase): boolean;

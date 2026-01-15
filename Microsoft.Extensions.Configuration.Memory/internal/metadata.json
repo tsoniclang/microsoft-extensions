@@ -189,7 +189,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",

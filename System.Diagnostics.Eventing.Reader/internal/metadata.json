@@ -241,7 +241,7 @@
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.SessionAuthentication::DefaultSystem.Diagnostics.Eventing.Reader.SessionAuthentication",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|System.Diagnostics.Eventing.Reader.SessionAuthentication|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

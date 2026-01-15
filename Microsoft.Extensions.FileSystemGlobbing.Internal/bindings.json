@@ -182,7 +182,7 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "Declare",
-          "tsEmitName": "declare_",
+          "tsEmitName": "declare",
           "metadataToken": 100663362,
           "canonicalSignature": "(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "Declare|(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -256,7 +256,7 @@
       "constructors": [],
       "exposedMethods": [
         {
-          "tsName": "declare_",
+          "tsName": "declare",
           "isStatic": false,
           "tsSignatureId": "Declare|(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
           "target": {

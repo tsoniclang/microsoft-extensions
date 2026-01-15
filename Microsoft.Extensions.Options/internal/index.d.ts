@@ -55,7 +55,7 @@ export type IOptionsFactory_1<TOptions> = IOptionsFactory_1$instance<TOptions>;
 
 export interface IOptionsMonitor_1$instance<TOptions> {
     readonly currentValue: TOptions;
-    get_(name: string): TOptions;
+    get(name: string): TOptions;
     onChange(listener: Action<TOptions, System_Internal.String>): IDisposable;
 }
 
@@ -74,7 +74,7 @@ export type IOptionsMonitorCache_1<TOptions> = IOptionsMonitorCache_1$instance<T
 
 export interface IOptionsSnapshot_1$instance<TOptions> extends IOptions_1<TOptions> {
     readonly value: TOptions;
-    get_(name: string): TOptions;
+    get(name: string): TOptions;
 }
 
 
@@ -423,7 +423,7 @@ export type OptionsFactory_1<TOptions> = OptionsFactory_1$instance<TOptions> & _
 
 export interface OptionsManager_1$instance<TOptions> {
     readonly value: TOptions;
-    get_(name: string): TOptions;
+    get(name: string): TOptions;
 }
 
 
@@ -445,7 +445,7 @@ export type OptionsManager_1<TOptions> = OptionsManager_1$instance<TOptions> & _
 export interface OptionsMonitor_1$instance<TOptions> {
     readonly currentValue: TOptions;
     dispose(): void;
-    get_(name: string): TOptions;
+    get(name: string): TOptions;
     onChange(listener: Action<TOptions, System_Internal.String>): IDisposable;
 }
 

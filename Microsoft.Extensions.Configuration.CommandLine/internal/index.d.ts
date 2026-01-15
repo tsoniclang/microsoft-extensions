@@ -20,7 +20,7 @@ export interface CommandLineConfigurationProvider$instance extends Configuration
     getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     getReloadToken(): IChangeToken;
     load(): void;
-    set_(key: string, value: string): void;
+    set(key: string, value: string): void;
     tryGet(key: string, value: string): boolean;
 }
 

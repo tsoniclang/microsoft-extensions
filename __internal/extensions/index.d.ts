@@ -48,7 +48,7 @@ export interface __Ext_Microsoft_Extensions_Caching_Distributed_DistributedCache
 }
 
 export interface __Ext_Microsoft_Extensions_Caching_Distributed_IDistributedCache {
-  set_(key: string, value: byte[]): ExtensionMethods_Microsoft_Extensions_Caching_Distributed<void>;
+  set(key: string, value: byte[]): ExtensionMethods_Microsoft_Extensions_Caching_Distributed<void>;
   setAsync(key: string, value: byte[], token: CancellationToken): ExtensionMethods_Microsoft_Extensions_Caching_Distributed<Task>;
   setString(key: string, value: string): ExtensionMethods_Microsoft_Extensions_Caching_Distributed<void>;
   setString(key: string, value: string, options: Microsoft_Extensions_Caching_Distributed.DistributedCacheEntryOptions): ExtensionMethods_Microsoft_Extensions_Caching_Distributed<void>;
@@ -72,14 +72,14 @@ export interface __Ext_Microsoft_Extensions_Caching_Memory_ICacheEntry {
 }
 
 export interface __Ext_Microsoft_Extensions_Caching_Memory_IMemoryCache {
-  get_(key: unknown): ExtensionMethods_Microsoft_Extensions_Caching_Memory<unknown | undefined>;
-  get_<TItem>(key: unknown): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem | undefined>;
+  get(key: unknown): ExtensionMethods_Microsoft_Extensions_Caching_Memory<unknown | undefined>;
+  get<TItem>(key: unknown): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem | undefined>;
   tryGetValue<TItem>(key: unknown, value: TItem): ExtensionMethods_Microsoft_Extensions_Caching_Memory<boolean>;
-  set_<TItem>(key: unknown, value: TItem): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
-  set_<TItem>(key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
-  set_<TItem>(key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
-  set_<TItem>(key: unknown, value: TItem, expirationToken: Microsoft_Extensions_Primitives.IChangeToken): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
-  set_<TItem>(key: unknown, value: TItem, options: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
+  set<TItem>(key: unknown, value: TItem): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
+  set<TItem>(key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
+  set<TItem>(key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
+  set<TItem>(key: unknown, value: TItem, expirationToken: Microsoft_Extensions_Primitives.IChangeToken): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
+  set<TItem>(key: unknown, value: TItem, options: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem>;
   getOrCreate<TItem>(key: unknown, factory: Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, TItem>): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem | undefined>;
   getOrCreate<TItem>(key: unknown, factory: Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, TItem>, createOptions: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions): ExtensionMethods_Microsoft_Extensions_Caching_Memory<TItem | undefined>;
   getOrCreateAsync<TItem>(key: unknown, factory: Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, Task_1<TItem>>): ExtensionMethods_Microsoft_Extensions_Caching_Memory<Task_1<TItem | undefined>>;
@@ -102,17 +102,17 @@ export interface __Ext_Microsoft_Extensions_Configuration_IConfiguration {
   asEnumerable(): ExtensionMethods_Microsoft_Extensions_Configuration<IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>>;
   asEnumerable(makePathsRelative: boolean): ExtensionMethods_Microsoft_Extensions_Configuration<IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>>;
   getRequiredSection(key: string): ExtensionMethods_Microsoft_Extensions_Configuration<Microsoft_Extensions_Configuration.IConfigurationSection>;
-  get_<T>(): ExtensionMethods_Microsoft_Extensions_Configuration<T | undefined>;
-  get_<T>(configureOptions: Action_1<Microsoft_Extensions_Configuration.BinderOptions>): ExtensionMethods_Microsoft_Extensions_Configuration<T | undefined>;
-  get_(type_: Type): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
-  get_(type_: Type, configureOptions: Action_1<Microsoft_Extensions_Configuration.BinderOptions>): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
+  get<T>(): ExtensionMethods_Microsoft_Extensions_Configuration<T | undefined>;
+  get<T>(configureOptions: Action_1<Microsoft_Extensions_Configuration.BinderOptions>): ExtensionMethods_Microsoft_Extensions_Configuration<T | undefined>;
+  get(type: Type): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
+  get(type: Type, configureOptions: Action_1<Microsoft_Extensions_Configuration.BinderOptions>): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
   bind(key: string, instance: unknown): ExtensionMethods_Microsoft_Extensions_Configuration<void>;
   bind(instance: unknown): ExtensionMethods_Microsoft_Extensions_Configuration<void>;
   bind(instance: unknown, configureOptions: Action_1<Microsoft_Extensions_Configuration.BinderOptions>): ExtensionMethods_Microsoft_Extensions_Configuration<void>;
   getValue<T>(key: string): ExtensionMethods_Microsoft_Extensions_Configuration<T | undefined>;
   getValue<T>(key: string, defaultValue: T): ExtensionMethods_Microsoft_Extensions_Configuration<T | undefined>;
-  getValue(type_: Type, key: string): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
-  getValue(type_: Type, key: string, defaultValue: unknown): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
+  getValue(type: Type, key: string): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
+  getValue(type: Type, key: string, defaultValue: unknown): ExtensionMethods_Microsoft_Extensions_Configuration<unknown | undefined>;
 }
 
 export interface __Ext_Microsoft_Extensions_Configuration_IConfigurationBuilder {
@@ -483,7 +483,7 @@ export interface __Ext_Microsoft_Extensions_Logging_ILogger {
 
 export interface __Ext_Microsoft_Extensions_Logging_ILoggerFactory {
   createLogger<T>(): ExtensionMethods_Microsoft_Extensions_Logging<Microsoft_Extensions_Logging.ILogger_1<T>>;
-  createLogger(type_: Type): ExtensionMethods_Microsoft_Extensions_Logging<Microsoft_Extensions_Logging.ILogger>;
+  createLogger(type: Type): ExtensionMethods_Microsoft_Extensions_Logging<Microsoft_Extensions_Logging.ILogger>;
   addConsole(configuration: Microsoft_Extensions_Configuration.IConfiguration): ExtensionMethods_Microsoft_Extensions_Logging<Microsoft_Extensions_Logging.ILoggerFactory>;
   addConsole(settings: Microsoft_Extensions_Logging_Console.IConsoleLoggerSettings): ExtensionMethods_Microsoft_Extensions_Logging<Microsoft_Extensions_Logging.ILoggerFactory>;
   addConsole(minLevel: Microsoft_Extensions_Logging.LogLevel, includeScopes: boolean): ExtensionMethods_Microsoft_Extensions_Logging<Microsoft_Extensions_Logging.ILoggerFactory>;

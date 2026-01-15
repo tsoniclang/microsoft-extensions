@@ -143,7 +143,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Ini:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -282,7 +282,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {
@@ -669,7 +669,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Ini:Microsoft.Extensions.Configuration.Ini.IniStreamConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -818,7 +818,7 @@
           }
         },
         {
-          "tsName": "set_",
+          "tsName": "set",
           "isStatic": false,
           "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
           "target": {

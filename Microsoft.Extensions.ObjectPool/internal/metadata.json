@@ -34,7 +34,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -100,7 +100,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|():T|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -116,7 +116,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -263,7 +263,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -336,7 +336,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|():T|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -352,7 +352,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -462,7 +462,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|():T|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -478,7 +478,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Void|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -576,7 +576,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -659,7 +659,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Return(System.Text.StringBuilder):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_2",
+          "tsEmitName": "return2",
           "normalizedSignature": "Return|(System.Text.StringBuilder):System.Boolean|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -725,7 +725,7 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return_",
+          "tsEmitName": "return",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",

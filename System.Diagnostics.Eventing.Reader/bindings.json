@@ -420,7 +420,7 @@
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.SessionAuthentication::DefaultSystem.Diagnostics.Eventing.Reader.SessionAuthentication",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "metadataToken": 67108894,
           "normalizedSignature": "Default|System.Diagnostics.Eventing.Reader.SessionAuthentication|static=true|const=true",
           "isStatic": true,
@@ -476,7 +476,7 @@
           }
         },
         {
-          "tsName": "default_",
+          "tsName": "default",
           "isStatic": true,
           "tsSignatureId": "Default|System.Diagnostics.Eventing.Reader.SessionAuthentication|static=true|const=true",
           "target": {

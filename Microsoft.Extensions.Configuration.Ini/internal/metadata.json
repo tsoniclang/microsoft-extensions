@@ -173,7 +173,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Ini:Microsoft.Extensions.Configuration.Ini.IniConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",
@@ -461,7 +461,7 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Ini:Microsoft.Extensions.Configuration.Ini.IniStreamConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set_",
+          "tsEmitName": "set",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "provenance": "BaseOverload",
           "emitScope": "ClassSurface",

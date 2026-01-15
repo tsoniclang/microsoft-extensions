@@ -21,7 +21,7 @@ import type { AsnEncodedData, AsymmetricAlgorithm, CompositeMLDsa, CspParameters
 import type { X509Certificate2, X509Certificate2Collection, X509ExtensionCollection, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
 
 export enum Pkcs12ConfidentialityMode {
-    unknown_ = 0,
+    unknown = 0,
     none = 1,
     password = 2,
     publicKey = 3
@@ -29,7 +29,7 @@ export enum Pkcs12ConfidentialityMode {
 
 
 export enum Pkcs12IntegrityMode {
-    unknown_ = 0,
+    unknown = 0,
     none = 1,
     password = 2,
     publicKey = 3
@@ -37,14 +37,14 @@ export enum Pkcs12IntegrityMode {
 
 
 export enum RecipientInfoType {
-    unknown_ = 0,
+    unknown = 0,
     keyTransport = 1,
     keyAgreement = 2
 }
 
 
 export enum SubjectIdentifierOrKeyType {
-    unknown_ = 0,
+    unknown = 0,
     issuerAndSerialNumber = 1,
     subjectKeyIdentifier = 2,
     publicKeyInfo = 3
@@ -52,7 +52,7 @@ export enum SubjectIdentifierOrKeyType {
 
 
 export enum SubjectIdentifierType {
-    unknown_ = 0,
+    unknown = 0,
     issuerAndSerialNumber = 1,
     subjectKeyIdentifier = 2,
     noSignature = 3
@@ -525,7 +525,7 @@ export interface RecipientInfo$instance {
     readonly encryptedKey: byte[];
     readonly keyEncryptionAlgorithm: AlgorithmIdentifier;
     readonly recipientIdentifier: SubjectIdentifier;
-    readonly type_: RecipientInfoType;
+    readonly type: RecipientInfoType;
     readonly version: int;
 }
 
@@ -735,7 +735,7 @@ export const SignerInfoEnumerator: {
 export type SignerInfoEnumerator = SignerInfoEnumerator$instance;
 
 export interface SubjectIdentifier$instance {
-    readonly type_: SubjectIdentifierType;
+    readonly type: SubjectIdentifierType;
     readonly value: unknown;
     matchesCertificate(certificate: X509Certificate2): boolean;
 }
@@ -749,7 +749,7 @@ export const SubjectIdentifier: {
 export type SubjectIdentifier = SubjectIdentifier$instance;
 
 export interface SubjectIdentifierOrKey$instance {
-    readonly type_: SubjectIdentifierOrKeyType;
+    readonly type: SubjectIdentifierOrKeyType;
     readonly value: unknown;
 }
 

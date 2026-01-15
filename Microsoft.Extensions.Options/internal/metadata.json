@@ -216,7 +216,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsMonitor\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -362,7 +362,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsSnapshot\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2496,7 +2496,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.OptionsManager\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",
@@ -2584,7 +2584,7 @@
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.OptionsMonitor\u00601::Get(System.String):TOptions",
           "clrName": "Get",
-          "tsEmitName": "get_",
+          "tsEmitName": "get",
           "normalizedSignature": "Get|(System.String):TOptions|static=false",
           "provenance": "Original",
           "emitScope": "ClassSurface",

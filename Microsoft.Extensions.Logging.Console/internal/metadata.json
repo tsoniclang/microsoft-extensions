@@ -29,7 +29,7 @@
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat::DefaultMicrosoft.Extensions.Logging.Console.ConsoleLoggerFormat",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -117,7 +117,7 @@
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.LoggerColorBehavior::DefaultMicrosoft.Extensions.Logging.Console.LoggerColorBehavior",
           "clrName": "Default",
-          "tsEmitName": "default_",
+          "tsEmitName": "default",
           "normalizedSignature": "Default|Microsoft.Extensions.Logging.Console.LoggerColorBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,

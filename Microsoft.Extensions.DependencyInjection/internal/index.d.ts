@@ -334,7 +334,7 @@ export abstract class ActivatorUtilities$instance {
     static createFactory<T>(argumentTypes: Type[]): ObjectFactory_1<T>;
     static createInstance<T>(provider: IServiceProvider, ...parameters: unknown[]): T;
     static createInstance(provider: IServiceProvider, instanceType: Type, ...parameters: unknown[]): unknown;
-    static getServiceOrCreateInstance(provider: IServiceProvider, type_: Type): unknown;
+    static getServiceOrCreateInstance(provider: IServiceProvider, type: Type): unknown;
     static getServiceOrCreateInstance<T>(provider: IServiceProvider): T;
 }
 

@@ -205,17 +205,17 @@ export abstract class CacheEntryExtensions$instance {
 export type CacheEntryExtensions = CacheEntryExtensions$instance;
 
 export abstract class CacheExtensions$instance {
-    static get_(cache: IMemoryCache, key: unknown): unknown | undefined;
-    static get_<TItem>(cache: IMemoryCache, key: unknown): TItem | undefined;
+    static get(cache: IMemoryCache, key: unknown): unknown | undefined;
+    static get<TItem>(cache: IMemoryCache, key: unknown): TItem | undefined;
     static getOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions): TItem | undefined;
     static getOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>): TItem | undefined;
     static getOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>, createOptions: MemoryCacheEntryOptions): Task<TItem | undefined>;
     static getOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>): Task<TItem | undefined>;
-    static set_<TItem>(cache: IMemoryCache, key: unknown, value: TItem, options: MemoryCacheEntryOptions): TItem;
-    static set_<TItem>(cache: IMemoryCache, key: unknown, value: TItem, expirationToken: IChangeToken): TItem;
-    static set_<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): TItem;
-    static set_<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): TItem;
-    static set_<TItem>(cache: IMemoryCache, key: unknown, value: TItem): TItem;
+    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, options: MemoryCacheEntryOptions): TItem;
+    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, expirationToken: IChangeToken): TItem;
+    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): TItem;
+    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): TItem;
+    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem): TItem;
     static tryGetValue<TItem>(cache: IMemoryCache, key: unknown, value: TItem): boolean;
 }
 

@@ -1059,7 +1059,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -1357,7 +1357,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -1645,7 +1645,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876101,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -1788,7 +1788,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -4397,7 +4397,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876136,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -4477,7 +4477,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {
@@ -5110,7 +5110,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::Type:System.String",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876144,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
@@ -5252,7 +5252,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.String|static=false|accessor=getset",
           "target": {

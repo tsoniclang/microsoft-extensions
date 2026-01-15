@@ -24,7 +24,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode::UnknownSystem.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109497,
           "normalizedSignature": "Unknown|System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode|static=true|const=true",
           "isStatic": true,
@@ -80,7 +80,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode|static=true|const=true",
           "target": {
@@ -144,7 +144,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode::UnknownSystem.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109506,
           "normalizedSignature": "Unknown|System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode|static=true|const=true",
           "isStatic": true,
@@ -200,7 +200,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode|static=true|const=true",
           "target": {
@@ -264,7 +264,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.RecipientInfoType::UnknownSystem.Security.Cryptography.Pkcs.RecipientInfoType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109429,
           "normalizedSignature": "Unknown|System.Security.Cryptography.Pkcs.RecipientInfoType|static=true|const=true",
           "isStatic": true,
@@ -309,7 +309,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|System.Security.Cryptography.Pkcs.RecipientInfoType|static=true|const=true",
           "target": {
@@ -363,7 +363,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType::UnknownSystem.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109439,
           "normalizedSignature": "Unknown|System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType|static=true|const=true",
           "isStatic": true,
@@ -419,7 +419,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType|static=true|const=true",
           "target": {
@@ -483,7 +483,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SubjectIdentifierType::UnknownSystem.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "clrName": "Unknown",
-          "tsEmitName": "unknown_",
+          "tsEmitName": "unknown",
           "metadataToken": 67109444,
           "normalizedSignature": "Unknown|System.Security.Cryptography.Pkcs.SubjectIdentifierType|static=true|const=true",
           "isStatic": true,
@@ -539,7 +539,7 @@
           }
         },
         {
-          "tsName": "unknown_",
+          "tsName": "unknown",
           "isStatic": true,
           "tsSignatureId": "Unknown|System.Security.Cryptography.Pkcs.SubjectIdentifierType|static=true|const=true",
           "target": {
@@ -2500,7 +2500,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Security.Cryptography.Pkcs.RecipientInfoType|static=false|accessor=get",
           "target": {
@@ -2621,7 +2621,7 @@
           }
         },
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Security.Cryptography.Pkcs.RecipientInfoType|static=false|accessor=get",
           "target": {
@@ -5644,7 +5644,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.RecipientInfo::Type:System.Security.Cryptography.Pkcs.RecipientInfoType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876159,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.RecipientInfoType",
           "normalizedSignature": "Type|:System.Security.Cryptography.Pkcs.RecipientInfoType|static=false|accessor=get",
@@ -5717,7 +5717,7 @@
       "constructors": [],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Security.Cryptography.Pkcs.RecipientInfoType|static=false|accessor=get",
           "target": {
@@ -8423,7 +8423,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SubjectIdentifier::Type:System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876171,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "normalizedSignature": "Type|:System.Security.Cryptography.Pkcs.SubjectIdentifierType|static=false|accessor=get",
@@ -8466,7 +8466,7 @@
       ],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Security.Cryptography.Pkcs.SubjectIdentifierType|static=false|accessor=get",
           "target": {
@@ -8498,7 +8498,7 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey::Type:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "clrName": "Type",
-          "tsEmitName": "type_",
+          "tsEmitName": "type",
           "metadataToken": 385876173,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "normalizedSignature": "Type|:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType|static=false|accessor=get",
@@ -8529,7 +8529,7 @@
       "constructors": [],
       "exposedProperties": [
         {
-          "tsName": "type_",
+          "tsName": "type",
           "isStatic": false,
           "tsSignatureId": "Type|:System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType|static=false|accessor=get",
           "target": {

@@ -83,10 +83,10 @@ export interface EventLog$instance extends Component {
     modifyOverflowPolicy(action: OverflowAction, retentionDays: int): void;
     registerDisplayName(resourceFile: string, resourceId: long): void;
     writeEntry(message: string): void;
-    writeEntry(message: string, type_: EventLogEntryType): void;
-    writeEntry(message: string, type_: EventLogEntryType, eventID: int): void;
-    writeEntry(message: string, type_: EventLogEntryType, eventID: int, category: short): void;
-    writeEntry(message: string, type_: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
+    writeEntry(message: string, type: EventLogEntryType): void;
+    writeEntry(message: string, type: EventLogEntryType, eventID: int): void;
+    writeEntry(message: string, type: EventLogEntryType, eventID: int, category: short): void;
+    writeEntry(message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
     writeEvent(instance: EventInstance, data: byte[], ...values: unknown[]): void;
     writeEvent(instance: EventInstance, ...values: unknown[]): void;
 }
@@ -100,8 +100,8 @@ export const EventLog: {
     createEventSource(sourceData: EventSourceCreationData): void;
     createEventSource(source: string, logName: string, machineName: string): void;
     createEventSource(source: string, logName: string): void;
-    delete_(logName: string, machineName: string): void;
-    delete_(logName: string): void;
+    delete(logName: string, machineName: string): void;
+    delete(logName: string): void;
     deleteEventSource(source: string, machineName: string): void;
     deleteEventSource(source: string): void;
     exists(logName: string, machineName: string): boolean;
@@ -111,10 +111,10 @@ export const EventLog: {
     logNameFromSourceName(source: string, machineName: string): string;
     sourceExists(source: string, machineName: string): boolean;
     sourceExists(source: string): boolean;
-    writeEntry(source: string, message: string, type_: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
-    writeEntry(source: string, message: string, type_: EventLogEntryType, eventID: int, category: short): void;
-    writeEntry(source: string, message: string, type_: EventLogEntryType, eventID: int): void;
-    writeEntry(source: string, message: string, type_: EventLogEntryType): void;
+    writeEntry(source: string, message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
+    writeEntry(source: string, message: string, type: EventLogEntryType, eventID: int, category: short): void;
+    writeEntry(source: string, message: string, type: EventLogEntryType, eventID: int): void;
+    writeEntry(source: string, message: string, type: EventLogEntryType): void;
     writeEntry(source: string, message: string): void;
     writeEvent(source: string, instance: EventInstance, data: byte[], ...values: unknown[]): void;
     writeEvent(source: string, instance: EventInstance, ...values: unknown[]): void;

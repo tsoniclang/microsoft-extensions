@@ -371,7 +371,7 @@ export abstract class LoggerExtensions$instance {
 export type LoggerExtensions = LoggerExtensions$instance;
 
 export abstract class LoggerFactoryExtensions$instance {
-    static createLogger(factory: ILoggerFactory, type_: Type): ILogger;
+    static createLogger(factory: ILoggerFactory, type: Type): ILogger;
     static createLogger<T>(factory: ILoggerFactory): ILogger_1<T>;
 }
 

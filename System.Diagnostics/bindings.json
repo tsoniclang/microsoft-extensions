@@ -652,7 +652,7 @@
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Delete(System.String):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100663395,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Delete|(System.String):System.Void|static=true",
@@ -666,7 +666,7 @@
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Delete(System.String,System.String):System.Void",
           "clrName": "Delete",
-          "tsEmitName": "delete_",
+          "tsEmitName": "delete",
           "metadataToken": 100663396,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Delete|(System.String,System.String):System.Void|static=true",
@@ -1301,7 +1301,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|(System.String):System.Void|static=true",
           "target": {
@@ -1311,7 +1311,7 @@
           }
         },
         {
-          "tsName": "delete_",
+          "tsName": "delete",
           "isStatic": true,
           "tsSignatureId": "Delete|(System.String,System.String):System.Void|static=true",
           "target": {
