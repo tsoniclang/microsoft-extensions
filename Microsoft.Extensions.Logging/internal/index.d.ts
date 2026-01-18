@@ -17,49 +17,49 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Attribute, Boolean as ClrBoolean, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IEquatable, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export enum ActivityTrackingOptions {
-    none = 0,
-    spanId = 1,
-    traceId = 2,
-    parentId = 4,
-    traceState = 8,
-    traceFlags = 16,
-    tags = 32,
-    baggage = 64
+    None = 0,
+    SpanId = 1,
+    TraceId = 2,
+    ParentId = 4,
+    TraceState = 8,
+    TraceFlags = 16,
+    Tags = 32,
+    Baggage = 64
 }
 
 
 export enum LogLevel {
-    trace = 0,
-    debug = 1,
-    information = 2,
-    warning = 3,
-    error = 4,
-    critical = 5,
-    none = 6
+    Trace = 0,
+    Debug = 1,
+    Information = 2,
+    Warning = 3,
+    Error = 4,
+    Critical = 5,
+    None = 6
 }
 
 
 export interface IExternalScopeProvider$instance {
-    forEachScope<TState>(callback: Action<unknown, TState>, state: TState): void;
-    push(state: unknown): IDisposable;
+    ForEachScope<TState>(callback: Action<unknown, TState>, state: TState): void;
+    Push(state: unknown): IDisposable;
 }
 
 
 export type IExternalScopeProvider = IExternalScopeProvider$instance;
 
 export interface ILogger$instance {
-    beginScope<TState>(state: TState): IDisposable;
-    isEnabled(logLevel: LogLevel): boolean;
-    log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
+    BeginScope<TState>(state: TState): IDisposable;
+    IsEnabled(logLevel: LogLevel): boolean;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
 }
 
 
 export type ILogger = ILogger$instance;
 
 export interface ILogger_1$instance<TCategoryName> extends ILogger {
-    beginScope<TState>(state: TState): IDisposable;
-    isEnabled(logLevel: LogLevel): boolean;
-    log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
+    BeginScope<TState>(state: TState): IDisposable;
+    IsEnabled(logLevel: LogLevel): boolean;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
 }
 
 
@@ -68,41 +68,41 @@ export interface ILogger_1$instance<TCategoryName> extends ILogger$instance {}
 export type ILogger_1<TCategoryName> = ILogger_1$instance<TCategoryName>;
 
 export interface ILoggerFactory$instance extends IDisposable {
-    addProvider(provider: ILoggerProvider): void;
-    createLogger(categoryName: string): ILogger;
+    AddProvider(provider: ILoggerProvider): void;
+    CreateLogger(categoryName: string): ILogger;
 }
 
 
 export type ILoggerFactory = ILoggerFactory$instance;
 
 export interface ILoggerProvider$instance extends IDisposable {
-    createLogger(categoryName: string): ILogger;
+    CreateLogger(categoryName: string): ILogger;
 }
 
 
 export type ILoggerProvider = ILoggerProvider$instance;
 
 export interface ILoggingBuilder$instance {
-    readonly services: IServiceCollection;
+    readonly Services: IServiceCollection;
 }
 
 
 export type ILoggingBuilder = ILoggingBuilder$instance;
 
 export interface ISupportExternalScope$instance {
-    setScopeProvider(scopeProvider: IExternalScopeProvider): void;
+    SetScopeProvider(scopeProvider: IExternalScopeProvider): void;
 }
 
 
 export type ISupportExternalScope = ISupportExternalScope$instance;
 
 export interface EventId$instance {
-    readonly id: int;
-    readonly name: string;
-    equals(other: EventId): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    toString(): string;
+    readonly Id: int;
+    readonly Name: string;
+    Equals(other: EventId): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    ToString(): string;
 }
 
 
@@ -114,7 +114,7 @@ export const EventId: {
 export type EventId = EventId$instance;
 
 export interface LogDefineOptions$instance {
-    skipEnabledCheck: boolean;
+    SkipEnabledCheck: boolean;
 }
 
 
@@ -144,8 +144,8 @@ export type Logger_1<T> = Logger_1$instance<T> & __Logger_1$views<T>;
 
 
 export interface LoggerExternalScopeProvider$instance {
-    forEachScope<TState>(callback: Action<unknown, TState>, state: TState): void;
-    push(state: unknown): IDisposable;
+    ForEachScope<TState>(callback: Action<unknown, TState>, state: TState): void;
+    Push(state: unknown): IDisposable;
 }
 
 
@@ -164,9 +164,9 @@ export type LoggerExternalScopeProvider = LoggerExternalScopeProvider$instance &
 
 
 export interface LoggerFactory$instance {
-    addProvider(provider: ILoggerProvider): void;
-    createLogger(categoryName: string): ILogger;
-    dispose(): void;
+    AddProvider(provider: ILoggerProvider): void;
+    CreateLogger(categoryName: string): ILogger;
+    Dispose(): void;
 }
 
 
@@ -177,7 +177,7 @@ export const LoggerFactory: {
     new(providers: IEnumerable<ILoggerProvider>, filterOption: IOptionsMonitor_1<LoggerFilterOptions>): LoggerFactory;
     new(providers: IEnumerable<ILoggerProvider>, filterOption: IOptionsMonitor_1<LoggerFilterOptions>, options: IOptions_1<LoggerFactoryOptions>): LoggerFactory;
     new(providers: IEnumerable<ILoggerProvider>, filterOption: IOptionsMonitor_1<LoggerFilterOptions>, options: IOptions_1<LoggerFactoryOptions>, scopeProvider: IExternalScopeProvider): LoggerFactory;
-    create(configure: Action<ILoggingBuilder>): ILoggerFactory;
+    Create(configure: Action<ILoggingBuilder>): ILoggerFactory;
 };
 
 
@@ -191,7 +191,7 @@ export type LoggerFactory = LoggerFactory$instance & __LoggerFactory$views;
 
 
 export interface LoggerFactoryOptions$instance {
-    activityTrackingOptions: ActivityTrackingOptions;
+    ActivityTrackingOptions: ActivityTrackingOptions;
 }
 
 
@@ -203,9 +203,9 @@ export const LoggerFactoryOptions: {
 export type LoggerFactoryOptions = LoggerFactoryOptions$instance;
 
 export interface LoggerFilterOptions$instance {
-    captureScopes: boolean;
-    minLevel: LogLevel;
-    readonly rules: IList<LoggerFilterRule>;
+    CaptureScopes: boolean;
+    MinLevel: LogLevel;
+    readonly Rules: IList<LoggerFilterRule>;
 }
 
 
@@ -217,11 +217,11 @@ export const LoggerFilterOptions: {
 export type LoggerFilterOptions = LoggerFilterOptions$instance;
 
 export interface LoggerFilterRule$instance {
-    readonly categoryName: string | undefined;
-    readonly filter: Func<string | undefined, string | undefined, LogLevel, System_Internal.Boolean> | undefined;
-    readonly logLevel: Nullable<LogLevel>;
-    readonly providerName: string | undefined;
-    toString(): string;
+    readonly CategoryName: string | undefined;
+    readonly Filter: Func<string | undefined, string | undefined, LogLevel, System_Internal.Boolean> | undefined;
+    readonly LogLevel: Nullable<LogLevel>;
+    readonly ProviderName: string | undefined;
+    ToString(): string;
 }
 
 
@@ -233,12 +233,12 @@ export const LoggerFilterRule: {
 export type LoggerFilterRule = LoggerFilterRule$instance;
 
 export interface LoggerMessageAttribute$instance extends Attribute {
-    eventId: int;
-    get eventName(): string | undefined;
-    set eventName(value: string);
-    level: LogLevel;
-    message: string;
-    skipEnabledCheck: boolean;
+    EventId: int;
+    get EventName(): string | undefined;
+    set EventName(value: string);
+    Level: LogLevel;
+    Message: string;
+    SkipEnabledCheck: boolean;
 }
 
 
@@ -254,7 +254,7 @@ export const LoggerMessageAttribute: {
 export type LoggerMessageAttribute = LoggerMessageAttribute$instance;
 
 export interface ProviderAliasAttribute$instance extends Attribute {
-    readonly alias: string;
+    readonly Alias: string;
 }
 
 
@@ -266,171 +266,171 @@ export const ProviderAliasAttribute: {
 export type ProviderAliasAttribute = ProviderAliasAttribute$instance;
 
 export abstract class ConsoleLoggerExtensions$instance {
-    static addConsole(factory: ILoggerFactory, configuration: IConfiguration): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory, settings: IConsoleLoggerSettings): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory, minLevel: LogLevel, includeScopes: boolean): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory, minLevel: LogLevel): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory, includeScopes: boolean): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory, filter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>, includeScopes: boolean): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory, filter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggerFactory;
-    static addConsole(factory: ILoggerFactory): ILoggerFactory;
-    static addConsole(builder: ILoggingBuilder, configure: Action<ConsoleLoggerOptions>): ILoggingBuilder;
-    static addConsole(builder: ILoggingBuilder): ILoggingBuilder;
-    static addConsoleFormatter<TFormatter extends ConsoleFormatter, TOptions extends ConsoleFormatterOptions>(builder: ILoggingBuilder, configure: Action<TOptions>): ILoggingBuilder;
-    static addConsoleFormatter<TFormatter extends ConsoleFormatter, TOptions extends ConsoleFormatterOptions>(builder: ILoggingBuilder): ILoggingBuilder;
-    static addJsonConsole(builder: ILoggingBuilder, configure: Action<JsonConsoleFormatterOptions>): ILoggingBuilder;
-    static addJsonConsole(builder: ILoggingBuilder): ILoggingBuilder;
-    static addSimpleConsole(builder: ILoggingBuilder, configure: Action<SimpleConsoleFormatterOptions>): ILoggingBuilder;
-    static addSimpleConsole(builder: ILoggingBuilder): ILoggingBuilder;
-    static addSystemdConsole(builder: ILoggingBuilder, configure: Action<ConsoleFormatterOptions>): ILoggingBuilder;
-    static addSystemdConsole(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddConsole(factory: ILoggerFactory, configuration: IConfiguration): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory, settings: IConsoleLoggerSettings): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory, minLevel: LogLevel, includeScopes: boolean): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory, minLevel: LogLevel): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory, includeScopes: boolean): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory, filter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>, includeScopes: boolean): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory, filter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggerFactory;
+    static AddConsole(factory: ILoggerFactory): ILoggerFactory;
+    static AddConsole(builder: ILoggingBuilder, configure: Action<ConsoleLoggerOptions>): ILoggingBuilder;
+    static AddConsole(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddConsoleFormatter<TFormatter extends ConsoleFormatter, TOptions extends ConsoleFormatterOptions>(builder: ILoggingBuilder, configure: Action<TOptions>): ILoggingBuilder;
+    static AddConsoleFormatter<TFormatter extends ConsoleFormatter, TOptions extends ConsoleFormatterOptions>(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddJsonConsole(builder: ILoggingBuilder, configure: Action<JsonConsoleFormatterOptions>): ILoggingBuilder;
+    static AddJsonConsole(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddSimpleConsole(builder: ILoggingBuilder, configure: Action<SimpleConsoleFormatterOptions>): ILoggingBuilder;
+    static AddSimpleConsole(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddSystemdConsole(builder: ILoggingBuilder, configure: Action<ConsoleFormatterOptions>): ILoggingBuilder;
+    static AddSystemdConsole(builder: ILoggingBuilder): ILoggingBuilder;
 }
 
 
 export type ConsoleLoggerExtensions = ConsoleLoggerExtensions$instance;
 
 export abstract class DebugLoggerFactoryExtensions$instance {
-    static addDebug(factory: ILoggerFactory, minLevel: LogLevel): ILoggerFactory;
-    static addDebug(factory: ILoggerFactory, filter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggerFactory;
-    static addDebug(factory: ILoggerFactory): ILoggerFactory;
-    static addDebug(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddDebug(factory: ILoggerFactory, minLevel: LogLevel): ILoggerFactory;
+    static AddDebug(factory: ILoggerFactory, filter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggerFactory;
+    static AddDebug(factory: ILoggerFactory): ILoggerFactory;
+    static AddDebug(builder: ILoggingBuilder): ILoggingBuilder;
 }
 
 
 export type DebugLoggerFactoryExtensions = DebugLoggerFactoryExtensions$instance;
 
 export abstract class EventLoggerFactoryExtensions$instance {
-    static addEventLog(factory: ILoggerFactory, settings: EventLogSettings): ILoggerFactory;
-    static addEventLog(factory: ILoggerFactory, minLevel: LogLevel): ILoggerFactory;
-    static addEventLog(factory: ILoggerFactory): ILoggerFactory;
-    static addEventLog(builder: ILoggingBuilder, settings: EventLogSettings): ILoggingBuilder;
-    static addEventLog(builder: ILoggingBuilder, configure: Action<EventLogSettings>): ILoggingBuilder;
-    static addEventLog(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddEventLog(factory: ILoggerFactory, settings: EventLogSettings): ILoggerFactory;
+    static AddEventLog(factory: ILoggerFactory, minLevel: LogLevel): ILoggerFactory;
+    static AddEventLog(factory: ILoggerFactory): ILoggerFactory;
+    static AddEventLog(builder: ILoggingBuilder, settings: EventLogSettings): ILoggingBuilder;
+    static AddEventLog(builder: ILoggingBuilder, configure: Action<EventLogSettings>): ILoggingBuilder;
+    static AddEventLog(builder: ILoggingBuilder): ILoggingBuilder;
 }
 
 
 export type EventLoggerFactoryExtensions = EventLoggerFactoryExtensions$instance;
 
 export abstract class EventSourceLoggerFactoryExtensions$instance {
-    static addEventSourceLogger(factory: ILoggerFactory): ILoggerFactory;
-    static addEventSourceLogger(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddEventSourceLogger(factory: ILoggerFactory): ILoggerFactory;
+    static AddEventSourceLogger(builder: ILoggingBuilder): ILoggingBuilder;
 }
 
 
 export type EventSourceLoggerFactoryExtensions = EventSourceLoggerFactoryExtensions$instance;
 
 export abstract class FilterLoggingBuilderExtensions$instance {
-    static addFilter(builder: ILoggingBuilder, levelFilter: Func<LogLevel, System_Internal.Boolean>): ILoggingBuilder;
-    static addFilter(builder: ILoggingBuilder, categoryLevelFilter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggingBuilder;
-    static addFilter(builder: ILoggingBuilder, filter: Func<System_Internal.String, System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggingBuilder;
-    static addFilter(builder: ILoggingBuilder, category: string, level: LogLevel): ILoggingBuilder;
-    static addFilter(builder: ILoggingBuilder, category: string, levelFilter: Func<LogLevel, System_Internal.Boolean>): ILoggingBuilder;
-    static addFilter(builder: LoggerFilterOptions, levelFilter: Func<LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
-    static addFilter(builder: LoggerFilterOptions, categoryLevelFilter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
-    static addFilter(builder: LoggerFilterOptions, filter: Func<System_Internal.String, System_Internal.String, LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
-    static addFilter(builder: LoggerFilterOptions, category: string, level: LogLevel): LoggerFilterOptions;
-    static addFilter(builder: LoggerFilterOptions, category: string, levelFilter: Func<LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
+    static AddFilter(builder: ILoggingBuilder, levelFilter: Func<LogLevel, System_Internal.Boolean>): ILoggingBuilder;
+    static AddFilter(builder: ILoggingBuilder, categoryLevelFilter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggingBuilder;
+    static AddFilter(builder: ILoggingBuilder, filter: Func<System_Internal.String, System_Internal.String, LogLevel, System_Internal.Boolean>): ILoggingBuilder;
+    static AddFilter(builder: ILoggingBuilder, category: string, level: LogLevel): ILoggingBuilder;
+    static AddFilter(builder: ILoggingBuilder, category: string, levelFilter: Func<LogLevel, System_Internal.Boolean>): ILoggingBuilder;
+    static AddFilter(builder: LoggerFilterOptions, levelFilter: Func<LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
+    static AddFilter(builder: LoggerFilterOptions, categoryLevelFilter: Func<System_Internal.String, LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
+    static AddFilter(builder: LoggerFilterOptions, filter: Func<System_Internal.String, System_Internal.String, LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
+    static AddFilter(builder: LoggerFilterOptions, category: string, level: LogLevel): LoggerFilterOptions;
+    static AddFilter(builder: LoggerFilterOptions, category: string, levelFilter: Func<LogLevel, System_Internal.Boolean>): LoggerFilterOptions;
 }
 
 
 export type FilterLoggingBuilderExtensions = FilterLoggingBuilderExtensions$instance;
 
 export abstract class LoggerExtensions$instance {
-    static beginScope(logger: ILogger, messageFormat: string, ...args: unknown[]): IDisposable | undefined;
-    static log(logger: ILogger, logLevel: LogLevel, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static log(logger: ILogger, logLevel: LogLevel, eventId: EventId, message: string, ...args: unknown[]): void;
-    static log(logger: ILogger, logLevel: LogLevel, exception: Exception, message: string, ...args: unknown[]): void;
-    static log(logger: ILogger, logLevel: LogLevel, message: string, ...args: unknown[]): void;
-    static logCritical(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static logCritical(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
-    static logCritical(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
-    static logCritical(logger: ILogger, message: string, ...args: unknown[]): void;
-    static logDebug(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static logDebug(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
-    static logDebug(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
-    static logDebug(logger: ILogger, message: string, ...args: unknown[]): void;
-    static logError(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static logError(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
-    static logError(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
-    static logError(logger: ILogger, message: string, ...args: unknown[]): void;
-    static logInformation(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static logInformation(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
-    static logInformation(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
-    static logInformation(logger: ILogger, message: string, ...args: unknown[]): void;
-    static logTrace(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static logTrace(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
-    static logTrace(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
-    static logTrace(logger: ILogger, message: string, ...args: unknown[]): void;
-    static logWarning(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
-    static logWarning(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
-    static logWarning(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
-    static logWarning(logger: ILogger, message: string, ...args: unknown[]): void;
+    static BeginScope(logger: ILogger, messageFormat: string, ...args: unknown[]): IDisposable | undefined;
+    static Log(logger: ILogger, logLevel: LogLevel, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static Log(logger: ILogger, logLevel: LogLevel, eventId: EventId, message: string, ...args: unknown[]): void;
+    static Log(logger: ILogger, logLevel: LogLevel, exception: Exception, message: string, ...args: unknown[]): void;
+    static Log(logger: ILogger, logLevel: LogLevel, message: string, ...args: unknown[]): void;
+    static LogCritical(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogCritical(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
+    static LogCritical(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogCritical(logger: ILogger, message: string, ...args: unknown[]): void;
+    static LogDebug(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogDebug(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
+    static LogDebug(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogDebug(logger: ILogger, message: string, ...args: unknown[]): void;
+    static LogError(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogError(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
+    static LogError(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogError(logger: ILogger, message: string, ...args: unknown[]): void;
+    static LogInformation(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogInformation(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
+    static LogInformation(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogInformation(logger: ILogger, message: string, ...args: unknown[]): void;
+    static LogTrace(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogTrace(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
+    static LogTrace(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogTrace(logger: ILogger, message: string, ...args: unknown[]): void;
+    static LogWarning(logger: ILogger, eventId: EventId, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogWarning(logger: ILogger, eventId: EventId, message: string, ...args: unknown[]): void;
+    static LogWarning(logger: ILogger, exception: Exception, message: string, ...args: unknown[]): void;
+    static LogWarning(logger: ILogger, message: string, ...args: unknown[]): void;
 }
 
 
 export type LoggerExtensions = LoggerExtensions$instance;
 
 export abstract class LoggerFactoryExtensions$instance {
-    static createLogger(factory: ILoggerFactory, type: Type): ILogger;
-    static createLogger<T>(factory: ILoggerFactory): ILogger_1<T>;
+    static CreateLogger(factory: ILoggerFactory, type: Type): ILogger;
+    static CreateLogger<T>(factory: ILoggerFactory): ILogger_1<T>;
 }
 
 
 export type LoggerFactoryExtensions = LoggerFactoryExtensions$instance;
 
 export abstract class LoggerMessage$instance {
-    static define<T1>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, Exception | undefined>;
-    static define<T1, T2>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, Exception | undefined>;
-    static define<T1, T2, T3>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, Exception | undefined>;
-    static define<T1, T2, T3, T4>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, T4, Exception | undefined>;
-    static define<T1, T2, T3, T4, T5>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, T4, T5, Exception | undefined>;
-    static define<T1, T2, T3, T4, T5, T6>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, T4, T5, T6, Exception | undefined>;
-    static define(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, Exception | undefined>;
-    static define<T1>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, Exception | undefined>;
-    static define<T1, T2>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, Exception | undefined>;
-    static define<T1, T2, T3>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, Exception | undefined>;
-    static define<T1, T2, T3, T4>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, T4, Exception | undefined>;
-    static define<T1, T2, T3, T4, T5>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, T4, T5, Exception | undefined>;
-    static define<T1, T2, T3, T4, T5, T6>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, T4, T5, T6, Exception | undefined>;
-    static define(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, Exception | undefined>;
-    static defineScope<T1>(formatString: string): Func<ILogger, T1, IDisposable | undefined>;
-    static defineScope<T1, T2>(formatString: string): Func<ILogger, T1, T2, IDisposable | undefined>;
-    static defineScope<T1, T2, T3>(formatString: string): Func<ILogger, T1, T2, T3, IDisposable | undefined>;
-    static defineScope<T1, T2, T3, T4>(formatString: string): Func<ILogger, T1, T2, T3, T4, IDisposable | undefined>;
-    static defineScope<T1, T2, T3, T4, T5>(formatString: string): Func<ILogger, T1, T2, T3, T4, T5, IDisposable | undefined>;
-    static defineScope<T1, T2, T3, T4, T5, T6>(formatString: string): Func<ILogger, T1, T2, T3, T4, T5, T6, IDisposable | undefined>;
-    static defineScope(formatString: string): Func<ILogger, IDisposable | undefined>;
+    static Define<T1>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, Exception | undefined>;
+    static Define<T1, T2>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, Exception | undefined>;
+    static Define<T1, T2, T3>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, Exception | undefined>;
+    static Define<T1, T2, T3, T4>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, T4, Exception | undefined>;
+    static Define<T1, T2, T3, T4, T5>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, T4, T5, Exception | undefined>;
+    static Define<T1, T2, T3, T4, T5, T6>(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, T1, T2, T3, T4, T5, T6, Exception | undefined>;
+    static Define(logLevel: LogLevel, eventId: EventId, formatString: string, options: LogDefineOptions): Action<ILogger, Exception | undefined>;
+    static Define<T1>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, Exception | undefined>;
+    static Define<T1, T2>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, Exception | undefined>;
+    static Define<T1, T2, T3>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, Exception | undefined>;
+    static Define<T1, T2, T3, T4>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, T4, Exception | undefined>;
+    static Define<T1, T2, T3, T4, T5>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, T4, T5, Exception | undefined>;
+    static Define<T1, T2, T3, T4, T5, T6>(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, T1, T2, T3, T4, T5, T6, Exception | undefined>;
+    static Define(logLevel: LogLevel, eventId: EventId, formatString: string): Action<ILogger, Exception | undefined>;
+    static DefineScope<T1>(formatString: string): Func<ILogger, T1, IDisposable | undefined>;
+    static DefineScope<T1, T2>(formatString: string): Func<ILogger, T1, T2, IDisposable | undefined>;
+    static DefineScope<T1, T2, T3>(formatString: string): Func<ILogger, T1, T2, T3, IDisposable | undefined>;
+    static DefineScope<T1, T2, T3, T4>(formatString: string): Func<ILogger, T1, T2, T3, T4, IDisposable | undefined>;
+    static DefineScope<T1, T2, T3, T4, T5>(formatString: string): Func<ILogger, T1, T2, T3, T4, T5, IDisposable | undefined>;
+    static DefineScope<T1, T2, T3, T4, T5, T6>(formatString: string): Func<ILogger, T1, T2, T3, T4, T5, T6, IDisposable | undefined>;
+    static DefineScope(formatString: string): Func<ILogger, IDisposable | undefined>;
 }
 
 
 export type LoggerMessage = LoggerMessage$instance;
 
 export abstract class LoggingBuilderExtensions$instance {
-    static addProvider(builder: ILoggingBuilder, provider: ILoggerProvider): ILoggingBuilder;
-    static clearProviders(builder: ILoggingBuilder): ILoggingBuilder;
-    static configure(builder: ILoggingBuilder, action: Action<LoggerFactoryOptions>): ILoggingBuilder;
-    static setMinimumLevel(builder: ILoggingBuilder, level: LogLevel): ILoggingBuilder;
+    static AddProvider(builder: ILoggingBuilder, provider: ILoggerProvider): ILoggingBuilder;
+    static ClearProviders(builder: ILoggingBuilder): ILoggingBuilder;
+    static Configure(builder: ILoggingBuilder, action: Action<LoggerFactoryOptions>): ILoggingBuilder;
+    static SetMinimumLevel(builder: ILoggingBuilder, level: LogLevel): ILoggingBuilder;
 }
 
 
 export type LoggingBuilderExtensions = LoggingBuilderExtensions$instance;
 
 export abstract class LoggingBuilderExtensions2$instance {
-    static addConfiguration(builder: ILoggingBuilder, configuration: IConfiguration): ILoggingBuilder;
+    static AddConfiguration(builder: ILoggingBuilder, configuration: IConfiguration): ILoggingBuilder;
 }
 
 
 export type LoggingBuilderExtensions2 = LoggingBuilderExtensions2$instance;
 
 export abstract class TraceSourceFactoryExtensions$instance {
-    static addTraceSource(factory: ILoggerFactory, sourceSwitch: SourceSwitch, listener: TraceListener): ILoggerFactory;
-    static addTraceSource(factory: ILoggerFactory, sourceSwitch: SourceSwitch): ILoggerFactory;
-    static addTraceSource(factory: ILoggerFactory, switchName: string, listener: TraceListener): ILoggerFactory;
-    static addTraceSource(factory: ILoggerFactory, switchName: string): ILoggerFactory;
-    static addTraceSource(builder: ILoggingBuilder, sourceSwitch: SourceSwitch, listener: TraceListener): ILoggingBuilder;
-    static addTraceSource(builder: ILoggingBuilder, sourceSwitch: SourceSwitch): ILoggingBuilder;
-    static addTraceSource(builder: ILoggingBuilder, switchName: string, listener: TraceListener): ILoggingBuilder;
-    static addTraceSource(builder: ILoggingBuilder, switchName: string): ILoggingBuilder;
+    static AddTraceSource(factory: ILoggerFactory, sourceSwitch: SourceSwitch, listener: TraceListener): ILoggerFactory;
+    static AddTraceSource(factory: ILoggerFactory, sourceSwitch: SourceSwitch): ILoggerFactory;
+    static AddTraceSource(factory: ILoggerFactory, switchName: string, listener: TraceListener): ILoggerFactory;
+    static AddTraceSource(factory: ILoggerFactory, switchName: string): ILoggerFactory;
+    static AddTraceSource(builder: ILoggingBuilder, sourceSwitch: SourceSwitch, listener: TraceListener): ILoggingBuilder;
+    static AddTraceSource(builder: ILoggingBuilder, sourceSwitch: SourceSwitch): ILoggingBuilder;
+    static AddTraceSource(builder: ILoggingBuilder, switchName: string, listener: TraceListener): ILoggingBuilder;
+    static AddTraceSource(builder: ILoggingBuilder, switchName: string): ILoggingBuilder;
 }
 
 

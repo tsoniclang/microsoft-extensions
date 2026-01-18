@@ -14,7 +14,8 @@ set -e
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 TSBINDGEN_DIR="$PROJECT_DIR/../tsbindgen"
-DOTNET_LIB="$PROJECT_DIR/../dotnet"
+DOTNET_MAJOR="${DOTNET_MAJOR:-10}"
+DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 
 DOTNET_VERSION="${DOTNET_VERSION:-10.0.1}"
 DOTNET_HOME="${DOTNET_HOME:-$HOME/.dotnet}"
@@ -31,7 +32,7 @@ echo "  ASP.NET Runtime:   $ASPNET_RUNTIME_PATH"
 echo "  BCL Library:       $DOTNET_LIB (external reference)"
 echo "  tsbindgen:         $TSBINDGEN_DIR"
 echo "  Output:            $PROJECT_DIR"
-echo "  Naming:            JS (camelCase)"
+echo "  Naming:            CLR (no transforms)"
 echo ""
 
 # Verify prerequisites
@@ -111,8 +112,7 @@ done
 
 dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
     generate "${GEN_ARGS[@]}" -d "$NETCORE_RUNTIME_PATH" -o "$PROJECT_DIR" \
-    --lib "$DOTNET_LIB" \
-    --naming js
+    --lib "$DOTNET_LIB"
 
 echo ""
 echo "================================================================"

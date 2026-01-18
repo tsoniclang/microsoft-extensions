@@ -15,7 +15,7 @@ import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 import type { ResourceManager } from "@tsonic/dotnet/System.Resources.js";
 
 export interface IResourceNamesCache$instance {
-    getOrAdd(name: string, valueFactory: Func<System_Internal.String, IList<System_Internal.String>>): IList<System_Internal.String> | undefined;
+    GetOrAdd(name: string, valueFactory: Func<System_Internal.String, IList<System_Internal.String>>): IList<System_Internal.String> | undefined;
 }
 
 
@@ -24,7 +24,7 @@ export type IResourceNamesCache = IResourceNamesCache$instance;
 export interface IStringLocalizer$instance {
     get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
 }
 
 
@@ -33,7 +33,7 @@ export type IStringLocalizer = IStringLocalizer$instance;
 export interface IStringLocalizer_1$instance<T> extends IStringLocalizer {
     get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
     get_Item(name: string): LocalizedString;
 }
 
@@ -43,15 +43,15 @@ export interface IStringLocalizer_1$instance<T> extends IStringLocalizer$instanc
 export type IStringLocalizer_1<T> = IStringLocalizer_1$instance<T>;
 
 export interface IStringLocalizerFactory$instance {
-    create(baseName: string, location: string): IStringLocalizer;
-    create(resourceSource: Type): IStringLocalizer;
+    Create(baseName: string, location: string): IStringLocalizer;
+    Create(resourceSource: Type): IStringLocalizer;
 }
 
 
 export type IStringLocalizerFactory = IStringLocalizerFactory$instance;
 
 export interface LocalizationOptions$instance {
-    resourcesPath: string;
+    ResourcesPath: string;
 }
 
 
@@ -63,11 +63,11 @@ export const LocalizationOptions: {
 export type LocalizationOptions = LocalizationOptions$instance;
 
 export interface LocalizedString$instance {
-    readonly name: string;
-    readonly resourceNotFound: boolean;
-    readonly searchedLocation: string | undefined;
-    readonly value: string;
-    toString(): string;
+    readonly Name: string;
+    readonly ResourceNotFound: boolean;
+    readonly SearchedLocation: string | undefined;
+    readonly Value: string;
+    ToString(): string;
 }
 
 
@@ -81,7 +81,7 @@ export const LocalizedString: {
 export type LocalizedString = LocalizedString$instance;
 
 export interface ResourceLocationAttribute$instance extends Attribute {
-    readonly resourceLocation: string;
+    readonly ResourceLocation: string;
 }
 
 
@@ -95,7 +95,7 @@ export type ResourceLocationAttribute = ResourceLocationAttribute$instance;
 export interface ResourceManagerStringLocalizer$instance {
     get_Item(name: string): LocalizedString;
     get_Item(name: string, ...arguments: unknown[]): LocalizedString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
 }
 
 
@@ -114,8 +114,8 @@ export type ResourceManagerStringLocalizer = ResourceManagerStringLocalizer$inst
 
 
 export interface ResourceManagerStringLocalizerFactory$instance {
-    create(resourceSource: Type): IStringLocalizer;
-    create(baseName: string, location: string): IStringLocalizer;
+    Create(resourceSource: Type): IStringLocalizer;
+    Create(baseName: string, location: string): IStringLocalizer;
 }
 
 
@@ -134,7 +134,7 @@ export type ResourceManagerStringLocalizerFactory = ResourceManagerStringLocaliz
 
 
 export interface ResourceNamesCache$instance {
-    getOrAdd(name: string, valueFactory: Func<System_Internal.String, IList<System_Internal.String>>): IList<System_Internal.String> | undefined;
+    GetOrAdd(name: string, valueFactory: Func<System_Internal.String, IList<System_Internal.String>>): IList<System_Internal.String> | undefined;
 }
 
 
@@ -153,7 +153,7 @@ export type ResourceNamesCache = ResourceNamesCache$instance & __ResourceNamesCa
 
 
 export interface RootNamespaceAttribute$instance extends Attribute {
-    readonly rootNamespace: string;
+    readonly RootNamespace: string;
 }
 
 
@@ -167,7 +167,7 @@ export type RootNamespaceAttribute = RootNamespaceAttribute$instance;
 export interface StringLocalizer_1$instance<TResourceSource> extends IStringLocalizer_1<TResourceSource> {
     get_Item(name: string): LocalizedString;
     get_Item(name: string, ...arguments: unknown[]): LocalizedString;
-    getAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
+    GetAllStrings(includeParentCultures: boolean): IEnumerable<LocalizedString>;
 }
 
 
@@ -184,9 +184,9 @@ export type StringLocalizer_1<TResourceSource> = StringLocalizer_1$instance<TRes
 
 
 export abstract class StringLocalizerExtensions$instance {
-    static getAllStrings(stringLocalizer: IStringLocalizer): IEnumerable<LocalizedString>;
-    static getString(stringLocalizer: IStringLocalizer, name: string, ...arguments: unknown[]): LocalizedString;
-    static getString(stringLocalizer: IStringLocalizer, name: string): LocalizedString;
+    static GetAllStrings(stringLocalizer: IStringLocalizer): IEnumerable<LocalizedString>;
+    static GetString(stringLocalizer: IStringLocalizer, name: string, ...arguments: unknown[]): LocalizedString;
+    static GetString(stringLocalizer: IStringLocalizer, name: string): LocalizedString;
 }
 
 

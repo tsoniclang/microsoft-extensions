@@ -13,8 +13,8 @@ import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from "@t
 import type { AsnEncodedData, AsnEncodedDataCollection, Oid } from "@tsonic/dotnet/System.Security.Cryptography.js";
 
 export interface CryptographicAttributeObject$instance {
-    readonly oid: Oid;
-    readonly values: AsnEncodedDataCollection;
+    readonly Oid: Oid;
+    readonly Values: AsnEncodedDataCollection;
 }
 
 
@@ -27,15 +27,15 @@ export const CryptographicAttributeObject: {
 export type CryptographicAttributeObject = CryptographicAttributeObject$instance;
 
 export interface CryptographicAttributeObjectCollection$instance {
-    readonly count: int;
-    readonly isSynchronized: boolean;
-    readonly item: CryptographicAttributeObject;
-    readonly syncRoot: unknown;
-    add(asnEncodedData: AsnEncodedData): int;
-    add(attribute: CryptographicAttributeObject): int;
-    copyTo(array: CryptographicAttributeObject[], index: int): void;
-    getEnumerator(): CryptographicAttributeObjectEnumerator;
-    remove(attribute: CryptographicAttributeObject): void;
+    readonly Count: int;
+    readonly IsSynchronized: boolean;
+    readonly Item: CryptographicAttributeObject;
+    readonly SyncRoot: unknown;
+    Add(asnEncodedData: AsnEncodedData): int;
+    Add(attribute: CryptographicAttributeObject): int;
+    CopyTo(array: CryptographicAttributeObject[], index: int): void;
+    GetEnumerator(): CryptographicAttributeObjectEnumerator;
+    Remove(attribute: CryptographicAttributeObject): void;
 }
 
 
@@ -48,9 +48,9 @@ export const CryptographicAttributeObjectCollection: {
 export type CryptographicAttributeObjectCollection = CryptographicAttributeObjectCollection$instance;
 
 export interface CryptographicAttributeObjectEnumerator$instance {
-    readonly current: CryptographicAttributeObject;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: CryptographicAttributeObject;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 

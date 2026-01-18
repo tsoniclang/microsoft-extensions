@@ -22,20 +22,20 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum CacheItemPriority {
-    low = 0,
-    normal = 1,
-    high = 2,
-    neverRemove = 3
+    Low = 0,
+    Normal = 1,
+    High = 2,
+    NeverRemove = 3
 }
 
 
 export enum EvictionReason {
-    none = 0,
-    removed = 1,
-    replaced = 2,
-    expired = 3,
-    tokenExpired = 4,
-    capacity = 5
+    None = 0,
+    Removed = 1,
+    Replaced = 2,
+    Expired = 3,
+    TokenExpired = 4,
+    Capacity = 5
 }
 
 
@@ -43,43 +43,43 @@ export type PostEvictionDelegate = (key: unknown, value: unknown, reason: Evicti
 
 
 export interface ICacheEntry$instance extends IDisposable {
-    readonly key: unknown;
-    get value(): unknown | undefined;
-    set value(value: unknown);
-    absoluteExpiration: Nullable<DateTimeOffset>;
-    absoluteExpirationRelativeToNow: Nullable<TimeSpan>;
-    slidingExpiration: Nullable<TimeSpan>;
-    readonly expirationTokens: IList<IChangeToken>;
-    readonly postEvictionCallbacks: IList<PostEvictionCallbackRegistration>;
-    priority: CacheItemPriority;
-    size: Nullable<System_Internal.Int64>;
+    readonly Key: unknown;
+    get Value(): unknown | undefined;
+    set Value(value: unknown);
+    AbsoluteExpiration: Nullable<DateTimeOffset>;
+    AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
+    SlidingExpiration: Nullable<TimeSpan>;
+    readonly ExpirationTokens: IList<IChangeToken>;
+    readonly PostEvictionCallbacks: IList<PostEvictionCallbackRegistration>;
+    Priority: CacheItemPriority;
+    Size: Nullable<System_Internal.Int64>;
 }
 
 
 export type ICacheEntry = ICacheEntry$instance;
 
 export interface IMemoryCache$instance extends IDisposable {
-    createEntry(key: unknown): ICacheEntry;
-    getCurrentStatistics(): MemoryCacheStatistics | undefined;
-    remove(key: unknown): void;
-    tryGetValue(key: unknown, value: unknown): boolean;
+    CreateEntry(key: unknown): ICacheEntry;
+    GetCurrentStatistics(): MemoryCacheStatistics | undefined;
+    Remove(key: unknown): void;
+    TryGetValue(key: unknown, value: unknown): boolean;
 }
 
 
 export type IMemoryCache = IMemoryCache$instance;
 
 export interface MemoryCache$instance {
-    readonly count: int;
-    readonly keys: IEnumerable<unknown>;
-    clear(): void;
-    compact(percentage: double): void;
-    createEntry(key: unknown): ICacheEntry;
-    dispose(): void;
-    getCurrentStatistics(): MemoryCacheStatistics | undefined;
-    remove(key: unknown): void;
-    tryGetValue(key: unknown, result: unknown): boolean;
-    tryGetValue(key: ReadOnlySpan<System_Internal.Char>, value: unknown): boolean;
-    tryGetValue<TItem>(key: ReadOnlySpan<System_Internal.Char>, value: TItem): boolean;
+    readonly Count: int;
+    readonly Keys: IEnumerable<unknown>;
+    Clear(): void;
+    Compact(percentage: double): void;
+    CreateEntry(key: unknown): ICacheEntry;
+    Dispose(): void;
+    GetCurrentStatistics(): MemoryCacheStatistics | undefined;
+    Remove(key: unknown): void;
+    TryGetValue(key: unknown, result: unknown): boolean;
+    TryGetValue(key: ReadOnlySpan<System_Internal.Char>, value: unknown): boolean;
+    TryGetValue<TItem>(key: ReadOnlySpan<System_Internal.Char>, value: TItem): boolean;
 }
 
 
@@ -97,13 +97,13 @@ export type MemoryCache = MemoryCache$instance & __MemoryCache$views;
 
 
 export interface MemoryCacheEntryOptions$instance {
-    absoluteExpiration: Nullable<DateTimeOffset>;
-    absoluteExpirationRelativeToNow: Nullable<TimeSpan>;
-    readonly expirationTokens: IList<IChangeToken>;
-    readonly postEvictionCallbacks: IList<PostEvictionCallbackRegistration>;
-    priority: CacheItemPriority;
-    size: Nullable<System_Internal.Int64>;
-    slidingExpiration: Nullable<TimeSpan>;
+    AbsoluteExpiration: Nullable<DateTimeOffset>;
+    AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
+    readonly ExpirationTokens: IList<IChangeToken>;
+    readonly PostEvictionCallbacks: IList<PostEvictionCallbackRegistration>;
+    Priority: CacheItemPriority;
+    Size: Nullable<System_Internal.Int64>;
+    SlidingExpiration: Nullable<TimeSpan>;
 }
 
 
@@ -115,14 +115,14 @@ export const MemoryCacheEntryOptions: {
 export type MemoryCacheEntryOptions = MemoryCacheEntryOptions$instance;
 
 export interface MemoryCacheOptions$instance {
-    get clock(): ISystemClock | undefined;
-    set clock(value: ISystemClock);
-    compactionPercentage: double;
-    compactOnMemoryPressure: boolean;
-    expirationScanFrequency: TimeSpan;
-    sizeLimit: Nullable<System_Internal.Int64>;
-    trackLinkedCacheEntries: boolean;
-    trackStatistics: boolean;
+    get Clock(): ISystemClock | undefined;
+    set Clock(value: ISystemClock);
+    CompactionPercentage: double;
+    CompactOnMemoryPressure: boolean;
+    ExpirationScanFrequency: TimeSpan;
+    SizeLimit: Nullable<System_Internal.Int64>;
+    TrackLinkedCacheEntries: boolean;
+    TrackStatistics: boolean;
 }
 
 
@@ -141,10 +141,10 @@ export type MemoryCacheOptions = MemoryCacheOptions$instance & __MemoryCacheOpti
 
 
 export interface MemoryCacheStatistics$instance {
-    currentEntryCount: long;
-    currentEstimatedSize: Nullable<System_Internal.Int64>;
-    totalHits: long;
-    totalMisses: long;
+    CurrentEntryCount: long;
+    CurrentEstimatedSize: Nullable<System_Internal.Int64>;
+    TotalHits: long;
+    TotalMisses: long;
 }
 
 
@@ -174,10 +174,10 @@ export type MemoryDistributedCacheOptions = MemoryDistributedCacheOptions$instan
 
 
 export interface PostEvictionCallbackRegistration$instance {
-    get evictionCallback(): PostEvictionDelegate | undefined;
-    set evictionCallback(value: PostEvictionDelegate);
-    get state(): unknown | undefined;
-    set state(value: unknown);
+    get EvictionCallback(): PostEvictionDelegate | undefined;
+    set EvictionCallback(value: PostEvictionDelegate);
+    get State(): unknown | undefined;
+    set State(value: unknown);
 }
 
 
@@ -189,48 +189,48 @@ export const PostEvictionCallbackRegistration: {
 export type PostEvictionCallbackRegistration = PostEvictionCallbackRegistration$instance;
 
 export abstract class CacheEntryExtensions$instance {
-    static addExpirationToken(entry: ICacheEntry, expirationToken: IChangeToken): ICacheEntry;
-    static registerPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate, state: unknown): ICacheEntry;
-    static registerPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate): ICacheEntry;
-    static setAbsoluteExpiration(entry: ICacheEntry, absolute: DateTimeOffset): ICacheEntry;
-    static setAbsoluteExpiration(entry: ICacheEntry, relative: TimeSpan): ICacheEntry;
-    static setOptions(entry: ICacheEntry, options: MemoryCacheEntryOptions): ICacheEntry;
-    static setPriority(entry: ICacheEntry, priority: CacheItemPriority): ICacheEntry;
-    static setSize(entry: ICacheEntry, size: long): ICacheEntry;
-    static setSlidingExpiration(entry: ICacheEntry, offset: TimeSpan): ICacheEntry;
-    static setValue(entry: ICacheEntry, value: unknown): ICacheEntry;
+    static AddExpirationToken(entry: ICacheEntry, expirationToken: IChangeToken): ICacheEntry;
+    static RegisterPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate, state: unknown): ICacheEntry;
+    static RegisterPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate): ICacheEntry;
+    static SetAbsoluteExpiration(entry: ICacheEntry, absolute: DateTimeOffset): ICacheEntry;
+    static SetAbsoluteExpiration(entry: ICacheEntry, relative: TimeSpan): ICacheEntry;
+    static SetOptions(entry: ICacheEntry, options: MemoryCacheEntryOptions): ICacheEntry;
+    static SetPriority(entry: ICacheEntry, priority: CacheItemPriority): ICacheEntry;
+    static SetSize(entry: ICacheEntry, size: long): ICacheEntry;
+    static SetSlidingExpiration(entry: ICacheEntry, offset: TimeSpan): ICacheEntry;
+    static SetValue(entry: ICacheEntry, value: unknown): ICacheEntry;
 }
 
 
 export type CacheEntryExtensions = CacheEntryExtensions$instance;
 
 export abstract class CacheExtensions$instance {
-    static get(cache: IMemoryCache, key: unknown): unknown | undefined;
-    static get<TItem>(cache: IMemoryCache, key: unknown): TItem | undefined;
-    static getOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions): TItem | undefined;
-    static getOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>): TItem | undefined;
-    static getOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>, createOptions: MemoryCacheEntryOptions): Task<TItem | undefined>;
-    static getOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>): Task<TItem | undefined>;
-    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, options: MemoryCacheEntryOptions): TItem;
-    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, expirationToken: IChangeToken): TItem;
-    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): TItem;
-    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): TItem;
-    static set<TItem>(cache: IMemoryCache, key: unknown, value: TItem): TItem;
-    static tryGetValue<TItem>(cache: IMemoryCache, key: unknown, value: TItem): boolean;
+    static Get(cache: IMemoryCache, key: unknown): unknown | undefined;
+    static Get<TItem>(cache: IMemoryCache, key: unknown): TItem | undefined;
+    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions): TItem | undefined;
+    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>): TItem | undefined;
+    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>, createOptions: MemoryCacheEntryOptions): Task<TItem | undefined>;
+    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>): Task<TItem | undefined>;
+    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, options: MemoryCacheEntryOptions): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, expirationToken: IChangeToken): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem): TItem;
+    static TryGetValue<TItem>(cache: IMemoryCache, key: unknown, value: TItem): boolean;
 }
 
 
 export type CacheExtensions = CacheExtensions$instance;
 
 export abstract class MemoryCacheEntryExtensions$instance {
-    static addExpirationToken(options: MemoryCacheEntryOptions, expirationToken: IChangeToken): MemoryCacheEntryOptions;
-    static registerPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate, state: unknown): MemoryCacheEntryOptions;
-    static registerPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate): MemoryCacheEntryOptions;
-    static setAbsoluteExpiration(options: MemoryCacheEntryOptions, absolute: DateTimeOffset): MemoryCacheEntryOptions;
-    static setAbsoluteExpiration(options: MemoryCacheEntryOptions, relative: TimeSpan): MemoryCacheEntryOptions;
-    static setPriority(options: MemoryCacheEntryOptions, priority: CacheItemPriority): MemoryCacheEntryOptions;
-    static setSize(options: MemoryCacheEntryOptions, size: long): MemoryCacheEntryOptions;
-    static setSlidingExpiration(options: MemoryCacheEntryOptions, offset: TimeSpan): MemoryCacheEntryOptions;
+    static AddExpirationToken(options: MemoryCacheEntryOptions, expirationToken: IChangeToken): MemoryCacheEntryOptions;
+    static RegisterPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate, state: unknown): MemoryCacheEntryOptions;
+    static RegisterPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate): MemoryCacheEntryOptions;
+    static SetAbsoluteExpiration(options: MemoryCacheEntryOptions, absolute: DateTimeOffset): MemoryCacheEntryOptions;
+    static SetAbsoluteExpiration(options: MemoryCacheEntryOptions, relative: TimeSpan): MemoryCacheEntryOptions;
+    static SetPriority(options: MemoryCacheEntryOptions, priority: CacheItemPriority): MemoryCacheEntryOptions;
+    static SetSize(options: MemoryCacheEntryOptions, size: long): MemoryCacheEntryOptions;
+    static SetSlidingExpiration(options: MemoryCacheEntryOptions, offset: TimeSpan): MemoryCacheEntryOptions;
 }
 
 

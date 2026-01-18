@@ -20,12 +20,12 @@ import type { Action, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrOb
 import type { XmlReader, XmlReaderSettings } from "@tsonic/dotnet/System.Xml.js";
 
 export interface XmlConfigurationProvider$instance extends FileConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(stream: Stream): void;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -42,7 +42,7 @@ export type XmlConfigurationProvider = XmlConfigurationProvider$instance & __Xml
 
 
 export interface XmlConfigurationSource$instance extends FileConfigurationSource {
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 
@@ -59,31 +59,31 @@ export type XmlConfigurationSource = XmlConfigurationSource$instance & __XmlConf
 
 
 export interface XmlDocumentDecryptor$instance {
-    createDecryptingXmlReader(input: Stream, settings: XmlReaderSettings): XmlReader;
+    CreateDecryptingXmlReader(input: Stream, settings: XmlReaderSettings): XmlReader;
 }
 
 
 export const XmlDocumentDecryptor: {
     new(): XmlDocumentDecryptor;
-    readonly instance: XmlDocumentDecryptor;
+    readonly Instance: XmlDocumentDecryptor;
 };
 
 
 export type XmlDocumentDecryptor = XmlDocumentDecryptor$instance;
 
 export interface XmlStreamConfigurationProvider$instance extends StreamConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(stream: Stream): void;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
 export const XmlStreamConfigurationProvider: {
     new(source: XmlStreamConfigurationSource): XmlStreamConfigurationProvider;
-    read(stream: Stream, decryptor: XmlDocumentDecryptor): IDictionary<System_Internal.String, string | undefined>;
+    Read(stream: Stream, decryptor: XmlDocumentDecryptor): IDictionary<System_Internal.String, string | undefined>;
 };
 
 
@@ -95,7 +95,7 @@ export type XmlStreamConfigurationProvider = XmlStreamConfigurationProvider$inst
 
 
 export interface XmlStreamConfigurationSource$instance extends StreamConfigurationSource {
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 

@@ -14,8 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface EventSourceLoggerProvider$instance {
-    createLogger(categoryName: string): ILogger;
-    dispose(): void;
+    CreateLogger(categoryName: string): ILogger;
+    Dispose(): void;
 }
 
 
@@ -45,10 +45,10 @@ export const LoggingEventSource: {
 export type LoggingEventSource = LoggingEventSource$instance;
 
 export abstract class LoggingEventSource_Keywords$instance {
-    static readonly meta: EventKeywords;
-    static readonly message: EventKeywords;
-    static readonly formattedMessage: EventKeywords;
-    static readonly jsonMessage: EventKeywords;
+    static readonly Meta: EventKeywords;
+    static readonly Message: EventKeywords;
+    static readonly FormattedMessage: EventKeywords;
+    static readonly JsonMessage: EventKeywords;
 }
 
 

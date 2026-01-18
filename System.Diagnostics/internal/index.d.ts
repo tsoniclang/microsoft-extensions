@@ -18,18 +18,18 @@ import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Ru
 import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 
 export enum EventLogEntryType {
-    error = 1,
-    warning = 2,
-    information = 4,
-    successAudit = 8,
-    failureAudit = 16
+    Error = 1,
+    Warning = 2,
+    Information = 4,
+    SuccessAudit = 8,
+    FailureAudit = 16
 }
 
 
 export enum OverflowAction {
-    doNotOverwrite = -1,
-    overwriteAsNeeded = 0,
-    overwriteOlder = 1
+    DoNotOverwrite = -1,
+    OverwriteAsNeeded = 0,
+    OverwriteOlder = 1
 }
 
 
@@ -37,7 +37,7 @@ export type EntryWrittenEventHandler = (sender: unknown, e: EntryWrittenEventArg
 
 
 export interface EntryWrittenEventArgs$instance extends EventArgs {
-    readonly entry: EventLogEntry;
+    readonly Entry: EventLogEntry;
 }
 
 
@@ -50,9 +50,9 @@ export const EntryWrittenEventArgs: {
 export type EntryWrittenEventArgs = EntryWrittenEventArgs$instance;
 
 export interface EventInstance$instance {
-    categoryId: int;
-    entryType: EventLogEntryType;
-    instanceId: long;
+    CategoryId: int;
+    EntryType: EventLogEntryType;
+    InstanceId: long;
 }
 
 
@@ -65,30 +65,30 @@ export const EventInstance: {
 export type EventInstance = EventInstance$instance;
 
 export interface EventLog$instance extends Component {
-    enableRaisingEvents: boolean;
-    readonly entries: EventLogEntryCollection;
-    log: string;
-    readonly logDisplayName: string;
-    get machineName(): string | undefined;
-    set machineName(value: string);
-    maximumKilobytes: long;
-    readonly minimumRetentionDays: int;
-    readonly overflowAction: OverflowAction;
-    source: string;
-    synchronizingObject: ISynchronizeInvoke;
-    beginInit(): void;
-    clear(): void;
-    close(): void;
-    endInit(): void;
-    modifyOverflowPolicy(action: OverflowAction, retentionDays: int): void;
-    registerDisplayName(resourceFile: string, resourceId: long): void;
-    writeEntry(message: string): void;
-    writeEntry(message: string, type: EventLogEntryType): void;
-    writeEntry(message: string, type: EventLogEntryType, eventID: int): void;
-    writeEntry(message: string, type: EventLogEntryType, eventID: int, category: short): void;
-    writeEntry(message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
-    writeEvent(instance: EventInstance, data: byte[], ...values: unknown[]): void;
-    writeEvent(instance: EventInstance, ...values: unknown[]): void;
+    EnableRaisingEvents: boolean;
+    readonly Entries: EventLogEntryCollection;
+    Log: string;
+    readonly LogDisplayName: string;
+    get MachineName(): string | undefined;
+    set MachineName(value: string);
+    MaximumKilobytes: long;
+    readonly MinimumRetentionDays: int;
+    readonly OverflowAction: OverflowAction;
+    Source: string;
+    SynchronizingObject: ISynchronizeInvoke;
+    BeginInit(): void;
+    Clear(): void;
+    Close(): void;
+    EndInit(): void;
+    ModifyOverflowPolicy(action: OverflowAction, retentionDays: int): void;
+    RegisterDisplayName(resourceFile: string, resourceId: long): void;
+    WriteEntry(message: string): void;
+    WriteEntry(message: string, type: EventLogEntryType): void;
+    WriteEntry(message: string, type: EventLogEntryType, eventID: int): void;
+    WriteEntry(message: string, type: EventLogEntryType, eventID: int, category: short): void;
+    WriteEntry(message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
+    WriteEvent(instance: EventInstance, data: byte[], ...values: unknown[]): void;
+    WriteEvent(instance: EventInstance, ...values: unknown[]): void;
 }
 
 
@@ -97,48 +97,48 @@ export const EventLog: {
     new(logName: string): EventLog;
     new(logName: string, machineName: string): EventLog;
     new(logName: string, machineName: string, source: string): EventLog;
-    createEventSource(sourceData: EventSourceCreationData): void;
-    createEventSource(source: string, logName: string, machineName: string): void;
-    createEventSource(source: string, logName: string): void;
-    delete(logName: string, machineName: string): void;
-    delete(logName: string): void;
-    deleteEventSource(source: string, machineName: string): void;
-    deleteEventSource(source: string): void;
-    exists(logName: string, machineName: string): boolean;
-    exists(logName: string): boolean;
-    getEventLogs(): EventLog[];
-    getEventLogs(machineName: string): EventLog[];
-    logNameFromSourceName(source: string, machineName: string): string;
-    sourceExists(source: string, machineName: string): boolean;
-    sourceExists(source: string): boolean;
-    writeEntry(source: string, message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
-    writeEntry(source: string, message: string, type: EventLogEntryType, eventID: int, category: short): void;
-    writeEntry(source: string, message: string, type: EventLogEntryType, eventID: int): void;
-    writeEntry(source: string, message: string, type: EventLogEntryType): void;
-    writeEntry(source: string, message: string): void;
-    writeEvent(source: string, instance: EventInstance, data: byte[], ...values: unknown[]): void;
-    writeEvent(source: string, instance: EventInstance, ...values: unknown[]): void;
+    CreateEventSource(sourceData: EventSourceCreationData): void;
+    CreateEventSource(source: string, logName: string, machineName: string): void;
+    CreateEventSource(source: string, logName: string): void;
+    Delete(logName: string, machineName: string): void;
+    Delete(logName: string): void;
+    DeleteEventSource(source: string, machineName: string): void;
+    DeleteEventSource(source: string): void;
+    Exists(logName: string, machineName: string): boolean;
+    Exists(logName: string): boolean;
+    GetEventLogs(): EventLog[];
+    GetEventLogs(machineName: string): EventLog[];
+    LogNameFromSourceName(source: string, machineName: string): string;
+    SourceExists(source: string, machineName: string): boolean;
+    SourceExists(source: string): boolean;
+    WriteEntry(source: string, message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
+    WriteEntry(source: string, message: string, type: EventLogEntryType, eventID: int, category: short): void;
+    WriteEntry(source: string, message: string, type: EventLogEntryType, eventID: int): void;
+    WriteEntry(source: string, message: string, type: EventLogEntryType): void;
+    WriteEntry(source: string, message: string): void;
+    WriteEvent(source: string, instance: EventInstance, data: byte[], ...values: unknown[]): void;
+    WriteEvent(source: string, instance: EventInstance, ...values: unknown[]): void;
 };
 
 
 export type EventLog = EventLog$instance;
 
 export interface EventLogEntry$instance extends Component {
-    readonly category: string;
-    readonly categoryNumber: short;
-    readonly data: byte[];
-    readonly entryType: EventLogEntryType;
-    readonly eventID: int;
-    readonly index: int;
-    readonly instanceId: long;
-    readonly machineName: string | undefined;
-    readonly message: string;
-    readonly replacementStrings: string[];
-    readonly source: string;
-    readonly timeGenerated: DateTime;
-    readonly timeWritten: DateTime;
-    readonly userName: string;
-    equals(otherEntry: EventLogEntry): boolean;
+    readonly Category: string;
+    readonly CategoryNumber: short;
+    readonly Data: byte[];
+    readonly EntryType: EventLogEntryType;
+    readonly EventID: int;
+    readonly Index: int;
+    readonly InstanceId: long;
+    readonly MachineName: string | undefined;
+    readonly Message: string;
+    readonly ReplacementStrings: string[];
+    readonly Source: string;
+    readonly TimeGenerated: DateTime;
+    readonly TimeWritten: DateTime;
+    readonly UserName: string;
+    Equals(otherEntry: EventLogEntry): boolean;
 }
 
 
@@ -150,10 +150,10 @@ export const EventLogEntry: {
 export type EventLogEntry = EventLogEntry$instance;
 
 export interface EventLogEntryCollection$instance {
-    readonly count: int;
-    readonly item: EventLogEntry;
-    copyTo(entries: EventLogEntry[], index: int): void;
-    getEnumerator(): IEnumerator;
+    readonly Count: int;
+    readonly Item: EventLogEntry;
+    CopyTo(entries: EventLogEntry[], index: int): void;
+    GetEnumerator(): IEnumerator;
 }
 
 
@@ -165,15 +165,15 @@ export const EventLogEntryCollection: {
 export type EventLogEntryCollection = EventLogEntryCollection$instance;
 
 export interface EventLogTraceListener$instance extends TraceListener {
-    eventLog: EventLog;
-    name: string;
-    close(): void;
-    traceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: unknown): void;
-    traceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: unknown[]): void;
-    traceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, message: string): void;
-    traceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, format: string, ...args: unknown[]): void;
-    write(message: string): void;
-    writeLine(message: string): void;
+    EventLog: EventLog;
+    Name: string;
+    Close(): void;
+    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: unknown): void;
+    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: unknown[]): void;
+    TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, message: string): void;
+    TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, format: string, ...args: unknown[]): void;
+    Write(message: string): void;
+    WriteLine(message: string): void;
 }
 
 
@@ -187,15 +187,15 @@ export const EventLogTraceListener: {
 export type EventLogTraceListener = EventLogTraceListener$instance;
 
 export interface EventSourceCreationData$instance {
-    categoryCount: int;
-    categoryResourceFile: string;
-    get logName(): string | undefined;
-    set logName(value: string);
-    get machineName(): string | undefined;
-    set machineName(value: string);
-    messageResourceFile: string;
-    parameterResourceFile: string;
-    source: string;
+    CategoryCount: int;
+    CategoryResourceFile: string;
+    get LogName(): string | undefined;
+    set LogName(value: string);
+    get MachineName(): string | undefined;
+    set MachineName(value: string);
+    MessageResourceFile: string;
+    ParameterResourceFile: string;
+    Source: string;
 }
 
 

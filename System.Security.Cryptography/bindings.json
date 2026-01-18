@@ -1,39 +1,57 @@
 {
   "namespace": "System.Security.Cryptography",
+  "contributingAssemblies": [
+    "System.Private.CoreLib",
+    "System.Security.Cryptography",
+    "System.Security.Cryptography.Pkcs"
+  ],
   "types": [
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject",
       "clrName": "System.Security.Cryptography.CryptographicAttributeObject",
-      "tsEmitName": "CryptographicAttributeObject",
       "assemblyName": "System.Security.Cryptography.Pkcs",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject::Oid:System.Security.Cryptography.Oid",
           "clrName": "Oid",
-          "tsEmitName": "oid",
           "metadataToken": 385876063,
           "canonicalSignature": ":System.Security.Cryptography.Oid",
           "normalizedSignature": "Oid|:System.Security.Cryptography.Oid|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject::Values:System.Security.Cryptography.AsnEncodedDataCollection",
           "clrName": "Values",
-          "tsEmitName": "values",
           "metadataToken": 385876064,
           "canonicalSignature": ":System.Security.Cryptography.AsnEncodedDataCollection",
           "normalizedSignature": "Values|:System.Security.Cryptography.AsnEncodedDataCollection|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -61,67 +79,35 @@
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "oid",
-          "isStatic": false,
-          "tsSignatureId": "Oid|:System.Security.Cryptography.Oid|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876063
-          }
-        },
-        {
-          "tsName": "values",
-          "isStatic": false,
-          "tsSignatureId": "Values|:System.Security.Cryptography.AsnEncodedDataCollection|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876064
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Security.Cryptography.Oid):void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663522
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Security.Cryptography.Oid,System.Security.Cryptography.AsnEncodedDataCollection):void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663523
-          }
-        }
       ]
     },
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection",
       "clrName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-      "tsEmitName": "CryptographicAttributeObjectCollection",
       "assemblyName": "System.Security.Cryptography.Pkcs",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Add(System.Security.Cryptography.AsnEncodedData):System.Int32",
           "clrName": "Add",
-          "tsEmitName": "add",
           "metadataToken": 100663528,
           "canonicalSignature": "(System.Security.Cryptography.AsnEncodedData):System.Int32",
           "normalizedSignature": "Add|(System.Security.Cryptography.AsnEncodedData):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -129,13 +115,18 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Add(System.Security.Cryptography.CryptographicAttributeObject):System.Int32",
           "clrName": "Add",
-          "tsEmitName": "add",
           "metadataToken": 100663529,
           "canonicalSignature": "(System.Security.Cryptography.CryptographicAttributeObject):System.Int32",
           "normalizedSignature": "Add|(System.Security.Cryptography.CryptographicAttributeObject):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -143,13 +134,18 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Remove(System.Security.Cryptography.CryptographicAttributeObject):System.Void",
           "clrName": "Remove",
-          "tsEmitName": "remove",
           "metadataToken": 100663531,
           "canonicalSignature": "(System.Security.Cryptography.CryptographicAttributeObject):System.Void",
           "normalizedSignature": "Remove|(System.Security.Cryptography.CryptographicAttributeObject):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -157,13 +153,18 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::GetEnumerator():System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
           "clrName": "GetEnumerator",
-          "tsEmitName": "getEnumerator",
           "metadataToken": 100663536,
           "canonicalSignature": "():System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Security.Cryptography.CryptographicAttributeObjectEnumerator|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -171,13 +172,18 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::CopyTo(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void",
           "clrName": "CopyTo",
-          "tsEmitName": "copyTo",
           "metadataToken": 100663539,
           "canonicalSignature": "(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -187,56 +193,72 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Item[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject",
           "clrName": "Item",
-          "tsEmitName": "item",
           "metadataToken": 385876065,
           "canonicalSignature": "[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject",
           "normalizedSignature": "Item|[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": true,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Count:System.Int32",
           "clrName": "Count",
-          "tsEmitName": "count",
           "metadataToken": 385876066,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::IsSynchronized:System.Boolean",
           "clrName": "IsSynchronized",
-          "tsEmitName": "isSynchronized",
           "metadataToken": 385876067,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::SyncRoot:System.Object",
           "clrName": "SyncRoot",
-          "tsEmitName": "syncRoot",
           "metadataToken": 385876068,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -264,139 +286,35 @@
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "add",
-          "isStatic": false,
-          "tsSignatureId": "Add|(System.Security.Cryptography.AsnEncodedData):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663528
-          }
-        },
-        {
-          "tsName": "add",
-          "isStatic": false,
-          "tsSignatureId": "Add|(System.Security.Cryptography.CryptographicAttributeObject):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663529
-          }
-        },
-        {
-          "tsName": "remove",
-          "isStatic": false,
-          "tsSignatureId": "Remove|(System.Security.Cryptography.CryptographicAttributeObject):System.Void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663531
-          }
-        },
-        {
-          "tsName": "getEnumerator",
-          "isStatic": false,
-          "tsSignatureId": "GetEnumerator|():System.Security.Cryptography.CryptographicAttributeObjectEnumerator|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663536
-          }
-        },
-        {
-          "tsName": "copyTo",
-          "isStatic": false,
-          "tsSignatureId": "CopyTo|(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663539
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "item",
-          "isStatic": false,
-          "tsSignatureId": "Item|[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876065
-          }
-        },
-        {
-          "tsName": "count",
-          "isStatic": false,
-          "tsSignatureId": "Count|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876066
-          }
-        },
-        {
-          "tsName": "isSynchronized",
-          "isStatic": false,
-          "tsSignatureId": "IsSynchronized|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876067
-          }
-        },
-        {
-          "tsName": "syncRoot",
-          "isStatic": false,
-          "tsSignatureId": "SyncRoot|:System.Object|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876068
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663526
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Security.Cryptography.CryptographicAttributeObject):void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663527
-          }
-        }
       ]
     },
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
       "clrName": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-      "tsEmitName": "CryptographicAttributeObjectEnumerator",
       "assemblyName": "System.Security.Cryptography.Pkcs",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator::MoveNext():System.Boolean",
           "clrName": "MoveNext",
-          "tsEmitName": "moveNext",
           "metadataToken": 100663543,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "MoveNext|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -404,13 +322,18 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator::Reset():System.Void",
           "clrName": "Reset",
-          "tsEmitName": "reset",
           "metadataToken": 100663544,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -420,55 +343,25 @@
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator::Current:System.Security.Cryptography.CryptographicAttributeObject",
           "clrName": "Current",
-          "tsEmitName": "current",
           "metadataToken": 385876069,
           "canonicalSignature": ":System.Security.Cryptography.CryptographicAttributeObject",
           "normalizedSignature": "Current|:System.Security.Cryptography.CryptographicAttributeObject|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "moveNext",
-          "isStatic": false,
-          "tsSignatureId": "MoveNext|():System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663543
-          }
-        },
-        {
-          "tsName": "reset",
-          "isStatic": false,
-          "tsSignatureId": "Reset|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 100663544
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "current",
-          "isStatic": false,
-          "tsSignatureId": "Current|:System.Security.Cryptography.CryptographicAttributeObject|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-            "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
-            "metadataToken": 385876069
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

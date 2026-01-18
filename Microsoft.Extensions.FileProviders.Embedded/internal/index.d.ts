@@ -14,13 +14,13 @@ import type { Boolean as ClrBoolean, DateTimeOffset, Int64, Object as ClrObject,
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface EmbeddedResourceFileInfo$instance {
-    readonly exists: boolean;
-    readonly isDirectory: boolean;
-    readonly lastModified: DateTimeOffset;
-    readonly length: long;
-    readonly name: string;
-    readonly physicalPath: string;
-    createReadStream(): Stream;
+    readonly Exists: boolean;
+    readonly IsDirectory: boolean;
+    readonly LastModified: DateTimeOffset;
+    readonly Length: long;
+    readonly Name: string;
+    readonly PhysicalPath: string;
+    CreateReadStream(): Stream;
 }
 
 

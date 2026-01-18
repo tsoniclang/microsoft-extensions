@@ -12,25 +12,25 @@ import type { Action, Boolean as ClrBoolean, Func, IServiceProvider, Object as C
 import type { DelegatingHandler, HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
 
 export interface IHttpMessageHandlerBuilderFilter$instance {
-    configure(next: Action<HttpMessageHandlerBuilder>): Action<HttpMessageHandlerBuilder>;
+    Configure(next: Action<HttpMessageHandlerBuilder>): Action<HttpMessageHandlerBuilder>;
 }
 
 
 export type IHttpMessageHandlerBuilderFilter = IHttpMessageHandlerBuilderFilter$instance;
 
 export interface ITypedHttpClientFactory_1$instance<TClient> {
-    createClient(httpClient: HttpClient): TClient;
+    CreateClient(httpClient: HttpClient): TClient;
 }
 
 
 export type ITypedHttpClientFactory_1<TClient> = ITypedHttpClientFactory_1$instance<TClient>;
 
 export interface HttpClientFactoryOptions$instance {
-    handlerLifetime: TimeSpan;
-    readonly httpClientActions: IList<Action<HttpClient>>;
-    readonly httpMessageHandlerBuilderActions: IList<Action<HttpMessageHandlerBuilder>>;
-    shouldRedactHeaderValue: Func<System_Internal.String, System_Internal.Boolean>;
-    suppressHandlerScope: boolean;
+    HandlerLifetime: TimeSpan;
+    readonly HttpClientActions: IList<Action<HttpClient>>;
+    readonly HttpMessageHandlerBuilderActions: IList<Action<HttpMessageHandlerBuilder>>;
+    ShouldRedactHeaderValue: Func<System_Internal.String, System_Internal.Boolean>;
+    SuppressHandlerScope: boolean;
 }
 
 
@@ -42,11 +42,11 @@ export const HttpClientFactoryOptions: {
 export type HttpClientFactoryOptions = HttpClientFactoryOptions$instance;
 
 export interface HttpMessageHandlerBuilder$instance {
-    readonly additionalHandlers: IList<DelegatingHandler>;
-    name: string;
-    primaryHandler: HttpMessageHandler;
-    readonly services: IServiceProvider;
-    build(): HttpMessageHandler;
+    readonly AdditionalHandlers: IList<DelegatingHandler>;
+    Name: string;
+    PrimaryHandler: HttpMessageHandler;
+    readonly Services: IServiceProvider;
+    Build(): HttpMessageHandler;
 }
 
 

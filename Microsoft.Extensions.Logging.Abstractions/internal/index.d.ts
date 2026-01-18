@@ -14,19 +14,19 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IBufferedLogger$instance {
-    logRecords(records: IEnumerable<BufferedLogRecord>): void;
+    LogRecords(records: IEnumerable<BufferedLogRecord>): void;
 }
 
 
 export type IBufferedLogger = IBufferedLogger$instance;
 
 export interface LogEntry_1$instance<TState> {
-    readonly category: string;
-    readonly eventId: EventId;
-    readonly exception: Exception | undefined;
-    readonly formatter: Func<TState, Exception | undefined, System_Internal.String>;
-    readonly logLevel: LogLevel;
-    readonly state: TState;
+    readonly Category: string;
+    readonly EventId: EventId;
+    readonly Exception: Exception | undefined;
+    readonly Formatter: Func<TState, Exception | undefined, System_Internal.String>;
+    readonly LogLevel: LogLevel;
+    readonly State: TState;
 }
 
 
@@ -38,16 +38,16 @@ export const LogEntry_1: {
 export type LogEntry_1<TState> = LogEntry_1$instance<TState>;
 
 export interface BufferedLogRecord$instance {
-    readonly activitySpanId: Nullable<ActivitySpanId>;
-    readonly activityTraceId: Nullable<ActivityTraceId>;
-    readonly attributes: IReadOnlyList<KeyValuePair<System_Internal.String, unknown>>;
-    readonly eventId: EventId;
-    readonly exception: string;
-    readonly formattedMessage: string | undefined;
-    readonly logLevel: LogLevel;
-    readonly managedThreadId: Nullable<System_Internal.Int32>;
-    readonly messageTemplate: string | undefined;
-    readonly timestamp: DateTimeOffset;
+    readonly ActivitySpanId: Nullable<ActivitySpanId>;
+    readonly ActivityTraceId: Nullable<ActivityTraceId>;
+    readonly Attributes: IReadOnlyList<KeyValuePair<System_Internal.String, unknown>>;
+    readonly EventId: EventId;
+    readonly Exception: string;
+    readonly FormattedMessage: string | undefined;
+    readonly LogLevel: LogLevel;
+    readonly ManagedThreadId: Nullable<System_Internal.Int32>;
+    readonly MessageTemplate: string | undefined;
+    readonly Timestamp: DateTimeOffset;
 }
 
 
@@ -58,15 +58,15 @@ export const BufferedLogRecord: {
 export type BufferedLogRecord = BufferedLogRecord$instance;
 
 export interface NullLogger$instance {
-    beginScope<TState>(state: TState): IDisposable;
-    isEnabled(logLevel: LogLevel): boolean;
-    log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
+    BeginScope<TState>(state: TState): IDisposable;
+    IsEnabled(logLevel: LogLevel): boolean;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
 }
 
 
 export const NullLogger: {
     new(): NullLogger;
-    readonly instance: NullLogger;
+    readonly Instance: NullLogger;
 };
 
 
@@ -80,15 +80,15 @@ export type NullLogger = NullLogger$instance & __NullLogger$views;
 
 
 export interface NullLogger_1$instance<T> extends ILogger_1<T> {
-    beginScope<TState>(state: TState): IDisposable;
-    isEnabled(logLevel: LogLevel): boolean;
-    log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
+    BeginScope<TState>(state: TState): IDisposable;
+    IsEnabled(logLevel: LogLevel): boolean;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
 }
 
 
 export const NullLogger_1: {
     new<T>(): NullLogger_1<T>;
-    readonly instance: unknown;
+    readonly Instance: unknown;
 };
 
 
@@ -100,15 +100,15 @@ export type NullLogger_1<T> = NullLogger_1$instance<T> & __NullLogger_1$views<T>
 
 
 export interface NullLoggerFactory$instance {
-    addProvider(provider: ILoggerProvider): void;
-    createLogger(name: string): ILogger;
-    dispose(): void;
+    AddProvider(provider: ILoggerProvider): void;
+    CreateLogger(name: string): ILogger;
+    Dispose(): void;
 }
 
 
 export const NullLoggerFactory: {
     new(): NullLoggerFactory;
-    readonly instance: NullLoggerFactory;
+    readonly Instance: NullLoggerFactory;
 };
 
 
@@ -122,14 +122,14 @@ export type NullLoggerFactory = NullLoggerFactory$instance & __NullLoggerFactory
 
 
 export interface NullLoggerProvider$instance {
-    createLogger(categoryName: string): ILogger;
-    dispose(): void;
+    CreateLogger(categoryName: string): ILogger;
+    Dispose(): void;
 }
 
 
 export const NullLoggerProvider: {
     new(): NullLoggerProvider;
-    readonly instance: NullLoggerProvider;
+    readonly Instance: NullLoggerProvider;
 };
 
 

@@ -12,8 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface DebugLoggerProvider$instance {
-    createLogger(name: string): ILogger;
-    dispose(): void;
+    CreateLogger(name: string): ILogger;
+    Dispose(): void;
 }
 
 

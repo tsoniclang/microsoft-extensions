@@ -18,13 +18,13 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider {
-    dispose(): void;
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(): void;
-    set(key: string, value: string): void;
-    toString(): string;
-    tryGet(key: string, value: string): boolean;
+    Dispose(): void;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(): void;
+    Set(key: string, value: string): void;
+    ToString(): string;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -41,15 +41,15 @@ export type KeyPerFileConfigurationProvider = KeyPerFileConfigurationProvider$in
 
 
 export interface KeyPerFileConfigurationSource$instance {
-    get fileProvider(): IFileProvider | undefined;
-    set fileProvider(value: IFileProvider);
-    ignoreCondition: Func<System_Internal.String, System_Internal.Boolean>;
-    ignorePrefix: string;
-    optional: boolean;
-    reloadDelay: int;
-    reloadOnChange: boolean;
-    sectionDelimiter: string;
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    get FileProvider(): IFileProvider | undefined;
+    set FileProvider(value: IFileProvider);
+    IgnoreCondition: Func<System_Internal.String, System_Internal.Boolean>;
+    IgnorePrefix: string;
+    Optional: boolean;
+    ReloadDelay: int;
+    ReloadOnChange: boolean;
+    SectionDelimiter: string;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 

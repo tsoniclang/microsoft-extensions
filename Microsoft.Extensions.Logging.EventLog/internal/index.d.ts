@@ -13,9 +13,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Func, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface EventLogLoggerProvider$instance {
-    createLogger(name: string): ILogger;
-    dispose(): void;
-    setScopeProvider(scopeProvider: IExternalScopeProvider): void;
+    CreateLogger(name: string): ILogger;
+    Dispose(): void;
+    SetScopeProvider(scopeProvider: IExternalScopeProvider): void;
 }
 
 
@@ -37,14 +37,14 @@ export type EventLogLoggerProvider = EventLogLoggerProvider$instance & __EventLo
 
 
 export interface EventLogSettings$instance {
-    get filter(): Func<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
-    set filter(value: Func<System_Internal.String, LogLevel, System_Internal.Boolean>);
-    get logName(): string | undefined;
-    set logName(value: string);
-    get machineName(): string | undefined;
-    set machineName(value: string);
-    get sourceName(): string | undefined;
-    set sourceName(value: string);
+    get Filter(): Func<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
+    set Filter(value: Func<System_Internal.String, LogLevel, System_Internal.Boolean>);
+    get LogName(): string | undefined;
+    set LogName(value: string);
+    get MachineName(): string | undefined;
+    set MachineName(value: string);
+    get SourceName(): string | undefined;
+    set SourceName(value: string);
 }
 
 

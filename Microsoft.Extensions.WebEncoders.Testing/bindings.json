@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.WebEncoders.Testing",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.WebEncoders"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
       "clrName": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-      "tsEmitName": "HtmlTestEncoder",
       "assemblyName": "Microsoft.Extensions.WebEncoders",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::Encode(System.String):System.String",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663303,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "Encode|(System.String):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663304,
           "canonicalSignature": "(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -39,13 +57,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663305,
           "canonicalSignature": "(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -53,13 +76,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::WillEncode(System.Int32):System.Boolean",
           "clrName": "WillEncode",
-          "tsEmitName": "willEncode",
           "metadataToken": 100663306,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "WillEncode|(System.Int32):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -67,13 +95,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::FindFirstCharacterToEncode(System.Char*,System.Int32):System.Int32",
           "clrName": "FindFirstCharacterToEncode",
-          "tsEmitName": "findFirstCharacterToEncode",
           "metadataToken": 100663307,
           "canonicalSignature": "(System.Char*,System.Int32):System.Int32",
           "normalizedSignature": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -81,13 +114,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
           "clrName": "TryEncodeUnicodeScalar",
-          "tsEmitName": "tryEncodeUnicodeScalar",
           "metadataToken": 100663308,
           "canonicalSignature": "(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
           "normalizedSignature": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false,
@@ -103,14 +141,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::MaxOutputCharactersPerInputCharacter:System.Int32",
           "clrName": "MaxOutputCharactersPerInputCharacter",
-          "tsEmitName": "maxOutputCharactersPerInputCharacter",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -128,110 +170,35 @@
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.String):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663303
-          }
-        },
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663304
-          }
-        },
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663305
-          }
-        },
-        {
-          "tsName": "willEncode",
-          "isStatic": false,
-          "tsSignatureId": "WillEncode|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663306
-          }
-        },
-        {
-          "tsName": "findFirstCharacterToEncode",
-          "isStatic": false,
-          "tsSignatureId": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663307
-          }
-        },
-        {
-          "tsName": "tryEncodeUnicodeScalar",
-          "isStatic": false,
-          "tsSignatureId": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663308
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "maxOutputCharactersPerInputCharacter",
-          "isStatic": false,
-          "tsSignatureId": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 385875970
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663309
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
       "clrName": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-      "tsEmitName": "JavaScriptTestEncoder",
       "assemblyName": "Microsoft.Extensions.WebEncoders",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::Encode(System.String):System.String",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663311,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "Encode|(System.String):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -239,13 +206,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663312,
           "canonicalSignature": "(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -253,13 +225,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663313,
           "canonicalSignature": "(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -267,13 +244,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::WillEncode(System.Int32):System.Boolean",
           "clrName": "WillEncode",
-          "tsEmitName": "willEncode",
           "metadataToken": 100663314,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "WillEncode|(System.Int32):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -281,13 +263,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::FindFirstCharacterToEncode(System.Char*,System.Int32):System.Int32",
           "clrName": "FindFirstCharacterToEncode",
-          "tsEmitName": "findFirstCharacterToEncode",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.Char*,System.Int32):System.Int32",
           "normalizedSignature": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -295,13 +282,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
           "clrName": "TryEncodeUnicodeScalar",
-          "tsEmitName": "tryEncodeUnicodeScalar",
           "metadataToken": 100663316,
           "canonicalSignature": "(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
           "normalizedSignature": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false,
@@ -317,14 +309,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::MaxOutputCharactersPerInputCharacter:System.Int32",
           "clrName": "MaxOutputCharactersPerInputCharacter",
-          "tsEmitName": "maxOutputCharactersPerInputCharacter",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -342,110 +338,35 @@
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.String):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663311
-          }
-        },
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663312
-          }
-        },
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663313
-          }
-        },
-        {
-          "tsName": "willEncode",
-          "isStatic": false,
-          "tsSignatureId": "WillEncode|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663314
-          }
-        },
-        {
-          "tsName": "findFirstCharacterToEncode",
-          "isStatic": false,
-          "tsSignatureId": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663315
-          }
-        },
-        {
-          "tsName": "tryEncodeUnicodeScalar",
-          "isStatic": false,
-          "tsSignatureId": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663316
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "maxOutputCharactersPerInputCharacter",
-          "isStatic": false,
-          "tsSignatureId": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 385875971
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663317
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
       "clrName": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-      "tsEmitName": "UrlTestEncoder",
       "assemblyName": "Microsoft.Extensions.WebEncoders",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::Encode(System.String):System.String",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663319,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "Encode|(System.String):System.String|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -453,13 +374,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::Encode(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -467,13 +393,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::Encode(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "clrName": "Encode",
-          "tsEmitName": "encode",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -481,13 +412,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::WillEncode(System.Int32):System.Boolean",
           "clrName": "WillEncode",
-          "tsEmitName": "willEncode",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.Int32):System.Boolean",
           "normalizedSignature": "WillEncode|(System.Int32):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -495,13 +431,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::FindFirstCharacterToEncode(System.Char*,System.Int32):System.Int32",
           "clrName": "FindFirstCharacterToEncode",
-          "tsEmitName": "findFirstCharacterToEncode",
           "metadataToken": 100663323,
           "canonicalSignature": "(System.Char*,System.Int32):System.Int32",
           "normalizedSignature": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -509,13 +450,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
           "clrName": "TryEncodeUnicodeScalar",
-          "tsEmitName": "tryEncodeUnicodeScalar",
           "metadataToken": 100663324,
           "canonicalSignature": "(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean",
           "normalizedSignature": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false,
@@ -531,14 +477,18 @@
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::MaxOutputCharactersPerInputCharacter:System.Int32",
           "clrName": "MaxOutputCharactersPerInputCharacter",
-          "tsEmitName": "maxOutputCharactersPerInputCharacter",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -555,91 +505,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.String):System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663319
-          }
-        },
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.IO.TextWriter,System.Char[],System.Int32,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "encode",
-          "isStatic": false,
-          "tsSignatureId": "Encode|(System.IO.TextWriter,System.String,System.Int32,System.Int32):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "willEncode",
-          "isStatic": false,
-          "tsSignatureId": "WillEncode|(System.Int32):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663322
-          }
-        },
-        {
-          "tsName": "findFirstCharacterToEncode",
-          "isStatic": false,
-          "tsSignatureId": "FindFirstCharacterToEncode|(System.Char*,System.Int32):System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663323
-          }
-        },
-        {
-          "tsName": "tryEncodeUnicodeScalar",
-          "isStatic": false,
-          "tsSignatureId": "TryEncodeUnicodeScalar|(System.Int32,System.Char*,System.Int32,System.Int32\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663324
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "maxOutputCharactersPerInputCharacter",
-          "isStatic": false,
-          "tsSignatureId": "MaxOutputCharactersPerInputCharacter|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 385875972
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
-            "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
-            "metadataToken": 100663325
-          }
         }
       ]
     }

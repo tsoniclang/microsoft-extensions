@@ -13,11 +13,11 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, IEquatable, Int32, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface FilePatternMatch$instance {
-    readonly path: string;
-    readonly stem: string;
-    equals(other: FilePatternMatch): boolean;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
+    readonly Path: string;
+    readonly Stem: string;
+    Equals(other: FilePatternMatch): boolean;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
 }
 
 
@@ -29,12 +29,12 @@ export const FilePatternMatch: {
 export type FilePatternMatch = FilePatternMatch$instance;
 
 export interface InMemoryDirectoryInfo$instance extends DirectoryInfoBase {
-    readonly fullName: string;
-    readonly name: string;
-    readonly parentDirectory: DirectoryInfoBase | undefined;
-    enumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
-    getDirectory(path: string): DirectoryInfoBase;
-    getFile(path: string): FileInfoBase | undefined;
+    readonly FullName: string;
+    readonly Name: string;
+    readonly ParentDirectory: DirectoryInfoBase | undefined;
+    EnumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
+    GetDirectory(path: string): DirectoryInfoBase;
+    GetFile(path: string): FileInfoBase | undefined;
 }
 
 
@@ -46,9 +46,9 @@ export const InMemoryDirectoryInfo: {
 export type InMemoryDirectoryInfo = InMemoryDirectoryInfo$instance;
 
 export interface Matcher$instance {
-    addExclude(pattern: string): Matcher;
-    addInclude(pattern: string): Matcher;
-    execute(directoryInfo: DirectoryInfoBase): PatternMatchingResult;
+    AddExclude(pattern: string): Matcher;
+    AddInclude(pattern: string): Matcher;
+    Execute(directoryInfo: DirectoryInfoBase): PatternMatchingResult;
 }
 
 
@@ -62,8 +62,8 @@ export const Matcher: {
 export type Matcher = Matcher$instance;
 
 export interface PatternMatchingResult$instance {
-    files: IEnumerable<FilePatternMatch>;
-    readonly hasMatches: boolean;
+    Files: IEnumerable<FilePatternMatch>;
+    readonly HasMatches: boolean;
 }
 
 
@@ -76,13 +76,13 @@ export const PatternMatchingResult: {
 export type PatternMatchingResult = PatternMatchingResult$instance;
 
 export abstract class MatcherExtensions$instance {
-    static addExcludePatterns(matcher: Matcher, ...excludePatternsGroups: IEnumerable<System_Internal.String>[]): void;
-    static addIncludePatterns(matcher: Matcher, ...includePatternsGroups: IEnumerable<System_Internal.String>[]): void;
-    static getResultsInFullPath(matcher: Matcher, directoryPath: string): IEnumerable<System_Internal.String>;
-    static match(matcher: Matcher, files: IEnumerable<System_Internal.String>): PatternMatchingResult;
-    static match(matcher: Matcher, rootDir: string, files: IEnumerable<System_Internal.String>): PatternMatchingResult;
-    static match(matcher: Matcher, rootDir: string, file: string): PatternMatchingResult;
-    static match(matcher: Matcher, file: string): PatternMatchingResult;
+    static AddExcludePatterns(matcher: Matcher, ...excludePatternsGroups: IEnumerable<System_Internal.String>[]): void;
+    static AddIncludePatterns(matcher: Matcher, ...includePatternsGroups: IEnumerable<System_Internal.String>[]): void;
+    static GetResultsInFullPath(matcher: Matcher, directoryPath: string): IEnumerable<System_Internal.String>;
+    static Match(matcher: Matcher, files: IEnumerable<System_Internal.String>): PatternMatchingResult;
+    static Match(matcher: Matcher, rootDir: string, files: IEnumerable<System_Internal.String>): PatternMatchingResult;
+    static Match(matcher: Matcher, rootDir: string, file: string): PatternMatchingResult;
+    static Match(matcher: Matcher, file: string): PatternMatchingResult;
 }
 
 

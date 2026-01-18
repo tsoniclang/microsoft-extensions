@@ -16,13 +16,13 @@ import * as System_Text_Encodings_Web_Internal from "@tsonic/dotnet/System.Text.
 import type { HtmlEncoder, JavaScriptEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 
 export interface HtmlTestEncoder$instance extends HtmlEncoder {
-    readonly maxOutputCharactersPerInputCharacter: int;
-    encode(value: string): string;
-    encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    findFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    tryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    willEncode(unicodeScalar: int): boolean;
+    readonly MaxOutputCharactersPerInputCharacter: int;
+    Encode(value: string): string;
+    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
+    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
+    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
+    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
+    WillEncode(unicodeScalar: int): boolean;
 }
 
 
@@ -34,13 +34,13 @@ export const HtmlTestEncoder: {
 export type HtmlTestEncoder = HtmlTestEncoder$instance;
 
 export interface JavaScriptTestEncoder$instance extends JavaScriptEncoder {
-    readonly maxOutputCharactersPerInputCharacter: int;
-    encode(value: string): string;
-    encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    findFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    tryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    willEncode(unicodeScalar: int): boolean;
+    readonly MaxOutputCharactersPerInputCharacter: int;
+    Encode(value: string): string;
+    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
+    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
+    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
+    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
+    WillEncode(unicodeScalar: int): boolean;
 }
 
 
@@ -52,13 +52,13 @@ export const JavaScriptTestEncoder: {
 export type JavaScriptTestEncoder = JavaScriptTestEncoder$instance;
 
 export interface UrlTestEncoder$instance extends UrlEncoder {
-    readonly maxOutputCharactersPerInputCharacter: int;
-    encode(value: string): string;
-    encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    findFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    tryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    willEncode(unicodeScalar: int): boolean;
+    readonly MaxOutputCharactersPerInputCharacter: int;
+    Encode(value: string): string;
+    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
+    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
+    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
+    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
+    WillEncode(unicodeScalar: int): boolean;
 }
 
 

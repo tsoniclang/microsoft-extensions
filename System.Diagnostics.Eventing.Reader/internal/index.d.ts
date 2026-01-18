@@ -17,87 +17,87 @@ import type { SecureString } from "@tsonic/dotnet/System.Security.js";
 import type { SecurityIdentifier } from "@tsonic/dotnet/System.Security.Principal.js";
 
 export enum EventLogIsolation {
-    application = 0,
-    system = 1,
-    custom = 2
+    Application = 0,
+    System = 1,
+    Custom = 2
 }
 
 
 export enum EventLogMode {
-    circular = 0,
-    autoBackup = 1,
-    retain = 2
+    Circular = 0,
+    AutoBackup = 1,
+    Retain = 2
 }
 
 
 export enum EventLogType {
-    administrative = 0,
-    operational = 1,
-    analytical = 2,
-    debug = 3
+    Administrative = 0,
+    Operational = 1,
+    Analytical = 2,
+    Debug = 3
 }
 
 
 export enum PathType {
-    logName = 1,
-    filePath = 2
+    LogName = 1,
+    FilePath = 2
 }
 
 
 export enum SessionAuthentication {
-    default = 0,
-    negotiate = 1,
-    kerberos = 2,
-    ntlm = 3
+    Default = 0,
+    Negotiate = 1,
+    Kerberos = 2,
+    Ntlm = 3
 }
 
 
 export enum StandardEventKeywords {
-    none = 0,
-    responseTime = 281474976710656,
-    wdiContext = 562949953421312,
-    wdiDiagnostic = 1125899906842624,
-    sqm = 2251799813685248,
-    auditFailure = 4503599627370496,
-    correlationHint = 4503599627370496,
-    auditSuccess = 9007199254740992,
-    correlationHint2 = 18014398509481984,
-    eventLogClassic = 36028797018963968
+    None = 0,
+    ResponseTime = 281474976710656,
+    WdiContext = 562949953421312,
+    WdiDiagnostic = 1125899906842624,
+    Sqm = 2251799813685248,
+    AuditFailure = 4503599627370496,
+    CorrelationHint = 4503599627370496,
+    AuditSuccess = 9007199254740992,
+    CorrelationHint2 = 18014398509481984,
+    EventLogClassic = 36028797018963968
 }
 
 
 export enum StandardEventLevel {
-    logAlways = 0,
-    critical = 1,
-    error = 2,
-    warning = 3,
-    informational = 4,
-    verbose = 5
+    LogAlways = 0,
+    Critical = 1,
+    Error = 2,
+    Warning = 3,
+    Informational = 4,
+    Verbose = 5
 }
 
 
 export enum StandardEventOpcode {
-    info = 0,
-    start = 1,
-    stop = 2,
-    dataCollectionStart = 3,
-    dataCollectionStop = 4,
-    extension = 5,
-    reply = 6,
-    resume = 7,
-    suspend = 8,
-    send = 9,
-    receive = 240
+    Info = 0,
+    Start = 1,
+    Stop = 2,
+    DataCollectionStart = 3,
+    DataCollectionStop = 4,
+    Extension = 5,
+    Reply = 6,
+    Resume = 7,
+    Suspend = 8,
+    Send = 9,
+    Receive = 240
 }
 
 
 export enum StandardEventTask {
-    none = 0
+    None = 0
 }
 
 
 export interface EventBookmark$instance {
-    readonly bookmarkXml: string;
+    readonly BookmarkXml: string;
 }
 
 
@@ -109,9 +109,9 @@ export const EventBookmark: {
 export type EventBookmark = EventBookmark$instance;
 
 export interface EventKeyword$instance {
-    readonly displayName: string;
-    readonly name: string;
-    readonly value: long;
+    readonly DisplayName: string;
+    readonly Name: string;
+    readonly Value: long;
 }
 
 
@@ -123,9 +123,9 @@ export const EventKeyword: {
 export type EventKeyword = EventKeyword$instance;
 
 export interface EventLevel$instance {
-    readonly displayName: string;
-    readonly name: string;
-    readonly value: int;
+    readonly DisplayName: string;
+    readonly Name: string;
+    readonly Value: int;
 }
 
 
@@ -137,26 +137,26 @@ export const EventLevel: {
 export type EventLevel = EventLevel$instance;
 
 export interface EventLogConfiguration$instance {
-    readonly isClassicLog: boolean;
-    isEnabled: boolean;
-    logFilePath: string;
-    readonly logIsolation: EventLogIsolation;
-    logMode: EventLogMode;
-    readonly logName: string | undefined;
-    readonly logType: EventLogType;
-    maximumSizeInBytes: long;
-    readonly owningProviderName: string;
-    readonly providerBufferSize: Nullable<System_Internal.Int32>;
-    readonly providerControlGuid: Nullable<Guid>;
-    providerKeywords: Nullable<System_Internal.Int64>;
-    readonly providerLatency: Nullable<System_Internal.Int32>;
-    providerLevel: Nullable<System_Internal.Int32>;
-    readonly providerMaximumNumberOfBuffers: Nullable<System_Internal.Int32>;
-    readonly providerMinimumNumberOfBuffers: Nullable<System_Internal.Int32>;
-    readonly providerNames: IEnumerable<System_Internal.String>;
-    securityDescriptor: string;
-    dispose(): void;
-    saveChanges(): void;
+    readonly IsClassicLog: boolean;
+    IsEnabled: boolean;
+    LogFilePath: string;
+    readonly LogIsolation: EventLogIsolation;
+    LogMode: EventLogMode;
+    readonly LogName: string | undefined;
+    readonly LogType: EventLogType;
+    MaximumSizeInBytes: long;
+    readonly OwningProviderName: string;
+    readonly ProviderBufferSize: Nullable<System_Internal.Int32>;
+    readonly ProviderControlGuid: Nullable<Guid>;
+    ProviderKeywords: Nullable<System_Internal.Int64>;
+    readonly ProviderLatency: Nullable<System_Internal.Int32>;
+    ProviderLevel: Nullable<System_Internal.Int32>;
+    readonly ProviderMaximumNumberOfBuffers: Nullable<System_Internal.Int32>;
+    readonly ProviderMinimumNumberOfBuffers: Nullable<System_Internal.Int32>;
+    readonly ProviderNames: IEnumerable<System_Internal.String>;
+    SecurityDescriptor: string;
+    Dispose(): void;
+    SaveChanges(): void;
 }
 
 
@@ -169,8 +169,8 @@ export const EventLogConfiguration: {
 export type EventLogConfiguration = EventLogConfiguration$instance;
 
 export interface EventLogException$instance extends Exception {
-    readonly message: string;
-    getObjectData(info: SerializationInfo, context: StreamingContext): void;
+    readonly Message: string;
+    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
 
 
@@ -184,14 +184,14 @@ export const EventLogException: {
 export type EventLogException = EventLogException$instance;
 
 export interface EventLogInformation$instance {
-    readonly attributes: Nullable<System_Internal.Int32>;
-    readonly creationTime: Nullable<DateTime>;
-    readonly fileSize: Nullable<System_Internal.Int64>;
-    readonly isLogFull: Nullable<System_Internal.Boolean>;
-    readonly lastAccessTime: Nullable<DateTime>;
-    readonly lastWriteTime: Nullable<DateTime>;
-    readonly oldestRecordNumber: Nullable<System_Internal.Int64>;
-    readonly recordCount: Nullable<System_Internal.Int64>;
+    readonly Attributes: Nullable<System_Internal.Int32>;
+    readonly CreationTime: Nullable<DateTime>;
+    readonly FileSize: Nullable<System_Internal.Int64>;
+    readonly IsLogFull: Nullable<System_Internal.Boolean>;
+    readonly LastAccessTime: Nullable<DateTime>;
+    readonly LastWriteTime: Nullable<DateTime>;
+    readonly OldestRecordNumber: Nullable<System_Internal.Int64>;
+    readonly RecordCount: Nullable<System_Internal.Int64>;
 }
 
 
@@ -216,9 +216,9 @@ export const EventLogInvalidDataException: {
 export type EventLogInvalidDataException = EventLogInvalidDataException$instance;
 
 export interface EventLogLink$instance {
-    readonly displayName: string;
-    readonly isImported: boolean;
-    readonly logName: string | undefined;
+    readonly DisplayName: string;
+    readonly IsImported: boolean;
+    readonly LogName: string | undefined;
 }
 
 
@@ -243,7 +243,7 @@ export const EventLogNotFoundException: {
 export type EventLogNotFoundException = EventLogNotFoundException$instance;
 
 export interface EventLogPropertySelector$instance {
-    dispose(): void;
+    Dispose(): void;
 }
 
 
@@ -268,9 +268,9 @@ export const EventLogProviderDisabledException: {
 export type EventLogProviderDisabledException = EventLogProviderDisabledException$instance;
 
 export interface EventLogQuery$instance {
-    reverseDirection: boolean;
-    session: EventLogSession;
-    tolerateQueryErrors: boolean;
+    ReverseDirection: boolean;
+    Session: EventLogSession;
+    TolerateQueryErrors: boolean;
 }
 
 
@@ -283,15 +283,15 @@ export const EventLogQuery: {
 export type EventLogQuery = EventLogQuery$instance;
 
 export interface EventLogReader$instance {
-    batchSize: int;
-    readonly logStatus: IList<EventLogStatus>;
-    cancelReading(): void;
-    dispose(): void;
-    readEvent(): EventRecord;
-    readEvent(timeout: TimeSpan): EventRecord;
-    seek(bookmark: EventBookmark): void;
-    seek(bookmark: EventBookmark, offset: long): void;
-    seek(origin: SeekOrigin, offset: long): void;
+    BatchSize: int;
+    readonly LogStatus: IList<EventLogStatus>;
+    CancelReading(): void;
+    Dispose(): void;
+    ReadEvent(): EventRecord;
+    ReadEvent(timeout: TimeSpan): EventRecord;
+    Seek(bookmark: EventBookmark): void;
+    Seek(bookmark: EventBookmark, offset: long): void;
+    Seek(origin: SeekOrigin, offset: long): void;
 }
 
 
@@ -319,36 +319,36 @@ export const EventLogReadingException: {
 export type EventLogReadingException = EventLogReadingException$instance;
 
 export interface EventLogRecord$instance extends EventRecord {
-    readonly activityId: Nullable<Guid>;
-    readonly bookmark: EventBookmark;
-    readonly containerLog: string;
-    readonly id: int;
-    readonly keywords: Nullable<System_Internal.Int64>;
-    readonly keywordsDisplayNames: IEnumerable<System_Internal.String>;
-    readonly level: Nullable<System_Internal.Byte>;
-    readonly levelDisplayName: string;
-    readonly logName: string | undefined;
-    readonly machineName: string | undefined;
-    readonly matchedQueryIds: IEnumerable<System_Internal.Int32>;
-    readonly opcode: Nullable<System_Internal.Int16>;
-    readonly opcodeDisplayName: string;
-    readonly processId: Nullable<System_Internal.Int32>;
-    readonly properties: IList<EventProperty>;
-    readonly providerId: Nullable<Guid>;
-    readonly providerName: string | undefined;
-    readonly qualifiers: Nullable<System_Internal.Int32>;
-    readonly recordId: Nullable<System_Internal.Int64>;
-    readonly relatedActivityId: Nullable<Guid>;
-    readonly task: Nullable<System_Internal.Int32>;
-    readonly taskDisplayName: string;
-    readonly threadId: Nullable<System_Internal.Int32>;
-    readonly timeCreated: Nullable<DateTime>;
-    readonly userId: SecurityIdentifier;
-    readonly version: Nullable<System_Internal.Byte>;
-    formatDescription(): string;
-    formatDescription(values: IEnumerable<unknown>): string;
-    getPropertyValues(propertySelector: EventLogPropertySelector): IList<unknown>;
-    toXml(): string;
+    readonly ActivityId: Nullable<Guid>;
+    readonly Bookmark: EventBookmark;
+    readonly ContainerLog: string;
+    readonly Id: int;
+    readonly Keywords: Nullable<System_Internal.Int64>;
+    readonly KeywordsDisplayNames: IEnumerable<System_Internal.String>;
+    readonly Level: Nullable<System_Internal.Byte>;
+    readonly LevelDisplayName: string;
+    readonly LogName: string | undefined;
+    readonly MachineName: string | undefined;
+    readonly MatchedQueryIds: IEnumerable<System_Internal.Int32>;
+    readonly Opcode: Nullable<System_Internal.Int16>;
+    readonly OpcodeDisplayName: string;
+    readonly ProcessId: Nullable<System_Internal.Int32>;
+    readonly Properties: IList<EventProperty>;
+    readonly ProviderId: Nullable<Guid>;
+    readonly ProviderName: string | undefined;
+    readonly Qualifiers: Nullable<System_Internal.Int32>;
+    readonly RecordId: Nullable<System_Internal.Int64>;
+    readonly RelatedActivityId: Nullable<Guid>;
+    readonly Task: Nullable<System_Internal.Int32>;
+    readonly TaskDisplayName: string;
+    readonly ThreadId: Nullable<System_Internal.Int32>;
+    readonly TimeCreated: Nullable<DateTime>;
+    readonly UserId: SecurityIdentifier;
+    readonly Version: Nullable<System_Internal.Byte>;
+    FormatDescription(): string;
+    FormatDescription(values: IEnumerable<unknown>): string;
+    GetPropertyValues(propertySelector: EventLogPropertySelector): IList<unknown>;
+    ToXml(): string;
 }
 
 
@@ -360,17 +360,17 @@ export const EventLogRecord: {
 export type EventLogRecord = EventLogRecord$instance;
 
 export interface EventLogSession$instance {
-    cancelCurrentOperations(): void;
-    clearLog(logName: string): void;
-    clearLog(logName: string, backupPath: string): void;
-    dispose(): void;
-    exportLog(path: string, pathType: PathType, query: string, targetFilePath: string): void;
-    exportLog(path: string, pathType: PathType, query: string, targetFilePath: string, tolerateQueryErrors: boolean): void;
-    exportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string): void;
-    exportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string, tolerateQueryErrors: boolean, targetCultureInfo: CultureInfo): void;
-    getLogInformation(logName: string, pathType: PathType): EventLogInformation;
-    getLogNames(): IEnumerable<System_Internal.String>;
-    getProviderNames(): IEnumerable<System_Internal.String>;
+    CancelCurrentOperations(): void;
+    ClearLog(logName: string): void;
+    ClearLog(logName: string, backupPath: string): void;
+    Dispose(): void;
+    ExportLog(path: string, pathType: PathType, query: string, targetFilePath: string): void;
+    ExportLog(path: string, pathType: PathType, query: string, targetFilePath: string, tolerateQueryErrors: boolean): void;
+    ExportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string): void;
+    ExportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string, tolerateQueryErrors: boolean, targetCultureInfo: CultureInfo): void;
+    GetLogInformation(logName: string, pathType: PathType): EventLogInformation;
+    GetLogNames(): IEnumerable<System_Internal.String>;
+    GetProviderNames(): IEnumerable<System_Internal.String>;
 }
 
 
@@ -378,15 +378,15 @@ export const EventLogSession: {
     new(): EventLogSession;
     new(server: string): EventLogSession;
     new(server: string, domain: string, user: string, password: SecureString, logOnType: SessionAuthentication): EventLogSession;
-    readonly globalSession: EventLogSession;
+    readonly GlobalSession: EventLogSession;
 };
 
 
 export type EventLogSession = EventLogSession$instance;
 
 export interface EventLogStatus$instance {
-    readonly logName: string | undefined;
-    readonly statusCode: int;
+    readonly LogName: string | undefined;
+    readonly StatusCode: int;
 }
 
 
@@ -398,8 +398,8 @@ export const EventLogStatus: {
 export type EventLogStatus = EventLogStatus$instance;
 
 export interface EventLogWatcher$instance {
-    enabled: boolean;
-    dispose(): void;
+    Enabled: boolean;
+    Dispose(): void;
 }
 
 
@@ -414,15 +414,15 @@ export const EventLogWatcher: {
 export type EventLogWatcher = EventLogWatcher$instance;
 
 export interface EventMetadata$instance {
-    readonly description: string;
-    readonly id: long;
-    readonly keywords: IEnumerable<EventKeyword>;
-    readonly level: EventLevel;
-    readonly logLink: EventLogLink;
-    readonly opcode: EventOpcode;
-    readonly task: EventTask;
-    readonly template: string;
-    readonly version: byte;
+    readonly Description: string;
+    readonly Id: long;
+    readonly Keywords: IEnumerable<EventKeyword>;
+    readonly Level: EventLevel;
+    readonly LogLink: EventLogLink;
+    readonly Opcode: EventOpcode;
+    readonly Task: EventTask;
+    readonly Template: string;
+    readonly Version: byte;
 }
 
 
@@ -434,9 +434,9 @@ export const EventMetadata: {
 export type EventMetadata = EventMetadata$instance;
 
 export interface EventOpcode$instance {
-    readonly displayName: string;
-    readonly name: string;
-    readonly value: int;
+    readonly DisplayName: string;
+    readonly Name: string;
+    readonly Value: int;
 }
 
 
@@ -448,7 +448,7 @@ export const EventOpcode: {
 export type EventOpcode = EventOpcode$instance;
 
 export interface EventProperty$instance {
-    readonly value: unknown;
+    readonly Value: unknown;
 }
 
 
@@ -460,34 +460,34 @@ export const EventProperty: {
 export type EventProperty = EventProperty$instance;
 
 export interface EventRecord$instance {
-    readonly activityId: Nullable<Guid>;
-    readonly bookmark: EventBookmark;
-    readonly id: int;
-    readonly keywords: Nullable<System_Internal.Int64>;
-    readonly keywordsDisplayNames: IEnumerable<System_Internal.String>;
-    readonly level: Nullable<System_Internal.Byte>;
-    readonly levelDisplayName: string;
-    readonly logName: string | undefined;
-    readonly machineName: string | undefined;
-    readonly opcode: Nullable<System_Internal.Int16>;
-    readonly opcodeDisplayName: string;
-    readonly processId: Nullable<System_Internal.Int32>;
-    readonly properties: IList<EventProperty>;
-    readonly providerId: Nullable<Guid>;
-    readonly providerName: string | undefined;
-    readonly qualifiers: Nullable<System_Internal.Int32>;
-    readonly recordId: Nullable<System_Internal.Int64>;
-    readonly relatedActivityId: Nullable<Guid>;
-    readonly task: Nullable<System_Internal.Int32>;
-    readonly taskDisplayName: string;
-    readonly threadId: Nullable<System_Internal.Int32>;
-    readonly timeCreated: Nullable<DateTime>;
-    readonly userId: SecurityIdentifier;
-    readonly version: Nullable<System_Internal.Byte>;
-    dispose(): void;
-    formatDescription(): string;
-    formatDescription(values: IEnumerable<unknown>): string;
-    toXml(): string;
+    readonly ActivityId: Nullable<Guid>;
+    readonly Bookmark: EventBookmark;
+    readonly Id: int;
+    readonly Keywords: Nullable<System_Internal.Int64>;
+    readonly KeywordsDisplayNames: IEnumerable<System_Internal.String>;
+    readonly Level: Nullable<System_Internal.Byte>;
+    readonly LevelDisplayName: string;
+    readonly LogName: string | undefined;
+    readonly MachineName: string | undefined;
+    readonly Opcode: Nullable<System_Internal.Int16>;
+    readonly OpcodeDisplayName: string;
+    readonly ProcessId: Nullable<System_Internal.Int32>;
+    readonly Properties: IList<EventProperty>;
+    readonly ProviderId: Nullable<Guid>;
+    readonly ProviderName: string | undefined;
+    readonly Qualifiers: Nullable<System_Internal.Int32>;
+    readonly RecordId: Nullable<System_Internal.Int64>;
+    readonly RelatedActivityId: Nullable<Guid>;
+    readonly Task: Nullable<System_Internal.Int32>;
+    readonly TaskDisplayName: string;
+    readonly ThreadId: Nullable<System_Internal.Int32>;
+    readonly TimeCreated: Nullable<DateTime>;
+    readonly UserId: SecurityIdentifier;
+    readonly Version: Nullable<System_Internal.Byte>;
+    Dispose(): void;
+    FormatDescription(): string;
+    FormatDescription(values: IEnumerable<unknown>): string;
+    ToXml(): string;
 }
 
 
@@ -498,8 +498,8 @@ export const EventRecord: {
 export type EventRecord = EventRecord$instance;
 
 export interface EventRecordWrittenEventArgs$instance extends EventArgs {
-    readonly eventException: Exception;
-    readonly eventRecord: EventRecord;
+    readonly EventException: Exception;
+    readonly EventRecord: EventRecord;
 }
 
 
@@ -511,10 +511,10 @@ export const EventRecordWrittenEventArgs: {
 export type EventRecordWrittenEventArgs = EventRecordWrittenEventArgs$instance;
 
 export interface EventTask$instance {
-    readonly displayName: string;
-    readonly eventGuid: Guid;
-    readonly name: string;
-    readonly value: int;
+    readonly DisplayName: string;
+    readonly EventGuid: Guid;
+    readonly Name: string;
+    readonly Value: int;
 }
 
 
@@ -526,20 +526,20 @@ export const EventTask: {
 export type EventTask = EventTask$instance;
 
 export interface ProviderMetadata$instance {
-    readonly displayName: string;
-    readonly events: IEnumerable<EventMetadata>;
-    readonly helpLink: Uri;
-    readonly id: Guid;
-    readonly keywords: IList<EventKeyword>;
-    readonly levels: IList<EventLevel>;
-    readonly logLinks: IList<EventLogLink>;
-    readonly messageFilePath: string;
-    readonly name: string;
-    readonly opcodes: IList<EventOpcode>;
-    readonly parameterFilePath: string;
-    readonly resourceFilePath: string;
-    readonly tasks: IList<EventTask>;
-    dispose(): void;
+    readonly DisplayName: string;
+    readonly Events: IEnumerable<EventMetadata>;
+    readonly HelpLink: Uri;
+    readonly Id: Guid;
+    readonly Keywords: IList<EventKeyword>;
+    readonly Levels: IList<EventLevel>;
+    readonly LogLinks: IList<EventLogLink>;
+    readonly MessageFilePath: string;
+    readonly Name: string;
+    readonly Opcodes: IList<EventOpcode>;
+    readonly ParameterFilePath: string;
+    readonly ResourceFilePath: string;
+    readonly Tasks: IList<EventTask>;
+    Dispose(): void;
 }
 
 

@@ -13,8 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, StringComparison } from "@tsonic/dotnet/System.js";
 
 export interface CurrentPathSegment$instance {
-    readonly canProduceStem: boolean;
-    match(value: string): boolean;
+    readonly CanProduceStem: boolean;
+    Match(value: string): boolean;
 }
 
 
@@ -33,11 +33,11 @@ export type CurrentPathSegment = CurrentPathSegment$instance & __CurrentPathSegm
 
 
 export interface LiteralPathSegment$instance {
-    readonly canProduceStem: boolean;
-    readonly value: string;
-    equals(obj: unknown): boolean;
-    getHashCode(): int;
-    match(value: string): boolean;
+    readonly CanProduceStem: boolean;
+    readonly Value: string;
+    Equals(obj: unknown): boolean;
+    GetHashCode(): int;
+    Match(value: string): boolean;
 }
 
 
@@ -56,8 +56,8 @@ export type LiteralPathSegment = LiteralPathSegment$instance & __LiteralPathSegm
 
 
 export interface ParentPathSegment$instance {
-    readonly canProduceStem: boolean;
-    match(value: string): boolean;
+    readonly CanProduceStem: boolean;
+    Match(value: string): boolean;
 }
 
 
@@ -76,8 +76,8 @@ export type ParentPathSegment = ParentPathSegment$instance & __ParentPathSegment
 
 
 export interface RecursiveWildcardSegment$instance {
-    readonly canProduceStem: boolean;
-    match(value: string): boolean;
+    readonly CanProduceStem: boolean;
+    Match(value: string): boolean;
 }
 
 
@@ -96,17 +96,17 @@ export type RecursiveWildcardSegment = RecursiveWildcardSegment$instance & __Rec
 
 
 export interface WildcardPathSegment$instance {
-    readonly beginsWith: string;
-    readonly canProduceStem: boolean;
-    readonly contains: List<System_Internal.String>;
-    readonly endsWith: string;
-    match(value: string): boolean;
+    readonly BeginsWith: string;
+    readonly CanProduceStem: boolean;
+    readonly Contains: List<System_Internal.String>;
+    readonly EndsWith: string;
+    Match(value: string): boolean;
 }
 
 
 export const WildcardPathSegment: {
     new(beginsWith: string, contains: List<System_Internal.String>, endsWith: string, comparisonType: StringComparison): WildcardPathSegment;
-    readonly matchAll: WildcardPathSegment;
+    readonly MatchAll: WildcardPathSegment;
 };
 
 

@@ -11,8 +11,8 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System.js";
 import type { TextEncoderSettings } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
 
 export interface WebEncoderOptions$instance {
-    get textEncoderSettings(): TextEncoderSettings | undefined;
-    set textEncoderSettings(value: TextEncoderSettings);
+    get TextEncoderSettings(): TextEncoderSettings | undefined;
+    set TextEncoderSettings(value: TextEncoderSettings);
 }
 
 

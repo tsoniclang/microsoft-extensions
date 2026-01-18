@@ -10,14 +10,14 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { DateTimeOffset, Object as ClrObject } from "@tsonic/dotnet/System.js";
 
 export interface ISystemClock$instance {
-    readonly utcNow: DateTimeOffset;
+    readonly UtcNow: DateTimeOffset;
 }
 
 
 export type ISystemClock = ISystemClock$instance;
 
 export interface SystemClock$instance {
-    readonly utcNow: DateTimeOffset;
+    readonly UtcNow: DateTimeOffset;
 }
 
 

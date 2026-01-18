@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.Configuration.UserSecrets",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Configuration.UserSecrets"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.Configuration.UserSecrets:Microsoft.Extensions.Configuration.UserSecrets.PathHelper",
       "clrName": "Microsoft.Extensions.Configuration.UserSecrets.PathHelper",
-      "tsEmitName": "PathHelper",
       "assemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.UserSecrets:Microsoft.Extensions.Configuration.UserSecrets.PathHelper::GetSecretsPathFromSecretsId(System.String):System.String",
           "clrName": "GetSecretsPathFromSecretsId",
-          "tsEmitName": "getSecretsPathFromSecretsId",
           "metadataToken": 100663325,
           "canonicalSignature": "(System.String):System.String",
           "normalizedSignature": "GetSecretsPathFromSecretsId|(System.String):System.String|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.PathHelper",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": false
@@ -37,50 +50,36 @@
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.PathHelper",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getSecretsPathFromSecretsId",
-          "isStatic": true,
-          "tsSignatureId": "GetSecretsPathFromSecretsId|(System.String):System.String|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.PathHelper",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
-            "metadataToken": 100663325
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.PathHelper",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
-            "metadataToken": 100663327
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.UserSecrets:Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute",
       "clrName": "Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute",
-      "tsEmitName": "UserSecretsIdAttribute",
       "assemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Configuration.UserSecrets:Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute::UserSecretsId:System.String",
           "clrName": "UserSecretsId",
-          "tsEmitName": "userSecretsId",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UserSecretsId|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets"
         }
@@ -97,29 +96,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets"
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "userSecretsId",
-          "isStatic": false,
-          "tsSignatureId": "UserSecretsId|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
-            "metadataToken": 385875974
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
-            "metadataToken": 100663328
-          }
         }
       ]
     }

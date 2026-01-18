@@ -14,11 +14,11 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface PatternContextLinear_FrameData$instance {
-    isNotApplicable: boolean;
-    segmentIndex: int;
-    inStem: boolean;
-    readonly stem: string;
-    readonly stemItems: IList<System_Internal.String>;
+    IsNotApplicable: boolean;
+    SegmentIndex: int;
+    InStem: boolean;
+    readonly Stem: string;
+    readonly StemItems: IList<System_Internal.String>;
 }
 
 
@@ -30,14 +30,14 @@ export const PatternContextLinear_FrameData: {
 export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$instance;
 
 export interface PatternContextRagged_FrameData$instance {
-    isNotApplicable: boolean;
-    segmentGroupIndex: int;
-    segmentGroup: IList<IPathSegment>;
-    backtrackAvailable: int;
-    segmentIndex: int;
-    inStem: boolean;
-    readonly stem: string;
-    readonly stemItems: IList<System_Internal.String>;
+    IsNotApplicable: boolean;
+    SegmentGroupIndex: int;
+    SegmentGroup: IList<IPathSegment>;
+    BacktrackAvailable: int;
+    SegmentIndex: int;
+    InStem: boolean;
+    readonly Stem: string;
+    readonly StemItems: IList<System_Internal.String>;
 }
 
 
@@ -49,11 +49,11 @@ export const PatternContextRagged_FrameData: {
 export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
 
 export interface PatternContext_1$instance<TFrame extends unknown> {
-    declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(file: FileInfoBase): PatternTestResult;
-    test(directory: DirectoryInfoBase): boolean;
+    Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(file: FileInfoBase): PatternTestResult;
+    Test(directory: DirectoryInfoBase): boolean;
 }
 
 
@@ -69,11 +69,11 @@ export type PatternContext_1<TFrame> = PatternContext_1$instance<TFrame> & __Pat
 
 
 export interface PatternContextLinear$instance extends PatternContext_1$instance<PatternContextLinear_FrameData> {
-    declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(file: FileInfoBase): PatternTestResult;
-    test(directory: DirectoryInfoBase): boolean;
+    Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(file: FileInfoBase): PatternTestResult;
+    Test(directory: DirectoryInfoBase): boolean;
 }
 
 
@@ -90,11 +90,11 @@ export type PatternContextLinear = PatternContextLinear$instance & __PatternCont
 
 
 export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(directory: DirectoryInfoBase): boolean;
-    test(file: FileInfoBase): PatternTestResult;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(directory: DirectoryInfoBase): boolean;
+    Test(file: FileInfoBase): PatternTestResult;
 }
 
 
@@ -111,12 +111,12 @@ export type PatternContextLinearExclude = PatternContextLinearExclude$instance &
 
 
 export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance {
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(directory: DirectoryInfoBase): boolean;
-    test(file: FileInfoBase): PatternTestResult;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(directory: DirectoryInfoBase): boolean;
+    Test(file: FileInfoBase): PatternTestResult;
 }
 
 
@@ -133,11 +133,11 @@ export type PatternContextLinearInclude = PatternContextLinearInclude$instance &
 
 
 export interface PatternContextRagged$instance extends PatternContext_1$instance<PatternContextRagged_FrameData> {
-    declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(file: FileInfoBase): PatternTestResult;
-    test(directory: DirectoryInfoBase): boolean;
+    Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(file: FileInfoBase): PatternTestResult;
+    Test(directory: DirectoryInfoBase): boolean;
 }
 
 
@@ -154,11 +154,11 @@ export type PatternContextRagged = PatternContextRagged$instance & __PatternCont
 
 
 export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(directory: DirectoryInfoBase): boolean;
-    test(file: FileInfoBase): PatternTestResult;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(directory: DirectoryInfoBase): boolean;
+    Test(file: FileInfoBase): PatternTestResult;
 }
 
 
@@ -175,12 +175,12 @@ export type PatternContextRaggedExclude = PatternContextRaggedExclude$instance &
 
 
 export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance {
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(directory: DirectoryInfoBase): boolean;
-    test(file: FileInfoBase): PatternTestResult;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(directory: DirectoryInfoBase): boolean;
+    Test(file: FileInfoBase): PatternTestResult;
 }
 
 

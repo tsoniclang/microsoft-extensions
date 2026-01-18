@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.Diagnostics.Metrics.Configuration",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Diagnostics"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
       "clrName": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
-      "tsEmitName": "IMetricListenerConfigurationFactory",
       "assemblyName": "Microsoft.Extensions.Diagnostics",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory::GetConfiguration(System.String):Microsoft.Extensions.Configuration.IConfiguration",
           "clrName": "GetConfiguration",
-          "tsEmitName": "getConfiguration",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Configuration.IConfiguration",
           "normalizedSignature": "GetConfiguration|(System.String):Microsoft.Extensions.Configuration.IConfiguration|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": false
@@ -26,19 +39,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getConfiguration",
-          "isStatic": false,
-          "tsSignatureId": "GetConfiguration|(System.String):Microsoft.Extensions.Configuration.IConfiguration|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
-            "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
-            "metadataToken": 100663356
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

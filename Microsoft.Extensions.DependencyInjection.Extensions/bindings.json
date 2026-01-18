@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.DependencyInjection.Extensions",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.DependencyInjection.Abstractions"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
       "clrName": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-      "tsEmitName": "ServiceCollectionDescriptorExtensions",
       "assemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::Add(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "Add",
-          "tsEmitName": "add",
           "metadataToken": 100663531,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Add|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::Add(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "Add",
-          "tsEmitName": "add",
           "metadataToken": 100663532,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Add|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -39,13 +57,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void",
           "clrName": "TryAdd",
-          "tsEmitName": "tryAdd",
           "metadataToken": 100663533,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void",
           "normalizedSignature": "TryAdd|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -53,13 +76,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAdd(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "TryAdd",
-          "tsEmitName": "tryAdd",
           "metadataToken": 100663534,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "TryAdd|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -67,13 +95,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void",
           "clrName": "TryAddTransient",
-          "tsEmitName": "tryAddTransient",
           "metadataToken": 100663535,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void",
           "normalizedSignature": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -81,13 +114,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void",
           "clrName": "TryAddTransient",
-          "tsEmitName": "tryAddTransient",
           "metadataToken": 100663536,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void",
           "normalizedSignature": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -95,13 +133,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "TryAddTransient",
-          "tsEmitName": "tryAddTransient",
           "metadataToken": 100663537,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -109,13 +152,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "clrName": "TryAddTransient",
-          "tsEmitName": "tryAddTransient",
           "metadataToken": 100663538,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "normalizedSignature": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -123,13 +171,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void",
           "clrName": "TryAddTransient",
-          "tsEmitName": "tryAddTransient",
           "metadataToken": 100663540,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void",
           "normalizedSignature": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -137,13 +190,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void",
           "clrName": "TryAddScoped",
-          "tsEmitName": "tryAddScoped",
           "metadataToken": 100663541,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void",
           "normalizedSignature": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -151,13 +209,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void",
           "clrName": "TryAddScoped",
-          "tsEmitName": "tryAddScoped",
           "metadataToken": 100663542,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void",
           "normalizedSignature": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -165,13 +228,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "TryAddScoped",
-          "tsEmitName": "tryAddScoped",
           "metadataToken": 100663543,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -179,13 +247,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "clrName": "TryAddScoped",
-          "tsEmitName": "tryAddScoped",
           "metadataToken": 100663544,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "normalizedSignature": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -193,13 +266,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void",
           "clrName": "TryAddScoped",
-          "tsEmitName": "tryAddScoped",
           "metadataToken": 100663546,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void",
           "normalizedSignature": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -207,13 +285,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void",
           "clrName": "TryAddSingleton",
-          "tsEmitName": "tryAddSingleton",
           "metadataToken": 100663547,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void",
           "normalizedSignature": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -221,13 +304,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void",
           "clrName": "TryAddSingleton",
-          "tsEmitName": "tryAddSingleton",
           "metadataToken": 100663548,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void",
           "normalizedSignature": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -235,13 +323,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "TryAddSingleton",
-          "tsEmitName": "tryAddSingleton",
           "metadataToken": 100663549,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -249,13 +342,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "clrName": "TryAddSingleton",
-          "tsEmitName": "tryAddSingleton",
           "metadataToken": 100663550,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
           "normalizedSignature": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -263,13 +361,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,TService):System.Void",
           "clrName": "TryAddSingleton",
-          "tsEmitName": "tryAddSingleton",
           "metadataToken": 100663552,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,TService):System.Void",
           "normalizedSignature": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,TService):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -277,13 +380,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void",
           "clrName": "TryAddSingleton",
-          "tsEmitName": "tryAddSingleton",
           "metadataToken": 100663553,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void",
           "normalizedSignature": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -291,13 +399,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddEnumerable(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void",
           "clrName": "TryAddEnumerable",
-          "tsEmitName": "tryAddEnumerable",
           "metadataToken": 100663554,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void",
           "normalizedSignature": "TryAddEnumerable|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -305,13 +418,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddEnumerable(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "clrName": "TryAddEnumerable",
-          "tsEmitName": "tryAddEnumerable",
           "metadataToken": 100663555,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "TryAddEnumerable|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -319,13 +437,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::Replace(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "Replace",
-          "tsEmitName": "replace",
           "metadataToken": 100663556,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Replace|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -333,13 +456,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::RemoveAll(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "RemoveAll",
-          "tsEmitName": "removeAll",
           "metadataToken": 100663557,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "RemoveAll|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -347,13 +475,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::RemoveAll(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "RemoveAll",
-          "tsEmitName": "removeAll",
           "metadataToken": 100663558,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "RemoveAll|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -361,13 +494,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void",
           "clrName": "TryAddKeyedTransient",
-          "tsEmitName": "tryAddKeyedTransient",
           "metadataToken": 100663559,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void",
           "normalizedSignature": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -375,13 +513,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void",
           "clrName": "TryAddKeyedTransient",
-          "tsEmitName": "tryAddKeyedTransient",
           "metadataToken": 100663560,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void",
           "normalizedSignature": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -389,13 +532,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "TryAddKeyedTransient",
-          "tsEmitName": "tryAddKeyedTransient",
           "metadataToken": 100663561,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -403,13 +551,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void",
           "clrName": "TryAddKeyedTransient",
-          "tsEmitName": "tryAddKeyedTransient",
           "metadataToken": 100663562,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void",
           "normalizedSignature": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -417,13 +570,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedTransient(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void",
           "clrName": "TryAddKeyedTransient",
-          "tsEmitName": "tryAddKeyedTransient",
           "metadataToken": 100663564,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void",
           "normalizedSignature": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -431,13 +589,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void",
           "clrName": "TryAddKeyedScoped",
-          "tsEmitName": "tryAddKeyedScoped",
           "metadataToken": 100663565,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void",
           "normalizedSignature": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -445,13 +608,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void",
           "clrName": "TryAddKeyedScoped",
-          "tsEmitName": "tryAddKeyedScoped",
           "metadataToken": 100663566,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void",
           "normalizedSignature": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -459,13 +627,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "TryAddKeyedScoped",
-          "tsEmitName": "tryAddKeyedScoped",
           "metadataToken": 100663567,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -473,13 +646,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void",
           "clrName": "TryAddKeyedScoped",
-          "tsEmitName": "tryAddKeyedScoped",
           "metadataToken": 100663568,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void",
           "normalizedSignature": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -487,13 +665,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedScoped(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void",
           "clrName": "TryAddKeyedScoped",
-          "tsEmitName": "tryAddKeyedScoped",
           "metadataToken": 100663570,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void",
           "normalizedSignature": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -501,13 +684,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void",
           "clrName": "TryAddKeyedSingleton",
-          "tsEmitName": "tryAddKeyedSingleton",
           "metadataToken": 100663571,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void",
           "normalizedSignature": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -515,13 +703,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void",
           "clrName": "TryAddKeyedSingleton",
-          "tsEmitName": "tryAddKeyedSingleton",
           "metadataToken": 100663572,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void",
           "normalizedSignature": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -529,13 +722,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "clrName": "TryAddKeyedSingleton",
-          "tsEmitName": "tryAddKeyedSingleton",
           "metadataToken": 100663573,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -543,13 +741,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void",
           "clrName": "TryAddKeyedSingleton",
-          "tsEmitName": "tryAddKeyedSingleton",
           "metadataToken": 100663574,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void",
           "normalizedSignature": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -557,13 +760,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,TService):System.Void",
           "clrName": "TryAddKeyedSingleton",
-          "tsEmitName": "tryAddKeyedSingleton",
           "metadataToken": 100663576,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,TService):System.Void",
           "normalizedSignature": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,TService):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -571,13 +779,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::TryAddKeyedSingleton(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void",
           "clrName": "TryAddKeyedSingleton",
-          "tsEmitName": "tryAddKeyedSingleton",
           "metadataToken": 100663577,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void",
           "normalizedSignature": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -585,13 +798,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::RemoveAllKeyed(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "RemoveAllKeyed",
-          "tsEmitName": "removeAllKeyed",
           "metadataToken": 100663578,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "RemoveAllKeyed|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -599,13 +817,18 @@
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::RemoveAllKeyed(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "clrName": "RemoveAllKeyed",
-          "tsEmitName": "removeAllKeyed",
           "metadataToken": 100663579,
           "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "RemoveAllKeyed|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -614,439 +837,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "add",
-          "isStatic": true,
-          "tsSignatureId": "Add|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663531
-          }
-        },
-        {
-          "tsName": "add",
-          "isStatic": true,
-          "tsSignatureId": "Add|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663532
-          }
-        },
-        {
-          "tsName": "tryAdd",
-          "isStatic": true,
-          "tsSignatureId": "TryAdd|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663533
-          }
-        },
-        {
-          "tsName": "tryAdd",
-          "isStatic": true,
-          "tsSignatureId": "TryAdd|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663534
-          }
-        },
-        {
-          "tsName": "tryAddTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663535
-          }
-        },
-        {
-          "tsName": "tryAddTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663536
-          }
-        },
-        {
-          "tsName": "tryAddTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663537
-          }
-        },
-        {
-          "tsName": "tryAddTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663538
-          }
-        },
-        {
-          "tsName": "tryAddTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663540
-          }
-        },
-        {
-          "tsName": "tryAddScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663541
-          }
-        },
-        {
-          "tsName": "tryAddScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663542
-          }
-        },
-        {
-          "tsName": "tryAddScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663543
-          }
-        },
-        {
-          "tsName": "tryAddScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663544
-          }
-        },
-        {
-          "tsName": "tryAddScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663546
-          }
-        },
-        {
-          "tsName": "tryAddSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663547
-          }
-        },
-        {
-          "tsName": "tryAddSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663548
-          }
-        },
-        {
-          "tsName": "tryAddSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663549
-          }
-        },
-        {
-          "tsName": "tryAddSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663550
-          }
-        },
-        {
-          "tsName": "tryAddSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,TService):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663552
-          }
-        },
-        {
-          "tsName": "tryAddSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Func_2):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663553
-          }
-        },
-        {
-          "tsName": "tryAddEnumerable",
-          "isStatic": true,
-          "tsSignatureId": "TryAddEnumerable|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663554
-          }
-        },
-        {
-          "tsName": "tryAddEnumerable",
-          "isStatic": true,
-          "tsSignatureId": "TryAddEnumerable|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.DependencyInjection.ServiceDescriptor,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663555
-          }
-        },
-        {
-          "tsName": "replace",
-          "isStatic": true,
-          "tsSignatureId": "Replace|(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663556
-          }
-        },
-        {
-          "tsName": "removeAll",
-          "isStatic": true,
-          "tsSignatureId": "RemoveAll|(Microsoft.Extensions.DependencyInjection.IServiceCollection):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663557
-          }
-        },
-        {
-          "tsName": "removeAll",
-          "isStatic": true,
-          "tsSignatureId": "RemoveAll|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663558
-          }
-        },
-        {
-          "tsName": "tryAddKeyedTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663559
-          }
-        },
-        {
-          "tsName": "tryAddKeyedTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663560
-          }
-        },
-        {
-          "tsName": "tryAddKeyedTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663561
-          }
-        },
-        {
-          "tsName": "tryAddKeyedTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663562
-          }
-        },
-        {
-          "tsName": "tryAddKeyedTransient",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedTransient|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663564
-          }
-        },
-        {
-          "tsName": "tryAddKeyedScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663565
-          }
-        },
-        {
-          "tsName": "tryAddKeyedScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663566
-          }
-        },
-        {
-          "tsName": "tryAddKeyedScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663567
-          }
-        },
-        {
-          "tsName": "tryAddKeyedScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663568
-          }
-        },
-        {
-          "tsName": "tryAddKeyedScoped",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedScoped|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663570
-          }
-        },
-        {
-          "tsName": "tryAddKeyedSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663571
-          }
-        },
-        {
-          "tsName": "tryAddKeyedSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Type):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663572
-          }
-        },
-        {
-          "tsName": "tryAddKeyedSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object,System.Func_3[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663573
-          }
-        },
-        {
-          "tsName": "tryAddKeyedSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663574
-          }
-        },
-        {
-          "tsName": "tryAddKeyedSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,TService):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663576
-          }
-        },
-        {
-          "tsName": "tryAddKeyedSingleton",
-          "isStatic": true,
-          "tsSignatureId": "TryAddKeyedSingleton|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object,Func_3):System.Void|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663577
-          }
-        },
-        {
-          "tsName": "removeAllKeyed",
-          "isStatic": true,
-          "tsSignatureId": "RemoveAllKeyed|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663578
-          }
-        },
-        {
-          "tsName": "removeAllKeyed",
-          "isStatic": true,
-          "tsSignatureId": "RemoveAllKeyed|(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type,System.Object):Microsoft.Extensions.DependencyInjection.IServiceCollection|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
-            "metadataToken": 100663579
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

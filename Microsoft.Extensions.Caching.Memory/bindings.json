@@ -1,305 +1,205 @@
 {
   "namespace": "Microsoft.Extensions.Caching.Memory",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Caching.Abstractions",
+    "Microsoft.Extensions.Caching.Memory"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheItemPriority",
       "clrName": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
-      "tsEmitName": "CacheItemPriority",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheItemPriority::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67108887,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheItemPriority::LowMicrosoft.Extensions.Caching.Memory.CacheItemPriority",
           "clrName": "Low",
-          "tsEmitName": "low",
           "metadataToken": 67108888,
           "normalizedSignature": "Low|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheItemPriority::NormalMicrosoft.Extensions.Caching.Memory.CacheItemPriority",
           "clrName": "Normal",
-          "tsEmitName": "normal",
           "metadataToken": 67108889,
           "normalizedSignature": "Normal|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheItemPriority::HighMicrosoft.Extensions.Caching.Memory.CacheItemPriority",
           "clrName": "High",
-          "tsEmitName": "high",
           "metadataToken": 67108890,
           "normalizedSignature": "High|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheItemPriority::NeverRemoveMicrosoft.Extensions.Caching.Memory.CacheItemPriority",
           "clrName": "NeverRemove",
-          "tsEmitName": "neverRemove",
           "metadataToken": 67108891,
           "normalizedSignature": "NeverRemove|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108887
-          }
-        },
-        {
-          "tsName": "low",
-          "isStatic": true,
-          "tsSignatureId": "Low|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108888
-          }
-        },
-        {
-          "tsName": "normal",
-          "isStatic": true,
-          "tsSignatureId": "Normal|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108889
-          }
-        },
-        {
-          "tsName": "high",
-          "isStatic": true,
-          "tsSignatureId": "High|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108890
-          }
-        },
-        {
-          "tsName": "neverRemove",
-          "isStatic": true,
-          "tsSignatureId": "NeverRemove|Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheItemPriority",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108891
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason",
       "clrName": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-      "tsEmitName": "EvictionReason",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Enum",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::value__System.Int32",
           "clrName": "value__",
-          "tsEmitName": "value__",
           "metadataToken": 67108892,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::NoneMicrosoft.Extensions.Caching.Memory.EvictionReason",
           "clrName": "None",
-          "tsEmitName": "none",
           "metadataToken": 67108893,
           "normalizedSignature": "None|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::RemovedMicrosoft.Extensions.Caching.Memory.EvictionReason",
           "clrName": "Removed",
-          "tsEmitName": "removed",
           "metadataToken": 67108894,
           "normalizedSignature": "Removed|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::ReplacedMicrosoft.Extensions.Caching.Memory.EvictionReason",
           "clrName": "Replaced",
-          "tsEmitName": "replaced",
           "metadataToken": 67108895,
           "normalizedSignature": "Replaced|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::ExpiredMicrosoft.Extensions.Caching.Memory.EvictionReason",
           "clrName": "Expired",
-          "tsEmitName": "expired",
           "metadataToken": 67108896,
           "normalizedSignature": "Expired|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::TokenExpiredMicrosoft.Extensions.Caching.Memory.EvictionReason",
           "clrName": "TokenExpired",
-          "tsEmitName": "tokenExpired",
           "metadataToken": 67108897,
           "normalizedSignature": "TokenExpired|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.EvictionReason::CapacityMicrosoft.Extensions.Caching.Memory.EvictionReason",
           "clrName": "Capacity",
-          "tsEmitName": "capacity",
           "metadataToken": 67108898,
           "normalizedSignature": "Capacity|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
+          "isLiteral": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
       ],
       "events": [],
-      "constructors": [],
-      "exposedFields": [
-        {
-          "tsName": "value__",
-          "isStatic": false,
-          "tsSignatureId": "value__|System.Int32|static=false|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108892
-          }
-        },
-        {
-          "tsName": "none",
-          "isStatic": true,
-          "tsSignatureId": "None|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108893
-          }
-        },
-        {
-          "tsName": "removed",
-          "isStatic": true,
-          "tsSignatureId": "Removed|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108894
-          }
-        },
-        {
-          "tsName": "replaced",
-          "isStatic": true,
-          "tsSignatureId": "Replaced|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108895
-          }
-        },
-        {
-          "tsName": "expired",
-          "isStatic": true,
-          "tsSignatureId": "Expired|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108896
-          }
-        },
-        {
-          "tsName": "tokenExpired",
-          "isStatic": true,
-          "tsSignatureId": "TokenExpired|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108897
-          }
-        },
-        {
-          "tsName": "capacity",
-          "isStatic": true,
-          "tsSignatureId": "Capacity|Microsoft.Extensions.Caching.Memory.EvictionReason|static=true|const=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.EvictionReason",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 67108898
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
       "clrName": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
-      "tsEmitName": "PostEvictionDelegate",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Delegate",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate::Invoke(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object):System.Void",
           "clrName": "Invoke",
-          "tsEmitName": "invoke",
           "metadataToken": 100663439,
           "canonicalSignature": "(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object):System.Void",
           "normalizedSignature": "Invoke|(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 4,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -307,13 +207,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate::BeginInvoke(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object,System.AsyncCallback,System.Object):System.IAsyncResult",
           "clrName": "BeginInvoke",
-          "tsEmitName": "beginInvoke",
           "metadataToken": 100663440,
           "canonicalSignature": "(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object,System.AsyncCallback,System.Object):System.IAsyncResult",
           "normalizedSignature": "BeginInvoke|(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 6,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -321,13 +226,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate::EndInvoke(System.IAsyncResult):System.Void",
           "clrName": "EndInvoke",
-          "tsEmitName": "endInvoke",
           "metadataToken": 100663441,
           "canonicalSignature": "(System.IAsyncResult):System.Void",
           "normalizedSignature": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -347,299 +257,215 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "invoke",
-          "isStatic": false,
-          "tsSignatureId": "Invoke|(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663439
-          }
-        },
-        {
-          "tsName": "beginInvoke",
-          "isStatic": false,
-          "tsSignatureId": "BeginInvoke|(System.Object,System.Object,Microsoft.Extensions.Caching.Memory.EvictionReason,System.Object,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663440
-          }
-        },
-        {
-          "tsName": "endInvoke",
-          "isStatic": false,
-          "tsSignatureId": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663441
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Object,System.IntPtr):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663438
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry",
       "clrName": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-      "tsEmitName": "ICacheEntry",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::Key:System.Object",
           "clrName": "Key",
-          "tsEmitName": "key",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Key|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::Value:System.Object",
           "clrName": "Value",
-          "tsEmitName": "value",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Value|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::AbsoluteExpiration:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "AbsoluteExpiration",
-          "tsEmitName": "absoluteExpiration",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AbsoluteExpiration|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::AbsoluteExpirationRelativeToNow:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "AbsoluteExpirationRelativeToNow",
-          "tsEmitName": "absoluteExpirationRelativeToNow",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AbsoluteExpirationRelativeToNow|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::SlidingExpiration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SlidingExpiration",
-          "tsEmitName": "slidingExpiration",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SlidingExpiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::ExpirationTokens:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "ExpirationTokens",
-          "tsEmitName": "expirationTokens",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ExpirationTokens|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::PostEvictionCallbacks:System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "PostEvictionCallbacks",
-          "tsEmitName": "postEvictionCallbacks",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PostEvictionCallbacks|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::Priority:Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "clrName": "Priority",
-          "tsEmitName": "priority",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "normalizedSignature": "Priority|:Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.ICacheEntry::Size:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Size",
-          "tsEmitName": "size",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Size|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "key",
-          "isStatic": false,
-          "tsSignatureId": "Key|:System.Object|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875977
-          }
-        },
-        {
-          "tsName": "value",
-          "isStatic": false,
-          "tsSignatureId": "Value|:System.Object|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875978
-          }
-        },
-        {
-          "tsName": "absoluteExpiration",
-          "isStatic": false,
-          "tsSignatureId": "AbsoluteExpiration|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "absoluteExpirationRelativeToNow",
-          "isStatic": false,
-          "tsSignatureId": "AbsoluteExpirationRelativeToNow|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875980
-          }
-        },
-        {
-          "tsName": "slidingExpiration",
-          "isStatic": false,
-          "tsSignatureId": "SlidingExpiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875981
-          }
-        },
-        {
-          "tsName": "expirationTokens",
-          "isStatic": false,
-          "tsSignatureId": "ExpirationTokens|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875982
-          }
-        },
-        {
-          "tsName": "postEvictionCallbacks",
-          "isStatic": false,
-          "tsSignatureId": "PostEvictionCallbacks|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875983
-          }
-        },
-        {
-          "tsName": "priority",
-          "isStatic": false,
-          "tsSignatureId": "Priority|:Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875984
-          }
-        },
-        {
-          "tsName": "size",
-          "isStatic": false,
-          "tsSignatureId": "Size|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.ICacheEntry",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875985
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache",
       "clrName": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-      "tsEmitName": "IMemoryCache",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::TryGetValue(System.Object,System.Object\u0026):System.Boolean",
           "clrName": "TryGetValue",
-          "tsEmitName": "tryGetValue",
           "metadataToken": 100663385,
           "canonicalSignature": "(System.Object,System.Object\u0026):System.Boolean",
           "normalizedSignature": "TryGetValue|(System.Object,System.Object\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -653,13 +479,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::CreateEntry(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "CreateEntry",
-          "tsEmitName": "createEntry",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "CreateEntry|(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -667,13 +498,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::Remove(System.Object):System.Void",
           "clrName": "Remove",
-          "tsEmitName": "remove",
           "metadataToken": 100663387,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Remove|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -681,13 +517,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::GetCurrentStatistics():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "clrName": "GetCurrentStatistics",
-          "tsEmitName": "getCurrentStatistics",
           "metadataToken": 100663388,
           "canonicalSignature": "():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "normalizedSignature": "GetCurrentStatistics|():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -696,67 +537,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "tryGetValue",
-          "isStatic": false,
-          "tsSignatureId": "TryGetValue|(System.Object,System.Object\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663385
-          }
-        },
-        {
-          "tsName": "createEntry",
-          "isStatic": false,
-          "tsSignatureId": "CreateEntry|(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663386
-          }
-        },
-        {
-          "tsName": "remove",
-          "isStatic": false,
-          "tsSignatureId": "Remove|(System.Object):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663387
-          }
-        },
-        {
-          "tsName": "getCurrentStatistics",
-          "isStatic": false,
-          "tsSignatureId": "GetCurrentStatistics|():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663388
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache",
       "clrName": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-      "tsEmitName": "MemoryCache",
       "assemblyName": "Microsoft.Extensions.Caching.Memory",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::CreateEntry(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "CreateEntry",
-          "tsEmitName": "createEntry",
           "metadataToken": 100663371,
           "canonicalSignature": "(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "CreateEntry|(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -764,13 +573,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::TryGetValue(System.Object,System.Object\u0026):System.Boolean",
           "clrName": "TryGetValue",
-          "tsEmitName": "tryGetValue",
           "metadataToken": 100663373,
           "canonicalSignature": "(System.Object,System.Object\u0026):System.Boolean",
           "normalizedSignature": "TryGetValue|(System.Object,System.Object\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false,
@@ -784,13 +598,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::TryGetValue(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object\u0026):System.Boolean",
           "clrName": "TryGetValue",
-          "tsEmitName": "tryGetValue",
           "metadataToken": 100663374,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object\u0026):System.Boolean",
           "normalizedSignature": "TryGetValue|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false,
@@ -804,13 +623,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::TryGetValue(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TItem\u0026):System.Boolean",
           "clrName": "TryGetValue",
-          "tsEmitName": "tryGetValue",
           "metadataToken": 100663375,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TItem\u0026):System.Boolean",
           "normalizedSignature": "TryGetValue|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TItem\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false,
@@ -824,13 +648,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::Remove(System.Object):System.Void",
           "clrName": "Remove",
-          "tsEmitName": "remove",
           "metadataToken": 100663377,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Remove|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -838,13 +667,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::Clear():System.Void",
           "clrName": "Clear",
-          "tsEmitName": "clear",
           "metadataToken": 100663378,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -852,13 +686,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::GetCurrentStatistics():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "clrName": "GetCurrentStatistics",
-          "tsEmitName": "getCurrentStatistics",
           "metadataToken": 100663379,
           "canonicalSignature": "():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "normalizedSignature": "GetCurrentStatistics|():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -866,13 +705,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::Compact(System.Double):System.Void",
           "clrName": "Compact",
-          "tsEmitName": "compact",
           "metadataToken": 100663390,
           "canonicalSignature": "(System.Double):System.Void",
           "normalizedSignature": "Compact|(System.Double):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -880,13 +724,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::Dispose():System.Void",
           "clrName": "Dispose",
-          "tsEmitName": "dispose",
           "metadataToken": 100663392,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -894,16 +743,22 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::TryGetValue(System.Object,System.Object\u0026):System.Boolean",
           "clrName": "TryGetValue",
-          "tsEmitName": "tryGetValue$view",
           "metadataToken": 100663385,
           "canonicalSignature": "(System.Object,System.Object\u0026):System.Boolean",
           "normalizedSignature": "TryGetValue|(System.Object,System.Object\u0026):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "parameterModifiers": [
             {
               "index": 1,
@@ -914,72 +769,98 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::CreateEntry(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "CreateEntry",
-          "tsEmitName": "createEntry$view",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "CreateEntry|(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Caching.Memory.IMemoryCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::Remove(System.Object):System.Void",
           "clrName": "Remove",
-          "tsEmitName": "remove$view",
           "metadataToken": 100663387,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Remove|(System.Object):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Caching.Memory.IMemoryCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.IMemoryCache::GetCurrentStatistics():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "clrName": "GetCurrentStatistics",
-          "tsEmitName": "getCurrentStatistics$view",
           "metadataToken": 100663388,
           "canonicalSignature": "():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "normalizedSignature": "GetCurrentStatistics|():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Caching.Memory.IMemoryCache"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::Count:System.Int32",
           "clrName": "Count",
-          "tsEmitName": "count",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCache::Keys:System.Collections.Generic.IEnumerable_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Keys",
-          "tsEmitName": "keys",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Keys|:System.Collections.Generic.IEnumerable_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         }
@@ -1007,285 +888,144 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "createEntry",
-          "isStatic": false,
-          "tsSignatureId": "CreateEntry|(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663371
-          }
-        },
-        {
-          "tsName": "tryGetValue",
-          "isStatic": false,
-          "tsSignatureId": "TryGetValue|(System.Object,System.Object\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663373
-          }
-        },
-        {
-          "tsName": "tryGetValue",
-          "isStatic": false,
-          "tsSignatureId": "TryGetValue|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663374
-          }
-        },
-        {
-          "tsName": "tryGetValue",
-          "isStatic": false,
-          "tsSignatureId": "TryGetValue|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TItem\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663375
-          }
-        },
-        {
-          "tsName": "remove",
-          "isStatic": false,
-          "tsSignatureId": "Remove|(System.Object):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663377
-          }
-        },
-        {
-          "tsName": "clear",
-          "isStatic": false,
-          "tsSignatureId": "Clear|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663378
-          }
-        },
-        {
-          "tsName": "getCurrentStatistics",
-          "isStatic": false,
-          "tsSignatureId": "GetCurrentStatistics|():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663379
-          }
-        },
-        {
-          "tsName": "compact",
-          "isStatic": false,
-          "tsSignatureId": "Compact|(System.Double):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663390
-          }
-        },
-        {
-          "tsName": "dispose",
-          "isStatic": false,
-          "tsSignatureId": "Dispose|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663392
-          }
-        },
-        {
-          "tsName": "tryGetValue$view",
-          "isStatic": false,
-          "tsSignatureId": "TryGetValue|(System.Object,System.Object\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663385
-          }
-        },
-        {
-          "tsName": "createEntry$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateEntry|(System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663386
-          }
-        },
-        {
-          "tsName": "remove$view",
-          "isStatic": false,
-          "tsSignatureId": "Remove|(System.Object):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663387
-          }
-        },
-        {
-          "tsName": "getCurrentStatistics$view",
-          "isStatic": false,
-          "tsSignatureId": "GetCurrentStatistics|():Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.IMemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663388
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "count",
-          "isStatic": false,
-          "tsSignatureId": "Count|:System.Int32|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "keys",
-          "isStatic": false,
-          "tsSignatureId": "Keys|:System.Collections.Generic.IEnumerable_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875988
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Caching.Memory.MemoryCacheOptions,Microsoft.Extensions.Caching.Memory,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663363
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Caching.Memory.MemoryCacheOptions,Microsoft.Extensions.Caching.Memory,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCache",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663364
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
       "clrName": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-      "tsEmitName": "MemoryCacheEntryOptions",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::AbsoluteExpiration:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "AbsoluteExpiration",
-          "tsEmitName": "absoluteExpiration",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AbsoluteExpiration|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::AbsoluteExpirationRelativeToNow:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "AbsoluteExpirationRelativeToNow",
-          "tsEmitName": "absoluteExpirationRelativeToNow",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AbsoluteExpirationRelativeToNow|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::SlidingExpiration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SlidingExpiration",
-          "tsEmitName": "slidingExpiration",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SlidingExpiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::ExpirationTokens:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "ExpirationTokens",
-          "tsEmitName": "expirationTokens",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ExpirationTokens|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::PostEvictionCallbacks:System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "PostEvictionCallbacks",
-          "tsEmitName": "postEvictionCallbacks",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "PostEvictionCallbacks|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::Priority:Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "clrName": "Priority",
-          "tsEmitName": "priority",
           "metadataToken": 385875993,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.CacheItemPriority",
           "normalizedSignature": "Priority|:Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions::Size:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Size",
-          "tsEmitName": "size",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Size|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
@@ -1303,208 +1043,163 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "absoluteExpiration",
-          "isStatic": false,
-          "tsSignatureId": "AbsoluteExpiration|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875986
-          }
-        },
-        {
-          "tsName": "absoluteExpirationRelativeToNow",
-          "isStatic": false,
-          "tsSignatureId": "AbsoluteExpirationRelativeToNow|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "slidingExpiration",
-          "isStatic": false,
-          "tsSignatureId": "SlidingExpiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875988
-          }
-        },
-        {
-          "tsName": "expirationTokens",
-          "isStatic": false,
-          "tsSignatureId": "ExpirationTokens|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875989
-          }
-        },
-        {
-          "tsName": "postEvictionCallbacks",
-          "isStatic": false,
-          "tsSignatureId": "PostEvictionCallbacks|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875991
-          }
-        },
-        {
-          "tsName": "priority",
-          "isStatic": false,
-          "tsSignatureId": "Priority|:Microsoft.Extensions.Caching.Memory.CacheItemPriority|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875993
-          }
-        },
-        {
-          "tsName": "size",
-          "isStatic": false,
-          "tsSignatureId": "Size|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875994
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663411
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
       "clrName": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-      "tsEmitName": "MemoryCacheOptions",
       "assemblyName": "Microsoft.Extensions.Caching.Memory",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::Clock:Microsoft.Extensions.Internal.ISystemClock",
           "clrName": "Clock",
-          "tsEmitName": "clock",
           "metadataToken": 385875991,
           "canonicalSignature": ":Microsoft.Extensions.Internal.ISystemClock",
           "normalizedSignature": "Clock|:Microsoft.Extensions.Internal.ISystemClock|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::ExpirationScanFrequency:System.TimeSpan",
           "clrName": "ExpirationScanFrequency",
-          "tsEmitName": "expirationScanFrequency",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "ExpirationScanFrequency|:System.TimeSpan|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::SizeLimit:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SizeLimit",
-          "tsEmitName": "sizeLimit",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SizeLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::CompactOnMemoryPressure:System.Boolean",
           "clrName": "CompactOnMemoryPressure",
-          "tsEmitName": "compactOnMemoryPressure",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CompactOnMemoryPressure|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::CompactionPercentage:System.Double",
           "clrName": "CompactionPercentage",
-          "tsEmitName": "compactionPercentage",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Double",
           "normalizedSignature": "CompactionPercentage|:System.Double|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::TrackLinkedCacheEntries:System.Boolean",
           "clrName": "TrackLinkedCacheEntries",
-          "tsEmitName": "trackLinkedCacheEntries",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "TrackLinkedCacheEntries|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryCacheOptions::TrackStatistics:System.Boolean",
           "clrName": "TrackStatistics",
-          "tsEmitName": "trackStatistics",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "TrackStatistics|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptions\u00601::Value:TOptions",
           "clrName": "Value",
-          "tsEmitName": "value",
           "metadataToken": 385876004,
           "canonicalSignature": ":TOptions",
           "normalizedSignature": "Value|:TOptions|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.Options.IOptions\u00601",
           "declaringClrType": "Microsoft.Extensions.Options.IOptions\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Options"
         }
@@ -1522,162 +1217,90 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "clock",
-          "isStatic": false,
-          "tsSignatureId": "Clock|:Microsoft.Extensions.Internal.ISystemClock|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875991
-          }
-        },
-        {
-          "tsName": "expirationScanFrequency",
-          "isStatic": false,
-          "tsSignatureId": "ExpirationScanFrequency|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875992
-          }
-        },
-        {
-          "tsName": "sizeLimit",
-          "isStatic": false,
-          "tsSignatureId": "SizeLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875995
-          }
-        },
-        {
-          "tsName": "compactOnMemoryPressure",
-          "isStatic": false,
-          "tsSignatureId": "CompactOnMemoryPressure|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875996
-          }
-        },
-        {
-          "tsName": "compactionPercentage",
-          "isStatic": false,
-          "tsSignatureId": "CompactionPercentage|:System.Double|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875997
-          }
-        },
-        {
-          "tsName": "trackLinkedCacheEntries",
-          "isStatic": false,
-          "tsSignatureId": "TrackLinkedCacheEntries|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875998
-          }
-        },
-        {
-          "tsName": "trackStatistics",
-          "isStatic": false,
-          "tsSignatureId": "TrackStatistics|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875999
-          }
-        },
-        {
-          "tsName": "value",
-          "isStatic": false,
-          "tsSignatureId": "Value|:TOptions|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Options.IOptions\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.Options",
-            "metadataToken": 385876004
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663416
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
       "clrName": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
-      "tsEmitName": "MemoryCacheStatistics",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics::CurrentEntryCount:System.Int64",
           "clrName": "CurrentEntryCount",
-          "tsEmitName": "currentEntryCount",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "CurrentEntryCount|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics::CurrentEstimatedSize:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CurrentEstimatedSize",
-          "tsEmitName": "currentEstimatedSize",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CurrentEstimatedSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics::TotalMisses:System.Int64",
           "clrName": "TotalMisses",
-          "tsEmitName": "totalMisses",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "TotalMisses|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics::TotalHits:System.Int64",
           "clrName": "TotalHits",
-          "tsEmitName": "totalHits",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "TotalHits|:System.Int64|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
@@ -1695,80 +1318,37 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "currentEntryCount",
-          "isStatic": false,
-          "tsSignatureId": "CurrentEntryCount|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875995
-          }
-        },
-        {
-          "tsName": "currentEstimatedSize",
-          "isStatic": false,
-          "tsSignatureId": "CurrentEstimatedSize|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875996
-          }
-        },
-        {
-          "tsName": "totalMisses",
-          "isStatic": false,
-          "tsSignatureId": "TotalMisses|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875997
-          }
-        },
-        {
-          "tsName": "totalHits",
-          "isStatic": false,
-          "tsSignatureId": "TotalHits|:System.Int64|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875998
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheStatistics",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663424
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions",
       "clrName": "Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions",
-      "tsEmitName": "MemoryDistributedCacheOptions",
       "assemblyName": "Microsoft.Extensions.Caching.Memory",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptions\u00601::Value:TOptions",
           "clrName": "Value",
-          "tsEmitName": "value",
           "metadataToken": 385876004,
           "canonicalSignature": ":TOptions",
           "normalizedSignature": "Value|:TOptions|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.Options.IOptions\u00601",
           "declaringClrType": "Microsoft.Extensions.Options.IOptions\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Options"
         }
@@ -1786,134 +1366,54 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "value",
-          "isStatic": false,
-          "tsSignatureId": "Value|:TOptions|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Options.IOptions\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.Options",
-            "metadataToken": 385876004
-          }
-        },
-        {
-          "tsName": "clock",
-          "isStatic": false,
-          "tsSignatureId": "Clock|:Microsoft.Extensions.Internal.ISystemClock|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875991
-          }
-        },
-        {
-          "tsName": "expirationScanFrequency",
-          "isStatic": false,
-          "tsSignatureId": "ExpirationScanFrequency|:System.TimeSpan|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875992
-          }
-        },
-        {
-          "tsName": "sizeLimit",
-          "isStatic": false,
-          "tsSignatureId": "SizeLimit|:System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875995
-          }
-        },
-        {
-          "tsName": "compactOnMemoryPressure",
-          "isStatic": false,
-          "tsSignatureId": "CompactOnMemoryPressure|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875996
-          }
-        },
-        {
-          "tsName": "compactionPercentage",
-          "isStatic": false,
-          "tsSignatureId": "CompactionPercentage|:System.Double|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875997
-          }
-        },
-        {
-          "tsName": "trackLinkedCacheEntries",
-          "isStatic": false,
-          "tsSignatureId": "TrackLinkedCacheEntries|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875998
-          }
-        },
-        {
-          "tsName": "trackStatistics",
-          "isStatic": false,
-          "tsSignatureId": "TrackStatistics|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 385875999
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
-            "metadataToken": 100663417
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
       "clrName": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
-      "tsEmitName": "PostEvictionCallbackRegistration",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration::EvictionCallback:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
           "clrName": "EvictionCallback",
-          "tsEmitName": "evictionCallback",
           "metadataToken": 385875999,
           "canonicalSignature": ":Microsoft.Extensions.Caching.Memory.PostEvictionDelegate",
           "normalizedSignature": "EvictionCallback|:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration::State:System.Object",
           "clrName": "State",
-          "tsEmitName": "state",
           "metadataToken": 385876000,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "State|:System.Object|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
@@ -1931,58 +1431,35 @@
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "evictionCallback",
-          "isStatic": false,
-          "tsSignatureId": "EvictionCallback|:Microsoft.Extensions.Caching.Memory.PostEvictionDelegate|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385875999
-          }
-        },
-        {
-          "tsName": "state",
-          "isStatic": false,
-          "tsSignatureId": "State|:System.Object|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 385876000
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.PostEvictionCallbackRegistration",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663437
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
       "clrName": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-      "tsEmitName": "CacheEntryExtensions",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetPriority(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetPriority",
-          "tsEmitName": "setPriority",
           "metadataToken": 100663359,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetPriority|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -1990,13 +1467,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::AddExpirationToken(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "AddExpirationToken",
-          "tsEmitName": "addExpirationToken",
           "metadataToken": 100663360,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "AddExpirationToken|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2004,13 +1486,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetAbsoluteExpiration",
-          "tsEmitName": "setAbsoluteExpiration",
           "metadataToken": 100663361,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2018,13 +1505,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetAbsoluteExpiration",
-          "tsEmitName": "setAbsoluteExpiration",
           "metadataToken": 100663362,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2032,13 +1524,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetSlidingExpiration",
-          "tsEmitName": "setSlidingExpiration",
           "metadataToken": 100663363,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetSlidingExpiration|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2046,13 +1543,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::RegisterPostEvictionCallback(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "RegisterPostEvictionCallback",
-          "tsEmitName": "registerPostEvictionCallback",
           "metadataToken": 100663364,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2060,13 +1562,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::RegisterPostEvictionCallback(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "RegisterPostEvictionCallback",
-          "tsEmitName": "registerPostEvictionCallback",
           "metadataToken": 100663365,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2074,13 +1581,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetValue(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetValue",
-          "tsEmitName": "setValue",
           "metadataToken": 100663366,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetValue|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2088,13 +1600,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetSize(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Int64):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetSize",
-          "tsEmitName": "setSize",
           "metadataToken": 100663367,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Int64):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetSize|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Int64):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2102,13 +1619,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheEntryExtensions::SetOptions(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "clrName": "SetOptions",
-          "tsEmitName": "setOptions",
           "metadataToken": 100663368,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Microsoft.Extensions.Caching.Memory.ICacheEntry",
           "normalizedSignature": "SetOptions|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2117,127 +1639,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "setPriority",
-          "isStatic": true,
-          "tsSignatureId": "SetPriority|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663359
-          }
-        },
-        {
-          "tsName": "addExpirationToken",
-          "isStatic": true,
-          "tsSignatureId": "AddExpirationToken|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663360
-          }
-        },
-        {
-          "tsName": "setAbsoluteExpiration",
-          "isStatic": true,
-          "tsSignatureId": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663361
-          }
-        },
-        {
-          "tsName": "setAbsoluteExpiration",
-          "isStatic": true,
-          "tsSignatureId": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663362
-          }
-        },
-        {
-          "tsName": "setSlidingExpiration",
-          "isStatic": true,
-          "tsSignatureId": "SetSlidingExpiration|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.TimeSpan):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663363
-          }
-        },
-        {
-          "tsName": "registerPostEvictionCallback",
-          "isStatic": true,
-          "tsSignatureId": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663364
-          }
-        },
-        {
-          "tsName": "registerPostEvictionCallback",
-          "isStatic": true,
-          "tsSignatureId": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663365
-          }
-        },
-        {
-          "tsName": "setValue",
-          "isStatic": true,
-          "tsSignatureId": "SetValue|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Object):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663366
-          }
-        },
-        {
-          "tsName": "setSize",
-          "isStatic": true,
-          "tsSignatureId": "SetSize|(Microsoft.Extensions.Caching.Memory.ICacheEntry,System.Int64):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663367
-          }
-        },
-        {
-          "tsName": "setOptions",
-          "isStatic": true,
-          "tsSignatureId": "SetOptions|(Microsoft.Extensions.Caching.Memory.ICacheEntry,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Microsoft.Extensions.Caching.Memory.ICacheEntry|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663368
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions",
       "clrName": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-      "tsEmitName": "CacheExtensions",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Get(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object",
           "clrName": "Get",
-          "tsEmitName": "get",
           "metadataToken": 100663412,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object",
           "normalizedSignature": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2245,13 +1675,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Get(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem",
           "clrName": "Get",
-          "tsEmitName": "get",
           "metadataToken": 100663413,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem",
           "normalizedSignature": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2259,13 +1694,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::TryGetValue(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem\u0026):System.Boolean",
           "clrName": "TryGetValue",
-          "tsEmitName": "tryGetValue",
           "metadataToken": 100663414,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem\u0026):System.Boolean",
           "normalizedSignature": "TryGetValue|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem\u0026):System.Boolean|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true,
@@ -2279,13 +1719,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 100663415,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2293,13 +1738,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 100663416,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2307,13 +1757,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 100663417,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2321,13 +1776,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 100663418,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2335,13 +1795,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::Set(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 100663419,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2349,13 +1814,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::GetOrCreate(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):TItem",
           "clrName": "GetOrCreate",
-          "tsEmitName": "getOrCreate",
           "metadataToken": 100663420,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):TItem",
           "normalizedSignature": "GetOrCreate|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2363,13 +1833,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::GetOrCreate(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "clrName": "GetOrCreate",
-          "tsEmitName": "getOrCreate",
           "metadataToken": 100663421,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem",
           "normalizedSignature": "GetOrCreate|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2377,13 +1852,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::GetOrCreateAsync(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):Task_1",
           "clrName": "GetOrCreateAsync",
-          "tsEmitName": "getOrCreateAsync",
           "metadataToken": 100663422,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):Task_1",
           "normalizedSignature": "GetOrCreateAsync|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):Task_1|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2391,13 +1871,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.CacheExtensions::GetOrCreateAsync(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Task_1",
           "clrName": "GetOrCreateAsync",
-          "tsEmitName": "getOrCreateAsync",
           "metadataToken": 100663423,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Task_1",
           "normalizedSignature": "GetOrCreateAsync|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Task_1|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 4,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2406,147 +1891,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "get",
-          "isStatic": true,
-          "tsSignatureId": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):System.Object|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663412
-          }
-        },
-        {
-          "tsName": "get",
-          "isStatic": true,
-          "tsSignatureId": "Get|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663413
-          }
-        },
-        {
-          "tsName": "tryGetValue",
-          "isStatic": true,
-          "tsSignatureId": "TryGetValue|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem\u0026):System.Boolean|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663414
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": true,
-          "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663415
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": true,
-          "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.DateTimeOffset):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663416
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": true,
-          "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,System.TimeSpan):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663417
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": true,
-          "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Primitives.IChangeToken):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663418
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": true,
-          "tsSignatureId": "Set|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,TItem,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663419
-          }
-        },
-        {
-          "tsName": "getOrCreate",
-          "isStatic": true,
-          "tsSignatureId": "GetOrCreate|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663420
-          }
-        },
-        {
-          "tsName": "getOrCreate",
-          "isStatic": true,
-          "tsSignatureId": "GetOrCreate|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):TItem|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663421
-          }
-        },
-        {
-          "tsName": "getOrCreateAsync",
-          "isStatic": true,
-          "tsSignatureId": "GetOrCreateAsync|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2):Task_1|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663422
-          }
-        },
-        {
-          "tsName": "getOrCreateAsync",
-          "isStatic": true,
-          "tsSignatureId": "GetOrCreateAsync|(Microsoft.Extensions.Caching.Memory.IMemoryCache,System.Object,Func_2,Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions):Task_1|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.CacheExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663423
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
       "clrName": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-      "tsEmitName": "MemoryCacheEntryExtensions",
       "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::SetPriority(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "SetPriority",
-          "tsEmitName": "setPriority",
           "metadataToken": 100663389,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "SetPriority|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2554,13 +1927,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::SetSize(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.Int64):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "SetSize",
-          "tsEmitName": "setSize",
           "metadataToken": 100663390,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.Int64):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "SetSize|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.Int64):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2568,13 +1946,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::AddExpirationToken(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "AddExpirationToken",
-          "tsEmitName": "addExpirationToken",
           "metadataToken": 100663391,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "AddExpirationToken|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2582,13 +1965,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "SetAbsoluteExpiration",
-          "tsEmitName": "setAbsoluteExpiration",
           "metadataToken": 100663392,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2596,13 +1984,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "SetAbsoluteExpiration",
-          "tsEmitName": "setAbsoluteExpiration",
           "metadataToken": 100663393,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2610,13 +2003,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::SetSlidingExpiration(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "SetSlidingExpiration",
-          "tsEmitName": "setSlidingExpiration",
           "metadataToken": 100663394,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "SetSlidingExpiration|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2624,13 +2022,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::RegisterPostEvictionCallback(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "RegisterPostEvictionCallback",
-          "tsEmitName": "registerPostEvictionCallback",
           "metadataToken": 100663395,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2638,13 +2041,18 @@
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions::RegisterPostEvictionCallback(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "clrName": "RegisterPostEvictionCallback",
-          "tsEmitName": "registerPostEvictionCallback",
           "metadataToken": 100663396,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions",
           "normalizedSignature": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -2653,89 +2061,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "setPriority",
-          "isStatic": true,
-          "tsSignatureId": "SetPriority|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.CacheItemPriority):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663389
-          }
-        },
-        {
-          "tsName": "setSize",
-          "isStatic": true,
-          "tsSignatureId": "SetSize|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.Int64):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663390
-          }
-        },
-        {
-          "tsName": "addExpirationToken",
-          "isStatic": true,
-          "tsSignatureId": "AddExpirationToken|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Primitives.IChangeToken):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663391
-          }
-        },
-        {
-          "tsName": "setAbsoluteExpiration",
-          "isStatic": true,
-          "tsSignatureId": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663392
-          }
-        },
-        {
-          "tsName": "setAbsoluteExpiration",
-          "isStatic": true,
-          "tsSignatureId": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663393
-          }
-        },
-        {
-          "tsName": "setSlidingExpiration",
-          "isStatic": true,
-          "tsSignatureId": "SetSlidingExpiration|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663394
-          }
-        },
-        {
-          "tsName": "registerPostEvictionCallback",
-          "isStatic": true,
-          "tsSignatureId": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663395
-          }
-        },
-        {
-          "tsName": "registerPostEvictionCallback",
-          "isStatic": true,
-          "tsSignatureId": "RegisterPostEvictionCallback|(Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions,Microsoft.Extensions.Caching.Memory.PostEvictionDelegate,System.Object):Microsoft.Extensions.Caching.Memory.MemoryCacheEntryOptions|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Caching.Memory.MemoryCacheEntryExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
-            "metadataToken": 100663396
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

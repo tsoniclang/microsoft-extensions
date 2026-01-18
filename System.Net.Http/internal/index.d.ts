@@ -11,28 +11,28 @@ import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/Sy
 import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
 
 export interface IHttpClientFactory$instance {
-    createClient(name: string): HttpClient;
+    CreateClient(name: string): HttpClient;
 }
 
 
 export type IHttpClientFactory = IHttpClientFactory$instance;
 
 export interface IHttpMessageHandlerFactory$instance {
-    createHandler(name: string): HttpMessageHandler;
+    CreateHandler(name: string): HttpMessageHandler;
 }
 
 
 export type IHttpMessageHandlerFactory = IHttpMessageHandlerFactory$instance;
 
 export abstract class HttpClientFactoryExtensions$instance {
-    static createClient(factory: IHttpClientFactory): HttpClient;
+    static CreateClient(factory: IHttpClientFactory): HttpClient;
 }
 
 
 export type HttpClientFactoryExtensions = HttpClientFactoryExtensions$instance;
 
 export abstract class HttpMessageHandlerFactoryExtensions$instance {
-    static createHandler(factory: IHttpMessageHandlerFactory): HttpMessageHandler;
+    static CreateHandler(factory: IHttpMessageHandlerFactory): HttpMessageHandler;
 }
 
 
