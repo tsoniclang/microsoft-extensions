@@ -17,11 +17,11 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface CommandLineConfigurationProvider$instance extends ConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -38,10 +38,10 @@ export type CommandLineConfigurationProvider = CommandLineConfigurationProvider$
 
 
 export interface CommandLineConfigurationSource$instance {
-    args: IEnumerable<System_Internal.String>;
-    get switchMappings(): IDictionary<System_Internal.String, System_Internal.String> | undefined;
-    set switchMappings(value: IDictionary<System_Internal.String, System_Internal.String>);
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Args: IEnumerable<System_Internal.String>;
+    get SwitchMappings(): IDictionary<System_Internal.String, System_Internal.String> | undefined;
+    set SwitchMappings(value: IDictionary<System_Internal.String, System_Internal.String>);
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 

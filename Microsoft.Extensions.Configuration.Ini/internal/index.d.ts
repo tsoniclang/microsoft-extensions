@@ -19,12 +19,12 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface IniConfigurationProvider$instance extends FileConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(stream: Stream): void;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -41,7 +41,7 @@ export type IniConfigurationProvider = IniConfigurationProvider$instance & __Ini
 
 
 export interface IniConfigurationSource$instance extends FileConfigurationSource {
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 
@@ -58,18 +58,18 @@ export type IniConfigurationSource = IniConfigurationSource$instance & __IniConf
 
 
 export interface IniStreamConfigurationProvider$instance extends StreamConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(stream: Stream): void;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
 export const IniStreamConfigurationProvider: {
     new(source: IniStreamConfigurationSource): IniStreamConfigurationProvider;
-    read(stream: Stream): IDictionary<System_Internal.String, string | undefined>;
+    Read(stream: Stream): IDictionary<System_Internal.String, string | undefined>;
 };
 
 
@@ -81,7 +81,7 @@ export type IniStreamConfigurationProvider = IniStreamConfigurationProvider$inst
 
 
 export interface IniStreamConfigurationSource$instance extends StreamConfigurationSource {
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 

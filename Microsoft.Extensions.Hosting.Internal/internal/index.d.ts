@@ -17,12 +17,12 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ApplicationLifetime$instance {
-    readonly applicationStarted: CancellationToken;
-    readonly applicationStopped: CancellationToken;
-    readonly applicationStopping: CancellationToken;
-    notifyStarted(): void;
-    notifyStopped(): void;
-    stopApplication(): void;
+    readonly ApplicationStarted: CancellationToken;
+    readonly ApplicationStopped: CancellationToken;
+    readonly ApplicationStopping: CancellationToken;
+    NotifyStarted(): void;
+    NotifyStopped(): void;
+    StopApplication(): void;
 }
 
 
@@ -42,9 +42,9 @@ export type ApplicationLifetime = ApplicationLifetime$instance & __ApplicationLi
 
 
 export interface ConsoleLifetime$instance {
-    dispose(): void;
-    stopAsync(cancellationToken: CancellationToken): Task;
-    waitForStartAsync(cancellationToken: CancellationToken): Task;
+    Dispose(): void;
+    StopAsync(cancellationToken: CancellationToken): Task;
+    WaitForStartAsync(cancellationToken: CancellationToken): Task;
 }
 
 
@@ -64,10 +64,10 @@ export type ConsoleLifetime = ConsoleLifetime$instance & __ConsoleLifetime$views
 
 
 export interface HostingEnvironment$instance {
-    applicationName: string;
-    contentRootFileProvider: IFileProvider;
-    contentRootPath: string;
-    environmentName: string;
+    ApplicationName: string;
+    ContentRootFileProvider: IFileProvider;
+    ContentRootPath: string;
+    EnvironmentName: string;
 }
 
 

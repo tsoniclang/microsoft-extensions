@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.FileSystemGlobbing"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
       "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-      "tsEmitName": "PatternBuilder",
       "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::Build(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
           "clrName": "Build",
-          "tsEmitName": "build",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
           "normalizedSignature": "Build|(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -27,14 +40,18 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::ComparisonType:System.StringComparison",
           "clrName": "ComparisonType",
-          "tsEmitName": "comparisonType",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.StringComparison",
           "normalizedSignature": "ComparisonType|:System.StringComparison|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -61,50 +78,6 @@
           "parameterCount": 1,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "build",
-          "isStatic": false,
-          "tsSignatureId": "Build|(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663386
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "comparisonType",
-          "isStatic": false,
-          "tsSignatureId": "ComparisonType|:System.StringComparison|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875993
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663383
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.StringComparison):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663384
-          }
         }
       ]
     }

@@ -22,39 +22,39 @@ import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposabl
 import type { JsonWriterOptions } from "@tsonic/dotnet/System.Text.Json.js";
 
 export enum ConsoleLoggerFormat {
-    default = 0,
-    systemd = 1
+    Default = 0,
+    Systemd = 1
 }
 
 
 export enum ConsoleLoggerQueueFullMode {
-    wait = 0,
-    dropWrite = 1
+    Wait = 0,
+    DropWrite = 1
 }
 
 
 export enum LoggerColorBehavior {
-    default = 0,
-    enabled = 1,
-    disabled = 2
+    Default = 0,
+    Enabled = 1,
+    Disabled = 2
 }
 
 
 export interface IConsoleLoggerSettings$instance {
-    readonly includeScopes: boolean;
-    readonly changeToken: IChangeToken | undefined;
-    reload(): IConsoleLoggerSettings;
-    tryGetSwitch(name: string, level: LogLevel): boolean;
+    readonly IncludeScopes: boolean;
+    readonly ChangeToken: IChangeToken | undefined;
+    Reload(): IConsoleLoggerSettings;
+    TryGetSwitch(name: string, level: LogLevel): boolean;
 }
 
 
 export type IConsoleLoggerSettings = IConsoleLoggerSettings$instance;
 
 export interface ConfigurationConsoleLoggerSettings$instance {
-    readonly changeToken: IChangeToken | undefined;
-    readonly includeScopes: boolean;
-    reload(): IConsoleLoggerSettings;
-    tryGetSwitch(name: string, level: LogLevel): boolean;
+    readonly ChangeToken: IChangeToken | undefined;
+    readonly IncludeScopes: boolean;
+    Reload(): IConsoleLoggerSettings;
+    TryGetSwitch(name: string, level: LogLevel): boolean;
 }
 
 
@@ -73,8 +73,8 @@ export type ConfigurationConsoleLoggerSettings = ConfigurationConsoleLoggerSetti
 
 
 export interface ConsoleFormatter$instance {
-    readonly name: string;
-    write<TState>(logEntry: LogEntry_1<TState>, scopeProvider: IExternalScopeProvider, textWriter: TextWriter): void;
+    readonly Name: string;
+    Write<TState>(logEntry: LogEntry_1<TState>, scopeProvider: IExternalScopeProvider, textWriter: TextWriter): void;
 }
 
 
@@ -85,10 +85,10 @@ export const ConsoleFormatter: {
 export type ConsoleFormatter = ConsoleFormatter$instance;
 
 export interface ConsoleFormatterOptions$instance {
-    includeScopes: boolean;
-    get timestampFormat(): string | undefined;
-    set timestampFormat(value: string);
-    useUtcTimestamp: boolean;
+    IncludeScopes: boolean;
+    get TimestampFormat(): string | undefined;
+    set TimestampFormat(value: string);
+    UseUtcTimestamp: boolean;
 }
 
 
@@ -100,17 +100,17 @@ export const ConsoleFormatterOptions: {
 export type ConsoleFormatterOptions = ConsoleFormatterOptions$instance;
 
 export interface ConsoleLoggerOptions$instance {
-    disableColors: boolean;
-    format: ConsoleLoggerFormat;
-    get formatterName(): string | undefined;
-    set formatterName(value: string);
-    includeScopes: boolean;
-    logToStandardErrorThreshold: LogLevel;
-    maxQueueLength: int;
-    queueFullMode: ConsoleLoggerQueueFullMode;
-    get timestampFormat(): string | undefined;
-    set timestampFormat(value: string);
-    useUtcTimestamp: boolean;
+    DisableColors: boolean;
+    Format: ConsoleLoggerFormat;
+    get FormatterName(): string | undefined;
+    set FormatterName(value: string);
+    IncludeScopes: boolean;
+    LogToStandardErrorThreshold: LogLevel;
+    MaxQueueLength: int;
+    QueueFullMode: ConsoleLoggerQueueFullMode;
+    get TimestampFormat(): string | undefined;
+    set TimestampFormat(value: string);
+    UseUtcTimestamp: boolean;
 }
 
 
@@ -122,9 +122,9 @@ export const ConsoleLoggerOptions: {
 export type ConsoleLoggerOptions = ConsoleLoggerOptions$instance;
 
 export interface ConsoleLoggerProvider$instance {
-    createLogger(name: string): ILogger;
-    dispose(): void;
-    setScopeProvider(scopeProvider: IExternalScopeProvider): void;
+    CreateLogger(name: string): ILogger;
+    Dispose(): void;
+    SetScopeProvider(scopeProvider: IExternalScopeProvider): void;
 }
 
 
@@ -145,13 +145,13 @@ export type ConsoleLoggerProvider = ConsoleLoggerProvider$instance & __ConsoleLo
 
 
 export interface ConsoleLoggerSettings$instance {
-    get changeToken(): IChangeToken | undefined;
-    set changeToken(value: IChangeToken);
-    disableColors: boolean;
-    includeScopes: boolean;
-    switches: IDictionary<System_Internal.String, LogLevel>;
-    reload(): IConsoleLoggerSettings;
-    tryGetSwitch(name: string, level: LogLevel): boolean;
+    get ChangeToken(): IChangeToken | undefined;
+    set ChangeToken(value: IChangeToken);
+    DisableColors: boolean;
+    IncludeScopes: boolean;
+    Switches: IDictionary<System_Internal.String, LogLevel>;
+    Reload(): IConsoleLoggerSettings;
+    TryGetSwitch(name: string, level: LogLevel): boolean;
 }
 
 
@@ -168,7 +168,7 @@ export type ConsoleLoggerSettings = ConsoleLoggerSettings$instance & __ConsoleLo
 
 
 export interface JsonConsoleFormatterOptions$instance extends ConsoleFormatterOptions {
-    jsonWriterOptions: JsonWriterOptions;
+    JsonWriterOptions: JsonWriterOptions;
 }
 
 
@@ -180,8 +180,8 @@ export const JsonConsoleFormatterOptions: {
 export type JsonConsoleFormatterOptions = JsonConsoleFormatterOptions$instance;
 
 export interface SimpleConsoleFormatterOptions$instance extends ConsoleFormatterOptions {
-    colorBehavior: LoggerColorBehavior;
-    singleLine: boolean;
+    ColorBehavior: LoggerColorBehavior;
+    SingleLine: boolean;
 }
 
 
@@ -193,9 +193,9 @@ export const SimpleConsoleFormatterOptions: {
 export type SimpleConsoleFormatterOptions = SimpleConsoleFormatterOptions$instance;
 
 export abstract class ConsoleFormatterNames$instance {
-    static readonly simple: string;
-    static readonly json: string;
-    static readonly systemd: string;
+    static readonly Simple: string;
+    static readonly Json: string;
+    static readonly Systemd: string;
 }
 
 

@@ -13,51 +13,51 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum HealthStatus {
-    unhealthy = 0,
-    degraded = 1,
-    healthy = 2
+    Unhealthy = 0,
+    Degraded = 1,
+    Healthy = 2
 }
 
 
 export interface IHealthCheck$instance {
-    checkHealthAsync(context: HealthCheckContext, cancellationToken?: CancellationToken): Task<HealthCheckResult>;
+    CheckHealthAsync(context: HealthCheckContext, cancellationToken?: CancellationToken): Task<HealthCheckResult>;
 }
 
 
 export type IHealthCheck = IHealthCheck$instance;
 
 export interface IHealthCheckPublisher$instance {
-    publishAsync(report: HealthReport, cancellationToken: CancellationToken): Task;
+    PublishAsync(report: HealthReport, cancellationToken: CancellationToken): Task;
 }
 
 
 export type IHealthCheckPublisher = IHealthCheckPublisher$instance;
 
 export interface HealthCheckResult$instance {
-    readonly data: IReadOnlyDictionary<System_Internal.String, unknown>;
-    readonly description: string | undefined;
-    readonly exception: Exception | undefined;
-    readonly status: HealthStatus;
+    readonly Data: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Description: string | undefined;
+    readonly Exception: Exception | undefined;
+    readonly Status: HealthStatus;
 }
 
 
 export const HealthCheckResult: {
     new(status: HealthStatus, description: string, exception: Exception, data: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
-    degraded(description?: string, exception?: Exception, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
-    healthy(description?: string, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
-    unhealthy(description?: string, exception?: Exception, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
+    Degraded(description?: string, exception?: Exception, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
+    Healthy(description?: string, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
+    Unhealthy(description?: string, exception?: Exception, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
 };
 
 
 export type HealthCheckResult = HealthCheckResult$instance;
 
 export interface HealthReportEntry$instance {
-    readonly data: IReadOnlyDictionary<System_Internal.String, unknown>;
-    readonly description: string | undefined;
-    readonly duration: TimeSpan;
-    readonly exception: Exception | undefined;
-    readonly status: HealthStatus;
-    readonly tags: IEnumerable<System_Internal.String>;
+    readonly Data: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Description: string | undefined;
+    readonly Duration: TimeSpan;
+    readonly Exception: Exception | undefined;
+    readonly Status: HealthStatus;
+    readonly Tags: IEnumerable<System_Internal.String>;
 }
 
 
@@ -70,7 +70,7 @@ export const HealthReportEntry: {
 export type HealthReportEntry = HealthReportEntry$instance;
 
 export interface HealthCheckContext$instance {
-    registration: HealthCheckRegistration;
+    Registration: HealthCheckRegistration;
 }
 
 
@@ -82,11 +82,11 @@ export const HealthCheckContext: {
 export type HealthCheckContext = HealthCheckContext$instance;
 
 export interface HealthCheckPublisherOptions$instance {
-    delay: TimeSpan;
-    period: TimeSpan;
-    get predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean>);
-    timeout: TimeSpan;
+    Delay: TimeSpan;
+    Period: TimeSpan;
+    get Predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
+    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean>);
+    Timeout: TimeSpan;
 }
 
 
@@ -98,13 +98,13 @@ export const HealthCheckPublisherOptions: {
 export type HealthCheckPublisherOptions = HealthCheckPublisherOptions$instance;
 
 export interface HealthCheckRegistration$instance {
-    delay: Nullable<TimeSpan>;
-    factory: Func<IServiceProvider, IHealthCheck>;
-    failureStatus: HealthStatus;
-    name: string;
-    period: Nullable<TimeSpan>;
-    readonly tags: ISet<System_Internal.String>;
-    timeout: TimeSpan;
+    Delay: Nullable<TimeSpan>;
+    Factory: Func<IServiceProvider, IHealthCheck>;
+    FailureStatus: HealthStatus;
+    Name: string;
+    Period: Nullable<TimeSpan>;
+    readonly Tags: ISet<System_Internal.String>;
+    Timeout: TimeSpan;
 }
 
 
@@ -119,8 +119,8 @@ export const HealthCheckRegistration: {
 export type HealthCheckRegistration = HealthCheckRegistration$instance;
 
 export interface HealthCheckService$instance {
-    checkHealthAsync(cancellationToken?: CancellationToken): Task<HealthReport>;
-    checkHealthAsync(predicate: Func<HealthCheckRegistration, System_Internal.Boolean>, cancellationToken?: CancellationToken): Task<HealthReport>;
+    CheckHealthAsync(cancellationToken?: CancellationToken): Task<HealthReport>;
+    CheckHealthAsync(predicate: Func<HealthCheckRegistration, System_Internal.Boolean>, cancellationToken?: CancellationToken): Task<HealthReport>;
 }
 
 
@@ -131,7 +131,7 @@ export const HealthCheckService: {
 export type HealthCheckService = HealthCheckService$instance;
 
 export interface HealthCheckServiceOptions$instance {
-    readonly registrations: ICollection<HealthCheckRegistration>;
+    readonly Registrations: ICollection<HealthCheckRegistration>;
 }
 
 
@@ -143,9 +143,9 @@ export const HealthCheckServiceOptions: {
 export type HealthCheckServiceOptions = HealthCheckServiceOptions$instance;
 
 export interface HealthReport$instance {
-    readonly entries: IReadOnlyDictionary<System_Internal.String, HealthReportEntry>;
-    readonly status: HealthStatus;
-    readonly totalDuration: TimeSpan;
+    readonly Entries: IReadOnlyDictionary<System_Internal.String, HealthReportEntry>;
+    readonly Status: HealthStatus;
+    readonly TotalDuration: TimeSpan;
 }
 
 

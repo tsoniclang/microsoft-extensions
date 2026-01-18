@@ -18,45 +18,45 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum HybridCacheEntryFlags {
-    none = 0,
-    disableLocalCacheRead = 1,
-    disableLocalCacheWrite = 2,
-    disableLocalCache = 3,
-    disableDistributedCacheRead = 4,
-    disableDistributedCacheWrite = 8,
-    disableDistributedCache = 12,
-    disableUnderlyingData = 16,
-    disableCompression = 32
+    None = 0,
+    DisableLocalCacheRead = 1,
+    DisableLocalCacheWrite = 2,
+    DisableLocalCache = 3,
+    DisableDistributedCacheRead = 4,
+    DisableDistributedCacheWrite = 8,
+    DisableDistributedCache = 12,
+    DisableUnderlyingData = 16,
+    DisableCompression = 32
 }
 
 
 export interface IHybridCacheSerializer_1$instance<T> {
-    deserialize(source: ReadOnlySequence<System_Internal.Byte>): T;
-    serialize(value: T, target: IBufferWriter<System_Internal.Byte>): void;
+    Deserialize(source: ReadOnlySequence<System_Internal.Byte>): T;
+    Serialize(value: T, target: IBufferWriter<System_Internal.Byte>): void;
 }
 
 
 export type IHybridCacheSerializer_1<T> = IHybridCacheSerializer_1$instance<T>;
 
 export interface IHybridCacheSerializerFactory$instance {
-    tryCreateSerializer<T>(serializer: IHybridCacheSerializer_1<T>): boolean;
+    TryCreateSerializer<T>(serializer: IHybridCacheSerializer_1<T>): boolean;
 }
 
 
 export type IHybridCacheSerializerFactory = IHybridCacheSerializerFactory$instance;
 
 export interface HybridCache$instance {
-    getOrCreateAsync<TState, T>(key: string, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    getOrCreateAsync<T>(key: string, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    getOrCreateAsync<T>(key: ReadOnlySpan<System_Internal.Char>, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    getOrCreateAsync<TState, T>(key: ReadOnlySpan<System_Internal.Char>, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    getOrCreateAsync<T>(key: DefaultInterpolatedStringHandler, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    getOrCreateAsync<TState, T>(key: DefaultInterpolatedStringHandler, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    removeAsync(key: string, cancellationToken?: CancellationToken): ValueTask;
-    removeAsync(keys: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
-    removeByTagAsync(tags: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
-    removeByTagAsync(tag: string, cancellationToken?: CancellationToken): ValueTask;
-    setAsync<T>(key: string, value: T, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
+    GetOrCreateAsync<TState, T>(key: string, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    GetOrCreateAsync<T>(key: string, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    GetOrCreateAsync<T>(key: ReadOnlySpan<System_Internal.Char>, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    GetOrCreateAsync<TState, T>(key: ReadOnlySpan<System_Internal.Char>, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    GetOrCreateAsync<T>(key: DefaultInterpolatedStringHandler, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    GetOrCreateAsync<TState, T>(key: DefaultInterpolatedStringHandler, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    RemoveAsync(key: string, cancellationToken?: CancellationToken): ValueTask;
+    RemoveAsync(keys: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
+    RemoveByTagAsync(tags: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
+    RemoveByTagAsync(tag: string, cancellationToken?: CancellationToken): ValueTask;
+    SetAsync<T>(key: string, value: T, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -67,9 +67,9 @@ export const HybridCache: {
 export type HybridCache = HybridCache$instance;
 
 export interface HybridCacheEntryOptions$instance {
-    expiration: Nullable<TimeSpan>;
-    flags: Nullable<HybridCacheEntryFlags>;
-    localCacheExpiration: Nullable<TimeSpan>;
+    Expiration: Nullable<TimeSpan>;
+    Flags: Nullable<HybridCacheEntryFlags>;
+    LocalCacheExpiration: Nullable<TimeSpan>;
 }
 
 

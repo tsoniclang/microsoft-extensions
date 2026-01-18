@@ -19,21 +19,21 @@ import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 
 export interface IChangeToken$instance {
-    readonly hasChanged: boolean;
-    readonly activeChangeCallbacks: boolean;
-    registerChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    readonly HasChanged: boolean;
+    readonly ActiveChangeCallbacks: boolean;
+    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
 
 
 export type IChangeToken = IChangeToken$instance;
 
 export interface InplaceStringBuilder$instance {
-    capacity: int;
-    append(value: string): void;
-    append(segment: StringSegment): void;
-    append(value: string, offset: int, count: int): void;
-    append(c: char): void;
-    toString(): string | undefined;
+    Capacity: int;
+    Append(value: string): void;
+    Append(segment: StringSegment): void;
+    Append(value: string, offset: int, count: int): void;
+    Append(c: char): void;
+    ToString(): string | undefined;
 }
 
 
@@ -45,57 +45,57 @@ export const InplaceStringBuilder: {
 export type InplaceStringBuilder = InplaceStringBuilder$instance;
 
 export interface StringSegment$instance {
-    readonly buffer: string | undefined;
-    readonly hasValue: boolean;
-    readonly item: char;
-    readonly length: int;
-    readonly offset: int;
-    readonly value: string | undefined;
-    asMemory(): ReadOnlyMemory<System_Internal.Char>;
-    asSpan(): ReadOnlySpan<System_Internal.Char>;
-    asSpan(start: int): ReadOnlySpan<System_Internal.Char>;
-    asSpan(start: int, length: int): ReadOnlySpan<System_Internal.Char>;
-    endsWith(text: string, comparisonType: StringComparison): boolean;
-    equals(obj: unknown): boolean;
-    equals(other: StringSegment): boolean;
-    equals(other: StringSegment, comparisonType: StringComparison): boolean;
-    equals(text: string): boolean;
-    equals(text: string, comparisonType: StringComparison): boolean;
-    getHashCode(): int;
-    indexOf(c: char, start: int, count: int): int;
-    indexOf(c: char, start: int): int;
-    indexOf(c: char): int;
-    indexOfAny(anyOf: char[], startIndex: int, count: int): int;
-    indexOfAny(anyOf: char[], startIndex: int): int;
-    indexOfAny(anyOf: char[]): int;
-    lastIndexOf(value: char): int;
-    split(chars: char[]): StringTokenizer;
-    startsWith(text: string, comparisonType: StringComparison): boolean;
-    subsegment(offset: int): StringSegment;
-    subsegment(offset: int, length: int): StringSegment;
-    substring(offset: int): string;
-    substring(offset: int, length: int): string;
-    toString(): string;
-    trim(): StringSegment;
-    trimEnd(): StringSegment;
-    trimStart(): StringSegment;
+    readonly Buffer: string | undefined;
+    readonly HasValue: boolean;
+    readonly Item: char;
+    readonly Length: int;
+    readonly Offset: int;
+    readonly Value: string | undefined;
+    AsMemory(): ReadOnlyMemory<System_Internal.Char>;
+    AsSpan(): ReadOnlySpan<System_Internal.Char>;
+    AsSpan(start: int): ReadOnlySpan<System_Internal.Char>;
+    AsSpan(start: int, length: int): ReadOnlySpan<System_Internal.Char>;
+    EndsWith(text: string, comparisonType: StringComparison): boolean;
+    Equals(obj: unknown): boolean;
+    Equals(other: StringSegment): boolean;
+    Equals(other: StringSegment, comparisonType: StringComparison): boolean;
+    Equals(text: string): boolean;
+    Equals(text: string, comparisonType: StringComparison): boolean;
+    GetHashCode(): int;
+    IndexOf(c: char, start: int, count: int): int;
+    IndexOf(c: char, start: int): int;
+    IndexOf(c: char): int;
+    IndexOfAny(anyOf: char[], startIndex: int, count: int): int;
+    IndexOfAny(anyOf: char[], startIndex: int): int;
+    IndexOfAny(anyOf: char[]): int;
+    LastIndexOf(value: char): int;
+    Split(chars: char[]): StringTokenizer;
+    StartsWith(text: string, comparisonType: StringComparison): boolean;
+    Subsegment(offset: int): StringSegment;
+    Subsegment(offset: int, length: int): StringSegment;
+    Substring(offset: int): string;
+    Substring(offset: int, length: int): string;
+    ToString(): string;
+    Trim(): StringSegment;
+    TrimEnd(): StringSegment;
+    TrimStart(): StringSegment;
 }
 
 
 export const StringSegment: {
     new(buffer: string): StringSegment;
     new(buffer: string, offset: int, length: int): StringSegment;
-    readonly empty: StringSegment;
-    compare(a: StringSegment, b: StringSegment, comparisonType: StringComparison): int;
-    equals(a: StringSegment, b: StringSegment, comparisonType: StringComparison): boolean;
-    isNullOrEmpty(value: StringSegment): boolean;
+    readonly Empty: StringSegment;
+    Compare(a: StringSegment, b: StringSegment, comparisonType: StringComparison): int;
+    Equals(a: StringSegment, b: StringSegment, comparisonType: StringComparison): boolean;
+    IsNullOrEmpty(value: StringSegment): boolean;
 };
 
 
 export type StringSegment = StringSegment$instance;
 
 export interface StringTokenizer$instance {
-    getEnumerator(): StringTokenizer_Enumerator;
+    GetEnumerator(): StringTokenizer_Enumerator;
 }
 
 
@@ -108,10 +108,10 @@ export const StringTokenizer: {
 export type StringTokenizer = StringTokenizer$instance;
 
 export interface StringTokenizer_Enumerator$instance {
-    readonly current: StringSegment;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: StringSegment;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -123,42 +123,42 @@ export const StringTokenizer_Enumerator: {
 export type StringTokenizer_Enumerator = StringTokenizer_Enumerator$instance;
 
 export interface StringValues$instance {
-    readonly count: int;
-    readonly item: string;
-    equals(other: StringValues): boolean;
-    equals(other: string): boolean;
-    equals(other: string[]): boolean;
-    equals(obj: unknown): boolean;
-    getEnumerator(): StringValues_Enumerator;
-    getHashCode(): int;
-    toArray(): (string | undefined)[];
-    toString(): string;
+    readonly Count: int;
+    readonly Item: string;
+    Equals(other: StringValues): boolean;
+    Equals(other: string): boolean;
+    Equals(other: string[]): boolean;
+    Equals(obj: unknown): boolean;
+    GetEnumerator(): StringValues_Enumerator;
+    GetHashCode(): int;
+    ToArray(): (string | undefined)[];
+    ToString(): string;
 }
 
 
 export const StringValues: {
     new(value: string): StringValues;
     new(values: string[]): StringValues;
-    readonly empty: StringValues;
-    concat(values1: StringValues, values2: StringValues): StringValues;
-    concat(values: StringValues, value: string): StringValues;
-    concat(value: string, values: StringValues): StringValues;
-    equals(left: StringValues, right: StringValues): boolean;
-    equals(left: StringValues, right: string): boolean;
-    equals(left: StringValues, right: string[]): boolean;
-    equals(left: string, right: StringValues): boolean;
-    equals(left: string[], right: StringValues): boolean;
-    isNullOrEmpty(value: StringValues): boolean;
+    readonly Empty: StringValues;
+    Concat(values1: StringValues, values2: StringValues): StringValues;
+    Concat(values: StringValues, value: string): StringValues;
+    Concat(value: string, values: StringValues): StringValues;
+    Equals(left: StringValues, right: StringValues): boolean;
+    Equals(left: StringValues, right: string): boolean;
+    Equals(left: StringValues, right: string[]): boolean;
+    Equals(left: string, right: StringValues): boolean;
+    Equals(left: string[], right: StringValues): boolean;
+    IsNullOrEmpty(value: StringValues): boolean;
 };
 
 
 export type StringValues = StringValues$instance;
 
 export interface StringValues_Enumerator$instance {
-    readonly current: string;
-    dispose(): void;
-    moveNext(): boolean;
-    reset(): void;
+    readonly Current: string;
+    Dispose(): void;
+    MoveNext(): boolean;
+    Reset(): void;
 }
 
 
@@ -170,9 +170,9 @@ export const StringValues_Enumerator: {
 export type StringValues_Enumerator = StringValues_Enumerator$instance;
 
 export interface CancellationChangeToken$instance {
-    readonly activeChangeCallbacks: boolean;
-    readonly hasChanged: boolean;
-    registerChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    readonly ActiveChangeCallbacks: boolean;
+    readonly HasChanged: boolean;
+    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
 
 
@@ -191,10 +191,10 @@ export type CancellationChangeToken = CancellationChangeToken$instance & __Cance
 
 
 export interface CompositeChangeToken$instance {
-    readonly activeChangeCallbacks: boolean;
-    readonly changeTokens: IReadOnlyList<IChangeToken>;
-    readonly hasChanged: boolean;
-    registerChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    readonly ActiveChangeCallbacks: boolean;
+    readonly ChangeTokens: IReadOnlyList<IChangeToken>;
+    readonly HasChanged: boolean;
+    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
 
 
@@ -213,31 +213,31 @@ export type CompositeChangeToken = CompositeChangeToken$instance & __CompositeCh
 
 
 export interface StringSegmentComparer$instance {
-    compare(x: StringSegment, y: StringSegment): int;
-    equals(x: StringSegment, y: StringSegment): boolean;
-    getHashCode(obj: StringSegment): int;
+    Compare(x: StringSegment, y: StringSegment): int;
+    Equals(x: StringSegment, y: StringSegment): boolean;
+    GetHashCode(obj: StringSegment): int;
 }
 
 
 export const StringSegmentComparer: {
     new(): StringSegmentComparer;
-    readonly ordinal: StringSegmentComparer;
-    readonly ordinalIgnoreCase: StringSegmentComparer;
+    readonly Ordinal: StringSegmentComparer;
+    readonly OrdinalIgnoreCase: StringSegmentComparer;
 };
 
 
 export type StringSegmentComparer = StringSegmentComparer$instance;
 
 export abstract class ChangeToken$instance {
-    static onChange<TState>(changeTokenProducer: Func<IChangeToken>, changeTokenConsumer: Action<TState>, state: TState): IDisposable;
-    static onChange(changeTokenProducer: Func<IChangeToken>, changeTokenConsumer: Action): IDisposable;
+    static OnChange<TState>(changeTokenProducer: Func<IChangeToken>, changeTokenConsumer: Action<TState>, state: TState): IDisposable;
+    static OnChange(changeTokenProducer: Func<IChangeToken>, changeTokenConsumer: Action): IDisposable;
 }
 
 
 export type ChangeToken = ChangeToken$instance;
 
 export abstract class Extensions$instance {
-    static append(builder: StringBuilder, segment: StringSegment): StringBuilder;
+    static Append(builder: StringBuilder, segment: StringSegment): StringBuilder;
 }
 
 

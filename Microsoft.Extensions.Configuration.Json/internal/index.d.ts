@@ -19,12 +19,12 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface JsonConfigurationProvider$instance extends FileConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(stream: Stream): void;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -41,7 +41,7 @@ export type JsonConfigurationProvider = JsonConfigurationProvider$instance & __J
 
 
 export interface JsonConfigurationSource$instance extends FileConfigurationSource {
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 
@@ -58,12 +58,12 @@ export type JsonConfigurationSource = JsonConfigurationSource$instance & __JsonC
 
 
 export interface JsonStreamConfigurationProvider$instance extends StreamConfigurationProvider {
-    getChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
-    getReloadToken(): IChangeToken;
-    load(stream: Stream): void;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -80,7 +80,7 @@ export type JsonStreamConfigurationProvider = JsonStreamConfigurationProvider$in
 
 
 export interface JsonStreamConfigurationSource$instance extends StreamConfigurationSource {
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 

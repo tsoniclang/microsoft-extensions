@@ -15,14 +15,14 @@ export interface PathHelper$instance {
 
 export const PathHelper: {
     new(): PathHelper;
-    getSecretsPathFromSecretsId(userSecretsId: string): string;
+    GetSecretsPathFromSecretsId(userSecretsId: string): string;
 };
 
 
 export type PathHelper = PathHelper$instance;
 
 export interface UserSecretsIdAttribute$instance extends Attribute {
-    readonly userSecretsId: string;
+    readonly UserSecretsId: string;
 }
 
 

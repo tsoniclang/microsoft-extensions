@@ -12,9 +12,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface DirectoryInfoBase$instance extends FileSystemInfoBase {
-    enumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
-    getDirectory(path: string): DirectoryInfoBase | undefined;
-    getFile(path: string): FileInfoBase | undefined;
+    EnumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
+    GetDirectory(path: string): DirectoryInfoBase | undefined;
+    GetFile(path: string): FileInfoBase | undefined;
 }
 
 
@@ -25,12 +25,12 @@ export const DirectoryInfoBase: {
 export type DirectoryInfoBase = DirectoryInfoBase$instance;
 
 export interface DirectoryInfoWrapper$instance extends DirectoryInfoBase {
-    readonly fullName: string;
-    readonly name: string;
-    readonly parentDirectory: DirectoryInfoBase | undefined;
-    enumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
-    getDirectory(name: string): DirectoryInfoBase | undefined;
-    getFile(name: string): FileInfoBase;
+    readonly FullName: string;
+    readonly Name: string;
+    readonly ParentDirectory: DirectoryInfoBase | undefined;
+    EnumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
+    GetDirectory(name: string): DirectoryInfoBase | undefined;
+    GetFile(name: string): FileInfoBase;
 }
 
 
@@ -52,9 +52,9 @@ export const FileInfoBase: {
 export type FileInfoBase = FileInfoBase$instance;
 
 export interface FileInfoWrapper$instance extends FileInfoBase {
-    readonly fullName: string;
-    readonly name: string;
-    readonly parentDirectory: DirectoryInfoBase | undefined;
+    readonly FullName: string;
+    readonly Name: string;
+    readonly ParentDirectory: DirectoryInfoBase | undefined;
 }
 
 
@@ -66,9 +66,9 @@ export const FileInfoWrapper: {
 export type FileInfoWrapper = FileInfoWrapper$instance;
 
 export interface FileSystemInfoBase$instance {
-    readonly fullName: string;
-    readonly name: string;
-    readonly parentDirectory: DirectoryInfoBase | undefined;
+    readonly FullName: string;
+    readonly Name: string;
+    readonly ParentDirectory: DirectoryInfoBase | undefined;
 }
 
 

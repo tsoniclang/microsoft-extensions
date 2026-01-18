@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.FileSystemGlobbing"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
       "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
-      "tsEmitName": "CurrentPathSegment",
       "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 100663443,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -25,44 +38,59 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match$view",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem$view",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -80,80 +108,35 @@
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663443
-          }
-        },
-        {
-          "tsName": "match$view",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663359
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "canProduceStem",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875996
-          }
-        },
-        {
-          "tsName": "canProduceStem$view",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663444
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
       "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-      "tsEmitName": "LiteralPathSegment",
       "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 100663448,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -161,13 +144,18 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment::Equals(System.Object):System.Boolean",
           "clrName": "Equals",
-          "tsEmitName": "equals",
           "metadataToken": 100663449,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -175,13 +163,18 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment::GetHashCode():System.Int32",
           "clrName": "GetHashCode",
-          "tsEmitName": "getHashCode",
           "metadataToken": 100663450,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -189,58 +182,77 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match$view",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment::Value:System.String",
           "clrName": "Value",
-          "tsEmitName": "value",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem$view",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -258,110 +270,35 @@
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663448
-          }
-        },
-        {
-          "tsName": "equals",
-          "isStatic": false,
-          "tsSignatureId": "Equals|(System.Object):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663449
-          }
-        },
-        {
-          "tsName": "getHashCode",
-          "isStatic": false,
-          "tsSignatureId": "GetHashCode|():System.Int32|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663450
-          }
-        },
-        {
-          "tsName": "match$view",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663359
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "canProduceStem",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875997
-          }
-        },
-        {
-          "tsName": "value",
-          "isStatic": false,
-          "tsSignatureId": "Value|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875998
-          }
-        },
-        {
-          "tsName": "canProduceStem$view",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.StringComparison):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663446
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
       "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
-      "tsEmitName": "ParentPathSegment",
       "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 100663452,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -369,44 +306,59 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match$view",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem$view",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -424,80 +376,35 @@
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663452
-          }
-        },
-        {
-          "tsName": "match$view",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663359
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "canProduceStem",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875999
-          }
-        },
-        {
-          "tsName": "canProduceStem$view",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663453
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
       "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
-      "tsEmitName": "RecursiveWildcardSegment",
       "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 100663455,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -505,44 +412,59 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match$view",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem",
           "metadataToken": 385876000,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem$view",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -560,80 +482,35 @@
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663455
-          }
-        },
-        {
-          "tsName": "match$view",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663359
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "canProduceStem",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385876000
-          }
-        },
-        {
-          "tsName": "canProduceStem$view",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663456
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
       "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-      "tsEmitName": "WildcardPathSegment",
       "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match",
           "metadataToken": 100663462,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -641,86 +518,113 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::Match(System.String):System.Boolean",
           "clrName": "Match",
-          "tsEmitName": "match$view",
           "metadataToken": 100663359,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Match|(System.String):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::BeginsWith:System.String",
           "clrName": "BeginsWith",
-          "tsEmitName": "beginsWith",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "BeginsWith|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::Contains:System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "Contains",
-          "tsEmitName": "contains",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Contains|:System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::EndsWith:System.String",
           "clrName": "EndsWith",
-          "tsEmitName": "endsWith",
           "metadataToken": 385876004,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "EndsWith|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment::CanProduceStem:System.Boolean",
           "clrName": "CanProduceStem",
-          "tsEmitName": "canProduceStem$view",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CanProduceStem|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -729,11 +633,11 @@
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::MatchAllMicrosoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "clrName": "MatchAll",
-          "tsEmitName": "matchAll",
           "metadataToken": 67108909,
           "normalizedSignature": "MatchAll|Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
+          "isLiteral": false,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -749,103 +653,6 @@
           "parameterCount": 4,
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "match",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663462
-          }
-        },
-        {
-          "tsName": "match$view",
-          "isStatic": false,
-          "tsSignatureId": "Match|(System.String):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663359
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "canProduceStem",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385876001
-          }
-        },
-        {
-          "tsName": "beginsWith",
-          "isStatic": false,
-          "tsSignatureId": "BeginsWith|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385876002
-          }
-        },
-        {
-          "tsName": "contains",
-          "isStatic": false,
-          "tsSignatureId": "Contains|:System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385876003
-          }
-        },
-        {
-          "tsName": "endsWith",
-          "isStatic": false,
-          "tsSignatureId": "EndsWith|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385876004
-          }
-        },
-        {
-          "tsName": "canProduceStem$view",
-          "isStatic": false,
-          "tsSignatureId": "CanProduceStem|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 385875986
-          }
-        }
-      ],
-      "exposedFields": [
-        {
-          "tsName": "matchAll",
-          "isStatic": true,
-          "tsSignatureId": "MatchAll|Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment|static=true|const=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 67108909
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.StringComparison):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
-            "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-            "metadataToken": 100663457
-          }
         }
       ]
     }

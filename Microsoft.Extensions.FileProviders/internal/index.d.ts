@@ -19,39 +19,39 @@ import type { Action, Boolean as ClrBoolean, DateTimeOffset, IDisposable, Int64,
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IDirectoryContents$instance extends IEnumerable__System_Collections_Generic<IFileInfo>, IEnumerable {
-    readonly exists: boolean;
+    readonly Exists: boolean;
 }
 
 
 export type IDirectoryContents = IDirectoryContents$instance;
 
 export interface IFileInfo$instance {
-    readonly exists: boolean;
-    readonly length: long;
-    readonly physicalPath: string;
-    readonly name: string;
-    readonly lastModified: DateTimeOffset;
-    readonly isDirectory: boolean;
-    createReadStream(): Stream;
+    readonly Exists: boolean;
+    readonly Length: long;
+    readonly PhysicalPath: string;
+    readonly Name: string;
+    readonly LastModified: DateTimeOffset;
+    readonly IsDirectory: boolean;
+    CreateReadStream(): Stream;
 }
 
 
 export type IFileInfo = IFileInfo$instance;
 
 export interface IFileProvider$instance {
-    getDirectoryContents(subpath: string): IDirectoryContents;
-    getFileInfo(subpath: string): IFileInfo;
-    watch(filter: string): IChangeToken;
+    GetDirectoryContents(subpath: string): IDirectoryContents;
+    GetFileInfo(subpath: string): IFileInfo;
+    Watch(filter: string): IChangeToken;
 }
 
 
 export type IFileProvider = IFileProvider$instance;
 
 export interface CompositeFileProvider$instance {
-    readonly fileProviders: IEnumerable__System_Collections_Generic<IFileProvider>;
-    getDirectoryContents(subpath: string): IDirectoryContents;
-    getFileInfo(subpath: string): IFileInfo;
-    watch(pattern: string): IChangeToken;
+    readonly FileProviders: IEnumerable__System_Collections_Generic<IFileProvider>;
+    GetDirectoryContents(subpath: string): IDirectoryContents;
+    GetFileInfo(subpath: string): IFileInfo;
+    Watch(pattern: string): IChangeToken;
 }
 
 
@@ -71,9 +71,9 @@ export type CompositeFileProvider = CompositeFileProvider$instance & __Composite
 
 
 export interface EmbeddedFileProvider$instance {
-    getDirectoryContents(subpath: string): IDirectoryContents;
-    getFileInfo(subpath: string): IFileInfo;
-    watch(pattern: string): IChangeToken;
+    GetDirectoryContents(subpath: string): IDirectoryContents;
+    GetFileInfo(subpath: string): IFileInfo;
+    Watch(pattern: string): IChangeToken;
 }
 
 
@@ -93,10 +93,10 @@ export type EmbeddedFileProvider = EmbeddedFileProvider$instance & __EmbeddedFil
 
 
 export interface ManifestEmbeddedFileProvider$instance {
-    readonly assembly: Assembly;
-    getDirectoryContents(subpath: string): IDirectoryContents;
-    getFileInfo(subpath: string): IFileInfo;
-    watch(filter: string): IChangeToken;
+    readonly Assembly: Assembly;
+    GetDirectoryContents(subpath: string): IDirectoryContents;
+    GetFileInfo(subpath: string): IFileInfo;
+    Watch(filter: string): IChangeToken;
 }
 
 
@@ -118,14 +118,14 @@ export type ManifestEmbeddedFileProvider = ManifestEmbeddedFileProvider$instance
 
 
 export interface NotFoundDirectoryContents$instance {
-    readonly exists: boolean;
-    getEnumerator(): IEnumerator<IFileInfo>;
+    readonly Exists: boolean;
+    GetEnumerator(): IEnumerator<IFileInfo>;
 }
 
 
 export const NotFoundDirectoryContents: {
     new(): NotFoundDirectoryContents;
-    readonly singleton: NotFoundDirectoryContents;
+    readonly Singleton: NotFoundDirectoryContents;
 };
 
 
@@ -139,13 +139,13 @@ export type NotFoundDirectoryContents = NotFoundDirectoryContents$instance & __N
 
 
 export interface NotFoundFileInfo$instance {
-    readonly exists: boolean;
-    readonly isDirectory: boolean;
-    readonly lastModified: DateTimeOffset;
-    readonly length: long;
-    readonly name: string;
-    readonly physicalPath: string;
-    createReadStream(): Stream;
+    readonly Exists: boolean;
+    readonly IsDirectory: boolean;
+    readonly LastModified: DateTimeOffset;
+    readonly Length: long;
+    readonly Name: string;
+    readonly PhysicalPath: string;
+    CreateReadStream(): Stream;
 }
 
 
@@ -164,15 +164,15 @@ export type NotFoundFileInfo = NotFoundFileInfo$instance & __NotFoundFileInfo$vi
 
 
 export interface NullChangeToken$instance {
-    readonly activeChangeCallbacks: boolean;
-    readonly hasChanged: boolean;
-    registerChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    readonly ActiveChangeCallbacks: boolean;
+    readonly HasChanged: boolean;
+    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
 
 
 export const NullChangeToken: {
     new(): NullChangeToken;
-    readonly singleton: NullChangeToken;
+    readonly Singleton: NullChangeToken;
 };
 
 
@@ -186,9 +186,9 @@ export type NullChangeToken = NullChangeToken$instance & __NullChangeToken$views
 
 
 export interface NullFileProvider$instance {
-    getDirectoryContents(subpath: string): IDirectoryContents;
-    getFileInfo(subpath: string): IFileInfo;
-    watch(filter: string): IChangeToken;
+    GetDirectoryContents(subpath: string): IDirectoryContents;
+    GetFileInfo(subpath: string): IFileInfo;
+    Watch(filter: string): IChangeToken;
 }
 
 
@@ -207,13 +207,13 @@ export type NullFileProvider = NullFileProvider$instance & __NullFileProvider$vi
 
 
 export interface PhysicalFileProvider$instance {
-    readonly root: string;
-    useActivePolling: boolean;
-    usePollingFileWatcher: boolean;
-    dispose(): void;
-    getDirectoryContents(subpath: string): IDirectoryContents;
-    getFileInfo(subpath: string): IFileInfo;
-    watch(filter: string): IChangeToken;
+    readonly Root: string;
+    UseActivePolling: boolean;
+    UsePollingFileWatcher: boolean;
+    Dispose(): void;
+    GetDirectoryContents(subpath: string): IDirectoryContents;
+    GetFileInfo(subpath: string): IFileInfo;
+    Watch(filter: string): IChangeToken;
 }
 
 

@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.Configuration.Json",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.Configuration.Json"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
       "clrName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-      "tsEmitName": "JsonConfigurationProvider",
       "assemblyName": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::Load(System.IO.Stream):System.Void",
           "clrName": "Load",
-          "tsEmitName": "load2",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.IO.Stream):System.Void",
           "normalizedSignature": "Load|(System.IO.Stream):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -25,16 +38,22 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGet",
-          "tsEmitName": "tryGet$view",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "parameterModifiers": [
             {
               "index": 1,
@@ -45,69 +64,98 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set$view",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "GetReloadToken",
-          "tsEmitName": "getReloadToken$view",
           "metadataToken": 100663345,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
           "clrName": "Load",
-          "tsEmitName": "load$view",
           "metadataToken": 100663346,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetChildKeys",
-          "tsEmitName": "getChildKeys$view",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
           "clrName": "GetChildKeys",
-          "tsEmitName": "getChildKeys",
           "metadataToken": 0,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -115,13 +163,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "GetReloadToken",
-          "tsEmitName": "getReloadToken",
           "metadataToken": 0,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -129,13 +182,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::Load():System.Void",
           "clrName": "Load",
-          "tsEmitName": "load",
           "metadataToken": 0,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -143,13 +201,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -157,13 +220,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGet",
-          "tsEmitName": "tryGet",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false,
@@ -189,180 +257,35 @@
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "load2",
-          "isStatic": false,
-          "tsSignatureId": "Load|(System.IO.Stream):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663333
-          }
-        },
-        {
-          "tsName": "tryGet$view",
-          "isStatic": false,
-          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663343
-          }
-        },
-        {
-          "tsName": "set$view",
-          "isStatic": false,
-          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663344
-          }
-        },
-        {
-          "tsName": "getReloadToken$view",
-          "isStatic": false,
-          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663345
-          }
-        },
-        {
-          "tsName": "load$view",
-          "isStatic": false,
-          "tsSignatureId": "Load|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663346
-          }
-        },
-        {
-          "tsName": "getChildKeys$view",
-          "isStatic": false,
-          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663347
-          }
-        },
-        {
-          "tsName": "getChildKeys",
-          "isStatic": false,
-          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "getReloadToken",
-          "isStatic": false,
-          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "load",
-          "isStatic": false,
-          "tsSignatureId": "Load|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": false,
-          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "tryGet",
-          "isStatic": false,
-          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "dispose",
-          "isStatic": false,
-          "tsSignatureId": "Dispose|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 100663326
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "source",
-          "isStatic": false,
-          "tsSignatureId": "Source|:Microsoft.Extensions.Configuration.FileConfigurationSource|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875973
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Configuration.Json.JsonConfigurationSource):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663332
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
       "clrName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-      "tsEmitName": "JsonConfigurationSource",
       "assemblyName": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "clrName": "Build",
-          "tsEmitName": "build",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -370,16 +293,22 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "clrName": "Build",
-          "tsEmitName": "build$view",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
       ],
       "properties": [],
@@ -396,140 +325,35 @@
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "build",
-          "isStatic": false,
-          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663334
-          }
-        },
-        {
-          "tsName": "build$view",
-          "isStatic": false,
-          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663354
-          }
-        },
-        {
-          "tsName": "ensureDefaults",
-          "isStatic": false,
-          "tsSignatureId": "EnsureDefaults|(Microsoft.Extensions.Configuration.IConfigurationBuilder):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 100663344
-          }
-        },
-        {
-          "tsName": "resolveFileProvider",
-          "isStatic": false,
-          "tsSignatureId": "ResolveFileProvider|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 100663345
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "fileProvider",
-          "isStatic": false,
-          "tsSignatureId": "FileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875974
-          }
-        },
-        {
-          "tsName": "path",
-          "isStatic": false,
-          "tsSignatureId": "Path|:System.String|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875975
-          }
-        },
-        {
-          "tsName": "optional",
-          "isStatic": false,
-          "tsSignatureId": "Optional|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875976
-          }
-        },
-        {
-          "tsName": "reloadOnChange",
-          "isStatic": false,
-          "tsSignatureId": "ReloadOnChange|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875977
-          }
-        },
-        {
-          "tsName": "reloadDelay",
-          "isStatic": false,
-          "tsSignatureId": "ReloadDelay|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875978
-          }
-        },
-        {
-          "tsName": "onLoadException",
-          "isStatic": false,
-          "tsSignatureId": "OnLoadException|:System.Action_1[[Microsoft.Extensions.Configuration.FileLoadExceptionContext,Microsoft.Extensions.Configuration.FileExtensions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
-            "metadataToken": 385875979
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663335
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
       "clrName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-      "tsEmitName": "JsonStreamConfigurationProvider",
       "assemblyName": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::Load(System.IO.Stream):System.Void",
           "clrName": "Load",
-          "tsEmitName": "load2",
           "metadataToken": 100663337,
           "canonicalSignature": "(System.IO.Stream):System.Void",
           "normalizedSignature": "Load|(System.IO.Stream):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -537,16 +361,22 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGet",
-          "tsEmitName": "tryGet$view",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "parameterModifiers": [
             {
               "index": 1,
@@ -557,69 +387,98 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set$view",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "GetReloadToken",
-          "tsEmitName": "getReloadToken$view",
           "metadataToken": 100663345,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
           "clrName": "Load",
-          "tsEmitName": "load$view",
           "metadataToken": 100663346,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "GetChildKeys",
-          "tsEmitName": "getChildKeys$view",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
           "clrName": "GetChildKeys",
-          "tsEmitName": "getChildKeys",
           "metadataToken": 0,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -627,13 +486,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "GetReloadToken",
-          "tsEmitName": "getReloadToken",
           "metadataToken": 0,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -641,13 +505,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::Load():System.Void",
           "clrName": "Load",
-          "tsEmitName": "load",
           "metadataToken": 0,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -655,13 +524,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::Set(System.String,System.String):System.Void",
           "clrName": "Set",
-          "tsEmitName": "set",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -669,13 +543,18 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
           "clrName": "TryGet",
-          "tsEmitName": "tryGet",
           "metadataToken": 0,
           "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
           "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false,
@@ -701,170 +580,35 @@
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "load2",
-          "isStatic": false,
-          "tsSignatureId": "Load|(System.IO.Stream):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663337
-          }
-        },
-        {
-          "tsName": "tryGet$view",
-          "isStatic": false,
-          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663343
-          }
-        },
-        {
-          "tsName": "set$view",
-          "isStatic": false,
-          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663344
-          }
-        },
-        {
-          "tsName": "getReloadToken$view",
-          "isStatic": false,
-          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663345
-          }
-        },
-        {
-          "tsName": "load$view",
-          "isStatic": false,
-          "tsSignatureId": "Load|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663346
-          }
-        },
-        {
-          "tsName": "getChildKeys$view",
-          "isStatic": false,
-          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663347
-          }
-        },
-        {
-          "tsName": "getChildKeys",
-          "isStatic": false,
-          "tsSignatureId": "GetChildKeys|(System.Collections.Generic.IEnumerable_1,System.String):System.Collections.Generic.IEnumerable_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "getReloadToken",
-          "isStatic": false,
-          "tsSignatureId": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "load",
-          "isStatic": false,
-          "tsSignatureId": "Load|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "set",
-          "isStatic": false,
-          "tsSignatureId": "Set|(System.String,System.String):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "tryGet",
-          "isStatic": false,
-          "tsSignatureId": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "toString",
-          "isStatic": false,
-          "tsSignatureId": "ToString|():System.String|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration",
-            "metadataToken": 100663377
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "source",
-          "isStatic": false,
-          "tsSignatureId": "Source|:Microsoft.Extensions.Configuration.StreamConfigurationSource|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration",
-            "metadataToken": 385876003
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663336
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
       "clrName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-      "tsEmitName": "JsonStreamConfigurationSource",
       "assemblyName": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "clrName": "Build",
-          "tsEmitName": "build",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -872,16 +616,22 @@
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "clrName": "Build",
-          "tsEmitName": "build$view",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
       ],
       "properties": [],
@@ -897,51 +647,6 @@
           "parameterCount": 0,
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "build",
-          "isStatic": false,
-          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663338
-          }
-        },
-        {
-          "tsName": "build$view",
-          "isStatic": false,
-          "tsSignatureId": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
-            "metadataToken": 100663354
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "stream",
-          "isStatic": false,
-          "tsSignatureId": "Stream|:System.IO.Stream|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration",
-            "metadataToken": 385876004
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-            "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
-            "metadataToken": 100663339
-          }
         }
       ]
     }

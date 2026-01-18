@@ -18,26 +18,26 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IValidatableInfo$instance {
-    validateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
 export type IValidatableInfo = IValidatableInfo$instance;
 
 export interface IValidatableInfoResolver$instance {
-    tryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
-    tryGetValidatableTypeInfo(type: Type, validatableInfo: IValidatableInfo): boolean;
+    TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
+    TryGetValidatableTypeInfo(type: Type, validatableInfo: IValidatableInfo): boolean;
 }
 
 
 export type IValidatableInfoResolver = IValidatableInfoResolver$instance;
 
 export interface ValidationErrorContext$instance {
-    get container(): unknown | undefined;
-    set container(value: unknown);
-    errors: IReadOnlyList<System_Internal.String>;
-    name: string;
-    path: string;
+    get Container(): unknown | undefined;
+    set Container(value: unknown);
+    Errors: IReadOnlyList<System_Internal.String>;
+    Name: string;
+    Path: string;
 }
 
 
@@ -60,7 +60,7 @@ export const SkipValidationAttribute: {
 export type SkipValidationAttribute = SkipValidationAttribute$instance;
 
 export interface ValidatableParameterInfo$instance {
-    validateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -78,7 +78,7 @@ export type ValidatableParameterInfo = ValidatableParameterInfo$instance & __Val
 
 
 export interface ValidatablePropertyInfo$instance {
-    validateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -107,7 +107,7 @@ export const ValidatableTypeAttribute: {
 export type ValidatableTypeAttribute = ValidatableTypeAttribute$instance;
 
 export interface ValidatableTypeInfo$instance {
-    validateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -125,12 +125,12 @@ export type ValidatableTypeInfo = ValidatableTypeInfo$instance & __ValidatableTy
 
 
 export interface ValidateContext$instance {
-    currentDepth: int;
-    currentValidationPath: string;
-    validationContext: ValidationContext;
-    get validationErrors(): Dictionary<System_Internal.String, string[]> | undefined;
-    set validationErrors(value: Dictionary<System_Internal.String, string[]>);
-    validationOptions: ValidationOptions;
+    CurrentDepth: int;
+    CurrentValidationPath: string;
+    ValidationContext: ValidationContext;
+    get ValidationErrors(): Dictionary<System_Internal.String, string[]> | undefined;
+    set ValidationErrors(value: Dictionary<System_Internal.String, string[]>);
+    ValidationOptions: ValidationOptions;
 }
 
 
@@ -142,10 +142,10 @@ export const ValidateContext: {
 export type ValidateContext = ValidateContext$instance;
 
 export interface ValidationOptions$instance {
-    maxDepth: int;
-    readonly resolvers: IList<IValidatableInfoResolver>;
-    tryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
-    tryGetValidatableTypeInfo(type: Type, validatableTypeInfo: IValidatableInfo): boolean;
+    MaxDepth: int;
+    readonly Resolvers: IList<IValidatableInfoResolver>;
+    TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
+    TryGetValidatableTypeInfo(type: Type, validatableTypeInfo: IValidatableInfo): boolean;
 }
 
 

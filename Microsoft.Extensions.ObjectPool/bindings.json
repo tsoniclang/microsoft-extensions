@@ -1,23 +1,36 @@
 {
   "namespace": "Microsoft.Extensions.ObjectPool",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.ObjectPool"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
       "clrName": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-      "tsEmitName": "IPooledObjectPolicy_1",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663318,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -25,13 +38,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 100663319,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -40,47 +58,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663318
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663319
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IResettable",
       "clrName": "Microsoft.Extensions.ObjectPool.IResettable",
-      "tsEmitName": "IResettable",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IResettable::TryReset():System.Boolean",
           "clrName": "TryReset",
-          "tsEmitName": "tryReset",
           "metadataToken": 100663320,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "TryReset|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IResettable",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -89,37 +95,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "tryReset",
-          "isStatic": false,
-          "tsSignatureId": "TryReset|():System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IResettable",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663320
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
       "clrName": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
-      "tsEmitName": "DefaultObjectPool_1",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get",
           "metadataToken": 100663301,
           "canonicalSignature": "():T",
           "normalizedSignature": "Get|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -127,13 +131,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 100663302,
           "canonicalSignature": "(T):System.Void",
           "normalizedSignature": "Return|(T):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -163,67 +172,35 @@
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "get",
-          "isStatic": false,
-          "tsSignatureId": "Get|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663301
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663302
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(IPooledObjectPolicy_1):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663299
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(IPooledObjectPolicy_1,System.Int32):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663300
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
       "clrName": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
-      "tsEmitName": "DefaultObjectPoolProvider",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider::Create(IPooledObjectPolicy_1):ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create3",
           "metadataToken": 100663306,
           "canonicalSignature": "(IPooledObjectPolicy_1):ObjectPool_1",
           "normalizedSignature": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -231,13 +208,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider::Create():Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 0,
           "canonicalSignature": "():Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "normalizedSignature": "Create|():Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 1,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -245,13 +227,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider::Create(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create2",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "normalizedSignature": "Create|(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -261,14 +248,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider::MaximumRetained:System.Int32",
           "clrName": "MaximumRetained",
-          "tsEmitName": "maximumRetained",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaximumRetained|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
@@ -286,90 +277,35 @@
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create3",
-          "isStatic": false,
-          "tsSignatureId": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663306
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "create2",
-          "isStatic": false,
-          "tsSignatureId": "Create|(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663330
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "maximumRetained",
-          "isStatic": false,
-          "tsSignatureId": "MaximumRetained|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 385875969
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663307
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
       "clrName": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
-      "tsEmitName": "DefaultPooledObjectPolicy_1",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663308,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -377,13 +313,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 100663309,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -391,30 +332,42 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create$view",
           "metadataToken": 100663318,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601"
         },
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return$view",
           "metadataToken": 100663319,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601"
         }
       ],
       "properties": [],
@@ -431,78 +384,35 @@
           "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663308
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663309
-          }
-        },
-        {
-          "tsName": "create$view",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663318
-          }
-        },
-        {
-          "tsName": "return$view",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663319
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.DefaultPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663310
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
       "clrName": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
-      "tsEmitName": "LeakTrackingObjectPool_1",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get",
           "metadataToken": 100663322,
           "canonicalSignature": "():T",
           "normalizedSignature": "Get|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -510,13 +420,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 100663323,
           "canonicalSignature": "(T):System.Void",
           "normalizedSignature": "Return|(T):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -536,58 +451,35 @@
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "get",
-          "isStatic": false,
-          "tsSignatureId": "Get|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663322
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663323
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(ObjectPool_1):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663321
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
       "clrName": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
-      "tsEmitName": "LeakTrackingObjectPoolProvider",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider::Create(IPooledObjectPolicy_1):ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create3",
           "metadataToken": 100663325,
           "canonicalSignature": "(IPooledObjectPolicy_1):ObjectPool_1",
           "normalizedSignature": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -595,13 +487,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider::Create():Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 0,
           "canonicalSignature": "():Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "normalizedSignature": "Create|():Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 1,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -609,13 +506,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider::Create(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create2",
           "metadataToken": 0,
           "canonicalSignature": "(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1",
           "normalizedSignature": "Create|(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -635,78 +537,35 @@
           "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create3",
-          "isStatic": false,
-          "tsSignatureId": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663325
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "create2",
-          "isStatic": false,
-          "tsSignatureId": "Create|(Microsoft.Extensions.ObjectPool.IPooledObjectPolicy_1):Microsoft.Extensions.ObjectPool.ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663330
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.ObjectPool.ObjectPoolProvider):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.LeakTrackingObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663324
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601",
       "clrName": "Microsoft.Extensions.ObjectPool.ObjectPool\u00601",
-      "tsEmitName": "ObjectPool_1",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601::Get():T",
           "clrName": "Get",
-          "tsEmitName": "get",
           "metadataToken": 100663326,
           "canonicalSignature": "():T",
           "normalizedSignature": "Get|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -714,13 +573,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool\u00601::Return(T):System.Void",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 100663327,
           "canonicalSignature": "(T):System.Void",
           "normalizedSignature": "Return|(T):System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPool\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -729,47 +593,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "get",
-          "isStatic": false,
-          "tsSignatureId": "Get|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663326
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPool\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663327
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
       "clrName": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
-      "tsEmitName": "ObjectPoolProvider",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProvider::Create():ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663330,
           "canonicalSignature": "():ObjectPool_1",
           "normalizedSignature": "Create|():ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -777,13 +629,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProvider::Create(IPooledObjectPolicy_1):ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663331,
           "canonicalSignature": "(IPooledObjectPolicy_1):ObjectPool_1",
           "normalizedSignature": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -792,47 +649,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663330
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663331
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601",
       "clrName": "Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601",
-      "tsEmitName": "PooledObjectPolicy_1",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 1,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663335,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -840,13 +685,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 100663336,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -854,96 +704,76 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create$view",
           "metadataToken": 100663318,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601"
         },
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return$view",
           "metadataToken": 100663319,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601"
         }
       ],
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663335
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.PooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "create$view",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663318
-          }
-        },
-        {
-          "tsName": "return$view",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663319
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
       "clrName": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-      "tsEmitName": "StringBuilderPooledObjectPolicy",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Create():System.Text.StringBuilder",
           "clrName": "Create",
-          "tsEmitName": "create2",
           "metadataToken": 100663342,
           "canonicalSignature": "():System.Text.StringBuilder",
           "normalizedSignature": "Create|():System.Text.StringBuilder|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -951,13 +781,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Return(System.Text.StringBuilder):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return2",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Text.StringBuilder):System.Boolean",
           "normalizedSignature": "Return|(System.Text.StringBuilder):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -965,41 +800,58 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create$view",
           "metadataToken": 100663318,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601"
         },
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return$view",
           "metadataToken": 100663319,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601"
         },
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Create():T",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 0,
           "canonicalSignature": "():T",
           "normalizedSignature": "Create|():T|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -1007,13 +859,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::Return(T):System.Boolean",
           "clrName": "Return",
-          "tsEmitName": "return",
           "metadataToken": 0,
           "canonicalSignature": "(T):System.Boolean",
           "normalizedSignature": "Return|(T):System.Boolean|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "BaseOverload",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -1023,28 +880,36 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::InitialCapacity:System.Int32",
           "clrName": "InitialCapacity",
-          "tsEmitName": "initialCapacity",
           "metadataToken": 385875970,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "InitialCapacity|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         },
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy::MaximumRetainedCapacity:System.Int32",
           "clrName": "MaximumRetainedCapacity",
-          "tsEmitName": "maximumRetainedCapacity",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaximumRetainedCapacity|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
@@ -1062,120 +927,35 @@
           "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "create2",
-          "isStatic": false,
-          "tsSignatureId": "Create|():System.Text.StringBuilder|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663342
-          }
-        },
-        {
-          "tsName": "return2",
-          "isStatic": false,
-          "tsSignatureId": "Return|(System.Text.StringBuilder):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663343
-          }
-        },
-        {
-          "tsName": "create$view",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663318
-          }
-        },
-        {
-          "tsName": "return$view",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.IPooledObjectPolicy\u00601",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663319
-          }
-        },
-        {
-          "tsName": "create",
-          "isStatic": false,
-          "tsSignatureId": "Create|():T|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 0
-          }
-        },
-        {
-          "tsName": "return",
-          "isStatic": false,
-          "tsSignatureId": "Return|(T):System.Boolean|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 0
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "initialCapacity",
-          "isStatic": false,
-          "tsSignatureId": "InitialCapacity|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 385875970
-          }
-        },
-        {
-          "tsName": "maximumRetainedCapacity",
-          "isStatic": false,
-          "tsSignatureId": "MaximumRetainedCapacity|:System.Int32|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 385875971
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663344
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool",
       "clrName": "Microsoft.Extensions.ObjectPool.ObjectPool",
-      "tsEmitName": "ObjectPool",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool::Create(IPooledObjectPolicy_1):ObjectPool_1",
           "clrName": "Create",
-          "tsEmitName": "create",
           "metadataToken": 100663329,
           "canonicalSignature": "(IPooledObjectPolicy_1):ObjectPool_1",
           "normalizedSignature": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 1,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPool",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": false
@@ -1184,37 +964,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "create",
-          "isStatic": true,
-          "tsSignatureId": "Create|(IPooledObjectPolicy_1):ObjectPool_1|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPool",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663329
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions",
       "clrName": "Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions",
-      "tsEmitName": "ObjectPoolProviderExtensions",
       "assemblyName": "Microsoft.Extensions.ObjectPool",
       "metadataToken": 0,
+      "kind": "StaticNamespace",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": true,
+      "isStatic": true,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions::CreateStringBuilderPool(Microsoft.Extensions.ObjectPool.ObjectPoolProvider):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateStringBuilderPool",
-          "tsEmitName": "createStringBuilderPool",
           "metadataToken": 100663333,
           "canonicalSignature": "(Microsoft.Extensions.ObjectPool.ObjectPoolProvider):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateStringBuilderPool|(Microsoft.Extensions.ObjectPool.ObjectPoolProvider):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": true
@@ -1222,13 +1000,18 @@
         {
           "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions::CreateStringBuilderPool(Microsoft.Extensions.ObjectPool.ObjectPoolProvider,System.Int32,System.Int32):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "CreateStringBuilderPool",
-          "tsEmitName": "createStringBuilderPool",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.ObjectPool.ObjectPoolProvider,System.Int32,System.Int32):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "CreateStringBuilderPool|(Microsoft.Extensions.ObjectPool.ObjectPoolProvider,System.Int32,System.Int32):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 3,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
           "isExtensionMethod": true
@@ -1237,29 +1020,7 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createStringBuilderPool",
-          "isStatic": true,
-          "tsSignatureId": "CreateStringBuilderPool|(Microsoft.Extensions.ObjectPool.ObjectPoolProvider):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663333
-          }
-        },
-        {
-          "tsName": "createStringBuilderPool",
-          "isStatic": true,
-          "tsSignatureId": "CreateStringBuilderPool|(Microsoft.Extensions.ObjectPool.ObjectPoolProvider,System.Int32,System.Int32):Microsoft.Extensions.ObjectPool.ObjectPool_1[[System.Text.StringBuilder,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.ObjectPool.ObjectPoolProviderExtensions",
-            "declaringAssemblyName": "Microsoft.Extensions.ObjectPool",
-            "metadataToken": 100663334
-          }
-        }
-      ]
+      "constructors": []
     }
   ]
 }

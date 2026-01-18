@@ -1,62 +1,75 @@
 {
   "namespace": "Microsoft.Extensions.FileProviders",
+  "contributingAssemblies": [
+    "Microsoft.Extensions.FileProviders.Abstractions",
+    "Microsoft.Extensions.FileProviders.Composite",
+    "Microsoft.Extensions.FileProviders.Embedded",
+    "Microsoft.Extensions.FileProviders.Physical"
+  ],
   "types": [
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents",
       "clrName": "Microsoft.Extensions.FileProviders.IDirectoryContents",
-      "tsEmitName": "IDirectoryContents",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents::Exists:System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IDirectoryContents",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedProperties": [
-        {
-          "tsName": "exists",
-          "isStatic": false,
-          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IDirectoryContents",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875971
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo",
       "clrName": "Microsoft.Extensions.FileProviders.IFileInfo",
-      "tsEmitName": "IFileInfo",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::CreateReadStream():System.IO.Stream",
           "clrName": "CreateReadStream",
-          "tsEmitName": "createReadStream",
           "metadataToken": 100663319,
           "canonicalSignature": "():System.IO.Stream",
           "normalizedSignature": "CreateReadStream|():System.IO.Stream|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -66,183 +79,143 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::Exists:System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::Length:System.Int64",
           "clrName": "Length",
-          "tsEmitName": "length",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Length|:System.Int64|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::PhysicalPath:System.String",
           "clrName": "PhysicalPath",
-          "tsEmitName": "physicalPath",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PhysicalPath|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::LastModified:System.DateTimeOffset",
           "clrName": "LastModified",
-          "tsEmitName": "lastModified",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.DateTimeOffset",
           "normalizedSignature": "LastModified|:System.DateTimeOffset|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::IsDirectory:System.Boolean",
           "clrName": "IsDirectory",
-          "tsEmitName": "isDirectory",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsDirectory|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "createReadStream",
-          "isStatic": false,
-          "tsSignatureId": "CreateReadStream|():System.IO.Stream|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663319
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "exists",
-          "isStatic": false,
-          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875972
-          }
-        },
-        {
-          "tsName": "length",
-          "isStatic": false,
-          "tsSignatureId": "Length|:System.Int64|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875973
-          }
-        },
-        {
-          "tsName": "physicalPath",
-          "isStatic": false,
-          "tsSignatureId": "PhysicalPath|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875974
-          }
-        },
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875975
-          }
-        },
-        {
-          "tsName": "lastModified",
-          "isStatic": false,
-          "tsSignatureId": "LastModified|:System.DateTimeOffset|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875976
-          }
-        },
-        {
-          "tsName": "isDirectory",
-          "isStatic": false,
-          "tsSignatureId": "IsDirectory|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875977
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider",
       "clrName": "Microsoft.Extensions.FileProviders.IFileProvider",
-      "tsEmitName": "IFileProvider",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Interface",
+      "accessibility": "Public",
+      "isAbstract": true,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -250,13 +223,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -264,13 +242,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -279,57 +262,35 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "getFileInfo",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getDirectoryContents",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663322
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.CompositeFileProvider",
       "clrName": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-      "tsEmitName": "CompositeFileProvider",
       "assemblyName": "Microsoft.Extensions.FileProviders.Composite",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.CompositeFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo",
           "metadataToken": 100663299,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
           "isExtensionMethod": false
@@ -337,13 +298,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.CompositeFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents",
           "metadataToken": 100663300,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
           "isExtensionMethod": false
@@ -351,13 +317,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.CompositeFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch",
           "metadataToken": 100663301,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
           "isExtensionMethod": false
@@ -365,58 +336,80 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo$view",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents$view",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch$view",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Composite:Microsoft.Extensions.FileProviders.CompositeFileProvider::FileProviders:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "FileProviders",
-          "tsEmitName": "fileProviders",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "FileProviders|:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite"
         }
@@ -444,119 +437,35 @@
           "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getFileInfo",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
-            "metadataToken": 100663299
-          }
-        },
-        {
-          "tsName": "getDirectoryContents",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
-            "metadataToken": 100663300
-          }
-        },
-        {
-          "tsName": "watch",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
-            "metadataToken": 100663301
-          }
-        },
-        {
-          "tsName": "getFileInfo$view",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getDirectoryContents$view",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch$view",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663322
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "fileProviders",
-          "isStatic": false,
-          "tsSignatureId": "FileProviders|:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
-            "metadataToken": 385875969
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(Microsoft.Extensions.FileProviders.IFileProvider[]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
-            "metadataToken": 100663297
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.CompositeFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Composite",
-            "metadataToken": 100663298
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
       "clrName": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
-      "tsEmitName": "EmbeddedFileProvider",
       "assemblyName": "Microsoft.Extensions.FileProviders.Embedded",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.EmbeddedFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo",
           "metadataToken": 100663303,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -564,13 +473,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.EmbeddedFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents",
           "metadataToken": 100663304,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -578,13 +492,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.EmbeddedFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch",
           "metadataToken": 100663305,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -592,44 +511,62 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo$view",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents$view",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch$view",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         }
       ],
       "properties": [],
@@ -656,107 +593,35 @@
           "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getFileInfo",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663303
-          }
-        },
-        {
-          "tsName": "getDirectoryContents",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663304
-          }
-        },
-        {
-          "tsName": "watch",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663305
-          }
-        },
-        {
-          "tsName": "getFileInfo$view",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getDirectoryContents$view",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch$view",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663322
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Reflection.Assembly):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663301
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Reflection.Assembly,System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.EmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663302
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
       "clrName": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-      "tsEmitName": "ManifestEmbeddedFileProvider",
       "assemblyName": "Microsoft.Extensions.FileProviders.Embedded",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -764,13 +629,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -778,13 +648,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -792,58 +667,80 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo$view",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents$view",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch$view",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider::Assembly:System.Reflection.Assembly",
           "clrName": "Assembly",
-          "tsEmitName": "assembly",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Reflection.Assembly",
           "normalizedSignature": "Assembly|:System.Reflection.Assembly|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         }
@@ -891,137 +788,35 @@
           "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getDirectoryContents",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getFileInfo",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663322
-          }
-        },
-        {
-          "tsName": "getFileInfo$view",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getDirectoryContents$view",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch$view",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663322
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "assembly",
-          "isStatic": false,
-          "tsSignatureId": "Assembly|:System.Reflection.Assembly|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 385875969
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Reflection.Assembly):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663313
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Reflection.Assembly,System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663314
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Reflection.Assembly,System.String,System.DateTimeOffset):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663315
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.Reflection.Assembly,System.String,System.String,System.DateTimeOffset):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.ManifestEmbeddedFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
-            "metadataToken": 100663316
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
       "clrName": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
-      "tsEmitName": "NotFoundDirectoryContents",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "clrName": "GetEnumerator",
-          "tsEmitName": "getEnumerator",
           "metadataToken": 100663325,
           "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -1031,42 +826,55 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents::Singleton:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
           "clrName": "Singleton",
-          "tsEmitName": "singleton",
           "metadataToken": 385875978,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
           "normalizedSignature": "Singleton|:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents::Exists:System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents::Exists:System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists$view",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IDirectoryContents",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IDirectoryContents",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
@@ -1084,80 +892,35 @@
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getEnumerator",
-          "isStatic": false,
-          "tsSignatureId": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663325
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "singleton",
-          "isStatic": true,
-          "tsSignatureId": "Singleton|:Microsoft.Extensions.FileProviders.NotFoundDirectoryContents|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875978
-          }
-        },
-        {
-          "tsName": "exists",
-          "isStatic": false,
-          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "exists$view",
-          "isStatic": false,
-          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IDirectoryContents",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875971
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundDirectoryContents",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663327
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo",
       "clrName": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-      "tsEmitName": "NotFoundFileInfo",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::CreateReadStream():System.IO.Stream",
           "clrName": "CreateReadStream",
-          "tsEmitName": "createReadStream",
           "metadataToken": 100663336,
           "canonicalSignature": "():System.IO.Stream",
           "normalizedSignature": "CreateReadStream|():System.IO.Stream|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -1165,184 +928,244 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::CreateReadStream():System.IO.Stream",
           "clrName": "CreateReadStream",
-          "tsEmitName": "createReadStream$view",
           "metadataToken": 100663319,
           "canonicalSignature": "():System.IO.Stream",
           "normalizedSignature": "CreateReadStream|():System.IO.Stream|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::Exists:System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::IsDirectory:System.Boolean",
           "clrName": "IsDirectory",
-          "tsEmitName": "isDirectory",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsDirectory|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::LastModified:System.DateTimeOffset",
           "clrName": "LastModified",
-          "tsEmitName": "lastModified",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.DateTimeOffset",
           "normalizedSignature": "LastModified|:System.DateTimeOffset|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::Length:System.Int64",
           "clrName": "Length",
-          "tsEmitName": "length",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Length|:System.Int64|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NotFoundFileInfo::PhysicalPath:System.String",
           "clrName": "PhysicalPath",
-          "tsEmitName": "physicalPath",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PhysicalPath|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::Exists:System.Boolean",
           "clrName": "Exists",
-          "tsEmitName": "exists$view",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::Length:System.Int64",
           "clrName": "Length",
-          "tsEmitName": "length$view",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "Length|:System.Int64|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::PhysicalPath:System.String",
           "clrName": "PhysicalPath",
-          "tsEmitName": "physicalPath$view",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "PhysicalPath|:System.String|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::Name:System.String",
           "clrName": "Name",
-          "tsEmitName": "name$view",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::LastModified:System.DateTimeOffset",
           "clrName": "LastModified",
-          "tsEmitName": "lastModified$view",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.DateTimeOffset",
           "normalizedSignature": "LastModified|:System.DateTimeOffset|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo::IsDirectory:System.Boolean",
           "clrName": "IsDirectory",
-          "tsEmitName": "isDirectory$view",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsDirectory|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
@@ -1360,180 +1183,35 @@
           "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "createReadStream",
-          "isStatic": false,
-          "tsSignatureId": "CreateReadStream|():System.IO.Stream|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "createReadStream$view",
-          "isStatic": false,
-          "tsSignatureId": "CreateReadStream|():System.IO.Stream|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663319
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "exists",
-          "isStatic": false,
-          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875980
-          }
-        },
-        {
-          "tsName": "isDirectory",
-          "isStatic": false,
-          "tsSignatureId": "IsDirectory|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875981
-          }
-        },
-        {
-          "tsName": "lastModified",
-          "isStatic": false,
-          "tsSignatureId": "LastModified|:System.DateTimeOffset|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875982
-          }
-        },
-        {
-          "tsName": "length",
-          "isStatic": false,
-          "tsSignatureId": "Length|:System.Int64|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875983
-          }
-        },
-        {
-          "tsName": "name",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875984
-          }
-        },
-        {
-          "tsName": "physicalPath",
-          "isStatic": false,
-          "tsSignatureId": "PhysicalPath|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875985
-          }
-        },
-        {
-          "tsName": "exists$view",
-          "isStatic": false,
-          "tsSignatureId": "Exists|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875972
-          }
-        },
-        {
-          "tsName": "length$view",
-          "isStatic": false,
-          "tsSignatureId": "Length|:System.Int64|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875973
-          }
-        },
-        {
-          "tsName": "physicalPath$view",
-          "isStatic": false,
-          "tsSignatureId": "PhysicalPath|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875974
-          }
-        },
-        {
-          "tsName": "name$view",
-          "isStatic": false,
-          "tsSignatureId": "Name|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875975
-          }
-        },
-        {
-          "tsName": "lastModified$view",
-          "isStatic": false,
-          "tsSignatureId": "LastModified|:System.DateTimeOffset|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875976
-          }
-        },
-        {
-          "tsName": "isDirectory$view",
-          "isStatic": false,
-          "tsSignatureId": "IsDirectory|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875977
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NotFoundFileInfo",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663329
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullChangeToken",
       "clrName": "Microsoft.Extensions.FileProviders.NullChangeToken",
-      "tsEmitName": "NullChangeToken",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": true,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "clrName": "RegisterChangeCallback",
-          "tsEmitName": "registerChangeCallback",
           "metadataToken": 100663341,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -1541,185 +1219,149 @@
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "clrName": "RegisterChangeCallback",
-          "tsEmitName": "registerChangeCallback$view",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullChangeToken::Singleton:Microsoft.Extensions.FileProviders.NullChangeToken",
           "clrName": "Singleton",
-          "tsEmitName": "singleton",
           "metadataToken": 385875986,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.NullChangeToken",
           "normalizedSignature": "Singleton|:Microsoft.Extensions.FileProviders.NullChangeToken|static=true|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullChangeToken::HasChanged:System.Boolean",
           "clrName": "HasChanged",
-          "tsEmitName": "hasChanged",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullChangeToken::ActiveChangeCallbacks:System.Boolean",
           "clrName": "ActiveChangeCallbacks",
-          "tsEmitName": "activeChangeCallbacks",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::HasChanged:System.Boolean",
           "clrName": "HasChanged",
-          "tsEmitName": "hasChanged$view",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::ActiveChangeCallbacks:System.Boolean",
           "clrName": "ActiveChangeCallbacks",
-          "tsEmitName": "activeChangeCallbacks$view",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": [],
-      "exposedMethods": [
-        {
-          "tsName": "registerChangeCallback",
-          "isStatic": false,
-          "tsSignatureId": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663341
-          }
-        },
-        {
-          "tsName": "registerChangeCallback$view",
-          "isStatic": false,
-          "tsSignatureId": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.Primitives",
-            "metadataToken": 100663343
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "singleton",
-          "isStatic": true,
-          "tsSignatureId": "Singleton|:Microsoft.Extensions.FileProviders.NullChangeToken|static=true|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875986
-          }
-        },
-        {
-          "tsName": "hasChanged",
-          "isStatic": false,
-          "tsSignatureId": "HasChanged|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875987
-          }
-        },
-        {
-          "tsName": "activeChangeCallbacks",
-          "isStatic": false,
-          "tsSignatureId": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 385875988
-          }
-        },
-        {
-          "tsName": "hasChanged$view",
-          "isStatic": false,
-          "tsSignatureId": "HasChanged|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.Primitives",
-            "metadataToken": 385875983
-          }
-        },
-        {
-          "tsName": "activeChangeCallbacks$view",
-          "isStatic": false,
-          "tsSignatureId": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-            "declaringAssemblyName": "Microsoft.Extensions.Primitives",
-            "metadataToken": 385875984
-          }
-        }
-      ]
+      "constructors": []
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullFileProvider",
       "clrName": "Microsoft.Extensions.FileProviders.NullFileProvider",
-      "tsEmitName": "NullFileProvider",
       "assemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -1727,13 +1369,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -1741,13 +1388,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.NullFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch",
           "metadataToken": 100663345,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false
@@ -1755,44 +1407,62 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo$view",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents$view",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch$view",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         }
       ],
       "properties": [],
@@ -1809,98 +1479,35 @@
           "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
         }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "getDirectoryContents",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663343
-          }
-        },
-        {
-          "tsName": "getFileInfo",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663344
-          }
-        },
-        {
-          "tsName": "watch",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663345
-          }
-        },
-        {
-          "tsName": "getFileInfo$view",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getDirectoryContents$view",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch$view",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663322
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|():void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.NullFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663346
-          }
-        }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider",
       "clrName": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-      "tsEmitName": "PhysicalFileProvider",
       "assemblyName": "Microsoft.Extensions.FileProviders.Physical",
       "metadataToken": 0,
+      "kind": "Class",
+      "accessibility": "Public",
+      "isAbstract": false,
+      "isSealed": false,
+      "isStatic": false,
+      "arity": 0,
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::Dispose():System.Void",
           "clrName": "Dispose",
-          "tsEmitName": "dispose",
           "metadataToken": 100663331,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
           "isExtensionMethod": false
@@ -1908,13 +1515,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo",
           "metadataToken": 100663336,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
           "isExtensionMethod": false
@@ -1922,13 +1534,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents",
           "metadataToken": 100663337,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
           "isExtensionMethod": false
@@ -1936,13 +1553,18 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch",
           "metadataToken": 100663338,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": true,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
           "isExtensionMethod": false
@@ -1950,86 +1572,116 @@
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetFileInfo(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "clrName": "GetFileInfo",
-          "tsEmitName": "getFileInfo$view",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IFileInfo",
           "normalizedSignature": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::GetDirectoryContents(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "clrName": "GetDirectoryContents",
-          "tsEmitName": "getDirectoryContents$view",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents",
           "normalizedSignature": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileProvider::Watch(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "clrName": "Watch",
-          "tsEmitName": "watch$view",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
           "emitScope": "ViewOnly",
+          "provenance": "ExplicitView",
           "arity": 0,
           "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-          "isExtensionMethod": false
+          "isExtensionMethod": false,
+          "sourceInterface": "Microsoft.Extensions.FileProviders.IFileProvider"
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::UsePollingFileWatcher:System.Boolean",
           "clrName": "UsePollingFileWatcher",
-          "tsEmitName": "usePollingFileWatcher",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UsePollingFileWatcher|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::UseActivePolling:System.Boolean",
           "clrName": "UseActivePolling",
-          "tsEmitName": "useActivePolling",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "UseActivePolling|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical"
         },
         {
           "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.PhysicalFileProvider::Root:System.String",
           "clrName": "Root",
-          "tsEmitName": "root",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Root|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
+          "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
           "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical"
         }
@@ -2056,130 +1708,6 @@
           "parameterCount": 2,
           "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical"
-        }
-      ],
-      "exposedMethods": [
-        {
-          "tsName": "dispose",
-          "isStatic": false,
-          "tsSignatureId": "Dispose|():System.Void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 100663331
-          }
-        },
-        {
-          "tsName": "getFileInfo",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 100663336
-          }
-        },
-        {
-          "tsName": "getDirectoryContents",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 100663337
-          }
-        },
-        {
-          "tsName": "watch",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 100663338
-          }
-        },
-        {
-          "tsName": "getFileInfo$view",
-          "isStatic": false,
-          "tsSignatureId": "GetFileInfo|(System.String):Microsoft.Extensions.FileProviders.IFileInfo|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663320
-          }
-        },
-        {
-          "tsName": "getDirectoryContents$view",
-          "isStatic": false,
-          "tsSignatureId": "GetDirectoryContents|(System.String):Microsoft.Extensions.FileProviders.IDirectoryContents|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "tsName": "watch$view",
-          "isStatic": false,
-          "tsSignatureId": "Watch|(System.String):Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.IFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
-            "metadataToken": 100663322
-          }
-        }
-      ],
-      "exposedProperties": [
-        {
-          "tsName": "usePollingFileWatcher",
-          "isStatic": false,
-          "tsSignatureId": "UsePollingFileWatcher|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 385875979
-          }
-        },
-        {
-          "tsName": "useActivePolling",
-          "isStatic": false,
-          "tsSignatureId": "UseActivePolling|:System.Boolean|static=false|accessor=getset",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 385875980
-          }
-        },
-        {
-          "tsName": "root",
-          "isStatic": false,
-          "tsSignatureId": "Root|:System.String|static=false|accessor=get",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 385875982
-          }
-        }
-      ],
-      "exposedConstructors": [
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 100663321
-          }
-        },
-        {
-          "isStatic": false,
-          "tsSignatureId": "constructor|(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void|static=false",
-          "target": {
-            "declaringClrType": "Microsoft.Extensions.FileProviders.PhysicalFileProvider",
-            "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Physical",
-            "metadataToken": 100663322
-          }
         }
       ]
     }

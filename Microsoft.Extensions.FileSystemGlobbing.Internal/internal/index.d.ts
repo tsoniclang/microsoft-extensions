@@ -13,8 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface ILinearPattern$instance extends IPattern {
-    readonly segments: IList<IPathSegment>;
-    createPatternContextForInclude(): IPatternContext;
+    readonly Segments: IList<IPathSegment>;
+    CreatePatternContextForInclude(): IPatternContext;
 }
 
 
@@ -23,37 +23,37 @@ export interface ILinearPattern$instance extends IPattern$instance {}
 export type ILinearPattern = ILinearPattern$instance;
 
 export interface IPathSegment$instance {
-    readonly canProduceStem: boolean;
-    match(value: string): boolean;
+    readonly CanProduceStem: boolean;
+    Match(value: string): boolean;
 }
 
 
 export type IPathSegment = IPathSegment$instance;
 
 export interface IPattern$instance {
-    createPatternContextForInclude(): IPatternContext;
+    CreatePatternContextForInclude(): IPatternContext;
 }
 
 
 export type IPattern = IPattern$instance;
 
 export interface IPatternContext$instance {
-    declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    popDirectory(): void;
-    pushDirectory(directory: DirectoryInfoBase): void;
-    test(directory: DirectoryInfoBase): boolean;
-    test(file: FileInfoBase): PatternTestResult;
+    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    PopDirectory(): void;
+    PushDirectory(directory: DirectoryInfoBase): void;
+    Test(directory: DirectoryInfoBase): boolean;
+    Test(file: FileInfoBase): PatternTestResult;
 }
 
 
 export type IPatternContext = IPatternContext$instance;
 
 export interface IRaggedPattern$instance extends IPattern {
-    readonly segments: IList<IPathSegment>;
-    readonly startsWith: IList<IPathSegment>;
-    readonly contains: IList<IList<IPathSegment>>;
-    readonly endsWith: IList<IPathSegment>;
-    createPatternContextForInclude(): IPatternContext;
+    readonly Segments: IList<IPathSegment>;
+    readonly StartsWith: IList<IPathSegment>;
+    readonly Contains: IList<IList<IPathSegment>>;
+    readonly EndsWith: IList<IPathSegment>;
+    CreatePatternContextForInclude(): IPatternContext;
 }
 
 
@@ -62,22 +62,22 @@ export interface IRaggedPattern$instance extends IPattern$instance {}
 export type IRaggedPattern = IRaggedPattern$instance;
 
 export interface PatternTestResult$instance {
-    readonly isSuccessful: boolean;
-    readonly stem: string;
+    readonly IsSuccessful: boolean;
+    readonly Stem: string;
 }
 
 
 export const PatternTestResult: {
     new(): PatternTestResult;
-    readonly failed: PatternTestResult;
-    success(stem: string): PatternTestResult;
+    readonly Failed: PatternTestResult;
+    Success(stem: string): PatternTestResult;
 };
 
 
 export type PatternTestResult = PatternTestResult$instance;
 
 export interface MatcherContext$instance {
-    execute(): PatternMatchingResult;
+    Execute(): PatternMatchingResult;
 }
 
 

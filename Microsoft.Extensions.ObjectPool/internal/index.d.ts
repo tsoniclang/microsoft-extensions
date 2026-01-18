@@ -12,23 +12,23 @@ import * as System_Text_Internal from "@tsonic/dotnet/System.Text.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 
 export interface IPooledObjectPolicy_1$instance<T> {
-    create(): T;
-    return(obj: T): boolean;
+    Create(): T;
+    Return(obj: T): boolean;
 }
 
 
 export type IPooledObjectPolicy_1<T> = IPooledObjectPolicy_1$instance<T>;
 
 export interface IResettable$instance {
-    tryReset(): boolean;
+    TryReset(): boolean;
 }
 
 
 export type IResettable = IResettable$instance;
 
 export interface DefaultObjectPool_1$instance<T> extends ObjectPool_1<T> {
-    get(): T;
-    return(obj: T): void;
+    Get(): T;
+    Return(obj: T): void;
 }
 
 
@@ -41,9 +41,9 @@ export const DefaultObjectPool_1: {
 export type DefaultObjectPool_1<T> = DefaultObjectPool_1$instance<T>;
 
 export interface DefaultObjectPoolProvider$instance extends ObjectPoolProvider {
-    maximumRetained: int;
-    create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
-    create<T>(): ObjectPool_1<T>;
+    MaximumRetained: int;
+    Create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
+    Create<T>(): ObjectPool_1<T>;
 }
 
 
@@ -55,8 +55,8 @@ export const DefaultObjectPoolProvider: {
 export type DefaultObjectPoolProvider = DefaultObjectPoolProvider$instance;
 
 export interface DefaultPooledObjectPolicy_1$instance<T> extends PooledObjectPolicy_1$instance<T> {
-    create(): T;
-    return(obj: T): boolean;
+    Create(): T;
+    Return(obj: T): boolean;
 }
 
 
@@ -73,8 +73,8 @@ export type DefaultPooledObjectPolicy_1<T> = DefaultPooledObjectPolicy_1$instanc
 
 
 export interface LeakTrackingObjectPool_1$instance<T> extends ObjectPool_1<T> {
-    get(): T;
-    return(obj: T): void;
+    Get(): T;
+    Return(obj: T): void;
 }
 
 
@@ -86,8 +86,8 @@ export const LeakTrackingObjectPool_1: {
 export type LeakTrackingObjectPool_1<T> = LeakTrackingObjectPool_1$instance<T>;
 
 export interface LeakTrackingObjectPoolProvider$instance extends ObjectPoolProvider {
-    create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
-    create<T>(): ObjectPool_1<T>;
+    Create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
+    Create<T>(): ObjectPool_1<T>;
 }
 
 
@@ -99,8 +99,8 @@ export const LeakTrackingObjectPoolProvider: {
 export type LeakTrackingObjectPoolProvider = LeakTrackingObjectPoolProvider$instance;
 
 export interface ObjectPool_1$instance<T> {
-    get(): T;
-    return(obj: T): void;
+    Get(): T;
+    Return(obj: T): void;
 }
 
 
@@ -111,8 +111,8 @@ export const ObjectPool_1: {
 export type ObjectPool_1<T> = ObjectPool_1$instance<T>;
 
 export interface ObjectPoolProvider$instance {
-    create<T>(): ObjectPool_1<T>;
-    create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
+    Create<T>(): ObjectPool_1<T>;
+    Create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
 }
 
 
@@ -123,8 +123,8 @@ export const ObjectPoolProvider: {
 export type ObjectPoolProvider = ObjectPoolProvider$instance;
 
 export interface PooledObjectPolicy_1$instance<T> {
-    create(): T;
-    return(obj: T): boolean;
+    Create(): T;
+    Return(obj: T): boolean;
 }
 
 
@@ -142,8 +142,8 @@ export type PooledObjectPolicy_1<T> = PooledObjectPolicy_1$instance<T> & __Poole
 
 
 export interface StringBuilderPooledObjectPolicy$instance extends PooledObjectPolicy_1$instance<StringBuilder> {
-    initialCapacity: int;
-    maximumRetainedCapacity: int;
+    InitialCapacity: int;
+    MaximumRetainedCapacity: int;
 }
 
 
@@ -160,15 +160,15 @@ export type StringBuilderPooledObjectPolicy = StringBuilderPooledObjectPolicy$in
 
 
 export abstract class ObjectPool$instance {
-    static create<T>(policy?: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
+    static Create<T>(policy?: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
 }
 
 
 export type ObjectPool = ObjectPool$instance;
 
 export abstract class ObjectPoolProviderExtensions$instance {
-    static createStringBuilderPool(provider: ObjectPoolProvider, initialCapacity: int, maximumRetainedCapacity: int): ObjectPool_1<StringBuilder>;
-    static createStringBuilderPool(provider: ObjectPoolProvider): ObjectPool_1<StringBuilder>;
+    static CreateStringBuilderPool(provider: ObjectPoolProvider, initialCapacity: int, maximumRetainedCapacity: int): ObjectPool_1<StringBuilder>;
+    static CreateStringBuilderPool(provider: ObjectPoolProvider): ObjectPool_1<StringBuilder>;
 }
 
 

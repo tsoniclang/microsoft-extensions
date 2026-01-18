@@ -20,67 +20,67 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export enum BackgroundServiceExceptionBehavior {
-    stopHost = 0,
-    ignore = 1
+    StopHost = 0,
+    Ignore = 1
 }
 
 
 export interface IApplicationLifetime$instance {
-    readonly applicationStarted: CancellationToken;
-    readonly applicationStopping: CancellationToken;
-    readonly applicationStopped: CancellationToken;
-    stopApplication(): void;
+    readonly ApplicationStarted: CancellationToken;
+    readonly ApplicationStopping: CancellationToken;
+    readonly ApplicationStopped: CancellationToken;
+    StopApplication(): void;
 }
 
 
 export type IApplicationLifetime = IApplicationLifetime$instance;
 
 export interface IHost$instance extends IDisposable {
-    readonly services: IServiceProvider;
-    startAsync(cancellationToken?: CancellationToken): Task;
+    readonly Services: IServiceProvider;
+    StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
 export type IHost = IHost$instance;
 
 export interface IHostApplicationBuilder$instance {
-    readonly properties: IDictionary<unknown, unknown>;
-    readonly configuration: IConfigurationManager;
-    readonly environment: IHostEnvironment;
-    readonly logging: ILoggingBuilder;
-    readonly metrics: IMetricsBuilder;
-    readonly services: IServiceCollection;
-    configureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action<TContainerBuilder>): void;
+    readonly Properties: IDictionary<unknown, unknown>;
+    readonly Configuration: IConfigurationManager;
+    readonly Environment: IHostEnvironment;
+    readonly Logging: ILoggingBuilder;
+    readonly Metrics: IMetricsBuilder;
+    readonly Services: IServiceCollection;
+    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action<TContainerBuilder>): void;
 }
 
 
 export type IHostApplicationBuilder = IHostApplicationBuilder$instance;
 
 export interface IHostApplicationLifetime$instance {
-    readonly applicationStarted: CancellationToken;
-    readonly applicationStopping: CancellationToken;
-    readonly applicationStopped: CancellationToken;
-    stopApplication(): void;
+    readonly ApplicationStarted: CancellationToken;
+    readonly ApplicationStopping: CancellationToken;
+    readonly ApplicationStopped: CancellationToken;
+    StopApplication(): void;
 }
 
 
 export type IHostApplicationLifetime = IHostApplicationLifetime$instance;
 
 export interface IHostBuilder$instance {
-    readonly properties: IDictionary<unknown, unknown>;
-    build(): IHost;
-    configureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
-    configureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    useServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
-    useServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
+    readonly Properties: IDictionary<unknown, unknown>;
+    Build(): IHost;
+    ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
+    ConfigureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
 }
 
 
 export type IHostBuilder = IHostBuilder$instance;
 
 export interface IHostedLifecycleService$instance extends IHostedService {
-    startingAsync(cancellationToken: CancellationToken): Task;
-    startAsync(cancellationToken: CancellationToken): Task;
+    StartingAsync(cancellationToken: CancellationToken): Task;
+    StartAsync(cancellationToken: CancellationToken): Task;
 }
 
 
@@ -89,44 +89,44 @@ export interface IHostedLifecycleService$instance extends IHostedService$instanc
 export type IHostedLifecycleService = IHostedLifecycleService$instance;
 
 export interface IHostedService$instance {
-    startAsync(cancellationToken: CancellationToken): Task;
+    StartAsync(cancellationToken: CancellationToken): Task;
 }
 
 
 export type IHostedService = IHostedService$instance;
 
 export interface IHostEnvironment$instance {
-    environmentName: string;
-    applicationName: string;
-    contentRootPath: string;
-    contentRootFileProvider: IFileProvider;
+    EnvironmentName: string;
+    ApplicationName: string;
+    ContentRootPath: string;
+    ContentRootFileProvider: IFileProvider;
 }
 
 
 export type IHostEnvironment = IHostEnvironment$instance;
 
 export interface IHostingEnvironment$instance {
-    environmentName: string;
-    applicationName: string;
-    contentRootPath: string;
-    contentRootFileProvider: IFileProvider;
+    EnvironmentName: string;
+    ApplicationName: string;
+    ContentRootPath: string;
+    ContentRootFileProvider: IFileProvider;
 }
 
 
 export type IHostingEnvironment = IHostingEnvironment$instance;
 
 export interface IHostLifetime$instance {
-    waitForStartAsync(cancellationToken: CancellationToken): Task;
+    WaitForStartAsync(cancellationToken: CancellationToken): Task;
 }
 
 
 export type IHostLifetime = IHostLifetime$instance;
 
 export interface BackgroundService$instance {
-    readonly executeTask: Task | undefined;
-    dispose(): void;
-    startAsync(cancellationToken: CancellationToken): Task;
-    stopAsync(cancellationToken: CancellationToken): Task;
+    readonly ExecuteTask: Task | undefined;
+    Dispose(): void;
+    StartAsync(cancellationToken: CancellationToken): Task;
+    StopAsync(cancellationToken: CancellationToken): Task;
 }
 
 
@@ -144,7 +144,7 @@ export type BackgroundService = BackgroundService$instance & __BackgroundService
 
 
 export interface ConsoleLifetimeOptions$instance {
-    suppressStatusMessages: boolean;
+    SuppressStatusMessages: boolean;
 }
 
 
@@ -169,13 +169,13 @@ export const HostAbortedException: {
 export type HostAbortedException = HostAbortedException$instance;
 
 export interface HostApplicationBuilder$instance {
-    readonly configuration: ConfigurationManager;
-    readonly environment: IHostEnvironment;
-    readonly logging: ILoggingBuilder;
-    readonly metrics: IMetricsBuilder;
-    readonly services: IServiceCollection;
-    build(): IHost;
-    configureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action<TContainerBuilder>): void;
+    readonly Configuration: ConfigurationManager;
+    readonly Environment: IHostEnvironment;
+    readonly Logging: ILoggingBuilder;
+    readonly Metrics: IMetricsBuilder;
+    readonly Services: IServiceCollection;
+    Build(): IHost;
+    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action<TContainerBuilder>): void;
 }
 
 
@@ -194,12 +194,12 @@ export type HostApplicationBuilder = HostApplicationBuilder$instance & __HostApp
 
 
 export interface HostApplicationBuilderSettings$instance {
-    applicationName: string;
-    args: string[];
-    configuration: ConfigurationManager;
-    contentRootPath: string;
-    disableDefaults: boolean;
-    environmentName: string;
+    ApplicationName: string;
+    Args: string[];
+    Configuration: ConfigurationManager;
+    ContentRootPath: string;
+    DisableDefaults: boolean;
+    EnvironmentName: string;
 }
 
 
@@ -211,14 +211,14 @@ export const HostApplicationBuilderSettings: {
 export type HostApplicationBuilderSettings = HostApplicationBuilderSettings$instance;
 
 export interface HostBuilder$instance {
-    readonly properties: IDictionary<unknown, unknown>;
-    build(): IHost;
-    configureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
-    configureContainer<TContainerBuilder>(configureDelegate: Action<HostBuilderContext, TContainerBuilder>): IHostBuilder;
-    configureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    configureServices(configureDelegate: Action<HostBuilderContext, IServiceCollection>): IHostBuilder;
-    useServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
-    useServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    readonly Properties: IDictionary<unknown, unknown>;
+    Build(): IHost;
+    ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
+    ConfigureContainer<TContainerBuilder>(configureDelegate: Action<HostBuilderContext, TContainerBuilder>): IHostBuilder;
+    ConfigureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
+    ConfigureServices(configureDelegate: Action<HostBuilderContext, IServiceCollection>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
 }
 
 
@@ -235,9 +235,9 @@ export type HostBuilder = HostBuilder$instance & __HostBuilder$views;
 
 
 export interface HostBuilderContext$instance {
-    configuration: IConfiguration;
-    hostingEnvironment: IHostEnvironment;
-    readonly properties: IDictionary<unknown, unknown>;
+    Configuration: IConfiguration;
+    HostingEnvironment: IHostEnvironment;
+    readonly Properties: IDictionary<unknown, unknown>;
 }
 
 
@@ -249,11 +249,11 @@ export const HostBuilderContext: {
 export type HostBuilderContext = HostBuilderContext$instance;
 
 export interface HostOptions$instance {
-    backgroundServiceExceptionBehavior: BackgroundServiceExceptionBehavior;
-    servicesStartConcurrently: boolean;
-    servicesStopConcurrently: boolean;
-    shutdownTimeout: TimeSpan;
-    startupTimeout: TimeSpan;
+    BackgroundServiceExceptionBehavior: BackgroundServiceExceptionBehavior;
+    ServicesStartConcurrently: boolean;
+    ServicesStopConcurrently: boolean;
+    ShutdownTimeout: TimeSpan;
+    StartupTimeout: TimeSpan;
 }
 
 
@@ -265,103 +265,103 @@ export const HostOptions: {
 export type HostOptions = HostOptions$instance;
 
 export abstract class EnvironmentName$instance {
-    static readonly development: string;
-    static readonly staging: string;
-    static readonly production: string;
+    static readonly Development: string;
+    static readonly Staging: string;
+    static readonly Production: string;
 }
 
 
 export type EnvironmentName = EnvironmentName$instance;
 
 export abstract class Environments$instance {
-    static readonly development: string;
-    static readonly staging: string;
-    static readonly production: string;
+    static readonly Development: string;
+    static readonly Staging: string;
+    static readonly Production: string;
 }
 
 
 export type Environments = Environments$instance;
 
 export abstract class Host$instance {
-    static createApplicationBuilder(): HostApplicationBuilder;
-    static createApplicationBuilder(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
-    static createApplicationBuilder(args: string[]): HostApplicationBuilder;
-    static createDefaultBuilder(): IHostBuilder;
-    static createDefaultBuilder(args: string[]): IHostBuilder;
-    static createEmptyApplicationBuilder(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
+    static CreateApplicationBuilder(): HostApplicationBuilder;
+    static CreateApplicationBuilder(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
+    static CreateApplicationBuilder(args: string[]): HostApplicationBuilder;
+    static CreateDefaultBuilder(): IHostBuilder;
+    static CreateDefaultBuilder(args: string[]): IHostBuilder;
+    static CreateEmptyApplicationBuilder(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
 }
 
 
 export type Host = Host$instance;
 
 export abstract class HostDefaults$instance {
-    static readonly applicationKey: string;
-    static readonly environmentKey: string;
-    static readonly contentRootKey: string;
+    static readonly ApplicationKey: string;
+    static readonly EnvironmentKey: string;
+    static readonly ContentRootKey: string;
 }
 
 
 export type HostDefaults = HostDefaults$instance;
 
 export abstract class HostEnvironmentEnvExtensions$instance {
-    static isDevelopment(hostEnvironment: IHostEnvironment): boolean;
-    static isEnvironment(hostEnvironment: IHostEnvironment, environmentName: string): boolean;
-    static isProduction(hostEnvironment: IHostEnvironment): boolean;
-    static isStaging(hostEnvironment: IHostEnvironment): boolean;
+    static IsDevelopment(hostEnvironment: IHostEnvironment): boolean;
+    static IsEnvironment(hostEnvironment: IHostEnvironment, environmentName: string): boolean;
+    static IsProduction(hostEnvironment: IHostEnvironment): boolean;
+    static IsStaging(hostEnvironment: IHostEnvironment): boolean;
 }
 
 
 export type HostEnvironmentEnvExtensions = HostEnvironmentEnvExtensions$instance;
 
 export abstract class HostingAbstractionsHostBuilderExtensions$instance {
-    static start(hostBuilder: IHostBuilder): IHost;
-    static startAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task<IHost>;
+    static Start(hostBuilder: IHostBuilder): IHost;
+    static StartAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task<IHost>;
 }
 
 
 export type HostingAbstractionsHostBuilderExtensions = HostingAbstractionsHostBuilderExtensions$instance;
 
 export abstract class HostingAbstractionsHostExtensions$instance {
-    static run(host: IHost): void;
-    static runAsync(host: IHost, token?: CancellationToken): Task;
-    static start(host: IHost): void;
-    static stopAsync(host: IHost, timeout: TimeSpan): Task;
-    static waitForShutdown(host: IHost): void;
-    static waitForShutdownAsync(host: IHost, token?: CancellationToken): Task;
+    static Run(host: IHost): void;
+    static RunAsync(host: IHost, token?: CancellationToken): Task;
+    static Start(host: IHost): void;
+    static StopAsync(host: IHost, timeout: TimeSpan): Task;
+    static WaitForShutdown(host: IHost): void;
+    static WaitForShutdownAsync(host: IHost, token?: CancellationToken): Task;
 }
 
 
 export type HostingAbstractionsHostExtensions = HostingAbstractionsHostExtensions$instance;
 
 export abstract class HostingEnvironmentExtensions$instance {
-    static isDevelopment(hostingEnvironment: IHostingEnvironment): boolean;
-    static isEnvironment(hostingEnvironment: IHostingEnvironment, environmentName: string): boolean;
-    static isProduction(hostingEnvironment: IHostingEnvironment): boolean;
-    static isStaging(hostingEnvironment: IHostingEnvironment): boolean;
+    static IsDevelopment(hostingEnvironment: IHostingEnvironment): boolean;
+    static IsEnvironment(hostingEnvironment: IHostingEnvironment, environmentName: string): boolean;
+    static IsProduction(hostingEnvironment: IHostingEnvironment): boolean;
+    static IsStaging(hostingEnvironment: IHostingEnvironment): boolean;
 }
 
 
 export type HostingEnvironmentExtensions = HostingEnvironmentExtensions$instance;
 
 export abstract class HostingHostBuilderExtensions$instance {
-    static configureAppConfiguration(hostBuilder: IHostBuilder, configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    static configureContainer<TContainerBuilder>(hostBuilder: IHostBuilder, configureDelegate: Action<TContainerBuilder>): IHostBuilder;
-    static configureDefaults(builder: IHostBuilder, args: string[]): IHostBuilder;
-    static configureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action<HostOptions>): IHostBuilder;
-    static configureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action<HostBuilderContext, HostOptions>): IHostBuilder;
-    static configureLogging(hostBuilder: IHostBuilder, configureLogging: Action<ILoggingBuilder>): IHostBuilder;
-    static configureLogging(hostBuilder: IHostBuilder, configureLogging: Action<HostBuilderContext, ILoggingBuilder>): IHostBuilder;
-    static configureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action<IMetricsBuilder>): IHostBuilder;
-    static configureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action<HostBuilderContext, IMetricsBuilder>): IHostBuilder;
-    static configureServices(hostBuilder: IHostBuilder, configureDelegate: Action<IServiceCollection>): IHostBuilder;
-    static runConsoleAsync(hostBuilder: IHostBuilder, configureOptions: Action<ConsoleLifetimeOptions>, cancellationToken?: CancellationToken): Task;
-    static runConsoleAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task;
-    static useConsoleLifetime(hostBuilder: IHostBuilder, configureOptions: Action<ConsoleLifetimeOptions>): IHostBuilder;
-    static useConsoleLifetime(hostBuilder: IHostBuilder): IHostBuilder;
-    static useContentRoot(hostBuilder: IHostBuilder, contentRoot: string): IHostBuilder;
-    static useDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action<ServiceProviderOptions>): IHostBuilder;
-    static useDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action<HostBuilderContext, ServiceProviderOptions>): IHostBuilder;
-    static useEnvironment(hostBuilder: IHostBuilder, environment: string): IHostBuilder;
+    static ConfigureAppConfiguration(hostBuilder: IHostBuilder, configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
+    static ConfigureContainer<TContainerBuilder>(hostBuilder: IHostBuilder, configureDelegate: Action<TContainerBuilder>): IHostBuilder;
+    static ConfigureDefaults(builder: IHostBuilder, args: string[]): IHostBuilder;
+    static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action<HostOptions>): IHostBuilder;
+    static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action<HostBuilderContext, HostOptions>): IHostBuilder;
+    static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action<ILoggingBuilder>): IHostBuilder;
+    static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action<HostBuilderContext, ILoggingBuilder>): IHostBuilder;
+    static ConfigureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action<IMetricsBuilder>): IHostBuilder;
+    static ConfigureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action<HostBuilderContext, IMetricsBuilder>): IHostBuilder;
+    static ConfigureServices(hostBuilder: IHostBuilder, configureDelegate: Action<IServiceCollection>): IHostBuilder;
+    static RunConsoleAsync(hostBuilder: IHostBuilder, configureOptions: Action<ConsoleLifetimeOptions>, cancellationToken?: CancellationToken): Task;
+    static RunConsoleAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task;
+    static UseConsoleLifetime(hostBuilder: IHostBuilder, configureOptions: Action<ConsoleLifetimeOptions>): IHostBuilder;
+    static UseConsoleLifetime(hostBuilder: IHostBuilder): IHostBuilder;
+    static UseContentRoot(hostBuilder: IHostBuilder, contentRoot: string): IHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action<ServiceProviderOptions>): IHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action<HostBuilderContext, ServiceProviderOptions>): IHostBuilder;
+    static UseEnvironment(hostBuilder: IHostBuilder, environment: string): IHostBuilder;
 }
 
 

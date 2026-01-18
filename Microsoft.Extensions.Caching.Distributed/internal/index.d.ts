@@ -16,37 +16,37 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IBufferDistributedCache$instance extends IDistributedCache {
-    get(key: string): byte[];
-    getAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
-    refresh(key: string): void;
-    refreshAsync(key: string, token?: CancellationToken): Task;
-    set(key: string, value: ReadOnlySequence<System_Internal.Byte>, options: DistributedCacheEntryOptions): void;
-    set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
-    setAsync(key: string, value: ReadOnlySequence<System_Internal.Byte>, options: DistributedCacheEntryOptions, token?: CancellationToken): ValueTask;
-    setAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
-    tryGet(key: string, destination: IBufferWriter<System_Internal.Byte>): boolean;
-    tryGetAsync(key: string, destination: IBufferWriter<System_Internal.Byte>, token?: CancellationToken): ValueTask<System_Internal.Boolean>;
+    Get(key: string): byte[];
+    GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
+    Refresh(key: string): void;
+    RefreshAsync(key: string, token?: CancellationToken): Task;
+    Set(key: string, value: ReadOnlySequence<System_Internal.Byte>, options: DistributedCacheEntryOptions): void;
+    Set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
+    SetAsync(key: string, value: ReadOnlySequence<System_Internal.Byte>, options: DistributedCacheEntryOptions, token?: CancellationToken): ValueTask;
+    SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
+    TryGet(key: string, destination: IBufferWriter<System_Internal.Byte>): boolean;
+    TryGetAsync(key: string, destination: IBufferWriter<System_Internal.Byte>, token?: CancellationToken): ValueTask<System_Internal.Boolean>;
 }
 
 
 export type IBufferDistributedCache = IBufferDistributedCache$instance;
 
 export interface IDistributedCache$instance {
-    get(key: string): byte[];
-    getAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
-    refresh(key: string): void;
-    refreshAsync(key: string, token?: CancellationToken): Task;
-    set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
-    setAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
+    Get(key: string): byte[];
+    GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
+    Refresh(key: string): void;
+    RefreshAsync(key: string, token?: CancellationToken): Task;
+    Set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
+    SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
 }
 
 
 export type IDistributedCache = IDistributedCache$instance;
 
 export interface DistributedCacheEntryOptions$instance {
-    absoluteExpiration: Nullable<DateTimeOffset>;
-    absoluteExpirationRelativeToNow: Nullable<TimeSpan>;
-    slidingExpiration: Nullable<TimeSpan>;
+    AbsoluteExpiration: Nullable<DateTimeOffset>;
+    AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
+    SlidingExpiration: Nullable<TimeSpan>;
 }
 
 
@@ -58,14 +58,14 @@ export const DistributedCacheEntryOptions: {
 export type DistributedCacheEntryOptions = DistributedCacheEntryOptions$instance;
 
 export interface MemoryDistributedCache$instance {
-    get(key: string): byte[];
-    getAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
-    refresh(key: string): void;
-    refreshAsync(key: string, token?: CancellationToken): Task;
-    remove(key: string): void;
-    removeAsync(key: string, token?: CancellationToken): Task;
-    set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
-    setAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
+    Get(key: string): byte[];
+    GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
+    Refresh(key: string): void;
+    RefreshAsync(key: string, token?: CancellationToken): Task;
+    Remove(key: string): void;
+    RemoveAsync(key: string, token?: CancellationToken): Task;
+    Set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
+    SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
 }
 
 
@@ -85,23 +85,23 @@ export type MemoryDistributedCache = MemoryDistributedCache$instance & __MemoryD
 
 
 export abstract class DistributedCacheEntryExtensions$instance {
-    static setAbsoluteExpiration(options: DistributedCacheEntryOptions, absolute: DateTimeOffset): DistributedCacheEntryOptions;
-    static setAbsoluteExpiration(options: DistributedCacheEntryOptions, relative: TimeSpan): DistributedCacheEntryOptions;
-    static setSlidingExpiration(options: DistributedCacheEntryOptions, offset: TimeSpan): DistributedCacheEntryOptions;
+    static SetAbsoluteExpiration(options: DistributedCacheEntryOptions, absolute: DateTimeOffset): DistributedCacheEntryOptions;
+    static SetAbsoluteExpiration(options: DistributedCacheEntryOptions, relative: TimeSpan): DistributedCacheEntryOptions;
+    static SetSlidingExpiration(options: DistributedCacheEntryOptions, offset: TimeSpan): DistributedCacheEntryOptions;
 }
 
 
 export type DistributedCacheEntryExtensions = DistributedCacheEntryExtensions$instance;
 
 export abstract class DistributedCacheExtensions$instance {
-    static getString(cache: IDistributedCache, key: string): string | undefined;
-    static getStringAsync(cache: IDistributedCache, key: string, token?: CancellationToken): Task<string | undefined>;
-    static set(cache: IDistributedCache, key: string, value: byte[]): void;
-    static setAsync(cache: IDistributedCache, key: string, value: byte[], token?: CancellationToken): Task;
-    static setString(cache: IDistributedCache, key: string, value: string, options: DistributedCacheEntryOptions): void;
-    static setString(cache: IDistributedCache, key: string, value: string): void;
-    static setStringAsync(cache: IDistributedCache, key: string, value: string, options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
-    static setStringAsync(cache: IDistributedCache, key: string, value: string, token?: CancellationToken): Task;
+    static GetString(cache: IDistributedCache, key: string): string | undefined;
+    static GetStringAsync(cache: IDistributedCache, key: string, token?: CancellationToken): Task<string | undefined>;
+    static Set(cache: IDistributedCache, key: string, value: byte[]): void;
+    static SetAsync(cache: IDistributedCache, key: string, value: byte[], token?: CancellationToken): Task;
+    static SetString(cache: IDistributedCache, key: string, value: string, options: DistributedCacheEntryOptions): void;
+    static SetString(cache: IDistributedCache, key: string, value: string): void;
+    static SetStringAsync(cache: IDistributedCache, key: string, value: string, options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
+    static SetStringAsync(cache: IDistributedCache, key: string, value: string, token?: CancellationToken): Task;
 }
 
 

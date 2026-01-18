@@ -16,12 +16,12 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger {
-    logRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
-    logRequestFailedAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
-    logRequestStart(request: HttpRequestMessage): unknown | undefined;
-    logRequestStartAsync(request: HttpRequestMessage, cancellationToken?: CancellationToken): ValueTask<unknown>;
-    logRequestStop(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
-    logRequestStopAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
+    LogRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
+    LogRequestFailedAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
+    LogRequestStart(request: HttpRequestMessage): unknown | undefined;
+    LogRequestStartAsync(request: HttpRequestMessage, cancellationToken?: CancellationToken): ValueTask<unknown>;
+    LogRequestStop(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
+    LogRequestStopAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -30,9 +30,9 @@ export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger$insta
 export type IHttpClientAsyncLogger = IHttpClientAsyncLogger$instance;
 
 export interface IHttpClientLogger$instance {
-    logRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
-    logRequestStart(request: HttpRequestMessage): unknown | undefined;
-    logRequestStop(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
+    LogRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
+    LogRequestStart(request: HttpRequestMessage): unknown | undefined;
+    LogRequestStop(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
 }
 
 

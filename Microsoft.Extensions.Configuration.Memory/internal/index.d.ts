@@ -20,13 +20,13 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface MemoryConfigurationProvider$instance extends ConfigurationProvider {
-    add(key: string, value: string): void;
-    getChildKeys(earlierKeys: IEnumerable__System_Collections_Generic<System_Internal.String>, parentPath: string): IEnumerable__System_Collections_Generic<System_Internal.String>;
-    getEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
-    getReloadToken(): IChangeToken;
-    load(): void;
-    set(key: string, value: string): void;
-    tryGet(key: string, value: string): boolean;
+    Add(key: string, value: string): void;
+    GetChildKeys(earlierKeys: IEnumerable__System_Collections_Generic<System_Internal.String>, parentPath: string): IEnumerable__System_Collections_Generic<System_Internal.String>;
+    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    GetReloadToken(): IChangeToken;
+    Load(): void;
+    Set(key: string, value: string): void;
+    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -43,9 +43,9 @@ export type MemoryConfigurationProvider = MemoryConfigurationProvider$instance &
 
 
 export interface MemoryConfigurationSource$instance {
-    get initialData(): IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined;
-    set initialData(value: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>);
-    build(builder: IConfigurationBuilder): IConfigurationProvider;
+    get InitialData(): IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined;
+    set InitialData(value: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>);
+    Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 

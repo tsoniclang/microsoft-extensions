@@ -16,21 +16,21 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 
 export interface ILoggerProviderConfiguration_1$instance<T> {
-    readonly configuration: IConfiguration;
+    readonly Configuration: IConfiguration;
 }
 
 
 export type ILoggerProviderConfiguration_1<T> = ILoggerProviderConfiguration_1$instance<T>;
 
 export interface ILoggerProviderConfigurationFactory$instance {
-    getConfiguration(providerType: Type): IConfiguration;
+    GetConfiguration(providerType: Type): IConfiguration;
 }
 
 
 export type ILoggerProviderConfigurationFactory = ILoggerProviderConfigurationFactory$instance;
 
 export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> extends ConfigurationChangeTokenSource_1<TOptions> {
-    getChangeToken(): IChangeToken;
+    GetChangeToken(): IChangeToken;
 }
 
 
@@ -47,14 +47,14 @@ export type LoggerProviderOptionsChangeTokenSource_2<TOptions, TProvider> = Logg
 
 
 export abstract class LoggerProviderOptions$instance {
-    static registerProviderOptions<TOptions, TProvider>(services: IServiceCollection): void;
+    static RegisterProviderOptions<TOptions, TProvider>(services: IServiceCollection): void;
 }
 
 
 export type LoggerProviderOptions = LoggerProviderOptions$instance;
 
 export abstract class LoggingBuilderConfigurationExtensions$instance {
-    static addConfiguration(builder: ILoggingBuilder): void;
+    static AddConfiguration(builder: ILoggingBuilder): void;
 }
 
 

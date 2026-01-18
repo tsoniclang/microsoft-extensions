@@ -11,7 +11,7 @@ import type { IConfiguration } from "../../Microsoft.Extensions.Configuration/in
 import type { String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface IMetricListenerConfigurationFactory$instance {
-    getConfiguration(listenerName: string): IConfiguration;
+    GetConfiguration(listenerName: string): IConfiguration;
 }
 
 

@@ -19,23 +19,23 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export enum ExclusionFilters {
-    sensitive = 7,
-    dotPrefixed = 1,
-    hidden = 2,
-    system = 4,
-    none = 0
+    Sensitive = 7,
+    DotPrefixed = 1,
+    Hidden = 2,
+    System = 4,
+    None = 0
 }
 
 
 export interface PhysicalDirectoryInfo$instance {
-    readonly exists: boolean;
-    readonly isDirectory: boolean;
-    readonly lastModified: DateTimeOffset;
-    readonly length: long;
-    readonly name: string;
-    readonly physicalPath: string;
-    createReadStream(): Stream;
-    getEnumerator(): IEnumerator<IFileInfo>;
+    readonly Exists: boolean;
+    readonly IsDirectory: boolean;
+    readonly LastModified: DateTimeOffset;
+    readonly Length: long;
+    readonly Name: string;
+    readonly PhysicalPath: string;
+    CreateReadStream(): Stream;
+    GetEnumerator(): IEnumerator<IFileInfo>;
 }
 
 
@@ -55,13 +55,13 @@ export type PhysicalDirectoryInfo = PhysicalDirectoryInfo$instance & __PhysicalD
 
 
 export interface PhysicalFileInfo$instance {
-    readonly exists: boolean;
-    readonly isDirectory: boolean;
-    readonly lastModified: DateTimeOffset;
-    readonly length: long;
-    readonly name: string;
-    readonly physicalPath: string;
-    createReadStream(): Stream;
+    readonly Exists: boolean;
+    readonly IsDirectory: boolean;
+    readonly LastModified: DateTimeOffset;
+    readonly Length: long;
+    readonly Name: string;
+    readonly PhysicalPath: string;
+    CreateReadStream(): Stream;
 }
 
 
@@ -80,8 +80,8 @@ export type PhysicalFileInfo = PhysicalFileInfo$instance & __PhysicalFileInfo$vi
 
 
 export interface PhysicalFilesWatcher$instance {
-    createFileChangeToken(filter: string): IChangeToken;
-    dispose(): void;
+    CreateFileChangeToken(filter: string): IChangeToken;
+    Dispose(): void;
 }
 
 
@@ -94,9 +94,9 @@ export const PhysicalFilesWatcher: {
 export type PhysicalFilesWatcher = PhysicalFilesWatcher$instance;
 
 export interface PollingFileChangeToken$instance {
-    readonly activeChangeCallbacks: boolean;
-    readonly hasChanged: boolean;
-    registerChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    readonly ActiveChangeCallbacks: boolean;
+    readonly HasChanged: boolean;
+    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
 
 
@@ -115,8 +115,8 @@ export type PollingFileChangeToken = PollingFileChangeToken$instance & __Polling
 
 
 export interface PollingWildCardChangeToken$instance {
-    readonly activeChangeCallbacks: boolean;
-    readonly hasChanged: boolean;
+    readonly ActiveChangeCallbacks: boolean;
+    readonly HasChanged: boolean;
 }
 
 
