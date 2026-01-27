@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -59,6 +84,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -70,6 +96,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -88,6 +115,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -99,6 +148,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -110,6 +160,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -121,6 +172,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -132,6 +184,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -143,6 +196,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -161,6 +215,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -172,6 +248,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -183,6 +260,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -194,6 +272,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -205,6 +284,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -223,6 +303,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -234,6 +336,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -245,6 +348,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -256,6 +360,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -267,6 +372,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -278,6 +384,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKeyType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -296,6 +403,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -307,6 +436,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -318,6 +448,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -329,6 +460,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -340,6 +472,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -351,6 +484,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -369,6 +503,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -386,6 +524,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -404,6 +543,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -422,6 +562,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -436,6 +577,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -446,6 +588,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -456,6 +599,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -472,6 +616,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -489,6 +637,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -507,6 +656,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -525,6 +675,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -539,6 +690,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -549,6 +701,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSAEncryptionPadding):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -559,6 +712,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSAEncryptionPadding):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -569,6 +723,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipient",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -585,6 +740,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.CmsRecipientCollection::Add(System.Security.Cryptography.Pkcs.CmsRecipient):System.Int32",
@@ -601,6 +770,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -620,6 +790,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -639,6 +810,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -658,6 +830,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -677,6 +850,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -698,6 +872,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -716,6 +891,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -734,6 +910,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -752,6 +929,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -766,6 +944,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -776,6 +955,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.CmsRecipient):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -786,6 +966,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2Collection):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -802,6 +983,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator::MoveNext():System.Boolean",
@@ -818,6 +1009,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -837,6 +1029,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -858,6 +1051,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsRecipientEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -877,6 +1071,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -894,6 +1092,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -912,6 +1111,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -930,6 +1130,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -948,6 +1149,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -966,6 +1168,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -984,6 +1187,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1002,6 +1206,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1020,6 +1225,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1038,6 +1244,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1052,6 +1259,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1062,6 +1270,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1072,6 +1281,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate2):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1082,6 +1292,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.CspParameters):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1092,6 +1303,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1102,6 +1314,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.AsymmetricAlgorithm):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1112,6 +1325,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.MLDsa):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1122,6 +1336,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.SlhDsa):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1132,6 +1347,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.CompositeMLDsa):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1142,6 +1358,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.RSA,System.Security.Cryptography.RSASignaturePadding):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.CmsSigner",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1158,6 +1375,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.ContentInfo::GetContentType(System.Byte[]):System.Security.Cryptography.Oid",
@@ -1174,6 +1395,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.ContentInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1193,6 +1415,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.ContentInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1214,6 +1437,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.ContentInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1232,6 +1456,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.ContentInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1246,6 +1471,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.ContentInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1256,6 +1482,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid,System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.ContentInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1272,6 +1499,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.EnvelopedCms::Encrypt(System.Security.Cryptography.Pkcs.CmsRecipient):System.Void",
@@ -1288,6 +1519,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1307,6 +1539,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1326,6 +1559,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1345,6 +1579,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1364,6 +1599,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1383,6 +1619,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1402,6 +1639,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1421,6 +1659,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1440,6 +1679,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1459,6 +1699,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1470,16 +1711,17 @@
           "clrName": "Version",
           "metadataToken": 385876138,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "Version|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1488,16 +1730,17 @@
           "clrName": "ContentInfo",
           "metadataToken": 385876139,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.ContentInfo",
-          "normalizedSignature": "ContentInfo|:System.Security.Cryptography.Pkcs.ContentInfo|static=false|accessor=get",
+          "normalizedSignature": "ContentInfo|:System.Security.Cryptography.Pkcs.ContentInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1506,16 +1749,17 @@
           "clrName": "ContentEncryptionAlgorithm",
           "metadataToken": 385876140,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.AlgorithmIdentifier",
-          "normalizedSignature": "ContentEncryptionAlgorithm|:System.Security.Cryptography.Pkcs.AlgorithmIdentifier|static=false|accessor=get",
+          "normalizedSignature": "ContentEncryptionAlgorithm|:System.Security.Cryptography.Pkcs.AlgorithmIdentifier|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1524,16 +1768,17 @@
           "clrName": "Certificates",
           "metadataToken": 385876141,
           "canonicalSignature": ":System.Security.Cryptography.X509Certificates.X509Certificate2Collection",
-          "normalizedSignature": "Certificates|:System.Security.Cryptography.X509Certificates.X509Certificate2Collection|static=false|accessor=get",
+          "normalizedSignature": "Certificates|:System.Security.Cryptography.X509Certificates.X509Certificate2Collection|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1542,16 +1787,17 @@
           "clrName": "UnprotectedAttributes",
           "metadataToken": 385876142,
           "canonicalSignature": ":System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "normalizedSignature": "UnprotectedAttributes|:System.Security.Cryptography.CryptographicAttributeObjectCollection|static=false|accessor=get",
+          "normalizedSignature": "UnprotectedAttributes|:System.Security.Cryptography.CryptographicAttributeObjectCollection|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1570,6 +1816,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1584,6 +1831,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1594,6 +1842,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.ContentInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1604,6 +1853,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.ContentInfo,System.Security.Cryptography.Pkcs.AlgorithmIdentifier):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.EnvelopedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1620,6 +1870,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.RecipientInfo",
+        "clrName": "System.Security.Cryptography.Pkcs.RecipientInfo"
+      },
       "methods": [],
       "properties": [
         {
@@ -1637,6 +1891,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1655,6 +1910,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1673,6 +1929,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1691,6 +1948,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1709,6 +1967,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1727,6 +1986,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1745,6 +2005,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyAgreeRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1764,6 +2025,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.RecipientInfo",
+        "clrName": "System.Security.Cryptography.Pkcs.RecipientInfo"
+      },
       "methods": [],
       "properties": [
         {
@@ -1781,6 +2046,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyTransRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1799,6 +2065,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyTransRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1817,6 +2084,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyTransRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -1835,6 +2103,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.KeyTransRecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -1854,6 +2123,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12Builder::AddSafeContentsEncrypted(System.Security.Cryptography.Pkcs.Pkcs12SafeContents,System.Byte[],System.Security.Cryptography.PbeParameters):System.Void",
@@ -1870,6 +2143,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1889,6 +2163,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1908,6 +2183,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1927,6 +2203,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1946,6 +2223,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1965,6 +2243,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -1984,6 +2263,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2003,6 +2283,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2022,6 +2303,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2041,6 +2323,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -2068,6 +2351,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2082,6 +2366,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Builder",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2098,6 +2383,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12CertBag::GetCertificateType():System.Security.Cryptography.Oid",
@@ -2114,6 +2403,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12CertBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2133,6 +2423,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12CertBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2154,6 +2445,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12CertBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -2172,6 +2464,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12CertBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2186,6 +2479,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12CertBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2202,6 +2496,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12Info::VerifyMac(System.String):System.Boolean",
@@ -2218,6 +2516,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Info",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2237,6 +2536,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Info",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2256,6 +2556,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Info",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -2273,16 +2574,17 @@
           "clrName": "AuthenticatedSafe",
           "metadataToken": 385876208,
           "canonicalSignature": ":System.Collections.ObjectModel.ReadOnlyCollection_1[[System.Security.Cryptography.Pkcs.Pkcs12SafeContents,System.Security.Cryptography.Pkcs,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
-          "normalizedSignature": "AuthenticatedSafe|:System.Collections.ObjectModel.ReadOnlyCollection_1[[System.Security.Cryptography.Pkcs.Pkcs12SafeContents,System.Security.Cryptography.Pkcs,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=get",
+          "normalizedSignature": "AuthenticatedSafe|:System.Collections.ObjectModel.ReadOnlyCollection_1[[System.Security.Cryptography.Pkcs.Pkcs12SafeContents,System.Security.Cryptography.Pkcs,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Info",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -2291,16 +2593,17 @@
           "clrName": "IntegrityMode",
           "metadataToken": 385876209,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode",
-          "normalizedSignature": "IntegrityMode|:System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode|static=false|accessor=get",
+          "normalizedSignature": "IntegrityMode|:System.Security.Cryptography.Pkcs.Pkcs12IntegrityMode|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12Info",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2320,6 +2623,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag"
+      },
       "methods": [],
       "properties": [
         {
@@ -2337,6 +2644,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12KeyBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2351,6 +2659,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12KeyBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2367,6 +2676,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag::Encode():System.Byte[]",
@@ -2383,6 +2696,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2402,6 +2716,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2421,6 +2736,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -2448,6 +2764,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -2456,23 +2773,36 @@
           "clrName": "Attributes",
           "metadataToken": 385876212,
           "canonicalSignature": ":System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "normalizedSignature": "Attributes|:System.Security.Cryptography.CryptographicAttributeObjectCollection|static=false|accessor=get",
+          "normalizedSignature": "Attributes|:System.Security.Cryptography.CryptographicAttributeObjectCollection|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag::.ctor(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void",
+          "metadataToken": 100664234,
+          "canonicalSignature": "(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void",
+          "normalizedSignature": "constructor|(System.String,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void|static=false",
+          "isStatic": false,
+          "parameterCount": 3,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
+          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+        }
+      ]
     },
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
@@ -2485,6 +2815,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeContents::AddSafeBag(System.Security.Cryptography.Pkcs.Pkcs12SafeBag):System.Void",
@@ -2501,6 +2835,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2520,6 +2855,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2539,6 +2875,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2558,6 +2895,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2577,6 +2915,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2596,6 +2935,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2615,6 +2955,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2634,6 +2975,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2653,6 +2995,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2672,6 +3015,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2691,6 +3035,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2710,6 +3055,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2729,6 +3075,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2748,6 +3095,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2759,16 +3107,17 @@
           "clrName": "ConfidentialityMode",
           "metadataToken": 385876213,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode",
-          "normalizedSignature": "ConfidentialityMode|:System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode|static=false|accessor=get",
+          "normalizedSignature": "ConfidentialityMode|:System.Security.Cryptography.Pkcs.Pkcs12ConfidentialityMode|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -2787,6 +3136,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2801,6 +3151,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2817,6 +3168,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag"
+      },
       "methods": [],
       "properties": [
         {
@@ -2824,16 +3179,17 @@
           "clrName": "SafeContents",
           "metadataToken": 385876215,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.Pkcs12SafeContents",
-          "normalizedSignature": "SafeContents|:System.Security.Cryptography.Pkcs.Pkcs12SafeContents|static=false|accessor=get",
+          "normalizedSignature": "SafeContents|:System.Security.Cryptography.Pkcs.Pkcs12SafeContents|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SafeContentsBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2853,6 +3209,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SecretBag::GetSecretType():System.Security.Cryptography.Oid",
@@ -2869,6 +3229,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SecretBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2890,6 +3251,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12SecretBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2909,6 +3271,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs12SafeBag",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs12SafeBag"
+      },
       "methods": [],
       "properties": [
         {
@@ -2926,6 +3292,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ShroudedKeyBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2940,6 +3307,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs12ShroudedKeyBag",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -2956,6 +3324,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo::Create(System.Security.Cryptography.AsymmetricAlgorithm):System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
@@ -2972,6 +3344,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -2991,6 +3364,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -3016,6 +3390,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3035,6 +3410,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3054,6 +3430,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3073,6 +3450,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -3098,6 +3476,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -3123,6 +3502,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -3148,6 +3528,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -3173,6 +3554,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -3200,6 +3582,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3218,6 +3601,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3236,6 +3620,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3254,6 +3639,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3268,6 +3654,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid,System.Nullable_1[[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs8PrivateKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3284,6 +3671,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography:System.Security.Cryptography.AsnEncodedData",
+        "clrName": "System.Security.Cryptography.AsnEncodedData"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3300,6 +3691,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3321,6 +3713,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3335,6 +3728,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3345,6 +3739,7 @@
           "normalizedSignature": "constructor|(System.String,System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3355,6 +3750,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid,System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3365,6 +3761,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.AsnEncodedData):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3381,6 +3778,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9ContentType::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3397,6 +3798,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9ContentType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3418,6 +3820,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9ContentType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3432,6 +3835,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9ContentType",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3448,6 +3852,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3464,6 +3872,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3485,6 +3894,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3499,6 +3909,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3509,6 +3920,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3519,6 +3931,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3535,6 +3948,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9DocumentName::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3551,6 +3968,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentName",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3572,6 +3990,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentName",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3586,6 +4005,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentName",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3596,6 +4016,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentName",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3606,6 +4027,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9DocumentName",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3622,6 +4044,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9LocalKeyId::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3638,6 +4064,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9LocalKeyId",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3659,6 +4086,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9LocalKeyId",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3673,6 +4101,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9LocalKeyId",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3683,6 +4112,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9LocalKeyId",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3693,6 +4123,7 @@
           "normalizedSignature": "constructor|(System.ReadOnlySpan_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9LocalKeyId",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3709,6 +4140,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9MessageDigest::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3725,6 +4160,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9MessageDigest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3746,6 +4182,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9MessageDigest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3760,6 +4197,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9MessageDigest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3776,6 +4214,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9AttributeObject",
+        "clrName": "System.Security.Cryptography.Pkcs.Pkcs9AttributeObject"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Pkcs9SigningTime::CopyFrom(System.Security.Cryptography.AsnEncodedData):System.Void",
@@ -3792,6 +4234,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9SigningTime",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -3813,6 +4256,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9SigningTime",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3827,6 +4271,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9SigningTime",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3837,6 +4282,7 @@
           "normalizedSignature": "constructor|(System.DateTime):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9SigningTime",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3847,6 +4293,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Pkcs9SigningTime",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3863,6 +4310,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3880,6 +4331,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.PublicKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3898,6 +4350,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.PublicKeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -3917,6 +4370,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3934,6 +4391,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3952,6 +4410,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3970,6 +4429,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -3988,6 +4448,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4006,6 +4467,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -4025,6 +4487,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.RecipientInfoCollection::GetEnumerator():System.Security.Cryptography.Pkcs.RecipientInfoEnumerator",
@@ -4041,6 +4517,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4060,6 +4537,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4079,6 +4557,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4100,6 +4579,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4118,6 +4598,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4136,6 +4617,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4154,6 +4636,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -4173,6 +4656,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.RecipientInfoEnumerator::MoveNext():System.Boolean",
@@ -4189,6 +4682,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4208,6 +4702,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4229,6 +4724,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.RecipientInfoEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -4248,6 +4744,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest::GetMessageHash():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -4264,6 +4764,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4283,6 +4784,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4302,6 +4804,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4321,6 +4824,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4346,6 +4850,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4365,6 +4870,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4390,6 +4896,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4409,6 +4916,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4428,6 +4936,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4447,6 +4956,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4466,6 +4976,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4497,6 +5008,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4515,6 +5027,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4533,6 +5046,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4551,6 +5065,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4569,6 +5084,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampRequest",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -4588,6 +5104,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Rfc3161TimestampToken::AsSignedCms():System.Security.Cryptography.Pkcs.SignedCms",
@@ -4604,6 +5124,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4623,6 +5144,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4648,6 +5170,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4673,6 +5196,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4698,6 +5222,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4723,6 +5248,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4744,16 +5270,17 @@
           "clrName": "TokenInfo",
           "metadataToken": 385876228,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
-          "normalizedSignature": "TokenInfo|:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo|static=false|accessor=get",
+          "normalizedSignature": "TokenInfo|:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampToken",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -4773,6 +5300,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo::GetMessageHash():System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -4789,6 +5320,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4808,6 +5340,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4827,6 +5360,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4846,6 +5380,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4865,6 +5400,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4884,6 +5420,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -4903,6 +5440,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4928,6 +5466,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false,
@@ -4959,6 +5498,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4977,6 +5517,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -4995,6 +5536,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5013,6 +5555,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5031,6 +5574,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5049,6 +5593,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5067,6 +5612,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -5081,6 +5627,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Oid,System.Security.Cryptography.Oid,System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.DateTimeOffset,System.Nullable_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Boolean,System.Nullable_1[[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.ReadOnlyMemory_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Security.Cryptography.X509Certificates.X509ExtensionCollection):void|static=false",
           "isStatic": false,
           "parameterCount": 10,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.Rfc3161TimestampTokenInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -5097,6 +5644,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SignedCms::Encode():System.Byte[]",
@@ -5113,6 +5664,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5132,6 +5684,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5151,6 +5704,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5170,6 +5724,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5189,6 +5744,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5208,6 +5764,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5227,6 +5784,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5246,6 +5804,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5265,6 +5824,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5284,6 +5844,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5303,6 +5864,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5322,6 +5884,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5341,6 +5904,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5352,16 +5916,17 @@
           "clrName": "Version",
           "metadataToken": 385876186,
           "canonicalSignature": ":System.Int32",
-          "normalizedSignature": "Version|:System.Int32|static=false|accessor=get",
+          "normalizedSignature": "Version|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5370,16 +5935,17 @@
           "clrName": "ContentInfo",
           "metadataToken": 385876187,
           "canonicalSignature": ":System.Security.Cryptography.Pkcs.ContentInfo",
-          "normalizedSignature": "ContentInfo|:System.Security.Cryptography.Pkcs.ContentInfo|static=false|accessor=get",
+          "normalizedSignature": "ContentInfo|:System.Security.Cryptography.Pkcs.ContentInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5388,16 +5954,17 @@
           "clrName": "Detached",
           "metadataToken": 385876188,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "Detached|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "Detached|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5416,6 +5983,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5434,6 +6002,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -5448,6 +6017,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5458,6 +6028,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5468,6 +6039,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5478,6 +6050,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.ContentInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5488,6 +6061,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5498,6 +6072,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Pkcs.ContentInfo,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignedCms",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -5514,6 +6089,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SignerInfo::GetSignature():System.Byte[]",
@@ -5530,6 +6109,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5549,6 +6129,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5568,6 +6149,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5587,6 +6169,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5606,6 +6189,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5625,6 +6209,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5644,6 +6229,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5663,6 +6249,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5682,6 +6269,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5701,6 +6289,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5722,6 +6311,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5740,6 +6330,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5758,6 +6349,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5776,6 +6368,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5794,6 +6387,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5812,6 +6406,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5830,6 +6425,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5848,6 +6444,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -5867,6 +6464,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SignerInfoCollection::GetEnumerator():System.Security.Cryptography.Pkcs.SignerInfoEnumerator",
@@ -5883,6 +6494,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5902,6 +6514,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5921,6 +6534,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -5942,6 +6556,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5960,6 +6575,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5978,6 +6594,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -5996,6 +6613,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -6015,6 +6633,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
+          "clrName": "System.Collections.IEnumerator"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SignerInfoEnumerator::MoveNext():System.Boolean",
@@ -6031,6 +6659,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -6050,6 +6679,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -6071,6 +6701,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SignerInfoEnumerator",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -6090,6 +6721,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.Pkcs.SubjectIdentifier::MatchesCertificate(System.Security.Cryptography.X509Certificates.X509Certificate2):System.Boolean",
@@ -6106,6 +6741,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
@@ -6127,6 +6763,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -6145,6 +6782,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifier",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -6164,6 +6802,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -6181,6 +6823,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -6199,6 +6842,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Pkcs.SubjectIdentifierOrKey",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }

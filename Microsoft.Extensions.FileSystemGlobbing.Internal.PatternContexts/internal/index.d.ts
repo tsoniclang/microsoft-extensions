@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { DirectoryInfoBase, FileInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
+import type { DirectoryInfoBase, FileInfoBase, FileSystemInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
 import * as Microsoft_Extensions_FileSystemGlobbing_Internal_Internal from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
 import type { ILinearPattern, IPathSegment, IPatternContext, IRaggedPattern, PatternTestResult } from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
 import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
@@ -58,6 +58,7 @@ export interface PatternContext_1$instance<TFrame extends unknown> {
 
 
 export const PatternContext_1: {
+    new<TFrame extends unknown>(): PatternContext_1<TFrame>;
 };
 
 

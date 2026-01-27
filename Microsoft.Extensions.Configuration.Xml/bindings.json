@@ -15,6 +15,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.FileConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider::Load(System.IO.Stream):System.Void",
@@ -31,6 +45,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -50,6 +65,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -76,6 +92,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -96,6 +113,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -116,6 +134,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -136,6 +155,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -156,6 +176,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -175,6 +196,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -194,6 +216,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -213,6 +236,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -232,6 +256,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false,
@@ -254,6 +279,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
         }
@@ -270,6 +296,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationSource",
+        "clrName": "Microsoft.Extensions.Configuration.FileConfigurationSource"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -286,6 +322,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -305,6 +342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -322,6 +360,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
         }
@@ -338,6 +377,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor::CreateDecryptingXmlReader(System.IO.Stream,System.Xml.XmlReaderSettings):System.Xml.XmlReader",
@@ -354,6 +397,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor::DecryptDocumentAndCreateXmlReader(System.Xml.XmlDocument):System.Xml.XmlReader",
+          "clrName": "DecryptDocumentAndCreateXmlReader",
+          "metadataToken": 100663353,
+          "canonicalSignature": "(System.Xml.XmlDocument):System.Xml.XmlReader",
+          "normalizedSignature": "DecryptDocumentAndCreateXmlReader|(System.Xml.XmlDocument):System.Xml.XmlReader|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -369,12 +433,25 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
         }
       ],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor::.ctor():void",
+          "metadataToken": 100663349,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
@@ -387,6 +464,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.StreamConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider::Read(System.IO.Stream,Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor):System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -403,6 +490,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -422,6 +510,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -441,6 +530,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -467,6 +557,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -487,6 +578,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -507,6 +599,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -527,6 +620,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -547,6 +641,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -566,6 +661,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -585,6 +681,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -604,6 +701,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -623,6 +721,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false,
@@ -645,6 +744,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
         }
@@ -661,6 +761,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationSource",
+        "clrName": "Microsoft.Extensions.Configuration.StreamConfigurationSource"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -677,6 +787,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": false
@@ -696,6 +807,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -713,6 +825,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml"
         }

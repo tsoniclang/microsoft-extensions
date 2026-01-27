@@ -10,7 +10,7 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { Dictionary, IList, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ValidationContext } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
+import type { ValidationAttribute, ValidationContext } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Attribute, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, ValueType } from "@tsonic/dotnet/System.js";
 import type { ParameterInfo } from "@tsonic/dotnet/System.Reflection.js";
@@ -59,12 +59,18 @@ export const SkipValidationAttribute: {
 
 export type SkipValidationAttribute = SkipValidationAttribute$instance;
 
-export interface ValidatableParameterInfo$instance {
+export abstract class ValidatableParameterInfo$protected {
+    protected abstract GetValidationAttributes(): ValidationAttribute[];
+}
+
+
+export interface ValidatableParameterInfo$instance extends ValidatableParameterInfo$protected {
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
 export const ValidatableParameterInfo: {
+    new(parameterType: Type, name: string, displayName: string): ValidatableParameterInfo;
 };
 
 
@@ -77,12 +83,18 @@ export interface ValidatableParameterInfo$instance extends IValidatableInfo$inst
 export type ValidatableParameterInfo = ValidatableParameterInfo$instance & __ValidatableParameterInfo$views;
 
 
-export interface ValidatablePropertyInfo$instance {
+export abstract class ValidatablePropertyInfo$protected {
+    protected abstract GetValidationAttributes(): ValidationAttribute[];
+}
+
+
+export interface ValidatablePropertyInfo$instance extends ValidatablePropertyInfo$protected {
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
 export const ValidatablePropertyInfo: {
+    new(declaringType: Type, propertyType: Type, name: string, displayName: string): ValidatablePropertyInfo;
 };
 
 
@@ -106,12 +118,18 @@ export const ValidatableTypeAttribute: {
 
 export type ValidatableTypeAttribute = ValidatableTypeAttribute$instance;
 
-export interface ValidatableTypeInfo$instance {
+export abstract class ValidatableTypeInfo$protected {
+    protected abstract GetValidationAttributes(): ValidationAttribute[];
+}
+
+
+export interface ValidatableTypeInfo$instance extends ValidatableTypeInfo$protected {
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
 export const ValidatableTypeInfo: {
+    new(type: Type, members: IReadOnlyList<ValidatablePropertyInfo>): ValidatableTypeInfo;
 };
 
 

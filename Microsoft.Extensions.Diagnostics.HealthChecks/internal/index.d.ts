@@ -125,6 +125,7 @@ export interface HealthCheckService$instance {
 
 
 export const HealthCheckService: {
+    new(): HealthCheckService;
 };
 
 

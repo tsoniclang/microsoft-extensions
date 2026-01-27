@@ -32,6 +32,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.IRelDecryptor",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -53,6 +54,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -70,6 +75,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.X509IssuerSerial",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         },
@@ -88,6 +94,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.X509IssuerSerial",
           "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
         }
@@ -107,6 +114,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::GetXml():System.Xml.XmlElement",
@@ -123,6 +134,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -142,6 +154,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -163,6 +176,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -181,6 +195,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -195,6 +210,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -205,6 +221,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -215,6 +232,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Xml.CipherReference):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -231,6 +249,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference",
+        "clrName": "System.Security.Cryptography.Xml.EncryptedReference"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherReference::GetXml():System.Xml.XmlElement",
@@ -247,6 +269,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -266,6 +289,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -282,6 +306,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -292,6 +317,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -302,6 +328,7 @@
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CipherReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -318,6 +345,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.Xml:System.Xml.XmlException",
+        "clrName": "System.Xml.XmlException"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -330,6 +367,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -340,6 +378,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -350,6 +389,18 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "metadataToken": 100663557,
+          "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
+          "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -366,6 +417,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::GetXml():System.Xml.XmlElement",
@@ -382,6 +437,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -401,6 +457,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -422,6 +479,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -440,6 +498,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -458,6 +517,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -476,6 +536,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -490,6 +551,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -500,6 +562,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Xml.XmlElement):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataObject",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -516,6 +579,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference",
+        "clrName": "System.Security.Cryptography.Xml.EncryptedReference"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -528,6 +595,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -538,6 +606,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -548,6 +617,7 @@
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DataReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -564,6 +634,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DSAKeyValue::GetXml():System.Xml.XmlElement",
@@ -580,6 +654,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -599,6 +674,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -620,6 +696,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -634,6 +711,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -644,6 +722,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.DSA):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.DSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -660,6 +739,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType",
+        "clrName": "System.Security.Cryptography.Xml.EncryptedType"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedData::LoadXml(System.Xml.XmlElement):System.Void",
@@ -676,6 +759,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -695,6 +779,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -711,6 +796,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedData",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -727,6 +813,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType",
+        "clrName": "System.Security.Cryptography.Xml.EncryptedType"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::AddReference(System.Security.Cryptography.Xml.DataReference):System.Void",
@@ -743,6 +833,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -762,6 +853,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -781,6 +873,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -800,6 +893,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -821,6 +915,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -839,6 +934,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -857,6 +953,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -871,6 +968,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -887,6 +985,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::AddTransform(System.Security.Cryptography.Xml.Transform):System.Void",
@@ -903,6 +1005,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -922,6 +1025,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -941,6 +1045,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -962,6 +1067,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -980,13 +1086,86 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::ReferenceType:System.String",
+          "clrName": "ReferenceType",
+          "metadataToken": 385876097,
+          "canonicalSignature": ":System.String",
+          "normalizedSignature": "ReferenceType|:System.String|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::CacheValid:System.Boolean",
+          "clrName": "CacheValid",
+          "metadataToken": 385876098,
+          "canonicalSignature": ":System.Boolean",
+          "normalizedSignature": "CacheValid|:System.Boolean|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor():void",
+          "metadataToken": 100663601,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor(System.String):void",
+          "metadataToken": 100663602,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor(System.String,System.Security.Cryptography.Xml.TransformChain):void",
+          "metadataToken": 100663603,
+          "canonicalSignature": "(System.String,System.Security.Cryptography.Xml.TransformChain):void",
+          "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
+          "isStatic": false,
+          "parameterCount": 2,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.EncryptedReference",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        }
+      ]
     },
     {
       "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType",
@@ -999,6 +1178,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::AddProperty(System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
@@ -1015,6 +1198,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1034,6 +1218,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1053,6 +1238,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1074,6 +1260,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1092,6 +1279,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1110,6 +1298,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1128,6 +1317,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1146,6 +1336,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1164,6 +1355,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1182,6 +1374,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1200,13 +1393,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::.ctor():void",
+          "metadataToken": 100663634,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.EncryptedType",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        }
+      ]
     },
     {
       "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml",
@@ -1219,6 +1425,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::GetIdElement(System.Xml.XmlDocument,System.String):System.Xml.XmlElement",
@@ -1235,6 +1445,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1254,6 +1465,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1273,6 +1485,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1292,6 +1505,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1311,6 +1525,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1330,6 +1545,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1349,6 +1565,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1368,6 +1585,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1387,6 +1605,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1406,6 +1625,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1425,6 +1645,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1444,6 +1665,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1463,6 +1685,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1482,6 +1705,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1501,6 +1725,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1520,6 +1745,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1539,6 +1765,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1558,6 +1785,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1579,6 +1807,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1597,6 +1826,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1615,6 +1845,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1633,6 +1864,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1651,6 +1883,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1669,6 +1902,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1687,6 +1921,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -1700,6 +1935,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1711,6 +1947,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1722,6 +1959,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1733,6 +1971,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1744,6 +1983,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1755,6 +1995,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1766,6 +2007,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1777,6 +2019,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1788,6 +2031,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1799,6 +2043,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1810,6 +2055,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1821,6 +2067,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1832,6 +2079,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1843,6 +2091,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1854,6 +2103,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1865,6 +2115,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1876,6 +2127,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -1889,6 +2141,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1899,6 +2152,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlDocument):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1909,6 +2163,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlDocument,System.Security.Policy.Evidence):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -1925,6 +2180,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::GetXml():System.Xml.XmlElement",
@@ -1941,6 +2200,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1960,6 +2220,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -1981,6 +2242,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -1999,6 +2261,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2013,6 +2276,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2023,6 +2287,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2039,6 +2304,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::GetXml():System.Xml.XmlElement",
@@ -2055,6 +2324,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2074,6 +2344,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2095,6 +2366,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2113,6 +2385,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2131,6 +2404,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2145,6 +2419,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2155,6 +2430,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlElement):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionProperty",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2171,6 +2447,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::GetEnumerator():System.Collections.IEnumerator",
@@ -2187,6 +2481,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2206,6 +2501,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2225,6 +2521,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2244,6 +2541,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2263,6 +2561,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2282,6 +2581,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2301,6 +2601,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2320,6 +2621,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2339,6 +2641,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2358,6 +2661,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2377,6 +2681,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2398,6 +2703,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2416,6 +2722,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2434,6 +2741,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2452,6 +2760,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2470,6 +2779,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2488,6 +2798,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2502,6 +2813,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2518,6 +2830,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::GetXml():System.Xml.XmlElement",
@@ -2534,6 +2856,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2553,6 +2876,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2572,6 +2896,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2591,6 +2916,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2610,6 +2936,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2631,6 +2958,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2649,6 +2977,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2663,6 +2992,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2679,6 +3009,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause::GetXml():System.Xml.XmlElement",
@@ -2695,6 +3029,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoClause",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2714,6 +3049,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoClause",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2722,7 +3058,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause::.ctor():void",
+          "metadataToken": 100663746,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoClause",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        }
+      ]
     },
     {
       "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
@@ -2735,6 +3083,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey::GetXml():System.Xml.XmlElement",
@@ -2751,6 +3103,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2770,6 +3123,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2791,6 +3145,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2805,6 +3160,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2815,6 +3171,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.Xml.EncryptedKey):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2831,6 +3188,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoName::GetXml():System.Xml.XmlElement",
@@ -2847,6 +3208,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoName",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2866,6 +3228,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoName",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2887,6 +3250,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoName",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2901,6 +3265,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoName",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -2911,6 +3276,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoName",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2927,6 +3293,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoNode::GetXml():System.Xml.XmlElement",
@@ -2943,6 +3313,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoNode",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2962,6 +3333,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoNode",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -2983,6 +3355,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoNode",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -2997,6 +3370,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoNode",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3007,6 +3381,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlElement):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoNode",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3023,6 +3398,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::GetXml():System.Xml.XmlElement",
@@ -3039,6 +3418,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3058,6 +3438,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3079,6 +3460,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3097,6 +3479,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3111,6 +3494,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3121,6 +3505,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3131,6 +3516,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoRetrievalMethod",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3147,6 +3533,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate):System.Void",
@@ -3163,6 +3553,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3182,6 +3573,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3201,6 +3593,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3220,6 +3613,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3239,6 +3633,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3258,6 +3653,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3277,6 +3673,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3298,6 +3695,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3316,6 +3714,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3334,6 +3733,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3352,6 +3752,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3370,6 +3771,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3384,6 +3786,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3394,6 +3797,7 @@
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3404,6 +3808,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3414,6 +3819,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyInfoX509Data",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3430,6 +3836,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference",
+        "clrName": "System.Security.Cryptography.Xml.EncryptedReference"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -3442,6 +3852,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3452,6 +3863,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3462,6 +3874,7 @@
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.KeyReference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3478,6 +3891,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::GetXml():System.Xml.XmlElement",
@@ -3494,6 +3911,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3513,6 +3931,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3532,6 +3951,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3553,6 +3973,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3571,6 +3992,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3589,6 +4011,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3607,6 +4030,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3625,6 +4049,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3643,6 +4068,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3657,6 +4083,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3667,6 +4094,7 @@
           "normalizedSignature": "constructor|(System.IO.Stream):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3677,6 +4105,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Reference",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3693,6 +4122,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IList",
+          "clrName": "System.Collections.IList"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::GetEnumerator():System.Collections.IEnumerator",
@@ -3709,6 +4156,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3728,6 +4176,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3747,6 +4196,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3766,6 +4216,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3785,6 +4236,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3804,6 +4256,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3823,6 +4276,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3842,6 +4296,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3861,6 +4316,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3880,6 +4336,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -3901,6 +4358,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3919,6 +4377,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3937,6 +4396,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -3955,6 +4415,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3969,6 +4430,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.ReferenceList",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -3985,6 +4447,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause",
+        "clrName": "System.Security.Cryptography.Xml.KeyInfoClause"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.RSAKeyValue::GetXml():System.Xml.XmlElement",
@@ -4001,6 +4467,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.RSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4020,6 +4487,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.RSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4041,6 +4509,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.RSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -4055,6 +4524,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.RSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4065,6 +4535,7 @@
           "normalizedSignature": "constructor|(System.Security.Cryptography.RSA):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.RSAKeyValue",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -4081,6 +4552,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::GetXml():System.Xml.XmlElement",
@@ -4097,6 +4572,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4116,6 +4592,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4135,6 +4612,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4156,6 +4634,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4174,6 +4653,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4192,6 +4672,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4210,6 +4691,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4228,6 +4710,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -4242,6 +4725,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Signature",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -4258,6 +4742,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::GetEnumerator():System.Collections.IEnumerator",
@@ -4274,6 +4772,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4293,6 +4792,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4312,6 +4812,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4331,6 +4832,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4350,6 +4852,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4371,6 +4874,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4389,6 +4893,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4407,6 +4912,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4425,6 +4931,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4443,6 +4950,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4461,6 +4969,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4479,6 +4988,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4497,6 +5007,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4515,6 +5026,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4533,6 +5045,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -4547,6 +5060,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedInfo",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -4563,6 +5077,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::GetXml():System.Xml.XmlElement",
@@ -4579,6 +5097,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4598,6 +5117,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4617,6 +5137,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4636,6 +5157,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4655,6 +5177,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4674,6 +5197,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false,
@@ -4699,6 +5223,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4718,6 +5243,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4737,6 +5263,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4756,6 +5283,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4775,6 +5303,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::GetPublicKey():System.Security.Cryptography.AsymmetricAlgorithm",
+          "clrName": "GetPublicKey",
+          "metadataToken": 100663943,
+          "canonicalSignature": "():System.Security.Cryptography.AsymmetricAlgorithm",
+          "normalizedSignature": "GetPublicKey|():System.Security.Cryptography.AsymmetricAlgorithm|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4794,6 +5343,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -4815,6 +5365,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4833,6 +5384,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4851,6 +5403,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4869,6 +5422,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4887,6 +5441,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4905,6 +5460,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4923,6 +5479,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4941,6 +5498,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4959,6 +5517,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4977,6 +5536,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -4995,6 +5555,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5013,11 +5574,36 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
       ],
       "fields": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::m_signatureSystem.Security.Cryptography.Xml.Signature",
+          "clrName": "m_signature",
+          "metadataToken": 67109144,
+          "normalizedSignature": "m_signature|System.Security.Cryptography.Xml.Signature|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::m_strSigningKeyNameSystem.String",
+          "clrName": "m_strSigningKeyName",
+          "metadataToken": 67109145,
+          "normalizedSignature": "m_strSigningKeyName|System.String|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigNamespaceUrlSystem.String",
           "clrName": "XmlDsigNamespaceUrl",
@@ -5026,6 +5612,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5037,6 +5624,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5048,6 +5636,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5059,6 +5648,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5070,6 +5660,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5081,6 +5672,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5092,6 +5684,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5103,6 +5696,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5114,6 +5708,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5125,6 +5720,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5136,6 +5732,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5147,6 +5744,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5158,6 +5756,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5169,6 +5768,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5180,6 +5780,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5191,6 +5792,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5202,6 +5804,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5213,6 +5816,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5224,6 +5828,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5235,6 +5840,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5246,6 +5852,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5257,6 +5864,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5268,6 +5876,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5279,6 +5888,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5292,6 +5902,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5302,6 +5913,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlDocument):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5312,6 +5924,7 @@
           "normalizedSignature": "constructor|(System.Xml.XmlElement):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.SignedXml",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5328,6 +5941,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetXml():System.Xml.XmlElement",
@@ -5344,6 +5961,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5363,6 +5981,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.Transform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664020,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5382,6 +6021,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5401,6 +6041,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5420,6 +6061,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5439,6 +6081,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5460,6 +6103,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.Transform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::Resolver:System.Xml.XmlResolver",
+          "clrName": "Resolver",
+          "metadataToken": 385876199,
+          "canonicalSignature": ":System.Xml.XmlResolver",
+          "normalizedSignature": "Resolver|:System.Xml.XmlResolver|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Internal",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5478,6 +6141,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5496,6 +6160,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5514,6 +6179,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5532,13 +6198,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::.ctor():void",
+          "metadataToken": 100664007,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.Transform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml"
+        }
+      ]
     },
     {
       "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain",
@@ -5551,6 +6230,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain::Add(System.Security.Cryptography.Xml.Transform):System.Void",
@@ -5567,6 +6250,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.TransformChain",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5586,6 +6270,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.TransformChain",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5607,6 +6292,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.TransformChain",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5625,6 +6311,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.TransformChain",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5639,6 +6326,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.TransformChain",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5655,7 +6343,31 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::IsTargetElement(System.Xml.XmlElement,System.String):System.Boolean",
+          "clrName": "IsTargetElement",
+          "metadataToken": 100664084,
+          "canonicalSignature": "(System.Xml.XmlElement,System.String):System.Boolean",
+          "normalizedSignature": "IsTargetElement|(System.Xml.XmlElement,System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::AddExceptUri(System.String):System.Void",
           "clrName": "AddExceptUri",
@@ -5671,6 +6383,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5690,6 +6403,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664091,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5709,6 +6443,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5728,6 +6463,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5747,6 +6483,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5768,6 +6505,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5786,6 +6524,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5804,6 +6543,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5818,6 +6558,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDecryptionTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5834,6 +6575,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
@@ -5850,6 +6595,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664104,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5869,6 +6635,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5888,6 +6655,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5907,6 +6675,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -5928,6 +6697,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -5946,6 +6716,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5960,6 +6731,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigBase64Transform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -5976,6 +6748,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
@@ -5992,6 +6768,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664115,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6011,6 +6808,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6030,6 +6828,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6049,6 +6848,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6068,6 +6868,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6089,6 +6890,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6107,6 +6909,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6121,6 +6924,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6131,6 +6935,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6147,6 +6952,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform",
+        "clrName": "System.Security.Cryptography.Xml.XmlDsigC14NTransform"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -6159,6 +6968,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6175,6 +6985,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
@@ -6191,6 +7005,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664127,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6210,6 +7045,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6229,6 +7065,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6248,6 +7085,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6269,6 +7107,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6287,6 +7126,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6301,6 +7141,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6311,6 +7152,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6327,6 +7169,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
@@ -6343,6 +7189,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6362,6 +7209,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664144,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6381,6 +7249,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6400,6 +7269,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6419,6 +7289,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6440,6 +7311,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6458,6 +7330,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6476,6 +7349,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6490,6 +7364,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6500,6 +7375,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6510,6 +7386,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6520,6 +7397,7 @@
           "normalizedSignature": "constructor|(System.Boolean,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6536,6 +7414,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform",
+        "clrName": "System.Security.Cryptography.Xml.XmlDsigExcC14NTransform"
+      },
       "methods": [],
       "properties": [],
       "fields": [],
@@ -6548,6 +7430,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6558,6 +7441,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6574,6 +7458,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
@@ -6590,6 +7478,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664154,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6609,6 +7518,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6628,6 +7538,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6647,6 +7558,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6668,6 +7580,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6686,6 +7599,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6700,6 +7614,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXPathTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6716,6 +7631,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
@@ -6732,6 +7651,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664166,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6751,6 +7691,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6770,6 +7711,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6789,6 +7731,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6810,6 +7753,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6828,6 +7772,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6842,6 +7787,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6852,6 +7798,7 @@
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlDsigXsltTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -6868,7 +7815,31 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform",
+        "clrName": "System.Security.Cryptography.Xml.Transform"
+      },
       "methods": [
+        {
+          "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::GetInnerXml():System.Xml.XmlNodeList",
+          "clrName": "GetInnerXml",
+          "metadataToken": 100664176,
+          "canonicalSignature": "():System.Xml.XmlNodeList",
+          "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
+          "declaringAssemblyName": "System.Security.Cryptography.Xml",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
@@ -6884,6 +7855,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6903,6 +7875,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6922,6 +7895,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6941,6 +7915,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml",
           "isExtensionMethod": false
@@ -6962,6 +7937,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6980,6 +7956,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         },
@@ -6998,6 +7975,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }
@@ -7012,6 +7990,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Security.Cryptography.Xml.XmlLicenseTransform",
           "declaringAssemblyName": "System.Security.Cryptography.Xml"
         }

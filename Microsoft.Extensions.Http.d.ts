@@ -6,7 +6,7 @@
 import * as Internal from './Microsoft.Extensions.Http/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { IList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Action, Boolean as ClrBoolean, Func, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan } from '@tsonic/dotnet/System.js';
 import type { DelegatingHandler, HttpClient, HttpMessageHandler } from '@tsonic/dotnet/System.Net.Http.js';
 

@@ -401,7 +401,12 @@ export interface OptionsCache_1$instance<TOptions> extends IOptionsMonitorCache_
 export type OptionsCache_1<TOptions> = OptionsCache_1$instance<TOptions> & __OptionsCache_1$views<TOptions>;
 
 
-export interface OptionsFactory_1$instance<TOptions> {
+export abstract class OptionsFactory_1$protected<TOptions> {
+    protected CreateInstance(name: string): TOptions;
+}
+
+
+export interface OptionsFactory_1$instance<TOptions> extends OptionsFactory_1$protected<TOptions> {
     Create(name: string): TOptions;
 }
 
@@ -819,11 +824,12 @@ export type ValidateOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> = Val
 
 
 export interface ValidateOptionsResult$instance {
-    readonly Failed: boolean;
-    readonly FailureMessage: string;
-    readonly Failures: IEnumerable<System_Internal.String> | undefined;
-    readonly Skipped: boolean;
-    readonly Succeeded: boolean;
+    Failed: boolean;
+    FailureMessage: string;
+    get Failures(): IEnumerable<System_Internal.String> | undefined;
+    set Failures(value: IEnumerable<System_Internal.String>);
+    Skipped: boolean;
+    Succeeded: boolean;
 }
 
 

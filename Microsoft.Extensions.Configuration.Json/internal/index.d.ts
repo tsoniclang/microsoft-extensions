@@ -13,7 +13,7 @@ import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Ex
 import type { FileConfigurationProvider, FileConfigurationSource, FileLoadExceptionContext, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource, StreamConfigurationProvider, StreamConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
 import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";

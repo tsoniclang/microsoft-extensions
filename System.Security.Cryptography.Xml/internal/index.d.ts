@@ -16,7 +16,7 @@ import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Exception, Func, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
 import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
 import type { AsymmetricAlgorithm, CipherMode, DSA, HashAlgorithm, KeyedHashAlgorithm, PaddingMode, RSA, SymmetricAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography.js";
 import type { X509Certificate, X509Certificate2, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
 import type { Evidence } from "@tsonic/dotnet/System.Security.Policy.js";
@@ -86,6 +86,7 @@ export const CryptoSignedXmlRecursionException: {
     new(): CryptoSignedXmlRecursionException;
     new(message: string): CryptoSignedXmlRecursionException;
     new(message: string, inner: Exception): CryptoSignedXmlRecursionException;
+    new(info: SerializationInfo, context: StreamingContext): CryptoSignedXmlRecursionException;
 };
 
 
@@ -181,6 +182,9 @@ export interface EncryptedReference$instance {
 
 
 export const EncryptedReference: {
+    new(): EncryptedReference;
+    new(uri: string): EncryptedReference;
+    new(uri: string, transformChain: TransformChain): EncryptedReference;
 };
 
 
@@ -206,6 +210,7 @@ export interface EncryptedType$instance {
 
 
 export const EncryptedType: {
+    new(): EncryptedType;
 };
 
 
@@ -356,6 +361,7 @@ export interface KeyInfoClause$instance {
 
 
 export const KeyInfoClause: {
+    new(): KeyInfoClause;
 };
 
 
@@ -580,7 +586,12 @@ export const SignedInfo: {
 
 export type SignedInfo = SignedInfo$instance;
 
-export interface SignedXml$instance {
+export abstract class SignedXml$protected {
+    protected GetPublicKey(): AsymmetricAlgorithm | undefined;
+}
+
+
+export interface SignedXml$instance extends SignedXml$protected {
     EncryptedXml: EncryptedXml;
     KeyInfo: KeyInfo;
     Resolver: XmlResolver;
@@ -643,7 +654,12 @@ export const SignedXml: {
 
 export type SignedXml = SignedXml$instance;
 
-export interface Transform$instance {
+export abstract class Transform$protected {
+    protected abstract GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface Transform$instance extends Transform$protected {
     Algorithm: string;
     get Context(): XmlElement | undefined;
     set Context(value: XmlElement);
@@ -660,6 +676,7 @@ export interface Transform$instance {
 
 
 export const Transform: {
+    new(): Transform;
 };
 
 
@@ -680,7 +697,13 @@ export const TransformChain: {
 
 export type TransformChain = TransformChain$instance;
 
-export interface XmlDecryptionTransform$instance extends Transform {
+export abstract class XmlDecryptionTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+    protected IsTargetElement(inputElement: XmlElement, idValue: string): boolean;
+}
+
+
+export interface XmlDecryptionTransform$instance extends XmlDecryptionTransform$protected, Transform {
     EncryptedXml: EncryptedXml;
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
@@ -699,7 +722,12 @@ export const XmlDecryptionTransform: {
 
 export type XmlDecryptionTransform = XmlDecryptionTransform$instance;
 
-export interface XmlDsigBase64Transform$instance extends Transform {
+export abstract class XmlDsigBase64Transform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlDsigBase64Transform$instance extends XmlDsigBase64Transform$protected, Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetOutput(): unknown;
@@ -716,7 +744,12 @@ export const XmlDsigBase64Transform: {
 
 export type XmlDsigBase64Transform = XmlDsigBase64Transform$instance;
 
-export interface XmlDsigC14NTransform$instance extends Transform {
+export abstract class XmlDsigC14NTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlDsigC14NTransform$instance extends XmlDsigC14NTransform$protected, Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
@@ -746,7 +779,12 @@ export const XmlDsigC14NWithCommentsTransform: {
 
 export type XmlDsigC14NWithCommentsTransform = XmlDsigC14NWithCommentsTransform$instance;
 
-export interface XmlDsigEnvelopedSignatureTransform$instance extends Transform {
+export abstract class XmlDsigEnvelopedSignatureTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlDsigEnvelopedSignatureTransform$instance extends XmlDsigEnvelopedSignatureTransform$protected, Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetOutput(): unknown;
@@ -764,7 +802,12 @@ export const XmlDsigEnvelopedSignatureTransform: {
 
 export type XmlDsigEnvelopedSignatureTransform = XmlDsigEnvelopedSignatureTransform$instance;
 
-export interface XmlDsigExcC14NTransform$instance extends Transform {
+export abstract class XmlDsigExcC14NTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlDsigExcC14NTransform$instance extends XmlDsigExcC14NTransform$protected, Transform {
     get InclusiveNamespacesPrefixList(): string | undefined;
     set InclusiveNamespacesPrefixList(value: string);
     readonly InputTypes: Type[];
@@ -799,7 +842,12 @@ export const XmlDsigExcC14NWithCommentsTransform: {
 
 export type XmlDsigExcC14NWithCommentsTransform = XmlDsigExcC14NWithCommentsTransform$instance;
 
-export interface XmlDsigXPathTransform$instance extends Transform {
+export abstract class XmlDsigXPathTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlDsigXPathTransform$instance extends XmlDsigXPathTransform$protected, Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetOutput(): unknown;
@@ -816,7 +864,12 @@ export const XmlDsigXPathTransform: {
 
 export type XmlDsigXPathTransform = XmlDsigXPathTransform$instance;
 
-export interface XmlDsigXsltTransform$instance extends Transform {
+export abstract class XmlDsigXsltTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlDsigXsltTransform$instance extends XmlDsigXsltTransform$protected, Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetOutput(): unknown;
@@ -834,7 +887,12 @@ export const XmlDsigXsltTransform: {
 
 export type XmlDsigXsltTransform = XmlDsigXsltTransform$instance;
 
-export interface XmlLicenseTransform$instance extends Transform {
+export abstract class XmlLicenseTransform$protected {
+    protected GetInnerXml(): XmlNodeList | undefined;
+}
+
+
+export interface XmlLicenseTransform$instance extends XmlLicenseTransform$protected, Transform {
     get Decryptor(): IRelDecryptor | undefined;
     set Decryptor(value: IRelDecryptor);
     readonly InputTypes: Type[];

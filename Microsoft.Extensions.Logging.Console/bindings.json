@@ -15,6 +15,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -26,6 +48,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -37,6 +60,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -48,6 +72,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerFormat",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -66,6 +91,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -77,6 +124,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerQueueFullMode",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -88,6 +136,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerQueueFullMode",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -99,6 +148,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerQueueFullMode",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -117,6 +167,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -128,6 +200,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.LoggerColorBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -139,6 +212,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.LoggerColorBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -150,6 +224,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.LoggerColorBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -161,6 +236,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.LoggerColorBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -195,6 +271,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -220,6 +297,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false
@@ -241,6 +319,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -259,6 +338,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -278,6 +358,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
+          "clrName": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings::Reload():Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
@@ -294,6 +384,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false
@@ -313,6 +404,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -338,6 +430,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -364,6 +457,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -376,16 +470,17 @@
           "clrName": "ChangeToken",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.Extensions.Primitives.IChangeToken",
-          "normalizedSignature": "ChangeToken|:Microsoft.Extensions.Primitives.IChangeToken|static=false|accessor=get",
+          "normalizedSignature": "ChangeToken|:Microsoft.Extensions.Primitives.IChangeToken|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -404,6 +499,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -422,6 +518,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
@@ -441,6 +538,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
@@ -456,6 +554,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.IConfiguration):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConfigurationConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -472,6 +571,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatter::Write(LogEntry_1\u0026,Microsoft.Extensions.Logging.IExternalScopeProvider,System.IO.TextWriter):System.Void",
@@ -488,6 +591,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatter",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -515,13 +619,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatter",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatter::.ctor(System.String):void",
+          "metadataToken": 100663436,
+          "canonicalSignature": "(System.String):void",
+          "normalizedSignature": "constructor|(System.String):void|static=false",
+          "isStatic": false,
+          "parameterCount": 1,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatter",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
@@ -534,6 +651,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -551,6 +672,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -569,6 +691,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -587,6 +710,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -601,6 +725,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -617,6 +742,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -634,6 +763,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -652,6 +782,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -670,6 +801,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -688,6 +820,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -706,6 +839,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -724,6 +858,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -742,6 +877,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -760,6 +896,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -778,6 +915,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -792,6 +930,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -808,6 +947,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
+          "clrName": "Microsoft.Extensions.Logging.ILoggerProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ISupportExternalScope",
+          "clrName": "Microsoft.Extensions.Logging.ISupportExternalScope"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
@@ -824,6 +981,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false
@@ -843,6 +1001,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false
@@ -862,6 +1021,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false
@@ -881,6 +1041,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -901,6 +1062,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ISupportExternalScope",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -918,6 +1080,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions,Microsoft.Extensions.Logging.Console,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -928,6 +1091,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptionsMonitor_1[[Microsoft.Extensions.Logging.Console.ConsoleLoggerOptions,Microsoft.Extensions.Logging.Console,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Logging.Console.ConsoleFormatter,Microsoft.Extensions.Logging.Console,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -944,6 +1108,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
+          "clrName": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings::Reload():Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
@@ -960,6 +1134,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false
@@ -979,6 +1154,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -1004,6 +1180,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -1030,6 +1207,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console",
           "isExtensionMethod": false,
@@ -1052,6 +1230,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1070,6 +1249,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1088,6 +1268,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1106,6 +1287,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1124,6 +1306,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
@@ -1143,6 +1326,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.IConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
@@ -1158,6 +1342,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleLoggerSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -1174,6 +1359,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
+        "clrName": "Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions"
+      },
       "methods": [],
       "properties": [
         {
@@ -1191,6 +1380,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -1205,6 +1395,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.JsonConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -1221,6 +1412,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",
+        "clrName": "Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions"
+      },
       "methods": [],
       "properties": [
         {
@@ -1238,6 +1433,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1256,6 +1452,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -1270,6 +1467,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.SimpleConsoleFormatterOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }
@@ -1286,6 +1484,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -1297,6 +1499,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterNames",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1308,6 +1511,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterNames",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         },
@@ -1319,6 +1523,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Console.ConsoleFormatterNames",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Console"
         }

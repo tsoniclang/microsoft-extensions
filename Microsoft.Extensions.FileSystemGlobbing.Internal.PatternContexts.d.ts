@@ -6,7 +6,7 @@
 import * as Internal from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 
 // Cross-namespace type imports for constraints
-import type { DirectoryInfoBase, FileInfoBase } from './Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js';
+import type { DirectoryInfoBase, FileInfoBase, FileSystemInfoBase } from './Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js';
 import type { ILinearPattern, IPathSegment, IPatternContext, IRaggedPattern, PatternTestResult } from './Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js';
 import type { IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Action, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from '@tsonic/dotnet/System.js';

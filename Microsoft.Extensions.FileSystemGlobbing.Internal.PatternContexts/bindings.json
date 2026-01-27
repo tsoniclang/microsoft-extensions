@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -32,6 +36,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -50,6 +55,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -63,6 +69,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -74,6 +81,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -85,6 +93,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -103,6 +112,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -120,6 +133,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -138,6 +152,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -151,6 +166,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -162,6 +178,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -173,6 +190,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -184,6 +202,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -195,6 +214,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -206,6 +226,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged\u002BFrameData",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -224,6 +245,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
+      "typeParameters": [
+        "TFrame"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -240,6 +274,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -259,6 +294,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -278,6 +314,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -297,6 +334,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -316,6 +354,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601::PushDataFrame(TFrame):System.Void",
+          "clrName": "PushDataFrame",
+          "metadataToken": 100663407,
+          "canonicalSignature": "(TFrame):System.Void",
+          "normalizedSignature": "PushDataFrame|(TFrame):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601::IsStackEmpty():System.Boolean",
+          "clrName": "IsStackEmpty",
+          "metadataToken": 100663408,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsStackEmpty|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -335,6 +414,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -355,6 +435,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -375,6 +456,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -395,6 +477,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -415,6 +498,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -422,9 +506,34 @@
         }
       ],
       "properties": [],
-      "fields": [],
+      "fields": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601::FrameTFrame",
+          "clrName": "Frame",
+          "metadataToken": 67108902,
+          "normalizedSignature": "Frame|TFrame|static=false|const=false",
+          "isStatic": false,
+          "isReadOnly": false,
+          "isLiteral": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601::.ctor():void",
+          "metadataToken": 100663409,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
@@ -437,6 +546,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+        "typeArguments": [
+          "FrameData"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear::Test(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):Microsoft.Extensions.FileSystemGlobbing.Internal.PatternTestResult",
@@ -453,6 +575,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -472,6 +595,67 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear::IsLastSegment():System.Boolean",
+          "clrName": "IsLastSegment",
+          "metadataToken": 100663414,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsLastSegment|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear::TestMatchingSegment(System.String):System.Boolean",
+          "clrName": "TestMatchingSegment",
+          "metadataToken": 100663415,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "TestMatchingSegment|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear::CalculateStem(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):System.String",
+          "clrName": "CalculateStem",
+          "metadataToken": 100663416,
+          "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):System.String",
+          "normalizedSignature": "CalculateStem|(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -491,6 +675,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -511,6 +696,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -531,6 +717,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -551,6 +738,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -571,6 +759,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -591,6 +780,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -610,6 +800,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -629,12 +820,33 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear::Pattern:Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern",
+          "clrName": "Pattern",
+          "metadataToken": 385875994,
+          "canonicalSignature": ":Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern",
+          "normalizedSignature": "Pattern|:Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -645,6 +857,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -661,6 +874,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
+        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude::Test(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):System.Boolean",
@@ -677,6 +900,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -696,6 +920,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -716,6 +941,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -736,6 +962,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -756,6 +983,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -776,6 +1004,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -796,6 +1025,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -815,6 +1045,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -834,6 +1065,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -853,6 +1085,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -869,6 +1102,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -885,6 +1119,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear",
+        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinear"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -901,6 +1145,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -920,6 +1165,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -939,6 +1185,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -959,6 +1206,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -979,6 +1227,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -999,6 +1248,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1019,6 +1269,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1039,6 +1290,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1058,6 +1310,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1077,6 +1330,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1096,6 +1350,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1112,6 +1367,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.FileSystemGlobbing.Internal.ILinearPattern):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextLinearInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -1128,6 +1384,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContext\u00601",
+        "typeArguments": [
+          "FrameData"
+        ]
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::Test(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):Microsoft.Extensions.FileSystemGlobbing.Internal.PatternTestResult",
@@ -1144,6 +1413,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1163,6 +1433,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1182,6 +1453,107 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::IsStartingGroup():System.Boolean",
+          "clrName": "IsStartingGroup",
+          "metadataToken": 100663427,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsStartingGroup|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::IsEndingGroup():System.Boolean",
+          "clrName": "IsEndingGroup",
+          "metadataToken": 100663428,
+          "canonicalSignature": "():System.Boolean",
+          "normalizedSignature": "IsEndingGroup|():System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::TestMatchingSegment(System.String):System.Boolean",
+          "clrName": "TestMatchingSegment",
+          "metadataToken": 100663429,
+          "canonicalSignature": "(System.String):System.Boolean",
+          "normalizedSignature": "TestMatchingSegment|(System.String):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::TestMatchingGroup(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase):System.Boolean",
+          "clrName": "TestMatchingGroup",
+          "metadataToken": 100663430,
+          "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase):System.Boolean",
+          "normalizedSignature": "TestMatchingGroup|(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase):System.Boolean|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::CalculateStem(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):System.String",
+          "clrName": "CalculateStem",
+          "metadataToken": 100663431,
+          "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):System.String",
+          "normalizedSignature": "CalculateStem|(Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1201,6 +1573,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1221,6 +1594,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1241,6 +1615,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1261,6 +1636,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1281,6 +1657,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1301,6 +1678,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1320,12 +1698,33 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged::Pattern:Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern",
+          "clrName": "Pattern",
+          "metadataToken": 385875995,
+          "canonicalSignature": ":Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern",
+          "normalizedSignature": "Pattern|:Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern|static=false|accessor=get",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": false,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+        }
+      ],
       "fields": [],
       "events": [],
       "constructors": [
@@ -1336,6 +1735,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -1352,6 +1752,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude::Test(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):System.Boolean",
@@ -1368,6 +1778,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1387,6 +1798,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1407,6 +1819,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1427,6 +1840,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1447,6 +1861,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1467,6 +1882,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1487,6 +1903,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1506,6 +1923,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1525,6 +1943,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1544,6 +1963,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1560,6 +1980,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedExclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -1576,6 +1997,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged",
+        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRagged"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude::Declare(System.Action_2[[Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
@@ -1592,6 +2023,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1611,6 +2043,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1630,6 +2063,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1650,6 +2084,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1670,6 +2105,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1690,6 +2126,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1710,6 +2147,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPatternContext",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -1730,6 +2168,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1749,6 +2188,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1768,6 +2208,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1787,6 +2228,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -1803,6 +2245,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.FileSystemGlobbing.Internal.IRaggedPattern):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts.PatternContextRaggedInclude",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }

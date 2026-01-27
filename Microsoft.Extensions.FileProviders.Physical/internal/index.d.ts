@@ -16,7 +16,7 @@ import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.
 import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
 import type { DirectoryInfo, FileInfo, FileSystemWatcher, Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { Action, Boolean as ClrBoolean, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export enum ExclusionFilters {
     Sensitive = 7,
@@ -79,7 +79,12 @@ export interface PhysicalFileInfo$instance extends Microsoft_Extensions_FileProv
 export type PhysicalFileInfo = PhysicalFileInfo$instance & __PhysicalFileInfo$views;
 
 
-export interface PhysicalFilesWatcher$instance {
+export abstract class PhysicalFilesWatcher$protected {
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface PhysicalFilesWatcher$instance extends PhysicalFilesWatcher$protected {
     CreateFileChangeToken(filter: string): IChangeToken;
     Dispose(): void;
 }
@@ -94,7 +99,7 @@ export const PhysicalFilesWatcher: {
 export type PhysicalFilesWatcher = PhysicalFilesWatcher$instance;
 
 export interface PollingFileChangeToken$instance {
-    readonly ActiveChangeCallbacks: boolean;
+    ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
@@ -109,13 +114,16 @@ export interface __PollingFileChangeToken$views {
     As_IChangeToken(): Microsoft_Extensions_Primitives_Internal.IChangeToken$instance;
 }
 
-export interface PollingFileChangeToken$instance extends Microsoft_Extensions_Primitives_Internal.IChangeToken$instance {}
-
 export type PollingFileChangeToken = PollingFileChangeToken$instance & __PollingFileChangeToken$views;
 
 
-export interface PollingWildCardChangeToken$instance {
-    readonly ActiveChangeCallbacks: boolean;
+export abstract class PollingWildCardChangeToken$protected {
+    protected GetLastWriteUtc(path: string): DateTime;
+}
+
+
+export interface PollingWildCardChangeToken$instance extends PollingWildCardChangeToken$protected {
+    ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
 }
 
@@ -128,8 +136,6 @@ export const PollingWildCardChangeToken: {
 export interface __PollingWildCardChangeToken$views {
     As_IChangeToken(): Microsoft_Extensions_Primitives_Internal.IChangeToken$instance;
 }
-
-export interface PollingWildCardChangeToken$instance extends Microsoft_Extensions_Primitives_Internal.IChangeToken$instance {}
 
 export type PollingWildCardChangeToken = PollingWildCardChangeToken$instance & __PollingWildCardChangeToken$views;
 

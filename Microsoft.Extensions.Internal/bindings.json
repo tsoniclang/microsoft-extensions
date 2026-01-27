@@ -32,6 +32,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Internal.ISystemClock",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
@@ -51,6 +52,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock",
+          "clrName": "Microsoft.Extensions.Internal.ISystemClock"
+        }
+      ],
       "methods": [],
       "properties": [
         {
@@ -68,6 +79,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Internal.SystemClock",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
@@ -86,6 +98,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Internal.ISystemClock",
           "declaringClrType": "Microsoft.Extensions.Internal.ISystemClock",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
@@ -101,6 +114,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Internal.SystemClock",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }

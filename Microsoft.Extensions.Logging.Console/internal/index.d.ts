@@ -51,7 +51,8 @@ export interface IConsoleLoggerSettings$instance {
 export type IConsoleLoggerSettings = IConsoleLoggerSettings$instance;
 
 export interface ConfigurationConsoleLoggerSettings$instance {
-    readonly ChangeToken: IChangeToken | undefined;
+    get ChangeToken(): IChangeToken | undefined;
+    set ChangeToken(value: IChangeToken);
     readonly IncludeScopes: boolean;
     Reload(): IConsoleLoggerSettings;
     TryGetSwitch(name: string, level: LogLevel): boolean;
@@ -67,8 +68,6 @@ export interface __ConfigurationConsoleLoggerSettings$views {
     As_IConsoleLoggerSettings(): IConsoleLoggerSettings$instance;
 }
 
-export interface ConfigurationConsoleLoggerSettings$instance extends IConsoleLoggerSettings$instance {}
-
 export type ConfigurationConsoleLoggerSettings = ConfigurationConsoleLoggerSettings$instance & __ConfigurationConsoleLoggerSettings$views;
 
 
@@ -79,6 +78,7 @@ export interface ConsoleFormatter$instance {
 
 
 export const ConsoleFormatter: {
+    new(name: string): ConsoleFormatter;
 };
 
 

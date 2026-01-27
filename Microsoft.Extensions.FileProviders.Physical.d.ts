@@ -11,7 +11,7 @@ import type { IChangeToken } from './Microsoft.Extensions.Primitives/internal/in
 import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.js';
 import type { DirectoryInfo, FileInfo, FileSystemWatcher, Stream } from '@tsonic/dotnet/System.IO.js';
-import type { Action, Boolean as ClrBoolean, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
+import type { Action, Boolean as ClrBoolean, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ExclusionFilters as ExclusionFilters } from './Microsoft.Extensions.FileProviders.Physical/internal/index.js';

@@ -52,6 +52,7 @@ export interface BufferedLogRecord$instance {
 
 
 export const BufferedLogRecord: {
+    new(): BufferedLogRecord;
 };
 
 

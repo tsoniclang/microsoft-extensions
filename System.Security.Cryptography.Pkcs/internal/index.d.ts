@@ -176,12 +176,12 @@ export const ContentInfo: {
 export type ContentInfo = ContentInfo$instance;
 
 export interface EnvelopedCms$instance {
-    readonly Certificates: X509Certificate2Collection;
-    readonly ContentEncryptionAlgorithm: AlgorithmIdentifier;
-    readonly ContentInfo: ContentInfo;
+    Certificates: X509Certificate2Collection;
+    ContentEncryptionAlgorithm: AlgorithmIdentifier;
+    ContentInfo: ContentInfo;
     readonly RecipientInfos: RecipientInfoCollection;
-    readonly UnprotectedAttributes: CryptographicAttributeObjectCollection;
-    readonly Version: int;
+    UnprotectedAttributes: CryptographicAttributeObjectCollection;
+    Version: int;
     Decode(encodedMessage: byte[]): void;
     Decode(encodedMessage: ReadOnlySpan<System_Internal.Byte>): void;
     Decrypt(): void;
@@ -275,8 +275,8 @@ export const Pkcs12CertBag: {
 export type Pkcs12CertBag = Pkcs12CertBag$instance;
 
 export interface Pkcs12Info$instance {
-    readonly AuthenticatedSafe: ReadOnlyCollection<Pkcs12SafeContents>;
-    readonly IntegrityMode: Pkcs12IntegrityMode;
+    AuthenticatedSafe: ReadOnlyCollection<Pkcs12SafeContents>;
+    IntegrityMode: Pkcs12IntegrityMode;
     VerifyMac(password: string): boolean;
     VerifyMac(password: ReadOnlySpan<System_Internal.Char>): boolean;
 }
@@ -303,7 +303,7 @@ export const Pkcs12KeyBag: {
 export type Pkcs12KeyBag = Pkcs12KeyBag$instance;
 
 export interface Pkcs12SafeBag$instance {
-    readonly Attributes: CryptographicAttributeObjectCollection;
+    Attributes: CryptographicAttributeObjectCollection;
     readonly EncodedBagValue: ReadOnlyMemory<System_Internal.Byte>;
     Encode(): byte[];
     GetBagId(): Oid;
@@ -312,13 +312,14 @@ export interface Pkcs12SafeBag$instance {
 
 
 export const Pkcs12SafeBag: {
+    new(bagIdValue: string, encodedBagValue: ReadOnlyMemory<System_Internal.Byte>, skipCopy: boolean): Pkcs12SafeBag;
 };
 
 
 export type Pkcs12SafeBag = Pkcs12SafeBag$instance;
 
 export interface Pkcs12SafeContents$instance {
-    readonly ConfidentialityMode: Pkcs12ConfidentialityMode;
+    ConfidentialityMode: Pkcs12ConfidentialityMode;
     readonly IsReadOnly: boolean;
     AddCertificate(certificate: X509Certificate2): Pkcs12CertBag;
     AddKeyUnencrypted(key: AsymmetricAlgorithm): Pkcs12KeyBag;
@@ -345,7 +346,8 @@ export const Pkcs12SafeContents: {
 export type Pkcs12SafeContents = Pkcs12SafeContents$instance;
 
 export interface Pkcs12SafeContentsBag$instance extends Pkcs12SafeBag {
-    readonly SafeContents: Pkcs12SafeContents | undefined;
+    get SafeContents(): Pkcs12SafeContents | undefined;
+    set SafeContents(value: Pkcs12SafeContents);
 }
 
 
@@ -596,7 +598,7 @@ export const Rfc3161TimestampRequest: {
 export type Rfc3161TimestampRequest = Rfc3161TimestampRequest$instance;
 
 export interface Rfc3161TimestampToken$instance {
-    readonly TokenInfo: Rfc3161TimestampTokenInfo;
+    TokenInfo: Rfc3161TimestampTokenInfo;
     AsSignedCms(): SignedCms;
     VerifySignatureForData(data: ReadOnlySpan<System_Internal.Byte>, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
     VerifySignatureForHash(hash: ReadOnlySpan<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
@@ -641,10 +643,10 @@ export type Rfc3161TimestampTokenInfo = Rfc3161TimestampTokenInfo$instance;
 
 export interface SignedCms$instance {
     readonly Certificates: X509Certificate2Collection;
-    readonly ContentInfo: ContentInfo;
-    readonly Detached: boolean;
+    ContentInfo: ContentInfo;
+    Detached: boolean;
     readonly SignerInfos: SignerInfoCollection;
-    readonly Version: int;
+    Version: int;
     AddCertificate(certificate: X509Certificate2): void;
     CheckHash(): void;
     CheckSignature(verifySignatureOnly: boolean): void;

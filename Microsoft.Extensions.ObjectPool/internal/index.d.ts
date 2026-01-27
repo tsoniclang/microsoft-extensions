@@ -105,6 +105,7 @@ export interface ObjectPool_1$instance<T> {
 
 
 export const ObjectPool_1: {
+    new<T>(): ObjectPool_1<T>;
 };
 
 
@@ -117,6 +118,7 @@ export interface ObjectPoolProvider$instance {
 
 
 export const ObjectPoolProvider: {
+    new(): ObjectPoolProvider;
 };
 
 
@@ -129,6 +131,7 @@ export interface PooledObjectPolicy_1$instance<T> {
 
 
 export const PooledObjectPolicy_1: {
+    new<T>(): PooledObjectPolicy_1<T>;
 };
 
 

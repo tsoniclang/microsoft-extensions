@@ -16,6 +16,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "clrName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::TryGet(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
@@ -32,6 +38,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -51,6 +58,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -70,6 +78,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -89,6 +98,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -108,6 +118,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -127,6 +138,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -146,6 +158,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -165,6 +178,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -184,6 +198,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -203,6 +218,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -240,6 +256,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -259,6 +276,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -278,6 +296,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -297,6 +316,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -316,6 +336,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -335,6 +356,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
@@ -356,6 +378,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -373,6 +399,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
@@ -391,6 +418,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         },
@@ -409,6 +437,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
@@ -423,6 +452,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
         }
@@ -439,6 +469,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "clrName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Get(System.String):System.Byte[]",
@@ -455,6 +495,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -474,6 +515,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -493,6 +535,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -512,6 +555,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -531,6 +575,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -550,6 +595,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -569,6 +615,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -588,6 +635,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
@@ -607,6 +655,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -627,6 +676,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -647,6 +697,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -667,6 +718,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -687,6 +739,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -707,6 +760,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
@@ -724,6 +778,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions,Microsoft.Extensions.Caching.Memory,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         },
@@ -734,6 +789,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions,Microsoft.Extensions.Caching.Memory,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
         }
@@ -750,6 +806,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
@@ -766,6 +826,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -785,6 +846,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -804,6 +866,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -825,6 +888,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void",
@@ -841,6 +908,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -860,6 +928,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -879,6 +948,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -898,6 +968,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -917,6 +988,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -936,6 +1008,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -955,6 +1028,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
@@ -974,6 +1048,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true

@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IFileInfo",
+          "clrName": "Microsoft.Extensions.FileProviders.IFileInfo"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileProviders.Embedded:Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo::CreateReadStream():System.IO.Stream",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded",
           "isExtensionMethod": false
@@ -50,6 +61,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions",
           "isExtensionMethod": false,
@@ -72,6 +84,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         },
@@ -90,6 +103,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         },
@@ -108,6 +122,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         },
@@ -126,6 +141,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         },
@@ -144,6 +160,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         },
@@ -162,6 +179,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         },
@@ -180,6 +198,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
@@ -199,6 +218,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
@@ -218,6 +238,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
@@ -237,6 +258,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
@@ -256,6 +278,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
@@ -275,6 +298,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringClrType": "Microsoft.Extensions.FileProviders.IFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Abstractions"
@@ -290,6 +314,7 @@
           "normalizedSignature": "constructor|(System.Reflection.Assembly,System.String,System.String,System.DateTimeOffset):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileProviders.Embedded.EmbeddedResourceFileInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileProviders.Embedded"
         }

@@ -15,6 +15,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment::Match(System.String):System.Boolean",
@@ -31,6 +41,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -50,6 +61,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -72,6 +84,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -90,6 +103,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
@@ -105,6 +119,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.CurrentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -121,6 +136,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment::Match(System.String):System.Boolean",
@@ -137,6 +162,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -156,6 +182,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -175,6 +202,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -194,6 +222,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -216,6 +245,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -234,6 +264,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -252,6 +283,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
@@ -267,6 +299,7 @@
           "normalizedSignature": "constructor|(System.String,System.StringComparison):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.LiteralPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -283,6 +316,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment::Match(System.String):System.Boolean",
@@ -299,6 +342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -318,6 +362,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -340,6 +385,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -358,6 +404,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
@@ -373,6 +420,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.ParentPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -389,6 +437,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment::Match(System.String):System.Boolean",
@@ -405,6 +463,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -424,6 +483,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -446,6 +506,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -464,6 +525,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
@@ -479,6 +541,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.RecursiveWildcardSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -495,6 +558,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
+          "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment::Match(System.String):System.Boolean",
@@ -511,6 +584,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
@@ -530,6 +604,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false,
@@ -552,6 +627,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -570,6 +646,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -588,6 +665,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -606,6 +684,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         },
@@ -624,6 +703,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.IPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
@@ -638,6 +718,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }
@@ -651,6 +732,7 @@
           "normalizedSignature": "constructor|(System.String,System.Collections.Generic.List_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String,System.StringComparison):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments.WildcardPathSegment",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
         }

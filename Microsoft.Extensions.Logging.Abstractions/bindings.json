@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.IBufferedLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -52,6 +53,13 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
+      "typeParameters": [
+        "TState"
+      ],
       "methods": [],
       "properties": [
         {
@@ -69,6 +77,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -87,6 +96,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -105,6 +115,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -123,6 +134,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -141,6 +153,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -159,6 +172,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -173,6 +187,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.LogLevel,System.String,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -189,6 +204,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -206,6 +225,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -224,6 +244,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -242,6 +263,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -260,6 +282,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -278,6 +301,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -296,6 +320,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -314,6 +339,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -332,6 +358,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -350,6 +377,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         },
@@ -368,13 +396,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::.ctor():void",
+          "metadataToken": 100663493,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger",
@@ -387,6 +428,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger",
+          "clrName": "Microsoft.Extensions.Logging.ILogger"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger::BeginScope(TState):System.IDisposable",
@@ -403,6 +454,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -422,6 +474,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -441,6 +494,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -460,6 +514,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -480,6 +535,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -500,6 +556,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -522,6 +579,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -541,6 +599,26 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger\u00601",
+          "clrName": "Microsoft.Extensions.Logging.ILogger\u00601",
+          "typeArguments": [
+            "T"
+          ]
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger",
+          "clrName": "Microsoft.Extensions.Logging.ILogger"
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601::BeginScope(TState):System.IDisposable",
@@ -557,6 +635,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -576,6 +655,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -595,6 +675,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -614,6 +695,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -634,6 +716,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -654,6 +737,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -670,6 +754,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -683,6 +768,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -699,6 +785,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerFactory",
+          "clrName": "Microsoft.Extensions.Logging.ILoggerFactory"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
@@ -715,6 +815,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -734,6 +835,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -753,6 +855,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -772,6 +875,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -792,6 +896,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -808,6 +913,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -821,6 +927,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }
@@ -837,6 +944,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
+          "clrName": "Microsoft.Extensions.Logging.ILoggerProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
@@ -853,6 +974,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -872,6 +994,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
@@ -891,6 +1014,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -913,6 +1037,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
         }

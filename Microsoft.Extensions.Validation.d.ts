@@ -7,7 +7,7 @@ import * as Internal from './Microsoft.Extensions.Validation/internal/index.js';
 
 // Cross-namespace type imports for constraints
 import type { Dictionary, IList, IReadOnlyList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { ValidationContext } from '@tsonic/dotnet/System.ComponentModel.DataAnnotations.js';
+import type { ValidationAttribute, ValidationContext } from '@tsonic/dotnet/System.ComponentModel.DataAnnotations.js';
 import type { Action, Attribute, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, ValueType } from '@tsonic/dotnet/System.js';
 import type { ParameterInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';

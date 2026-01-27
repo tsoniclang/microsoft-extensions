@@ -163,7 +163,12 @@ export interface LoggerExternalScopeProvider$instance extends IExternalScopeProv
 export type LoggerExternalScopeProvider = LoggerExternalScopeProvider$instance & __LoggerExternalScopeProvider$views;
 
 
-export interface LoggerFactory$instance {
+export abstract class LoggerFactory$protected {
+    protected CheckDisposed(): boolean;
+}
+
+
+export interface LoggerFactory$instance extends LoggerFactory$protected {
     AddProvider(provider: ILoggerProvider): void;
     CreateLogger(categoryName: string): ILogger;
     Dispose(): void;
