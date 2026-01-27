@@ -6,7 +6,7 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, Func, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System.js";
 import type { DelegatingHandler, HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
@@ -51,6 +51,8 @@ export interface HttpMessageHandlerBuilder$instance {
 
 
 export const HttpMessageHandlerBuilder: {
+    new(): HttpMessageHandlerBuilder;
+    CreateHandlerPipeline(primaryHandler: HttpMessageHandler, additionalHandlers: IEnumerable<DelegatingHandler>): HttpMessageHandler;
 };
 
 

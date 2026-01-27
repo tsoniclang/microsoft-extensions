@@ -16,6 +16,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -27,6 +49,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -38,6 +61,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -49,6 +73,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -60,6 +85,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -94,6 +120,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
           "isExtensionMethod": false
@@ -131,6 +158,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheckPublisher",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
           "isExtensionMethod": false
@@ -152,6 +180,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult::Healthy(System.String,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
@@ -168,6 +200,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
           "isExtensionMethod": false
@@ -187,6 +220,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
           "isExtensionMethod": false
@@ -206,6 +240,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
           "isExtensionMethod": false
@@ -227,6 +262,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -245,6 +281,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -263,6 +300,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -281,6 +319,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -295,6 +334,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckResult",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -311,6 +351,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -328,6 +372,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -346,6 +391,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -364,6 +410,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -382,6 +429,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -400,6 +448,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -418,6 +467,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -432,6 +482,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -442,6 +493,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.String,System.TimeSpan,System.Exception,System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -458,6 +510,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -475,6 +531,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -489,6 +546,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckContext",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -505,6 +563,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -522,6 +584,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         },
@@ -540,6 +603,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         },
@@ -558,6 +622,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         },
@@ -576,6 +641,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         }
@@ -590,6 +656,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckPublisherOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         }
@@ -606,6 +673,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -623,6 +694,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -641,6 +713,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -659,6 +732,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -677,6 +751,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -695,6 +770,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -713,6 +789,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -731,6 +808,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -745,6 +823,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -755,6 +834,7 @@
           "normalizedSignature": "constructor|(System.String,Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -765,6 +845,7 @@
           "normalizedSignature": "constructor|(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -775,6 +856,7 @@
           "normalizedSignature": "constructor|(System.String,System.Func_2[[System.IServiceProvider,System.ComponentModel,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a],[Microsoft.Extensions.Diagnostics.HealthChecks.IHealthCheck,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Nullable_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckRegistration",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -791,6 +873,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService::CheckHealthAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -807,6 +893,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
           "isExtensionMethod": false
@@ -826,6 +913,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks",
           "isExtensionMethod": false
@@ -834,7 +922,19 @@
       "properties": [],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService::.ctor():void",
+          "metadataToken": 100663363,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
+          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
@@ -847,6 +947,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -864,6 +968,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         }
@@ -878,6 +983,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks"
         }
@@ -894,6 +1000,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -911,6 +1021,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -929,6 +1040,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -947,6 +1059,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }
@@ -961,6 +1074,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.TimeSpan):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         },
@@ -971,6 +1085,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IReadOnlyDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportEntry,Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Diagnostics.HealthChecks.HealthStatus,System.TimeSpan):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthReport",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions"
         }

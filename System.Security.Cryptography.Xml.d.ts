@@ -10,7 +10,7 @@ import type { ArrayList, Hashtable, ICollection, IEnumerable, IEnumerator, IList
 import type { Collection } from '@tsonic/dotnet/System.Collections.ObjectModel.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
 import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Exception, Func, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from '@tsonic/dotnet/System.js';
-import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.js';
+import type { ISerializable, SerializationInfo, StreamingContext } from '@tsonic/dotnet/System.Runtime.Serialization.js';
 import type { AsymmetricAlgorithm, CipherMode, DSA, HashAlgorithm, KeyedHashAlgorithm, PaddingMode, RSA, SymmetricAlgorithm } from '@tsonic/dotnet/System.Security.Cryptography.js';
 import type { X509Certificate, X509Certificate2, X509IncludeOption } from '@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js';
 import type { Evidence } from '@tsonic/dotnet/System.Security.Policy.js';

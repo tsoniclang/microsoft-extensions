@@ -64,7 +64,12 @@ export const EventInstance: {
 
 export type EventInstance = EventInstance$instance;
 
-export interface EventLog$instance extends Component {
+export abstract class EventLog$protected {
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface EventLog$instance extends EventLog$protected, Component {
     EnableRaisingEvents: boolean;
     readonly Entries: EventLogEntryCollection;
     Log: string;
@@ -164,7 +169,12 @@ export const EventLogEntryCollection: {
 
 export type EventLogEntryCollection = EventLogEntryCollection$instance;
 
-export interface EventLogTraceListener$instance extends TraceListener {
+export abstract class EventLogTraceListener$protected {
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface EventLogTraceListener$instance extends EventLogTraceListener$protected, TraceListener {
     EventLog: EventLog;
     Name: string;
     Close(): void;

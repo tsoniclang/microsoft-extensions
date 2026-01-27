@@ -122,7 +122,12 @@ export interface IHostLifetime$instance {
 
 export type IHostLifetime = IHostLifetime$instance;
 
-export interface BackgroundService$instance {
+export abstract class BackgroundService$protected {
+    protected abstract ExecuteAsync(stoppingToken: CancellationToken): Task;
+}
+
+
+export interface BackgroundService$instance extends BackgroundService$protected {
     readonly ExecuteTask: Task | undefined;
     Dispose(): void;
     StartAsync(cancellationToken: CancellationToken): Task;
@@ -131,6 +136,7 @@ export interface BackgroundService$instance {
 
 
 export const BackgroundService: {
+    new(): BackgroundService;
 };
 
 

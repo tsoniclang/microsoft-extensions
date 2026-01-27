@@ -41,6 +41,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -60,6 +61,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -79,6 +81,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -100,6 +103,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -135,6 +139,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -154,6 +159,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -175,6 +181,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -193,6 +200,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -212,6 +220,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Microsoft.Extensions.Configuration.IConfiguration"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationBuilder",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration::GetSection(System.String):Microsoft.Extensions.Configuration.IConfigurationSection",
@@ -228,6 +246,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -247,6 +266,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -266,6 +286,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -285,6 +306,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -304,6 +326,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -325,6 +348,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -343,6 +367,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -361,6 +386,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -396,6 +422,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -421,6 +448,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -440,6 +468,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -459,6 +488,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -478,6 +508,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -499,6 +530,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Microsoft.Extensions.Configuration.IConfiguration"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationRoot::Reload():System.Void",
@@ -515,6 +552,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -534,6 +572,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -553,6 +592,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -572,6 +612,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -593,6 +634,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -611,6 +653,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -630,6 +673,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Microsoft.Extensions.Configuration.IConfiguration"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration::GetSection(System.String):Microsoft.Extensions.Configuration.IConfigurationSection",
@@ -646,6 +695,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -665,6 +715,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -684,6 +735,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -705,6 +757,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -723,6 +776,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -741,6 +795,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -759,6 +814,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -794,6 +850,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -815,6 +872,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.ValueType",
+        "clrName": "System.ValueType"
+      },
       "methods": [],
       "properties": [
         {
@@ -832,6 +893,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationDebugViewContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -850,6 +912,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationDebugViewContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -868,6 +931,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationDebugViewContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         },
@@ -886,6 +950,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationDebugViewContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -900,6 +965,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,Microsoft.Extensions.Configuration.IConfigurationProvider):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationDebugViewContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -916,6 +982,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -933,6 +1003,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.BinderOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder"
         },
@@ -951,6 +1022,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.BinderOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder"
         }
@@ -965,6 +1037,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.BinderOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder"
         }
@@ -981,6 +1054,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
@@ -997,6 +1084,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false,
@@ -1022,6 +1110,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1041,6 +1130,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1060,6 +1150,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1079,6 +1170,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1098,6 +1190,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1117,6 +1210,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1143,6 +1237,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1163,6 +1258,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1183,6 +1279,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1203,6 +1300,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1225,6 +1323,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1239,6 +1338,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.ChainedConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1255,6 +1355,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -1271,6 +1381,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1290,6 +1401,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1312,6 +1424,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -1330,6 +1443,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1344,6 +1458,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1360,6 +1475,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationBuilder",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationBuilder::Add(Microsoft.Extensions.Configuration.IConfigurationSource):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -1376,6 +1501,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1395,6 +1521,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1414,6 +1541,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1434,6 +1562,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1456,6 +1585,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -1474,6 +1604,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -1492,6 +1623,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -1511,6 +1643,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -1526,6 +1659,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1542,6 +1676,19 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IComparer\u00601",
+          "clrName": "System.Collections.Generic.IComparer\u00601",
+          "typeArguments": [
+            "String"
+          ]
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationKeyComparer::Compare(System.String,System.String):System.Int32",
@@ -1558,6 +1705,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationKeyComparer",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1579,6 +1727,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationKeyComparer",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1593,6 +1742,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationKeyComparer",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1609,6 +1759,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -1626,6 +1780,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationKeyNameAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -1640,6 +1795,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationKeyNameAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -1656,6 +1812,32 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationManager",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationManager"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Microsoft.Extensions.Configuration.IConfiguration"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationBuilder",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationBuilder"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationRoot",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationRoot"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationManager::GetSection(System.String):Microsoft.Extensions.Configuration.IConfigurationSection",
@@ -1672,6 +1854,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationManager",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1691,6 +1874,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationManager",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1710,6 +1894,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationManager",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -1729,6 +1914,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1749,6 +1935,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1769,6 +1956,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1789,6 +1977,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1809,6 +1998,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1829,6 +2019,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -1851,6 +2042,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationManager",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -1869,6 +2061,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationManager",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -1887,6 +2080,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -1906,6 +2100,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -1925,6 +2120,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -1940,6 +2136,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationManager",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -1956,6 +2153,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
@@ -1972,6 +2179,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false,
@@ -1997,6 +2205,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2016,6 +2225,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2035,6 +2245,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2054,6 +2265,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::OnReload():System.Void",
+          "clrName": "OnReload",
+          "metadataToken": 100663376,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "OnReload|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2073,6 +2305,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2092,6 +2325,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2118,6 +2352,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2138,6 +2373,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2158,6 +2394,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2178,16 +2415,49 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         }
       ],
-      "properties": [],
+      "properties": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::Data:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "clrName": "Data",
+          "metadataToken": 385875986,
+          "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+          "normalizedSignature": "Data|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "isIndexer": false,
+          "hasGetter": true,
+          "hasSetter": true,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration"
+        }
+      ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::.ctor():void",
+          "metadataToken": 100663367,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationReloadToken",
@@ -2200,6 +2470,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken",
+          "clrName": "Microsoft.Extensions.Primitives.IChangeToken"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationReloadToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
@@ -2216,6 +2496,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationReloadToken",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2235,6 +2516,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationReloadToken",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2254,6 +2536,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false,
@@ -2266,16 +2549,17 @@
           "clrName": "ActiveChangeCallbacks",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
+          "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=getset",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "isIndexer": false,
           "hasGetter": true,
-          "hasSetter": false,
+          "hasSetter": true,
           "isStatic": false,
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationReloadToken",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2294,6 +2578,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationReloadToken",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2312,6 +2597,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives"
@@ -2331,6 +2617,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives"
@@ -2346,6 +2633,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationReloadToken",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -2362,6 +2650,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationRoot",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationRoot"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Microsoft.Extensions.Configuration.IConfiguration"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationRoot::GetChildren():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Configuration.IConfigurationSection,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -2378,6 +2684,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2397,6 +2704,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2416,6 +2724,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2435,6 +2744,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2454,6 +2764,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2473,6 +2784,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2493,6 +2805,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2513,6 +2826,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2533,6 +2847,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2555,6 +2870,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2573,6 +2889,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2591,6 +2908,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -2606,6 +2924,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IList_1[[Microsoft.Extensions.Configuration.IConfigurationProvider,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRoot",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -2622,6 +2941,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSection",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSection"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfiguration",
+          "clrName": "Microsoft.Extensions.Configuration.IConfiguration"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationSection::TryGetValue(System.String,System.String\u0026):System.Boolean",
@@ -2638,6 +2971,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false,
@@ -2663,6 +2997,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2682,6 +3017,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2701,6 +3037,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -2720,6 +3057,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2740,6 +3078,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2760,6 +3099,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfiguration",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -2782,6 +3122,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2800,6 +3141,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2818,6 +3160,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2836,6 +3179,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         },
@@ -2854,6 +3198,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -2873,6 +3218,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -2892,6 +3238,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
@@ -2907,6 +3254,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.IConfigurationRoot,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationSection",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -2923,6 +3271,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider::ToString():System.String",
@@ -2939,6 +3301,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -2958,6 +3321,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -2977,6 +3341,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -2996,6 +3361,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3015,6 +3401,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3041,6 +3428,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3061,6 +3449,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3081,6 +3470,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3101,6 +3491,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3121,6 +3512,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3140,6 +3532,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3159,6 +3552,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3178,6 +3572,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false,
@@ -3205,6 +3600,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         }
@@ -3219,6 +3615,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.FileConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         }
@@ -3235,6 +3632,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -3251,6 +3658,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3270,6 +3678,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3289,6 +3698,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": false
@@ -3308,6 +3718,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3330,6 +3741,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3348,6 +3760,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3366,6 +3779,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3384,6 +3798,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3402,6 +3817,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3420,13 +3836,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationSource::.ctor():void",
+          "metadataToken": 100663346,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileLoadExceptionContext",
@@ -3439,6 +3868,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -3456,6 +3889,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileLoadExceptionContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3474,6 +3908,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileLoadExceptionContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         },
@@ -3492,6 +3927,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileLoadExceptionContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         }
@@ -3506,6 +3942,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileLoadExceptionContext",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions"
         }
@@ -3522,6 +3959,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationProvider::Load(System.IO.Stream):System.Void",
@@ -3538,6 +3985,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -3557,6 +4005,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -3576,6 +4025,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3602,6 +4052,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3622,6 +4073,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3642,6 +4094,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3662,6 +4115,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3682,6 +4136,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -3701,6 +4156,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -3720,6 +4176,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -3739,6 +4196,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false,
@@ -3766,6 +4224,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -3780,6 +4239,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.StreamConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
@@ -3796,6 +4256,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -3812,6 +4282,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
@@ -3831,6 +4302,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -3853,13 +4325,26 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationSource::.ctor():void",
+          "metadataToken": 100663443,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Configuration.StreamConfigurationSource",
+          "declaringAssemblyName": "Microsoft.Extensions.Configuration"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedBuilderExtensions",
@@ -3872,6 +4357,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedBuilderExtensions::AddConfiguration(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -3888,6 +4377,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": true
@@ -3907,6 +4397,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ChainedBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": true
@@ -3928,6 +4419,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.CommandLine:Microsoft.Extensions.Configuration.CommandLineConfigurationExtensions::AddCommandLine(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String[]):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -3944,6 +4439,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.CommandLineConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.CommandLine",
           "isExtensionMethod": true
@@ -3963,6 +4459,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.CommandLineConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.CommandLine",
           "isExtensionMethod": true
@@ -3982,6 +4479,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.CommandLineConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.CommandLine",
           "isExtensionMethod": true
@@ -4003,6 +4501,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Binder:Microsoft.Extensions.Configuration.ConfigurationBinder::Get(Microsoft.Extensions.Configuration.IConfiguration):T",
@@ -4019,6 +4521,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4038,6 +4541,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4057,6 +4561,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4076,6 +4581,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4095,6 +4601,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4114,6 +4621,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4133,6 +4641,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4152,6 +4661,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4171,6 +4681,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4190,6 +4701,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4209,6 +4721,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationBinder",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Binder",
           "isExtensionMethod": true
@@ -4230,6 +4743,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.ConfigurationExtensions::Add(Microsoft.Extensions.Configuration.IConfigurationBuilder,Action_1):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -4246,6 +4763,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4265,6 +4783,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4284,6 +4803,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4303,6 +4823,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4322,6 +4843,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4341,6 +4863,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4362,6 +4885,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.ConfigurationPath::Combine(System.String[]):System.String",
@@ -4378,6 +4905,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationPath",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -4397,6 +4925,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationPath",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -4416,6 +4945,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationPath",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -4435,6 +4965,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationPath",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false
@@ -4450,6 +4981,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationPath",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions"
         }
@@ -4468,6 +5000,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.ConfigurationRootExtensions::GetDebugView(Microsoft.Extensions.Configuration.IConfigurationRoot):System.String",
@@ -4484,6 +5020,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRootExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4503,6 +5040,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.ConfigurationRootExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": true
@@ -4524,6 +5062,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions::AddEnvironmentVariables(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -4540,6 +5082,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.EnvironmentVariables",
           "isExtensionMethod": true
@@ -4559,6 +5102,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.EnvironmentVariables",
           "isExtensionMethod": true
@@ -4578,6 +5122,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.EnvironmentVariablesExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.EnvironmentVariables",
           "isExtensionMethod": true
@@ -4599,6 +5144,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationExtensions::SetFileProvider(Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.FileProviders.IFileProvider):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -4615,6 +5164,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": true
@@ -4634,6 +5184,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": true
@@ -4653,6 +5204,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": true
@@ -4672,6 +5224,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": true
@@ -4691,6 +5244,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.FileConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.FileExtensions",
           "isExtensionMethod": true
@@ -4712,6 +5266,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Ini:Microsoft.Extensions.Configuration.IniConfigurationExtensions::AddIniFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -4728,6 +5286,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IniConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Ini",
           "isExtensionMethod": true
@@ -4747,6 +5306,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IniConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Ini",
           "isExtensionMethod": true
@@ -4766,6 +5326,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IniConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Ini",
           "isExtensionMethod": true
@@ -4785,6 +5346,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IniConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Ini",
           "isExtensionMethod": true
@@ -4804,6 +5366,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IniConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Ini",
           "isExtensionMethod": true
@@ -4823,6 +5386,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IniConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Ini",
           "isExtensionMethod": true
@@ -4844,6 +5408,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.JsonConfigurationExtensions::AddJsonFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -4860,6 +5428,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.JsonConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": true
@@ -4879,6 +5448,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.JsonConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": true
@@ -4898,6 +5468,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.JsonConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": true
@@ -4917,6 +5488,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.JsonConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": true
@@ -4936,6 +5508,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.JsonConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": true
@@ -4955,6 +5528,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.JsonConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": true
@@ -4976,6 +5550,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.KeyPerFile:Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions::AddKeyPerFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -4992,6 +5570,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": true
@@ -5011,6 +5590,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": true
@@ -5030,6 +5610,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": true
@@ -5049,6 +5630,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFileConfigurationBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": true
@@ -5070,6 +5652,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions::AddInMemoryCollection(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -5086,6 +5672,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": true
@@ -5105,6 +5692,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.MemoryConfigurationBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": true
@@ -5126,6 +5714,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.UserSecrets:Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions::AddUserSecrets(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -5142,6 +5734,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5161,6 +5754,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5180,6 +5774,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5199,6 +5794,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5218,6 +5814,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5237,6 +5834,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5256,6 +5854,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5275,6 +5874,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.UserSecretsConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.UserSecrets",
           "isExtensionMethod": true
@@ -5296,6 +5896,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.XmlConfigurationExtensions::AddXmlFile(Microsoft.Extensions.Configuration.IConfigurationBuilder,System.String):Microsoft.Extensions.Configuration.IConfigurationBuilder",
@@ -5312,6 +5916,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.XmlConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": true
@@ -5331,6 +5936,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.XmlConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": true
@@ -5350,6 +5956,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.XmlConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": true
@@ -5369,6 +5976,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.XmlConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": true
@@ -5388,6 +5996,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.XmlConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": true
@@ -5407,6 +6016,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.XmlConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Xml",
           "isExtensionMethod": true

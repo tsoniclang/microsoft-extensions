@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.DependencyInjection.Abstractions:Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions::Add(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.ServiceDescriptor):Microsoft.Extensions.DependencyInjection.IServiceCollection",
@@ -31,6 +35,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -50,6 +55,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -69,6 +75,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -88,6 +95,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -107,6 +115,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -126,6 +135,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -145,6 +155,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -164,6 +175,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -183,6 +195,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -202,6 +215,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -221,6 +235,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -240,6 +255,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -259,6 +275,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -278,6 +295,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -297,6 +315,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -316,6 +335,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -335,6 +355,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -354,6 +375,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -373,6 +395,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -392,6 +415,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -411,6 +435,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -430,6 +455,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -449,6 +475,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -468,6 +495,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -487,6 +515,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -506,6 +535,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -525,6 +555,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -544,6 +575,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -563,6 +595,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -582,6 +615,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -601,6 +635,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -620,6 +655,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -639,6 +675,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -658,6 +695,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -677,6 +715,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -696,6 +735,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -715,6 +755,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -734,6 +775,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -753,6 +795,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -772,6 +815,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -791,6 +835,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -810,6 +855,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true
@@ -829,6 +875,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.DependencyInjection.Extensions.ServiceCollectionDescriptorExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.DependencyInjection.Abstractions",
           "isExtensionMethod": true

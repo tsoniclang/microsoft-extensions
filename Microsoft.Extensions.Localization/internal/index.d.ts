@@ -9,9 +9,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ILogger, ILoggerFactory } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
+import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type } from "@tsonic/dotnet/System.js";
-import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
+import type { Assembly, TypeInfo } from "@tsonic/dotnet/System.Reflection.js";
 import type { ResourceManager } from "@tsonic/dotnet/System.Resources.js";
 
 export interface IResourceNamesCache$instance {
@@ -108,12 +109,21 @@ export interface __ResourceManagerStringLocalizer$views {
     As_IStringLocalizer(): IStringLocalizer$instance;
 }
 
-export interface ResourceManagerStringLocalizer$instance extends IStringLocalizer$instance {}
-
 export type ResourceManagerStringLocalizer = ResourceManagerStringLocalizer$instance & __ResourceManagerStringLocalizer$views;
 
 
-export interface ResourceManagerStringLocalizerFactory$instance {
+export abstract class ResourceManagerStringLocalizerFactory$protected {
+    protected CreateResourceManagerStringLocalizer(assembly: Assembly, baseName: string): ResourceManagerStringLocalizer;
+    protected GetResourceLocationAttribute(assembly: Assembly): ResourceLocationAttribute | undefined;
+    protected GetResourcePrefix(typeInfo: TypeInfo): string;
+    protected GetResourcePrefix(baseResourceName: string, baseNamespace: string): string;
+    protected GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string, resourcesRelativePath: string): string;
+    protected GetResourcePrefix(location: string, baseName: string, resourceLocation: string): string;
+    protected GetRootNamespaceAttribute(assembly: Assembly): RootNamespaceAttribute | undefined;
+}
+
+
+export interface ResourceManagerStringLocalizerFactory$instance extends ResourceManagerStringLocalizerFactory$protected {
     Create(resourceSource: Type): IStringLocalizer;
     Create(baseName: string, location: string): IStringLocalizer;
 }

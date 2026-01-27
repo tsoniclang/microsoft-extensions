@@ -15,6 +15,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.KeyPerFile:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider::Load():System.Void",
@@ -31,6 +45,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -50,6 +65,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -69,6 +85,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -88,6 +105,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -114,6 +132,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -134,6 +153,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -154,6 +174,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -174,6 +195,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -194,6 +216,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -213,6 +236,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -232,6 +256,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -251,6 +276,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false,
@@ -273,6 +299,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         }
@@ -289,6 +316,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.KeyPerFile:Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -305,6 +342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile",
           "isExtensionMethod": false
@@ -324,6 +362,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -346,6 +385,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         },
@@ -364,6 +404,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         },
@@ -382,6 +423,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         },
@@ -400,6 +442,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         },
@@ -418,6 +461,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         },
@@ -436,6 +480,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         },
@@ -454,6 +499,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         }
@@ -468,6 +514,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.KeyPerFile.KeyPerFileConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.KeyPerFile"
         }

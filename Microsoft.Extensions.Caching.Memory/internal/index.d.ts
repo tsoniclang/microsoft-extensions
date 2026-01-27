@@ -68,7 +68,13 @@ export interface IMemoryCache$instance extends IDisposable {
 
 export type IMemoryCache = IMemoryCache$instance;
 
-export interface MemoryCache$instance {
+export abstract class MemoryCache$protected {
+    protected Dispose(disposing: boolean): void;
+    protected Finalize(): void;
+}
+
+
+export interface MemoryCache$instance extends MemoryCache$protected {
     readonly Count: int;
     readonly Keys: IEnumerable<unknown>;
     Clear(): void;

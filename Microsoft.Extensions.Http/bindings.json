@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.IHttpMessageHandlerBuilderFilter",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -52,6 +53,9 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "typeParameters": [
+        "TClient"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601::CreateClient(System.Net.Http.HttpClient):TClient",
@@ -68,6 +72,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.ITypedHttpClientFactory\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -89,6 +94,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -106,6 +115,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -124,6 +134,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -142,6 +153,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -160,6 +172,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -178,6 +191,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         }
@@ -192,6 +206,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpClientFactoryOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         }
@@ -208,6 +223,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::Build():System.Net.Http.HttpMessageHandler",
@@ -224,6 +243,27 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::CreateHandlerPipeline(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):System.Net.Http.HttpMessageHandler",
+          "clrName": "CreateHandlerPipeline",
+          "metadataToken": 100663506,
+          "canonicalSignature": "(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):System.Net.Http.HttpMessageHandler",
+          "normalizedSignature": "CreateHandlerPipeline|(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):System.Net.Http.HttpMessageHandler|static=true",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": true,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "ProtectedInternal",
           "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -245,6 +285,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -263,6 +304,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -281,6 +323,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -299,13 +342,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::.ctor():void",
+          "metadataToken": 100663507,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
+          "declaringAssemblyName": "Microsoft.Extensions.Http"
+        }
+      ]
     }
   ]
 }

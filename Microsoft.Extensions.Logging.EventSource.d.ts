@@ -7,7 +7,7 @@ import * as Internal from './Microsoft.Extensions.Logging.EventSource/internal/i
 
 // Cross-namespace type imports for constraints
 import type { ILogger, ILoggerProvider } from './Microsoft.Extensions.Logging/internal/index.js';
-import type { EventKeywords, EventSource } from '@tsonic/dotnet/System.Diagnostics.Tracing.js';
+import type { EventCommandEventArgs, EventKeywords, EventSource } from '@tsonic/dotnet/System.Diagnostics.Tracing.js';
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

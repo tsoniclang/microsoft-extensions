@@ -15,6 +15,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.FileConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::Load(System.IO.Stream):System.Void",
@@ -31,6 +45,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -50,6 +65,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -76,6 +92,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -96,6 +113,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -116,6 +134,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -136,6 +155,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -156,6 +176,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -175,6 +196,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -194,6 +216,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -213,6 +236,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -232,6 +256,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false,
@@ -254,6 +279,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.Json.JsonConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }
@@ -270,6 +296,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationSource",
+        "clrName": "Microsoft.Extensions.Configuration.FileConfigurationSource"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -286,6 +322,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -305,6 +342,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -322,6 +360,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }
@@ -338,6 +377,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationProvider",
+        "clrName": "Microsoft.Extensions.Configuration.StreamConfigurationProvider"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::Load(System.IO.Stream):System.Void",
@@ -354,6 +403,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -373,6 +423,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -399,6 +450,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -419,6 +471,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -439,6 +492,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -459,6 +513,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -479,6 +534,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -498,6 +554,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -517,6 +574,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -536,6 +594,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -555,6 +614,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false,
@@ -577,6 +637,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }
@@ -593,6 +654,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationSource",
+        "clrName": "Microsoft.Extensions.Configuration.StreamConfigurationSource"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
@@ -609,6 +680,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
@@ -628,6 +700,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
@@ -645,6 +718,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
           "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
         }

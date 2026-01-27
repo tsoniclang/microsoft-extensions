@@ -268,6 +268,7 @@ export interface ConfigurationProvider$instance {
 
 
 export const ConfigurationProvider: {
+    new(): ConfigurationProvider;
 };
 
 
@@ -281,7 +282,7 @@ export type ConfigurationProvider = ConfigurationProvider$instance & __Configura
 
 
 export interface ConfigurationReloadToken$instance {
-    readonly ActiveChangeCallbacks: boolean;
+    ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     OnReload(): void;
     RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
@@ -296,8 +297,6 @@ export const ConfigurationReloadToken: {
 export interface __ConfigurationReloadToken$views {
     As_IChangeToken(): Microsoft_Extensions_Primitives_Internal.IChangeToken$instance;
 }
-
-export interface ConfigurationReloadToken$instance extends Microsoft_Extensions_Primitives_Internal.IChangeToken$instance {}
 
 export type ConfigurationReloadToken = ConfigurationReloadToken$instance & __ConfigurationReloadToken$views;
 
@@ -353,7 +352,12 @@ export interface __ConfigurationSection$views {
 export type ConfigurationSection = ConfigurationSection$instance & __ConfigurationSection$views;
 
 
-export interface FileConfigurationProvider$instance extends ConfigurationProvider$instance {
+export abstract class FileConfigurationProvider$protected {
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface FileConfigurationProvider$instance extends FileConfigurationProvider$protected, ConfigurationProvider$instance {
     readonly Source: FileConfigurationSource;
     Dispose(): void;
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
@@ -393,6 +397,7 @@ export interface FileConfigurationSource$instance {
 
 
 export const FileConfigurationSource: {
+    new(): FileConfigurationSource;
 };
 
 
@@ -449,6 +454,7 @@ export interface StreamConfigurationSource$instance {
 
 
 export const StreamConfigurationSource: {
+    new(): StreamConfigurationSource;
 };
 
 

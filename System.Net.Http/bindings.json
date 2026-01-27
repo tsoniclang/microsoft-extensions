@@ -32,6 +32,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Net.Http.IHttpClientFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -69,6 +70,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Net.Http.IHttpMessageHandlerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -90,6 +92,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions::CreateClient(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
@@ -106,6 +112,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Net.Http.HttpClientFactoryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": true
@@ -127,6 +134,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions::CreateHandler(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
@@ -143,6 +154,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": true

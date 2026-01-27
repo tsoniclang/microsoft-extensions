@@ -9,7 +9,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { ILogger, ILoggerProvider } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import * as System_Diagnostics_Tracing_Internal from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
-import type { EventKeywords, EventSource } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
+import type { EventCommandEventArgs, EventKeywords, EventSource } from "@tsonic/dotnet/System.Diagnostics.Tracing.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
@@ -33,7 +33,12 @@ export interface EventSourceLoggerProvider$instance extends Microsoft_Extensions
 export type EventSourceLoggerProvider = EventSourceLoggerProvider$instance & __EventSourceLoggerProvider$views;
 
 
-export interface LoggingEventSource$instance extends EventSource {
+export abstract class LoggingEventSource$protected {
+    protected OnEventCommand(command: EventCommandEventArgs): void;
+}
+
+
+export interface LoggingEventSource$instance extends LoggingEventSource$protected, EventSource {
 }
 
 

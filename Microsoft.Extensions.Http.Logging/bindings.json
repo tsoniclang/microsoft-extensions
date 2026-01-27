@@ -15,6 +15,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.Logging.IHttpClientLogger",
+          "clrName": "Microsoft.Extensions.Http.Logging.IHttpClientLogger"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger::LogRequestStartAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -31,6 +37,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -50,6 +57,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -69,6 +77,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientAsyncLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -88,6 +97,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -107,6 +117,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -126,6 +137,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -163,6 +175,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -182,6 +195,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -201,6 +215,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.IHttpClientLogger",
           "declaringAssemblyName": "Microsoft.Extensions.Http",
           "isExtensionMethod": false
@@ -222,7 +237,58 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
+      "baseType": {
+        "stableId": "System.Net.Http:System.Net.Http.DelegatingHandler",
+        "clrName": "System.Net.Http.DelegatingHandler"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler::SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Net.Http.HttpResponseMessage,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "SendAsync",
+          "metadataToken": 100663539,
+          "canonicalSignature": "(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Net.Http.HttpResponseMessage,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "SendAsync|(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Net.Http.HttpResponseMessage,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler::Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Net.Http.HttpResponseMessage",
+          "clrName": "Send",
+          "metadataToken": 100663540,
+          "canonicalSignature": "(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Net.Http.HttpResponseMessage",
+          "normalizedSignature": "Send|(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Net.Http.HttpResponseMessage|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
       "properties": [],
       "fields": [],
       "events": [],
@@ -234,6 +300,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILogger):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -244,6 +311,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Http.HttpClientFactoryOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingHttpMessageHandler",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         }
@@ -260,7 +328,58 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
-      "methods": [],
+      "baseType": {
+        "stableId": "System.Net.Http:System.Net.Http.DelegatingHandler",
+        "clrName": "System.Net.Http.DelegatingHandler"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
+      "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler::SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Net.Http.HttpResponseMessage,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "clrName": "SendAsync",
+          "metadataToken": 100663547,
+          "canonicalSignature": "(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Net.Http.HttpResponseMessage,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]",
+          "normalizedSignature": "SendAsync|(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Net.Http.HttpResponseMessage,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler::Send(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Net.Http.HttpResponseMessage",
+          "clrName": "Send",
+          "metadataToken": 100663548,
+          "canonicalSignature": "(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Net.Http.HttpResponseMessage",
+          "normalizedSignature": "Send|(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken):System.Net.Http.HttpResponseMessage|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler",
+          "declaringAssemblyName": "Microsoft.Extensions.Http",
+          "isExtensionMethod": false
+        }
+      ],
       "properties": [],
       "fields": [],
       "events": [],
@@ -272,6 +391,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILogger):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         },
@@ -282,6 +402,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.ILogger,Microsoft.Extensions.Http.HttpClientFactoryOptions):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Http.Logging.LoggingScopeHttpMessageHandler",
           "declaringAssemblyName": "Microsoft.Extensions.Http"
         }

@@ -16,6 +16,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -27,6 +49,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -38,6 +61,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -49,6 +73,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -60,6 +85,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -95,6 +121,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -130,6 +157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
@@ -149,6 +177,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false,
@@ -174,6 +203,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
@@ -193,6 +223,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
@@ -214,6 +245,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -249,6 +281,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
@@ -270,6 +303,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -287,6 +324,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -305,6 +343,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -323,6 +362,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -341,6 +381,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -359,6 +400,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -373,6 +415,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -389,6 +432,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -406,6 +453,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -424,6 +472,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -442,6 +491,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -460,6 +510,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -478,6 +529,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -496,6 +548,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
@@ -514,6 +567,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -528,6 +582,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -544,6 +599,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -561,6 +620,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -575,6 +635,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
@@ -591,6 +652,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -608,6 +673,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics"
         }
@@ -627,6 +693,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions::AddConfiguration(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
@@ -643,6 +713,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": true
@@ -664,6 +735,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions::AddDebugConsole(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
@@ -680,6 +755,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": true
@@ -701,6 +777,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::AddListener(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
@@ -717,6 +797,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -736,6 +817,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -755,6 +837,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -774,6 +857,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -793,6 +877,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -812,6 +897,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -831,6 +917,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -850,6 +937,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -869,6 +957,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -888,6 +977,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
@@ -907,6 +997,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true

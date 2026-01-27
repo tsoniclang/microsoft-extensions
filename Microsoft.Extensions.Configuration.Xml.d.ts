@@ -12,7 +12,7 @@ import type { IChangeToken } from './Microsoft.Extensions.Primitives/internal/in
 import type { IDictionary, IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Stream } from '@tsonic/dotnet/System.IO.js';
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from '@tsonic/dotnet/System.js';
-import type { XmlReader, XmlReaderSettings } from '@tsonic/dotnet/System.Xml.js';
+import type { XmlDocument, XmlReader, XmlReaderSettings } from '@tsonic/dotnet/System.Xml.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { XmlConfigurationProvider as XmlConfigurationProvider } from './Microsoft.Extensions.Configuration.Xml/internal/index.js';

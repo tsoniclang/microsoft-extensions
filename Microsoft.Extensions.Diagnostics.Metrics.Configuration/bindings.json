@@ -31,6 +31,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": false

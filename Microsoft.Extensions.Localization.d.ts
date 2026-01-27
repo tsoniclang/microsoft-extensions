@@ -9,8 +9,9 @@ import * as Internal from './Microsoft.Extensions.Localization/internal/index.js
 import type { ILogger, ILoggerFactory } from './Microsoft.Extensions.Logging/internal/index.js';
 import type { IOptions_1 } from './Microsoft.Extensions.Options/internal/index.js';
 import type { IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
+import type { CultureInfo } from '@tsonic/dotnet/System.Globalization.js';
 import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type } from '@tsonic/dotnet/System.js';
-import type { Assembly } from '@tsonic/dotnet/System.Reflection.js';
+import type { Assembly, TypeInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { ResourceManager } from '@tsonic/dotnet/System.Resources.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)

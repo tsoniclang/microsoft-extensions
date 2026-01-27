@@ -15,6 +15,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
+          "clrName": "Microsoft.Extensions.Logging.ILoggerProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ISupportExternalScope",
+          "clrName": "Microsoft.Extensions.Logging.ISupportExternalScope"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.EventLog:Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
@@ -31,6 +49,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog",
           "isExtensionMethod": false
@@ -50,6 +69,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog",
           "isExtensionMethod": false
@@ -69,6 +89,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog",
           "isExtensionMethod": false
@@ -88,6 +109,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -108,6 +130,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ISupportExternalScope",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -125,6 +148,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         },
@@ -135,6 +159,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.EventLog.EventLogSettings):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         },
@@ -145,6 +170,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Logging.EventLog.EventLogSettings,Microsoft.Extensions.Logging.EventLog,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         }
@@ -161,6 +187,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -178,6 +208,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         },
@@ -196,6 +227,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         },
@@ -214,6 +246,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         },
@@ -232,6 +265,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         }
@@ -246,6 +280,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.EventLog.EventLogSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.EventLog"
         }

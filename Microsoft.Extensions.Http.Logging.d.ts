@@ -11,7 +11,7 @@ import type { ILogger } from './Microsoft.Extensions.Logging/internal/index.js';
 import type { Exception, IDisposable, Object as ClrObject, TimeSpan, Void } from '@tsonic/dotnet/System.js';
 import type { DelegatingHandler, HttpRequestMessage, HttpResponseMessage } from '@tsonic/dotnet/System.Net.Http.js';
 import type { CancellationToken } from '@tsonic/dotnet/System.Threading.js';
-import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
+import type { Task, ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export type IHttpClientAsyncLogger = Internal.IHttpClientAsyncLogger;

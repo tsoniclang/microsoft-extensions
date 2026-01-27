@@ -108,7 +108,7 @@ export const StringTokenizer: {
 export type StringTokenizer = StringTokenizer$instance;
 
 export interface StringTokenizer_Enumerator$instance {
-    readonly Current: StringSegment;
+    Current: StringSegment;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -170,7 +170,7 @@ export const StringValues_Enumerator: {
 export type StringValues_Enumerator = StringValues_Enumerator$instance;
 
 export interface CancellationChangeToken$instance {
-    readonly ActiveChangeCallbacks: boolean;
+    ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
 }
@@ -184,8 +184,6 @@ export const CancellationChangeToken: {
 export interface __CancellationChangeToken$views {
     As_IChangeToken(): IChangeToken$instance;
 }
-
-export interface CancellationChangeToken$instance extends IChangeToken$instance {}
 
 export type CancellationChangeToken = CancellationChangeToken$instance & __CancellationChangeToken$views;
 

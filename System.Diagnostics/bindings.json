@@ -21,6 +21,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -32,6 +54,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryType",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -43,6 +66,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryType",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -54,6 +78,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryType",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -65,6 +90,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryType",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -76,6 +102,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryType",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -87,6 +114,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryType",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -105,6 +133,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -116,6 +166,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.OverflowAction",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -127,6 +178,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.OverflowAction",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -138,6 +190,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.OverflowAction",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -149,6 +202,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.OverflowAction",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -167,6 +221,20 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.MulticastDelegate",
+        "clrName": "System.MulticastDelegate"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.ICloneable",
+          "clrName": "System.ICloneable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventHandler::Invoke(System.Object,System.Diagnostics.EntryWrittenEventArgs):System.Void",
@@ -183,6 +251,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -202,6 +271,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -221,6 +291,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -237,6 +308,7 @@
           "normalizedSignature": "constructor|(System.Object,System.IntPtr):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -253,6 +325,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.EventArgs",
+        "clrName": "System.EventArgs"
+      },
       "methods": [],
       "properties": [
         {
@@ -270,6 +346,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventArgs",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -284,6 +361,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventArgs",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -294,6 +372,7 @@
           "normalizedSignature": "constructor|(System.Diagnostics.EventLogEntry):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EntryWrittenEventArgs",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -310,6 +389,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -327,6 +410,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventInstance",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -345,6 +429,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventInstance",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -363,6 +448,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventInstance",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -377,6 +463,7 @@
           "normalizedSignature": "constructor|(System.Int64,System.Int32):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventInstance",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -387,6 +474,7 @@
           "normalizedSignature": "constructor|(System.Int64,System.Int32,System.Diagnostics.EventLogEntryType):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventInstance",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -403,6 +491,24 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ComponentModel.Primitives:System.ComponentModel.Component",
+        "clrName": "System.ComponentModel.Component"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.ComponentModel.Primitives:System.ComponentModel.IComponent",
+          "clrName": "System.ComponentModel.IComponent"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.ComponentModel.Primitives:System.ComponentModel.ISupportInitialize",
+          "clrName": "System.ComponentModel.ISupportInitialize"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::BeginInit():System.Void",
@@ -419,6 +525,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -438,6 +545,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -457,6 +565,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -476,6 +585,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -495,6 +605,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -514,6 +625,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -533,6 +645,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -552,6 +665,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -571,6 +685,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -590,6 +705,27 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Diagnostics.EventLog",
+          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663399,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -609,6 +745,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -628,6 +765,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -647,6 +785,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -666,6 +805,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -685,6 +825,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -704,6 +845,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -723,6 +865,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -742,6 +885,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -761,6 +905,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -780,6 +925,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -799,6 +945,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -818,6 +965,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -837,6 +985,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -856,6 +1005,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -875,6 +1025,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -894,6 +1045,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -913,6 +1065,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -932,6 +1085,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -951,6 +1105,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -970,6 +1125,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -989,6 +1145,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1008,6 +1165,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1027,6 +1185,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1046,6 +1205,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1067,6 +1227,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1085,6 +1246,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1103,6 +1265,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1121,6 +1284,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1139,6 +1303,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1157,6 +1322,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1175,6 +1341,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1193,6 +1360,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1211,6 +1379,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1229,6 +1398,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1241,6 +1411,7 @@
           "metadataToken": 335544321,
           "normalizedSignature": "EntryWritten|System.Diagnostics.EntryWrittenEventHandler|static=false",
           "isStatic": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1253,6 +1424,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1263,6 +1435,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1273,6 +1446,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1283,6 +1457,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLog",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1299,6 +1474,24 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.ComponentModel.Primitives:System.ComponentModel.Component",
+        "clrName": "System.ComponentModel.Component"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.ComponentModel.Primitives:System.ComponentModel.IComponent",
+          "clrName": "System.ComponentModel.IComponent"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Equals(System.Diagnostics.EventLogEntry):System.Boolean",
@@ -1315,6 +1508,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1336,6 +1530,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1354,6 +1549,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1372,6 +1568,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1390,6 +1587,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1408,6 +1606,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1426,6 +1625,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1444,6 +1644,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1462,6 +1663,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1480,6 +1682,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1498,6 +1701,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1516,6 +1720,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1534,6 +1739,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1552,6 +1758,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1570,6 +1777,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntry",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1589,6 +1797,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.ICollection",
+          "clrName": "System.Collections.ICollection"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+          "clrName": "System.Collections.IEnumerable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryCollection::CopyTo(System.Diagnostics.EventLogEntry[],System.Int32):System.Void",
@@ -1605,6 +1827,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1624,6 +1847,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1645,6 +1869,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1663,6 +1888,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1682,6 +1908,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Diagnostics.TraceSource:System.Diagnostics.TraceListener",
+        "clrName": "System.Diagnostics.TraceListener"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::Close():System.Void",
@@ -1698,6 +1934,27 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
+          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::Dispose(System.Boolean):System.Void",
+          "clrName": "Dispose",
+          "metadataToken": 100663457,
+          "canonicalSignature": "(System.Boolean):System.Void",
+          "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": true,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1717,6 +1974,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1736,6 +1994,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1755,6 +2014,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1774,6 +2034,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1793,6 +2054,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1812,6 +2074,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
@@ -1833,6 +2096,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1851,6 +2115,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1865,6 +2130,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1875,6 +2141,7 @@
           "normalizedSignature": "constructor|(System.Diagnostics.EventLog):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1885,6 +2152,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventLogTraceListener",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -1901,6 +2169,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1918,6 +2190,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1936,6 +2209,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1954,6 +2228,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1972,6 +2247,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -1990,6 +2266,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -2008,6 +2285,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         },
@@ -2026,6 +2304,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }
@@ -2040,6 +2319,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "System.Diagnostics.EventSourceCreationData",
           "declaringAssemblyName": "System.Diagnostics.EventLog"
         }

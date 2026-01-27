@@ -15,6 +15,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Text.Encodings.Web:System.Text.Encodings.Web.HtmlEncoder",
+        "clrName": "System.Text.Encodings.Web.HtmlEncoder"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder::Encode(System.String):System.String",
@@ -31,6 +35,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -50,6 +55,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -69,6 +75,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -88,6 +95,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -107,6 +115,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -126,6 +135,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false,
@@ -153,6 +163,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -167,6 +178,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.HtmlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -183,6 +195,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Text.Encodings.Web:System.Text.Encodings.Web.JavaScriptEncoder",
+        "clrName": "System.Text.Encodings.Web.JavaScriptEncoder"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder::Encode(System.String):System.String",
@@ -199,6 +215,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -218,6 +235,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -237,6 +255,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -256,6 +275,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -275,6 +295,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -294,6 +315,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false,
@@ -321,6 +343,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -335,6 +358,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.JavaScriptTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -351,6 +375,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Text.Encodings.Web:System.Text.Encodings.Web.UrlEncoder",
+        "clrName": "System.Text.Encodings.Web.UrlEncoder"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder::Encode(System.String):System.String",
@@ -367,6 +395,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -386,6 +415,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -405,6 +435,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -424,6 +455,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -443,6 +475,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false
@@ -462,6 +495,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders",
           "isExtensionMethod": false,
@@ -489,6 +523,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }
@@ -503,6 +538,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.WebEncoders.Testing.UrlTestEncoder",
           "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
         }

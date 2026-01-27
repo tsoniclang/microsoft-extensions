@@ -15,6 +15,20 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
+          "clrName": "Microsoft.Extensions.Logging.ILoggerProvider"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Debug:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
@@ -31,6 +45,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Debug",
           "isExtensionMethod": false
@@ -50,6 +65,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Debug",
           "isExtensionMethod": false
@@ -69,6 +85,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
@@ -86,6 +103,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
           "declaringAssemblyName": "Microsoft.Extensions.Logging.Debug"
         }

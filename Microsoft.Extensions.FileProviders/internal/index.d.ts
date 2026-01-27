@@ -206,7 +206,12 @@ export interface NullFileProvider$instance extends IFileProvider$instance {}
 export type NullFileProvider = NullFileProvider$instance & __NullFileProvider$views;
 
 
-export interface PhysicalFileProvider$instance {
+export abstract class PhysicalFileProvider$protected {
+    protected Dispose(disposing: boolean): void;
+}
+
+
+export interface PhysicalFileProvider$instance extends PhysicalFileProvider$protected {
     readonly Root: string;
     UseActivePolling: boolean;
     UsePollingFileWatcher: boolean;

@@ -32,6 +32,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IResourceNamesCache",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -69,6 +70,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -88,6 +90,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -107,6 +110,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -128,6 +132,15 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Microsoft.Extensions.Localization.IStringLocalizer"
+        }
+      ],
+      "typeParameters": [
+        "T"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -144,6 +157,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -163,6 +177,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -182,6 +197,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -219,6 +235,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -238,6 +255,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -259,6 +277,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -276,6 +298,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -290,6 +313,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizationOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -306,6 +330,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.LocalizedString::ToString():System.String",
@@ -322,6 +350,7 @@
           "isVirtual": true,
           "isOverride": true,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -343,6 +372,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         },
@@ -361,6 +391,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         },
@@ -379,6 +410,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         },
@@ -397,6 +429,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         }
@@ -411,6 +444,7 @@
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         },
@@ -421,6 +455,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Boolean):void|static=false",
           "isStatic": false,
           "parameterCount": 3,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         },
@@ -431,6 +466,7 @@
           "normalizedSignature": "constructor|(System.String,System.String,System.Boolean,System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 4,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.LocalizedString",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         }
@@ -447,6 +483,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -464,6 +504,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -478,6 +519,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceLocationAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -494,6 +536,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Microsoft.Extensions.Localization.IStringLocalizer"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -510,6 +562,47 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::GetAllStrings(System.Boolean,System.Globalization.CultureInfo):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "clrName": "GetAllStrings",
+          "metadataToken": 100663326,
+          "canonicalSignature": "(System.Boolean,System.Globalization.CultureInfo):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+          "normalizedSignature": "GetAllStrings|(System.Boolean,System.Globalization.CultureInfo):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizer::GetStringSafely(System.String,System.Globalization.CultureInfo):System.String",
+          "clrName": "GetStringSafely",
+          "metadataToken": 100663327,
+          "canonicalSignature": "(System.String,System.Globalization.CultureInfo):System.String",
+          "normalizedSignature": "GetStringSafely|(System.String,System.Globalization.CultureInfo):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": false,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -529,6 +622,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false,
@@ -549,6 +643,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -568,6 +663,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -584,6 +680,7 @@
           "normalizedSignature": "constructor|(System.Resources.ResourceManager,System.Reflection.Assembly,System.String,Microsoft.Extensions.Localization.IResourceNamesCache,Microsoft.Extensions.Logging.ILogger):void|static=false",
           "isStatic": false,
           "parameterCount": 5,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -600,7 +697,77 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizerFactory",
+          "clrName": "Microsoft.Extensions.Localization.IStringLocalizerFactory"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::GetResourcePrefix(System.Reflection.TypeInfo):System.String",
+          "clrName": "GetResourcePrefix",
+          "metadataToken": 100663330,
+          "canonicalSignature": "(System.Reflection.TypeInfo):System.String",
+          "normalizedSignature": "GetResourcePrefix|(System.Reflection.TypeInfo):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::GetResourcePrefix(System.Reflection.TypeInfo,System.String,System.String):System.String",
+          "clrName": "GetResourcePrefix",
+          "metadataToken": 100663331,
+          "canonicalSignature": "(System.Reflection.TypeInfo,System.String,System.String):System.String",
+          "normalizedSignature": "GetResourcePrefix|(System.Reflection.TypeInfo,System.String,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::GetResourcePrefix(System.String,System.String):System.String",
+          "clrName": "GetResourcePrefix",
+          "metadataToken": 100663332,
+          "canonicalSignature": "(System.String,System.String):System.String",
+          "normalizedSignature": "GetResourcePrefix|(System.String,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::Create(System.Type):Microsoft.Extensions.Localization.IStringLocalizer",
           "clrName": "Create",
@@ -616,6 +783,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -635,6 +803,87 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::CreateResourceManagerStringLocalizer(System.Reflection.Assembly,System.String):Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "clrName": "CreateResourceManagerStringLocalizer",
+          "metadataToken": 100663335,
+          "canonicalSignature": "(System.Reflection.Assembly,System.String):Microsoft.Extensions.Localization.ResourceManagerStringLocalizer",
+          "normalizedSignature": "CreateResourceManagerStringLocalizer|(System.Reflection.Assembly,System.String):Microsoft.Extensions.Localization.ResourceManagerStringLocalizer|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 2,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::GetResourcePrefix(System.String,System.String,System.String):System.String",
+          "clrName": "GetResourcePrefix",
+          "metadataToken": 100663336,
+          "canonicalSignature": "(System.String,System.String,System.String):System.String",
+          "normalizedSignature": "GetResourcePrefix|(System.String,System.String,System.String):System.String|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 3,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::GetResourceLocationAttribute(System.Reflection.Assembly):Microsoft.Extensions.Localization.ResourceLocationAttribute",
+          "clrName": "GetResourceLocationAttribute",
+          "metadataToken": 100663337,
+          "canonicalSignature": "(System.Reflection.Assembly):Microsoft.Extensions.Localization.ResourceLocationAttribute",
+          "normalizedSignature": "GetResourceLocationAttribute|(System.Reflection.Assembly):Microsoft.Extensions.Localization.ResourceLocationAttribute|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
+          "declaringAssemblyName": "Microsoft.Extensions.Localization",
+          "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory::GetRootNamespaceAttribute(System.Reflection.Assembly):Microsoft.Extensions.Localization.RootNamespaceAttribute",
+          "clrName": "GetRootNamespaceAttribute",
+          "metadataToken": 100663338,
+          "canonicalSignature": "(System.Reflection.Assembly):Microsoft.Extensions.Localization.RootNamespaceAttribute",
+          "normalizedSignature": "GetRootNamespaceAttribute|(System.Reflection.Assembly):Microsoft.Extensions.Localization.RootNamespaceAttribute|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -654,6 +903,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false,
@@ -674,6 +924,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false,
@@ -691,6 +942,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Localization.LocalizationOptions,Microsoft.Extensions.Localization,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceManagerStringLocalizerFactory",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -707,6 +959,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.IResourceNamesCache",
+          "clrName": "Microsoft.Extensions.Localization.IResourceNamesCache"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Localization:Microsoft.Extensions.Localization.ResourceNamesCache::GetOrAdd(System.String,System.Func_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Collections.Generic.IList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
@@ -723,6 +985,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceNamesCache",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false
@@ -742,6 +1005,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IResourceNamesCache",
           "declaringAssemblyName": "Microsoft.Extensions.Localization",
           "isExtensionMethod": false,
@@ -759,6 +1023,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.ResourceNamesCache",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -775,6 +1040,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Attribute",
+        "clrName": "System.Attribute"
+      },
       "methods": [],
       "properties": [
         {
@@ -792,6 +1061,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -806,6 +1076,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.RootNamespaceAttribute",
           "declaringAssemblyName": "Microsoft.Extensions.Localization"
         }
@@ -822,6 +1093,26 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 1,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+          "clrName": "Microsoft.Extensions.Localization.IStringLocalizer\u00601",
+          "typeArguments": [
+            "TResourceSource"
+          ]
+        },
+        {
+          "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.IStringLocalizer",
+          "clrName": "Microsoft.Extensions.Localization.IStringLocalizer"
+        }
+      ],
+      "typeParameters": [
+        "TResourceSource"
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizer\u00601::GetAllStrings(System.Boolean):System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Localization.LocalizedString,Microsoft.Extensions.Localization.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
@@ -838,6 +1129,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -857,6 +1149,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.IStringLocalizer",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false,
@@ -877,6 +1170,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -896,6 +1190,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": false
@@ -912,6 +1207,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Localization.IStringLocalizerFactory):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizer\u00601",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions"
         }
@@ -928,6 +1224,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Localization.Abstractions:Microsoft.Extensions.Localization.StringLocalizerExtensions::GetString(Microsoft.Extensions.Localization.IStringLocalizer,System.String):Microsoft.Extensions.Localization.LocalizedString",
@@ -944,6 +1244,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": true
@@ -963,6 +1264,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": true
@@ -982,6 +1284,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Localization.StringLocalizerExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Localization.Abstractions",
           "isExtensionMethod": true

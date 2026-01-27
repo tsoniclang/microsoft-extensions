@@ -13,7 +13,7 @@ import type { Exception, IDisposable, Object as ClrObject, TimeSpan, Void } from
 import * as System_Net_Http_Internal from "@tsonic/dotnet/System.Net.Http.js";
 import type { DelegatingHandler, HttpRequestMessage, HttpResponseMessage } from "@tsonic/dotnet/System.Net.Http.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger {
     LogRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
@@ -38,7 +38,13 @@ export interface IHttpClientLogger$instance {
 
 export type IHttpClientLogger = IHttpClientLogger$instance;
 
-export interface LoggingHttpMessageHandler$instance extends DelegatingHandler {
+export abstract class LoggingHttpMessageHandler$protected {
+    protected Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
+    protected SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
+}
+
+
+export interface LoggingHttpMessageHandler$instance extends LoggingHttpMessageHandler$protected, DelegatingHandler {
 }
 
 
@@ -50,7 +56,13 @@ export const LoggingHttpMessageHandler: {
 
 export type LoggingHttpMessageHandler = LoggingHttpMessageHandler$instance;
 
-export interface LoggingScopeHttpMessageHandler$instance extends DelegatingHandler {
+export abstract class LoggingScopeHttpMessageHandler$protected {
+    protected Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
+    protected SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
+}
+
+
+export interface LoggingScopeHttpMessageHandler$instance extends LoggingScopeHttpMessageHandler$protected, DelegatingHandler {
 }
 
 

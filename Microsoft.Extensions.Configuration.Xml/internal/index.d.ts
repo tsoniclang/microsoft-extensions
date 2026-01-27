@@ -17,7 +17,7 @@ import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections
 import type { Stream } from "@tsonic/dotnet/System.IO.js";
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { XmlReader, XmlReaderSettings } from "@tsonic/dotnet/System.Xml.js";
+import type { XmlDocument, XmlReader, XmlReaderSettings } from "@tsonic/dotnet/System.Xml.js";
 
 export interface XmlConfigurationProvider$instance extends FileConfigurationProvider {
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
@@ -58,7 +58,12 @@ export interface __XmlConfigurationSource$views {
 export type XmlConfigurationSource = XmlConfigurationSource$instance & __XmlConfigurationSource$views;
 
 
-export interface XmlDocumentDecryptor$instance {
+export abstract class XmlDocumentDecryptor$protected {
+    protected DecryptDocumentAndCreateXmlReader(document: XmlDocument): XmlReader;
+}
+
+
+export interface XmlDocumentDecryptor$instance extends XmlDocumentDecryptor$protected {
     CreateDecryptingXmlReader(input: Stream, settings: XmlReaderSettings): XmlReader;
 }
 

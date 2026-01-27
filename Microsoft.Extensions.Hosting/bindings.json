@@ -16,6 +16,28 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Enum",
+        "clrName": "System.Enum"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IComparable",
+          "clrName": "System.IComparable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.ISpanFormattable",
+          "clrName": "System.ISpanFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IFormattable",
+          "clrName": "System.IFormattable"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IConvertible",
+          "clrName": "System.IConvertible"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [
@@ -27,6 +49,7 @@
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -38,6 +61,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -49,6 +73,7 @@
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -83,6 +108,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -104,6 +130,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -122,6 +149,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -140,6 +168,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -159,6 +188,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHost::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
@@ -175,6 +210,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHost",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -196,6 +232,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHost",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -231,6 +268,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -252,6 +290,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -270,6 +309,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -288,6 +328,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -306,6 +347,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -324,6 +366,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -342,6 +385,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -377,6 +421,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -398,6 +443,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -416,6 +462,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -434,6 +481,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -469,6 +517,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -488,6 +537,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -507,6 +557,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -526,6 +577,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -545,6 +597,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -566,6 +619,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -585,6 +639,12 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService",
+          "clrName": "Microsoft.Extensions.Hosting.IHostedService"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedLifecycleService::StartingAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
@@ -601,6 +661,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostedLifecycleService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -638,6 +699,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostedService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -676,6 +738,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -694,6 +757,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -712,6 +776,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -730,6 +795,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -766,6 +832,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -784,6 +851,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -802,6 +870,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -820,6 +889,7 @@
           "isAbstract": true,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -855,6 +925,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostLifetime",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -876,7 +947,41 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService",
+          "clrName": "Microsoft.Extensions.Hosting.IHostedService"
+        },
+        {
+          "stableId": "System.Private.CoreLib:System.IDisposable",
+          "clrName": "System.IDisposable"
+        }
+      ],
       "methods": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::ExecuteAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "clrName": "ExecuteAsync",
+          "metadataToken": 100663315,
+          "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
+          "normalizedSignature": "ExecuteAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Original",
+          "arity": 0,
+          "parameterCount": 1,
+          "isStatic": false,
+          "isAbstract": true,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "isExtensionMethod": false
+        },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "clrName": "StartAsync",
@@ -892,6 +997,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -911,6 +1017,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -930,6 +1037,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
@@ -949,6 +1057,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostedService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -971,13 +1080,26 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
-      "constructors": []
+      "constructors": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::.ctor():void",
+          "metadataToken": 100663319,
+          "canonicalSignature": "():void",
+          "normalizedSignature": "constructor|():void|static=false",
+          "isStatic": false,
+          "parameterCount": 0,
+          "visibility": "Protected",
+          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
+          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+        }
+      ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
@@ -990,6 +1112,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1007,6 +1133,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -1021,6 +1148,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -1037,6 +1165,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Exception",
+        "clrName": "System.Exception"
+      },
+      "interfaces": [
+        {
+          "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
+          "clrName": "System.Runtime.Serialization.ISerializable"
+        }
+      ],
       "methods": [],
       "properties": [],
       "fields": [],
@@ -1049,6 +1187,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostAbortedException",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -1059,6 +1198,7 @@
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostAbortedException",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -1069,6 +1209,7 @@
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
           "parameterCount": 2,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostAbortedException",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -1085,6 +1226,16 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "clrName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::ConfigureContainer(IServiceProviderFactory_1,Action_1):System.Void",
@@ -1101,6 +1252,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1120,6 +1272,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1139,6 +1292,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -1161,6 +1315,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1179,6 +1334,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1197,6 +1353,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1215,6 +1372,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1233,6 +1391,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1251,6 +1410,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1270,6 +1430,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1289,6 +1450,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1308,6 +1470,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1327,6 +1490,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1346,6 +1510,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1361,6 +1526,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1371,6 +1537,7 @@
           "normalizedSignature": "constructor|(System.String[]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1381,6 +1548,7 @@
           "normalizedSignature": "constructor|(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -1397,6 +1565,10 @@
       "isSealed": true,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1414,6 +1586,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1432,6 +1605,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1450,6 +1624,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1468,6 +1643,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1486,6 +1662,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1504,6 +1681,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -1518,6 +1696,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -1534,6 +1713,16 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
+      "interfaces": [
+        {
+          "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder",
+          "clrName": "Microsoft.Extensions.Hosting.IHostBuilder"
+        }
+      ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::ConfigureHostConfiguration(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
@@ -1550,6 +1739,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1569,6 +1759,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1588,6 +1779,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1607,6 +1799,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1626,6 +1819,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1645,6 +1839,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1664,6 +1859,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": true,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -1683,6 +1879,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -1703,6 +1900,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -1723,6 +1921,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -1743,6 +1942,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -1763,6 +1963,7 @@
           "isVirtual": true,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
@@ -1785,6 +1986,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1803,6 +2005,7 @@
           "isAbstract": false,
           "isVirtual": true,
           "isOverride": false,
+          "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
@@ -1818,6 +2021,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -1834,6 +2038,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1851,6 +2059,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -1869,6 +2078,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -1887,6 +2097,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -1901,6 +2112,7 @@
           "normalizedSignature": "constructor|(System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -1917,6 +2129,10 @@
       "isSealed": false,
       "isStatic": false,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [
         {
@@ -1934,6 +2150,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1952,6 +2169,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1970,6 +2188,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -1988,6 +2207,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         },
@@ -2006,6 +2226,7 @@
           "isAbstract": false,
           "isVirtual": false,
           "isOverride": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -2020,6 +2241,7 @@
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting"
         }
@@ -2036,6 +2258,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -2047,6 +2273,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.EnvironmentName",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -2058,6 +2285,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.EnvironmentName",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -2069,6 +2297,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.EnvironmentName",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -2087,6 +2316,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -2098,6 +2331,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Environments",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -2109,6 +2343,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Environments",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -2120,6 +2355,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Environments",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -2138,6 +2374,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateDefaultBuilder():Microsoft.Extensions.Hosting.IHostBuilder",
@@ -2154,6 +2394,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Host",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -2173,6 +2414,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Host",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -2192,6 +2434,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Host",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -2211,6 +2454,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Host",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -2230,6 +2474,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Host",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -2249,6 +2494,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.Host",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
@@ -2270,6 +2516,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [],
       "properties": [],
       "fields": [
@@ -2281,6 +2531,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostDefaults",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -2292,6 +2543,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostDefaults",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         },
@@ -2303,6 +2555,7 @@
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostDefaults",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
         }
@@ -2321,6 +2574,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions::IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
@@ -2337,6 +2594,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2356,6 +2614,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2375,6 +2634,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2394,6 +2654,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2415,6 +2676,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions::Start(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHost",
@@ -2431,6 +2696,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2450,6 +2716,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2471,6 +2738,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::Start(Microsoft.Extensions.Hosting.IHost):System.Void",
@@ -2487,6 +2758,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2506,6 +2778,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2525,6 +2798,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2544,6 +2818,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2563,6 +2838,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2582,6 +2858,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2603,6 +2880,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions::IsDevelopment(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
@@ -2619,6 +2900,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2638,6 +2920,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2657,6 +2940,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2676,6 +2960,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
@@ -2697,6 +2982,10 @@
       "isSealed": true,
       "isStatic": true,
       "arity": 0,
+      "baseType": {
+        "stableId": "System.Private.CoreLib:System.Object",
+        "clrName": "System.Object"
+      },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseEnvironment(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder",
@@ -2713,6 +3002,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2732,6 +3022,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2751,6 +3042,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2770,6 +3062,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2789,6 +3082,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2808,6 +3102,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2827,6 +3122,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2846,6 +3142,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2865,6 +3162,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2884,6 +3182,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2903,6 +3202,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2922,6 +3222,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2941,6 +3242,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2960,6 +3262,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2979,6 +3282,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -2998,6 +3302,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -3017,6 +3322,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
@@ -3036,6 +3342,7 @@
           "isVirtual": false,
           "isOverride": false,
           "isSealed": false,
+          "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
           "declaringAssemblyName": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
