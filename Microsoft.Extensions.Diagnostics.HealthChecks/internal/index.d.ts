@@ -85,7 +85,7 @@ export interface HealthCheckPublisherOptions$instance {
     Delay: TimeSpan;
     Period: TimeSpan;
     get Predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean>);
+    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean> | undefined);
     Timeout: TimeSpan;
 }
 
@@ -124,8 +124,7 @@ export interface HealthCheckService$instance {
 }
 
 
-export const HealthCheckService: {
-    new(): HealthCheckService;
+export const HealthCheckService: (abstract new() => HealthCheckService) & {
 };
 
 

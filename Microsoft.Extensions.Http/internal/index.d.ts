@@ -43,15 +43,15 @@ export type HttpClientFactoryOptions = HttpClientFactoryOptions$instance;
 
 export interface HttpMessageHandlerBuilder$instance {
     readonly AdditionalHandlers: IList<DelegatingHandler>;
-    Name: string;
+    get Name(): string | undefined;
+    set Name(value: string | undefined);
     PrimaryHandler: HttpMessageHandler;
     readonly Services: IServiceProvider;
     Build(): HttpMessageHandler;
 }
 
 
-export const HttpMessageHandlerBuilder: {
-    new(): HttpMessageHandlerBuilder;
+export const HttpMessageHandlerBuilder: (abstract new() => HttpMessageHandlerBuilder) & {
     CreateHandlerPipeline(primaryHandler: HttpMessageHandler, additionalHandlers: IEnumerable<DelegatingHandler>): HttpMessageHandler;
 };
 

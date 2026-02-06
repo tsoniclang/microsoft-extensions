@@ -116,7 +116,6 @@ export interface EventKeyword$instance {
 
 
 export const EventKeyword: {
-    new(): EventKeyword;
 };
 
 
@@ -130,24 +129,18 @@ export interface EventLevel$instance {
 
 
 export const EventLevel: {
-    new(): EventLevel;
 };
 
 
 export type EventLevel = EventLevel$instance;
 
-export abstract class EventLogConfiguration$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLogConfiguration$instance extends EventLogConfiguration$protected {
+export interface EventLogConfiguration$instance {
     readonly IsClassicLog: boolean;
     IsEnabled: boolean;
     LogFilePath: string;
     readonly LogIsolation: EventLogIsolation;
     LogMode: EventLogMode;
-    readonly LogName: string | undefined;
+    readonly LogName: string;
     readonly LogType: EventLogType;
     MaximumSizeInBytes: long;
     readonly OwningProviderName: string;
@@ -161,6 +154,7 @@ export interface EventLogConfiguration$instance extends EventLogConfiguration$pr
     readonly ProviderNames: IEnumerable<System_Internal.String>;
     SecurityDescriptor: string;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     SaveChanges(): void;
 }
 
@@ -181,8 +175,6 @@ export interface EventLogException$instance extends Exception {
 
 export const EventLogException: {
     new(): EventLogException;
-    new(errorCode: int): EventLogException;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): EventLogException;
     new(message: string): EventLogException;
     new(message: string, innerException: Exception): EventLogException;
 };
@@ -203,7 +195,6 @@ export interface EventLogInformation$instance {
 
 
 export const EventLogInformation: {
-    new(): EventLogInformation;
 };
 
 
@@ -215,7 +206,6 @@ export interface EventLogInvalidDataException$instance extends EventLogException
 
 export const EventLogInvalidDataException: {
     new(): EventLogInvalidDataException;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): EventLogInvalidDataException;
     new(message: string): EventLogInvalidDataException;
     new(message: string, innerException: Exception): EventLogInvalidDataException;
 };
@@ -226,12 +216,11 @@ export type EventLogInvalidDataException = EventLogInvalidDataException$instance
 export interface EventLogLink$instance {
     readonly DisplayName: string;
     readonly IsImported: boolean;
-    readonly LogName: string | undefined;
+    readonly LogName: string;
 }
 
 
 export const EventLogLink: {
-    new(): EventLogLink;
 };
 
 
@@ -243,7 +232,6 @@ export interface EventLogNotFoundException$instance extends EventLogException {
 
 export const EventLogNotFoundException: {
     new(): EventLogNotFoundException;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): EventLogNotFoundException;
     new(message: string): EventLogNotFoundException;
     new(message: string, innerException: Exception): EventLogNotFoundException;
 };
@@ -251,13 +239,9 @@ export const EventLogNotFoundException: {
 
 export type EventLogNotFoundException = EventLogNotFoundException$instance;
 
-export abstract class EventLogPropertySelector$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLogPropertySelector$instance extends EventLogPropertySelector$protected {
+export interface EventLogPropertySelector$instance {
     Dispose(): void;
+    Dispose(disposing: boolean): void;
 }
 
 
@@ -274,7 +258,6 @@ export interface EventLogProviderDisabledException$instance extends EventLogExce
 
 export const EventLogProviderDisabledException: {
     new(): EventLogProviderDisabledException;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): EventLogProviderDisabledException;
     new(message: string): EventLogProviderDisabledException;
     new(message: string, innerException: Exception): EventLogProviderDisabledException;
 };
@@ -297,16 +280,12 @@ export const EventLogQuery: {
 
 export type EventLogQuery = EventLogQuery$instance;
 
-export abstract class EventLogReader$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLogReader$instance extends EventLogReader$protected {
+export interface EventLogReader$instance {
     BatchSize: int;
     readonly LogStatus: IList<EventLogStatus>;
     CancelReading(): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     ReadEvent(): EventRecord;
     ReadEvent(timeout: TimeSpan): EventRecord;
     Seek(bookmark: EventBookmark): void;
@@ -331,7 +310,6 @@ export interface EventLogReadingException$instance extends EventLogException {
 
 export const EventLogReadingException: {
     new(): EventLogReadingException;
-    new(serializationInfo: SerializationInfo, streamingContext: StreamingContext): EventLogReadingException;
     new(message: string): EventLogReadingException;
     new(message: string, innerException: Exception): EventLogReadingException;
 };
@@ -339,12 +317,7 @@ export const EventLogReadingException: {
 
 export type EventLogReadingException = EventLogReadingException$instance;
 
-export abstract class EventLogRecord$protected {
-    protected Dispose2(disposing: boolean): void;
-}
-
-
-export interface EventLogRecord$instance extends EventLogRecord$protected, EventRecord {
+export interface EventLogRecord$instance extends EventRecord {
     readonly ActivityId: Nullable<Guid>;
     readonly Bookmark: EventBookmark;
     readonly ContainerLog: string;
@@ -353,15 +326,15 @@ export interface EventLogRecord$instance extends EventLogRecord$protected, Event
     readonly KeywordsDisplayNames: IEnumerable<System_Internal.String>;
     readonly Level: Nullable<System_Internal.Byte>;
     readonly LevelDisplayName: string;
-    readonly LogName: string | undefined;
-    readonly MachineName: string | undefined;
+    readonly LogName: string;
+    readonly MachineName: string;
     readonly MatchedQueryIds: IEnumerable<System_Internal.Int32>;
     readonly Opcode: Nullable<System_Internal.Int16>;
     readonly OpcodeDisplayName: string;
     readonly ProcessId: Nullable<System_Internal.Int32>;
     readonly Properties: IList<EventProperty>;
     readonly ProviderId: Nullable<Guid>;
-    readonly ProviderName: string | undefined;
+    readonly ProviderName: string;
     readonly Qualifiers: Nullable<System_Internal.Int32>;
     readonly RecordId: Nullable<System_Internal.Int64>;
     readonly RelatedActivityId: Nullable<Guid>;
@@ -371,6 +344,7 @@ export interface EventLogRecord$instance extends EventLogRecord$protected, Event
     readonly TimeCreated: Nullable<DateTime>;
     readonly UserId: SecurityIdentifier;
     readonly Version: Nullable<System_Internal.Byte>;
+    Dispose(disposing: boolean): void;
     Dispose(): void;
     FormatDescription(): string;
     FormatDescription(values: IEnumerable<unknown>): string;
@@ -380,22 +354,17 @@ export interface EventLogRecord$instance extends EventLogRecord$protected, Event
 
 
 export const EventLogRecord: {
-    new(): EventLogRecord;
 };
 
 
 export type EventLogRecord = EventLogRecord$instance;
 
-export abstract class EventLogSession$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLogSession$instance extends EventLogSession$protected {
+export interface EventLogSession$instance {
     CancelCurrentOperations(): void;
     ClearLog(logName: string): void;
     ClearLog(logName: string, backupPath: string): void;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     ExportLog(path: string, pathType: PathType, query: string, targetFilePath: string): void;
     ExportLog(path: string, pathType: PathType, query: string, targetFilePath: string, tolerateQueryErrors: boolean): void;
     ExportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string): void;
@@ -417,26 +386,21 @@ export const EventLogSession: {
 export type EventLogSession = EventLogSession$instance;
 
 export interface EventLogStatus$instance {
-    readonly LogName: string | undefined;
+    readonly LogName: string;
     readonly StatusCode: int;
 }
 
 
 export const EventLogStatus: {
-    new(): EventLogStatus;
 };
 
 
 export type EventLogStatus = EventLogStatus$instance;
 
-export abstract class EventLogWatcher$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLogWatcher$instance extends EventLogWatcher$protected {
+export interface EventLogWatcher$instance {
     Enabled: boolean;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
 }
 
 
@@ -464,7 +428,6 @@ export interface EventMetadata$instance {
 
 
 export const EventMetadata: {
-    new(): EventMetadata;
 };
 
 
@@ -478,7 +441,6 @@ export interface EventOpcode$instance {
 
 
 export const EventOpcode: {
-    new(): EventOpcode;
 };
 
 
@@ -490,18 +452,12 @@ export interface EventProperty$instance {
 
 
 export const EventProperty: {
-    new(): EventProperty;
 };
 
 
 export type EventProperty = EventProperty$instance;
 
-export abstract class EventRecord$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventRecord$instance extends EventRecord$protected {
+export interface EventRecord$instance {
     readonly ActivityId: Nullable<Guid>;
     readonly Bookmark: EventBookmark;
     readonly Id: int;
@@ -509,14 +465,14 @@ export interface EventRecord$instance extends EventRecord$protected {
     readonly KeywordsDisplayNames: IEnumerable<System_Internal.String>;
     readonly Level: Nullable<System_Internal.Byte>;
     readonly LevelDisplayName: string;
-    readonly LogName: string | undefined;
-    readonly MachineName: string | undefined;
+    readonly LogName: string;
+    readonly MachineName: string;
     readonly Opcode: Nullable<System_Internal.Int16>;
     readonly OpcodeDisplayName: string;
     readonly ProcessId: Nullable<System_Internal.Int32>;
     readonly Properties: IList<EventProperty>;
     readonly ProviderId: Nullable<Guid>;
-    readonly ProviderName: string | undefined;
+    readonly ProviderName: string;
     readonly Qualifiers: Nullable<System_Internal.Int32>;
     readonly RecordId: Nullable<System_Internal.Int64>;
     readonly RelatedActivityId: Nullable<Guid>;
@@ -527,14 +483,14 @@ export interface EventRecord$instance extends EventRecord$protected {
     readonly UserId: SecurityIdentifier;
     readonly Version: Nullable<System_Internal.Byte>;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     FormatDescription(): string;
     FormatDescription(values: IEnumerable<unknown>): string;
     ToXml(): string;
 }
 
 
-export const EventRecord: {
-    new(): EventRecord;
+export const EventRecord: (abstract new() => EventRecord) & {
 };
 
 
@@ -547,7 +503,6 @@ export interface EventRecordWrittenEventArgs$instance extends EventArgs {
 
 
 export const EventRecordWrittenEventArgs: {
-    new(): EventRecordWrittenEventArgs;
 };
 
 
@@ -562,18 +517,12 @@ export interface EventTask$instance {
 
 
 export const EventTask: {
-    new(): EventTask;
 };
 
 
 export type EventTask = EventTask$instance;
 
-export abstract class ProviderMetadata$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface ProviderMetadata$instance extends ProviderMetadata$protected {
+export interface ProviderMetadata$instance {
     readonly DisplayName: string;
     readonly Events: IEnumerable<EventMetadata>;
     readonly HelpLink: Uri;
@@ -588,6 +537,7 @@ export interface ProviderMetadata$instance extends ProviderMetadata$protected {
     readonly ResourceFilePath: string;
     readonly Tasks: IList<EventTask>;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
 }
 
 

@@ -203,7 +203,7 @@ export type FromKeyedServicesAttribute = FromKeyedServicesAttribute$instance;
 export interface ServiceCollection$instance extends IServiceCollection {
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    Item: ServiceDescriptor;
+    [index: number]: ServiceDescriptor;
     Clear(): void;
     Contains(item: ServiceDescriptor): boolean;
     CopyTo(array: ServiceDescriptor[], arrayIndex: int): void;
@@ -303,7 +303,6 @@ export interface ServiceProvider$instance {
 
 
 export const ServiceProvider: {
-    new(): ServiceProvider;
 };
 
 

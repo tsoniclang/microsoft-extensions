@@ -40,7 +40,7 @@ export type CommandLineConfigurationProvider = CommandLineConfigurationProvider$
 export interface CommandLineConfigurationSource$instance {
     Args: IEnumerable<System_Internal.String>;
     get SwitchMappings(): IDictionary<System_Internal.String, System_Internal.String> | undefined;
-    set SwitchMappings(value: IDictionary<System_Internal.String, System_Internal.String>);
+    set SwitchMappings(value: IDictionary<System_Internal.String, System_Internal.String> | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

@@ -143,7 +143,7 @@ export type ConfigureFromConfigurationOptions_1<TOptions> = ConfigureFromConfigu
 
 export interface ConfigureNamedOptions_1$instance<TOptions> {
     readonly Action: Action<TOptions> | undefined;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
 }
@@ -165,7 +165,7 @@ export type ConfigureNamedOptions_1<TOptions> = ConfigureNamedOptions_1$instance
 export interface ConfigureNamedOptions_2$instance<TOptions, TDep> {
     readonly Action: Action<TOptions, TDep> | undefined;
     readonly Dependency: TDep;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
 }
@@ -188,7 +188,7 @@ export interface ConfigureNamedOptions_3$instance<TOptions, TDep1, TDep2> {
     readonly Action: Action<TOptions, TDep1, TDep2> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
 }
@@ -212,7 +212,7 @@ export interface ConfigureNamedOptions_4$instance<TOptions, TDep1, TDep2, TDep3>
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
 }
@@ -237,7 +237,7 @@ export interface ConfigureNamedOptions_5$instance<TOptions, TDep1, TDep2, TDep3,
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
     readonly Dependency4: TDep4;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
 }
@@ -263,7 +263,7 @@ export interface ConfigureNamedOptions_6$instance<TOptions, TDep1, TDep2, TDep3,
     readonly Dependency3: TDep3;
     readonly Dependency4: TDep4;
     readonly Dependency5: TDep5;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
 }
@@ -303,7 +303,7 @@ export type ConfigureOptions_1<TOptions> = ConfigureOptions_1$instance<TOptions>
 
 
 export interface DataAnnotationValidateOptions_1$instance<TOptions> {
-    readonly Name: string;
+    readonly Name: string | undefined;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
@@ -401,13 +401,9 @@ export interface OptionsCache_1$instance<TOptions> extends IOptionsMonitorCache_
 export type OptionsCache_1<TOptions> = OptionsCache_1$instance<TOptions> & __OptionsCache_1$views<TOptions>;
 
 
-export abstract class OptionsFactory_1$protected<TOptions> {
-    protected CreateInstance(name: string): TOptions;
-}
-
-
-export interface OptionsFactory_1$instance<TOptions> extends OptionsFactory_1$protected<TOptions> {
+export interface OptionsFactory_1$instance<TOptions> {
     Create(name: string): TOptions;
+    CreateInstance(name: string): TOptions;
 }
 
 
@@ -516,7 +512,7 @@ export type OptionsWrapper_1<TOptions> = OptionsWrapper_1$instance<TOptions> & _
 
 export interface PostConfigureOptions_1$instance<TOptions> {
     readonly Action: Action<TOptions> | undefined;
-    readonly Name: string;
+    readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
 }
 
@@ -538,7 +534,7 @@ export type PostConfigureOptions_1<TOptions> = PostConfigureOptions_1$instance<T
 export interface PostConfigureOptions_2$instance<TOptions, TDep> {
     readonly Action: Action<TOptions, TDep> | undefined;
     readonly Dependency: TDep;
-    readonly Name: string;
+    readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
     PostConfigure(options: TOptions): void;
 }
@@ -560,7 +556,7 @@ export interface PostConfigureOptions_3$instance<TOptions, TDep1, TDep2> {
     readonly Action: Action<TOptions, TDep1, TDep2> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
-    readonly Name: string;
+    readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
     PostConfigure(options: TOptions): void;
 }
@@ -583,7 +579,7 @@ export interface PostConfigureOptions_4$instance<TOptions, TDep1, TDep2, TDep3> 
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
-    readonly Name: string;
+    readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
     PostConfigure(options: TOptions): void;
 }
@@ -607,7 +603,7 @@ export interface PostConfigureOptions_5$instance<TOptions, TDep1, TDep2, TDep3, 
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
     readonly Dependency4: TDep4;
-    readonly Name: string;
+    readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
     PostConfigure(options: TOptions): void;
 }
@@ -632,7 +628,7 @@ export interface PostConfigureOptions_6$instance<TOptions, TDep1, TDep2, TDep3, 
     readonly Dependency3: TDep3;
     readonly Dependency4: TDep4;
     readonly Dependency5: TDep5;
-    readonly Name: string;
+    readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
     PostConfigure(options: TOptions): void;
 }
@@ -678,7 +674,7 @@ export type ValidateObjectMembersAttribute = ValidateObjectMembersAttribute$inst
 
 export interface ValidateOptions_1$instance<TOptions> {
     readonly FailureMessage: string;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly Validation: Func<TOptions, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
@@ -701,7 +697,7 @@ export type ValidateOptions_1<TOptions> = ValidateOptions_1$instance<TOptions> &
 export interface ValidateOptions_2$instance<TOptions, TDep> {
     readonly Dependency: TDep;
     readonly FailureMessage: string;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly Validation: Func<TOptions, TDep, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
@@ -725,7 +721,7 @@ export interface ValidateOptions_3$instance<TOptions, TDep1, TDep2> {
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly FailureMessage: string;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly Validation: Func<TOptions, TDep1, TDep2, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
@@ -750,7 +746,7 @@ export interface ValidateOptions_4$instance<TOptions, TDep1, TDep2, TDep3> {
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
     readonly FailureMessage: string;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly Validation: Func<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
@@ -776,7 +772,7 @@ export interface ValidateOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4
     readonly Dependency3: TDep3;
     readonly Dependency4: TDep4;
     readonly FailureMessage: string;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly Validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
@@ -803,7 +799,7 @@ export interface ValidateOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4
     readonly Dependency4: TDep4;
     readonly Dependency5: TDep5;
     readonly FailureMessage: string;
-    readonly Name: string;
+    readonly Name: string | undefined;
     readonly Validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
@@ -825,9 +821,10 @@ export type ValidateOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> = Val
 
 export interface ValidateOptionsResult$instance {
     Failed: boolean;
-    FailureMessage: string;
+    get FailureMessage(): string | undefined;
+    set FailureMessage(value: string | undefined);
     get Failures(): IEnumerable<System_Internal.String> | undefined;
-    set Failures(value: IEnumerable<System_Internal.String>);
+    set Failures(value: IEnumerable<System_Internal.String> | undefined);
     Skipped: boolean;
     Succeeded: boolean;
 }

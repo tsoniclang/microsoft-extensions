@@ -12,7 +12,7 @@ import type { TextEncoderSettings } from "@tsonic/dotnet/System.Text.Encodings.W
 
 export interface WebEncoderOptions$instance {
     get TextEncoderSettings(): TextEncoderSettings | undefined;
-    set TextEncoderSettings(value: TextEncoderSettings);
+    set TextEncoderSettings(value: TextEncoderSettings | undefined);
 }
 
 

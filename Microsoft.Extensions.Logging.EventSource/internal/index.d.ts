@@ -33,17 +33,12 @@ export interface EventSourceLoggerProvider$instance extends Microsoft_Extensions
 export type EventSourceLoggerProvider = EventSourceLoggerProvider$instance & __EventSourceLoggerProvider$views;
 
 
-export abstract class LoggingEventSource$protected {
-    protected OnEventCommand(command: EventCommandEventArgs): void;
-}
-
-
-export interface LoggingEventSource$instance extends LoggingEventSource$protected, EventSource {
+export interface LoggingEventSource$instance extends EventSource {
+    OnEventCommand(command: EventCommandEventArgs): void;
 }
 
 
 export const LoggingEventSource: {
-    new(): LoggingEventSource;
 };
 
 

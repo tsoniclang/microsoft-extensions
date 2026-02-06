@@ -52,7 +52,7 @@ export type IConsoleLoggerSettings = IConsoleLoggerSettings$instance;
 
 export interface ConfigurationConsoleLoggerSettings$instance {
     get ChangeToken(): IChangeToken | undefined;
-    set ChangeToken(value: IChangeToken);
+    set ChangeToken(value: IChangeToken | undefined);
     readonly IncludeScopes: boolean;
     Reload(): IConsoleLoggerSettings;
     TryGetSwitch(name: string, level: LogLevel): boolean;
@@ -77,8 +77,7 @@ export interface ConsoleFormatter$instance {
 }
 
 
-export const ConsoleFormatter: {
-    new(name: string): ConsoleFormatter;
+export const ConsoleFormatter: (abstract new(name: string) => ConsoleFormatter) & {
 };
 
 
@@ -87,7 +86,7 @@ export type ConsoleFormatter = ConsoleFormatter$instance;
 export interface ConsoleFormatterOptions$instance {
     IncludeScopes: boolean;
     get TimestampFormat(): string | undefined;
-    set TimestampFormat(value: string);
+    set TimestampFormat(value: string | undefined);
     UseUtcTimestamp: boolean;
 }
 
@@ -103,13 +102,13 @@ export interface ConsoleLoggerOptions$instance {
     DisableColors: boolean;
     Format: ConsoleLoggerFormat;
     get FormatterName(): string | undefined;
-    set FormatterName(value: string);
+    set FormatterName(value: string | undefined);
     IncludeScopes: boolean;
     LogToStandardErrorThreshold: LogLevel;
     MaxQueueLength: int;
     QueueFullMode: ConsoleLoggerQueueFullMode;
     get TimestampFormat(): string | undefined;
-    set TimestampFormat(value: string);
+    set TimestampFormat(value: string | undefined);
     UseUtcTimestamp: boolean;
 }
 
@@ -146,7 +145,7 @@ export type ConsoleLoggerProvider = ConsoleLoggerProvider$instance & __ConsoleLo
 
 export interface ConsoleLoggerSettings$instance {
     get ChangeToken(): IChangeToken | undefined;
-    set ChangeToken(value: IChangeToken);
+    set ChangeToken(value: IChangeToken | undefined);
     DisableColors: boolean;
     IncludeScopes: boolean;
     Switches: IDictionary<System_Internal.String, LogLevel>;

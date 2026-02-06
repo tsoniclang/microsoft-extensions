@@ -60,8 +60,7 @@ export interface HybridCache$instance {
 }
 
 
-export const HybridCache: {
-    new(): HybridCache;
+export const HybridCache: (abstract new() => HybridCache) & {
 };
 
 

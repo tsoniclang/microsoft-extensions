@@ -29,7 +29,7 @@ export type CryptographicAttributeObject = CryptographicAttributeObject$instance
 export interface CryptographicAttributeObjectCollection$instance {
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: CryptographicAttributeObject;
+    readonly [index: number]: CryptographicAttributeObject;
     readonly SyncRoot: unknown;
     Add(asnEncodedData: AsnEncodedData): int;
     Add(attribute: CryptographicAttributeObject): int;
@@ -55,7 +55,6 @@ export interface CryptographicAttributeObjectEnumerator$instance {
 
 
 export const CryptographicAttributeObjectEnumerator: {
-    new(): CryptographicAttributeObjectEnumerator;
 };
 
 

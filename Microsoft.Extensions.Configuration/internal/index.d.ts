@@ -26,8 +26,7 @@ import type { Action, Attribute, Boolean as ClrBoolean, Exception, Func, IDispos
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface IConfiguration$instance {
-    get Item(): string | undefined;
-    set Item(value: string);
+    [key: string]: string | undefined;
     GetChildren(): IEnumerable<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -47,8 +46,7 @@ export interface IConfigurationBuilder$instance {
 export type IConfigurationBuilder = IConfigurationBuilder$instance;
 
 export interface IConfigurationManager$instance extends IConfiguration, IConfigurationBuilder {
-    get Item(): string | undefined;
-    set Item(value: string);
+    [key: string]: string | undefined;
     readonly Properties: IDictionary<System_Internal.String, unknown>;
     readonly Sources: IList<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
@@ -76,8 +74,7 @@ export type IConfigurationProvider = IConfigurationProvider$instance;
 
 export interface IConfigurationRoot$instance extends IConfiguration {
     readonly Providers: IEnumerable<IConfigurationProvider>;
-    get Item(): string | undefined;
-    set Item(value: string);
+    [key: string]: string | undefined;
     GetChildren(): IEnumerable<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -92,9 +89,9 @@ export type IConfigurationRoot = IConfigurationRoot$instance;
 export interface IConfigurationSection$instance extends IConfiguration {
     readonly Key: string;
     readonly Path: string;
-    Value: string;
-    get Item(): string | undefined;
-    set Item(value: string);
+    get Value(): string | undefined;
+    set Value(value: string | undefined);
+    [key: string]: string | undefined;
     GetChildren(): IEnumerable<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -166,7 +163,8 @@ export type ChainedConfigurationProvider = ChainedConfigurationProvider$instance
 
 
 export interface ChainedConfigurationSource$instance {
-    Configuration: IConfiguration;
+    get Configuration(): IConfiguration | undefined;
+    set Configuration(value: IConfiguration | undefined);
     ShouldDisposeConfiguration: boolean;
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
@@ -234,8 +232,7 @@ export const ConfigurationKeyNameAttribute: {
 export type ConfigurationKeyNameAttribute = ConfigurationKeyNameAttribute$instance;
 
 export interface ConfigurationManager$instance {
-    get Item(): string | undefined;
-    set Item(value: string);
+    [key: string]: string | undefined;
     readonly Sources: IList<IConfigurationSource>;
     Dispose(): void;
     GetChildren(): IEnumerable<IConfigurationSection>;
@@ -267,8 +264,7 @@ export interface ConfigurationProvider$instance {
 }
 
 
-export const ConfigurationProvider: {
-    new(): ConfigurationProvider;
+export const ConfigurationProvider: (abstract new() => ConfigurationProvider) & {
 };
 
 
@@ -302,8 +298,7 @@ export type ConfigurationReloadToken = ConfigurationReloadToken$instance & __Con
 
 
 export interface ConfigurationRoot$instance {
-    get Item(): string | undefined;
-    set Item(value: string);
+    [key: string]: string | undefined;
     readonly Providers: IEnumerable<IConfigurationProvider>;
     Dispose(): void;
     GetChildren(): IEnumerable<IConfigurationSection>;
@@ -327,11 +322,11 @@ export type ConfigurationRoot = ConfigurationRoot$instance & __ConfigurationRoot
 
 
 export interface ConfigurationSection$instance {
-    get Item(): string | undefined;
-    set Item(value: string);
+    [key: string]: string | undefined;
     readonly Key: string;
     readonly Path: string;
-    Value: string;
+    get Value(): string | undefined;
+    set Value(value: string | undefined);
     GetChildren(): IEnumerable<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -352,14 +347,10 @@ export interface __ConfigurationSection$views {
 export type ConfigurationSection = ConfigurationSection$instance & __ConfigurationSection$views;
 
 
-export abstract class FileConfigurationProvider$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface FileConfigurationProvider$instance extends FileConfigurationProvider$protected, ConfigurationProvider$instance {
+export interface FileConfigurationProvider$instance extends ConfigurationProvider$instance {
     readonly Source: FileConfigurationSource;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
@@ -369,8 +360,7 @@ export interface FileConfigurationProvider$instance extends FileConfigurationPro
 }
 
 
-export const FileConfigurationProvider: {
-    new(source: FileConfigurationSource): FileConfigurationProvider;
+export const FileConfigurationProvider: (abstract new(source: FileConfigurationSource) => FileConfigurationProvider) & {
 };
 
 
@@ -383,11 +373,12 @@ export type FileConfigurationProvider = FileConfigurationProvider$instance & __F
 
 export interface FileConfigurationSource$instance {
     get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider);
+    set FileProvider(value: IFileProvider | undefined);
     get OnLoadException(): Action<FileLoadExceptionContext> | undefined;
-    set OnLoadException(value: Action<FileLoadExceptionContext>);
+    set OnLoadException(value: Action<FileLoadExceptionContext> | undefined);
     Optional: boolean;
-    Path: string;
+    get Path(): string | undefined;
+    set Path(value: string | undefined);
     ReloadDelay: int;
     ReloadOnChange: boolean;
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
@@ -396,8 +387,7 @@ export interface FileConfigurationSource$instance {
 }
 
 
-export const FileConfigurationSource: {
-    new(): FileConfigurationSource;
+export const FileConfigurationSource: (abstract new() => FileConfigurationSource) & {
 };
 
 
@@ -434,8 +424,7 @@ export interface StreamConfigurationProvider$instance extends ConfigurationProvi
 }
 
 
-export const StreamConfigurationProvider: {
-    new(source: StreamConfigurationSource): StreamConfigurationProvider;
+export const StreamConfigurationProvider: (abstract new(source: StreamConfigurationSource) => StreamConfigurationProvider) & {
 };
 
 
@@ -448,13 +437,12 @@ export type StreamConfigurationProvider = StreamConfigurationProvider$instance &
 
 export interface StreamConfigurationSource$instance {
     get Stream(): Stream | undefined;
-    set Stream(value: Stream);
+    set Stream(value: Stream | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
 
-export const StreamConfigurationSource: {
-    new(): StreamConfigurationSource;
+export const StreamConfigurationSource: (abstract new() => StreamConfigurationSource) & {
 };
 
 

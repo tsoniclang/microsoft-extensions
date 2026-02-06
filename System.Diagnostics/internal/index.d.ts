@@ -64,18 +64,12 @@ export const EventInstance: {
 
 export type EventInstance = EventInstance$instance;
 
-export abstract class EventLog$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLog$instance extends EventLog$protected, Component {
+export interface EventLog$instance extends Component {
     EnableRaisingEvents: boolean;
     readonly Entries: EventLogEntryCollection;
     Log: string;
     readonly LogDisplayName: string;
-    get MachineName(): string | undefined;
-    set MachineName(value: string);
+    MachineName: string;
     MaximumKilobytes: long;
     readonly MinimumRetentionDays: int;
     readonly OverflowAction: OverflowAction;
@@ -84,6 +78,7 @@ export interface EventLog$instance extends EventLog$protected, Component {
     BeginInit(): void;
     Clear(): void;
     Close(): void;
+    Dispose(disposing: boolean): void;
     EndInit(): void;
     ModifyOverflowPolicy(action: OverflowAction, retentionDays: int): void;
     RegisterDisplayName(resourceFile: string, resourceId: long): void;
@@ -136,7 +131,7 @@ export interface EventLogEntry$instance extends Component {
     readonly EventID: int;
     readonly Index: int;
     readonly InstanceId: long;
-    readonly MachineName: string | undefined;
+    readonly MachineName: string;
     readonly Message: string;
     readonly ReplacementStrings: string[];
     readonly Source: string;
@@ -148,7 +143,6 @@ export interface EventLogEntry$instance extends Component {
 
 
 export const EventLogEntry: {
-    new(): EventLogEntry;
 };
 
 
@@ -156,28 +150,23 @@ export type EventLogEntry = EventLogEntry$instance;
 
 export interface EventLogEntryCollection$instance {
     readonly Count: int;
-    readonly Item: EventLogEntry;
+    readonly [index: number]: EventLogEntry;
     CopyTo(entries: EventLogEntry[], index: int): void;
     GetEnumerator(): IEnumerator;
 }
 
 
 export const EventLogEntryCollection: {
-    new(): EventLogEntryCollection;
 };
 
 
 export type EventLogEntryCollection = EventLogEntryCollection$instance;
 
-export abstract class EventLogTraceListener$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface EventLogTraceListener$instance extends EventLogTraceListener$protected, TraceListener {
+export interface EventLogTraceListener$instance extends TraceListener {
     EventLog: EventLog;
     Name: string;
     Close(): void;
+    Dispose(disposing: boolean): void;
     TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: unknown): void;
     TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: unknown[]): void;
     TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, message: string): void;
@@ -199,10 +188,8 @@ export type EventLogTraceListener = EventLogTraceListener$instance;
 export interface EventSourceCreationData$instance {
     CategoryCount: int;
     CategoryResourceFile: string;
-    get LogName(): string | undefined;
-    set LogName(value: string);
-    get MachineName(): string | undefined;
-    set MachineName(value: string);
+    LogName: string;
+    MachineName: string;
     MessageResourceFile: string;
     ParameterResourceFile: string;
     Source: string;

@@ -122,21 +122,16 @@ export interface IHostLifetime$instance {
 
 export type IHostLifetime = IHostLifetime$instance;
 
-export abstract class BackgroundService$protected {
-    protected abstract ExecuteAsync(stoppingToken: CancellationToken): Task;
-}
-
-
-export interface BackgroundService$instance extends BackgroundService$protected {
+export interface BackgroundService$instance {
     readonly ExecuteTask: Task | undefined;
     Dispose(): void;
+    ExecuteAsync(stoppingToken: CancellationToken): Task;
     StartAsync(cancellationToken: CancellationToken): Task;
     StopAsync(cancellationToken: CancellationToken): Task;
 }
 
 
-export const BackgroundService: {
-    new(): BackgroundService;
+export const BackgroundService: (abstract new() => BackgroundService) & {
 };
 
 
@@ -200,12 +195,17 @@ export type HostApplicationBuilder = HostApplicationBuilder$instance & __HostApp
 
 
 export interface HostApplicationBuilderSettings$instance {
-    ApplicationName: string;
-    Args: string[];
-    Configuration: ConfigurationManager;
-    ContentRootPath: string;
+    get ApplicationName(): string | undefined;
+    set ApplicationName(value: string | undefined);
+    get Args(): string[] | undefined;
+    set Args(value: string[] | undefined);
+    get Configuration(): ConfigurationManager | undefined;
+    set Configuration(value: ConfigurationManager | undefined);
+    get ContentRootPath(): string | undefined;
+    set ContentRootPath(value: string | undefined);
     DisableDefaults: boolean;
-    EnvironmentName: string;
+    get EnvironmentName(): string | undefined;
+    set EnvironmentName(value: string | undefined);
 }
 
 
