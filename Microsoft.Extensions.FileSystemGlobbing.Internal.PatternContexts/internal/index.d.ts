@@ -49,6 +49,8 @@ export const PatternContextRagged_FrameData: {
 export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
 
 export interface PatternContext_1$instance<TFrame extends unknown> {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
@@ -69,6 +71,8 @@ export type PatternContext_1<TFrame> = PatternContext_1$instance<TFrame> & __Pat
 
 
 export interface PatternContextLinear$instance extends PatternContext_1$instance<PatternContextLinear_FrameData> {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
@@ -89,6 +93,8 @@ export type PatternContextLinear = PatternContextLinear$instance & __PatternCont
 
 
 export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
@@ -110,6 +116,8 @@ export type PatternContextLinearExclude = PatternContextLinearExclude$instance &
 
 
 export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
@@ -132,6 +140,8 @@ export type PatternContextLinearInclude = PatternContextLinearInclude$instance &
 
 
 export interface PatternContextRagged$instance extends PatternContext_1$instance<PatternContextRagged_FrameData> {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
@@ -152,6 +162,8 @@ export type PatternContextRagged = PatternContextRagged$instance & __PatternCont
 
 
 export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
@@ -173,6 +185,8 @@ export type PatternContextRaggedExclude = PatternContextRaggedExclude$instance &
 
 
 export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;

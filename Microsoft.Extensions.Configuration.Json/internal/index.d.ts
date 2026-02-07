@@ -19,6 +19,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface JsonConfigurationProvider$instance extends FileConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
@@ -37,10 +40,14 @@ export interface __JsonConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
+export interface JsonConfigurationProvider$instance extends System_Internal.IDisposable {}
+
 export type JsonConfigurationProvider = JsonConfigurationProvider$instance & __JsonConfigurationProvider$views;
 
 
 export interface JsonConfigurationSource$instance extends FileConfigurationSource {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
@@ -58,6 +65,8 @@ export type JsonConfigurationSource = JsonConfigurationSource$instance & __JsonC
 
 
 export interface JsonStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
@@ -80,6 +89,8 @@ export type JsonStreamConfigurationProvider = JsonStreamConfigurationProvider$in
 
 
 export interface JsonStreamConfigurationSource$instance extends StreamConfigurationSource {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

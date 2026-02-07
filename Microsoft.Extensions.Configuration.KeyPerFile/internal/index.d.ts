@@ -18,6 +18,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
@@ -37,10 +40,14 @@ export interface __KeyPerFileConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
+export interface KeyPerFileConfigurationProvider$instance extends System_Internal.IDisposable {}
+
 export type KeyPerFileConfigurationProvider = KeyPerFileConfigurationProvider$instance & __KeyPerFileConfigurationProvider$views;
 
 
 export interface KeyPerFileConfigurationSource$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     get FileProvider(): IFileProvider | undefined;
     set FileProvider(value: IFileProvider | undefined);
     IgnoreCondition: Func<System_Internal.String, System_Internal.Boolean>;

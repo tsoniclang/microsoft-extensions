@@ -26,6 +26,8 @@ export enum BackgroundServiceExceptionBehavior {
 
 
 export interface IApplicationLifetime$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IApplicationLifetime: never;
+
     readonly ApplicationStarted: CancellationToken;
     readonly ApplicationStopping: CancellationToken;
     readonly ApplicationStopped: CancellationToken;
@@ -36,14 +38,20 @@ export interface IApplicationLifetime$instance {
 export type IApplicationLifetime = IApplicationLifetime$instance;
 
 export interface IHost$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHost: never;
+
     readonly Services: IServiceProvider;
     StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
 
+export interface IHost$instance extends System_Internal.IDisposable {}
+
 export type IHost = IHost$instance;
 
 export interface IHostApplicationBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
+
     readonly Properties: IDictionary<unknown, unknown>;
     readonly Configuration: IConfigurationManager;
     readonly Environment: IHostEnvironment;
@@ -57,6 +65,8 @@ export interface IHostApplicationBuilder$instance {
 export type IHostApplicationBuilder = IHostApplicationBuilder$instance;
 
 export interface IHostApplicationLifetime$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationLifetime: never;
+
     readonly ApplicationStarted: CancellationToken;
     readonly ApplicationStopping: CancellationToken;
     readonly ApplicationStopped: CancellationToken;
@@ -67,6 +77,8 @@ export interface IHostApplicationLifetime$instance {
 export type IHostApplicationLifetime = IHostApplicationLifetime$instance;
 
 export interface IHostBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
+
     readonly Properties: IDictionary<unknown, unknown>;
     Build(): IHost;
     ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
@@ -79,6 +91,8 @@ export interface IHostBuilder$instance {
 export type IHostBuilder = IHostBuilder$instance;
 
 export interface IHostedLifecycleService$instance extends IHostedService {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedLifecycleService: never;
+
     StartingAsync(cancellationToken: CancellationToken): Task;
     StartAsync(cancellationToken: CancellationToken): Task;
 }
@@ -89,6 +103,8 @@ export interface IHostedLifecycleService$instance extends IHostedService$instanc
 export type IHostedLifecycleService = IHostedLifecycleService$instance;
 
 export interface IHostedService$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
+
     StartAsync(cancellationToken: CancellationToken): Task;
 }
 
@@ -96,6 +112,8 @@ export interface IHostedService$instance {
 export type IHostedService = IHostedService$instance;
 
 export interface IHostEnvironment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostEnvironment: never;
+
     EnvironmentName: string;
     ApplicationName: string;
     ContentRootPath: string;
@@ -106,6 +124,8 @@ export interface IHostEnvironment$instance {
 export type IHostEnvironment = IHostEnvironment$instance;
 
 export interface IHostingEnvironment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostingEnvironment: never;
+
     EnvironmentName: string;
     ApplicationName: string;
     ContentRootPath: string;
@@ -116,6 +136,8 @@ export interface IHostingEnvironment$instance {
 export type IHostingEnvironment = IHostingEnvironment$instance;
 
 export interface IHostLifetime$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostLifetime: never;
+
     WaitForStartAsync(cancellationToken: CancellationToken): Task;
 }
 
@@ -123,6 +145,9 @@ export interface IHostLifetime$instance {
 export type IHostLifetime = IHostLifetime$instance;
 
 export interface BackgroundService$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly ExecuteTask: Task | undefined;
     Dispose(): void;
     ExecuteAsync(stoppingToken: CancellationToken): Task;
@@ -139,7 +164,7 @@ export interface __BackgroundService$views {
     As_IHostedService(): IHostedService$instance;
 }
 
-export interface BackgroundService$instance extends IHostedService$instance {}
+export interface BackgroundService$instance extends IHostedService$instance, System_Internal.IDisposable {}
 
 export type BackgroundService = BackgroundService$instance & __BackgroundService$views;
 
@@ -157,6 +182,8 @@ export const ConsoleLifetimeOptions: {
 export type ConsoleLifetimeOptions = ConsoleLifetimeOptions$instance;
 
 export interface HostAbortedException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -170,6 +197,8 @@ export const HostAbortedException: {
 export type HostAbortedException = HostAbortedException$instance;
 
 export interface HostApplicationBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
+
     readonly Configuration: ConfigurationManager;
     readonly Environment: IHostEnvironment;
     readonly Logging: ILoggingBuilder;
@@ -217,6 +246,8 @@ export const HostApplicationBuilderSettings: {
 export type HostApplicationBuilderSettings = HostApplicationBuilderSettings$instance;
 
 export interface HostBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
+
     readonly Properties: IDictionary<unknown, unknown>;
     Build(): IHost;
     ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;

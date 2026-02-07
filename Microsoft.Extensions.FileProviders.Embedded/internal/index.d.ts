@@ -14,6 +14,8 @@ import type { Boolean as ClrBoolean, DateTimeOffset, Int64, Object as ClrObject,
 import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
 
 export interface EmbeddedResourceFileInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
+
     readonly Exists: boolean;
     readonly IsDirectory: boolean;
     readonly LastModified: DateTimeOffset;

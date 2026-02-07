@@ -135,6 +135,8 @@ export const EventLevel: {
 export type EventLevel = EventLevel$instance;
 
 export interface EventLogConfiguration$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly IsClassicLog: boolean;
     IsEnabled: boolean;
     LogFilePath: string;
@@ -168,6 +170,8 @@ export const EventLogConfiguration: {
 export type EventLogConfiguration = EventLogConfiguration$instance;
 
 export interface EventLogException$instance extends Exception {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly Message: string;
     GetObjectData(info: SerializationInfo, context: StreamingContext): void;
 }
@@ -201,6 +205,8 @@ export const EventLogInformation: {
 export type EventLogInformation = EventLogInformation$instance;
 
 export interface EventLogInvalidDataException$instance extends EventLogException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -227,6 +233,8 @@ export const EventLogLink: {
 export type EventLogLink = EventLogLink$instance;
 
 export interface EventLogNotFoundException$instance extends EventLogException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -240,6 +248,8 @@ export const EventLogNotFoundException: {
 export type EventLogNotFoundException = EventLogNotFoundException$instance;
 
 export interface EventLogPropertySelector$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     Dispose(disposing: boolean): void;
 }
@@ -253,6 +263,8 @@ export const EventLogPropertySelector: {
 export type EventLogPropertySelector = EventLogPropertySelector$instance;
 
 export interface EventLogProviderDisabledException$instance extends EventLogException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -281,6 +293,8 @@ export const EventLogQuery: {
 export type EventLogQuery = EventLogQuery$instance;
 
 export interface EventLogReader$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     BatchSize: int;
     readonly LogStatus: IList<EventLogStatus>;
     CancelReading(): void;
@@ -305,6 +319,8 @@ export const EventLogReader: {
 export type EventLogReader = EventLogReader$instance;
 
 export interface EventLogReadingException$instance extends EventLogException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -318,6 +334,8 @@ export const EventLogReadingException: {
 export type EventLogReadingException = EventLogReadingException$instance;
 
 export interface EventLogRecord$instance extends EventRecord {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly ActivityId: Nullable<Guid>;
     readonly Bookmark: EventBookmark;
     readonly ContainerLog: string;
@@ -360,6 +378,8 @@ export const EventLogRecord: {
 export type EventLogRecord = EventLogRecord$instance;
 
 export interface EventLogSession$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CancelCurrentOperations(): void;
     ClearLog(logName: string): void;
     ClearLog(logName: string, backupPath: string): void;
@@ -398,6 +418,8 @@ export const EventLogStatus: {
 export type EventLogStatus = EventLogStatus$instance;
 
 export interface EventLogWatcher$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Enabled: boolean;
     Dispose(): void;
     Dispose(disposing: boolean): void;
@@ -458,6 +480,8 @@ export const EventProperty: {
 export type EventProperty = EventProperty$instance;
 
 export interface EventRecord$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly ActivityId: Nullable<Guid>;
     readonly Bookmark: EventBookmark;
     readonly Id: int;
@@ -523,6 +547,8 @@ export const EventTask: {
 export type EventTask = EventTask$instance;
 
 export interface ProviderMetadata$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly DisplayName: string;
     readonly Events: IEnumerable<EventMetadata>;
     readonly HelpLink: Uri;

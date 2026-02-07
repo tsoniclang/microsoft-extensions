@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, StringComparison } from "@tsonic/dotnet/System.js";
 
 export interface CurrentPathSegment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
+
     readonly CanProduceStem: boolean;
     Match(value: string): boolean;
 }
@@ -33,6 +35,8 @@ export type CurrentPathSegment = CurrentPathSegment$instance & __CurrentPathSegm
 
 
 export interface LiteralPathSegment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
+
     readonly CanProduceStem: boolean;
     readonly Value: string;
     Equals(obj: unknown): boolean;
@@ -56,6 +60,8 @@ export type LiteralPathSegment = LiteralPathSegment$instance & __LiteralPathSegm
 
 
 export interface ParentPathSegment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
+
     readonly CanProduceStem: boolean;
     Match(value: string): boolean;
 }
@@ -76,6 +82,8 @@ export type ParentPathSegment = ParentPathSegment$instance & __ParentPathSegment
 
 
 export interface RecursiveWildcardSegment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
+
     readonly CanProduceStem: boolean;
     Match(value: string): boolean;
 }
@@ -96,6 +104,8 @@ export type RecursiveWildcardSegment = RecursiveWildcardSegment$instance & __Rec
 
 
 export interface WildcardPathSegment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
+
     readonly BeginsWith: string;
     readonly CanProduceStem: boolean;
     readonly Contains: List<System_Internal.String>;

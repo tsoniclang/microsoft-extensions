@@ -11,6 +11,8 @@ import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/Sy
 import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
 
 export interface IHttpClientFactory$instance {
+    readonly __tsonic_iface_System_Net_Http_IHttpClientFactory: never;
+
     CreateClient(name: string): HttpClient;
 }
 
@@ -18,6 +20,8 @@ export interface IHttpClientFactory$instance {
 export type IHttpClientFactory = IHttpClientFactory$instance;
 
 export interface IHttpMessageHandlerFactory$instance {
+    readonly __tsonic_iface_System_Net_Http_IHttpMessageHandlerFactory: never;
+
     CreateHandler(name: string): HttpMessageHandler;
 }
 

@@ -28,6 +28,11 @@ export enum ExclusionFilters {
 
 
 export interface PhysicalDirectoryInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Exists: boolean;
     readonly IsDirectory: boolean;
     readonly LastModified: DateTimeOffset;
@@ -55,6 +60,8 @@ export type PhysicalDirectoryInfo = PhysicalDirectoryInfo$instance & __PhysicalD
 
 
 export interface PhysicalFileInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
+
     readonly Exists: boolean;
     readonly IsDirectory: boolean;
     readonly LastModified: DateTimeOffset;
@@ -80,6 +87,8 @@ export type PhysicalFileInfo = PhysicalFileInfo$instance & __PhysicalFileInfo$vi
 
 
 export interface PhysicalFilesWatcher$instance {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CreateFileChangeToken(filter: string): IChangeToken;
     Dispose(): void;
     Dispose(disposing: boolean): void;
@@ -95,6 +104,9 @@ export const PhysicalFilesWatcher: {
 export type PhysicalFilesWatcher = PhysicalFilesWatcher$instance;
 
 export interface PollingFileChangeToken$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IPollingChangeToken: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
+
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
@@ -114,6 +126,9 @@ export type PollingFileChangeToken = PollingFileChangeToken$instance & __Polling
 
 
 export interface PollingWildCardChangeToken$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IPollingChangeToken: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
+
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     GetLastWriteUtc(path: string): DateTime;

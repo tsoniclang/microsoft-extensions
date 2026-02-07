@@ -41,6 +41,8 @@ export enum LoggerColorBehavior {
 
 
 export interface IConsoleLoggerSettings$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
+
     readonly IncludeScopes: boolean;
     readonly ChangeToken: IChangeToken | undefined;
     Reload(): IConsoleLoggerSettings;
@@ -51,6 +53,8 @@ export interface IConsoleLoggerSettings$instance {
 export type IConsoleLoggerSettings = IConsoleLoggerSettings$instance;
 
 export interface ConfigurationConsoleLoggerSettings$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
+
     get ChangeToken(): IChangeToken | undefined;
     set ChangeToken(value: IChangeToken | undefined);
     readonly IncludeScopes: boolean;
@@ -121,6 +125,10 @@ export const ConsoleLoggerOptions: {
 export type ConsoleLoggerOptions = ConsoleLoggerOptions$instance;
 
 export interface ConsoleLoggerProvider$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ISupportExternalScope: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CreateLogger(name: string): ILogger;
     Dispose(): void;
     SetScopeProvider(scopeProvider: IExternalScopeProvider): void;
@@ -144,6 +152,8 @@ export type ConsoleLoggerProvider = ConsoleLoggerProvider$instance & __ConsoleLo
 
 
 export interface ConsoleLoggerSettings$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
+
     get ChangeToken(): IChangeToken | undefined;
     set ChangeToken(value: IChangeToken | undefined);
     DisableColors: boolean;

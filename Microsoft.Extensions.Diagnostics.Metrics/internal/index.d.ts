@@ -24,6 +24,8 @@ export enum MeterScope {
 
 
 export interface IMetricsBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -31,6 +33,8 @@ export interface IMetricsBuilder$instance {
 export type IMetricsBuilder = IMetricsBuilder$instance;
 
 export interface IMetricsListener$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_Metrics_IMetricsListener: never;
+
     readonly Name: string;
     GetMeasurementHandlers(): MeasurementHandlers;
     Initialize(source: IObservableInstrumentsSource): void;
@@ -42,6 +46,8 @@ export interface IMetricsListener$instance {
 export type IMetricsListener = IMetricsListener$instance;
 
 export interface IObservableInstrumentsSource$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_Metrics_IObservableInstrumentsSource: never;
+
     RecordObservableInstruments(): void;
 }
 

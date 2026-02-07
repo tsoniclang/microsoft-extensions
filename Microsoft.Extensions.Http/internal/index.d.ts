@@ -12,6 +12,8 @@ import type { Action, Boolean as ClrBoolean, Func, IServiceProvider, Object as C
 import type { DelegatingHandler, HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
 
 export interface IHttpMessageHandlerBuilderFilter$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter: never;
+
     Configure(next: Action<HttpMessageHandlerBuilder>): Action<HttpMessageHandlerBuilder>;
 }
 
@@ -19,6 +21,8 @@ export interface IHttpMessageHandlerBuilderFilter$instance {
 export type IHttpMessageHandlerBuilderFilter = IHttpMessageHandlerBuilderFilter$instance;
 
 export interface ITypedHttpClientFactory_1$instance<TClient> {
+    readonly __tsonic_iface_Microsoft_Extensions_Http_ITypedHttpClientFactory_1: never;
+
     CreateClient(httpClient: HttpClient): TClient;
 }
 

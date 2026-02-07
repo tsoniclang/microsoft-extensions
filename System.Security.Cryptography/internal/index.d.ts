@@ -27,6 +27,9 @@ export const CryptographicAttributeObject: {
 export type CryptographicAttributeObject = CryptographicAttributeObject$instance;
 
 export interface CryptographicAttributeObjectCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
     readonly [index: number]: CryptographicAttributeObject;
@@ -48,6 +51,8 @@ export const CryptographicAttributeObjectCollection: {
 export type CryptographicAttributeObjectCollection = CryptographicAttributeObjectCollection$instance;
 
 export interface CryptographicAttributeObjectEnumerator$instance {
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+
     readonly Current: CryptographicAttributeObject;
     MoveNext(): boolean;
     Reset(): void;

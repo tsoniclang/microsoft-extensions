@@ -65,6 +65,10 @@ export const EventInstance: {
 export type EventInstance = EventInstance$instance;
 
 export interface EventLog$instance extends Component {
+    readonly __tsonic_iface_System_ComponentModel_IComponent: never;
+    readonly __tsonic_iface_System_ComponentModel_ISupportInitialize: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     EnableRaisingEvents: boolean;
     readonly Entries: EventLogEntryCollection;
     Log: string;
@@ -124,6 +128,10 @@ export const EventLog: {
 export type EventLog = EventLog$instance;
 
 export interface EventLogEntry$instance extends Component {
+    readonly __tsonic_iface_System_ComponentModel_IComponent: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
     readonly Category: string;
     readonly CategoryNumber: short;
     readonly Data: byte[];
@@ -149,6 +157,9 @@ export const EventLogEntry: {
 export type EventLogEntry = EventLogEntry$instance;
 
 export interface EventLogEntryCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly [index: number]: EventLogEntry;
     CopyTo(entries: EventLogEntry[], index: int): void;
@@ -163,6 +174,8 @@ export const EventLogEntryCollection: {
 export type EventLogEntryCollection = EventLogEntryCollection$instance;
 
 export interface EventLogTraceListener$instance extends TraceListener {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     EventLog: EventLog;
     Name: string;
     Close(): void;

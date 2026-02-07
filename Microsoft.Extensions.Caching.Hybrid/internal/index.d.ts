@@ -31,6 +31,8 @@ export enum HybridCacheEntryFlags {
 
 
 export interface IHybridCacheSerializer_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_Caching_Hybrid_IHybridCacheSerializer_1: never;
+
     Deserialize(source: ReadOnlySequence<System_Internal.Byte>): T;
     Serialize(value: T, target: IBufferWriter<System_Internal.Byte>): void;
 }
@@ -39,6 +41,8 @@ export interface IHybridCacheSerializer_1$instance<T> {
 export type IHybridCacheSerializer_1<T> = IHybridCacheSerializer_1$instance<T>;
 
 export interface IHybridCacheSerializerFactory$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Caching_Hybrid_IHybridCacheSerializerFactory: never;
+
     TryCreateSerializer<T>(serializer: IHybridCacheSerializer_1<T>): boolean;
 }
 

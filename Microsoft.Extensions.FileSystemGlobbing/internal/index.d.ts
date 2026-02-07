@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, IEquatable, Int32, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface FilePatternMatch$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Path: string;
     readonly Stem: string;
     Equals(other: FilePatternMatch): boolean;

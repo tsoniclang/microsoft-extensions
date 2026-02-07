@@ -17,6 +17,10 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
 
 export interface PhysicalDirectoryContents$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Exists: boolean;
     GetEnumerator(): IEnumerator<IFileInfo>;
 }

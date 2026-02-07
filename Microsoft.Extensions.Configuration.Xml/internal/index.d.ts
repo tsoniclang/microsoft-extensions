@@ -20,6 +20,9 @@ import type { Action, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrOb
 import type { XmlDocument, XmlReader, XmlReaderSettings } from "@tsonic/dotnet/System.Xml.js";
 
 export interface XmlConfigurationProvider$instance extends FileConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
@@ -38,10 +41,14 @@ export interface __XmlConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
+export interface XmlConfigurationProvider$instance extends System_Internal.IDisposable {}
+
 export type XmlConfigurationProvider = XmlConfigurationProvider$instance & __XmlConfigurationProvider$views;
 
 
 export interface XmlConfigurationSource$instance extends FileConfigurationSource {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
@@ -72,6 +79,8 @@ export const XmlDocumentDecryptor: (abstract new() => XmlDocumentDecryptor) & {
 export type XmlDocumentDecryptor = XmlDocumentDecryptor$instance;
 
 export interface XmlStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
@@ -95,6 +104,8 @@ export type XmlStreamConfigurationProvider = XmlStreamConfigurationProvider$inst
 
 
 export interface XmlStreamConfigurationSource$instance extends StreamConfigurationSource {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

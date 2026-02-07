@@ -17,6 +17,9 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface ApplicationLifetime$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IApplicationLifetime: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationLifetime: never;
+
     readonly ApplicationStarted: CancellationToken;
     readonly ApplicationStopped: CancellationToken;
     readonly ApplicationStopping: CancellationToken;
@@ -42,6 +45,9 @@ export type ApplicationLifetime = ApplicationLifetime$instance & __ApplicationLi
 
 
 export interface ConsoleLifetime$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostLifetime: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Dispose(): void;
     StopAsync(cancellationToken: CancellationToken): Task;
     WaitForStartAsync(cancellationToken: CancellationToken): Task;
@@ -58,12 +64,15 @@ export interface __ConsoleLifetime$views {
     As_IHostLifetime(): Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance;
 }
 
-export interface ConsoleLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance {}
+export interface ConsoleLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance, System_Internal.IDisposable {}
 
 export type ConsoleLifetime = ConsoleLifetime$instance & __ConsoleLifetime$views;
 
 
 export interface HostingEnvironment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostEnvironment: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostingEnvironment: never;
+
     ApplicationName: string;
     ContentRootFileProvider: IFileProvider;
     ContentRootPath: string;

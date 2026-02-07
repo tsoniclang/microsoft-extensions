@@ -93,6 +93,9 @@ export const CmsRecipient: {
 export type CmsRecipient = CmsRecipient$instance;
 
 export interface CmsRecipientCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
     readonly [index: number]: CmsRecipient;
@@ -115,6 +118,8 @@ export const CmsRecipientCollection: {
 export type CmsRecipientCollection = CmsRecipientCollection$instance;
 
 export interface CmsRecipientEnumerator$instance {
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+
     readonly Current: CmsRecipient;
     MoveNext(): boolean;
     Reset(): void;
@@ -532,6 +537,9 @@ export const RecipientInfo: {
 export type RecipientInfo = RecipientInfo$instance;
 
 export interface RecipientInfoCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
     readonly [index: number]: RecipientInfo;
@@ -549,6 +557,8 @@ export const RecipientInfoCollection: {
 export type RecipientInfoCollection = RecipientInfoCollection$instance;
 
 export interface RecipientInfoEnumerator$instance {
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+
     readonly Current: RecipientInfo;
     MoveNext(): boolean;
     Reset(): void;
@@ -693,6 +703,9 @@ export const SignerInfo: {
 export type SignerInfo = SignerInfo$instance;
 
 export interface SignerInfoCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
     readonly [index: number]: SignerInfo;
@@ -710,6 +723,8 @@ export const SignerInfoCollection: {
 export type SignerInfoCollection = SignerInfoCollection$instance;
 
 export interface SignerInfoEnumerator$instance {
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+
     readonly Current: SignerInfo;
     MoveNext(): boolean;
     Reset(): void;

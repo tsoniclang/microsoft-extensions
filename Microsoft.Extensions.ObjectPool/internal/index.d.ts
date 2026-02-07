@@ -12,6 +12,8 @@ import * as System_Text_Internal from "@tsonic/dotnet/System.Text.js";
 import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 
 export interface IPooledObjectPolicy_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
+
     Create(): T;
     Return(obj: T): boolean;
 }
@@ -20,6 +22,8 @@ export interface IPooledObjectPolicy_1$instance<T> {
 export type IPooledObjectPolicy_1<T> = IPooledObjectPolicy_1$instance<T>;
 
 export interface IResettable$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IResettable: never;
+
     TryReset(): boolean;
 }
 
@@ -55,6 +59,8 @@ export const DefaultObjectPoolProvider: {
 export type DefaultObjectPoolProvider = DefaultObjectPoolProvider$instance;
 
 export interface DefaultPooledObjectPolicy_1$instance<T> extends PooledObjectPolicy_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
+
     Create(): T;
     Return(obj: T): boolean;
 }
@@ -123,6 +129,8 @@ export const ObjectPoolProvider: (abstract new() => ObjectPoolProvider) & {
 export type ObjectPoolProvider = ObjectPoolProvider$instance;
 
 export interface PooledObjectPolicy_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
+
     Create(): T;
     Return(obj: T): boolean;
 }
@@ -142,6 +150,8 @@ export type PooledObjectPolicy_1<T> = PooledObjectPolicy_1$instance<T> & __Poole
 
 
 export interface StringBuilderPooledObjectPolicy$instance extends PooledObjectPolicy_1$instance<StringBuilder> {
+    readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
+
     InitialCapacity: int;
     MaximumRetainedCapacity: int;
 }
