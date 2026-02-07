@@ -19,6 +19,8 @@ import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
 import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 
 export interface IChangeToken$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
+
     readonly HasChanged: boolean;
     readonly ActiveChangeCallbacks: boolean;
     RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
@@ -45,6 +47,8 @@ export const InplaceStringBuilder: {
 export type InplaceStringBuilder = InplaceStringBuilder$instance;
 
 export interface StringSegment$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Buffer: string | undefined;
     readonly HasValue: boolean;
     readonly [index: number]: char;
@@ -95,6 +99,9 @@ export const StringSegment: {
 export type StringSegment = StringSegment$instance;
 
 export interface StringTokenizer$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     GetEnumerator(): StringTokenizer_Enumerator;
 }
 
@@ -108,6 +115,10 @@ export const StringTokenizer: {
 export type StringTokenizer = StringTokenizer$instance;
 
 export interface StringTokenizer_Enumerator$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Current: StringSegment;
     Dispose(): void;
     MoveNext(): boolean;
@@ -123,6 +134,14 @@ export const StringTokenizer_Enumerator: {
 export type StringTokenizer_Enumerator = StringTokenizer_Enumerator$instance;
 
 export interface StringValues$instance {
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyCollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IReadOnlyList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Count: int;
     readonly [index: number]: string | undefined;
     Equals(other: StringValues): boolean;
@@ -155,6 +174,10 @@ export const StringValues: {
 export type StringValues = StringValues$instance;
 
 export interface StringValues_Enumerator$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerator: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Current: string | undefined;
     Dispose(): void;
     MoveNext(): boolean;
@@ -170,6 +193,8 @@ export const StringValues_Enumerator: {
 export type StringValues_Enumerator = StringValues_Enumerator$instance;
 
 export interface CancellationChangeToken$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
+
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
@@ -189,6 +214,8 @@ export type CancellationChangeToken = CancellationChangeToken$instance & __Cance
 
 
 export interface CompositeChangeToken$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
+
     readonly ActiveChangeCallbacks: boolean;
     readonly ChangeTokens: IReadOnlyList<IChangeToken>;
     readonly HasChanged: boolean;
@@ -211,6 +238,9 @@ export type CompositeChangeToken = CompositeChangeToken$instance & __CompositeCh
 
 
 export interface StringSegmentComparer$instance {
+    readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEqualityComparer_1: never;
+
     Compare(x: StringSegment, y: StringSegment): int;
     Equals(x: StringSegment, y: StringSegment): boolean;
     GetHashCode(obj: StringSegment): int;

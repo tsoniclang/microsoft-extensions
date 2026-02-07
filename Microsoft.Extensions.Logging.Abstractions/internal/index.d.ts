@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface IBufferedLogger$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_Abstractions_IBufferedLogger: never;
+
     LogRecords(records: IEnumerable<BufferedLogRecord>): void;
 }
 
@@ -58,6 +60,8 @@ export const BufferedLogRecord: (abstract new() => BufferedLogRecord) & {
 export type BufferedLogRecord = BufferedLogRecord$instance;
 
 export interface NullLogger$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
+
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
     Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
@@ -79,6 +83,9 @@ export type NullLogger = NullLogger$instance & __NullLogger$views;
 
 
 export interface NullLogger_1$instance<T> extends ILogger_1<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
+
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
     Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
@@ -99,6 +106,9 @@ export type NullLogger_1<T> = NullLogger_1$instance<T> & __NullLogger_1$views<T>
 
 
 export interface NullLoggerFactory$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     AddProvider(provider: ILoggerProvider): void;
     CreateLogger(name: string): ILogger;
     Dispose(): void;
@@ -121,6 +131,9 @@ export type NullLoggerFactory = NullLoggerFactory$instance & __NullLoggerFactory
 
 
 export interface NullLoggerProvider$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CreateLogger(categoryName: string): ILogger;
     Dispose(): void;
 }

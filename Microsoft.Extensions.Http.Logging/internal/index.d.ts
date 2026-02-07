@@ -16,6 +16,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger {
+    readonly __tsonic_iface_Microsoft_Extensions_Http_Logging_IHttpClientAsyncLogger: never;
+
     LogRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
     LogRequestFailedAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
     LogRequestStart(request: HttpRequestMessage): unknown | undefined;
@@ -30,6 +32,8 @@ export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger$insta
 export type IHttpClientAsyncLogger = IHttpClientAsyncLogger$instance;
 
 export interface IHttpClientLogger$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Http_Logging_IHttpClientLogger: never;
+
     LogRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
     LogRequestStart(request: HttpRequestMessage): unknown | undefined;
     LogRequestStop(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
@@ -39,6 +43,8 @@ export interface IHttpClientLogger$instance {
 export type IHttpClientLogger = IHttpClientLogger$instance;
 
 export interface LoggingHttpMessageHandler$instance extends DelegatingHandler {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
     SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
 }
@@ -53,6 +59,8 @@ export const LoggingHttpMessageHandler: {
 export type LoggingHttpMessageHandler = LoggingHttpMessageHandler$instance;
 
 export interface LoggingScopeHttpMessageHandler$instance extends DelegatingHandler {
+    readonly __tsonic_iface_System_IDisposable: never;
+
     Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
     SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
 }

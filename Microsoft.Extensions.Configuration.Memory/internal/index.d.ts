@@ -20,6 +20,10 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface MemoryConfigurationProvider$instance extends ConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     Add(key: string, value: string): void;
     GetChildKeys(earlierKeys: IEnumerable__System_Collections_Generic<System_Internal.String>, parentPath: string): IEnumerable__System_Collections_Generic<System_Internal.String>;
     GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
@@ -39,10 +43,14 @@ export interface __MemoryConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
+export interface MemoryConfigurationProvider$instance extends System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, System_Internal.String>> {}
+
 export type MemoryConfigurationProvider = MemoryConfigurationProvider$instance & __MemoryConfigurationProvider$views;
 
 
 export interface MemoryConfigurationSource$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     get InitialData(): IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined;
     set InitialData(value: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;

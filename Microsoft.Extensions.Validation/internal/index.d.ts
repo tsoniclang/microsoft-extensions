@@ -18,6 +18,8 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IValidatableInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
+
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
@@ -25,6 +27,8 @@ export interface IValidatableInfo$instance {
 export type IValidatableInfo = IValidatableInfo$instance;
 
 export interface IValidatableInfoResolver$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfoResolver: never;
+
     TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
     TryGetValidatableTypeInfo(type: Type, validatableInfo: IValidatableInfo): boolean;
 }
@@ -60,6 +64,8 @@ export const SkipValidationAttribute: {
 export type SkipValidationAttribute = SkipValidationAttribute$instance;
 
 export interface ValidatableParameterInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
+
     GetValidationAttributes(): ValidationAttribute[];
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
@@ -79,6 +85,8 @@ export type ValidatableParameterInfo = ValidatableParameterInfo$instance & __Val
 
 
 export interface ValidatablePropertyInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
+
     GetValidationAttributes(): ValidationAttribute[];
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
@@ -109,6 +117,8 @@ export const ValidatableTypeAttribute: {
 export type ValidatableTypeAttribute = ValidatableTypeAttribute$instance;
 
 export interface ValidatableTypeInfo$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
+
     GetValidationAttributes(): ValidationAttribute[];
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }

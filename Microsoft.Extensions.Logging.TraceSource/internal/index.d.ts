@@ -13,6 +13,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface TraceSourceLoggerProvider$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     CreateLogger(name: string): ILogger;
     Dispose(): void;
 }

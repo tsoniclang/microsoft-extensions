@@ -16,6 +16,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
 
 export interface ILoggerProviderConfiguration_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1: never;
+
     readonly Configuration: IConfiguration;
 }
 
@@ -23,6 +25,8 @@ export interface ILoggerProviderConfiguration_1$instance<T> {
 export type ILoggerProviderConfiguration_1<T> = ILoggerProviderConfiguration_1$instance<T>;
 
 export interface ILoggerProviderConfigurationFactory$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory: never;
+
     GetConfiguration(providerType: Type): IConfiguration;
 }
 
@@ -30,6 +34,8 @@ export interface ILoggerProviderConfigurationFactory$instance {
 export type ILoggerProviderConfigurationFactory = ILoggerProviderConfigurationFactory$instance;
 
 export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> extends ConfigurationChangeTokenSource_1<TOptions> {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1: never;
+
     GetChangeToken(): IChangeToken;
 }
 

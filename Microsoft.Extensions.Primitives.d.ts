@@ -25,3 +25,6 @@ export { StringTokenizer as StringTokenizer } from './Microsoft.Extensions.Primi
 export { StringValues as StringValues } from './Microsoft.Extensions.Primitives/internal/index.js';
 export { StringTokenizer_Enumerator as StringTokenizer_Enumerator } from './Microsoft.Extensions.Primitives/internal/index.js';
 export { StringValues_Enumerator as StringValues_Enumerator } from './Microsoft.Extensions.Primitives/internal/index.js';
+// Extension methods (C# using semantics)
+export type { ExtensionMethods_Microsoft_Extensions_Primitives as ExtensionMethods } from './__internal/extensions/index.js';
+

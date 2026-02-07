@@ -19,6 +19,9 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface IniConfigurationProvider$instance extends FileConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
@@ -37,10 +40,14 @@ export interface __IniConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
+export interface IniConfigurationProvider$instance extends System_Internal.IDisposable {}
+
 export type IniConfigurationProvider = IniConfigurationProvider$instance & __IniConfigurationProvider$views;
 
 
 export interface IniConfigurationSource$instance extends FileConfigurationSource {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
@@ -58,6 +65,8 @@ export type IniConfigurationSource = IniConfigurationSource$instance & __IniConf
 
 
 export interface IniStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
@@ -81,6 +90,8 @@ export type IniStreamConfigurationProvider = IniStreamConfigurationProvider$inst
 
 
 export interface IniStreamConfigurationSource$instance extends StreamConfigurationSource {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

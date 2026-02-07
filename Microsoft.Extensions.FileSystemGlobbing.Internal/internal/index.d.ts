@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Action, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
 
 export interface ILinearPattern$instance extends IPattern {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern: never;
+
     readonly Segments: IList<IPathSegment>;
     CreatePatternContextForInclude(): IPatternContext;
 }
@@ -23,6 +25,8 @@ export interface ILinearPattern$instance extends IPattern$instance {}
 export type ILinearPattern = ILinearPattern$instance;
 
 export interface IPathSegment$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
+
     readonly CanProduceStem: boolean;
     Match(value: string): boolean;
 }
@@ -31,6 +35,8 @@ export interface IPathSegment$instance {
 export type IPathSegment = IPathSegment$instance;
 
 export interface IPattern$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern: never;
+
     CreatePatternContextForInclude(): IPatternContext;
 }
 
@@ -38,6 +44,8 @@ export interface IPattern$instance {
 export type IPattern = IPattern$instance;
 
 export interface IPatternContext$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
+
     Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
@@ -49,6 +57,8 @@ export interface IPatternContext$instance {
 export type IPatternContext = IPatternContext$instance;
 
 export interface IRaggedPattern$instance extends IPattern {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern: never;
+
     readonly Segments: IList<IPathSegment>;
     readonly StartsWith: IList<IPathSegment>;
     readonly Contains: IList<IList<IPathSegment>>;

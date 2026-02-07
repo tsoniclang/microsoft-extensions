@@ -17,6 +17,8 @@ import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
 
 export interface EnvironmentVariablesConfigurationProvider$instance extends ConfigurationProvider {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
+
     GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
@@ -40,6 +42,8 @@ export type EnvironmentVariablesConfigurationProvider = EnvironmentVariablesConf
 
 
 export interface EnvironmentVariablesConfigurationSource$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
+
     get Prefix(): string | undefined;
     set Prefix(value: string | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;

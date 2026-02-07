@@ -25,6 +25,8 @@ import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml.js";
 import type { XmlDocument, XmlElement, XmlException, XmlNodeList, XmlResolver } from "@tsonic/dotnet/System.Xml.js";
 
 export interface IRelDecryptor$instance {
+    readonly __tsonic_iface_System_Security_Cryptography_Xml_IRelDecryptor: never;
+
     Decrypt(encryptionMethod: EncryptionMethod, keyInfo: KeyInfo, toDecrypt: Stream): Stream;
 }
 
@@ -79,6 +81,8 @@ export const CipherReference: {
 export type CipherReference = CipherReference$instance;
 
 export interface CryptoSignedXmlRecursionException$instance extends XmlException {
+    readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
+
 }
 
 
@@ -306,6 +310,10 @@ export const EncryptionProperty: {
 export type EncryptionProperty = EncryptionProperty$instance;
 
 export interface EncryptionPropertyCollection$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+
     readonly Count: int;
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
@@ -334,6 +342,8 @@ export const EncryptionPropertyCollection: {
 export type EncryptionPropertyCollection = EncryptionPropertyCollection$instance;
 
 export interface KeyInfo$instance {
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     readonly Count: int;
     get Id(): string | undefined;
     set Id(value: string | undefined);
@@ -498,6 +508,10 @@ export const Reference: {
 export type Reference = Reference$instance;
 
 export interface ReferenceList$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+    readonly __tsonic_iface_System_Collections_IList: never;
+
     readonly Count: int;
     readonly IsSynchronized: boolean;
     [index: number]: EncryptedReference;
@@ -560,6 +574,9 @@ export const Signature: {
 export type Signature = Signature$instance;
 
 export interface SignedInfo$instance {
+    readonly __tsonic_iface_System_Collections_ICollection: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
+
     CanonicalizationMethod: string;
     readonly CanonicalizationMethodObject: Transform;
     readonly Count: int;

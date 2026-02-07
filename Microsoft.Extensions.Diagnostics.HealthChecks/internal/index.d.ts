@@ -20,6 +20,8 @@ export enum HealthStatus {
 
 
 export interface IHealthCheck$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never;
+
     CheckHealthAsync(context: HealthCheckContext, cancellationToken?: CancellationToken): Task<HealthCheckResult>;
 }
 
@@ -27,6 +29,8 @@ export interface IHealthCheck$instance {
 export type IHealthCheck = IHealthCheck$instance;
 
 export interface IHealthCheckPublisher$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheckPublisher: never;
+
     PublishAsync(report: HealthReport, cancellationToken: CancellationToken): Task;
 }
 

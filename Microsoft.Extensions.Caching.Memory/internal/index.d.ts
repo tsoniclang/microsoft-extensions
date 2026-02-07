@@ -43,6 +43,8 @@ export type PostEvictionDelegate = (key: unknown, value: unknown, reason: Evicti
 
 
 export interface ICacheEntry$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_ICacheEntry: never;
+
     readonly Key: unknown;
     get Value(): unknown | undefined;
     set Value(value: unknown | undefined);
@@ -56,9 +58,13 @@ export interface ICacheEntry$instance extends IDisposable {
 }
 
 
+export interface ICacheEntry$instance extends System_Internal.IDisposable {}
+
 export type ICacheEntry = ICacheEntry$instance;
 
 export interface IMemoryCache$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_IMemoryCache: never;
+
     CreateEntry(key: unknown): ICacheEntry;
     GetCurrentStatistics(): MemoryCacheStatistics | undefined;
     Remove(key: unknown): void;
@@ -66,9 +72,14 @@ export interface IMemoryCache$instance extends IDisposable {
 }
 
 
+export interface IMemoryCache$instance extends System_Internal.IDisposable {}
+
 export type IMemoryCache = IMemoryCache$instance;
 
 export interface MemoryCache$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_IMemoryCache: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     readonly Count: int;
     readonly Keys: IEnumerable<unknown>;
     Clear(): void;
@@ -117,6 +128,8 @@ export const MemoryCacheEntryOptions: {
 export type MemoryCacheEntryOptions = MemoryCacheEntryOptions$instance;
 
 export interface MemoryCacheOptions$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
+
     get Clock(): ISystemClock | undefined;
     set Clock(value: ISystemClock | undefined);
     CompactionPercentage: double;
@@ -158,6 +171,8 @@ export const MemoryCacheStatistics: {
 export type MemoryCacheStatistics = MemoryCacheStatistics$instance;
 
 export interface MemoryDistributedCacheOptions$instance extends MemoryCacheOptions$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
+
 }
 
 

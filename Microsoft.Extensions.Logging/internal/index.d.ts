@@ -40,6 +40,8 @@ export enum LogLevel {
 
 
 export interface IExternalScopeProvider$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_IExternalScopeProvider: never;
+
     ForEachScope<TState>(callback: Action<unknown, TState>, state: TState): void;
     Push(state: unknown): IDisposable;
 }
@@ -48,6 +50,8 @@ export interface IExternalScopeProvider$instance {
 export type IExternalScopeProvider = IExternalScopeProvider$instance;
 
 export interface ILogger$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
+
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
     Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
@@ -57,6 +61,8 @@ export interface ILogger$instance {
 export type ILogger = ILogger$instance;
 
 export interface ILogger_1$instance<TCategoryName> extends ILogger {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
+
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
     Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
@@ -68,21 +74,31 @@ export interface ILogger_1$instance<TCategoryName> extends ILogger$instance {}
 export type ILogger_1<TCategoryName> = ILogger_1$instance<TCategoryName>;
 
 export interface ILoggerFactory$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
+
     AddProvider(provider: ILoggerProvider): void;
     CreateLogger(categoryName: string): ILogger;
 }
 
 
+export interface ILoggerFactory$instance extends System_Internal.IDisposable {}
+
 export type ILoggerFactory = ILoggerFactory$instance;
 
 export interface ILoggerProvider$instance extends IDisposable {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
+
     CreateLogger(categoryName: string): ILogger;
 }
 
 
+export interface ILoggerProvider$instance extends System_Internal.IDisposable {}
+
 export type ILoggerProvider = ILoggerProvider$instance;
 
 export interface ILoggingBuilder$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggingBuilder: never;
+
     readonly Services: IServiceCollection;
 }
 
@@ -90,6 +106,8 @@ export interface ILoggingBuilder$instance {
 export type ILoggingBuilder = ILoggingBuilder$instance;
 
 export interface ISupportExternalScope$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ISupportExternalScope: never;
+
     SetScopeProvider(scopeProvider: IExternalScopeProvider): void;
 }
 
@@ -97,6 +115,8 @@ export interface ISupportExternalScope$instance {
 export type ISupportExternalScope = ISupportExternalScope$instance;
 
 export interface EventId$instance {
+    readonly __tsonic_iface_System_IEquatable_1: never;
+
     readonly Id: int;
     readonly Name: string | undefined;
     Equals(other: EventId): boolean;
@@ -126,6 +146,9 @@ export const LogDefineOptions: {
 export type LogDefineOptions = LogDefineOptions$instance;
 
 export interface Logger_1$instance<T> {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
+
 }
 
 
@@ -144,6 +167,8 @@ export type Logger_1<T> = Logger_1$instance<T> & __Logger_1$views<T>;
 
 
 export interface LoggerExternalScopeProvider$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_IExternalScopeProvider: never;
+
     ForEachScope<TState>(callback: Action<unknown, TState>, state: TState): void;
     Push(state: unknown): IDisposable;
 }
@@ -164,6 +189,9 @@ export type LoggerExternalScopeProvider = LoggerExternalScopeProvider$instance &
 
 
 export interface LoggerFactory$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
+    readonly __tsonic_iface_System_IDisposable: never;
+
     AddProvider(provider: ILoggerProvider): void;
     CheckDisposed(): boolean;
     CreateLogger(categoryName: string): ILogger;
