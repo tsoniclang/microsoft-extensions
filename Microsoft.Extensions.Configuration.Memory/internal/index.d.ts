@@ -44,7 +44,7 @@ export type MemoryConfigurationProvider = MemoryConfigurationProvider$instance &
 
 export interface MemoryConfigurationSource$instance {
     get InitialData(): IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined;
-    set InitialData(value: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>>);
+    set InitialData(value: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

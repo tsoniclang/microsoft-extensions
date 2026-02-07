@@ -38,13 +38,9 @@ export interface IHttpClientLogger$instance {
 
 export type IHttpClientLogger = IHttpClientLogger$instance;
 
-export abstract class LoggingHttpMessageHandler$protected {
-    protected Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
-    protected SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
-}
-
-
-export interface LoggingHttpMessageHandler$instance extends LoggingHttpMessageHandler$protected, DelegatingHandler {
+export interface LoggingHttpMessageHandler$instance extends DelegatingHandler {
+    Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
+    SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
 }
 
 
@@ -56,13 +52,9 @@ export const LoggingHttpMessageHandler: {
 
 export type LoggingHttpMessageHandler = LoggingHttpMessageHandler$instance;
 
-export abstract class LoggingScopeHttpMessageHandler$protected {
-    protected Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
-    protected SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
-}
-
-
-export interface LoggingScopeHttpMessageHandler$instance extends LoggingScopeHttpMessageHandler$protected, DelegatingHandler {
+export interface LoggingScopeHttpMessageHandler$instance extends DelegatingHandler {
+    Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
+    SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
 }
 
 

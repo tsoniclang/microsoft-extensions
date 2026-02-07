@@ -171,7 +171,6 @@ export interface NullChangeToken$instance {
 
 
 export const NullChangeToken: {
-    new(): NullChangeToken;
     readonly Singleton: NullChangeToken;
 };
 
@@ -206,16 +205,12 @@ export interface NullFileProvider$instance extends IFileProvider$instance {}
 export type NullFileProvider = NullFileProvider$instance & __NullFileProvider$views;
 
 
-export abstract class PhysicalFileProvider$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface PhysicalFileProvider$instance extends PhysicalFileProvider$protected {
+export interface PhysicalFileProvider$instance {
     readonly Root: string;
     UseActivePolling: boolean;
     UsePollingFileWatcher: boolean;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
     GetDirectoryContents(subpath: string): IDirectoryContents;
     GetFileInfo(subpath: string): IFileInfo;
     Watch(filter: string): IChangeToken;

@@ -38,13 +38,13 @@ export type EventLogLoggerProvider = EventLogLoggerProvider$instance & __EventLo
 
 export interface EventLogSettings$instance {
     get Filter(): Func<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
-    set Filter(value: Func<System_Internal.String, LogLevel, System_Internal.Boolean>);
+    set Filter(value: Func<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined);
     get LogName(): string | undefined;
-    set LogName(value: string);
+    set LogName(value: string | undefined);
     get MachineName(): string | undefined;
-    set MachineName(value: string);
+    set MachineName(value: string | undefined);
     get SourceName(): string | undefined;
-    set SourceName(value: string);
+    set SourceName(value: string | undefined);
 }
 
 

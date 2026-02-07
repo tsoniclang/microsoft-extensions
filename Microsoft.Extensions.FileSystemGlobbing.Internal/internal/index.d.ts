@@ -63,7 +63,7 @@ export type IRaggedPattern = IRaggedPattern$instance;
 
 export interface PatternTestResult$instance {
     readonly IsSuccessful: boolean;
-    readonly Stem: string;
+    readonly Stem: string | undefined;
 }
 
 

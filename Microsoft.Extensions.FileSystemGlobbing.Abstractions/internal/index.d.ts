@@ -18,8 +18,7 @@ export interface DirectoryInfoBase$instance extends FileSystemInfoBase {
 }
 
 
-export const DirectoryInfoBase: {
-    new(): DirectoryInfoBase;
+export const DirectoryInfoBase: (abstract new() => DirectoryInfoBase) & {
 };
 
 
@@ -46,8 +45,7 @@ export interface FileInfoBase$instance extends FileSystemInfoBase {
 }
 
 
-export const FileInfoBase: {
-    new(): FileInfoBase;
+export const FileInfoBase: (abstract new() => FileInfoBase) & {
 };
 
 
@@ -74,8 +72,7 @@ export interface FileSystemInfoBase$instance {
 }
 
 
-export const FileSystemInfoBase: {
-    new(): FileSystemInfoBase;
+export const FileSystemInfoBase: (abstract new() => FileSystemInfoBase) & {
 };
 
 

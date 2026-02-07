@@ -47,7 +47,7 @@ export type InplaceStringBuilder = InplaceStringBuilder$instance;
 export interface StringSegment$instance {
     readonly Buffer: string | undefined;
     readonly HasValue: boolean;
-    readonly Item: char;
+    readonly [index: number]: char;
     readonly Length: int;
     readonly Offset: int;
     readonly Value: string | undefined;
@@ -124,7 +124,7 @@ export type StringTokenizer_Enumerator = StringTokenizer_Enumerator$instance;
 
 export interface StringValues$instance {
     readonly Count: int;
-    readonly Item: string;
+    readonly [index: number]: string | undefined;
     Equals(other: StringValues): boolean;
     Equals(other: string): boolean;
     Equals(other: string[]): boolean;
@@ -155,7 +155,7 @@ export const StringValues: {
 export type StringValues = StringValues$instance;
 
 export interface StringValues_Enumerator$instance {
-    readonly Current: string;
+    readonly Current: string | undefined;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -218,7 +218,6 @@ export interface StringSegmentComparer$instance {
 
 
 export const StringSegmentComparer: {
-    new(): StringSegmentComparer;
     readonly Ordinal: StringSegmentComparer;
     readonly OrdinalIgnoreCase: StringSegmentComparer;
 };

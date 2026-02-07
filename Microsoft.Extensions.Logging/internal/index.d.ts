@@ -98,7 +98,7 @@ export type ISupportExternalScope = ISupportExternalScope$instance;
 
 export interface EventId$instance {
     readonly Id: int;
-    readonly Name: string;
+    readonly Name: string | undefined;
     Equals(other: EventId): boolean;
     Equals(obj: unknown): boolean;
     GetHashCode(): int;
@@ -163,13 +163,9 @@ export interface LoggerExternalScopeProvider$instance extends IExternalScopeProv
 export type LoggerExternalScopeProvider = LoggerExternalScopeProvider$instance & __LoggerExternalScopeProvider$views;
 
 
-export abstract class LoggerFactory$protected {
-    protected CheckDisposed(): boolean;
-}
-
-
-export interface LoggerFactory$instance extends LoggerFactory$protected {
+export interface LoggerFactory$instance {
     AddProvider(provider: ILoggerProvider): void;
+    CheckDisposed(): boolean;
     CreateLogger(categoryName: string): ILogger;
     Dispose(): void;
 }
@@ -240,7 +236,7 @@ export type LoggerFilterRule = LoggerFilterRule$instance;
 export interface LoggerMessageAttribute$instance extends Attribute {
     EventId: int;
     get EventName(): string | undefined;
-    set EventName(value: string);
+    set EventName(value: string | undefined);
     Level: LogLevel;
     Message: string;
     SkipEnabledCheck: boolean;

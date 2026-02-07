@@ -66,19 +66,19 @@ export type InstrumentRule = InstrumentRule$instance;
 
 export interface MeasurementHandlers$instance {
     get ByteHandler(): MeasurementCallback<System_Internal.Byte> | undefined;
-    set ByteHandler(value: MeasurementCallback<System_Internal.Byte>);
+    set ByteHandler(value: MeasurementCallback<System_Internal.Byte> | undefined);
     get DecimalHandler(): MeasurementCallback<System_Internal.Decimal> | undefined;
-    set DecimalHandler(value: MeasurementCallback<System_Internal.Decimal>);
+    set DecimalHandler(value: MeasurementCallback<System_Internal.Decimal> | undefined);
     get DoubleHandler(): MeasurementCallback<System_Internal.Double> | undefined;
-    set DoubleHandler(value: MeasurementCallback<System_Internal.Double>);
+    set DoubleHandler(value: MeasurementCallback<System_Internal.Double> | undefined);
     get FloatHandler(): MeasurementCallback<System_Internal.Single> | undefined;
-    set FloatHandler(value: MeasurementCallback<System_Internal.Single>);
+    set FloatHandler(value: MeasurementCallback<System_Internal.Single> | undefined);
     get IntHandler(): MeasurementCallback<System_Internal.Int32> | undefined;
-    set IntHandler(value: MeasurementCallback<System_Internal.Int32>);
+    set IntHandler(value: MeasurementCallback<System_Internal.Int32> | undefined);
     get LongHandler(): MeasurementCallback<System_Internal.Int64> | undefined;
-    set LongHandler(value: MeasurementCallback<System_Internal.Int64>);
+    set LongHandler(value: MeasurementCallback<System_Internal.Int64> | undefined);
     get ShortHandler(): MeasurementCallback<System_Internal.Int16> | undefined;
-    set ShortHandler(value: MeasurementCallback<System_Internal.Int16>);
+    set ShortHandler(value: MeasurementCallback<System_Internal.Int16> | undefined);
 }
 
 

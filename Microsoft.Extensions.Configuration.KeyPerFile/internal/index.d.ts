@@ -42,7 +42,7 @@ export type KeyPerFileConfigurationProvider = KeyPerFileConfigurationProvider$in
 
 export interface KeyPerFileConfigurationSource$instance {
     get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider);
+    set FileProvider(value: IFileProvider | undefined);
     IgnoreCondition: Func<System_Internal.String, System_Internal.Boolean>;
     IgnorePrefix: string;
     Optional: boolean;

@@ -58,18 +58,13 @@ export interface __XmlConfigurationSource$views {
 export type XmlConfigurationSource = XmlConfigurationSource$instance & __XmlConfigurationSource$views;
 
 
-export abstract class XmlDocumentDecryptor$protected {
-    protected DecryptDocumentAndCreateXmlReader(document: XmlDocument): XmlReader;
-}
-
-
-export interface XmlDocumentDecryptor$instance extends XmlDocumentDecryptor$protected {
+export interface XmlDocumentDecryptor$instance {
     CreateDecryptingXmlReader(input: Stream, settings: XmlReaderSettings): XmlReader;
+    DecryptDocumentAndCreateXmlReader(document: XmlDocument): XmlReader;
 }
 
 
-export const XmlDocumentDecryptor: {
-    new(): XmlDocumentDecryptor;
+export const XmlDocumentDecryptor: (abstract new() => XmlDocumentDecryptor) & {
     readonly Instance: XmlDocumentDecryptor;
 };
 

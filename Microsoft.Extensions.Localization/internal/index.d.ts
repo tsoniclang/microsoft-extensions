@@ -112,20 +112,16 @@ export interface __ResourceManagerStringLocalizer$views {
 export type ResourceManagerStringLocalizer = ResourceManagerStringLocalizer$instance & __ResourceManagerStringLocalizer$views;
 
 
-export abstract class ResourceManagerStringLocalizerFactory$protected {
-    protected CreateResourceManagerStringLocalizer(assembly: Assembly, baseName: string): ResourceManagerStringLocalizer;
-    protected GetResourceLocationAttribute(assembly: Assembly): ResourceLocationAttribute | undefined;
-    protected GetResourcePrefix(typeInfo: TypeInfo): string;
-    protected GetResourcePrefix(baseResourceName: string, baseNamespace: string): string;
-    protected GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string, resourcesRelativePath: string): string;
-    protected GetResourcePrefix(location: string, baseName: string, resourceLocation: string): string;
-    protected GetRootNamespaceAttribute(assembly: Assembly): RootNamespaceAttribute | undefined;
-}
-
-
-export interface ResourceManagerStringLocalizerFactory$instance extends ResourceManagerStringLocalizerFactory$protected {
+export interface ResourceManagerStringLocalizerFactory$instance {
     Create(resourceSource: Type): IStringLocalizer;
     Create(baseName: string, location: string): IStringLocalizer;
+    CreateResourceManagerStringLocalizer(assembly: Assembly, baseName: string): ResourceManagerStringLocalizer;
+    GetResourceLocationAttribute(assembly: Assembly): ResourceLocationAttribute | undefined;
+    GetResourcePrefix(typeInfo: TypeInfo): string;
+    GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string, resourcesRelativePath: string): string;
+    GetResourcePrefix(baseResourceName: string, baseNamespace: string): string;
+    GetResourcePrefix(location: string, baseName: string, resourceLocation: string): string;
+    GetRootNamespaceAttribute(assembly: Assembly): RootNamespaceAttribute | undefined;
 }
 
 

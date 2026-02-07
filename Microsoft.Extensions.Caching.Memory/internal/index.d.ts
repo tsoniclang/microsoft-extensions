@@ -45,7 +45,7 @@ export type PostEvictionDelegate = (key: unknown, value: unknown, reason: Evicti
 export interface ICacheEntry$instance extends IDisposable {
     readonly Key: unknown;
     get Value(): unknown | undefined;
-    set Value(value: unknown);
+    set Value(value: unknown | undefined);
     AbsoluteExpiration: Nullable<DateTimeOffset>;
     AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
     SlidingExpiration: Nullable<TimeSpan>;
@@ -68,19 +68,15 @@ export interface IMemoryCache$instance extends IDisposable {
 
 export type IMemoryCache = IMemoryCache$instance;
 
-export abstract class MemoryCache$protected {
-    protected Dispose(disposing: boolean): void;
-    protected Finalize(): void;
-}
-
-
-export interface MemoryCache$instance extends MemoryCache$protected {
+export interface MemoryCache$instance {
     readonly Count: int;
     readonly Keys: IEnumerable<unknown>;
     Clear(): void;
     Compact(percentage: double): void;
     CreateEntry(key: unknown): ICacheEntry;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
+    Finalize(): void;
     GetCurrentStatistics(): MemoryCacheStatistics | undefined;
     Remove(key: unknown): void;
     TryGetValue(key: unknown, result: unknown): boolean;
@@ -122,7 +118,7 @@ export type MemoryCacheEntryOptions = MemoryCacheEntryOptions$instance;
 
 export interface MemoryCacheOptions$instance {
     get Clock(): ISystemClock | undefined;
-    set Clock(value: ISystemClock);
+    set Clock(value: ISystemClock | undefined);
     CompactionPercentage: double;
     CompactOnMemoryPressure: boolean;
     ExpirationScanFrequency: TimeSpan;
@@ -181,9 +177,9 @@ export type MemoryDistributedCacheOptions = MemoryDistributedCacheOptions$instan
 
 export interface PostEvictionCallbackRegistration$instance {
     get EvictionCallback(): PostEvictionDelegate | undefined;
-    set EvictionCallback(value: PostEvictionDelegate);
+    set EvictionCallback(value: PostEvictionDelegate | undefined);
     get State(): unknown | undefined;
-    set State(value: unknown);
+    set State(value: unknown | undefined);
 }
 
 

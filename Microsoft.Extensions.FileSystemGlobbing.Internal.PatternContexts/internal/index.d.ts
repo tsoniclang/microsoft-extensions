@@ -17,7 +17,7 @@ export interface PatternContextLinear_FrameData$instance {
     IsNotApplicable: boolean;
     SegmentIndex: int;
     InStem: boolean;
-    readonly Stem: string;
+    readonly Stem: string | undefined;
     readonly StemItems: IList<System_Internal.String>;
 }
 
@@ -36,7 +36,7 @@ export interface PatternContextRagged_FrameData$instance {
     BacktrackAvailable: int;
     SegmentIndex: int;
     InStem: boolean;
-    readonly Stem: string;
+    readonly Stem: string | undefined;
     readonly StemItems: IList<System_Internal.String>;
 }
 
@@ -57,8 +57,7 @@ export interface PatternContext_1$instance<TFrame extends unknown> {
 }
 
 
-export const PatternContext_1: {
-    new<TFrame extends unknown>(): PatternContext_1<TFrame>;
+export const PatternContext_1: (abstract new<TFrame extends unknown>() => PatternContext_1<TFrame>) & {
 };
 
 
@@ -78,8 +77,7 @@ export interface PatternContextLinear$instance extends PatternContext_1$instance
 }
 
 
-export const PatternContextLinear: {
-    new(pattern: ILinearPattern): PatternContextLinear;
+export const PatternContextLinear: (abstract new(pattern: ILinearPattern) => PatternContextLinear) & {
 };
 
 
@@ -142,8 +140,7 @@ export interface PatternContextRagged$instance extends PatternContext_1$instance
 }
 
 
-export const PatternContextRagged: {
-    new(pattern: IRaggedPattern): PatternContextRagged;
+export const PatternContextRagged: (abstract new(pattern: IRaggedPattern) => PatternContextRagged) & {
 };
 
 

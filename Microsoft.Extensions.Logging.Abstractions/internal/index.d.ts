@@ -42,7 +42,7 @@ export interface BufferedLogRecord$instance {
     readonly ActivityTraceId: Nullable<ActivityTraceId>;
     readonly Attributes: IReadOnlyList<KeyValuePair<System_Internal.String, unknown>>;
     readonly EventId: EventId;
-    readonly Exception: string;
+    readonly Exception: string | undefined;
     readonly FormattedMessage: string | undefined;
     readonly LogLevel: LogLevel;
     readonly ManagedThreadId: Nullable<System_Internal.Int32>;
@@ -51,8 +51,7 @@ export interface BufferedLogRecord$instance {
 }
 
 
-export const BufferedLogRecord: {
-    new(): BufferedLogRecord;
+export const BufferedLogRecord: (abstract new() => BufferedLogRecord) & {
 };
 
 
@@ -66,7 +65,6 @@ export interface NullLogger$instance {
 
 
 export const NullLogger: {
-    new(): NullLogger;
     readonly Instance: NullLogger;
 };
 
@@ -129,7 +127,6 @@ export interface NullLoggerProvider$instance {
 
 
 export const NullLoggerProvider: {
-    new(): NullLoggerProvider;
     readonly Instance: NullLoggerProvider;
 };
 

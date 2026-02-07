@@ -16,7 +16,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
 import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
 
 export interface IBufferDistributedCache$instance extends IDistributedCache {
-    Get(key: string): byte[];
+    Get(key: string): byte[] | undefined;
     GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
     Refresh(key: string): void;
     RefreshAsync(key: string, token?: CancellationToken): Task;
@@ -32,7 +32,7 @@ export interface IBufferDistributedCache$instance extends IDistributedCache {
 export type IBufferDistributedCache = IBufferDistributedCache$instance;
 
 export interface IDistributedCache$instance {
-    Get(key: string): byte[];
+    Get(key: string): byte[] | undefined;
     GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
     Refresh(key: string): void;
     RefreshAsync(key: string, token?: CancellationToken): Task;
@@ -58,7 +58,7 @@ export const DistributedCacheEntryOptions: {
 export type DistributedCacheEntryOptions = DistributedCacheEntryOptions$instance;
 
 export interface MemoryDistributedCache$instance {
-    Get(key: string): byte[];
+    Get(key: string): byte[] | undefined;
     GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
     Refresh(key: string): void;
     RefreshAsync(key: string, token?: CancellationToken): Task;

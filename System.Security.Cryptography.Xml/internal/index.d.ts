@@ -46,9 +46,9 @@ export type X509IssuerSerial = X509IssuerSerial$instance;
 
 export interface CipherData$instance {
     get CipherReference(): CipherReference | undefined;
-    set CipherReference(value: CipherReference);
+    set CipherReference(value: CipherReference | undefined);
     get CipherValue(): byte[] | undefined;
-    set CipherValue(value: byte[]);
+    set CipherValue(value: byte[] | undefined);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -86,7 +86,6 @@ export const CryptoSignedXmlRecursionException: {
     new(): CryptoSignedXmlRecursionException;
     new(message: string): CryptoSignedXmlRecursionException;
     new(message: string, inner: Exception): CryptoSignedXmlRecursionException;
-    new(info: SerializationInfo, context: StreamingContext): CryptoSignedXmlRecursionException;
 };
 
 
@@ -94,11 +93,12 @@ export type CryptoSignedXmlRecursionException = CryptoSignedXmlRecursionExceptio
 
 export interface DataObject$instance {
     Data: XmlNodeList;
-    Encoding: string;
+    get Encoding(): string | undefined;
+    set Encoding(value: string | undefined);
     get Id(): string | undefined;
-    set Id(value: string);
+    set Id(value: string | undefined);
     get MimeType(): string | undefined;
-    set MimeType(value: string);
+    set MimeType(value: string | undefined);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -155,7 +155,7 @@ export type EncryptedData = EncryptedData$instance;
 
 export interface EncryptedKey$instance extends EncryptedType {
     get CarriedKeyName(): string | undefined;
-    set CarriedKeyName(value: string);
+    set CarriedKeyName(value: string | undefined);
     Recipient: string;
     readonly ReferenceList: ReferenceList;
     AddReference(dataReference: DataReference): void;
@@ -181,10 +181,7 @@ export interface EncryptedReference$instance {
 }
 
 
-export const EncryptedReference: {
-    new(): EncryptedReference;
-    new(uri: string): EncryptedReference;
-    new(uri: string, transformChain: TransformChain): EncryptedReference;
+export const EncryptedReference: (abstract new() => EncryptedReference) & (abstract new(uri: string) => EncryptedReference) & (abstract new(uri: string, transformChain: TransformChain) => EncryptedReference) & {
 };
 
 
@@ -192,25 +189,25 @@ export type EncryptedReference = EncryptedReference$instance;
 
 export interface EncryptedType$instance {
     CipherData: CipherData;
-    Encoding: string;
+    get Encoding(): string | undefined;
+    set Encoding(value: string | undefined);
     get EncryptionMethod(): EncryptionMethod | undefined;
-    set EncryptionMethod(value: EncryptionMethod);
+    set EncryptionMethod(value: EncryptionMethod | undefined);
     readonly EncryptionProperties: EncryptionPropertyCollection;
     get Id(): string | undefined;
-    set Id(value: string);
+    set Id(value: string | undefined);
     KeyInfo: KeyInfo;
     get MimeType(): string | undefined;
-    set MimeType(value: string);
+    set MimeType(value: string | undefined);
     get Type(): string | undefined;
-    set Type(value: string);
+    set Type(value: string | undefined);
     AddProperty(ep: EncryptionProperty): void;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
 
 
-export const EncryptedType: {
-    new(): EncryptedType;
+export const EncryptedType: (abstract new() => EncryptedType) & {
 };
 
 
@@ -218,12 +215,13 @@ export type EncryptedType = EncryptedType$instance;
 
 export interface EncryptedXml$instance {
     get DocumentEvidence(): Evidence | undefined;
-    set DocumentEvidence(value: Evidence);
+    set DocumentEvidence(value: Evidence | undefined);
     Encoding: Encoding;
     Mode: CipherMode;
     Padding: PaddingMode;
     Recipient: string;
-    Resolver: XmlResolver;
+    get Resolver(): XmlResolver | undefined;
+    set Resolver(value: XmlResolver | undefined);
     XmlDSigSearchDepth: int;
     AddKeyNameMapping(keyName: string, keyObject: unknown): void;
     ClearKeyNameMappings(): void;
@@ -274,7 +272,7 @@ export type EncryptedXml = EncryptedXml$instance;
 
 export interface EncryptionMethod$instance {
     get KeyAlgorithm(): string | undefined;
-    set KeyAlgorithm(value: string);
+    set KeyAlgorithm(value: string | undefined);
     KeySize: int;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -292,7 +290,7 @@ export type EncryptionMethod = EncryptionMethod$instance;
 export interface EncryptionProperty$instance {
     readonly Id: string | undefined;
     get PropertyElement(): XmlElement | undefined;
-    set PropertyElement(value: XmlElement);
+    set PropertyElement(value: XmlElement | undefined);
     readonly Target: string | undefined;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -312,7 +310,7 @@ export interface EncryptionPropertyCollection$instance {
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
     readonly IsSynchronized: boolean;
-    ItemOf: EncryptionProperty;
+    [index: number]: EncryptionProperty;
     readonly SyncRoot: unknown;
     Add(value: EncryptionProperty): int;
     Clear(): void;
@@ -338,7 +336,7 @@ export type EncryptionPropertyCollection = EncryptionPropertyCollection$instance
 export interface KeyInfo$instance {
     readonly Count: int;
     get Id(): string | undefined;
-    set Id(value: string);
+    set Id(value: string | undefined);
     AddClause(clause: KeyInfoClause): void;
     GetEnumerator(): IEnumerator;
     GetEnumerator(requestedObjectType: Type): IEnumerator;
@@ -360,15 +358,15 @@ export interface KeyInfoClause$instance {
 }
 
 
-export const KeyInfoClause: {
-    new(): KeyInfoClause;
+export const KeyInfoClause: (abstract new() => KeyInfoClause) & {
 };
 
 
 export type KeyInfoClause = KeyInfoClause$instance;
 
 export interface KeyInfoEncryptedKey$instance extends KeyInfoClause {
-    EncryptedKey: EncryptedKey;
+    get EncryptedKey(): EncryptedKey | undefined;
+    set EncryptedKey(value: EncryptedKey | undefined);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -383,7 +381,8 @@ export const KeyInfoEncryptedKey: {
 export type KeyInfoEncryptedKey = KeyInfoEncryptedKey$instance;
 
 export interface KeyInfoName$instance extends KeyInfoClause {
-    Value: string;
+    get Value(): string | undefined;
+    set Value(value: string | undefined);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -398,7 +397,8 @@ export const KeyInfoName: {
 export type KeyInfoName = KeyInfoName$instance;
 
 export interface KeyInfoNode$instance extends KeyInfoClause {
-    Value: XmlElement;
+    get Value(): XmlElement | undefined;
+    set Value(value: XmlElement | undefined);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -414,8 +414,9 @@ export type KeyInfoNode = KeyInfoNode$instance;
 
 export interface KeyInfoRetrievalMethod$instance extends KeyInfoClause {
     get Type(): string | undefined;
-    set Type(value: string);
-    Uri: string;
+    set Type(value: string | undefined);
+    get Uri(): string | undefined;
+    set Uri(value: string | undefined);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -431,9 +432,9 @@ export const KeyInfoRetrievalMethod: {
 export type KeyInfoRetrievalMethod = KeyInfoRetrievalMethod$instance;
 
 export interface KeyInfoX509Data$instance extends KeyInfoClause {
-    readonly Certificates: ArrayList;
+    readonly Certificates: ArrayList | undefined;
     get CRL(): byte[] | undefined;
-    set CRL(value: byte[]);
+    set CRL(value: byte[] | undefined);
     readonly IssuerSerials: ArrayList | undefined;
     readonly SubjectKeyIds: ArrayList | undefined;
     readonly SubjectNames: ArrayList | undefined;
@@ -473,13 +474,14 @@ export type KeyReference = KeyReference$instance;
 export interface Reference$instance {
     DigestMethod: string;
     get DigestValue(): byte[] | undefined;
-    set DigestValue(value: byte[]);
+    set DigestValue(value: byte[] | undefined);
     get Id(): string | undefined;
-    set Id(value: string);
+    set Id(value: string | undefined);
     TransformChain: TransformChain;
     get Type(): string | undefined;
-    set Type(value: string);
-    Uri: string;
+    set Type(value: string | undefined);
+    get Uri(): string | undefined;
+    set Uri(value: string | undefined);
     AddTransform(transform: Transform): void;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -498,7 +500,7 @@ export type Reference = Reference$instance;
 export interface ReferenceList$instance {
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    ItemOf: EncryptedReference;
+    [index: number]: EncryptedReference;
     readonly SyncRoot: unknown;
     Add(value: unknown): int;
     Clear(): void;
@@ -507,7 +509,7 @@ export interface ReferenceList$instance {
     GetEnumerator(): IEnumerator;
     IndexOf(value: unknown): int;
     Insert(index: int, value: unknown): void;
-    Item(index: int): EncryptedReference;
+    Item(index: int): EncryptedReference | undefined;
     Remove(value: unknown): void;
     RemoveAt(index: int): void;
 }
@@ -537,13 +539,13 @@ export type RSAKeyValue = RSAKeyValue$instance;
 
 export interface Signature$instance {
     get Id(): string | undefined;
-    set Id(value: string);
+    set Id(value: string | undefined);
     KeyInfo: KeyInfo;
     ObjectList: IList;
     get SignatureValue(): byte[] | undefined;
-    set SignatureValue(value: byte[]);
+    set SignatureValue(value: byte[] | undefined);
     get SignedInfo(): SignedInfo | undefined;
-    set SignedInfo(value: SignedInfo);
+    set SignedInfo(value: SignedInfo | undefined);
     AddObject(dataObject: DataObject): void;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -562,14 +564,14 @@ export interface SignedInfo$instance {
     readonly CanonicalizationMethodObject: Transform;
     readonly Count: int;
     get Id(): string | undefined;
-    set Id(value: string);
+    set Id(value: string | undefined);
     readonly IsReadOnly: boolean;
     readonly IsSynchronized: boolean;
     readonly References: ArrayList;
     get SignatureLength(): string | undefined;
-    set SignatureLength(value: string);
+    set SignatureLength(value: string | undefined);
     get SignatureMethod(): string | undefined;
-    set SignatureMethod(value: string);
+    set SignatureMethod(value: string | undefined);
     readonly SyncRoot: unknown;
     AddReference(reference: Reference): void;
     CopyTo(array: ClrArray, index: int): void;
@@ -586,12 +588,7 @@ export const SignedInfo: {
 
 export type SignedInfo = SignedInfo$instance;
 
-export abstract class SignedXml$protected {
-    protected GetPublicKey(): AsymmetricAlgorithm | undefined;
-}
-
-
-export interface SignedXml$instance extends SignedXml$protected {
+export interface SignedXml$instance {
     EncryptedXml: EncryptedXml;
     KeyInfo: KeyInfo;
     Resolver: XmlResolver;
@@ -603,9 +600,9 @@ export interface SignedXml$instance extends SignedXml$protected {
     readonly SignatureValue: byte[] | undefined;
     readonly SignedInfo: SignedInfo | undefined;
     get SigningKey(): AsymmetricAlgorithm | undefined;
-    set SigningKey(value: AsymmetricAlgorithm);
+    set SigningKey(value: AsymmetricAlgorithm | undefined);
     get SigningKeyName(): string | undefined;
-    set SigningKeyName(value: string);
+    set SigningKeyName(value: string | undefined);
     AddObject(dataObject: DataObject): void;
     AddReference(reference: Reference): void;
     CheckSignature(): boolean;
@@ -616,6 +613,7 @@ export interface SignedXml$instance extends SignedXml$protected {
     ComputeSignature(): void;
     ComputeSignature(macAlg: KeyedHashAlgorithm): void;
     GetIdElement(document: XmlDocument, idValue: string): XmlElement | undefined;
+    GetPublicKey(): AsymmetricAlgorithm | undefined;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -654,19 +652,16 @@ export const SignedXml: {
 
 export type SignedXml = SignedXml$instance;
 
-export abstract class Transform$protected {
-    protected abstract GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface Transform$instance extends Transform$protected {
-    Algorithm: string;
+export interface Transform$instance {
+    get Algorithm(): string | undefined;
+    set Algorithm(value: string | undefined);
     get Context(): XmlElement | undefined;
-    set Context(value: XmlElement);
+    set Context(value: XmlElement | undefined);
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     readonly PropagatedNamespaces: Hashtable;
     GetDigestedOutput(hash: HashAlgorithm): byte[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     GetXml(): XmlElement;
@@ -675,8 +670,7 @@ export interface Transform$instance extends Transform$protected {
 }
 
 
-export const Transform: {
-    new(): Transform;
+export const Transform: (abstract new() => Transform) & {
 };
 
 
@@ -684,7 +678,7 @@ export type Transform = Transform$instance;
 
 export interface TransformChain$instance {
     readonly Count: int;
-    readonly Item: Transform;
+    readonly [index: number]: Transform;
     Add(transform: Transform): void;
     GetEnumerator(): IEnumerator;
 }
@@ -697,19 +691,15 @@ export const TransformChain: {
 
 export type TransformChain = TransformChain$instance;
 
-export abstract class XmlDecryptionTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-    protected IsTargetElement(inputElement: XmlElement, idValue: string): boolean;
-}
-
-
-export interface XmlDecryptionTransform$instance extends XmlDecryptionTransform$protected, Transform {
+export interface XmlDecryptionTransform$instance extends Transform {
     EncryptedXml: EncryptedXml;
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     AddExceptUri(uri: string): void;
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
+    IsTargetElement(inputElement: XmlElement, idValue: string): boolean;
     LoadInnerXml(nodeList: XmlNodeList): void;
     LoadInput(obj: unknown): void;
 }
@@ -722,14 +712,10 @@ export const XmlDecryptionTransform: {
 
 export type XmlDecryptionTransform = XmlDecryptionTransform$instance;
 
-export abstract class XmlDsigBase64Transform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlDsigBase64Transform$instance extends XmlDsigBase64Transform$protected, Transform {
+export interface XmlDsigBase64Transform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
@@ -744,15 +730,11 @@ export const XmlDsigBase64Transform: {
 
 export type XmlDsigBase64Transform = XmlDsigBase64Transform$instance;
 
-export abstract class XmlDsigC14NTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlDsigC14NTransform$instance extends XmlDsigC14NTransform$protected, Transform {
+export interface XmlDsigC14NTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
@@ -779,14 +761,10 @@ export const XmlDsigC14NWithCommentsTransform: {
 
 export type XmlDsigC14NWithCommentsTransform = XmlDsigC14NWithCommentsTransform$instance;
 
-export abstract class XmlDsigEnvelopedSignatureTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlDsigEnvelopedSignatureTransform$instance extends XmlDsigEnvelopedSignatureTransform$protected, Transform {
+export interface XmlDsigEnvelopedSignatureTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
@@ -802,17 +780,13 @@ export const XmlDsigEnvelopedSignatureTransform: {
 
 export type XmlDsigEnvelopedSignatureTransform = XmlDsigEnvelopedSignatureTransform$instance;
 
-export abstract class XmlDsigExcC14NTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlDsigExcC14NTransform$instance extends XmlDsigExcC14NTransform$protected, Transform {
+export interface XmlDsigExcC14NTransform$instance extends Transform {
     get InclusiveNamespacesPrefixList(): string | undefined;
-    set InclusiveNamespacesPrefixList(value: string);
+    set InclusiveNamespacesPrefixList(value: string | undefined);
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
@@ -842,14 +816,10 @@ export const XmlDsigExcC14NWithCommentsTransform: {
 
 export type XmlDsigExcC14NWithCommentsTransform = XmlDsigExcC14NWithCommentsTransform$instance;
 
-export abstract class XmlDsigXPathTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlDsigXPathTransform$instance extends XmlDsigXPathTransform$protected, Transform {
+export interface XmlDsigXPathTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
@@ -864,14 +834,10 @@ export const XmlDsigXPathTransform: {
 
 export type XmlDsigXPathTransform = XmlDsigXPathTransform$instance;
 
-export abstract class XmlDsigXsltTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlDsigXsltTransform$instance extends XmlDsigXsltTransform$protected, Transform {
+export interface XmlDsigXsltTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
@@ -887,16 +853,12 @@ export const XmlDsigXsltTransform: {
 
 export type XmlDsigXsltTransform = XmlDsigXsltTransform$instance;
 
-export abstract class XmlLicenseTransform$protected {
-    protected GetInnerXml(): XmlNodeList | undefined;
-}
-
-
-export interface XmlLicenseTransform$instance extends XmlLicenseTransform$protected, Transform {
+export interface XmlLicenseTransform$instance extends Transform {
     get Decryptor(): IRelDecryptor | undefined;
-    set Decryptor(value: IRelDecryptor);
+    set Decryptor(value: IRelDecryptor | undefined);
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
+    GetInnerXml(): XmlNodeList | undefined;
     GetOutput(): unknown;
     GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;

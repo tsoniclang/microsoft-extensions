@@ -41,7 +41,7 @@ export type EnvironmentVariablesConfigurationProvider = EnvironmentVariablesConf
 
 export interface EnvironmentVariablesConfigurationSource$instance {
     get Prefix(): string | undefined;
-    set Prefix(value: string);
+    set Prefix(value: string | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

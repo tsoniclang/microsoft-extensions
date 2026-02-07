@@ -79,14 +79,10 @@ export interface PhysicalFileInfo$instance extends Microsoft_Extensions_FileProv
 export type PhysicalFileInfo = PhysicalFileInfo$instance & __PhysicalFileInfo$views;
 
 
-export abstract class PhysicalFilesWatcher$protected {
-    protected Dispose(disposing: boolean): void;
-}
-
-
-export interface PhysicalFilesWatcher$instance extends PhysicalFilesWatcher$protected {
+export interface PhysicalFilesWatcher$instance {
     CreateFileChangeToken(filter: string): IChangeToken;
     Dispose(): void;
+    Dispose(disposing: boolean): void;
 }
 
 
@@ -117,14 +113,10 @@ export interface __PollingFileChangeToken$views {
 export type PollingFileChangeToken = PollingFileChangeToken$instance & __PollingFileChangeToken$views;
 
 
-export abstract class PollingWildCardChangeToken$protected {
-    protected GetLastWriteUtc(path: string): DateTime;
-}
-
-
-export interface PollingWildCardChangeToken$instance extends PollingWildCardChangeToken$protected {
+export interface PollingWildCardChangeToken$instance {
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
+    GetLastWriteUtc(path: string): DateTime;
 }
 
 

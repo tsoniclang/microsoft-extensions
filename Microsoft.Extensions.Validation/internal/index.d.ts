@@ -34,7 +34,7 @@ export type IValidatableInfoResolver = IValidatableInfoResolver$instance;
 
 export interface ValidationErrorContext$instance {
     get Container(): unknown | undefined;
-    set Container(value: unknown);
+    set Container(value: unknown | undefined);
     Errors: IReadOnlyList<System_Internal.String>;
     Name: string;
     Path: string;
@@ -59,18 +59,13 @@ export const SkipValidationAttribute: {
 
 export type SkipValidationAttribute = SkipValidationAttribute$instance;
 
-export abstract class ValidatableParameterInfo$protected {
-    protected abstract GetValidationAttributes(): ValidationAttribute[];
-}
-
-
-export interface ValidatableParameterInfo$instance extends ValidatableParameterInfo$protected {
+export interface ValidatableParameterInfo$instance {
+    GetValidationAttributes(): ValidationAttribute[];
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
-export const ValidatableParameterInfo: {
-    new(parameterType: Type, name: string, displayName: string): ValidatableParameterInfo;
+export const ValidatableParameterInfo: (abstract new(parameterType: Type, name: string, displayName: string) => ValidatableParameterInfo) & {
 };
 
 
@@ -83,18 +78,13 @@ export interface ValidatableParameterInfo$instance extends IValidatableInfo$inst
 export type ValidatableParameterInfo = ValidatableParameterInfo$instance & __ValidatableParameterInfo$views;
 
 
-export abstract class ValidatablePropertyInfo$protected {
-    protected abstract GetValidationAttributes(): ValidationAttribute[];
-}
-
-
-export interface ValidatablePropertyInfo$instance extends ValidatablePropertyInfo$protected {
+export interface ValidatablePropertyInfo$instance {
+    GetValidationAttributes(): ValidationAttribute[];
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
-export const ValidatablePropertyInfo: {
-    new(declaringType: Type, propertyType: Type, name: string, displayName: string): ValidatablePropertyInfo;
+export const ValidatablePropertyInfo: (abstract new(declaringType: Type, propertyType: Type, name: string, displayName: string) => ValidatablePropertyInfo) & {
 };
 
 
@@ -118,18 +108,13 @@ export const ValidatableTypeAttribute: {
 
 export type ValidatableTypeAttribute = ValidatableTypeAttribute$instance;
 
-export abstract class ValidatableTypeInfo$protected {
-    protected abstract GetValidationAttributes(): ValidationAttribute[];
-}
-
-
-export interface ValidatableTypeInfo$instance extends ValidatableTypeInfo$protected {
+export interface ValidatableTypeInfo$instance {
+    GetValidationAttributes(): ValidationAttribute[];
     ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
-export const ValidatableTypeInfo: {
-    new(type: Type, members: IReadOnlyList<ValidatablePropertyInfo>): ValidatableTypeInfo;
+export const ValidatableTypeInfo: (abstract new(type: Type, members: IReadOnlyList<ValidatablePropertyInfo>) => ValidatableTypeInfo) & {
 };
 
 
@@ -147,7 +132,7 @@ export interface ValidateContext$instance {
     CurrentValidationPath: string;
     ValidationContext: ValidationContext;
     get ValidationErrors(): Dictionary<System_Internal.String, string[]> | undefined;
-    set ValidationErrors(value: Dictionary<System_Internal.String, string[]>);
+    set ValidationErrors(value: Dictionary<System_Internal.String, string[]> | undefined);
     ValidationOptions: ValidationOptions;
 }
 

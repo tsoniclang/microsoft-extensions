@@ -95,7 +95,7 @@ export type CmsRecipient = CmsRecipient$instance;
 export interface CmsRecipientCollection$instance {
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: CmsRecipient;
+    readonly [index: number]: CmsRecipient;
     readonly SyncRoot: unknown;
     Add(recipient: CmsRecipient): int;
     CopyTo(array: ClrArray, index: int): void;
@@ -122,21 +122,21 @@ export interface CmsRecipientEnumerator$instance {
 
 
 export const CmsRecipientEnumerator: {
-    new(): CmsRecipientEnumerator;
 };
 
 
 export type CmsRecipientEnumerator = CmsRecipientEnumerator$instance;
 
 export interface CmsSigner$instance {
-    Certificate: X509Certificate2;
+    get Certificate(): X509Certificate2 | undefined;
+    set Certificate(value: X509Certificate2 | undefined);
     readonly Certificates: X509Certificate2Collection;
     DigestAlgorithm: Oid;
     IncludeOption: X509IncludeOption;
     get PrivateKey(): AsymmetricAlgorithm | undefined;
-    set PrivateKey(value: AsymmetricAlgorithm);
+    set PrivateKey(value: AsymmetricAlgorithm | undefined);
     get SignaturePadding(): RSASignaturePadding | undefined;
-    set SignaturePadding(value: RSASignaturePadding);
+    set SignaturePadding(value: RSASignaturePadding | undefined);
     readonly SignedAttributes: CryptographicAttributeObjectCollection;
     SignerIdentifierType: SubjectIdentifierType;
     readonly UnsignedAttributes: CryptographicAttributeObjectCollection;
@@ -216,7 +216,6 @@ export interface KeyAgreeRecipientInfo$instance extends RecipientInfo {
 
 
 export const KeyAgreeRecipientInfo: {
-    new(): KeyAgreeRecipientInfo;
 };
 
 
@@ -231,7 +230,6 @@ export interface KeyTransRecipientInfo$instance extends RecipientInfo {
 
 
 export const KeyTransRecipientInfo: {
-    new(): KeyTransRecipientInfo;
 };
 
 
@@ -283,7 +281,6 @@ export interface Pkcs12Info$instance {
 
 
 export const Pkcs12Info: {
-    new(): Pkcs12Info;
     Decode(encodedBytes: ReadOnlyMemory<System_Internal.Byte>, bytesConsumed: int, skipCopy?: boolean): Pkcs12Info;
 };
 
@@ -311,8 +308,7 @@ export interface Pkcs12SafeBag$instance {
 }
 
 
-export const Pkcs12SafeBag: {
-    new(bagIdValue: string, encodedBagValue: ReadOnlyMemory<System_Internal.Byte>, skipCopy: boolean): Pkcs12SafeBag;
+export const Pkcs12SafeBag: (abstract new(bagIdValue: string, encodedBagValue: ReadOnlyMemory<System_Internal.Byte>, skipCopy: boolean) => Pkcs12SafeBag) & {
 };
 
 
@@ -347,12 +343,11 @@ export type Pkcs12SafeContents = Pkcs12SafeContents$instance;
 
 export interface Pkcs12SafeContentsBag$instance extends Pkcs12SafeBag {
     get SafeContents(): Pkcs12SafeContents | undefined;
-    set SafeContents(value: Pkcs12SafeContents);
+    set SafeContents(value: Pkcs12SafeContents | undefined);
 }
 
 
 export const Pkcs12SafeContentsBag: {
-    new(): Pkcs12SafeContentsBag;
 };
 
 
@@ -365,7 +360,6 @@ export interface Pkcs12SecretBag$instance extends Pkcs12SafeBag {
 
 
 export const Pkcs12SecretBag: {
-    new(): Pkcs12SecretBag;
 };
 
 
@@ -517,7 +511,6 @@ export interface PublicKeyInfo$instance {
 
 
 export const PublicKeyInfo: {
-    new(): PublicKeyInfo;
 };
 
 
@@ -541,7 +534,7 @@ export type RecipientInfo = RecipientInfo$instance;
 export interface RecipientInfoCollection$instance {
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: RecipientInfo;
+    readonly [index: number]: RecipientInfo;
     readonly SyncRoot: unknown;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: RecipientInfo[], index: int): void;
@@ -550,7 +543,6 @@ export interface RecipientInfoCollection$instance {
 
 
 export const RecipientInfoCollection: {
-    new(): RecipientInfoCollection;
 };
 
 
@@ -564,7 +556,6 @@ export interface RecipientInfoEnumerator$instance {
 
 
 export const RecipientInfoEnumerator: {
-    new(): RecipientInfoEnumerator;
 };
 
 
@@ -586,7 +577,6 @@ export interface Rfc3161TimestampRequest$instance {
 
 
 export const Rfc3161TimestampRequest: {
-    new(): Rfc3161TimestampRequest;
     CreateFromData(data: ReadOnlySpan<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
     CreateFromHash(hash: ReadOnlyMemory<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
     CreateFromHash(hash: ReadOnlyMemory<System_Internal.Byte>, hashAlgorithmId: Oid, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
@@ -608,7 +598,6 @@ export interface Rfc3161TimestampToken$instance {
 
 
 export const Rfc3161TimestampToken: {
-    new(): Rfc3161TimestampToken;
     TryDecode(encodedBytes: ReadOnlyMemory<System_Internal.Byte>, token: Rfc3161TimestampToken, bytesConsumed: int): boolean;
 };
 
@@ -676,7 +665,7 @@ export const SignedCms: {
 export type SignedCms = SignedCms$instance;
 
 export interface SignerInfo$instance {
-    readonly Certificate: X509Certificate2;
+    readonly Certificate: X509Certificate2 | undefined;
     readonly CounterSignerInfos: SignerInfoCollection;
     readonly DigestAlgorithm: Oid;
     readonly SignatureAlgorithm: Oid;
@@ -698,7 +687,6 @@ export interface SignerInfo$instance {
 
 
 export const SignerInfo: {
-    new(): SignerInfo;
 };
 
 
@@ -707,7 +695,7 @@ export type SignerInfo = SignerInfo$instance;
 export interface SignerInfoCollection$instance {
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly Item: SignerInfo;
+    readonly [index: number]: SignerInfo;
     readonly SyncRoot: unknown;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: SignerInfo[], index: int): void;
@@ -716,7 +704,6 @@ export interface SignerInfoCollection$instance {
 
 
 export const SignerInfoCollection: {
-    new(): SignerInfoCollection;
 };
 
 
@@ -730,7 +717,6 @@ export interface SignerInfoEnumerator$instance {
 
 
 export const SignerInfoEnumerator: {
-    new(): SignerInfoEnumerator;
 };
 
 
@@ -738,13 +724,12 @@ export type SignerInfoEnumerator = SignerInfoEnumerator$instance;
 
 export interface SubjectIdentifier$instance {
     readonly Type: SubjectIdentifierType;
-    readonly Value: unknown;
+    readonly Value: unknown | undefined;
     MatchesCertificate(certificate: X509Certificate2): boolean;
 }
 
 
 export const SubjectIdentifier: {
-    new(): SubjectIdentifier;
 };
 
 
@@ -757,7 +742,6 @@ export interface SubjectIdentifierOrKey$instance {
 
 
 export const SubjectIdentifierOrKey: {
-    new(): SubjectIdentifierOrKey;
 };
 
 
