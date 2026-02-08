@@ -13,17 +13,17 @@ import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Ex
 import type { FileConfigurationProvider, FileConfigurationSource, FileLoadExceptionContext, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource, StreamConfigurationProvider, StreamConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { XmlDocument, XmlReader, XmlReaderSettings } from "@tsonic/dotnet/System.Xml.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { XmlDocument, XmlReader, XmlReaderSettings } from "@tsonic/dotnet/System.Xml/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface XmlConfigurationProvider$instance extends FileConfigurationProvider {
+export interface XmlConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
     Load(): void;
@@ -40,8 +40,6 @@ export const XmlConfigurationProvider: {
 export interface __XmlConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
-
-export interface XmlConfigurationProvider$instance extends System_Internal.IDisposable {}
 
 export type XmlConfigurationProvider = XmlConfigurationProvider$instance & __XmlConfigurationProvider$views;
 
@@ -81,7 +79,7 @@ export type XmlDocumentDecryptor = XmlDocumentDecryptor$instance;
 export interface XmlStreamConfigurationProvider$instance extends StreamConfigurationProvider {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
     Load(): void;
@@ -92,7 +90,7 @@ export interface XmlStreamConfigurationProvider$instance extends StreamConfigura
 
 export const XmlStreamConfigurationProvider: {
     new(source: XmlStreamConfigurationSource): XmlStreamConfigurationProvider;
-    Read(stream: Stream, decryptor: XmlDocumentDecryptor): IDictionary<System_Internal.String, string | undefined>;
+    Read(stream: Stream, decryptor: XmlDocumentDecryptor): IDictionary_2<System_Internal.String, string | undefined>;
 };
 
 

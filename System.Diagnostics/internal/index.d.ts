@@ -6,16 +6,16 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel.js";
-import type { Component, IComponent, ISupportInitialize, ISynchronizeInvoke } from "@tsonic/dotnet/System.ComponentModel.js";
-import * as System_Diagnostics_Internal from "@tsonic/dotnet/System.Diagnostics.js";
-import type { TraceEventCache, TraceEventType, TraceListener } from "@tsonic/dotnet/System.Diagnostics.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Byte, DateTime, Enum, EventArgs, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_ComponentModel_Internal from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import type { Component, IComponent, ISupportInitialize, ISynchronizeInvoke } from "@tsonic/dotnet/System.ComponentModel/internal/index.js";
+import * as System_Diagnostics_Internal from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import type { TraceEventCache, TraceEventType, TraceListener } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Byte, DateTime, Enum, EventArgs, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum EventLogEntryType {
     Error = 1,

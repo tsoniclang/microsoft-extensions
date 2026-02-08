@@ -10,13 +10,13 @@ import * as Microsoft_Extensions_FileProviders_Internal from "../../Microsoft.Ex
 import type { IDirectoryContents, IFileInfo } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import * as Microsoft_Extensions_Primitives_Internal from "../../Microsoft.Extensions.Primitives/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import type { DirectoryInfo, FileInfo, FileSystemWatcher, Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { DirectoryInfo, FileInfo, FileSystemWatcher, Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ExclusionFilters {
     Sensitive = 7,
@@ -27,7 +27,7 @@ export enum ExclusionFilters {
 }
 
 
-export interface PhysicalDirectoryInfo$instance {
+export interface PhysicalDirectoryInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance, Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -40,7 +40,7 @@ export interface PhysicalDirectoryInfo$instance {
     readonly Name: string;
     readonly PhysicalPath: string;
     CreateReadStream(): Stream;
-    GetEnumerator(): IEnumerator<IFileInfo>;
+    GetEnumerator(): IEnumerator_1<IFileInfo>;
 }
 
 
@@ -54,12 +54,10 @@ export interface __PhysicalDirectoryInfo$views {
     As_IFileInfo(): Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance;
 }
 
-export interface PhysicalDirectoryInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance, Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {}
-
 export type PhysicalDirectoryInfo = PhysicalDirectoryInfo$instance & __PhysicalDirectoryInfo$views;
 
 
-export interface PhysicalFileInfo$instance {
+export interface PhysicalFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
 
     readonly Exists: boolean;
@@ -80,8 +78,6 @@ export const PhysicalFileInfo: {
 export interface __PhysicalFileInfo$views {
     As_IFileInfo(): Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance;
 }
-
-export interface PhysicalFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {}
 
 export type PhysicalFileInfo = PhysicalFileInfo$instance & __PhysicalFileInfo$views;
 
@@ -109,7 +105,7 @@ export interface PollingFileChangeToken$instance {
 
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
 }
 
 

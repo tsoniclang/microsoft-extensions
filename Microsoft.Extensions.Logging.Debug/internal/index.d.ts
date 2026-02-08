@@ -8,10 +8,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { ILogger, ILoggerProvider } from "../../Microsoft.Extensions.Logging/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface DebugLoggerProvider$instance {
+export interface DebugLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -28,8 +28,6 @@ export const DebugLoggerProvider: {
 export interface __DebugLoggerProvider$views {
     As_ILoggerProvider(): Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance;
 }
-
-export interface DebugLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {}
 
 export type DebugLoggerProvider = DebugLoggerProvider$instance & __DebugLoggerProvider$views;
 

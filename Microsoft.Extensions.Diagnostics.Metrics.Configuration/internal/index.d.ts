@@ -8,7 +8,7 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
 import type { IConfiguration } from "../../Microsoft.Extensions.Configuration/internal/index.js";
-import type { String as ClrString } from "@tsonic/dotnet/System.js";
+import type { String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IMetricListenerConfigurationFactory$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_Metrics_Configuration_IMetricListenerConfigurationFactory: never;

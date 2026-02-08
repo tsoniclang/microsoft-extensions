@@ -13,16 +13,16 @@ import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Ex
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_2, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider {
+export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
-    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
     Set(key: string, value: string): void;
@@ -40,17 +40,15 @@ export interface __KeyPerFileConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
-export interface KeyPerFileConfigurationProvider$instance extends System_Internal.IDisposable {}
-
 export type KeyPerFileConfigurationProvider = KeyPerFileConfigurationProvider$instance & __KeyPerFileConfigurationProvider$views;
 
 
-export interface KeyPerFileConfigurationSource$instance {
+export interface KeyPerFileConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     get FileProvider(): IFileProvider | undefined;
     set FileProvider(value: IFileProvider | undefined);
-    IgnoreCondition: Func<System_Internal.String, System_Internal.Boolean>;
+    IgnoreCondition: Func_2<System_Internal.String, System_Internal.Boolean>;
     IgnorePrefix: string;
     Optional: boolean;
     ReloadDelay: int;
@@ -68,8 +66,6 @@ export const KeyPerFileConfigurationSource: {
 export interface __KeyPerFileConfigurationSource$views {
     As_IConfigurationSource(): Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance;
 }
-
-export interface KeyPerFileConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {}
 
 export type KeyPerFileConfigurationSource = KeyPerFileConfigurationSource$instance & __KeyPerFileConfigurationSource$views;
 

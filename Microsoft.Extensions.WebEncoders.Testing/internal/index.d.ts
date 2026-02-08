@@ -10,10 +10,10 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import type { Boolean as ClrBoolean, Char, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Text_Encodings_Web_Internal from "@tsonic/dotnet/System.Text.Encodings.Web.js";
-import type { HtmlEncoder, JavaScriptEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Text_Encodings_Web_Internal from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { HtmlEncoder, JavaScriptEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
+import type { Boolean as ClrBoolean, Char, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface HtmlTestEncoder$instance extends HtmlEncoder {
     readonly MaxOutputCharactersPerInputCharacter: int;

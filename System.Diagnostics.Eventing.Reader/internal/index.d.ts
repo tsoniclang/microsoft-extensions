@@ -6,15 +6,15 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { CultureInfo } from "@tsonic/dotnet/System.Globalization.js";
-import type { SeekOrigin } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, DateTime, Enum, EventArgs, EventHandler, Exception, Guid, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Uri, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { SecureString } from "@tsonic/dotnet/System.Security.js";
-import type { SecurityIdentifier } from "@tsonic/dotnet/System.Security.Principal.js";
+import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
+import type { SeekOrigin } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { SecurityIdentifier } from "@tsonic/dotnet/System.Security.Principal/internal/index.js";
+import type { SecureString } from "@tsonic/dotnet/System.Security/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, DateTime, Enum, EventArgs, EventHandler_1, Exception, Guid, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum EventLogIsolation {
     Application = 0,
@@ -146,14 +146,14 @@ export interface EventLogConfiguration$instance {
     readonly LogType: EventLogType;
     MaximumSizeInBytes: long;
     readonly OwningProviderName: string;
-    readonly ProviderBufferSize: Nullable<System_Internal.Int32>;
-    readonly ProviderControlGuid: Nullable<Guid>;
-    ProviderKeywords: Nullable<System_Internal.Int64>;
-    readonly ProviderLatency: Nullable<System_Internal.Int32>;
-    ProviderLevel: Nullable<System_Internal.Int32>;
-    readonly ProviderMaximumNumberOfBuffers: Nullable<System_Internal.Int32>;
-    readonly ProviderMinimumNumberOfBuffers: Nullable<System_Internal.Int32>;
-    readonly ProviderNames: IEnumerable<System_Internal.String>;
+    readonly ProviderBufferSize: Nullable_1<System_Internal.Int32>;
+    readonly ProviderControlGuid: Nullable_1<Guid>;
+    ProviderKeywords: Nullable_1<System_Internal.Int64>;
+    readonly ProviderLatency: Nullable_1<System_Internal.Int32>;
+    ProviderLevel: Nullable_1<System_Internal.Int32>;
+    readonly ProviderMaximumNumberOfBuffers: Nullable_1<System_Internal.Int32>;
+    readonly ProviderMinimumNumberOfBuffers: Nullable_1<System_Internal.Int32>;
+    readonly ProviderNames: IEnumerable_1<System_Internal.String>;
     SecurityDescriptor: string;
     Dispose(): void;
     Dispose(disposing: boolean): void;
@@ -187,14 +187,14 @@ export const EventLogException: {
 export type EventLogException = EventLogException$instance;
 
 export interface EventLogInformation$instance {
-    readonly Attributes: Nullable<System_Internal.Int32>;
-    readonly CreationTime: Nullable<DateTime>;
-    readonly FileSize: Nullable<System_Internal.Int64>;
-    readonly IsLogFull: Nullable<System_Internal.Boolean>;
-    readonly LastAccessTime: Nullable<DateTime>;
-    readonly LastWriteTime: Nullable<DateTime>;
-    readonly OldestRecordNumber: Nullable<System_Internal.Int64>;
-    readonly RecordCount: Nullable<System_Internal.Int64>;
+    readonly Attributes: Nullable_1<System_Internal.Int32>;
+    readonly CreationTime: Nullable_1<DateTime>;
+    readonly FileSize: Nullable_1<System_Internal.Int64>;
+    readonly IsLogFull: Nullable_1<System_Internal.Boolean>;
+    readonly LastAccessTime: Nullable_1<DateTime>;
+    readonly LastWriteTime: Nullable_1<DateTime>;
+    readonly OldestRecordNumber: Nullable_1<System_Internal.Int64>;
+    readonly RecordCount: Nullable_1<System_Internal.Int64>;
 }
 
 
@@ -256,7 +256,7 @@ export interface EventLogPropertySelector$instance {
 
 
 export const EventLogPropertySelector: {
-    new(propertyQueries: IEnumerable<System_Internal.String>): EventLogPropertySelector;
+    new(propertyQueries: IEnumerable_1<System_Internal.String>): EventLogPropertySelector;
 };
 
 
@@ -296,7 +296,7 @@ export interface EventLogReader$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     BatchSize: int;
-    readonly LogStatus: IList<EventLogStatus>;
+    readonly LogStatus: IList_1<EventLogStatus>;
     CancelReading(): void;
     Dispose(): void;
     Dispose(disposing: boolean): void;
@@ -336,37 +336,37 @@ export type EventLogReadingException = EventLogReadingException$instance;
 export interface EventLogRecord$instance extends EventRecord {
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly ActivityId: Nullable<Guid>;
+    readonly ActivityId: Nullable_1<Guid>;
     readonly Bookmark: EventBookmark;
     readonly ContainerLog: string;
     readonly Id: int;
-    readonly Keywords: Nullable<System_Internal.Int64>;
-    readonly KeywordsDisplayNames: IEnumerable<System_Internal.String>;
-    readonly Level: Nullable<System_Internal.Byte>;
+    readonly Keywords: Nullable_1<System_Internal.Int64>;
+    readonly KeywordsDisplayNames: IEnumerable_1<System_Internal.String>;
+    readonly Level: Nullable_1<System_Internal.Byte>;
     readonly LevelDisplayName: string;
     readonly LogName: string;
     readonly MachineName: string;
-    readonly MatchedQueryIds: IEnumerable<System_Internal.Int32>;
-    readonly Opcode: Nullable<System_Internal.Int16>;
+    readonly MatchedQueryIds: IEnumerable_1<System_Internal.Int32>;
+    readonly Opcode: Nullable_1<System_Internal.Int16>;
     readonly OpcodeDisplayName: string;
-    readonly ProcessId: Nullable<System_Internal.Int32>;
-    readonly Properties: IList<EventProperty>;
-    readonly ProviderId: Nullable<Guid>;
+    readonly ProcessId: Nullable_1<System_Internal.Int32>;
+    readonly Properties: IList_1<EventProperty>;
+    readonly ProviderId: Nullable_1<Guid>;
     readonly ProviderName: string;
-    readonly Qualifiers: Nullable<System_Internal.Int32>;
-    readonly RecordId: Nullable<System_Internal.Int64>;
-    readonly RelatedActivityId: Nullable<Guid>;
-    readonly Task: Nullable<System_Internal.Int32>;
+    readonly Qualifiers: Nullable_1<System_Internal.Int32>;
+    readonly RecordId: Nullable_1<System_Internal.Int64>;
+    readonly RelatedActivityId: Nullable_1<Guid>;
+    readonly Task: Nullable_1<System_Internal.Int32>;
     readonly TaskDisplayName: string;
-    readonly ThreadId: Nullable<System_Internal.Int32>;
-    readonly TimeCreated: Nullable<DateTime>;
+    readonly ThreadId: Nullable_1<System_Internal.Int32>;
+    readonly TimeCreated: Nullable_1<DateTime>;
     readonly UserId: SecurityIdentifier;
-    readonly Version: Nullable<System_Internal.Byte>;
+    readonly Version: Nullable_1<System_Internal.Byte>;
     Dispose(disposing: boolean): void;
     Dispose(): void;
     FormatDescription(): string;
-    FormatDescription(values: IEnumerable<unknown>): string;
-    GetPropertyValues(propertySelector: EventLogPropertySelector): IList<unknown>;
+    FormatDescription(values: IEnumerable_1<unknown>): string;
+    GetPropertyValues(propertySelector: EventLogPropertySelector): IList_1<unknown>;
     ToXml(): string;
 }
 
@@ -390,8 +390,8 @@ export interface EventLogSession$instance {
     ExportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string): void;
     ExportLogAndMessages(path: string, pathType: PathType, query: string, targetFilePath: string, tolerateQueryErrors: boolean, targetCultureInfo: CultureInfo): void;
     GetLogInformation(logName: string, pathType: PathType): EventLogInformation;
-    GetLogNames(): IEnumerable<System_Internal.String>;
-    GetProviderNames(): IEnumerable<System_Internal.String>;
+    GetLogNames(): IEnumerable_1<System_Internal.String>;
+    GetProviderNames(): IEnumerable_1<System_Internal.String>;
 }
 
 
@@ -439,7 +439,7 @@ export type EventLogWatcher = EventLogWatcher$instance;
 export interface EventMetadata$instance {
     readonly Description: string;
     readonly Id: long;
-    readonly Keywords: IEnumerable<EventKeyword>;
+    readonly Keywords: IEnumerable_1<EventKeyword>;
     readonly Level: EventLevel;
     readonly LogLink: EventLogLink;
     readonly Opcode: EventOpcode;
@@ -482,34 +482,34 @@ export type EventProperty = EventProperty$instance;
 export interface EventRecord$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly ActivityId: Nullable<Guid>;
+    readonly ActivityId: Nullable_1<Guid>;
     readonly Bookmark: EventBookmark;
     readonly Id: int;
-    readonly Keywords: Nullable<System_Internal.Int64>;
-    readonly KeywordsDisplayNames: IEnumerable<System_Internal.String>;
-    readonly Level: Nullable<System_Internal.Byte>;
+    readonly Keywords: Nullable_1<System_Internal.Int64>;
+    readonly KeywordsDisplayNames: IEnumerable_1<System_Internal.String>;
+    readonly Level: Nullable_1<System_Internal.Byte>;
     readonly LevelDisplayName: string;
     readonly LogName: string;
     readonly MachineName: string;
-    readonly Opcode: Nullable<System_Internal.Int16>;
+    readonly Opcode: Nullable_1<System_Internal.Int16>;
     readonly OpcodeDisplayName: string;
-    readonly ProcessId: Nullable<System_Internal.Int32>;
-    readonly Properties: IList<EventProperty>;
-    readonly ProviderId: Nullable<Guid>;
+    readonly ProcessId: Nullable_1<System_Internal.Int32>;
+    readonly Properties: IList_1<EventProperty>;
+    readonly ProviderId: Nullable_1<Guid>;
     readonly ProviderName: string;
-    readonly Qualifiers: Nullable<System_Internal.Int32>;
-    readonly RecordId: Nullable<System_Internal.Int64>;
-    readonly RelatedActivityId: Nullable<Guid>;
-    readonly Task: Nullable<System_Internal.Int32>;
+    readonly Qualifiers: Nullable_1<System_Internal.Int32>;
+    readonly RecordId: Nullable_1<System_Internal.Int64>;
+    readonly RelatedActivityId: Nullable_1<Guid>;
+    readonly Task: Nullable_1<System_Internal.Int32>;
     readonly TaskDisplayName: string;
-    readonly ThreadId: Nullable<System_Internal.Int32>;
-    readonly TimeCreated: Nullable<DateTime>;
+    readonly ThreadId: Nullable_1<System_Internal.Int32>;
+    readonly TimeCreated: Nullable_1<DateTime>;
     readonly UserId: SecurityIdentifier;
-    readonly Version: Nullable<System_Internal.Byte>;
+    readonly Version: Nullable_1<System_Internal.Byte>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
     FormatDescription(): string;
-    FormatDescription(values: IEnumerable<unknown>): string;
+    FormatDescription(values: IEnumerable_1<unknown>): string;
     ToXml(): string;
 }
 
@@ -550,18 +550,18 @@ export interface ProviderMetadata$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly DisplayName: string;
-    readonly Events: IEnumerable<EventMetadata>;
+    readonly Events: IEnumerable_1<EventMetadata>;
     readonly HelpLink: Uri;
     readonly Id: Guid;
-    readonly Keywords: IList<EventKeyword>;
-    readonly Levels: IList<EventLevel>;
-    readonly LogLinks: IList<EventLogLink>;
+    readonly Keywords: IList_1<EventKeyword>;
+    readonly Levels: IList_1<EventLevel>;
+    readonly LogLinks: IList_1<EventLogLink>;
     readonly MessageFilePath: string;
     readonly Name: string;
-    readonly Opcodes: IList<EventOpcode>;
+    readonly Opcodes: IList_1<EventOpcode>;
     readonly ParameterFilePath: string;
     readonly ResourceFilePath: string;
-    readonly Tasks: IList<EventTask>;
+    readonly Tasks: IList_1<EventTask>;
     Dispose(): void;
     Dispose(disposing: boolean): void;
 }

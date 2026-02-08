@@ -6,15 +6,15 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Func, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System.js";
-import type { DelegatingHandler, HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
+import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DelegatingHandler, HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, Func_2, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IHttpMessageHandlerBuilderFilter$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Http_IHttpMessageHandlerBuilderFilter: never;
 
-    Configure(next: Action<HttpMessageHandlerBuilder>): Action<HttpMessageHandlerBuilder>;
+    Configure(next: Action_1<HttpMessageHandlerBuilder>): Action_1<HttpMessageHandlerBuilder>;
 }
 
 
@@ -31,9 +31,9 @@ export type ITypedHttpClientFactory_1<TClient> = ITypedHttpClientFactory_1$insta
 
 export interface HttpClientFactoryOptions$instance {
     HandlerLifetime: TimeSpan;
-    readonly HttpClientActions: IList<Action<HttpClient>>;
-    readonly HttpMessageHandlerBuilderActions: IList<Action<HttpMessageHandlerBuilder>>;
-    ShouldRedactHeaderValue: Func<System_Internal.String, System_Internal.Boolean>;
+    readonly HttpClientActions: IList_1<Action_1<HttpClient>>;
+    readonly HttpMessageHandlerBuilderActions: IList_1<Action_1<HttpMessageHandlerBuilder>>;
+    ShouldRedactHeaderValue: Func_2<System_Internal.String, System_Internal.Boolean>;
     SuppressHandlerScope: boolean;
 }
 
@@ -46,7 +46,7 @@ export const HttpClientFactoryOptions: {
 export type HttpClientFactoryOptions = HttpClientFactoryOptions$instance;
 
 export interface HttpMessageHandlerBuilder$instance {
-    readonly AdditionalHandlers: IList<DelegatingHandler>;
+    readonly AdditionalHandlers: IList_1<DelegatingHandler>;
     get Name(): string | undefined;
     set Name(value: string | undefined);
     PrimaryHandler: HttpMessageHandler;
@@ -56,7 +56,7 @@ export interface HttpMessageHandlerBuilder$instance {
 
 
 export const HttpMessageHandlerBuilder: (abstract new() => HttpMessageHandlerBuilder) & {
-    CreateHandlerPipeline(primaryHandler: HttpMessageHandler, additionalHandlers: IEnumerable<DelegatingHandler>): HttpMessageHandler;
+    CreateHandlerPipeline(primaryHandler: HttpMessageHandler, additionalHandlers: IEnumerable_1<DelegatingHandler>): HttpMessageHandler;
 };
 
 

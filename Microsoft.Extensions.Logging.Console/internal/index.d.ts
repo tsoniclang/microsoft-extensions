@@ -15,11 +15,11 @@ import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensio
 import type { IExternalScopeProvider, ILogger, ILoggerProvider, ISupportExternalScope, LogLevel } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptionsMonitor_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { TextWriter } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { JsonWriterOptions } from "@tsonic/dotnet/System.Text.Json.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { TextWriter } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { JsonWriterOptions } from "@tsonic/dotnet/System.Text.Json/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ConsoleLoggerFormat {
     Default = 0,
@@ -124,7 +124,7 @@ export const ConsoleLoggerOptions: {
 
 export type ConsoleLoggerOptions = ConsoleLoggerOptions$instance;
 
-export interface ConsoleLoggerProvider$instance {
+export interface ConsoleLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ISupportExternalScope: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -137,7 +137,7 @@ export interface ConsoleLoggerProvider$instance {
 
 export const ConsoleLoggerProvider: {
     new(options: IOptionsMonitor_1<ConsoleLoggerOptions>): ConsoleLoggerProvider;
-    new(options: IOptionsMonitor_1<ConsoleLoggerOptions>, formatters: IEnumerable<ConsoleFormatter>): ConsoleLoggerProvider;
+    new(options: IOptionsMonitor_1<ConsoleLoggerOptions>, formatters: IEnumerable_1<ConsoleFormatter>): ConsoleLoggerProvider;
 };
 
 
@@ -145,8 +145,6 @@ export interface __ConsoleLoggerProvider$views {
     As_ILoggerProvider(): Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance;
     As_ISupportExternalScope(): Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance;
 }
-
-export interface ConsoleLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {}
 
 export type ConsoleLoggerProvider = ConsoleLoggerProvider$instance & __ConsoleLoggerProvider$views;
 
@@ -158,7 +156,7 @@ export interface ConsoleLoggerSettings$instance {
     set ChangeToken(value: IChangeToken | undefined);
     DisableColors: boolean;
     IncludeScopes: boolean;
-    Switches: IDictionary<System_Internal.String, LogLevel>;
+    Switches: IDictionary_2<System_Internal.String, LogLevel>;
     Reload(): IConsoleLoggerSettings;
     TryGetSwitch(name: string, level: LogLevel): boolean;
 }

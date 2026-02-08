@@ -9,13 +9,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { Dictionary, IList, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ValidationAttribute, ValidationContext } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Attribute, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, ValueType } from "@tsonic/dotnet/System.js";
-import type { ParameterInfo } from "@tsonic/dotnet/System.Reflection.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Dictionary_2, IList_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ValidationAttribute, ValidationContext } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations/internal/index.js";
+import type { ParameterInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Attribute, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, Type, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IValidatableInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
@@ -39,7 +39,7 @@ export type IValidatableInfoResolver = IValidatableInfoResolver$instance;
 export interface ValidationErrorContext$instance {
     get Container(): unknown | undefined;
     set Container(value: unknown | undefined);
-    Errors: IReadOnlyList<System_Internal.String>;
+    Errors: IReadOnlyList_1<System_Internal.String>;
     Name: string;
     Path: string;
 }
@@ -63,7 +63,7 @@ export const SkipValidationAttribute: {
 
 export type SkipValidationAttribute = SkipValidationAttribute$instance;
 
-export interface ValidatableParameterInfo$instance {
+export interface ValidatableParameterInfo$instance extends IValidatableInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
@@ -79,12 +79,10 @@ export interface __ValidatableParameterInfo$views {
     As_IValidatableInfo(): IValidatableInfo$instance;
 }
 
-export interface ValidatableParameterInfo$instance extends IValidatableInfo$instance {}
-
 export type ValidatableParameterInfo = ValidatableParameterInfo$instance & __ValidatableParameterInfo$views;
 
 
-export interface ValidatablePropertyInfo$instance {
+export interface ValidatablePropertyInfo$instance extends IValidatableInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
@@ -100,8 +98,6 @@ export interface __ValidatablePropertyInfo$views {
     As_IValidatableInfo(): IValidatableInfo$instance;
 }
 
-export interface ValidatablePropertyInfo$instance extends IValidatableInfo$instance {}
-
 export type ValidatablePropertyInfo = ValidatablePropertyInfo$instance & __ValidatablePropertyInfo$views;
 
 
@@ -116,7 +112,7 @@ export const ValidatableTypeAttribute: {
 
 export type ValidatableTypeAttribute = ValidatableTypeAttribute$instance;
 
-export interface ValidatableTypeInfo$instance {
+export interface ValidatableTypeInfo$instance extends IValidatableInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
@@ -124,15 +120,13 @@ export interface ValidatableTypeInfo$instance {
 }
 
 
-export const ValidatableTypeInfo: (abstract new(type: Type, members: IReadOnlyList<ValidatablePropertyInfo>) => ValidatableTypeInfo) & {
+export const ValidatableTypeInfo: (abstract new(type: Type, members: IReadOnlyList_1<ValidatablePropertyInfo>) => ValidatableTypeInfo) & {
 };
 
 
 export interface __ValidatableTypeInfo$views {
     As_IValidatableInfo(): IValidatableInfo$instance;
 }
-
-export interface ValidatableTypeInfo$instance extends IValidatableInfo$instance {}
 
 export type ValidatableTypeInfo = ValidatableTypeInfo$instance & __ValidatableTypeInfo$views;
 
@@ -141,8 +135,8 @@ export interface ValidateContext$instance {
     CurrentDepth: int;
     CurrentValidationPath: string;
     ValidationContext: ValidationContext;
-    get ValidationErrors(): Dictionary<System_Internal.String, string[]> | undefined;
-    set ValidationErrors(value: Dictionary<System_Internal.String, string[]> | undefined);
+    get ValidationErrors(): Dictionary_2<System_Internal.String, string[]> | undefined;
+    set ValidationErrors(value: Dictionary_2<System_Internal.String, string[]> | undefined);
     ValidationOptions: ValidationOptions;
 }
 
@@ -156,7 +150,7 @@ export type ValidateContext = ValidateContext$instance;
 
 export interface ValidationOptions$instance {
     MaxDepth: int;
-    readonly Resolvers: IList<IValidatableInfoResolver>;
+    readonly Resolvers: IList_1<IValidatableInfoResolver>;
     TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
     TryGetValidatableTypeInfo(type: Type, validatableTypeInfo: IValidatableInfo): boolean;
 }

@@ -8,12 +8,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { HttpClientFactoryOptions } from "../../Microsoft.Extensions.Http/internal/index.js";
 import type { ILogger } from "../../Microsoft.Extensions.Logging/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Exception, IDisposable, Object as ClrObject, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import * as System_Net_Http_Internal from "@tsonic/dotnet/System.Net.Http.js";
-import type { DelegatingHandler, HttpRequestMessage, HttpResponseMessage } from "@tsonic/dotnet/System.Net.Http.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Net_Http_Internal from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import type { DelegatingHandler, HttpRequestMessage, HttpResponseMessage } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import type { Task_1, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Exception, IDisposable, Object as ClrObject, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger {
     readonly __tsonic_iface_Microsoft_Extensions_Http_Logging_IHttpClientAsyncLogger: never;
@@ -21,7 +21,7 @@ export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger {
     LogRequestFailed(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan): void;
     LogRequestFailedAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, exception: Exception, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
     LogRequestStart(request: HttpRequestMessage): unknown | undefined;
-    LogRequestStartAsync(request: HttpRequestMessage, cancellationToken?: CancellationToken): ValueTask<unknown>;
+    LogRequestStartAsync(request: HttpRequestMessage, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
     LogRequestStop(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
     LogRequestStopAsync(context: unknown, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
 }
@@ -46,7 +46,7 @@ export interface LoggingHttpMessageHandler$instance extends DelegatingHandler {
     readonly __tsonic_iface_System_IDisposable: never;
 
     Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
-    SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
+    SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task_1<HttpResponseMessage>;
 }
 
 
@@ -62,7 +62,7 @@ export interface LoggingScopeHttpMessageHandler$instance extends DelegatingHandl
     readonly __tsonic_iface_System_IDisposable: never;
 
     Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
-    SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task<HttpResponseMessage>;
+    SendAsync(request: HttpRequestMessage, cancellationToken: CancellationToken): Task_1<HttpResponseMessage>;
 }
 
 

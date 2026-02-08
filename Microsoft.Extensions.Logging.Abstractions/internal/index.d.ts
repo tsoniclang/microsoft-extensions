@@ -8,15 +8,15 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { EventId, ILogger, ILogger_1, ILoggerFactory, ILoggerProvider, LogLevel } from "../../Microsoft.Extensions.Logging/internal/index.js";
-import type { IEnumerable, IReadOnlyList, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ActivitySpanId, ActivityTraceId } from "@tsonic/dotnet/System.Diagnostics.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func, IDisposable, Int32, Nullable, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1, IReadOnlyList_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ActivitySpanId, ActivityTraceId } from "@tsonic/dotnet/System.Diagnostics/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Exception, Func_3, IDisposable, Int32, Nullable_1, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IBufferedLogger$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Abstractions_IBufferedLogger: never;
 
-    LogRecords(records: IEnumerable<BufferedLogRecord>): void;
+    LogRecords(records: IEnumerable_1<BufferedLogRecord>): void;
 }
 
 
@@ -26,28 +26,28 @@ export interface LogEntry_1$instance<TState> {
     readonly Category: string;
     readonly EventId: EventId;
     readonly Exception: Exception | undefined;
-    readonly Formatter: Func<TState, Exception | undefined, System_Internal.String>;
+    readonly Formatter: Func_3<TState, Exception | undefined, System_Internal.String>;
     readonly LogLevel: LogLevel;
     readonly State: TState;
 }
 
 
 export const LogEntry_1: {
-    new<TState>(logLevel: LogLevel, category: string, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): LogEntry_1<TState>;
+    new<TState>(logLevel: LogLevel, category: string, eventId: EventId, state: TState, exception: Exception, formatter: Func_3<TState, Exception, System_Internal.String>): LogEntry_1<TState>;
 };
 
 
 export type LogEntry_1<TState> = LogEntry_1$instance<TState>;
 
 export interface BufferedLogRecord$instance {
-    readonly ActivitySpanId: Nullable<ActivitySpanId>;
-    readonly ActivityTraceId: Nullable<ActivityTraceId>;
-    readonly Attributes: IReadOnlyList<KeyValuePair<System_Internal.String, unknown>>;
+    readonly ActivitySpanId: Nullable_1<ActivitySpanId>;
+    readonly ActivityTraceId: Nullable_1<ActivityTraceId>;
+    readonly Attributes: IReadOnlyList_1<KeyValuePair_2<System_Internal.String, unknown>>;
     readonly EventId: EventId;
     readonly Exception: string | undefined;
     readonly FormattedMessage: string | undefined;
     readonly LogLevel: LogLevel;
-    readonly ManagedThreadId: Nullable<System_Internal.Int32>;
+    readonly ManagedThreadId: Nullable_1<System_Internal.Int32>;
     readonly MessageTemplate: string | undefined;
     readonly Timestamp: DateTimeOffset;
 }
@@ -59,12 +59,12 @@ export const BufferedLogRecord: (abstract new() => BufferedLogRecord) & {
 
 export type BufferedLogRecord = BufferedLogRecord$instance;
 
-export interface NullLogger$instance {
+export interface NullLogger$instance extends Microsoft_Extensions_Logging_Internal.ILogger$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
 
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func_3<TState, Exception, System_Internal.String>): void;
 }
 
 
@@ -77,8 +77,6 @@ export interface __NullLogger$views {
     As_ILogger(): Microsoft_Extensions_Logging_Internal.ILogger$instance;
 }
 
-export interface NullLogger$instance extends Microsoft_Extensions_Logging_Internal.ILogger$instance {}
-
 export type NullLogger = NullLogger$instance & __NullLogger$views;
 
 
@@ -88,7 +86,7 @@ export interface NullLogger_1$instance<T> extends ILogger_1<T> {
 
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func<TState, Exception, System_Internal.String>): void;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func_3<TState, Exception, System_Internal.String>): void;
 }
 
 
@@ -105,7 +103,7 @@ export interface __NullLogger_1$views<T> {
 export type NullLogger_1<T> = NullLogger_1$instance<T> & __NullLogger_1$views<T>;
 
 
-export interface NullLoggerFactory$instance {
+export interface NullLoggerFactory$instance extends Microsoft_Extensions_Logging_Internal.ILoggerFactory$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -125,12 +123,10 @@ export interface __NullLoggerFactory$views {
     As_ILoggerFactory(): Microsoft_Extensions_Logging_Internal.ILoggerFactory$instance;
 }
 
-export interface NullLoggerFactory$instance extends Microsoft_Extensions_Logging_Internal.ILoggerFactory$instance {}
-
 export type NullLoggerFactory = NullLoggerFactory$instance & __NullLoggerFactory$views;
 
 
-export interface NullLoggerProvider$instance {
+export interface NullLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -147,8 +143,6 @@ export const NullLoggerProvider: {
 export interface __NullLoggerProvider$views {
     As_ILoggerProvider(): Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance;
 }
-
-export interface NullLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {}
 
 export type NullLoggerProvider = NullLoggerProvider$instance & __NullLoggerProvider$views;
 

@@ -8,9 +8,9 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_Extensions_FileSystemGlobbing_Abstractions_Internal from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
 import type { DirectoryInfoBase, FileInfoBase, FileSystemInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, IEquatable, Int32, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, IEquatable_1, Int32, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface FilePatternMatch$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
@@ -34,14 +34,14 @@ export interface InMemoryDirectoryInfo$instance extends DirectoryInfoBase {
     readonly FullName: string;
     readonly Name: string;
     readonly ParentDirectory: DirectoryInfoBase | undefined;
-    EnumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
+    EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
     GetDirectory(path: string): DirectoryInfoBase;
     GetFile(path: string): FileInfoBase | undefined;
 }
 
 
 export const InMemoryDirectoryInfo: {
-    new(rootDir: string, files: IEnumerable<System_Internal.String>): InMemoryDirectoryInfo;
+    new(rootDir: string, files: IEnumerable_1<System_Internal.String>): InMemoryDirectoryInfo;
 };
 
 
@@ -64,25 +64,25 @@ export const Matcher: {
 export type Matcher = Matcher$instance;
 
 export interface PatternMatchingResult$instance {
-    Files: IEnumerable<FilePatternMatch>;
+    Files: IEnumerable_1<FilePatternMatch>;
     readonly HasMatches: boolean;
 }
 
 
 export const PatternMatchingResult: {
-    new(files: IEnumerable<FilePatternMatch>): PatternMatchingResult;
-    new(files: IEnumerable<FilePatternMatch>, hasMatches: boolean): PatternMatchingResult;
+    new(files: IEnumerable_1<FilePatternMatch>): PatternMatchingResult;
+    new(files: IEnumerable_1<FilePatternMatch>, hasMatches: boolean): PatternMatchingResult;
 };
 
 
 export type PatternMatchingResult = PatternMatchingResult$instance;
 
 export abstract class MatcherExtensions$instance {
-    static AddExcludePatterns(matcher: Matcher, ...excludePatternsGroups: IEnumerable<System_Internal.String>[]): void;
-    static AddIncludePatterns(matcher: Matcher, ...includePatternsGroups: IEnumerable<System_Internal.String>[]): void;
-    static GetResultsInFullPath(matcher: Matcher, directoryPath: string): IEnumerable<System_Internal.String>;
-    static Match(matcher: Matcher, files: IEnumerable<System_Internal.String>): PatternMatchingResult;
-    static Match(matcher: Matcher, rootDir: string, files: IEnumerable<System_Internal.String>): PatternMatchingResult;
+    static AddExcludePatterns(matcher: Matcher, ...excludePatternsGroups: IEnumerable_1<System_Internal.String>[]): void;
+    static AddIncludePatterns(matcher: Matcher, ...includePatternsGroups: IEnumerable_1<System_Internal.String>[]): void;
+    static GetResultsInFullPath(matcher: Matcher, directoryPath: string): IEnumerable_1<System_Internal.String>;
+    static Match(matcher: Matcher, files: IEnumerable_1<System_Internal.String>): PatternMatchingResult;
+    static Match(matcher: Matcher, rootDir: string, files: IEnumerable_1<System_Internal.String>): PatternMatchingResult;
     static Match(matcher: Matcher, rootDir: string, file: string): PatternMatchingResult;
     static Match(matcher: Matcher, file: string): PatternMatchingResult;
 }
