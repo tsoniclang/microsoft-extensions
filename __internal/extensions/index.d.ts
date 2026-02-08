@@ -606,10 +606,13 @@ type __TsonicPreferExt<A, B> = Omit<A, keyof B> & B;
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Caching.Distributed
 type __TsonicExtSurface_Microsoft_Extensions_Caching_Distributed<TShape> =
   (
-    __TsonicPreferExt<(TShape extends Microsoft_Extensions_Caching_Distributed.DistributedCacheEntryOptions ? __Ext_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions : {}), (TShape extends Microsoft_Extensions_Caching_Distributed.IDistributedCache ? __Ext_Microsoft_Extensions_Caching_Distributed_IDistributedCache : {})>
+    (TShape extends Microsoft_Extensions_Caching_Distributed.DistributedCacheEntryOptions ? __Ext_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions : {}) & (TShape extends Microsoft_Extensions_Caching_Distributed.IDistributedCache ? __Ext_Microsoft_Extensions_Caching_Distributed_IDistributedCache : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Caching_Distributed = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Caching_Distributed<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Caching_Distributed {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Caching_Distributed<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Caching_Distributed<TShape> =
   TShape extends null | undefined ? TShape
@@ -619,10 +622,13 @@ export type ExtensionMethods_Microsoft_Extensions_Caching_Distributed<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Caching.Memory
 type __TsonicExtSurface_Microsoft_Extensions_Caching_Memory<TShape> =
   (
-    __TsonicPreferExt<__TsonicPreferExt<(TShape extends Microsoft_Extensions_Caching_Memory.ICacheEntry ? __Ext_Microsoft_Extensions_Caching_Memory_ICacheEntry : {}), (TShape extends Microsoft_Extensions_Caching_Memory.IMemoryCache ? __Ext_Microsoft_Extensions_Caching_Memory_IMemoryCache : {})>, (TShape extends Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions ? __Ext_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions : {})>
+    (TShape extends Microsoft_Extensions_Caching_Memory.ICacheEntry ? __Ext_Microsoft_Extensions_Caching_Memory_ICacheEntry : {}) & (TShape extends Microsoft_Extensions_Caching_Memory.IMemoryCache ? __Ext_Microsoft_Extensions_Caching_Memory_IMemoryCache : {}) & (TShape extends Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions ? __Ext_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Caching_Memory = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Caching_Memory<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Caching_Memory {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Caching_Memory<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Caching_Memory<TShape> =
   TShape extends null | undefined ? TShape
@@ -632,10 +638,13 @@ export type ExtensionMethods_Microsoft_Extensions_Caching_Memory<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Configuration
 type __TsonicExtSurface_Microsoft_Extensions_Configuration<TShape> =
   (
-    __TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<(TShape extends Microsoft_Extensions_Configuration.IConfiguration ? __Ext_Microsoft_Extensions_Configuration_IConfiguration : {}), (TShape extends Microsoft_Extensions_Configuration.IConfigurationBuilder ? __Ext_Microsoft_Extensions_Configuration_IConfigurationBuilder : {})>, (TShape extends Microsoft_Extensions_Configuration.IConfigurationRoot ? __Ext_Microsoft_Extensions_Configuration_IConfigurationRoot : {})>, (TShape extends Microsoft_Extensions_Configuration.IConfigurationSection ? __Ext_Microsoft_Extensions_Configuration_IConfigurationSection : {})>
+    (TShape extends Microsoft_Extensions_Configuration.IConfiguration ? __Ext_Microsoft_Extensions_Configuration_IConfiguration : {}) & (TShape extends Microsoft_Extensions_Configuration.IConfigurationBuilder ? __Ext_Microsoft_Extensions_Configuration_IConfigurationBuilder : {}) & (TShape extends Microsoft_Extensions_Configuration.IConfigurationRoot ? __Ext_Microsoft_Extensions_Configuration_IConfigurationRoot : {}) & (TShape extends Microsoft_Extensions_Configuration.IConfigurationSection ? __Ext_Microsoft_Extensions_Configuration_IConfigurationSection : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Configuration = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Configuration<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Configuration {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Configuration<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Configuration<TShape> =
   TShape extends null | undefined ? TShape
@@ -645,10 +654,13 @@ export type ExtensionMethods_Microsoft_Extensions_Configuration<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
 type __TsonicExtSurface_Microsoft_Extensions_DependencyInjection<TShape> =
   (
-    __TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<(TShape extends Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder : {}), (TShape extends Microsoft_Extensions_DependencyInjection.IHttpClientBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IHttpClientBuilder : {})>, (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection : {})>, (TShape extends Microsoft_Extensions_DependencyInjection.IServiceScopeFactory ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceScopeFactory : {})>, (TShape extends Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_ISocketsHttpHandlerBuilder : {})>, (TShape extends Microsoft_Extensions_Options.OptionsBuilder_1<infer T0> ? __Ext_Microsoft_Extensions_DependencyInjection_OptionsBuilder_1<T0> : {})>, (TShape extends System.IServiceProvider ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceProvider : {})>
+    (TShape extends Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IHealthChecksBuilder : {}) & (TShape extends Microsoft_Extensions_DependencyInjection.IHttpClientBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_IHttpClientBuilder : {}) & (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceCollection : {}) & (TShape extends Microsoft_Extensions_DependencyInjection.IServiceScopeFactory ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceScopeFactory : {}) & (TShape extends Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder ? __Ext_Microsoft_Extensions_DependencyInjection_ISocketsHttpHandlerBuilder : {}) & (TShape extends Microsoft_Extensions_Options.OptionsBuilder_1<infer T0> ? __Ext_Microsoft_Extensions_DependencyInjection_OptionsBuilder_1<T0> : {}) & (TShape extends System.IServiceProvider ? __Ext_Microsoft_Extensions_DependencyInjection_IServiceProvider : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_DependencyInjection = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_DependencyInjection<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_DependencyInjection<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
   TShape extends null | undefined ? TShape
@@ -661,7 +673,10 @@ type __TsonicExtSurface_Microsoft_Extensions_DependencyInjection_Extensions<TSha
     (TShape extends Microsoft_Extensions_DependencyInjection.IServiceCollection ? __Ext_Microsoft_Extensions_DependencyInjection_Extensions_IServiceCollection : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_DependencyInjection_Extensions = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_DependencyInjection_Extensions<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection_Extensions {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_DependencyInjection_Extensions<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_DependencyInjection_Extensions<TShape> =
   TShape extends null | undefined ? TShape
@@ -671,10 +686,13 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyInjection_Extensions
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Diagnostics.Metrics
 type __TsonicExtSurface_Microsoft_Extensions_Diagnostics_Metrics<TShape> =
   (
-    __TsonicPreferExt<(TShape extends Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder ? __Ext_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder : {}), (TShape extends Microsoft_Extensions_Diagnostics_Metrics.MetricsOptions ? __Ext_Microsoft_Extensions_Diagnostics_Metrics_MetricsOptions : {})>
+    (TShape extends Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder ? __Ext_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder : {}) & (TShape extends Microsoft_Extensions_Diagnostics_Metrics.MetricsOptions ? __Ext_Microsoft_Extensions_Diagnostics_Metrics_MetricsOptions : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Diagnostics_Metrics = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Diagnostics_Metrics<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Diagnostics_Metrics {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Diagnostics_Metrics<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Diagnostics_Metrics<TShape> =
   TShape extends null | undefined ? TShape
@@ -687,7 +705,10 @@ type __TsonicExtSurface_Microsoft_Extensions_FileSystemGlobbing<TShape> =
     (TShape extends Microsoft_Extensions_FileSystemGlobbing.Matcher ? __Ext_Microsoft_Extensions_FileSystemGlobbing_Matcher : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_FileSystemGlobbing = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_FileSystemGlobbing<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_FileSystemGlobbing {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_FileSystemGlobbing<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_FileSystemGlobbing<TShape> =
   TShape extends null | undefined ? TShape
@@ -697,10 +718,13 @@ export type ExtensionMethods_Microsoft_Extensions_FileSystemGlobbing<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Hosting
 type __TsonicExtSurface_Microsoft_Extensions_Hosting<TShape> =
   (
-    __TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<(TShape extends Microsoft_Extensions_Hosting.IHost ? __Ext_Microsoft_Extensions_Hosting_IHost : {}), (TShape extends Microsoft_Extensions_Hosting.IHostBuilder ? __Ext_Microsoft_Extensions_Hosting_IHostBuilder : {})>, (TShape extends Microsoft_Extensions_Hosting.IHostEnvironment ? __Ext_Microsoft_Extensions_Hosting_IHostEnvironment : {})>, (TShape extends Microsoft_Extensions_Hosting.IHostingEnvironment ? __Ext_Microsoft_Extensions_Hosting_IHostingEnvironment : {})>
+    (TShape extends Microsoft_Extensions_Hosting.IHost ? __Ext_Microsoft_Extensions_Hosting_IHost : {}) & (TShape extends Microsoft_Extensions_Hosting.IHostBuilder ? __Ext_Microsoft_Extensions_Hosting_IHostBuilder : {}) & (TShape extends Microsoft_Extensions_Hosting.IHostEnvironment ? __Ext_Microsoft_Extensions_Hosting_IHostEnvironment : {}) & (TShape extends Microsoft_Extensions_Hosting.IHostingEnvironment ? __Ext_Microsoft_Extensions_Hosting_IHostingEnvironment : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Hosting = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Hosting<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Hosting {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Hosting<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Hosting<TShape> =
   TShape extends null | undefined ? TShape
@@ -713,7 +737,10 @@ type __TsonicExtSurface_Microsoft_Extensions_Localization<TShape> =
     (TShape extends Microsoft_Extensions_Localization.IStringLocalizer ? __Ext_Microsoft_Extensions_Localization_IStringLocalizer : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Localization = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Localization<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Localization {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Localization<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Localization<TShape> =
   TShape extends null | undefined ? TShape
@@ -723,10 +750,13 @@ export type ExtensionMethods_Microsoft_Extensions_Localization<TShape> =
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Logging
 type __TsonicExtSurface_Microsoft_Extensions_Logging<TShape> =
   (
-    __TsonicPreferExt<__TsonicPreferExt<__TsonicPreferExt<(TShape extends Microsoft_Extensions_Logging.ILogger ? __Ext_Microsoft_Extensions_Logging_ILogger : {}), (TShape extends Microsoft_Extensions_Logging.ILoggerFactory ? __Ext_Microsoft_Extensions_Logging_ILoggerFactory : {})>, (TShape extends Microsoft_Extensions_Logging.ILoggingBuilder ? __Ext_Microsoft_Extensions_Logging_ILoggingBuilder : {})>, (TShape extends Microsoft_Extensions_Logging.LoggerFilterOptions ? __Ext_Microsoft_Extensions_Logging_LoggerFilterOptions : {})>
+    (TShape extends Microsoft_Extensions_Logging.ILogger ? __Ext_Microsoft_Extensions_Logging_ILogger : {}) & (TShape extends Microsoft_Extensions_Logging.ILoggerFactory ? __Ext_Microsoft_Extensions_Logging_ILoggerFactory : {}) & (TShape extends Microsoft_Extensions_Logging.ILoggingBuilder ? __Ext_Microsoft_Extensions_Logging_ILoggingBuilder : {}) & (TShape extends Microsoft_Extensions_Logging.LoggerFilterOptions ? __Ext_Microsoft_Extensions_Logging_LoggerFilterOptions : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Logging = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Logging<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Logging {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Logging<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Logging<TShape> =
   TShape extends null | undefined ? TShape
@@ -739,7 +769,10 @@ type __TsonicExtSurface_Microsoft_Extensions_Logging_Configuration<TShape> =
     (TShape extends Microsoft_Extensions_Logging.ILoggingBuilder ? __Ext_Microsoft_Extensions_Logging_Configuration_ILoggingBuilder : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Logging_Configuration = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Logging_Configuration<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Logging_Configuration {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Logging_Configuration<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Logging_Configuration<TShape> =
   TShape extends null | undefined ? TShape
@@ -752,7 +785,10 @@ type __TsonicExtSurface_Microsoft_Extensions_ObjectPool<TShape> =
     (TShape extends Microsoft_Extensions_ObjectPool.ObjectPoolProvider ? __Ext_Microsoft_Extensions_ObjectPool_ObjectPoolProvider : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_ObjectPool = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_ObjectPool<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_ObjectPool {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_ObjectPool<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_ObjectPool<TShape> =
   TShape extends null | undefined ? TShape
@@ -765,7 +801,10 @@ type __TsonicExtSurface_Microsoft_Extensions_Options<TShape> =
     (TShape extends Microsoft_Extensions_Options.IOptionsMonitor_1<infer T0> ? __Ext_Microsoft_Extensions_Options_IOptionsMonitor_1<T0> : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Options = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Options<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Options {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Options<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Options<TShape> =
   TShape extends null | undefined ? TShape
@@ -778,7 +817,10 @@ type __TsonicExtSurface_Microsoft_Extensions_Primitives<TShape> =
     (TShape extends System_Text.StringBuilder ? __Ext_Microsoft_Extensions_Primitives_StringBuilder : {})
   );
 
-type __TsonicExtApplier_Microsoft_Extensions_Primitives = <TShape>(shape: TShape) => __TsonicExtSurface_Microsoft_Extensions_Primitives<TShape>;
+interface __TsonicExtApplier_Microsoft_Extensions_Primitives {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_Microsoft_Extensions_Primitives<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_Microsoft_Extensions_Primitives<TShape> =
   TShape extends null | undefined ? TShape
@@ -788,10 +830,13 @@ export type ExtensionMethods_Microsoft_Extensions_Primitives<TShape> =
 // Generic helper type for extension methods in namespace: System.Net.Http
 type __TsonicExtSurface_System_Net_Http<TShape> =
   (
-    __TsonicPreferExt<(TShape extends System_Net_Http.IHttpClientFactory ? __Ext_System_Net_Http_IHttpClientFactory : {}), (TShape extends System_Net_Http.IHttpMessageHandlerFactory ? __Ext_System_Net_Http_IHttpMessageHandlerFactory : {})>
+    (TShape extends System_Net_Http.IHttpClientFactory ? __Ext_System_Net_Http_IHttpClientFactory : {}) & (TShape extends System_Net_Http.IHttpMessageHandlerFactory ? __Ext_System_Net_Http_IHttpMessageHandlerFactory : {})
   );
 
-type __TsonicExtApplier_System_Net_Http = <TShape>(shape: TShape) => __TsonicExtSurface_System_Net_Http<TShape>;
+interface __TsonicExtApplier_System_Net_Http {
+  __tsonic_shape: unknown;
+  __tsonic_type: __TsonicExtSurface_System_Net_Http<this["__tsonic_shape"]>;
+}
 
 export type ExtensionMethods_System_Net_Http<TShape> =
   TShape extends null | undefined ? TShape
