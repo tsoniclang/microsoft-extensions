@@ -11,13 +11,13 @@ import type { IServiceCollection, IServiceProviderFactory_1, ServiceProviderOpti
 import type { IMetricsBuilder } from "../../Microsoft.Extensions.Diagnostics.Metrics/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { ILoggingBuilder } from "../../Microsoft.Extensions.Logging/internal/index.js";
-import type { IDictionary } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Enum, Exception, Func, IComparable, IConvertible, IDisposable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IDictionary_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, Boolean as ClrBoolean, Enum, Exception, Func_2, IComparable, IConvertible, IDisposable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum BackgroundServiceExceptionBehavior {
     StopHost = 0,
@@ -52,13 +52,13 @@ export type IHost = IHost$instance;
 export interface IHostApplicationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
 
-    readonly Properties: IDictionary<unknown, unknown>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     readonly Configuration: IConfigurationManager;
     readonly Environment: IHostEnvironment;
     readonly Logging: ILoggingBuilder;
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
-    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action<TContainerBuilder>): void;
+    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder>): void;
 }
 
 
@@ -79,11 +79,11 @@ export type IHostApplicationLifetime = IHostApplicationLifetime$instance;
 export interface IHostBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary<unknown, unknown>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     Build(): IHost;
-    ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
-    ConfigureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
+    ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
     UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
 }
 
@@ -144,7 +144,7 @@ export interface IHostLifetime$instance {
 
 export type IHostLifetime = IHostLifetime$instance;
 
-export interface BackgroundService$instance {
+export interface BackgroundService$instance extends IHostedService$instance, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -163,8 +163,6 @@ export const BackgroundService: (abstract new() => BackgroundService) & {
 export interface __BackgroundService$views {
     As_IHostedService(): IHostedService$instance;
 }
-
-export interface BackgroundService$instance extends IHostedService$instance, System_Internal.IDisposable {}
 
 export type BackgroundService = BackgroundService$instance & __BackgroundService$views;
 
@@ -205,7 +203,7 @@ export interface HostApplicationBuilder$instance {
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
     Build(): IHost;
-    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action<TContainerBuilder>): void;
+    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder>): void;
 }
 
 
@@ -248,14 +246,14 @@ export type HostApplicationBuilderSettings = HostApplicationBuilderSettings$inst
 export interface HostBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary<unknown, unknown>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     Build(): IHost;
-    ConfigureAppConfiguration(configureDelegate: Action<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
-    ConfigureContainer<TContainerBuilder>(configureDelegate: Action<HostBuilderContext, TContainerBuilder>): IHostBuilder;
-    ConfigureHostConfiguration(configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    ConfigureServices(configureDelegate: Action<HostBuilderContext, IServiceCollection>): IHostBuilder;
+    ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
+    ConfigureContainer<TContainerBuilder>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
+    ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
+    ConfigureServices(configureDelegate: Action_2<HostBuilderContext, IServiceCollection>): IHostBuilder;
     UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: Func<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
 }
 
 
@@ -274,12 +272,12 @@ export type HostBuilder = HostBuilder$instance & __HostBuilder$views;
 export interface HostBuilderContext$instance {
     Configuration: IConfiguration;
     HostingEnvironment: IHostEnvironment;
-    readonly Properties: IDictionary<unknown, unknown>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
 }
 
 
 export const HostBuilderContext: {
-    new(properties: IDictionary<unknown, unknown>): HostBuilderContext;
+    new(properties: IDictionary_2<unknown, unknown>): HostBuilderContext;
 };
 
 
@@ -352,7 +350,7 @@ export type HostEnvironmentEnvExtensions = HostEnvironmentEnvExtensions$instance
 
 export abstract class HostingAbstractionsHostBuilderExtensions$instance {
     static Start(hostBuilder: IHostBuilder): IHost;
-    static StartAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task<IHost>;
+    static StartAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task_1<IHost>;
 }
 
 
@@ -381,23 +379,23 @@ export abstract class HostingEnvironmentExtensions$instance {
 export type HostingEnvironmentExtensions = HostingEnvironmentExtensions$instance;
 
 export abstract class HostingHostBuilderExtensions$instance {
-    static ConfigureAppConfiguration(hostBuilder: IHostBuilder, configureDelegate: Action<IConfigurationBuilder>): IHostBuilder;
-    static ConfigureContainer<TContainerBuilder>(hostBuilder: IHostBuilder, configureDelegate: Action<TContainerBuilder>): IHostBuilder;
+    static ConfigureAppConfiguration(hostBuilder: IHostBuilder, configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
+    static ConfigureContainer<TContainerBuilder>(hostBuilder: IHostBuilder, configureDelegate: Action_1<TContainerBuilder>): IHostBuilder;
     static ConfigureDefaults(builder: IHostBuilder, args: string[]): IHostBuilder;
-    static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action<HostOptions>): IHostBuilder;
-    static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action<HostBuilderContext, HostOptions>): IHostBuilder;
-    static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action<ILoggingBuilder>): IHostBuilder;
-    static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action<HostBuilderContext, ILoggingBuilder>): IHostBuilder;
-    static ConfigureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action<IMetricsBuilder>): IHostBuilder;
-    static ConfigureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action<HostBuilderContext, IMetricsBuilder>): IHostBuilder;
-    static ConfigureServices(hostBuilder: IHostBuilder, configureDelegate: Action<IServiceCollection>): IHostBuilder;
-    static RunConsoleAsync(hostBuilder: IHostBuilder, configureOptions: Action<ConsoleLifetimeOptions>, cancellationToken?: CancellationToken): Task;
+    static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action_1<HostOptions>): IHostBuilder;
+    static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action_2<HostBuilderContext, HostOptions>): IHostBuilder;
+    static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action_1<ILoggingBuilder>): IHostBuilder;
+    static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action_2<HostBuilderContext, ILoggingBuilder>): IHostBuilder;
+    static ConfigureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action_1<IMetricsBuilder>): IHostBuilder;
+    static ConfigureMetrics(hostBuilder: IHostBuilder, configureMetrics: Action_2<HostBuilderContext, IMetricsBuilder>): IHostBuilder;
+    static ConfigureServices(hostBuilder: IHostBuilder, configureDelegate: Action_1<IServiceCollection>): IHostBuilder;
+    static RunConsoleAsync(hostBuilder: IHostBuilder, configureOptions: Action_1<ConsoleLifetimeOptions>, cancellationToken?: CancellationToken): Task;
     static RunConsoleAsync(hostBuilder: IHostBuilder, cancellationToken?: CancellationToken): Task;
-    static UseConsoleLifetime(hostBuilder: IHostBuilder, configureOptions: Action<ConsoleLifetimeOptions>): IHostBuilder;
+    static UseConsoleLifetime(hostBuilder: IHostBuilder, configureOptions: Action_1<ConsoleLifetimeOptions>): IHostBuilder;
     static UseConsoleLifetime(hostBuilder: IHostBuilder): IHostBuilder;
     static UseContentRoot(hostBuilder: IHostBuilder, contentRoot: string): IHostBuilder;
-    static UseDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action<ServiceProviderOptions>): IHostBuilder;
-    static UseDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action<HostBuilderContext, ServiceProviderOptions>): IHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action_1<ServiceProviderOptions>): IHostBuilder;
+    static UseDefaultServiceProvider(hostBuilder: IHostBuilder, configure: Action_2<HostBuilderContext, ServiceProviderOptions>): IHostBuilder;
     static UseEnvironment(hostBuilder: IHostBuilder, environment: string): IHostBuilder;
 }
 

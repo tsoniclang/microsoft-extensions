@@ -10,15 +10,15 @@ import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { CryptographicAttributeObject, CryptographicAttributeObjectCollection } from "../../System.Security.Cryptography/internal/index.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import type { ReadOnlyCollection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, Span, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import * as System_Security_Cryptography_Lib from "@tsonic/dotnet/System.Security.Cryptography.js";
-import type { AsnEncodedData, AsymmetricAlgorithm, CompositeMLDsa, CspParameters, HashAlgorithmName, MLDsa, Oid, PbeParameters, RSA, RSAEncryptionPadding, RSASignaturePadding, SlhDsa } from "@tsonic/dotnet/System.Security.Cryptography.js";
-import type { X509Certificate2, X509Certificate2Collection, X509ExtensionCollection, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { X509Certificate2, X509Certificate2Collection, X509ExtensionCollection, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import * as System_Security_Cryptography_Lib from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import type { AsnEncodedData, AsymmetricAlgorithm, CompositeMLDsa, CspParameters, HashAlgorithmName, MLDsa, Oid, PbeParameters, RSA, RSAEncryptionPadding, RSASignaturePadding, SlhDsa } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Span_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum Pkcs12ConfidentialityMode {
     Unknown = 0,
@@ -174,7 +174,7 @@ export const ContentInfo: {
     new(content: byte[]): ContentInfo;
     new(contentType: Oid, content: byte[]): ContentInfo;
     GetContentType(encodedMessage: byte[]): Oid;
-    GetContentType(encodedMessage: ReadOnlySpan<System_Internal.Byte>): Oid;
+    GetContentType(encodedMessage: ReadOnlySpan_1<System_Internal.Byte>): Oid;
 };
 
 
@@ -188,7 +188,7 @@ export interface EnvelopedCms$instance {
     UnprotectedAttributes: CryptographicAttributeObjectCollection;
     Version: int;
     Decode(encodedMessage: byte[]): void;
-    Decode(encodedMessage: ReadOnlySpan<System_Internal.Byte>): void;
+    Decode(encodedMessage: ReadOnlySpan_1<System_Internal.Byte>): void;
     Decrypt(): void;
     Decrypt(recipientInfo: RecipientInfo): void;
     Decrypt(recipientInfo: RecipientInfo, extraStore: X509Certificate2Collection): void;
@@ -243,15 +243,15 @@ export type KeyTransRecipientInfo = KeyTransRecipientInfo$instance;
 export interface Pkcs12Builder$instance {
     readonly IsSealed: boolean;
     AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: byte[], pbeParameters: PbeParameters): void;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: ReadOnlySpan<System_Internal.Byte>, pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): void;
     AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: string, pbeParameters: PbeParameters): void;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: ReadOnlySpan<System_Internal.Char>, pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): void;
     AddSafeContentsUnencrypted(safeContents: Pkcs12SafeContents): void;
     Encode(): byte[];
     SealWithMac(password: string, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
-    SealWithMac(password: ReadOnlySpan<System_Internal.Char>, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
+    SealWithMac(password: ReadOnlySpan_1<System_Internal.Char>, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
     SealWithoutIntegrity(): void;
-    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
 }
 
 
@@ -263,7 +263,7 @@ export const Pkcs12Builder: {
 export type Pkcs12Builder = Pkcs12Builder$instance;
 
 export interface Pkcs12CertBag$instance extends Pkcs12SafeBag {
-    readonly EncodedCertificate: ReadOnlyMemory<System_Internal.Byte>;
+    readonly EncodedCertificate: ReadOnlyMemory_1<System_Internal.Byte>;
     readonly IsX509Certificate: boolean;
     GetCertificate(): X509Certificate2;
     GetCertificateType(): Oid;
@@ -271,34 +271,34 @@ export interface Pkcs12CertBag$instance extends Pkcs12SafeBag {
 
 
 export const Pkcs12CertBag: {
-    new(certificateType: Oid, encodedCertificate: ReadOnlyMemory<System_Internal.Byte>): Pkcs12CertBag;
+    new(certificateType: Oid, encodedCertificate: ReadOnlyMemory_1<System_Internal.Byte>): Pkcs12CertBag;
 };
 
 
 export type Pkcs12CertBag = Pkcs12CertBag$instance;
 
 export interface Pkcs12Info$instance {
-    AuthenticatedSafe: ReadOnlyCollection<Pkcs12SafeContents>;
+    AuthenticatedSafe: ReadOnlyCollection_1<Pkcs12SafeContents>;
     IntegrityMode: Pkcs12IntegrityMode;
     VerifyMac(password: string): boolean;
-    VerifyMac(password: ReadOnlySpan<System_Internal.Char>): boolean;
+    VerifyMac(password: ReadOnlySpan_1<System_Internal.Char>): boolean;
 }
 
 
 export const Pkcs12Info: {
-    Decode(encodedBytes: ReadOnlyMemory<System_Internal.Byte>, bytesConsumed: int, skipCopy?: boolean): Pkcs12Info;
+    Decode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, bytesConsumed: int, skipCopy?: boolean): Pkcs12Info;
 };
 
 
 export type Pkcs12Info = Pkcs12Info$instance;
 
 export interface Pkcs12KeyBag$instance extends Pkcs12SafeBag {
-    readonly Pkcs8PrivateKey: ReadOnlyMemory<System_Internal.Byte>;
+    readonly Pkcs8PrivateKey: ReadOnlyMemory_1<System_Internal.Byte>;
 }
 
 
 export const Pkcs12KeyBag: {
-    new(pkcs8PrivateKey: ReadOnlyMemory<System_Internal.Byte>, skipCopy: boolean): Pkcs12KeyBag;
+    new(pkcs8PrivateKey: ReadOnlyMemory_1<System_Internal.Byte>, skipCopy: boolean): Pkcs12KeyBag;
 };
 
 
@@ -306,14 +306,14 @@ export type Pkcs12KeyBag = Pkcs12KeyBag$instance;
 
 export interface Pkcs12SafeBag$instance {
     Attributes: CryptographicAttributeObjectCollection;
-    readonly EncodedBagValue: ReadOnlyMemory<System_Internal.Byte>;
+    readonly EncodedBagValue: ReadOnlyMemory_1<System_Internal.Byte>;
     Encode(): byte[];
     GetBagId(): Oid;
-    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
 }
 
 
-export const Pkcs12SafeBag: (abstract new(bagIdValue: string, encodedBagValue: ReadOnlyMemory<System_Internal.Byte>, skipCopy: boolean) => Pkcs12SafeBag) & {
+export const Pkcs12SafeBag: (abstract new(bagIdValue: string, encodedBagValue: ReadOnlyMemory_1<System_Internal.Byte>, skipCopy: boolean) => Pkcs12SafeBag) & {
 };
 
 
@@ -326,16 +326,16 @@ export interface Pkcs12SafeContents$instance {
     AddKeyUnencrypted(key: AsymmetricAlgorithm): Pkcs12KeyBag;
     AddNestedContents(safeContents: Pkcs12SafeContents): Pkcs12SafeContentsBag;
     AddSafeBag(safeBag: Pkcs12SafeBag): void;
-    AddSecret(secretType: Oid, secretValue: ReadOnlyMemory<System_Internal.Byte>): Pkcs12SecretBag;
+    AddSecret(secretType: Oid, secretValue: ReadOnlyMemory_1<System_Internal.Byte>): Pkcs12SecretBag;
     AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: byte[], pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: ReadOnlySpan<System_Internal.Byte>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
+    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
     AddShroudedKey(key: AsymmetricAlgorithm, password: string, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, password: ReadOnlySpan<System_Internal.Char>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
+    AddShroudedKey(key: AsymmetricAlgorithm, password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
     Decrypt(passwordBytes: byte[]): void;
-    Decrypt(passwordBytes: ReadOnlySpan<System_Internal.Byte>): void;
+    Decrypt(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>): void;
     Decrypt(password: string): void;
-    Decrypt(password: ReadOnlySpan<System_Internal.Char>): void;
-    GetBags(): IEnumerable__System_Collections_Generic<Pkcs12SafeBag>;
+    Decrypt(password: ReadOnlySpan_1<System_Internal.Char>): void;
+    GetBags(): IEnumerable_1<Pkcs12SafeBag>;
 }
 
 
@@ -359,7 +359,7 @@ export const Pkcs12SafeContentsBag: {
 export type Pkcs12SafeContentsBag = Pkcs12SafeContentsBag$instance;
 
 export interface Pkcs12SecretBag$instance extends Pkcs12SafeBag {
-    readonly SecretValue: ReadOnlyMemory<System_Internal.Byte>;
+    readonly SecretValue: ReadOnlyMemory_1<System_Internal.Byte>;
     GetSecretType(): Oid;
 }
 
@@ -371,12 +371,12 @@ export const Pkcs12SecretBag: {
 export type Pkcs12SecretBag = Pkcs12SecretBag$instance;
 
 export interface Pkcs12ShroudedKeyBag$instance extends Pkcs12SafeBag {
-    readonly EncryptedPkcs8PrivateKey: ReadOnlyMemory<System_Internal.Byte>;
+    readonly EncryptedPkcs8PrivateKey: ReadOnlyMemory_1<System_Internal.Byte>;
 }
 
 
 export const Pkcs12ShroudedKeyBag: {
-    new(encryptedPkcs8PrivateKey: ReadOnlyMemory<System_Internal.Byte>, skipCopy: boolean): Pkcs12ShroudedKeyBag;
+    new(encryptedPkcs8PrivateKey: ReadOnlyMemory_1<System_Internal.Byte>, skipCopy: boolean): Pkcs12ShroudedKeyBag;
 };
 
 
@@ -384,24 +384,24 @@ export type Pkcs12ShroudedKeyBag = Pkcs12ShroudedKeyBag$instance;
 
 export interface Pkcs8PrivateKeyInfo$instance {
     readonly AlgorithmId: Oid;
-    readonly AlgorithmParameters: Nullable<ReadOnlyMemory<System_Internal.Byte>>;
+    readonly AlgorithmParameters: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>;
     readonly Attributes: CryptographicAttributeObjectCollection;
-    readonly PrivateKeyBytes: ReadOnlyMemory<System_Internal.Byte>;
+    readonly PrivateKeyBytes: ReadOnlyMemory_1<System_Internal.Byte>;
     Encode(): byte[];
-    Encrypt(password: ReadOnlySpan<System_Internal.Char>, pbeParameters: PbeParameters): byte[];
-    Encrypt(passwordBytes: ReadOnlySpan<System_Internal.Byte>, pbeParameters: PbeParameters): byte[];
-    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    TryEncrypt(password: ReadOnlySpan<System_Internal.Char>, pbeParameters: PbeParameters, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
-    TryEncrypt(passwordBytes: ReadOnlySpan<System_Internal.Byte>, pbeParameters: PbeParameters, destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    Encrypt(password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): byte[];
+    Encrypt(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): byte[];
+    TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryEncrypt(password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
+    TryEncrypt(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters, destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
 }
 
 
 export const Pkcs8PrivateKeyInfo: {
-    new(algorithmId: Oid, algorithmParameters: Nullable<ReadOnlyMemory<System_Internal.Byte>>, privateKey: ReadOnlyMemory<System_Internal.Byte>, skipCopies: boolean): Pkcs8PrivateKeyInfo;
+    new(algorithmId: Oid, algorithmParameters: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, privateKey: ReadOnlyMemory_1<System_Internal.Byte>, skipCopies: boolean): Pkcs8PrivateKeyInfo;
     Create(privateKey: AsymmetricAlgorithm): Pkcs8PrivateKeyInfo;
-    Decode(source: ReadOnlyMemory<System_Internal.Byte>, bytesRead: int, skipCopy?: boolean): Pkcs8PrivateKeyInfo;
-    DecryptAndDecode(passwordBytes: ReadOnlySpan<System_Internal.Byte>, source: ReadOnlyMemory<System_Internal.Byte>, bytesRead: int): Pkcs8PrivateKeyInfo;
-    DecryptAndDecode(password: ReadOnlySpan<System_Internal.Char>, source: ReadOnlyMemory<System_Internal.Byte>, bytesRead: int): Pkcs8PrivateKeyInfo;
+    Decode(source: ReadOnlyMemory_1<System_Internal.Byte>, bytesRead: int, skipCopy?: boolean): Pkcs8PrivateKeyInfo;
+    DecryptAndDecode(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, source: ReadOnlyMemory_1<System_Internal.Byte>, bytesRead: int): Pkcs8PrivateKeyInfo;
+    DecryptAndDecode(password: ReadOnlySpan_1<System_Internal.Char>, source: ReadOnlyMemory_1<System_Internal.Byte>, bytesRead: int): Pkcs8PrivateKeyInfo;
 };
 
 
@@ -467,7 +467,7 @@ export const Pkcs9DocumentName: {
 export type Pkcs9DocumentName = Pkcs9DocumentName$instance;
 
 export interface Pkcs9LocalKeyId$instance extends Pkcs9AttributeObject {
-    readonly KeyId: ReadOnlyMemory<System_Internal.Byte>;
+    readonly KeyId: ReadOnlyMemory_1<System_Internal.Byte>;
     CopyFrom(asnEncodedData: AsnEncodedData): void;
 }
 
@@ -475,7 +475,7 @@ export interface Pkcs9LocalKeyId$instance extends Pkcs9AttributeObject {
 export const Pkcs9LocalKeyId: {
     new(): Pkcs9LocalKeyId;
     new(keyId: byte[]): Pkcs9LocalKeyId;
-    new(keyId: ReadOnlySpan<System_Internal.Byte>): Pkcs9LocalKeyId;
+    new(keyId: ReadOnlySpan_1<System_Internal.Byte>): Pkcs9LocalKeyId;
 };
 
 
@@ -579,19 +579,19 @@ export interface Rfc3161TimestampRequest$instance {
     readonly Version: int;
     Encode(): byte[];
     GetExtensions(): X509ExtensionCollection;
-    GetMessageHash(): ReadOnlyMemory<System_Internal.Byte>;
-    GetNonce(): Nullable<ReadOnlyMemory<System_Internal.Byte>>;
-    ProcessResponse(responseBytes: ReadOnlyMemory<System_Internal.Byte>, bytesConsumed: int): Rfc3161TimestampToken;
-    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    GetMessageHash(): ReadOnlyMemory_1<System_Internal.Byte>;
+    GetNonce(): Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>;
+    ProcessResponse(responseBytes: ReadOnlyMemory_1<System_Internal.Byte>, bytesConsumed: int): Rfc3161TimestampToken;
+    TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
 }
 
 
 export const Rfc3161TimestampRequest: {
-    CreateFromData(data: ReadOnlySpan<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    CreateFromHash(hash: ReadOnlyMemory<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    CreateFromHash(hash: ReadOnlyMemory<System_Internal.Byte>, hashAlgorithmId: Oid, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    CreateFromSignerInfo(signerInfo: SignerInfo, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable<ReadOnlyMemory<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    TryDecode(encodedBytes: ReadOnlyMemory<System_Internal.Byte>, request: Rfc3161TimestampRequest, bytesConsumed: int): boolean;
+    CreateFromData(data: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
+    CreateFromHash(hash: ReadOnlyMemory_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
+    CreateFromHash(hash: ReadOnlyMemory_1<System_Internal.Byte>, hashAlgorithmId: Oid, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
+    CreateFromSignerInfo(signerInfo: SignerInfo, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
+    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, request: Rfc3161TimestampRequest, bytesConsumed: int): boolean;
 };
 
 
@@ -600,22 +600,22 @@ export type Rfc3161TimestampRequest = Rfc3161TimestampRequest$instance;
 export interface Rfc3161TimestampToken$instance {
     TokenInfo: Rfc3161TimestampTokenInfo;
     AsSignedCms(): SignedCms;
-    VerifySignatureForData(data: ReadOnlySpan<System_Internal.Byte>, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
-    VerifySignatureForHash(hash: ReadOnlySpan<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
-    VerifySignatureForHash(hash: ReadOnlySpan<System_Internal.Byte>, hashAlgorithmId: Oid, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
+    VerifySignatureForData(data: ReadOnlySpan_1<System_Internal.Byte>, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
+    VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
+    VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithmId: Oid, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
     VerifySignatureForSignerInfo(signerInfo: SignerInfo, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
 }
 
 
 export const Rfc3161TimestampToken: {
-    TryDecode(encodedBytes: ReadOnlyMemory<System_Internal.Byte>, token: Rfc3161TimestampToken, bytesConsumed: int): boolean;
+    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, token: Rfc3161TimestampToken, bytesConsumed: int): boolean;
 };
 
 
 export type Rfc3161TimestampToken = Rfc3161TimestampToken$instance;
 
 export interface Rfc3161TimestampTokenInfo$instance {
-    readonly AccuracyInMicroseconds: Nullable<System_Internal.Int64>;
+    readonly AccuracyInMicroseconds: Nullable_1<System_Internal.Int64>;
     readonly HasExtensions: boolean;
     readonly HashAlgorithmId: Oid;
     readonly IsOrdering: boolean;
@@ -624,17 +624,17 @@ export interface Rfc3161TimestampTokenInfo$instance {
     readonly Version: int;
     Encode(): byte[];
     GetExtensions(): X509ExtensionCollection;
-    GetMessageHash(): ReadOnlyMemory<System_Internal.Byte>;
-    GetNonce(): Nullable<ReadOnlyMemory<System_Internal.Byte>>;
-    GetSerialNumber(): ReadOnlyMemory<System_Internal.Byte>;
-    GetTimestampAuthorityName(): Nullable<ReadOnlyMemory<System_Internal.Byte>>;
-    TryEncode(destination: Span<System_Internal.Byte>, bytesWritten: int): boolean;
+    GetMessageHash(): ReadOnlyMemory_1<System_Internal.Byte>;
+    GetNonce(): Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>;
+    GetSerialNumber(): ReadOnlyMemory_1<System_Internal.Byte>;
+    GetTimestampAuthorityName(): Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>;
+    TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
 }
 
 
 export const Rfc3161TimestampTokenInfo: {
-    new(policyId: Oid, hashAlgorithmId: Oid, messageHash: ReadOnlyMemory<System_Internal.Byte>, serialNumber: ReadOnlyMemory<System_Internal.Byte>, timestamp: DateTimeOffset, accuracyInMicroseconds: Nullable<System_Internal.Int64>, isOrdering: boolean, nonce: Nullable<ReadOnlyMemory<System_Internal.Byte>>, timestampAuthorityName: Nullable<ReadOnlyMemory<System_Internal.Byte>>, extensions: X509ExtensionCollection): Rfc3161TimestampTokenInfo;
-    TryDecode(encodedBytes: ReadOnlyMemory<System_Internal.Byte>, timestampTokenInfo: Rfc3161TimestampTokenInfo, bytesConsumed: int): boolean;
+    new(policyId: Oid, hashAlgorithmId: Oid, messageHash: ReadOnlyMemory_1<System_Internal.Byte>, serialNumber: ReadOnlyMemory_1<System_Internal.Byte>, timestamp: DateTimeOffset, accuracyInMicroseconds: Nullable_1<System_Internal.Int64>, isOrdering: boolean, nonce: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, timestampAuthorityName: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, extensions: X509ExtensionCollection): Rfc3161TimestampTokenInfo;
+    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, timestampTokenInfo: Rfc3161TimestampTokenInfo, bytesConsumed: int): boolean;
 };
 
 
@@ -654,7 +654,7 @@ export interface SignedCms$instance {
     ComputeSignature(signer: CmsSigner): void;
     ComputeSignature(signer: CmsSigner, silent: boolean): void;
     Decode(encodedMessage: byte[]): void;
-    Decode(encodedMessage: ReadOnlySpan<System_Internal.Byte>): void;
+    Decode(encodedMessage: ReadOnlySpan_1<System_Internal.Byte>): void;
     Encode(): byte[];
     RemoveCertificate(certificate: X509Certificate2): void;
     RemoveSignature(index: int): void;

@@ -9,13 +9,13 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import type { IBufferWriter, ReadOnlySequence } from "@tsonic/dotnet/System.Buffers.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Char, Enum, Func, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable, Object as ClrObject, ReadOnlySpan, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { DefaultInterpolatedStringHandler } from "@tsonic/dotnet/System.Runtime.CompilerServices.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IBufferWriter_1, ReadOnlySequence_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DefaultInterpolatedStringHandler } from "@tsonic/dotnet/System.Runtime.CompilerServices/internal/index.js";
+import type { ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Char, Enum, Func_2, Func_3, IComparable, IConvertible, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlySpan_1, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HybridCacheEntryFlags {
     None = 0,
@@ -33,8 +33,8 @@ export enum HybridCacheEntryFlags {
 export interface IHybridCacheSerializer_1$instance<T> {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Hybrid_IHybridCacheSerializer_1: never;
 
-    Deserialize(source: ReadOnlySequence<System_Internal.Byte>): T;
-    Serialize(value: T, target: IBufferWriter<System_Internal.Byte>): void;
+    Deserialize(source: ReadOnlySequence_1<System_Internal.Byte>): T;
+    Serialize(value: T, target: IBufferWriter_1<System_Internal.Byte>): void;
 }
 
 
@@ -50,17 +50,17 @@ export interface IHybridCacheSerializerFactory$instance {
 export type IHybridCacheSerializerFactory = IHybridCacheSerializerFactory$instance;
 
 export interface HybridCache$instance {
-    GetOrCreateAsync<TState, T>(key: string, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    GetOrCreateAsync<T>(key: string, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    GetOrCreateAsync<T>(key: ReadOnlySpan<System_Internal.Char>, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    GetOrCreateAsync<TState, T>(key: ReadOnlySpan<System_Internal.Char>, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    GetOrCreateAsync<T>(key: DefaultInterpolatedStringHandler, factory: Func<CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
-    GetOrCreateAsync<TState, T>(key: DefaultInterpolatedStringHandler, state: TState, factory: Func<TState, CancellationToken, ValueTask<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask<T>;
+    GetOrCreateAsync<TState, T>(key: string, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<T>(key: string, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<T>(key: ReadOnlySpan_1<System_Internal.Char>, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<TState, T>(key: ReadOnlySpan_1<System_Internal.Char>, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<T>(key: DefaultInterpolatedStringHandler, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<TState, T>(key: DefaultInterpolatedStringHandler, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
     RemoveAsync(key: string, cancellationToken?: CancellationToken): ValueTask;
-    RemoveAsync(keys: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
-    RemoveByTagAsync(tags: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
+    RemoveAsync(keys: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
+    RemoveByTagAsync(tags: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
     RemoveByTagAsync(tag: string, cancellationToken?: CancellationToken): ValueTask;
-    SetAsync<T>(key: string, value: T, options?: HybridCacheEntryOptions, tags?: IEnumerable<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
+    SetAsync<T>(key: string, value: T, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -71,9 +71,9 @@ export const HybridCache: (abstract new() => HybridCache) & {
 export type HybridCache = HybridCache$instance;
 
 export interface HybridCacheEntryOptions$instance {
-    Expiration: Nullable<TimeSpan>;
-    Flags: Nullable<HybridCacheEntryFlags>;
-    LocalCacheExpiration: Nullable<TimeSpan>;
+    Expiration: Nullable_1<TimeSpan>;
+    Flags: Nullable_1<HybridCacheEntryFlags>;
+    LocalCacheExpiration: Nullable_1<TimeSpan>;
 }
 
 

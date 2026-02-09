@@ -9,16 +9,16 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { DirectoryInfoBase, FileInfoBase, FileSystemInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
 import * as Microsoft_Extensions_FileSystemGlobbing_Internal_Internal from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
 import type { ILinearPattern, IPathSegment, IPatternContext, IRaggedPattern, PatternTestResult } from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface PatternContextLinear_FrameData$instance {
     IsNotApplicable: boolean;
     SegmentIndex: int;
     InStem: boolean;
     readonly Stem: string | undefined;
-    readonly StemItems: IList<System_Internal.String>;
+    readonly StemItems: IList_1<System_Internal.String>;
 }
 
 
@@ -32,12 +32,12 @@ export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$inst
 export interface PatternContextRagged_FrameData$instance {
     IsNotApplicable: boolean;
     SegmentGroupIndex: int;
-    SegmentGroup: IList<IPathSegment>;
+    SegmentGroup: IList_1<IPathSegment>;
     BacktrackAvailable: int;
     SegmentIndex: int;
     InStem: boolean;
     readonly Stem: string | undefined;
-    readonly StemItems: IList<System_Internal.String>;
+    readonly StemItems: IList_1<System_Internal.String>;
 }
 
 
@@ -51,7 +51,7 @@ export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$inst
 export interface PatternContext_1$instance<TFrame extends unknown> {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(file: FileInfoBase): PatternTestResult;
@@ -73,7 +73,7 @@ export type PatternContext_1<TFrame> = PatternContext_1$instance<TFrame> & __Pat
 export interface PatternContextLinear$instance extends PatternContext_1$instance<PatternContextLinear_FrameData> {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(file: FileInfoBase): PatternTestResult;
@@ -95,7 +95,7 @@ export type PatternContextLinear = PatternContextLinear$instance & __PatternCont
 export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
@@ -118,8 +118,8 @@ export type PatternContextLinearExclude = PatternContextLinearExclude$instance &
 export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
@@ -142,7 +142,7 @@ export type PatternContextLinearInclude = PatternContextLinearInclude$instance &
 export interface PatternContextRagged$instance extends PatternContext_1$instance<PatternContextRagged_FrameData> {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(declare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(file: FileInfoBase): PatternTestResult;
@@ -164,7 +164,7 @@ export type PatternContextRagged = PatternContextRagged$instance & __PatternCont
 export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
@@ -187,8 +187,8 @@ export type PatternContextRaggedExclude = PatternContextRaggedExclude$instance &
 export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;

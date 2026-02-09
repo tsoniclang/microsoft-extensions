@@ -6,13 +6,13 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { DirectoryInfo, FileInfo } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { DirectoryInfo, FileInfo } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface DirectoryInfoBase$instance extends FileSystemInfoBase {
-    EnumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
+    EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
     GetDirectory(path: string): DirectoryInfoBase | undefined;
     GetFile(path: string): FileInfoBase | undefined;
 }
@@ -28,7 +28,7 @@ export interface DirectoryInfoWrapper$instance extends DirectoryInfoBase {
     readonly FullName: string;
     readonly Name: string;
     readonly ParentDirectory: DirectoryInfoBase | undefined;
-    EnumerateFileSystemInfos(): IEnumerable<FileSystemInfoBase>;
+    EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
     GetDirectory(name: string): DirectoryInfoBase | undefined;
     GetFile(name: string): FileInfoBase;
 }

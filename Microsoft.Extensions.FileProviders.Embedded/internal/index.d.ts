@@ -8,12 +8,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_Extensions_FileProviders_Internal from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IFileInfo } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, DateTimeOffset, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { Assembly } from "@tsonic/dotnet/System.Reflection.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, DateTimeOffset, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface EmbeddedResourceFileInfo$instance {
+export interface EmbeddedResourceFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
 
     readonly Exists: boolean;
@@ -34,8 +34,6 @@ export const EmbeddedResourceFileInfo: {
 export interface __EmbeddedResourceFileInfo$views {
     As_IFileInfo(): Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance;
 }
-
-export interface EmbeddedResourceFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {}
 
 export type EmbeddedResourceFileInfo = EmbeddedResourceFileInfo$instance & __EmbeddedResourceFileInfo$views;
 

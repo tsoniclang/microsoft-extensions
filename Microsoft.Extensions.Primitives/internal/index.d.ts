@@ -9,21 +9,21 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IComparer, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator as IEnumerator__System_Collections_Generic, IEqualityComparer, IList, IReadOnlyCollection, IReadOnlyList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Char, Func, IDisposable, IEquatable, Int32, Object as ClrObject, ReadOnlyMemory, ReadOnlySpan, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IComparer_1, IEnumerable_1, IEnumerator_1, IEqualityComparer_1, IList_1, IReadOnlyCollection_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action, Action_1, Boolean as ClrBoolean, Char, Func_1, IDisposable, IEquatable_1, Int32, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IChangeToken$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
     readonly HasChanged: boolean;
     readonly ActiveChangeCallbacks: boolean;
-    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
 }
 
 
@@ -55,10 +55,10 @@ export interface StringSegment$instance {
     readonly Length: int;
     readonly Offset: int;
     readonly Value: string | undefined;
-    AsMemory(): ReadOnlyMemory<System_Internal.Char>;
-    AsSpan(): ReadOnlySpan<System_Internal.Char>;
-    AsSpan(start: int): ReadOnlySpan<System_Internal.Char>;
-    AsSpan(start: int, length: int): ReadOnlySpan<System_Internal.Char>;
+    AsMemory(): ReadOnlyMemory_1<System_Internal.Char>;
+    AsSpan(): ReadOnlySpan_1<System_Internal.Char>;
+    AsSpan(start: int): ReadOnlySpan_1<System_Internal.Char>;
+    AsSpan(start: int, length: int): ReadOnlySpan_1<System_Internal.Char>;
     EndsWith(text: string, comparisonType: StringComparison): boolean;
     Equals(obj: unknown): boolean;
     Equals(other: StringSegment): boolean;
@@ -197,7 +197,7 @@ export interface CancellationChangeToken$instance {
 
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
 }
 
 
@@ -213,26 +213,24 @@ export interface __CancellationChangeToken$views {
 export type CancellationChangeToken = CancellationChangeToken$instance & __CancellationChangeToken$views;
 
 
-export interface CompositeChangeToken$instance {
+export interface CompositeChangeToken$instance extends IChangeToken$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
     readonly ActiveChangeCallbacks: boolean;
-    readonly ChangeTokens: IReadOnlyList<IChangeToken>;
+    readonly ChangeTokens: IReadOnlyList_1<IChangeToken>;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
 }
 
 
 export const CompositeChangeToken: {
-    new(changeTokens: IReadOnlyList<IChangeToken>): CompositeChangeToken;
+    new(changeTokens: IReadOnlyList_1<IChangeToken>): CompositeChangeToken;
 };
 
 
 export interface __CompositeChangeToken$views {
     As_IChangeToken(): IChangeToken$instance;
 }
-
-export interface CompositeChangeToken$instance extends IChangeToken$instance {}
 
 export type CompositeChangeToken = CompositeChangeToken$instance & __CompositeChangeToken$views;
 
@@ -256,8 +254,8 @@ export const StringSegmentComparer: {
 export type StringSegmentComparer = StringSegmentComparer$instance;
 
 export abstract class ChangeToken$instance {
-    static OnChange<TState>(changeTokenProducer: Func<IChangeToken>, changeTokenConsumer: Action<TState>, state: TState): IDisposable;
-    static OnChange(changeTokenProducer: Func<IChangeToken>, changeTokenConsumer: Action): IDisposable;
+    static OnChange<TState>(changeTokenProducer: Func_1<IChangeToken>, changeTokenConsumer: Action_1<TState>, state: TState): IDisposable;
+    static OnChange(changeTokenProducer: Func_1<IChangeToken>, changeTokenConsumer: Action): IDisposable;
 }
 
 

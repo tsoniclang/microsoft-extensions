@@ -9,20 +9,20 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { ArrayList, Hashtable, ICollection, IEnumerable, IEnumerator, IList } from "@tsonic/dotnet/System.Collections.js";
-import type { Collection } from "@tsonic/dotnet/System.Collections.ObjectModel.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Exception, Func, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { AsymmetricAlgorithm, CipherMode, DSA, HashAlgorithm, KeyedHashAlgorithm, PaddingMode, RSA, SymmetricAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography.js";
-import type { X509Certificate, X509Certificate2, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates.js";
-import type { Evidence } from "@tsonic/dotnet/System.Security.Policy.js";
-import type { Encoding } from "@tsonic/dotnet/System.Text.js";
-import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml.js";
-import type { XmlDocument, XmlElement, XmlException, XmlNodeList, XmlResolver } from "@tsonic/dotnet/System.Xml.js";
+import type { Collection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { ArrayList, Hashtable, ICollection, IEnumerable, IEnumerator, IList } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable, SerializationInfo, StreamingContext } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { X509Certificate, X509Certificate2, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
+import type { AsymmetricAlgorithm, CipherMode, DSA, HashAlgorithm, KeyedHashAlgorithm, PaddingMode, RSA, SymmetricAlgorithm } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import type { Evidence } from "@tsonic/dotnet/System.Security.Policy/internal/index.js";
+import type { Encoding } from "@tsonic/dotnet/System.Text/internal/index.js";
+import * as System_Xml_Internal from "@tsonic/dotnet/System.Xml/internal/index.js";
+import type { XmlDocument, XmlElement, XmlException, XmlNodeList, XmlResolver } from "@tsonic/dotnet/System.Xml/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Exception, Func_2, Int32, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IRelDecryptor$instance {
     readonly __tsonic_iface_System_Security_Cryptography_Xml_IRelDecryptor: never;
@@ -609,9 +609,9 @@ export interface SignedXml$instance {
     EncryptedXml: EncryptedXml;
     KeyInfo: KeyInfo;
     Resolver: XmlResolver;
-    readonly SafeCanonicalizationMethods: Collection<System_Internal.String>;
+    readonly SafeCanonicalizationMethods: Collection_1<System_Internal.String>;
     readonly Signature: Signature;
-    SignatureFormatValidator: Func<SignedXml, System_Internal.Boolean>;
+    SignatureFormatValidator: Func_2<SignedXml, System_Internal.Boolean>;
     readonly SignatureLength: string | undefined;
     readonly SignatureMethod: string | undefined;
     readonly SignatureValue: byte[] | undefined;

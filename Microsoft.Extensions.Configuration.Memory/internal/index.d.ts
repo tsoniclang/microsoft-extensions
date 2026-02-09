@@ -12,12 +12,12 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IDictionary, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, KeyValuePair } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IDictionary_2, IEnumerable_1, IEnumerator_1, KeyValuePair_2 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface MemoryConfigurationProvider$instance extends ConfigurationProvider {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
@@ -25,8 +25,8 @@ export interface MemoryConfigurationProvider$instance extends ConfigurationProvi
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     Add(key: string, value: string): void;
-    GetChildKeys(earlierKeys: IEnumerable__System_Collections_Generic<System_Internal.String>, parentPath: string): IEnumerable__System_Collections_Generic<System_Internal.String>;
-    GetEnumerator(): IEnumerator<KeyValuePair<System_Internal.String, System_Internal.String>>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
+    GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     GetReloadToken(): IChangeToken;
     Load(): void;
     Set(key: string, value: string): void;
@@ -43,16 +43,14 @@ export interface __MemoryConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
 
-export interface MemoryConfigurationProvider$instance extends System_Collections_Generic_Internal.IEnumerable<KeyValuePair<System_Internal.String, System_Internal.String>> {}
-
 export type MemoryConfigurationProvider = MemoryConfigurationProvider$instance & __MemoryConfigurationProvider$views;
 
 
-export interface MemoryConfigurationSource$instance {
+export interface MemoryConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get InitialData(): IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined;
-    set InitialData(value: IEnumerable__System_Collections_Generic<KeyValuePair<System_Internal.String, System_Internal.String>> | undefined);
+    get InitialData(): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | undefined;
+    set InitialData(value: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
@@ -65,8 +63,6 @@ export const MemoryConfigurationSource: {
 export interface __MemoryConfigurationSource$views {
     As_IConfigurationSource(): Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance;
 }
-
-export interface MemoryConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {}
 
 export type MemoryConfigurationSource = MemoryConfigurationSource$instance & __MemoryConfigurationSource$views;
 

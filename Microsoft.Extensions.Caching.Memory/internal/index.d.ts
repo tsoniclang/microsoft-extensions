@@ -14,12 +14,12 @@ import type { ILoggerFactory } from "../../Microsoft.Extensions.Logging/internal
 import * as Microsoft_Extensions_Options_Internal from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { AsyncCallback, Boolean as ClrBoolean, Char, DateTimeOffset, Double, Enum, Func, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, ReadOnlySpan, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { AsyncCallback, Boolean as ClrBoolean, Char, DateTimeOffset, Double, Enum, Func_2, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlySpan_1, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum CacheItemPriority {
     Low = 0,
@@ -48,13 +48,13 @@ export interface ICacheEntry$instance extends IDisposable {
     readonly Key: unknown;
     get Value(): unknown | undefined;
     set Value(value: unknown | undefined);
-    AbsoluteExpiration: Nullable<DateTimeOffset>;
-    AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
-    SlidingExpiration: Nullable<TimeSpan>;
-    readonly ExpirationTokens: IList<IChangeToken>;
-    readonly PostEvictionCallbacks: IList<PostEvictionCallbackRegistration>;
+    AbsoluteExpiration: Nullable_1<DateTimeOffset>;
+    AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
+    SlidingExpiration: Nullable_1<TimeSpan>;
+    readonly ExpirationTokens: IList_1<IChangeToken>;
+    readonly PostEvictionCallbacks: IList_1<PostEvictionCallbackRegistration>;
     Priority: CacheItemPriority;
-    Size: Nullable<System_Internal.Int64>;
+    Size: Nullable_1<System_Internal.Int64>;
 }
 
 
@@ -81,7 +81,7 @@ export interface MemoryCache$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Count: int;
-    readonly Keys: IEnumerable<unknown>;
+    readonly Keys: IEnumerable_1<unknown>;
     Clear(): void;
     Compact(percentage: double): void;
     CreateEntry(key: unknown): ICacheEntry;
@@ -91,8 +91,8 @@ export interface MemoryCache$instance {
     GetCurrentStatistics(): MemoryCacheStatistics | undefined;
     Remove(key: unknown): void;
     TryGetValue(key: unknown, result: unknown): boolean;
-    TryGetValue(key: ReadOnlySpan<System_Internal.Char>, value: unknown): boolean;
-    TryGetValue<TItem>(key: ReadOnlySpan<System_Internal.Char>, value: TItem): boolean;
+    TryGetValue(key: ReadOnlySpan_1<System_Internal.Char>, value: unknown): boolean;
+    TryGetValue<TItem>(key: ReadOnlySpan_1<System_Internal.Char>, value: TItem): boolean;
 }
 
 
@@ -110,13 +110,13 @@ export type MemoryCache = MemoryCache$instance & __MemoryCache$views;
 
 
 export interface MemoryCacheEntryOptions$instance {
-    AbsoluteExpiration: Nullable<DateTimeOffset>;
-    AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
-    readonly ExpirationTokens: IList<IChangeToken>;
-    readonly PostEvictionCallbacks: IList<PostEvictionCallbackRegistration>;
+    AbsoluteExpiration: Nullable_1<DateTimeOffset>;
+    AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
+    readonly ExpirationTokens: IList_1<IChangeToken>;
+    readonly PostEvictionCallbacks: IList_1<PostEvictionCallbackRegistration>;
     Priority: CacheItemPriority;
-    Size: Nullable<System_Internal.Int64>;
-    SlidingExpiration: Nullable<TimeSpan>;
+    Size: Nullable_1<System_Internal.Int64>;
+    SlidingExpiration: Nullable_1<TimeSpan>;
 }
 
 
@@ -135,7 +135,7 @@ export interface MemoryCacheOptions$instance {
     CompactionPercentage: double;
     CompactOnMemoryPressure: boolean;
     ExpirationScanFrequency: TimeSpan;
-    SizeLimit: Nullable<System_Internal.Int64>;
+    SizeLimit: Nullable_1<System_Internal.Int64>;
     TrackLinkedCacheEntries: boolean;
     TrackStatistics: boolean;
 }
@@ -150,14 +150,12 @@ export interface __MemoryCacheOptions$views {
     As_IOptions_1(): Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions>;
 }
 
-export interface MemoryCacheOptions$instance extends Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions> {}
-
 export type MemoryCacheOptions = MemoryCacheOptions$instance & __MemoryCacheOptions$views;
 
 
 export interface MemoryCacheStatistics$instance {
     CurrentEntryCount: long;
-    CurrentEstimatedSize: Nullable<System_Internal.Int64>;
+    CurrentEstimatedSize: Nullable_1<System_Internal.Int64>;
     TotalHits: long;
     TotalMisses: long;
 }
@@ -184,8 +182,6 @@ export const MemoryDistributedCacheOptions: {
 export interface __MemoryDistributedCacheOptions$views {
     As_IOptions_1(): Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions>;
 }
-
-export interface MemoryDistributedCacheOptions$instance extends Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions> {}
 
 export type MemoryDistributedCacheOptions = MemoryDistributedCacheOptions$instance & __MemoryDistributedCacheOptions$views;
 
@@ -224,10 +220,10 @@ export type CacheEntryExtensions = CacheEntryExtensions$instance;
 export abstract class CacheExtensions$instance {
     static Get(cache: IMemoryCache, key: unknown): unknown | undefined;
     static Get<TItem>(cache: IMemoryCache, key: unknown): TItem | undefined;
-    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions): TItem | undefined;
-    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, TItem>): TItem | undefined;
-    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>, createOptions: MemoryCacheEntryOptions): Task<TItem | undefined>;
-    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func<ICacheEntry, Task<TItem>>): Task<TItem | undefined>;
+    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions): TItem | undefined;
+    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, TItem>): TItem | undefined;
+    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, Task_1<TItem>>, createOptions: MemoryCacheEntryOptions): Task_1<TItem | undefined>;
+    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, Task_1<TItem>>): Task_1<TItem | undefined>;
     static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, options: MemoryCacheEntryOptions): TItem;
     static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, expirationToken: IChangeToken): TItem;
     static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): TItem;

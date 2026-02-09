@@ -13,16 +13,16 @@ import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Ex
 import type { FileConfigurationProvider, FileConfigurationSource, FileLoadExceptionContext, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource, StreamConfigurationProvider, StreamConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Stream } from "@tsonic/dotnet/System.IO.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface JsonConfigurationProvider$instance extends FileConfigurationProvider {
+export interface JsonConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
     Load(): void;
@@ -39,8 +39,6 @@ export const JsonConfigurationProvider: {
 export interface __JsonConfigurationProvider$views {
     As_IConfigurationProvider(): Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance;
 }
-
-export interface JsonConfigurationProvider$instance extends System_Internal.IDisposable {}
 
 export type JsonConfigurationProvider = JsonConfigurationProvider$instance & __JsonConfigurationProvider$views;
 
@@ -67,7 +65,7 @@ export type JsonConfigurationSource = JsonConfigurationSource$instance & __JsonC
 export interface JsonStreamConfigurationProvider$instance extends StreamConfigurationProvider {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(stream: Stream): void;
     Load(): void;

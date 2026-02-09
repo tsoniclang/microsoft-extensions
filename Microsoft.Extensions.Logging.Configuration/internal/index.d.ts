@@ -12,8 +12,8 @@ import type { ILoggingBuilder } from "../../Microsoft.Extensions.Logging/interna
 import * as Microsoft_Extensions_Options_Internal from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { ConfigurationChangeTokenSource_1, IOptionsChangeTokenSource_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ILoggerProviderConfiguration_1$instance<T> {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1: never;

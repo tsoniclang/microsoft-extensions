@@ -11,10 +11,10 @@ import type { ptr } from "@tsonic/core/types.js";
 // Import types from other namespaces
 import type { IConfiguration } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IServiceCollection } from "../../Microsoft.Extensions.DependencyInjection/internal/index.js";
-import type { IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { Instrument, MeasurementCallback } from "@tsonic/dotnet/System.Diagnostics.Metrics.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, Decimal, Double, Enum, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Object as ClrObject, Single, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Instrument, MeasurementCallback_1 } from "@tsonic/dotnet/System.Diagnostics.Metrics/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, Decimal, Double, Enum, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Object as ClrObject, Single, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum MeterScope {
     None = 0,
@@ -71,20 +71,20 @@ export const InstrumentRule: {
 export type InstrumentRule = InstrumentRule$instance;
 
 export interface MeasurementHandlers$instance {
-    get ByteHandler(): MeasurementCallback<System_Internal.Byte> | undefined;
-    set ByteHandler(value: MeasurementCallback<System_Internal.Byte> | undefined);
-    get DecimalHandler(): MeasurementCallback<System_Internal.Decimal> | undefined;
-    set DecimalHandler(value: MeasurementCallback<System_Internal.Decimal> | undefined);
-    get DoubleHandler(): MeasurementCallback<System_Internal.Double> | undefined;
-    set DoubleHandler(value: MeasurementCallback<System_Internal.Double> | undefined);
-    get FloatHandler(): MeasurementCallback<System_Internal.Single> | undefined;
-    set FloatHandler(value: MeasurementCallback<System_Internal.Single> | undefined);
-    get IntHandler(): MeasurementCallback<System_Internal.Int32> | undefined;
-    set IntHandler(value: MeasurementCallback<System_Internal.Int32> | undefined);
-    get LongHandler(): MeasurementCallback<System_Internal.Int64> | undefined;
-    set LongHandler(value: MeasurementCallback<System_Internal.Int64> | undefined);
-    get ShortHandler(): MeasurementCallback<System_Internal.Int16> | undefined;
-    set ShortHandler(value: MeasurementCallback<System_Internal.Int16> | undefined);
+    get ByteHandler(): MeasurementCallback_1<System_Internal.Byte> | undefined;
+    set ByteHandler(value: MeasurementCallback_1<System_Internal.Byte> | undefined);
+    get DecimalHandler(): MeasurementCallback_1<System_Internal.Decimal> | undefined;
+    set DecimalHandler(value: MeasurementCallback_1<System_Internal.Decimal> | undefined);
+    get DoubleHandler(): MeasurementCallback_1<System_Internal.Double> | undefined;
+    set DoubleHandler(value: MeasurementCallback_1<System_Internal.Double> | undefined);
+    get FloatHandler(): MeasurementCallback_1<System_Internal.Single> | undefined;
+    set FloatHandler(value: MeasurementCallback_1<System_Internal.Single> | undefined);
+    get IntHandler(): MeasurementCallback_1<System_Internal.Int32> | undefined;
+    set IntHandler(value: MeasurementCallback_1<System_Internal.Int32> | undefined);
+    get LongHandler(): MeasurementCallback_1<System_Internal.Int64> | undefined;
+    set LongHandler(value: MeasurementCallback_1<System_Internal.Int64> | undefined);
+    get ShortHandler(): MeasurementCallback_1<System_Internal.Int16> | undefined;
+    set ShortHandler(value: MeasurementCallback_1<System_Internal.Int16> | undefined);
 }
 
 
@@ -96,7 +96,7 @@ export const MeasurementHandlers: {
 export type MeasurementHandlers = MeasurementHandlers$instance;
 
 export interface MetricsOptions$instance {
-    readonly Rules: IList<InstrumentRule>;
+    readonly Rules: IList_1<InstrumentRule>;
 }
 
 

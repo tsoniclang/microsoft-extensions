@@ -7,8 +7,8 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 
 // Import types from other namespaces
 import type { IPattern } from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString, StringComparison } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString, StringComparison } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface PatternBuilder$instance {
     readonly ComparisonType: StringComparison;

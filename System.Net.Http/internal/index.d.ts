@@ -6,9 +6,9 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
-import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http.js";
+import type { HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IHttpClientFactory$instance {
     readonly __tsonic_iface_System_Net_Http_IHttpClientFactory: never;

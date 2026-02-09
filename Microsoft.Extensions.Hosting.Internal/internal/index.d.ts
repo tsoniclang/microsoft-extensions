@@ -11,12 +11,12 @@ import * as Microsoft_Extensions_Hosting_Internal from "../../Microsoft.Extensio
 import type { ConsoleLifetimeOptions, HostOptions, IApplicationLifetime, IHostApplicationLifetime, IHostEnvironment, IHostingEnvironment, IHostLifetime } from "../../Microsoft.Extensions.Hosting/internal/index.js";
 import type { ILogger_1, ILoggerFactory } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { Task } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface ApplicationLifetime$instance {
+export interface ApplicationLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IApplicationLifetime$instance, Microsoft_Extensions_Hosting_Internal.IHostApplicationLifetime$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IApplicationLifetime: never;
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationLifetime: never;
 
@@ -39,12 +39,10 @@ export interface __ApplicationLifetime$views {
     As_IHostApplicationLifetime(): Microsoft_Extensions_Hosting_Internal.IHostApplicationLifetime$instance;
 }
 
-export interface ApplicationLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IApplicationLifetime$instance, Microsoft_Extensions_Hosting_Internal.IHostApplicationLifetime$instance {}
-
 export type ApplicationLifetime = ApplicationLifetime$instance & __ApplicationLifetime$views;
 
 
-export interface ConsoleLifetime$instance {
+export interface ConsoleLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostLifetime: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -64,12 +62,10 @@ export interface __ConsoleLifetime$views {
     As_IHostLifetime(): Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance;
 }
 
-export interface ConsoleLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance, System_Internal.IDisposable {}
-
 export type ConsoleLifetime = ConsoleLifetime$instance & __ConsoleLifetime$views;
 
 
-export interface HostingEnvironment$instance {
+export interface HostingEnvironment$instance extends Microsoft_Extensions_Hosting_Internal.IHostEnvironment$instance, Microsoft_Extensions_Hosting_Internal.IHostingEnvironment$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostEnvironment: never;
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostingEnvironment: never;
 
@@ -89,8 +85,6 @@ export interface __HostingEnvironment$views {
     As_IHostEnvironment(): Microsoft_Extensions_Hosting_Internal.IHostEnvironment$instance;
     As_IHostingEnvironment(): Microsoft_Extensions_Hosting_Internal.IHostingEnvironment$instance;
 }
-
-export interface HostingEnvironment$instance extends Microsoft_Extensions_Hosting_Internal.IHostEnvironment$instance, Microsoft_Extensions_Hosting_Internal.IHostingEnvironment$instance {}
 
 export type HostingEnvironment = HostingEnvironment$instance & __HostingEnvironment$views;
 

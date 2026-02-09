@@ -6,8 +6,8 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { DateTimeOffset, Object as ClrObject } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { DateTimeOffset, Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ISystemClock$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Internal_ISystemClock: never;
@@ -18,7 +18,7 @@ export interface ISystemClock$instance {
 
 export type ISystemClock = ISystemClock$instance;
 
-export interface SystemClock$instance {
+export interface SystemClock$instance extends ISystemClock$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Internal_ISystemClock: never;
 
     readonly UtcNow: DateTimeOffset;
@@ -33,8 +33,6 @@ export const SystemClock: {
 export interface __SystemClock$views {
     As_ISystemClock(): ISystemClock$instance;
 }
-
-export interface SystemClock$instance extends ISystemClock$instance {}
 
 export type SystemClock = SystemClock$instance & __SystemClock$views;
 

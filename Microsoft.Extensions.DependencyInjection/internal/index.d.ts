@@ -18,17 +18,17 @@ import type { ILoggingBuilder } from "../../Microsoft.Extensions.Logging/interna
 import type { OptionsBuilder_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { ValidationOptions } from "../../Microsoft.Extensions.Validation/internal/index.js";
 import type { WebEncoderOptions } from "../../Microsoft.Extensions.WebEncoders/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ICollection, IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, Func, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Type, ValueType, Void } from "@tsonic/dotnet/System.js";
-import type { DelegatingHandler, HttpClient, HttpMessageHandler, SocketsHttpHandler } from "@tsonic/dotnet/System.Net.Http.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ICollection_1, IEnumerable_1, IEnumerator_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { DelegatingHandler, HttpClient, HttpMessageHandler, SocketsHttpHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { Task_1, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, Func_1, Func_2, Func_3, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum ServiceKeyLookupMode {
     InheritKey = 0,
@@ -81,13 +81,13 @@ export interface IKeyedServiceProvider$instance extends System_Internal.IService
 
 export type IKeyedServiceProvider = IKeyedServiceProvider$instance;
 
-export interface IServiceCollection$instance extends IList<ServiceDescriptor>, ICollection<ServiceDescriptor>, IEnumerable__System_Collections_Generic<ServiceDescriptor>, IEnumerable {
+export interface IServiceCollection$instance extends IList_1<ServiceDescriptor>, ICollection_1<ServiceDescriptor>, IEnumerable_1<ServiceDescriptor>, IEnumerable {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceCollection: never;
 
 }
 
 
-export interface IServiceCollection$instance extends System_Collections_Generic_Internal.ICollection<ServiceDescriptor>, System_Collections_Generic_Internal.IEnumerable<ServiceDescriptor>, System_Collections_Generic_Internal.IList<ServiceDescriptor> {}
+export interface IServiceCollection$instance extends System_Collections_Generic_Internal.ICollection_1<ServiceDescriptor>, System_Collections_Generic_Internal.IEnumerable_1<ServiceDescriptor>, System_Collections_Generic_Internal.IList_1<ServiceDescriptor> {}
 
 export type IServiceCollection = IServiceCollection$instance;
 
@@ -161,7 +161,7 @@ export interface ISupportRequiredService$instance {
 
 export type ISupportRequiredService = ISupportRequiredService$instance;
 
-export interface AsyncServiceScope$instance {
+export interface AsyncServiceScope$instance extends IServiceScope$instance, System_Internal.IAsyncDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceScope: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -180,8 +180,6 @@ export const AsyncServiceScope: {
 export interface __AsyncServiceScope$views {
     As_IServiceScope(): IServiceScope$instance;
 }
-
-export interface AsyncServiceScope$instance extends IServiceScope$instance, System_Internal.IAsyncDisposable {}
 
 export type AsyncServiceScope = AsyncServiceScope$instance & __AsyncServiceScope$views;
 
@@ -215,8 +213,6 @@ export interface __DefaultServiceProviderFactory$views {
     As_IServiceProviderFactory_1(): IServiceProviderFactory_1$instance<IServiceCollection>;
 }
 
-export interface DefaultServiceProviderFactory$instance extends IServiceProviderFactory_1$instance<IServiceCollection> {}
-
 export type DefaultServiceProviderFactory = DefaultServiceProviderFactory$instance & __DefaultServiceProviderFactory$views;
 
 
@@ -247,7 +243,7 @@ export interface ServiceCollection$instance extends IServiceCollection {
     Clear(): void;
     Contains(item: ServiceDescriptor): boolean;
     CopyTo(array: ServiceDescriptor[], arrayIndex: int): void;
-    GetEnumerator(): IEnumerator<ServiceDescriptor>;
+    GetEnumerator(): IEnumerator_1<ServiceDescriptor>;
     IndexOf(item: ServiceDescriptor): int;
     Insert(index: int, item: ServiceDescriptor): void;
     MakeReadOnly(): void;
@@ -264,11 +260,11 @@ export const ServiceCollection: {
 export type ServiceCollection = ServiceCollection$instance;
 
 export interface ServiceDescriptor$instance {
-    readonly ImplementationFactory: Func<IServiceProvider, unknown> | undefined;
+    readonly ImplementationFactory: Func_2<IServiceProvider, unknown> | undefined;
     readonly ImplementationInstance: unknown | undefined;
     readonly ImplementationType: Type | undefined;
     readonly IsKeyedService: boolean;
-    readonly KeyedImplementationFactory: Func<IServiceProvider, unknown | undefined, unknown> | undefined;
+    readonly KeyedImplementationFactory: Func_3<IServiceProvider, unknown | undefined, unknown> | undefined;
     readonly KeyedImplementationInstance: unknown | undefined;
     readonly KeyedImplementationType: Type | undefined;
     readonly Lifetime: ServiceLifetime;
@@ -283,39 +279,39 @@ export const ServiceDescriptor: {
     new(serviceType: Type, serviceKey: unknown, implementationType: Type, lifetime: ServiceLifetime): ServiceDescriptor;
     new(serviceType: Type, instance: unknown): ServiceDescriptor;
     new(serviceType: Type, serviceKey: unknown, instance: unknown): ServiceDescriptor;
-    new(serviceType: Type, factory: Func<IServiceProvider, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
-    new(serviceType: Type, serviceKey: unknown, factory: Func<IServiceProvider, unknown, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
-    Describe(serviceType: Type, implementationFactory: Func<IServiceProvider, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
+    new(serviceType: Type, factory: Func_2<IServiceProvider, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
+    new(serviceType: Type, serviceKey: unknown, factory: Func_3<IServiceProvider, unknown, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
+    Describe(serviceType: Type, implementationFactory: Func_2<IServiceProvider, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
     Describe(serviceType: Type, implementationType: Type, lifetime: ServiceLifetime): ServiceDescriptor;
-    DescribeKeyed(serviceType: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
+    DescribeKeyed(serviceType: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>, lifetime: ServiceLifetime): ServiceDescriptor;
     DescribeKeyed(serviceType: Type, serviceKey: unknown, implementationType: Type, lifetime: ServiceLifetime): ServiceDescriptor;
-    KeyedScoped<TService, TImplementation extends TService>(serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, TImplementation>): ServiceDescriptor;
+    KeyedScoped<TService, TImplementation extends TService>(serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, TImplementation>): ServiceDescriptor;
     KeyedScoped<TService, TImplementation extends TService>(serviceKey: unknown): ServiceDescriptor;
-    KeyedScoped(service: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>): ServiceDescriptor;
+    KeyedScoped(service: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>): ServiceDescriptor;
     KeyedScoped(service: Type, serviceKey: unknown, implementationType: Type): ServiceDescriptor;
-    KeyedSingleton<TService, TImplementation extends TService>(serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, TImplementation>): ServiceDescriptor;
+    KeyedSingleton<TService, TImplementation extends TService>(serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, TImplementation>): ServiceDescriptor;
     KeyedSingleton<TService>(serviceKey: unknown, implementationInstance: TService): ServiceDescriptor;
     KeyedSingleton<TService, TImplementation extends TService>(serviceKey: unknown): ServiceDescriptor;
-    KeyedSingleton(serviceType: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>): ServiceDescriptor;
+    KeyedSingleton(serviceType: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>): ServiceDescriptor;
     KeyedSingleton(serviceType: Type, serviceKey: unknown, implementationInstance: unknown): ServiceDescriptor;
     KeyedSingleton(service: Type, serviceKey: unknown, implementationType: Type): ServiceDescriptor;
-    KeyedTransient<TService, TImplementation extends TService>(serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, TImplementation>): ServiceDescriptor;
+    KeyedTransient<TService, TImplementation extends TService>(serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, TImplementation>): ServiceDescriptor;
     KeyedTransient<TService, TImplementation extends TService>(serviceKey: unknown): ServiceDescriptor;
-    KeyedTransient(service: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>): ServiceDescriptor;
+    KeyedTransient(service: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>): ServiceDescriptor;
     KeyedTransient(service: Type, serviceKey: unknown, implementationType: Type): ServiceDescriptor;
     Scoped<TService, TImplementation extends TService>(): ServiceDescriptor;
-    Scoped<TService, TImplementation extends TService>(implementationFactory: Func<IServiceProvider, TImplementation>): ServiceDescriptor;
-    Scoped(service: Type, implementationFactory: Func<IServiceProvider, unknown>): ServiceDescriptor;
+    Scoped<TService, TImplementation extends TService>(implementationFactory: Func_2<IServiceProvider, TImplementation>): ServiceDescriptor;
+    Scoped(service: Type, implementationFactory: Func_2<IServiceProvider, unknown>): ServiceDescriptor;
     Scoped(service: Type, implementationType: Type): ServiceDescriptor;
     Singleton<TService, TImplementation extends TService>(): ServiceDescriptor;
-    Singleton<TService, TImplementation extends TService>(implementationFactory: Func<IServiceProvider, TImplementation>): ServiceDescriptor;
-    Singleton(serviceType: Type, implementationFactory: Func<IServiceProvider, unknown>): ServiceDescriptor;
+    Singleton<TService, TImplementation extends TService>(implementationFactory: Func_2<IServiceProvider, TImplementation>): ServiceDescriptor;
+    Singleton(serviceType: Type, implementationFactory: Func_2<IServiceProvider, unknown>): ServiceDescriptor;
     Singleton(serviceType: Type, implementationInstance: unknown): ServiceDescriptor;
     Singleton(service: Type, implementationType: Type): ServiceDescriptor;
     Singleton<TService>(implementationInstance: TService): ServiceDescriptor;
     Transient<TService, TImplementation extends TService>(): ServiceDescriptor;
-    Transient<TService, TImplementation extends TService>(implementationFactory: Func<IServiceProvider, TImplementation>): ServiceDescriptor;
-    Transient(service: Type, implementationFactory: Func<IServiceProvider, unknown>): ServiceDescriptor;
+    Transient<TService, TImplementation extends TService>(implementationFactory: Func_2<IServiceProvider, TImplementation>): ServiceDescriptor;
+    Transient(service: Type, implementationFactory: Func_2<IServiceProvider, unknown>): ServiceDescriptor;
     Transient(service: Type, implementationType: Type): ServiceDescriptor;
 };
 
@@ -333,7 +329,7 @@ export const ServiceKeyAttribute: {
 
 export type ServiceKeyAttribute = ServiceKeyAttribute$instance;
 
-export interface ServiceProvider$instance {
+export interface ServiceProvider$instance extends IKeyedServiceProvider$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IKeyedServiceProvider: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -354,8 +350,6 @@ export const ServiceProvider: {
 export interface __ServiceProvider$views {
     As_IKeyedServiceProvider(): IKeyedServiceProvider$instance;
 }
-
-export interface ServiceProvider$instance extends IKeyedServiceProvider$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {}
 
 export type ServiceProvider = ServiceProvider$instance & __ServiceProvider$views;
 
@@ -386,7 +380,7 @@ export abstract class ActivatorUtilities$instance {
 export type ActivatorUtilities = ActivatorUtilities$instance;
 
 export abstract class EncoderServiceCollectionExtensions$instance {
-    static AddWebEncoders(services: IServiceCollection, setupAction: Action<WebEncoderOptions>): IServiceCollection;
+    static AddWebEncoders(services: IServiceCollection, setupAction: Action_1<WebEncoderOptions>): IServiceCollection;
     static AddWebEncoders(services: IServiceCollection): IServiceCollection;
 }
 
@@ -394,13 +388,13 @@ export abstract class EncoderServiceCollectionExtensions$instance {
 export type EncoderServiceCollectionExtensions = EncoderServiceCollectionExtensions$instance;
 
 export abstract class HealthChecksBuilderAddCheckExtensions$instance {
-    static AddCheck(builder: IHealthChecksBuilder, name: string, instance: IHealthCheck, failureStatus?: Nullable<HealthStatus>, tags?: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout?: Nullable<TimeSpan>): IHealthChecksBuilder;
-    static AddCheck(builder: IHealthChecksBuilder, name: string, instance: IHealthCheck, failureStatus: Nullable<HealthStatus>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>): IHealthChecksBuilder;
-    static AddCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus?: Nullable<HealthStatus>, tags?: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout?: Nullable<TimeSpan>): IHealthChecksBuilder;
-    static AddCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable<HealthStatus>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable<HealthStatus>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>, ...args: unknown[]): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable<HealthStatus>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout: TimeSpan, ...args: unknown[]): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable<HealthStatus>, ...args: unknown[]): IHealthChecksBuilder;
+    static AddCheck(builder: IHealthChecksBuilder, name: string, instance: IHealthCheck, failureStatus?: Nullable_1<HealthStatus>, tags?: IEnumerable_1<System_Internal.String>, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddCheck(builder: IHealthChecksBuilder, name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
+    static AddCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus?: Nullable_1<HealthStatus>, tags?: IEnumerable_1<System_Internal.String>, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, ...args: unknown[]): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: TimeSpan, ...args: unknown[]): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, ...args: unknown[]): IHealthChecksBuilder;
     static AddTypeActivatedCheck<T extends IHealthCheck>(builder: IHealthChecksBuilder, name: string, ...args: unknown[]): IHealthChecksBuilder;
 }
 
@@ -408,14 +402,14 @@ export abstract class HealthChecksBuilderAddCheckExtensions$instance {
 export type HealthChecksBuilderAddCheckExtensions = HealthChecksBuilderAddCheckExtensions$instance;
 
 export abstract class HealthChecksBuilderDelegateExtensions$instance {
-    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func<Task<HealthCheckResult>>, tags?: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout?: Nullable<TimeSpan>): IHealthChecksBuilder;
-    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func<Task<HealthCheckResult>>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>): IHealthChecksBuilder;
-    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func<CancellationToken, Task<HealthCheckResult>>, tags?: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout?: Nullable<TimeSpan>): IHealthChecksBuilder;
-    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func<CancellationToken, Task<HealthCheckResult>>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>): IHealthChecksBuilder;
-    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func<HealthCheckResult>, tags?: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout?: Nullable<TimeSpan>): IHealthChecksBuilder;
-    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func<HealthCheckResult>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>): IHealthChecksBuilder;
-    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func<CancellationToken, HealthCheckResult>, tags?: IEnumerable__System_Collections_Generic<System_Internal.String>, timeout?: Nullable<TimeSpan>): IHealthChecksBuilder;
-    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func<CancellationToken, HealthCheckResult>, tags: IEnumerable__System_Collections_Generic<System_Internal.String>): IHealthChecksBuilder;
+    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func_1<Task_1<HealthCheckResult>>, tags?: IEnumerable_1<System_Internal.String>, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func_1<Task_1<HealthCheckResult>>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
+    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func_2<CancellationToken, Task_1<HealthCheckResult>>, tags?: IEnumerable_1<System_Internal.String>, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddAsyncCheck(builder: IHealthChecksBuilder, name: string, check: Func_2<CancellationToken, Task_1<HealthCheckResult>>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
+    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func_1<HealthCheckResult>, tags?: IEnumerable_1<System_Internal.String>, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func_1<HealthCheckResult>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
+    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func_2<CancellationToken, HealthCheckResult>, tags?: IEnumerable_1<System_Internal.String>, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddCheck(builder: IHealthChecksBuilder, name: string, check: Func_2<CancellationToken, HealthCheckResult>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
 }
 
 
@@ -431,47 +425,47 @@ export type HealthCheckServiceCollectionExtensions = HealthCheckServiceCollectio
 export abstract class HttpClientBuilderExtensions$instance {
     static AddAsKeyed(builder: IHttpClientBuilder, lifetime?: ServiceLifetime): IHttpClientBuilder;
     static AddDefaultLogger(builder: IHttpClientBuilder): IHttpClientBuilder;
-    static AddHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func<DelegatingHandler>): IHttpClientBuilder;
-    static AddHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func<IServiceProvider, DelegatingHandler>): IHttpClientBuilder;
+    static AddHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_1<DelegatingHandler>): IHttpClientBuilder;
+    static AddHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_2<IServiceProvider, DelegatingHandler>): IHttpClientBuilder;
     static AddHttpMessageHandler<THandler extends DelegatingHandler>(builder: IHttpClientBuilder): IHttpClientBuilder;
     static AddLogger<TLogger extends IHttpClientLogger>(builder: IHttpClientBuilder, wrapHandlersPipeline?: boolean): IHttpClientBuilder;
-    static AddLogger(builder: IHttpClientBuilder, httpClientLoggerFactory: Func<IServiceProvider, IHttpClientLogger>, wrapHandlersPipeline?: boolean): IHttpClientBuilder;
-    static AddTypedClient<TClient>(builder: IHttpClientBuilder, factory: Func<HttpClient, TClient>): IHttpClientBuilder;
-    static AddTypedClient<TClient>(builder: IHttpClientBuilder, factory: Func<HttpClient, IServiceProvider, TClient>): IHttpClientBuilder;
+    static AddLogger(builder: IHttpClientBuilder, httpClientLoggerFactory: Func_2<IServiceProvider, IHttpClientLogger>, wrapHandlersPipeline?: boolean): IHttpClientBuilder;
+    static AddTypedClient<TClient>(builder: IHttpClientBuilder, factory: Func_2<HttpClient, TClient>): IHttpClientBuilder;
+    static AddTypedClient<TClient>(builder: IHttpClientBuilder, factory: Func_3<HttpClient, IServiceProvider, TClient>): IHttpClientBuilder;
     static AddTypedClient<TClient>(builder: IHttpClientBuilder): IHttpClientBuilder;
-    static ConfigureAdditionalHttpMessageHandlers(builder: IHttpClientBuilder, configureAdditionalHandlers: Action<IList<DelegatingHandler>, IServiceProvider>): IHttpClientBuilder;
-    static ConfigureHttpClient(builder: IHttpClientBuilder, configureClient: Action<HttpClient>): IHttpClientBuilder;
-    static ConfigureHttpClient(builder: IHttpClientBuilder, configureClient: Action<IServiceProvider, HttpClient>): IHttpClientBuilder;
-    static ConfigureHttpMessageHandlerBuilder(builder: IHttpClientBuilder, configureBuilder: Action<HttpMessageHandlerBuilder>): IHttpClientBuilder;
-    static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Action<HttpMessageHandler, IServiceProvider>): IHttpClientBuilder;
-    static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func<HttpMessageHandler>): IHttpClientBuilder;
-    static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func<IServiceProvider, HttpMessageHandler>): IHttpClientBuilder;
+    static ConfigureAdditionalHttpMessageHandlers(builder: IHttpClientBuilder, configureAdditionalHandlers: Action_2<IList_1<DelegatingHandler>, IServiceProvider>): IHttpClientBuilder;
+    static ConfigureHttpClient(builder: IHttpClientBuilder, configureClient: Action_1<HttpClient>): IHttpClientBuilder;
+    static ConfigureHttpClient(builder: IHttpClientBuilder, configureClient: Action_2<IServiceProvider, HttpClient>): IHttpClientBuilder;
+    static ConfigureHttpMessageHandlerBuilder(builder: IHttpClientBuilder, configureBuilder: Action_1<HttpMessageHandlerBuilder>): IHttpClientBuilder;
+    static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Action_2<HttpMessageHandler, IServiceProvider>): IHttpClientBuilder;
+    static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_1<HttpMessageHandler>): IHttpClientBuilder;
+    static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_2<IServiceProvider, HttpMessageHandler>): IHttpClientBuilder;
     static ConfigurePrimaryHttpMessageHandler<THandler extends HttpMessageHandler>(builder: IHttpClientBuilder): IHttpClientBuilder;
-    static RedactLoggedHeaders(builder: IHttpClientBuilder, redactedLoggedHeaderNames: IEnumerable__System_Collections_Generic<System_Internal.String>): IHttpClientBuilder;
-    static RedactLoggedHeaders(builder: IHttpClientBuilder, shouldRedactHeaderValue: Func<System_Internal.String, System_Internal.Boolean>): IHttpClientBuilder;
+    static RedactLoggedHeaders(builder: IHttpClientBuilder, redactedLoggedHeaderNames: IEnumerable_1<System_Internal.String>): IHttpClientBuilder;
+    static RedactLoggedHeaders(builder: IHttpClientBuilder, shouldRedactHeaderValue: Func_2<System_Internal.String, System_Internal.Boolean>): IHttpClientBuilder;
     static RemoveAllLoggers(builder: IHttpClientBuilder): IHttpClientBuilder;
     static RemoveAsKeyed(builder: IHttpClientBuilder): IHttpClientBuilder;
     static SetHandlerLifetime(builder: IHttpClientBuilder, handlerLifetime: TimeSpan): IHttpClientBuilder;
-    static UseSocketsHttpHandler(builder: IHttpClientBuilder, configureBuilder: Action<ISocketsHttpHandlerBuilder>): IHttpClientBuilder;
-    static UseSocketsHttpHandler(builder: IHttpClientBuilder, configureHandler?: Action<SocketsHttpHandler, IServiceProvider>): IHttpClientBuilder;
+    static UseSocketsHttpHandler(builder: IHttpClientBuilder, configureBuilder: Action_1<ISocketsHttpHandlerBuilder>): IHttpClientBuilder;
+    static UseSocketsHttpHandler(builder: IHttpClientBuilder, configureHandler?: Action_2<SocketsHttpHandler, IServiceProvider>): IHttpClientBuilder;
 }
 
 
 export type HttpClientBuilderExtensions = HttpClientBuilderExtensions$instance;
 
 export abstract class HttpClientFactoryServiceCollectionExtensions$instance {
-    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, factory: Func<HttpClient, TImplementation>): IHttpClientBuilder;
-    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, factory: Func<HttpClient, IServiceProvider, TImplementation>): IHttpClientBuilder;
-    static AddHttpClient<TClient>(services: IServiceCollection, configureClient: Action<HttpClient>): IHttpClientBuilder;
-    static AddHttpClient<TClient>(services: IServiceCollection, configureClient: Action<IServiceProvider, HttpClient>): IHttpClientBuilder;
-    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, name: string, factory: Func<HttpClient, TImplementation>): IHttpClientBuilder;
-    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, name: string, factory: Func<HttpClient, IServiceProvider, TImplementation>): IHttpClientBuilder;
-    static AddHttpClient(services: IServiceCollection, name: string, configureClient: Action<HttpClient>): IHttpClientBuilder;
-    static AddHttpClient(services: IServiceCollection, name: string, configureClient: Action<IServiceProvider, HttpClient>): IHttpClientBuilder;
+    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, factory: Func_2<HttpClient, TImplementation>): IHttpClientBuilder;
+    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, factory: Func_3<HttpClient, IServiceProvider, TImplementation>): IHttpClientBuilder;
+    static AddHttpClient<TClient>(services: IServiceCollection, configureClient: Action_1<HttpClient>): IHttpClientBuilder;
+    static AddHttpClient<TClient>(services: IServiceCollection, configureClient: Action_2<IServiceProvider, HttpClient>): IHttpClientBuilder;
+    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, name: string, factory: Func_2<HttpClient, TImplementation>): IHttpClientBuilder;
+    static AddHttpClient<TClient, TImplementation extends TClient>(services: IServiceCollection, name: string, factory: Func_3<HttpClient, IServiceProvider, TImplementation>): IHttpClientBuilder;
+    static AddHttpClient(services: IServiceCollection, name: string, configureClient: Action_1<HttpClient>): IHttpClientBuilder;
+    static AddHttpClient(services: IServiceCollection, name: string, configureClient: Action_2<IServiceProvider, HttpClient>): IHttpClientBuilder;
     static AddHttpClient(services: IServiceCollection, name: string): IHttpClientBuilder;
     static AddHttpClient<TClient>(services: IServiceCollection): IHttpClientBuilder;
     static AddHttpClient(services: IServiceCollection): IServiceCollection;
-    static ConfigureHttpClientDefaults(services: IServiceCollection, configure: Action<IHttpClientBuilder>): IServiceCollection;
+    static ConfigureHttpClientDefaults(services: IServiceCollection, configure: Action_1<IHttpClientBuilder>): IServiceCollection;
 }
 
 
@@ -485,7 +479,7 @@ export abstract class KeyedService$instance {
 export type KeyedService = KeyedService$instance;
 
 export abstract class LocalizationServiceCollectionExtensions$instance {
-    static AddLocalization(services: IServiceCollection, setupAction: Action<LocalizationOptions>): IServiceCollection;
+    static AddLocalization(services: IServiceCollection, setupAction: Action_1<LocalizationOptions>): IServiceCollection;
     static AddLocalization(services: IServiceCollection): IServiceCollection;
 }
 
@@ -493,7 +487,7 @@ export abstract class LocalizationServiceCollectionExtensions$instance {
 export type LocalizationServiceCollectionExtensions = LocalizationServiceCollectionExtensions$instance;
 
 export abstract class LoggingServiceCollectionExtensions$instance {
-    static AddLogging(services: IServiceCollection, configure: Action<ILoggingBuilder>): IServiceCollection;
+    static AddLogging(services: IServiceCollection, configure: Action_1<ILoggingBuilder>): IServiceCollection;
     static AddLogging(services: IServiceCollection): IServiceCollection;
 }
 
@@ -501,9 +495,9 @@ export abstract class LoggingServiceCollectionExtensions$instance {
 export type LoggingServiceCollectionExtensions = LoggingServiceCollectionExtensions$instance;
 
 export abstract class MemoryCacheServiceCollectionExtensions$instance {
-    static AddDistributedMemoryCache(services: IServiceCollection, setupAction: Action<MemoryDistributedCacheOptions>): IServiceCollection;
+    static AddDistributedMemoryCache(services: IServiceCollection, setupAction: Action_1<MemoryDistributedCacheOptions>): IServiceCollection;
     static AddDistributedMemoryCache(services: IServiceCollection): IServiceCollection;
-    static AddMemoryCache(services: IServiceCollection, setupAction: Action<MemoryCacheOptions>): IServiceCollection;
+    static AddMemoryCache(services: IServiceCollection, setupAction: Action_1<MemoryCacheOptions>): IServiceCollection;
     static AddMemoryCache(services: IServiceCollection): IServiceCollection;
 }
 
@@ -511,7 +505,7 @@ export abstract class MemoryCacheServiceCollectionExtensions$instance {
 export type MemoryCacheServiceCollectionExtensions = MemoryCacheServiceCollectionExtensions$instance;
 
 export abstract class MetricsServiceExtensions$instance {
-    static AddMetrics(services: IServiceCollection, configure: Action<IMetricsBuilder>): IServiceCollection;
+    static AddMetrics(services: IServiceCollection, configure: Action_1<IMetricsBuilder>): IServiceCollection;
     static AddMetrics(services: IServiceCollection): IServiceCollection;
 }
 
@@ -519,9 +513,9 @@ export abstract class MetricsServiceExtensions$instance {
 export type MetricsServiceExtensions = MetricsServiceExtensions$instance;
 
 export abstract class OptionsBuilderConfigurationExtensions$instance {
-    static Bind<TOptions>(optionsBuilder: OptionsBuilder_1<TOptions>, config: IConfiguration, configureBinder: Action<BinderOptions>): OptionsBuilder_1<TOptions>;
+    static Bind<TOptions>(optionsBuilder: OptionsBuilder_1<TOptions>, config: IConfiguration, configureBinder: Action_1<BinderOptions>): OptionsBuilder_1<TOptions>;
     static Bind<TOptions>(optionsBuilder: OptionsBuilder_1<TOptions>, config: IConfiguration): OptionsBuilder_1<TOptions>;
-    static BindConfiguration<TOptions>(optionsBuilder: OptionsBuilder_1<TOptions>, configSectionPath: string, configureBinder?: Action<BinderOptions>): OptionsBuilder_1<TOptions>;
+    static BindConfiguration<TOptions>(optionsBuilder: OptionsBuilder_1<TOptions>, configSectionPath: string, configureBinder?: Action_1<BinderOptions>): OptionsBuilder_1<TOptions>;
 }
 
 
@@ -542,9 +536,9 @@ export abstract class OptionsBuilderExtensions$instance {
 export type OptionsBuilderExtensions = OptionsBuilderExtensions$instance;
 
 export abstract class OptionsConfigurationServiceCollectionExtensions$instance {
-    static Configure<TOptions>(services: IServiceCollection, config: IConfiguration, configureBinder: Action<BinderOptions>): IServiceCollection;
+    static Configure<TOptions>(services: IServiceCollection, config: IConfiguration, configureBinder: Action_1<BinderOptions>): IServiceCollection;
     static Configure<TOptions>(services: IServiceCollection, config: IConfiguration): IServiceCollection;
-    static Configure<TOptions>(services: IServiceCollection, name: string, config: IConfiguration, configureBinder: Action<BinderOptions>): IServiceCollection;
+    static Configure<TOptions>(services: IServiceCollection, name: string, config: IConfiguration, configureBinder: Action_1<BinderOptions>): IServiceCollection;
     static Configure<TOptions>(services: IServiceCollection, name: string, config: IConfiguration): IServiceCollection;
 }
 
@@ -556,15 +550,15 @@ export abstract class OptionsServiceCollectionExtensions$instance {
     static AddOptions(services: IServiceCollection): IServiceCollection;
     static AddOptions<TOptions>(services: IServiceCollection): OptionsBuilder_1<TOptions>;
     static AddOptionsWithValidateOnStart<TOptions>(services: IServiceCollection, name?: string): OptionsBuilder_1<TOptions>;
-    static Configure<TOptions>(services: IServiceCollection, configureOptions: Action<TOptions>): IServiceCollection;
-    static Configure<TOptions>(services: IServiceCollection, name: string, configureOptions: Action<TOptions>): IServiceCollection;
-    static ConfigureAll<TOptions>(services: IServiceCollection, configureOptions: Action<TOptions>): IServiceCollection;
+    static Configure<TOptions>(services: IServiceCollection, configureOptions: Action_1<TOptions>): IServiceCollection;
+    static Configure<TOptions>(services: IServiceCollection, name: string, configureOptions: Action_1<TOptions>): IServiceCollection;
+    static ConfigureAll<TOptions>(services: IServiceCollection, configureOptions: Action_1<TOptions>): IServiceCollection;
     static ConfigureOptions(services: IServiceCollection, configureInstance: unknown): IServiceCollection;
     static ConfigureOptions(services: IServiceCollection, configureType: Type): IServiceCollection;
     static ConfigureOptions<TConfigureOptions>(services: IServiceCollection): IServiceCollection;
-    static PostConfigure<TOptions>(services: IServiceCollection, configureOptions: Action<TOptions>): IServiceCollection;
-    static PostConfigure<TOptions>(services: IServiceCollection, name: string, configureOptions: Action<TOptions>): IServiceCollection;
-    static PostConfigureAll<TOptions>(services: IServiceCollection, configureOptions: Action<TOptions>): IServiceCollection;
+    static PostConfigure<TOptions>(services: IServiceCollection, configureOptions: Action_1<TOptions>): IServiceCollection;
+    static PostConfigure<TOptions>(services: IServiceCollection, name: string, configureOptions: Action_1<TOptions>): IServiceCollection;
+    static PostConfigureAll<TOptions>(services: IServiceCollection, configureOptions: Action_1<TOptions>): IServiceCollection;
 }
 
 
@@ -580,7 +574,7 @@ export abstract class ServiceCollectionContainerBuilderExtensions$instance {
 export type ServiceCollectionContainerBuilderExtensions = ServiceCollectionContainerBuilderExtensions$instance;
 
 export abstract class ServiceCollectionHostedServiceExtensions$instance {
-    static AddHostedService<THostedService extends IHostedService>(services: IServiceCollection, implementationFactory: Func<IServiceProvider, THostedService>): IServiceCollection;
+    static AddHostedService<THostedService extends IHostedService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, THostedService>): IServiceCollection;
     static AddHostedService<THostedService extends IHostedService>(services: IServiceCollection): IServiceCollection;
 }
 
@@ -588,37 +582,37 @@ export abstract class ServiceCollectionHostedServiceExtensions$instance {
 export type ServiceCollectionHostedServiceExtensions = ServiceCollectionHostedServiceExtensions$instance;
 
 export abstract class ServiceCollectionServiceExtensions$instance {
-    static AddKeyedScoped<TService>(services: IServiceCollection, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, TService>): IServiceCollection;
+    static AddKeyedScoped<TService>(services: IServiceCollection, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, TService>): IServiceCollection;
     static AddKeyedScoped<TService, TImplementation extends TService>(services: IServiceCollection, serviceKey: unknown): IServiceCollection;
-    static AddKeyedScoped(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>): IServiceCollection;
+    static AddKeyedScoped(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>): IServiceCollection;
     static AddKeyedScoped(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationType: Type): IServiceCollection;
     static AddKeyedScoped(services: IServiceCollection, serviceType: Type, serviceKey: unknown): IServiceCollection;
-    static AddKeyedSingleton<TService>(services: IServiceCollection, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, TService>): IServiceCollection;
+    static AddKeyedSingleton<TService>(services: IServiceCollection, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, TService>): IServiceCollection;
     static AddKeyedSingleton<TService>(services: IServiceCollection, serviceKey: unknown, implementationInstance: TService): IServiceCollection;
     static AddKeyedSingleton<TService, TImplementation extends TService>(services: IServiceCollection, serviceKey: unknown): IServiceCollection;
-    static AddKeyedSingleton(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>): IServiceCollection;
+    static AddKeyedSingleton(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>): IServiceCollection;
     static AddKeyedSingleton(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationInstance: unknown): IServiceCollection;
     static AddKeyedSingleton(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationType: Type): IServiceCollection;
     static AddKeyedSingleton(services: IServiceCollection, serviceType: Type, serviceKey: unknown): IServiceCollection;
-    static AddKeyedTransient<TService>(services: IServiceCollection, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, TService>): IServiceCollection;
+    static AddKeyedTransient<TService>(services: IServiceCollection, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, TService>): IServiceCollection;
     static AddKeyedTransient<TService, TImplementation extends TService>(services: IServiceCollection, serviceKey: unknown): IServiceCollection;
-    static AddKeyedTransient(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationFactory: Func<IServiceProvider, unknown, unknown>): IServiceCollection;
+    static AddKeyedTransient(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationFactory: Func_3<IServiceProvider, unknown, unknown>): IServiceCollection;
     static AddKeyedTransient(services: IServiceCollection, serviceType: Type, serviceKey: unknown, implementationType: Type): IServiceCollection;
     static AddKeyedTransient(services: IServiceCollection, serviceType: Type, serviceKey: unknown): IServiceCollection;
-    static AddScoped<TService>(services: IServiceCollection, implementationFactory: Func<IServiceProvider, TService>): IServiceCollection;
-    static AddScoped(services: IServiceCollection, serviceType: Type, implementationFactory: Func<IServiceProvider, unknown>): IServiceCollection;
+    static AddScoped<TService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): IServiceCollection;
+    static AddScoped(services: IServiceCollection, serviceType: Type, implementationFactory: Func_2<IServiceProvider, unknown>): IServiceCollection;
     static AddScoped(services: IServiceCollection, serviceType: Type, implementationType: Type): IServiceCollection;
     static AddScoped(services: IServiceCollection, serviceType: Type): IServiceCollection;
     static AddScoped<TService, TImplementation extends TService>(services: IServiceCollection): IServiceCollection;
-    static AddSingleton<TService>(services: IServiceCollection, implementationFactory: Func<IServiceProvider, TService>): IServiceCollection;
-    static AddSingleton(services: IServiceCollection, serviceType: Type, implementationFactory: Func<IServiceProvider, unknown>): IServiceCollection;
+    static AddSingleton<TService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): IServiceCollection;
+    static AddSingleton(services: IServiceCollection, serviceType: Type, implementationFactory: Func_2<IServiceProvider, unknown>): IServiceCollection;
     static AddSingleton(services: IServiceCollection, serviceType: Type, implementationInstance: unknown): IServiceCollection;
     static AddSingleton(services: IServiceCollection, serviceType: Type, implementationType: Type): IServiceCollection;
     static AddSingleton(services: IServiceCollection, serviceType: Type): IServiceCollection;
     static AddSingleton<TService>(services: IServiceCollection, implementationInstance: TService): IServiceCollection;
     static AddSingleton<TService, TImplementation extends TService>(services: IServiceCollection): IServiceCollection;
-    static AddTransient<TService>(services: IServiceCollection, implementationFactory: Func<IServiceProvider, TService>): IServiceCollection;
-    static AddTransient(services: IServiceCollection, serviceType: Type, implementationFactory: Func<IServiceProvider, unknown>): IServiceCollection;
+    static AddTransient<TService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): IServiceCollection;
+    static AddTransient(services: IServiceCollection, serviceType: Type, implementationFactory: Func_2<IServiceProvider, unknown>): IServiceCollection;
     static AddTransient(services: IServiceCollection, serviceType: Type, implementationType: Type): IServiceCollection;
     static AddTransient(services: IServiceCollection, serviceType: Type): IServiceCollection;
     static AddTransient<TService, TImplementation extends TService>(services: IServiceCollection): IServiceCollection;
@@ -630,8 +624,8 @@ export type ServiceCollectionServiceExtensions = ServiceCollectionServiceExtensi
 export abstract class ServiceProviderKeyedServiceExtensions$instance {
     static GetKeyedService<T>(provider: IServiceProvider, serviceKey: unknown): T | undefined;
     static GetKeyedService(provider: IServiceProvider, serviceType: Type, serviceKey: unknown): unknown | undefined;
-    static GetKeyedServices<T>(provider: IServiceProvider, serviceKey: unknown): IEnumerable__System_Collections_Generic<T>;
-    static GetKeyedServices(provider: IServiceProvider, serviceType: Type, serviceKey: unknown): IEnumerable__System_Collections_Generic<unknown | undefined>;
+    static GetKeyedServices<T>(provider: IServiceProvider, serviceKey: unknown): IEnumerable_1<T>;
+    static GetKeyedServices(provider: IServiceProvider, serviceType: Type, serviceKey: unknown): IEnumerable_1<unknown | undefined>;
     static GetRequiredKeyedService<T>(provider: IServiceProvider, serviceKey: unknown): T;
     static GetRequiredKeyedService(provider: IServiceProvider, serviceType: Type, serviceKey: unknown): unknown;
 }
@@ -646,8 +640,8 @@ export abstract class ServiceProviderServiceExtensions$instance {
     static GetRequiredService(provider: IServiceProvider, serviceType: Type): unknown;
     static GetRequiredService<T>(provider: IServiceProvider): T;
     static GetService<T>(provider: IServiceProvider): T | undefined;
-    static GetServices(provider: IServiceProvider, serviceType: Type): IEnumerable__System_Collections_Generic<unknown | undefined>;
-    static GetServices<T>(provider: IServiceProvider): IEnumerable__System_Collections_Generic<T>;
+    static GetServices(provider: IServiceProvider, serviceType: Type): IEnumerable_1<unknown | undefined>;
+    static GetServices<T>(provider: IServiceProvider): IEnumerable_1<T>;
 }
 
 
@@ -655,14 +649,14 @@ export type ServiceProviderServiceExtensions = ServiceProviderServiceExtensions$
 
 export abstract class SocketsHttpHandlerBuilderExtensions$instance {
     static Configure(builder: ISocketsHttpHandlerBuilder, configuration: IConfiguration): ISocketsHttpHandlerBuilder;
-    static Configure(builder: ISocketsHttpHandlerBuilder, configure: Action<SocketsHttpHandler, IServiceProvider>): ISocketsHttpHandlerBuilder;
+    static Configure(builder: ISocketsHttpHandlerBuilder, configure: Action_2<SocketsHttpHandler, IServiceProvider>): ISocketsHttpHandlerBuilder;
 }
 
 
 export type SocketsHttpHandlerBuilderExtensions = SocketsHttpHandlerBuilderExtensions$instance;
 
 export abstract class ValidationServiceCollectionExtensions$instance {
-    static AddValidation(services: IServiceCollection, configureOptions?: Action<ValidationOptions>): IServiceCollection;
+    static AddValidation(services: IServiceCollection, configureOptions?: Action_1<ValidationOptions>): IServiceCollection;
 }
 
 

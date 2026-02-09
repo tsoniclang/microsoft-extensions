@@ -9,25 +9,25 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { MemoryDistributedCacheOptions } from "../../Microsoft.Extensions.Caching.Memory/internal/index.js";
 import type { ILoggerFactory } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
-import type { IBufferWriter, ReadOnlySequence } from "@tsonic/dotnet/System.Buffers.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Nullable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task, ValueTask } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { IBufferWriter_1, ReadOnlySequence_1 } from "@tsonic/dotnet/System.Buffers/internal/index.js";
+import type { Task, Task_1, ValueTask, ValueTask_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IBufferDistributedCache$instance extends IDistributedCache {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IBufferDistributedCache: never;
 
     Get(key: string): byte[] | undefined;
-    GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
+    GetAsync(key: string, token?: CancellationToken): Task_1<byte[] | undefined>;
     Refresh(key: string): void;
     RefreshAsync(key: string, token?: CancellationToken): Task;
-    Set(key: string, value: ReadOnlySequence<System_Internal.Byte>, options: DistributedCacheEntryOptions): void;
+    Set(key: string, value: ReadOnlySequence_1<System_Internal.Byte>, options: DistributedCacheEntryOptions): void;
     Set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
-    SetAsync(key: string, value: ReadOnlySequence<System_Internal.Byte>, options: DistributedCacheEntryOptions, token?: CancellationToken): ValueTask;
+    SetAsync(key: string, value: ReadOnlySequence_1<System_Internal.Byte>, options: DistributedCacheEntryOptions, token?: CancellationToken): ValueTask;
     SetAsync(key: string, value: byte[], options: DistributedCacheEntryOptions, token?: CancellationToken): Task;
-    TryGet(key: string, destination: IBufferWriter<System_Internal.Byte>): boolean;
-    TryGetAsync(key: string, destination: IBufferWriter<System_Internal.Byte>, token?: CancellationToken): ValueTask<System_Internal.Boolean>;
+    TryGet(key: string, destination: IBufferWriter_1<System_Internal.Byte>): boolean;
+    TryGetAsync(key: string, destination: IBufferWriter_1<System_Internal.Byte>, token?: CancellationToken): ValueTask_1<System_Internal.Boolean>;
 }
 
 
@@ -37,7 +37,7 @@ export interface IDistributedCache$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IDistributedCache: never;
 
     Get(key: string): byte[] | undefined;
-    GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
+    GetAsync(key: string, token?: CancellationToken): Task_1<byte[] | undefined>;
     Refresh(key: string): void;
     RefreshAsync(key: string, token?: CancellationToken): Task;
     Set(key: string, value: byte[], options: DistributedCacheEntryOptions): void;
@@ -48,9 +48,9 @@ export interface IDistributedCache$instance {
 export type IDistributedCache = IDistributedCache$instance;
 
 export interface DistributedCacheEntryOptions$instance {
-    AbsoluteExpiration: Nullable<DateTimeOffset>;
-    AbsoluteExpirationRelativeToNow: Nullable<TimeSpan>;
-    SlidingExpiration: Nullable<TimeSpan>;
+    AbsoluteExpiration: Nullable_1<DateTimeOffset>;
+    AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
+    SlidingExpiration: Nullable_1<TimeSpan>;
 }
 
 
@@ -61,11 +61,11 @@ export const DistributedCacheEntryOptions: {
 
 export type DistributedCacheEntryOptions = DistributedCacheEntryOptions$instance;
 
-export interface MemoryDistributedCache$instance {
+export interface MemoryDistributedCache$instance extends IDistributedCache$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IDistributedCache: never;
 
     Get(key: string): byte[] | undefined;
-    GetAsync(key: string, token?: CancellationToken): Task<byte[] | undefined>;
+    GetAsync(key: string, token?: CancellationToken): Task_1<byte[] | undefined>;
     Refresh(key: string): void;
     RefreshAsync(key: string, token?: CancellationToken): Task;
     Remove(key: string): void;
@@ -85,8 +85,6 @@ export interface __MemoryDistributedCache$views {
     As_IDistributedCache(): IDistributedCache$instance;
 }
 
-export interface MemoryDistributedCache$instance extends IDistributedCache$instance {}
-
 export type MemoryDistributedCache = MemoryDistributedCache$instance & __MemoryDistributedCache$views;
 
 
@@ -101,7 +99,7 @@ export type DistributedCacheEntryExtensions = DistributedCacheEntryExtensions$in
 
 export abstract class DistributedCacheExtensions$instance {
     static GetString(cache: IDistributedCache, key: string): string | undefined;
-    static GetStringAsync(cache: IDistributedCache, key: string, token?: CancellationToken): Task<string | undefined>;
+    static GetStringAsync(cache: IDistributedCache, key: string, token?: CancellationToken): Task_1<string | undefined>;
     static Set(cache: IDistributedCache, key: string, value: byte[]): void;
     static SetAsync(cache: IDistributedCache, key: string, value: byte[], token?: CancellationToken): Task;
     static SetString(cache: IDistributedCache, key: string, value: string, options: DistributedCacheEntryOptions): void;

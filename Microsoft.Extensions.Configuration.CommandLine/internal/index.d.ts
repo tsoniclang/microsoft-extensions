@@ -12,14 +12,14 @@ import type { ptr } from "@tsonic/core/types.js";
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary, IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CommandLineConfigurationProvider$instance extends ConfigurationProvider {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    GetChildKeys(earlierKeys: IEnumerable<System_Internal.String>, parentPath: string): IEnumerable<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
     Set(key: string, value: string): void;
@@ -28,7 +28,7 @@ export interface CommandLineConfigurationProvider$instance extends Configuration
 
 
 export const CommandLineConfigurationProvider: {
-    new(args: IEnumerable<System_Internal.String>, switchMappings: IDictionary<System_Internal.String, System_Internal.String>): CommandLineConfigurationProvider;
+    new(args: IEnumerable_1<System_Internal.String>, switchMappings: IDictionary_2<System_Internal.String, System_Internal.String>): CommandLineConfigurationProvider;
 };
 
 
@@ -39,12 +39,12 @@ export interface __CommandLineConfigurationProvider$views {
 export type CommandLineConfigurationProvider = CommandLineConfigurationProvider$instance & __CommandLineConfigurationProvider$views;
 
 
-export interface CommandLineConfigurationSource$instance {
+export interface CommandLineConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Args: IEnumerable<System_Internal.String>;
-    get SwitchMappings(): IDictionary<System_Internal.String, System_Internal.String> | undefined;
-    set SwitchMappings(value: IDictionary<System_Internal.String, System_Internal.String> | undefined);
+    Args: IEnumerable_1<System_Internal.String>;
+    get SwitchMappings(): IDictionary_2<System_Internal.String, System_Internal.String> | undefined;
+    set SwitchMappings(value: IDictionary_2<System_Internal.String, System_Internal.String> | undefined);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
@@ -57,8 +57,6 @@ export const CommandLineConfigurationSource: {
 export interface __CommandLineConfigurationSource$views {
     As_IConfigurationSource(): Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance;
 }
-
-export interface CommandLineConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {}
 
 export type CommandLineConfigurationSource = CommandLineConfigurationSource$instance & __CommandLineConfigurationSource$views;
 

@@ -6,11 +6,11 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import type { ICollection, IEnumerable, IReadOnlyDictionary, ISet } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Enum, Exception, Func, IComparable, IConvertible, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable, Object as ClrObject, String as ClrString, TimeSpan, ValueType } from "@tsonic/dotnet/System.js";
-import type { CancellationToken } from "@tsonic/dotnet/System.Threading.js";
-import type { Task } from "@tsonic/dotnet/System.Threading.Tasks.js";
+import type { ICollection_1, IEnumerable_1, IReadOnlyDictionary_2, ISet_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { Task, Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
+import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Enum, Exception, Func_2, IComparable, IConvertible, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
 export enum HealthStatus {
     Unhealthy = 0,
@@ -22,7 +22,7 @@ export enum HealthStatus {
 export interface IHealthCheck$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never;
 
-    CheckHealthAsync(context: HealthCheckContext, cancellationToken?: CancellationToken): Task<HealthCheckResult>;
+    CheckHealthAsync(context: HealthCheckContext, cancellationToken?: CancellationToken): Task_1<HealthCheckResult>;
 }
 
 
@@ -38,7 +38,7 @@ export interface IHealthCheckPublisher$instance {
 export type IHealthCheckPublisher = IHealthCheckPublisher$instance;
 
 export interface HealthCheckResult$instance {
-    readonly Data: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Description: string | undefined;
     readonly Exception: Exception | undefined;
     readonly Status: HealthStatus;
@@ -46,28 +46,28 @@ export interface HealthCheckResult$instance {
 
 
 export const HealthCheckResult: {
-    new(status: HealthStatus, description: string, exception: Exception, data: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
-    Degraded(description?: string, exception?: Exception, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
-    Healthy(description?: string, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
-    Unhealthy(description?: string, exception?: Exception, data?: IReadOnlyDictionary<System_Internal.String, unknown>): HealthCheckResult;
+    new(status: HealthStatus, description: string, exception: Exception, data: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
+    Degraded(description?: string, exception?: Exception, data?: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
+    Healthy(description?: string, data?: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
+    Unhealthy(description?: string, exception?: Exception, data?: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
 };
 
 
 export type HealthCheckResult = HealthCheckResult$instance;
 
 export interface HealthReportEntry$instance {
-    readonly Data: IReadOnlyDictionary<System_Internal.String, unknown>;
+    readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Description: string | undefined;
     readonly Duration: TimeSpan;
     readonly Exception: Exception | undefined;
     readonly Status: HealthStatus;
-    readonly Tags: IEnumerable<System_Internal.String>;
+    readonly Tags: IEnumerable_1<System_Internal.String>;
 }
 
 
 export const HealthReportEntry: {
-    new(status: HealthStatus, description: string, duration: TimeSpan, exception: Exception, data: IReadOnlyDictionary<System_Internal.String, unknown>): HealthReportEntry;
-    new(status: HealthStatus, description: string, duration: TimeSpan, exception: Exception, data: IReadOnlyDictionary<System_Internal.String, unknown>, tags: IEnumerable<System_Internal.String>): HealthReportEntry;
+    new(status: HealthStatus, description: string, duration: TimeSpan, exception: Exception, data: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthReportEntry;
+    new(status: HealthStatus, description: string, duration: TimeSpan, exception: Exception, data: IReadOnlyDictionary_2<System_Internal.String, unknown>, tags: IEnumerable_1<System_Internal.String>): HealthReportEntry;
 };
 
 
@@ -88,8 +88,8 @@ export type HealthCheckContext = HealthCheckContext$instance;
 export interface HealthCheckPublisherOptions$instance {
     Delay: TimeSpan;
     Period: TimeSpan;
-    get Predicate(): Func<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func<HealthCheckRegistration, System_Internal.Boolean> | undefined);
+    get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined;
+    set Predicate(value: Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined);
     Timeout: TimeSpan;
 }
 
@@ -102,29 +102,29 @@ export const HealthCheckPublisherOptions: {
 export type HealthCheckPublisherOptions = HealthCheckPublisherOptions$instance;
 
 export interface HealthCheckRegistration$instance {
-    Delay: Nullable<TimeSpan>;
-    Factory: Func<IServiceProvider, IHealthCheck>;
+    Delay: Nullable_1<TimeSpan>;
+    Factory: Func_2<IServiceProvider, IHealthCheck>;
     FailureStatus: HealthStatus;
     Name: string;
-    Period: Nullable<TimeSpan>;
-    readonly Tags: ISet<System_Internal.String>;
+    Period: Nullable_1<TimeSpan>;
+    readonly Tags: ISet_1<System_Internal.String>;
     Timeout: TimeSpan;
 }
 
 
 export const HealthCheckRegistration: {
-    new(name: string, instance: IHealthCheck, failureStatus: Nullable<HealthStatus>, tags: IEnumerable<System_Internal.String>): HealthCheckRegistration;
-    new(name: string, instance: IHealthCheck, failureStatus: Nullable<HealthStatus>, tags: IEnumerable<System_Internal.String>, timeout: Nullable<TimeSpan>): HealthCheckRegistration;
-    new(name: string, factory: Func<IServiceProvider, IHealthCheck>, failureStatus: Nullable<HealthStatus>, tags: IEnumerable<System_Internal.String>): HealthCheckRegistration;
-    new(name: string, factory: Func<IServiceProvider, IHealthCheck>, failureStatus: Nullable<HealthStatus>, tags: IEnumerable<System_Internal.String>, timeout: Nullable<TimeSpan>): HealthCheckRegistration;
+    new(name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): HealthCheckRegistration;
+    new(name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: Nullable_1<TimeSpan>): HealthCheckRegistration;
+    new(name: string, factory: Func_2<IServiceProvider, IHealthCheck>, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): HealthCheckRegistration;
+    new(name: string, factory: Func_2<IServiceProvider, IHealthCheck>, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: Nullable_1<TimeSpan>): HealthCheckRegistration;
 };
 
 
 export type HealthCheckRegistration = HealthCheckRegistration$instance;
 
 export interface HealthCheckService$instance {
-    CheckHealthAsync(cancellationToken?: CancellationToken): Task<HealthReport>;
-    CheckHealthAsync(predicate: Func<HealthCheckRegistration, System_Internal.Boolean>, cancellationToken?: CancellationToken): Task<HealthReport>;
+    CheckHealthAsync(cancellationToken?: CancellationToken): Task_1<HealthReport>;
+    CheckHealthAsync(predicate: Func_2<HealthCheckRegistration, System_Internal.Boolean>, cancellationToken?: CancellationToken): Task_1<HealthReport>;
 }
 
 
@@ -135,7 +135,7 @@ export const HealthCheckService: (abstract new() => HealthCheckService) & {
 export type HealthCheckService = HealthCheckService$instance;
 
 export interface HealthCheckServiceOptions$instance {
-    readonly Registrations: ICollection<HealthCheckRegistration>;
+    readonly Registrations: ICollection_1<HealthCheckRegistration>;
 }
 
 
@@ -147,15 +147,15 @@ export const HealthCheckServiceOptions: {
 export type HealthCheckServiceOptions = HealthCheckServiceOptions$instance;
 
 export interface HealthReport$instance {
-    readonly Entries: IReadOnlyDictionary<System_Internal.String, HealthReportEntry>;
+    readonly Entries: IReadOnlyDictionary_2<System_Internal.String, HealthReportEntry>;
     readonly Status: HealthStatus;
     readonly TotalDuration: TimeSpan;
 }
 
 
 export const HealthReport: {
-    new(entries: IReadOnlyDictionary<System_Internal.String, HealthReportEntry>, totalDuration: TimeSpan): HealthReport;
-    new(entries: IReadOnlyDictionary<System_Internal.String, HealthReportEntry>, status: HealthStatus, totalDuration: TimeSpan): HealthReport;
+    new(entries: IReadOnlyDictionary_2<System_Internal.String, HealthReportEntry>, totalDuration: TimeSpan): HealthReport;
+    new(entries: IReadOnlyDictionary_2<System_Internal.String, HealthReportEntry>, status: HealthStatus, totalDuration: TimeSpan): HealthReport;
 };
 
 

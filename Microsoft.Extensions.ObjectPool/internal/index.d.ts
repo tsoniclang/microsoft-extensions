@@ -6,10 +6,10 @@
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 // Import types from other namespaces
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from "@tsonic/dotnet/System.js";
-import * as System_Text_Internal from "@tsonic/dotnet/System.Text.js";
-import type { StringBuilder } from "@tsonic/dotnet/System.Text.js";
+import * as System_Text_Internal from "@tsonic/dotnet/System.Text/internal/index.js";
+import type { StringBuilder } from "@tsonic/dotnet/System.Text/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IPooledObjectPolicy_1$instance<T> {
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
@@ -128,7 +128,7 @@ export const ObjectPoolProvider: (abstract new() => ObjectPoolProvider) & {
 
 export type ObjectPoolProvider = ObjectPoolProvider$instance;
 
-export interface PooledObjectPolicy_1$instance<T> {
+export interface PooledObjectPolicy_1$instance<T> extends IPooledObjectPolicy_1$instance<T> {
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
 
     Create(): T;
@@ -143,8 +143,6 @@ export const PooledObjectPolicy_1: (abstract new<T>() => PooledObjectPolicy_1<T>
 export interface __PooledObjectPolicy_1$views<T> {
     As_IPooledObjectPolicy_1(): IPooledObjectPolicy_1$instance<T>;
 }
-
-export interface PooledObjectPolicy_1$instance<T> extends IPooledObjectPolicy_1$instance<T> {}
 
 export type PooledObjectPolicy_1<T> = PooledObjectPolicy_1$instance<T> & __PooledObjectPolicy_1$views<T>;
 

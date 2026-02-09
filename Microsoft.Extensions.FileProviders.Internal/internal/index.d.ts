@@ -9,20 +9,20 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { ExclusionFilters } from "../../Microsoft.Extensions.FileProviders.Physical/internal/index.js";
 import * as Microsoft_Extensions_FileProviders_Internal from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IDirectoryContents, IFileInfo } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface PhysicalDirectoryContents$instance {
+export interface PhysicalDirectoryContents$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Exists: boolean;
-    GetEnumerator(): IEnumerator<IFileInfo>;
+    GetEnumerator(): IEnumerator_1<IFileInfo>;
 }
 
 
@@ -35,8 +35,6 @@ export const PhysicalDirectoryContents: {
 export interface __PhysicalDirectoryContents$views {
     As_IDirectoryContents(): Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance;
 }
-
-export interface PhysicalDirectoryContents$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance {}
 
 export type PhysicalDirectoryContents = PhysicalDirectoryContents$instance & __PhysicalDirectoryContents$views;
 

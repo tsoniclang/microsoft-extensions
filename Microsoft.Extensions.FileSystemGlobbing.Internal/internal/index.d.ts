@@ -8,14 +8,14 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import type { DirectoryInfoBase, FileInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
 import type { PatternMatchingResult } from "../../Microsoft.Extensions.FileSystemGlobbing/internal/index.js";
-import type { IEnumerable, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System.js";
+import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_2, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface ILinearPattern$instance extends IPattern {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern: never;
 
-    readonly Segments: IList<IPathSegment>;
+    readonly Segments: IList_1<IPathSegment>;
     CreatePatternContextForInclude(): IPatternContext;
 }
 
@@ -46,7 +46,7 @@ export type IPattern = IPattern$instance;
 export interface IPatternContext$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action<IPathSegment, System_Internal.Boolean>): void;
+    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
@@ -59,10 +59,10 @@ export type IPatternContext = IPatternContext$instance;
 export interface IRaggedPattern$instance extends IPattern {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern: never;
 
-    readonly Segments: IList<IPathSegment>;
-    readonly StartsWith: IList<IPathSegment>;
-    readonly Contains: IList<IList<IPathSegment>>;
-    readonly EndsWith: IList<IPathSegment>;
+    readonly Segments: IList_1<IPathSegment>;
+    readonly StartsWith: IList_1<IPathSegment>;
+    readonly Contains: IList_1<IList_1<IPathSegment>>;
+    readonly EndsWith: IList_1<IPathSegment>;
     CreatePatternContextForInclude(): IPatternContext;
 }
 
@@ -92,7 +92,7 @@ export interface MatcherContext$instance {
 
 
 export const MatcherContext: {
-    new(includePatterns: IEnumerable<IPattern>, excludePatterns: IEnumerable<IPattern>, directoryInfo: DirectoryInfoBase, comparison: StringComparison): MatcherContext;
+    new(includePatterns: IEnumerable_1<IPattern>, excludePatterns: IEnumerable_1<IPattern>, directoryInfo: DirectoryInfoBase, comparison: StringComparison): MatcherContext;
 };
 
 

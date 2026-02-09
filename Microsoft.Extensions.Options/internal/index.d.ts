@@ -9,12 +9,12 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import type { BinderOptions, IConfiguration } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IServiceCollection } from "../../Microsoft.Extensions.DependencyInjection/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { ValidationResult } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Action, Attribute, Boolean as ClrBoolean, Exception, Func, IDisposable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System.js";
-import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization.js";
-import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { ValidationResult } from "@tsonic/dotnet/System.ComponentModel.DataAnnotations/internal/index.js";
+import * as System_Runtime_Serialization_Internal from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Action_1, Action_2, Action_3, Action_4, Action_5, Action_6, Attribute, Boolean as ClrBoolean, Exception, Func_1, Func_2, Func_3, Func_4, Func_5, Func_6, Func_7, IDisposable, Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IConfigureNamedOptions_1$instance<TOptions> extends IConfigureOptions_1<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
@@ -68,7 +68,7 @@ export interface IOptionsMonitor_1$instance<TOptions> {
 
     readonly CurrentValue: TOptions;
     Get(name: string): TOptions;
-    OnChange(listener: Action<TOptions, System_Internal.String>): IDisposable;
+    OnChange(listener: Action_2<TOptions, System_Internal.String>): IDisposable;
 }
 
 
@@ -78,7 +78,7 @@ export interface IOptionsMonitorCache_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsMonitorCache_1: never;
 
     Clear(): void;
-    GetOrAdd(name: string, createOptions: Func<TOptions>): TOptions;
+    GetOrAdd(name: string, createOptions: Func_1<TOptions>): TOptions;
     TryAdd(name: string, options: TOptions): boolean;
     TryRemove(name: string): boolean;
 }
@@ -125,7 +125,7 @@ export interface IValidateOptions_1$instance<TOptions> {
 
 export type IValidateOptions_1<TOptions> = IValidateOptions_1$instance<TOptions>;
 
-export interface ConfigurationChangeTokenSource_1$instance<TOptions> {
+export interface ConfigurationChangeTokenSource_1$instance<TOptions> extends IOptionsChangeTokenSource_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1: never;
 
     readonly Name: string;
@@ -142,8 +142,6 @@ export const ConfigurationChangeTokenSource_1: {
 export interface __ConfigurationChangeTokenSource_1$views<TOptions> {
     As_IOptionsChangeTokenSource_1(): IOptionsChangeTokenSource_1$instance<TOptions>;
 }
-
-export interface ConfigurationChangeTokenSource_1$instance<TOptions> extends IOptionsChangeTokenSource_1$instance<TOptions> {}
 
 export type ConfigurationChangeTokenSource_1<TOptions> = ConfigurationChangeTokenSource_1$instance<TOptions> & __ConfigurationChangeTokenSource_1$views<TOptions>;
 
@@ -171,7 +169,7 @@ export interface ConfigureNamedOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions> | undefined;
+    readonly Action: Action_1<TOptions> | undefined;
     readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
     Configure(options: TOptions): void;
@@ -179,7 +177,7 @@ export interface ConfigureNamedOptions_1$instance<TOptions> {
 
 
 export const ConfigureNamedOptions_1: {
-    new<TOptions>(name: string, action: Action<TOptions>): ConfigureNamedOptions_1<TOptions>;
+    new<TOptions>(name: string, action: Action_1<TOptions>): ConfigureNamedOptions_1<TOptions>;
 };
 
 
@@ -195,7 +193,7 @@ export interface ConfigureNamedOptions_2$instance<TOptions, TDep> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep> | undefined;
+    readonly Action: Action_2<TOptions, TDep> | undefined;
     readonly Dependency: TDep;
     readonly Name: string | undefined;
     Configure(name: string, options: TOptions): void;
@@ -204,7 +202,7 @@ export interface ConfigureNamedOptions_2$instance<TOptions, TDep> {
 
 
 export const ConfigureNamedOptions_2: {
-    new<TOptions, TDep>(name: string, dependency: TDep, action: Action<TOptions, TDep>): ConfigureNamedOptions_2<TOptions, TDep>;
+    new<TOptions, TDep>(name: string, dependency: TDep, action: Action_2<TOptions, TDep>): ConfigureNamedOptions_2<TOptions, TDep>;
 };
 
 
@@ -220,7 +218,7 @@ export interface ConfigureNamedOptions_3$instance<TOptions, TDep1, TDep2> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2> | undefined;
+    readonly Action: Action_3<TOptions, TDep1, TDep2> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Name: string | undefined;
@@ -230,7 +228,7 @@ export interface ConfigureNamedOptions_3$instance<TOptions, TDep1, TDep2> {
 
 
 export const ConfigureNamedOptions_3: {
-    new<TOptions, TDep1, TDep2>(name: string, dependency: TDep1, dependency2: TDep2, action: Action<TOptions, TDep1, TDep2>): ConfigureNamedOptions_3<TOptions, TDep1, TDep2>;
+    new<TOptions, TDep1, TDep2>(name: string, dependency: TDep1, dependency2: TDep2, action: Action_3<TOptions, TDep1, TDep2>): ConfigureNamedOptions_3<TOptions, TDep1, TDep2>;
 };
 
 
@@ -246,7 +244,7 @@ export interface ConfigureNamedOptions_4$instance<TOptions, TDep1, TDep2, TDep3>
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2, TDep3> | undefined;
+    readonly Action: Action_4<TOptions, TDep1, TDep2, TDep3> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
@@ -257,7 +255,7 @@ export interface ConfigureNamedOptions_4$instance<TOptions, TDep1, TDep2, TDep3>
 
 
 export const ConfigureNamedOptions_4: {
-    new<TOptions, TDep1, TDep2, TDep3>(name: string, dependency: TDep1, dependency2: TDep2, dependency3: TDep3, action: Action<TOptions, TDep1, TDep2, TDep3>): ConfigureNamedOptions_4<TOptions, TDep1, TDep2, TDep3>;
+    new<TOptions, TDep1, TDep2, TDep3>(name: string, dependency: TDep1, dependency2: TDep2, dependency3: TDep3, action: Action_4<TOptions, TDep1, TDep2, TDep3>): ConfigureNamedOptions_4<TOptions, TDep1, TDep2, TDep3>;
 };
 
 
@@ -273,7 +271,7 @@ export interface ConfigureNamedOptions_5$instance<TOptions, TDep1, TDep2, TDep3,
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2, TDep3, TDep4> | undefined;
+    readonly Action: Action_5<TOptions, TDep1, TDep2, TDep3, TDep4> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
@@ -285,7 +283,7 @@ export interface ConfigureNamedOptions_5$instance<TOptions, TDep1, TDep2, TDep3,
 
 
 export const ConfigureNamedOptions_5: {
-    new<TOptions, TDep1, TDep2, TDep3, TDep4>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, action: Action<TOptions, TDep1, TDep2, TDep3, TDep4>): ConfigureNamedOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4>;
+    new<TOptions, TDep1, TDep2, TDep3, TDep4>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, action: Action_5<TOptions, TDep1, TDep2, TDep3, TDep4>): ConfigureNamedOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4>;
 };
 
 
@@ -301,7 +299,7 @@ export interface ConfigureNamedOptions_6$instance<TOptions, TDep1, TDep2, TDep3,
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> | undefined;
+    readonly Action: Action_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
@@ -314,7 +312,7 @@ export interface ConfigureNamedOptions_6$instance<TOptions, TDep1, TDep2, TDep3,
 
 
 export const ConfigureNamedOptions_6: {
-    new<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, dependency5: TDep5, action: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): ConfigureNamedOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
+    new<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, dependency5: TDep5, action: Action_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): ConfigureNamedOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
 };
 
 
@@ -326,16 +324,16 @@ export interface __ConfigureNamedOptions_6$views<TOptions, TDep1, TDep2, TDep3, 
 export type ConfigureNamedOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> = ConfigureNamedOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> & __ConfigureNamedOptions_6$views<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
 
 
-export interface ConfigureOptions_1$instance<TOptions> {
+export interface ConfigureOptions_1$instance<TOptions> extends IConfigureOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions> | undefined;
+    readonly Action: Action_1<TOptions> | undefined;
     Configure(options: TOptions): void;
 }
 
 
 export const ConfigureOptions_1: {
-    new<TOptions>(action: Action<TOptions>): ConfigureOptions_1<TOptions>;
+    new<TOptions>(action: Action_1<TOptions>): ConfigureOptions_1<TOptions>;
 };
 
 
@@ -343,12 +341,10 @@ export interface __ConfigureOptions_1$views<TOptions> {
     As_IConfigureOptions_1(): IConfigureOptions_1$instance<TOptions>;
 }
 
-export interface ConfigureOptions_1$instance<TOptions> extends IConfigureOptions_1$instance<TOptions> {}
-
 export type ConfigureOptions_1<TOptions> = ConfigureOptions_1$instance<TOptions> & __ConfigureOptions_1$views<TOptions>;
 
 
-export interface DataAnnotationValidateOptions_1$instance<TOptions> {
+export interface DataAnnotationValidateOptions_1$instance<TOptions> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly Name: string | undefined;
@@ -365,8 +361,6 @@ export interface __DataAnnotationValidateOptions_1$views<TOptions> {
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
 
-export interface DataAnnotationValidateOptions_1$instance<TOptions> extends IValidateOptions_1$instance<TOptions> {}
-
 export type DataAnnotationValidateOptions_1<TOptions> = DataAnnotationValidateOptions_1$instance<TOptions> & __DataAnnotationValidateOptions_1$views<TOptions>;
 
 
@@ -381,7 +375,7 @@ export interface NamedConfigureFromConfigurationOptions_1$instance<TOptions> ext
 
 export const NamedConfigureFromConfigurationOptions_1: {
     new<TOptions>(name: string, config: IConfiguration): NamedConfigureFromConfigurationOptions_1<TOptions>;
-    new<TOptions>(name: string, config: IConfiguration, configureBinder: Action<BinderOptions>): NamedConfigureFromConfigurationOptions_1<TOptions>;
+    new<TOptions>(name: string, config: IConfiguration, configureBinder: Action_1<BinderOptions>): NamedConfigureFromConfigurationOptions_1<TOptions>;
 };
 
 
@@ -396,30 +390,30 @@ export type NamedConfigureFromConfigurationOptions_1<TOptions> = NamedConfigureF
 export interface OptionsBuilder_1$instance<TOptions> {
     readonly Name: string;
     readonly Services: IServiceCollection;
-    Configure(configureOptions: Action<TOptions>): OptionsBuilder_1<TOptions>;
-    Configure<TDep>(configureOptions: Action<TOptions, TDep>): OptionsBuilder_1<TOptions>;
-    Configure<TDep1, TDep2>(configureOptions: Action<TOptions, TDep1, TDep2>): OptionsBuilder_1<TOptions>;
-    Configure<TDep1, TDep2, TDep3>(configureOptions: Action<TOptions, TDep1, TDep2, TDep3>): OptionsBuilder_1<TOptions>;
-    Configure<TDep1, TDep2, TDep3, TDep4>(configureOptions: Action<TOptions, TDep1, TDep2, TDep3, TDep4>): OptionsBuilder_1<TOptions>;
-    Configure<TDep1, TDep2, TDep3, TDep4, TDep5>(configureOptions: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): OptionsBuilder_1<TOptions>;
-    PostConfigure(configureOptions: Action<TOptions>): OptionsBuilder_1<TOptions>;
-    PostConfigure<TDep>(configureOptions: Action<TOptions, TDep>): OptionsBuilder_1<TOptions>;
-    PostConfigure<TDep1, TDep2>(configureOptions: Action<TOptions, TDep1, TDep2>): OptionsBuilder_1<TOptions>;
-    PostConfigure<TDep1, TDep2, TDep3>(configureOptions: Action<TOptions, TDep1, TDep2, TDep3>): OptionsBuilder_1<TOptions>;
-    PostConfigure<TDep1, TDep2, TDep3, TDep4>(configureOptions: Action<TOptions, TDep1, TDep2, TDep3, TDep4>): OptionsBuilder_1<TOptions>;
-    PostConfigure<TDep1, TDep2, TDep3, TDep4, TDep5>(configureOptions: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): OptionsBuilder_1<TOptions>;
-    Validate(validation: Func<TOptions, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
-    Validate(validation: Func<TOptions, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
-    Validate<TDep>(validation: Func<TOptions, TDep, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
-    Validate<TDep>(validation: Func<TOptions, TDep, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2>(validation: Func<TOptions, TDep1, TDep2, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2>(validation: Func<TOptions, TDep1, TDep2, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2, TDep3>(validation: Func<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2, TDep3>(validation: Func<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2, TDep3, TDep4>(validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2, TDep3, TDep4>(validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2, TDep3, TDep4, TDep5>(validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
-    Validate<TDep1, TDep2, TDep3, TDep4, TDep5>(validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
+    Configure(configureOptions: Action_1<TOptions>): OptionsBuilder_1<TOptions>;
+    Configure<TDep>(configureOptions: Action_2<TOptions, TDep>): OptionsBuilder_1<TOptions>;
+    Configure<TDep1, TDep2>(configureOptions: Action_3<TOptions, TDep1, TDep2>): OptionsBuilder_1<TOptions>;
+    Configure<TDep1, TDep2, TDep3>(configureOptions: Action_4<TOptions, TDep1, TDep2, TDep3>): OptionsBuilder_1<TOptions>;
+    Configure<TDep1, TDep2, TDep3, TDep4>(configureOptions: Action_5<TOptions, TDep1, TDep2, TDep3, TDep4>): OptionsBuilder_1<TOptions>;
+    Configure<TDep1, TDep2, TDep3, TDep4, TDep5>(configureOptions: Action_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): OptionsBuilder_1<TOptions>;
+    PostConfigure(configureOptions: Action_1<TOptions>): OptionsBuilder_1<TOptions>;
+    PostConfigure<TDep>(configureOptions: Action_2<TOptions, TDep>): OptionsBuilder_1<TOptions>;
+    PostConfigure<TDep1, TDep2>(configureOptions: Action_3<TOptions, TDep1, TDep2>): OptionsBuilder_1<TOptions>;
+    PostConfigure<TDep1, TDep2, TDep3>(configureOptions: Action_4<TOptions, TDep1, TDep2, TDep3>): OptionsBuilder_1<TOptions>;
+    PostConfigure<TDep1, TDep2, TDep3, TDep4>(configureOptions: Action_5<TOptions, TDep1, TDep2, TDep3, TDep4>): OptionsBuilder_1<TOptions>;
+    PostConfigure<TDep1, TDep2, TDep3, TDep4, TDep5>(configureOptions: Action_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): OptionsBuilder_1<TOptions>;
+    Validate(validation: Func_2<TOptions, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
+    Validate(validation: Func_2<TOptions, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
+    Validate<TDep>(validation: Func_3<TOptions, TDep, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
+    Validate<TDep>(validation: Func_3<TOptions, TDep, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2>(validation: Func_4<TOptions, TDep1, TDep2, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2>(validation: Func_4<TOptions, TDep1, TDep2, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2, TDep3>(validation: Func_5<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2, TDep3>(validation: Func_5<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2, TDep3, TDep4>(validation: Func_6<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2, TDep3, TDep4>(validation: Func_6<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2, TDep3, TDep4, TDep5>(validation: Func_7<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>): OptionsBuilder_1<TOptions>;
+    Validate<TDep1, TDep2, TDep3, TDep4, TDep5>(validation: Func_7<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>, failureMessage: string): OptionsBuilder_1<TOptions>;
 }
 
 
@@ -430,11 +424,11 @@ export const OptionsBuilder_1: {
 
 export type OptionsBuilder_1<TOptions> = OptionsBuilder_1$instance<TOptions>;
 
-export interface OptionsCache_1$instance<TOptions> {
+export interface OptionsCache_1$instance<TOptions> extends IOptionsMonitorCache_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsMonitorCache_1: never;
 
     Clear(): void;
-    GetOrAdd(name: string, createOptions: Func<TOptions>): TOptions;
+    GetOrAdd(name: string, createOptions: Func_1<TOptions>): TOptions;
     TryAdd(name: string, options: TOptions): boolean;
     TryRemove(name: string): boolean;
 }
@@ -449,12 +443,10 @@ export interface __OptionsCache_1$views<TOptions> {
     As_IOptionsMonitorCache_1(): IOptionsMonitorCache_1$instance<TOptions>;
 }
 
-export interface OptionsCache_1$instance<TOptions> extends IOptionsMonitorCache_1$instance<TOptions> {}
-
 export type OptionsCache_1<TOptions> = OptionsCache_1$instance<TOptions> & __OptionsCache_1$views<TOptions>;
 
 
-export interface OptionsFactory_1$instance<TOptions> {
+export interface OptionsFactory_1$instance<TOptions> extends IOptionsFactory_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsFactory_1: never;
 
     Create(name: string): TOptions;
@@ -463,8 +455,8 @@ export interface OptionsFactory_1$instance<TOptions> {
 
 
 export const OptionsFactory_1: {
-    new<TOptions>(setups: IEnumerable<IConfigureOptions_1<TOptions>>, postConfigures: IEnumerable<IPostConfigureOptions_1<TOptions>>): OptionsFactory_1<TOptions>;
-    new<TOptions>(setups: IEnumerable<IConfigureOptions_1<TOptions>>, postConfigures: IEnumerable<IPostConfigureOptions_1<TOptions>>, validations: IEnumerable<IValidateOptions_1<TOptions>>): OptionsFactory_1<TOptions>;
+    new<TOptions>(setups: IEnumerable_1<IConfigureOptions_1<TOptions>>, postConfigures: IEnumerable_1<IPostConfigureOptions_1<TOptions>>): OptionsFactory_1<TOptions>;
+    new<TOptions>(setups: IEnumerable_1<IConfigureOptions_1<TOptions>>, postConfigures: IEnumerable_1<IPostConfigureOptions_1<TOptions>>, validations: IEnumerable_1<IValidateOptions_1<TOptions>>): OptionsFactory_1<TOptions>;
 };
 
 
@@ -472,12 +464,10 @@ export interface __OptionsFactory_1$views<TOptions> {
     As_IOptionsFactory_1(): IOptionsFactory_1$instance<TOptions>;
 }
 
-export interface OptionsFactory_1$instance<TOptions> extends IOptionsFactory_1$instance<TOptions> {}
-
 export type OptionsFactory_1<TOptions> = OptionsFactory_1$instance<TOptions> & __OptionsFactory_1$views<TOptions>;
 
 
-export interface OptionsManager_1$instance<TOptions> {
+export interface OptionsManager_1$instance<TOptions> extends IOptionsSnapshot_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsSnapshot_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
@@ -496,24 +486,22 @@ export interface __OptionsManager_1$views<TOptions> {
     As_IOptionsSnapshot_1(): IOptionsSnapshot_1$instance<TOptions>;
 }
 
-export interface OptionsManager_1$instance<TOptions> extends IOptionsSnapshot_1$instance<TOptions> {}
-
 export type OptionsManager_1<TOptions> = OptionsManager_1$instance<TOptions> & __OptionsManager_1$views<TOptions>;
 
 
-export interface OptionsMonitor_1$instance<TOptions> {
+export interface OptionsMonitor_1$instance<TOptions> extends IOptionsMonitor_1$instance<TOptions>, System_Internal.IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsMonitor_1: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly CurrentValue: TOptions;
     Dispose(): void;
     Get(name: string): TOptions;
-    OnChange(listener: Action<TOptions, System_Internal.String>): IDisposable;
+    OnChange(listener: Action_2<TOptions, System_Internal.String>): IDisposable;
 }
 
 
 export const OptionsMonitor_1: {
-    new<TOptions>(factory: IOptionsFactory_1<TOptions>, sources: IEnumerable<IOptionsChangeTokenSource_1<TOptions>>, cache: IOptionsMonitorCache_1<TOptions>): OptionsMonitor_1<TOptions>;
+    new<TOptions>(factory: IOptionsFactory_1<TOptions>, sources: IEnumerable_1<IOptionsChangeTokenSource_1<TOptions>>, cache: IOptionsMonitorCache_1<TOptions>): OptionsMonitor_1<TOptions>;
 };
 
 
@@ -521,15 +509,13 @@ export interface __OptionsMonitor_1$views<TOptions> {
     As_IOptionsMonitor_1(): IOptionsMonitor_1$instance<TOptions>;
 }
 
-export interface OptionsMonitor_1$instance<TOptions> extends IOptionsMonitor_1$instance<TOptions>, System_Internal.IDisposable {}
-
 export type OptionsMonitor_1<TOptions> = OptionsMonitor_1$instance<TOptions> & __OptionsMonitor_1$views<TOptions>;
 
 
 export interface OptionsValidationException$instance extends Exception {
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    readonly Failures: IEnumerable<System_Internal.String>;
+    readonly Failures: IEnumerable_1<System_Internal.String>;
     readonly Message: string;
     readonly OptionsName: string;
     readonly OptionsType: Type;
@@ -537,7 +523,7 @@ export interface OptionsValidationException$instance extends Exception {
 
 
 export const OptionsValidationException: {
-    new(optionsName: string, optionsType: Type, failureMessages: IEnumerable<System_Internal.String>): OptionsValidationException;
+    new(optionsName: string, optionsType: Type, failureMessages: IEnumerable_1<System_Internal.String>): OptionsValidationException;
 };
 
 
@@ -554,7 +540,7 @@ export const OptionsValidatorAttribute: {
 
 export type OptionsValidatorAttribute = OptionsValidatorAttribute$instance;
 
-export interface OptionsWrapper_1$instance<TOptions> {
+export interface OptionsWrapper_1$instance<TOptions> extends IOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
     readonly Value: TOptions;
@@ -570,22 +556,20 @@ export interface __OptionsWrapper_1$views<TOptions> {
     As_IOptions_1(): IOptions_1$instance<TOptions>;
 }
 
-export interface OptionsWrapper_1$instance<TOptions> extends IOptions_1$instance<TOptions> {}
-
 export type OptionsWrapper_1<TOptions> = OptionsWrapper_1$instance<TOptions> & __OptionsWrapper_1$views<TOptions>;
 
 
-export interface PostConfigureOptions_1$instance<TOptions> {
+export interface PostConfigureOptions_1$instance<TOptions> extends IPostConfigureOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions> | undefined;
+    readonly Action: Action_1<TOptions> | undefined;
     readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
 }
 
 
 export const PostConfigureOptions_1: {
-    new<TOptions>(name: string, action: Action<TOptions>): PostConfigureOptions_1<TOptions>;
+    new<TOptions>(name: string, action: Action_1<TOptions>): PostConfigureOptions_1<TOptions>;
 };
 
 
@@ -593,15 +577,13 @@ export interface __PostConfigureOptions_1$views<TOptions> {
     As_IPostConfigureOptions_1(): IPostConfigureOptions_1$instance<TOptions>;
 }
 
-export interface PostConfigureOptions_1$instance<TOptions> extends IPostConfigureOptions_1$instance<TOptions> {}
-
 export type PostConfigureOptions_1<TOptions> = PostConfigureOptions_1$instance<TOptions> & __PostConfigureOptions_1$views<TOptions>;
 
 
 export interface PostConfigureOptions_2$instance<TOptions, TDep> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep> | undefined;
+    readonly Action: Action_2<TOptions, TDep> | undefined;
     readonly Dependency: TDep;
     readonly Name: string | undefined;
     PostConfigure(name: string, options: TOptions): void;
@@ -610,7 +592,7 @@ export interface PostConfigureOptions_2$instance<TOptions, TDep> {
 
 
 export const PostConfigureOptions_2: {
-    new<TOptions, TDep>(name: string, dependency: TDep, action: Action<TOptions, TDep>): PostConfigureOptions_2<TOptions, TDep>;
+    new<TOptions, TDep>(name: string, dependency: TDep, action: Action_2<TOptions, TDep>): PostConfigureOptions_2<TOptions, TDep>;
 };
 
 
@@ -624,7 +606,7 @@ export type PostConfigureOptions_2<TOptions, TDep> = PostConfigureOptions_2$inst
 export interface PostConfigureOptions_3$instance<TOptions, TDep1, TDep2> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2> | undefined;
+    readonly Action: Action_3<TOptions, TDep1, TDep2> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Name: string | undefined;
@@ -634,7 +616,7 @@ export interface PostConfigureOptions_3$instance<TOptions, TDep1, TDep2> {
 
 
 export const PostConfigureOptions_3: {
-    new<TOptions, TDep1, TDep2>(name: string, dependency: TDep1, dependency2: TDep2, action: Action<TOptions, TDep1, TDep2>): PostConfigureOptions_3<TOptions, TDep1, TDep2>;
+    new<TOptions, TDep1, TDep2>(name: string, dependency: TDep1, dependency2: TDep2, action: Action_3<TOptions, TDep1, TDep2>): PostConfigureOptions_3<TOptions, TDep1, TDep2>;
 };
 
 
@@ -648,7 +630,7 @@ export type PostConfigureOptions_3<TOptions, TDep1, TDep2> = PostConfigureOption
 export interface PostConfigureOptions_4$instance<TOptions, TDep1, TDep2, TDep3> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2, TDep3> | undefined;
+    readonly Action: Action_4<TOptions, TDep1, TDep2, TDep3> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
@@ -659,7 +641,7 @@ export interface PostConfigureOptions_4$instance<TOptions, TDep1, TDep2, TDep3> 
 
 
 export const PostConfigureOptions_4: {
-    new<TOptions, TDep1, TDep2, TDep3>(name: string, dependency: TDep1, dependency2: TDep2, dependency3: TDep3, action: Action<TOptions, TDep1, TDep2, TDep3>): PostConfigureOptions_4<TOptions, TDep1, TDep2, TDep3>;
+    new<TOptions, TDep1, TDep2, TDep3>(name: string, dependency: TDep1, dependency2: TDep2, dependency3: TDep3, action: Action_4<TOptions, TDep1, TDep2, TDep3>): PostConfigureOptions_4<TOptions, TDep1, TDep2, TDep3>;
 };
 
 
@@ -673,7 +655,7 @@ export type PostConfigureOptions_4<TOptions, TDep1, TDep2, TDep3> = PostConfigur
 export interface PostConfigureOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2, TDep3, TDep4> | undefined;
+    readonly Action: Action_5<TOptions, TDep1, TDep2, TDep3, TDep4> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
@@ -685,7 +667,7 @@ export interface PostConfigureOptions_5$instance<TOptions, TDep1, TDep2, TDep3, 
 
 
 export const PostConfigureOptions_5: {
-    new<TOptions, TDep1, TDep2, TDep3, TDep4>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, action: Action<TOptions, TDep1, TDep2, TDep3, TDep4>): PostConfigureOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4>;
+    new<TOptions, TDep1, TDep2, TDep3, TDep4>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, action: Action_5<TOptions, TDep1, TDep2, TDep3, TDep4>): PostConfigureOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4>;
 };
 
 
@@ -699,7 +681,7 @@ export type PostConfigureOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4> = PostC
 export interface PostConfigureOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IPostConfigureOptions_1: never;
 
-    readonly Action: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> | undefined;
+    readonly Action: Action_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> | undefined;
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly Dependency3: TDep3;
@@ -712,7 +694,7 @@ export interface PostConfigureOptions_6$instance<TOptions, TDep1, TDep2, TDep3, 
 
 
 export const PostConfigureOptions_6: {
-    new<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, dependency5: TDep5, action: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): PostConfigureOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
+    new<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, dependency5: TDep5, action: Action_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>): PostConfigureOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
 };
 
 
@@ -749,18 +731,18 @@ export const ValidateObjectMembersAttribute: {
 
 export type ValidateObjectMembersAttribute = ValidateObjectMembersAttribute$instance;
 
-export interface ValidateOptions_1$instance<TOptions> {
+export interface ValidateOptions_1$instance<TOptions> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly FailureMessage: string;
     readonly Name: string | undefined;
-    readonly Validation: Func<TOptions, System_Internal.Boolean>;
+    readonly Validation: Func_2<TOptions, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
 
 export const ValidateOptions_1: {
-    new<TOptions>(name: string, validation: Func<TOptions, System_Internal.Boolean>, failureMessage: string): ValidateOptions_1<TOptions>;
+    new<TOptions>(name: string, validation: Func_2<TOptions, System_Internal.Boolean>, failureMessage: string): ValidateOptions_1<TOptions>;
 };
 
 
@@ -768,24 +750,22 @@ export interface __ValidateOptions_1$views<TOptions> {
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
 
-export interface ValidateOptions_1$instance<TOptions> extends IValidateOptions_1$instance<TOptions> {}
-
 export type ValidateOptions_1<TOptions> = ValidateOptions_1$instance<TOptions> & __ValidateOptions_1$views<TOptions>;
 
 
-export interface ValidateOptions_2$instance<TOptions, TDep> {
+export interface ValidateOptions_2$instance<TOptions, TDep> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly Dependency: TDep;
     readonly FailureMessage: string;
     readonly Name: string | undefined;
-    readonly Validation: Func<TOptions, TDep, System_Internal.Boolean>;
+    readonly Validation: Func_3<TOptions, TDep, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
 
 export const ValidateOptions_2: {
-    new<TOptions, TDep>(name: string, dependency: TDep, validation: Func<TOptions, TDep, System_Internal.Boolean>, failureMessage: string): ValidateOptions_2<TOptions, TDep>;
+    new<TOptions, TDep>(name: string, dependency: TDep, validation: Func_3<TOptions, TDep, System_Internal.Boolean>, failureMessage: string): ValidateOptions_2<TOptions, TDep>;
 };
 
 
@@ -793,25 +773,23 @@ export interface __ValidateOptions_2$views<TOptions, TDep> {
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
 
-export interface ValidateOptions_2$instance<TOptions, TDep> extends IValidateOptions_1$instance<TOptions> {}
-
 export type ValidateOptions_2<TOptions, TDep> = ValidateOptions_2$instance<TOptions, TDep> & __ValidateOptions_2$views<TOptions, TDep>;
 
 
-export interface ValidateOptions_3$instance<TOptions, TDep1, TDep2> {
+export interface ValidateOptions_3$instance<TOptions, TDep1, TDep2> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly Dependency1: TDep1;
     readonly Dependency2: TDep2;
     readonly FailureMessage: string;
     readonly Name: string | undefined;
-    readonly Validation: Func<TOptions, TDep1, TDep2, System_Internal.Boolean>;
+    readonly Validation: Func_4<TOptions, TDep1, TDep2, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
 
 export const ValidateOptions_3: {
-    new<TOptions, TDep1, TDep2>(name: string, dependency1: TDep1, dependency2: TDep2, validation: Func<TOptions, TDep1, TDep2, System_Internal.Boolean>, failureMessage: string): ValidateOptions_3<TOptions, TDep1, TDep2>;
+    new<TOptions, TDep1, TDep2>(name: string, dependency1: TDep1, dependency2: TDep2, validation: Func_4<TOptions, TDep1, TDep2, System_Internal.Boolean>, failureMessage: string): ValidateOptions_3<TOptions, TDep1, TDep2>;
 };
 
 
@@ -819,12 +797,10 @@ export interface __ValidateOptions_3$views<TOptions, TDep1, TDep2> {
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
 
-export interface ValidateOptions_3$instance<TOptions, TDep1, TDep2> extends IValidateOptions_1$instance<TOptions> {}
-
 export type ValidateOptions_3<TOptions, TDep1, TDep2> = ValidateOptions_3$instance<TOptions, TDep1, TDep2> & __ValidateOptions_3$views<TOptions, TDep1, TDep2>;
 
 
-export interface ValidateOptions_4$instance<TOptions, TDep1, TDep2, TDep3> {
+export interface ValidateOptions_4$instance<TOptions, TDep1, TDep2, TDep3> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly Dependency1: TDep1;
@@ -832,13 +808,13 @@ export interface ValidateOptions_4$instance<TOptions, TDep1, TDep2, TDep3> {
     readonly Dependency3: TDep3;
     readonly FailureMessage: string;
     readonly Name: string | undefined;
-    readonly Validation: Func<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>;
+    readonly Validation: Func_5<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
 
 export const ValidateOptions_4: {
-    new<TOptions, TDep1, TDep2, TDep3>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, validation: Func<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>, failureMessage: string): ValidateOptions_4<TOptions, TDep1, TDep2, TDep3>;
+    new<TOptions, TDep1, TDep2, TDep3>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, validation: Func_5<TOptions, TDep1, TDep2, TDep3, System_Internal.Boolean>, failureMessage: string): ValidateOptions_4<TOptions, TDep1, TDep2, TDep3>;
 };
 
 
@@ -846,12 +822,10 @@ export interface __ValidateOptions_4$views<TOptions, TDep1, TDep2, TDep3> {
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
 
-export interface ValidateOptions_4$instance<TOptions, TDep1, TDep2, TDep3> extends IValidateOptions_1$instance<TOptions> {}
-
 export type ValidateOptions_4<TOptions, TDep1, TDep2, TDep3> = ValidateOptions_4$instance<TOptions, TDep1, TDep2, TDep3> & __ValidateOptions_4$views<TOptions, TDep1, TDep2, TDep3>;
 
 
-export interface ValidateOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4> {
+export interface ValidateOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly Dependency1: TDep1;
@@ -860,13 +834,13 @@ export interface ValidateOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4
     readonly Dependency4: TDep4;
     readonly FailureMessage: string;
     readonly Name: string | undefined;
-    readonly Validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>;
+    readonly Validation: Func_6<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
 
 export const ValidateOptions_5: {
-    new<TOptions, TDep1, TDep2, TDep3, TDep4>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>, failureMessage: string): ValidateOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4>;
+    new<TOptions, TDep1, TDep2, TDep3, TDep4>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, validation: Func_6<TOptions, TDep1, TDep2, TDep3, TDep4, System_Internal.Boolean>, failureMessage: string): ValidateOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4>;
 };
 
 
@@ -874,12 +848,10 @@ export interface __ValidateOptions_5$views<TOptions, TDep1, TDep2, TDep3, TDep4>
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
 
-export interface ValidateOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4> extends IValidateOptions_1$instance<TOptions> {}
-
 export type ValidateOptions_5<TOptions, TDep1, TDep2, TDep3, TDep4> = ValidateOptions_5$instance<TOptions, TDep1, TDep2, TDep3, TDep4> & __ValidateOptions_5$views<TOptions, TDep1, TDep2, TDep3, TDep4>;
 
 
-export interface ValidateOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> {
+export interface ValidateOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> extends IValidateOptions_1$instance<TOptions> {
     readonly __tsonic_iface_Microsoft_Extensions_Options_IValidateOptions_1: never;
 
     readonly Dependency1: TDep1;
@@ -889,21 +861,19 @@ export interface ValidateOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4
     readonly Dependency5: TDep5;
     readonly FailureMessage: string;
     readonly Name: string | undefined;
-    readonly Validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>;
+    readonly Validation: Func_7<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>;
     Validate(name: string, options: TOptions): ValidateOptionsResult;
 }
 
 
 export const ValidateOptions_6: {
-    new<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, dependency5: TDep5, validation: Func<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>, failureMessage: string): ValidateOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
+    new<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>(name: string, dependency1: TDep1, dependency2: TDep2, dependency3: TDep3, dependency4: TDep4, dependency5: TDep5, validation: Func_7<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5, System_Internal.Boolean>, failureMessage: string): ValidateOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
 };
 
 
 export interface __ValidateOptions_6$views<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> {
     As_IValidateOptions_1(): IValidateOptions_1$instance<TOptions>;
 }
-
-export interface ValidateOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> extends IValidateOptions_1$instance<TOptions> {}
 
 export type ValidateOptions_6<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> = ValidateOptions_6$instance<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> & __ValidateOptions_6$views<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>;
 
@@ -912,8 +882,8 @@ export interface ValidateOptionsResult$instance {
     Failed: boolean;
     get FailureMessage(): string | undefined;
     set FailureMessage(value: string | undefined);
-    get Failures(): IEnumerable<System_Internal.String> | undefined;
-    set Failures(value: IEnumerable<System_Internal.String> | undefined);
+    get Failures(): IEnumerable_1<System_Internal.String> | undefined;
+    set Failures(value: IEnumerable_1<System_Internal.String> | undefined);
     Skipped: boolean;
     Succeeded: boolean;
 }
@@ -923,7 +893,7 @@ export const ValidateOptionsResult: {
     new(): ValidateOptionsResult;
     readonly Skip: ValidateOptionsResult;
     readonly Success: ValidateOptionsResult;
-    Fail(failures: IEnumerable<System_Internal.String>): ValidateOptionsResult;
+    Fail(failures: IEnumerable_1<System_Internal.String>): ValidateOptionsResult;
     Fail(failureMessage: string): ValidateOptionsResult;
 };
 
@@ -934,7 +904,7 @@ export interface ValidateOptionsResultBuilder$instance {
     AddError(error: string, propertyName?: string): void;
     AddResult(result: ValidationResult): void;
     AddResult(result: ValidateOptionsResult): void;
-    AddResults(results: IEnumerable<ValidationResult>): void;
+    AddResults(results: IEnumerable_1<ValidationResult>): void;
     Build(): ValidateOptionsResult;
     Clear(): void;
 }
@@ -956,7 +926,7 @@ export abstract class Options$instance {
 export type Options = Options$instance;
 
 export abstract class OptionsMonitorExtensions$instance {
-    static OnChange<TOptions>(monitor: IOptionsMonitor_1<TOptions>, listener: Action<TOptions>): IDisposable | undefined;
+    static OnChange<TOptions>(monitor: IOptionsMonitor_1<TOptions>, listener: Action_1<TOptions>): IDisposable | undefined;
 }
 
 

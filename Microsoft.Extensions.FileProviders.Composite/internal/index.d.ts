@@ -8,33 +8,31 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 // Import types from other namespaces
 import * as Microsoft_Extensions_FileProviders_Internal from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IDirectoryContents, IFileInfo, IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
-import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic.js";
-import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList } from "@tsonic/dotnet/System.Collections.Generic.js";
-import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections.js";
-import type { IEnumerable } from "@tsonic/dotnet/System.Collections.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System.js";
+import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1, IEnumerator_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
+import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/index.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface CompositeDirectoryContents$instance {
+export interface CompositeDirectoryContents$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Exists: boolean;
-    GetEnumerator(): IEnumerator<IFileInfo>;
+    GetEnumerator(): IEnumerator_1<IFileInfo>;
 }
 
 
 export const CompositeDirectoryContents: {
-    new(fileProviders: IList<IFileProvider>, subpath: string): CompositeDirectoryContents;
+    new(fileProviders: IList_1<IFileProvider>, subpath: string): CompositeDirectoryContents;
 };
 
 
 export interface __CompositeDirectoryContents$views {
     As_IDirectoryContents(): Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance;
 }
-
-export interface CompositeDirectoryContents$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance {}
 
 export type CompositeDirectoryContents = CompositeDirectoryContents$instance & __CompositeDirectoryContents$views;
 

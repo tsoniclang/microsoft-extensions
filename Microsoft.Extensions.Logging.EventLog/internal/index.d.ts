@@ -9,10 +9,10 @@ import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint12
 import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IExternalScopeProvider, ILogger, ILoggerProvider, ISupportExternalScope, LogLevel } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
-import * as System_Internal from "@tsonic/dotnet/System.js";
-import type { Boolean as ClrBoolean, Func, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System.js";
+import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
+import type { Boolean as ClrBoolean, Func_3, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface EventLogLoggerProvider$instance {
+export interface EventLogLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ISupportExternalScope: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -35,14 +35,12 @@ export interface __EventLogLoggerProvider$views {
     As_ISupportExternalScope(): Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance;
 }
 
-export interface EventLogLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {}
-
 export type EventLogLoggerProvider = EventLogLoggerProvider$instance & __EventLogLoggerProvider$views;
 
 
 export interface EventLogSettings$instance {
-    get Filter(): Func<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
-    set Filter(value: Func<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined);
+    get Filter(): Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
+    set Filter(value: Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined);
     get LogName(): string | undefined;
     set LogName(value: string | undefined);
     get MachineName(): string | undefined;
