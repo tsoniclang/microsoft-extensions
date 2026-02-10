@@ -23,6 +23,8 @@ export interface IBufferedLogger$instance {
 export type IBufferedLogger = IBufferedLogger$instance;
 
 export interface LogEntry_1$instance<TState> {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_LogEntry_1: never;
+
     readonly Category: string;
     readonly EventId: EventId;
     readonly Exception: Exception | undefined;
@@ -40,6 +42,8 @@ export const LogEntry_1: {
 export type LogEntry_1<TState> = LogEntry_1$instance<TState>;
 
 export interface BufferedLogRecord$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_BufferedLogRecord: never;
+
     readonly ActivitySpanId: Nullable_1<ActivitySpanId>;
     readonly ActivityTraceId: Nullable_1<ActivityTraceId>;
     readonly Attributes: IReadOnlyList_1<KeyValuePair_2<System_Internal.String, unknown>>;
@@ -60,6 +64,8 @@ export const BufferedLogRecord: (abstract new() => BufferedLogRecord) & {
 export type BufferedLogRecord = BufferedLogRecord$instance;
 
 export interface NullLogger$instance extends Microsoft_Extensions_Logging_Internal.ILogger$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLogger: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
 
     BeginScope<TState>(state: TState): IDisposable;
@@ -81,6 +87,8 @@ export type NullLogger = NullLogger$instance & __NullLogger$views;
 
 
 export interface NullLogger_1$instance<T> extends ILogger_1<T> {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLogger_1: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
 
@@ -104,6 +112,8 @@ export type NullLogger_1<T> = NullLogger_1$instance<T> & __NullLogger_1$views<T>
 
 
 export interface NullLoggerFactory$instance extends Microsoft_Extensions_Logging_Internal.ILoggerFactory$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLoggerFactory: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -127,6 +137,8 @@ export type NullLoggerFactory = NullLoggerFactory$instance & __NullLoggerFactory
 
 
 export interface NullLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLoggerProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 

@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface PatternContextLinear_FrameData$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_FrameData: never;
+
     IsNotApplicable: boolean;
     SegmentIndex: int;
     InStem: boolean;
@@ -30,6 +32,8 @@ export const PatternContextLinear_FrameData: {
 export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$instance;
 
 export interface PatternContextRagged_FrameData$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData: never;
+
     IsNotApplicable: boolean;
     SegmentGroupIndex: int;
     SegmentGroup: IList_1<IPathSegment>;
@@ -49,6 +53,8 @@ export const PatternContextRagged_FrameData: {
 export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
 
 export interface PatternContext_1$instance<TFrame extends unknown> {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
@@ -71,6 +77,8 @@ export type PatternContext_1<TFrame> = PatternContext_1$instance<TFrame> & __Pat
 
 
 export interface PatternContextLinear$instance extends PatternContext_1$instance<PatternContextLinear_FrameData> {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
@@ -93,6 +101,8 @@ export type PatternContextLinear = PatternContextLinear$instance & __PatternCont
 
 
 export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearExclude: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
@@ -116,6 +126,8 @@ export type PatternContextLinearExclude = PatternContextLinearExclude$instance &
 
 
 export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearInclude: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
@@ -140,6 +152,8 @@ export type PatternContextLinearInclude = PatternContextLinearInclude$instance &
 
 
 export interface PatternContextRagged$instance extends PatternContext_1$instance<PatternContextRagged_FrameData> {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
@@ -162,6 +176,8 @@ export type PatternContextRagged = PatternContextRagged$instance & __PatternCont
 
 
 export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedExclude: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
@@ -185,6 +201,8 @@ export type PatternContextRaggedExclude = PatternContextRaggedExclude$instance &
 
 
 export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedInclude: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;

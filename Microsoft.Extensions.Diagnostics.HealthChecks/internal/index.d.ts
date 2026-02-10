@@ -38,6 +38,8 @@ export interface IHealthCheckPublisher$instance {
 export type IHealthCheckPublisher = IHealthCheckPublisher$instance;
 
 export interface HealthCheckResult$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult: never;
+
     readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Description: string | undefined;
     readonly Exception: Exception | undefined;
@@ -56,6 +58,8 @@ export const HealthCheckResult: {
 export type HealthCheckResult = HealthCheckResult$instance;
 
 export interface HealthReportEntry$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry: never;
+
     readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Description: string | undefined;
     readonly Duration: TimeSpan;
@@ -74,6 +78,8 @@ export const HealthReportEntry: {
 export type HealthReportEntry = HealthReportEntry$instance;
 
 export interface HealthCheckContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckContext: never;
+
     Registration: HealthCheckRegistration;
 }
 
@@ -86,6 +92,8 @@ export const HealthCheckContext: {
 export type HealthCheckContext = HealthCheckContext$instance;
 
 export interface HealthCheckPublisherOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckPublisherOptions: never;
+
     Delay: TimeSpan;
     Period: TimeSpan;
     get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined;
@@ -102,6 +110,8 @@ export const HealthCheckPublisherOptions: {
 export type HealthCheckPublisherOptions = HealthCheckPublisherOptions$instance;
 
 export interface HealthCheckRegistration$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckRegistration: never;
+
     Delay: Nullable_1<TimeSpan>;
     Factory: Func_2<IServiceProvider, IHealthCheck>;
     FailureStatus: HealthStatus;
@@ -123,6 +133,8 @@ export const HealthCheckRegistration: {
 export type HealthCheckRegistration = HealthCheckRegistration$instance;
 
 export interface HealthCheckService$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckService: never;
+
     CheckHealthAsync(cancellationToken?: CancellationToken): Task_1<HealthReport>;
     CheckHealthAsync(predicate: Func_2<HealthCheckRegistration, System_Internal.Boolean>, cancellationToken?: CancellationToken): Task_1<HealthReport>;
 }
@@ -135,6 +147,8 @@ export const HealthCheckService: (abstract new() => HealthCheckService) & {
 export type HealthCheckService = HealthCheckService$instance;
 
 export interface HealthCheckServiceOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckServiceOptions: never;
+
     readonly Registrations: ICollection_1<HealthCheckRegistration>;
 }
 
@@ -147,6 +161,8 @@ export const HealthCheckServiceOptions: {
 export type HealthCheckServiceOptions = HealthCheckServiceOptions$instance;
 
 export interface HealthReport$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReport: never;
+
     readonly Entries: IReadOnlyDictionary_2<System_Internal.String, HealthReportEntry>;
     readonly Status: HealthStatus;
     readonly TotalDuration: TimeSpan;

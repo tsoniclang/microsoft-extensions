@@ -55,6 +55,8 @@ export interface IObservableInstrumentsSource$instance {
 export type IObservableInstrumentsSource = IObservableInstrumentsSource$instance;
 
 export interface InstrumentRule$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_Metrics_InstrumentRule: never;
+
     readonly Enable: boolean;
     readonly InstrumentName: string | undefined;
     readonly ListenerName: string | undefined;
@@ -71,6 +73,8 @@ export const InstrumentRule: {
 export type InstrumentRule = InstrumentRule$instance;
 
 export interface MeasurementHandlers$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_Metrics_MeasurementHandlers: never;
+
     get ByteHandler(): MeasurementCallback_1<System_Internal.Byte> | undefined;
     set ByteHandler(value: MeasurementCallback_1<System_Internal.Byte> | undefined);
     get DecimalHandler(): MeasurementCallback_1<System_Internal.Decimal> | undefined;
@@ -96,6 +100,8 @@ export const MeasurementHandlers: {
 export type MeasurementHandlers = MeasurementHandlers$instance;
 
 export interface MetricsOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Diagnostics_Metrics_MetricsOptions: never;
+
     readonly Rules: IList_1<InstrumentRule>;
 }
 

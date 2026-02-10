@@ -37,6 +37,8 @@ export interface IValidatableInfoResolver$instance {
 export type IValidatableInfoResolver = IValidatableInfoResolver$instance;
 
 export interface ValidationErrorContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidationErrorContext: never;
+
     get Container(): unknown | undefined;
     set Container(value: unknown | undefined);
     Errors: IReadOnlyList_1<System_Internal.String>;
@@ -53,6 +55,8 @@ export const ValidationErrorContext: {
 export type ValidationErrorContext = ValidationErrorContext$instance;
 
 export interface SkipValidationAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_SkipValidationAttribute: never;
+
 }
 
 
@@ -64,6 +68,8 @@ export const SkipValidationAttribute: {
 export type SkipValidationAttribute = SkipValidationAttribute$instance;
 
 export interface ValidatableParameterInfo$instance extends IValidatableInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidatableParameterInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
@@ -83,6 +89,8 @@ export type ValidatableParameterInfo = ValidatableParameterInfo$instance & __Val
 
 
 export interface ValidatablePropertyInfo$instance extends IValidatableInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidatablePropertyInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
@@ -102,6 +110,8 @@ export type ValidatablePropertyInfo = ValidatablePropertyInfo$instance & __Valid
 
 
 export interface ValidatableTypeAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidatableTypeAttribute: never;
+
 }
 
 
@@ -113,6 +123,8 @@ export const ValidatableTypeAttribute: {
 export type ValidatableTypeAttribute = ValidatableTypeAttribute$instance;
 
 export interface ValidatableTypeInfo$instance extends IValidatableInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidatableTypeInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
@@ -132,6 +144,8 @@ export type ValidatableTypeInfo = ValidatableTypeInfo$instance & __ValidatableTy
 
 
 export interface ValidateContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidateContext: never;
+
     CurrentDepth: int;
     CurrentValidationPath: string;
     ValidationContext: ValidationContext;
@@ -149,6 +163,8 @@ export const ValidateContext: {
 export type ValidateContext = ValidateContext$instance;
 
 export interface ValidationOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Validation_ValidationOptions: never;
+
     MaxDepth: int;
     readonly Resolvers: IList_1<IValidatableInfoResolver>;
     TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;

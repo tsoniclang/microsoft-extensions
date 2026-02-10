@@ -20,6 +20,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface XmlConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -45,6 +47,8 @@ export type XmlConfigurationProvider = XmlConfigurationProvider$instance & __Xml
 
 
 export interface XmlConfigurationSource$instance extends FileConfigurationSource {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
@@ -64,6 +68,8 @@ export type XmlConfigurationSource = XmlConfigurationSource$instance & __XmlConf
 
 
 export interface XmlDocumentDecryptor$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlDocumentDecryptor: never;
+
     CreateDecryptingXmlReader(input: Stream, settings: XmlReaderSettings): XmlReader;
     DecryptDocumentAndCreateXmlReader(document: XmlDocument): XmlReader;
 }
@@ -77,6 +83,8 @@ export const XmlDocumentDecryptor: (abstract new() => XmlDocumentDecryptor) & {
 export type XmlDocumentDecryptor = XmlDocumentDecryptor$instance;
 
 export interface XmlStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
@@ -102,6 +110,8 @@ export type XmlStreamConfigurationProvider = XmlStreamConfigurationProvider$inst
 
 
 export interface XmlStreamConfigurationSource$instance extends StreamConfigurationSource {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Build(builder: IConfigurationBuilder): IConfigurationProvider;

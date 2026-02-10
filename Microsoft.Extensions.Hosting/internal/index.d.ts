@@ -145,6 +145,8 @@ export interface IHostLifetime$instance {
 export type IHostLifetime = IHostLifetime$instance;
 
 export interface BackgroundService$instance extends IHostedService$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_BackgroundService: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -168,6 +170,8 @@ export type BackgroundService = BackgroundService$instance & __BackgroundService
 
 
 export interface ConsoleLifetimeOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_ConsoleLifetimeOptions: never;
+
     SuppressStatusMessages: boolean;
 }
 
@@ -180,6 +184,8 @@ export const ConsoleLifetimeOptions: {
 export type ConsoleLifetimeOptions = ConsoleLifetimeOptions$instance;
 
 export interface HostAbortedException$instance extends Exception {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_HostAbortedException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -195,6 +201,8 @@ export const HostAbortedException: {
 export type HostAbortedException = HostAbortedException$instance;
 
 export interface HostApplicationBuilder$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_HostApplicationBuilder: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
 
     readonly Configuration: ConfigurationManager;
@@ -222,6 +230,8 @@ export type HostApplicationBuilder = HostApplicationBuilder$instance & __HostApp
 
 
 export interface HostApplicationBuilderSettings$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_HostApplicationBuilderSettings: never;
+
     get ApplicationName(): string | undefined;
     set ApplicationName(value: string | undefined);
     get Args(): string[] | undefined;
@@ -244,6 +254,8 @@ export const HostApplicationBuilderSettings: {
 export type HostApplicationBuilderSettings = HostApplicationBuilderSettings$instance;
 
 export interface HostBuilder$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_HostBuilder: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
     readonly Properties: IDictionary_2<unknown, unknown>;
@@ -270,6 +282,8 @@ export type HostBuilder = HostBuilder$instance & __HostBuilder$views;
 
 
 export interface HostBuilderContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_HostBuilderContext: never;
+
     Configuration: IConfiguration;
     HostingEnvironment: IHostEnvironment;
     readonly Properties: IDictionary_2<unknown, unknown>;
@@ -284,6 +298,8 @@ export const HostBuilderContext: {
 export type HostBuilderContext = HostBuilderContext$instance;
 
 export interface HostOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Hosting_HostOptions: never;
+
     BackgroundServiceExceptionBehavior: BackgroundServiceExceptionBehavior;
     ServicesStartConcurrently: boolean;
     ServicesStopConcurrently: boolean;

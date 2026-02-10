@@ -53,6 +53,8 @@ export interface IConsoleLoggerSettings$instance {
 export type IConsoleLoggerSettings = IConsoleLoggerSettings$instance;
 
 export interface ConfigurationConsoleLoggerSettings$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConfigurationConsoleLoggerSettings: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
 
     get ChangeToken(): IChangeToken | undefined;
@@ -76,6 +78,8 @@ export type ConfigurationConsoleLoggerSettings = ConfigurationConsoleLoggerSetti
 
 
 export interface ConsoleFormatter$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatter: never;
+
     readonly Name: string;
     Write<TState>(logEntry: LogEntry_1<TState>, scopeProvider: IExternalScopeProvider, textWriter: TextWriter): void;
 }
@@ -88,6 +92,8 @@ export const ConsoleFormatter: (abstract new(name: string) => ConsoleFormatter) 
 export type ConsoleFormatter = ConsoleFormatter$instance;
 
 export interface ConsoleFormatterOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions: never;
+
     IncludeScopes: boolean;
     get TimestampFormat(): string | undefined;
     set TimestampFormat(value: string | undefined);
@@ -103,6 +109,8 @@ export const ConsoleFormatterOptions: {
 export type ConsoleFormatterOptions = ConsoleFormatterOptions$instance;
 
 export interface ConsoleLoggerOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleLoggerOptions: never;
+
     DisableColors: boolean;
     Format: ConsoleLoggerFormat;
     get FormatterName(): string | undefined;
@@ -125,6 +133,8 @@ export const ConsoleLoggerOptions: {
 export type ConsoleLoggerOptions = ConsoleLoggerOptions$instance;
 
 export interface ConsoleLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleLoggerProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ISupportExternalScope: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -150,6 +160,8 @@ export type ConsoleLoggerProvider = ConsoleLoggerProvider$instance & __ConsoleLo
 
 
 export interface ConsoleLoggerSettings$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleLoggerSettings: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
 
     get ChangeToken(): IChangeToken | undefined;
@@ -175,6 +187,8 @@ export type ConsoleLoggerSettings = ConsoleLoggerSettings$instance & __ConsoleLo
 
 
 export interface JsonConsoleFormatterOptions$instance extends ConsoleFormatterOptions {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_JsonConsoleFormatterOptions: never;
+
     JsonWriterOptions: JsonWriterOptions;
 }
 
@@ -187,6 +201,8 @@ export const JsonConsoleFormatterOptions: {
 export type JsonConsoleFormatterOptions = JsonConsoleFormatterOptions$instance;
 
 export interface SimpleConsoleFormatterOptions$instance extends ConsoleFormatterOptions {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_SimpleConsoleFormatterOptions: never;
+
     ColorBehavior: LoggerColorBehavior;
     SingleLine: boolean;
 }

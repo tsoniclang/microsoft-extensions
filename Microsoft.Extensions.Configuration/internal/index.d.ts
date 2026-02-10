@@ -28,14 +28,13 @@ import type { Action_1, Attribute, Boolean as ClrBoolean, Exception, Func_2, IDi
 export interface IConfiguration$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
 
-    [key: string]: string | undefined;
     GetChildren(): IEnumerable_1<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
 }
 
 
-export type IConfiguration = IConfiguration$instance;
+export type IConfiguration = IConfiguration$instance & { [key: string]: string | undefined; };
 
 export interface IConfigurationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
@@ -52,7 +51,6 @@ export type IConfigurationBuilder = IConfigurationBuilder$instance;
 export interface IConfigurationManager$instance extends IConfiguration, IConfigurationBuilder {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationManager: never;
 
-    [key: string]: string | undefined;
     readonly Properties: IDictionary_2<System_Internal.String, unknown>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
@@ -65,7 +63,7 @@ export interface IConfigurationManager$instance extends IConfiguration, IConfigu
 
 export interface IConfigurationManager$instance extends IConfiguration$instance, IConfigurationBuilder$instance {}
 
-export type IConfigurationManager = IConfigurationManager$instance;
+export type IConfigurationManager = IConfigurationManager$instance & { [key: string]: string | undefined; };
 
 export interface IConfigurationProvider$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
@@ -84,7 +82,6 @@ export interface IConfigurationRoot$instance extends IConfiguration {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationRoot: never;
 
     readonly Providers: IEnumerable_1<IConfigurationProvider>;
-    [key: string]: string | undefined;
     GetChildren(): IEnumerable_1<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -94,7 +91,7 @@ export interface IConfigurationRoot$instance extends IConfiguration {
 
 export interface IConfigurationRoot$instance extends IConfiguration$instance {}
 
-export type IConfigurationRoot = IConfigurationRoot$instance;
+export type IConfigurationRoot = IConfigurationRoot$instance & { [key: string]: string | undefined; };
 
 export interface IConfigurationSection$instance extends IConfiguration {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSection: never;
@@ -103,7 +100,6 @@ export interface IConfigurationSection$instance extends IConfiguration {
     readonly Path: string;
     get Value(): string | undefined;
     set Value(value: string | undefined);
-    [key: string]: string | undefined;
     GetChildren(): IEnumerable_1<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -112,7 +108,7 @@ export interface IConfigurationSection$instance extends IConfiguration {
 
 export interface IConfigurationSection$instance extends IConfiguration$instance {}
 
-export type IConfigurationSection = IConfigurationSection$instance;
+export type IConfigurationSection = IConfigurationSection$instance & { [key: string]: string | undefined; };
 
 export interface IConfigurationSource$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
@@ -124,6 +120,8 @@ export interface IConfigurationSource$instance {
 export type IConfigurationSource = IConfigurationSource$instance;
 
 export interface ConfigurationDebugViewContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationDebugViewContext: never;
+
     readonly ConfigurationProvider: IConfigurationProvider;
     readonly Key: string;
     readonly Path: string;
@@ -139,6 +137,8 @@ export const ConfigurationDebugViewContext: {
 export type ConfigurationDebugViewContext = ConfigurationDebugViewContext$instance;
 
 export interface BinderOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_BinderOptions: never;
+
     BindNonPublicProperties: boolean;
     ErrorOnUnknownConfiguration: boolean;
 }
@@ -152,6 +152,8 @@ export const BinderOptions: {
 export type BinderOptions = BinderOptions$instance;
 
 export interface ChainedConfigurationProvider$instance extends IConfigurationProvider$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ChainedConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -178,6 +180,8 @@ export type ChainedConfigurationProvider = ChainedConfigurationProvider$instance
 
 
 export interface ChainedConfigurationSource$instance extends IConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ChainedConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     get Configuration(): IConfiguration | undefined;
@@ -200,6 +204,8 @@ export type ChainedConfigurationSource = ChainedConfigurationSource$instance & _
 
 
 export interface ConfigurationBuilder$instance extends IConfigurationBuilder$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationBuilder: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
 
     readonly Properties: IDictionary_2<System_Internal.String, unknown>;
@@ -222,6 +228,8 @@ export type ConfigurationBuilder = ConfigurationBuilder$instance & __Configurati
 
 
 export interface ConfigurationKeyComparer$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationKeyComparer: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
     Compare(x: string, y: string): int;
@@ -237,6 +245,8 @@ export const ConfigurationKeyComparer: {
 export type ConfigurationKeyComparer = ConfigurationKeyComparer$instance;
 
 export interface ConfigurationKeyNameAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationKeyNameAttribute: never;
+
     readonly Name: string;
 }
 
@@ -249,13 +259,14 @@ export const ConfigurationKeyNameAttribute: {
 export type ConfigurationKeyNameAttribute = ConfigurationKeyNameAttribute$instance;
 
 export interface ConfigurationManager$instance extends System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationManager: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationManager: never;
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationRoot: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    [key: string]: string | undefined;
     readonly Sources: IList_1<IConfigurationSource>;
     Dispose(): void;
     GetChildren(): IEnumerable_1<IConfigurationSection>;
@@ -274,10 +285,12 @@ export interface __ConfigurationManager$views {
     As_IConfigurationRoot(): IConfigurationRoot$instance;
 }
 
-export type ConfigurationManager = ConfigurationManager$instance & __ConfigurationManager$views;
+export type ConfigurationManager = ConfigurationManager$instance & __ConfigurationManager$views & { [key: string]: string | undefined; };
 
 
 export interface ConfigurationProvider$instance extends IConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
@@ -301,6 +314,8 @@ export type ConfigurationProvider = ConfigurationProvider$instance & __Configura
 
 
 export interface ConfigurationReloadToken$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationReloadToken: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
     ActiveChangeCallbacks: boolean;
@@ -323,11 +338,12 @@ export type ConfigurationReloadToken = ConfigurationReloadToken$instance & __Con
 
 
 export interface ConfigurationRoot$instance extends System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationRoot: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationRoot: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    [key: string]: string | undefined;
     readonly Providers: IEnumerable_1<IConfigurationProvider>;
     Dispose(): void;
     GetChildren(): IEnumerable_1<IConfigurationSection>;
@@ -347,14 +363,15 @@ export interface __ConfigurationRoot$views {
     As_IConfigurationRoot(): IConfigurationRoot$instance;
 }
 
-export type ConfigurationRoot = ConfigurationRoot$instance & __ConfigurationRoot$views;
+export type ConfigurationRoot = ConfigurationRoot$instance & __ConfigurationRoot$views & { [key: string]: string | undefined; };
 
 
 export interface ConfigurationSection$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationSection: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSection: never;
 
-    [key: string]: string | undefined;
     readonly Key: string;
     readonly Path: string;
     get Value(): string | undefined;
@@ -376,10 +393,12 @@ export interface __ConfigurationSection$views {
     As_IConfigurationSection(): IConfigurationSection$instance;
 }
 
-export type ConfigurationSection = ConfigurationSection$instance & __ConfigurationSection$views;
+export type ConfigurationSection = ConfigurationSection$instance & __ConfigurationSection$views & { [key: string]: string | undefined; };
 
 
 export interface FileConfigurationProvider$instance extends ConfigurationProvider$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -407,6 +426,8 @@ export type FileConfigurationProvider = FileConfigurationProvider$instance & __F
 
 
 export interface FileConfigurationSource$instance extends IConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     get FileProvider(): IFileProvider | undefined;
@@ -436,6 +457,8 @@ export type FileConfigurationSource = FileConfigurationSource$instance & __FileC
 
 
 export interface FileLoadExceptionContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileLoadExceptionContext: never;
+
     Exception: Exception;
     Ignore: boolean;
     Provider: FileConfigurationProvider;
@@ -450,6 +473,8 @@ export const FileLoadExceptionContext: {
 export type FileLoadExceptionContext = FileLoadExceptionContext$instance;
 
 export interface StreamConfigurationProvider$instance extends ConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     readonly Source: StreamConfigurationSource;
@@ -473,6 +498,8 @@ export type StreamConfigurationProvider = StreamConfigurationProvider$instance &
 
 
 export interface StreamConfigurationSource$instance extends IConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     get Stream(): Stream | undefined;

@@ -50,6 +50,8 @@ export interface IHybridCacheSerializerFactory$instance {
 export type IHybridCacheSerializerFactory = IHybridCacheSerializerFactory$instance;
 
 export interface HybridCache$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Hybrid_HybridCache: never;
+
     GetOrCreateAsync<TState, T>(key: string, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
     GetOrCreateAsync<T>(key: string, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
     GetOrCreateAsync<T>(key: ReadOnlySpan_1<System_Internal.Char>, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions, tags?: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask_1<T>;
@@ -71,6 +73,8 @@ export const HybridCache: (abstract new() => HybridCache) & {
 export type HybridCache = HybridCache$instance;
 
 export interface HybridCacheEntryOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Hybrid_HybridCacheEntryOptions: never;
+
     Expiration: Nullable_1<TimeSpan>;
     Flags: Nullable_1<HybridCacheEntryFlags>;
     LocalCacheExpiration: Nullable_1<TimeSpan>;

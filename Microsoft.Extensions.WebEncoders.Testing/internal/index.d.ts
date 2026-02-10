@@ -16,6 +16,8 @@ import type { HtmlEncoder, JavaScriptEncoder, UrlEncoder } from "@tsonic/dotnet/
 import type { Boolean as ClrBoolean, Char, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface HtmlTestEncoder$instance extends HtmlEncoder {
+    readonly __tsonic_type_Microsoft_Extensions_WebEncoders_Testing_HtmlTestEncoder: never;
+
     readonly MaxOutputCharactersPerInputCharacter: int;
     Encode(value: string): string;
     Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
@@ -34,6 +36,8 @@ export const HtmlTestEncoder: {
 export type HtmlTestEncoder = HtmlTestEncoder$instance;
 
 export interface JavaScriptTestEncoder$instance extends JavaScriptEncoder {
+    readonly __tsonic_type_Microsoft_Extensions_WebEncoders_Testing_JavaScriptTestEncoder: never;
+
     readonly MaxOutputCharactersPerInputCharacter: int;
     Encode(value: string): string;
     Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
@@ -52,6 +56,8 @@ export const JavaScriptTestEncoder: {
 export type JavaScriptTestEncoder = JavaScriptTestEncoder$instance;
 
 export interface UrlTestEncoder$instance extends UrlEncoder {
+    readonly __tsonic_type_Microsoft_Extensions_WebEncoders_Testing_UrlTestEncoder: never;
+
     readonly MaxOutputCharactersPerInputCharacter: int;
     Encode(value: string): string;
     Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;

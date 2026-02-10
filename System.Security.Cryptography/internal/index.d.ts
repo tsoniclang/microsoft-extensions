@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CryptographicAttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_CryptographicAttributeObject: never;
+
     readonly Oid: Oid;
     readonly Values: AsnEncodedDataCollection;
 }
@@ -27,12 +29,13 @@ export const CryptographicAttributeObject: {
 export type CryptographicAttributeObject = CryptographicAttributeObject$instance;
 
 export interface CryptographicAttributeObjectCollection$instance {
+    readonly __tsonic_type_System_Security_Cryptography_CryptographicAttributeObjectCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly [index: number]: CryptographicAttributeObject;
     readonly SyncRoot: unknown;
     Add(asnEncodedData: AsnEncodedData): int;
     Add(attribute: CryptographicAttributeObject): int;
@@ -48,9 +51,11 @@ export const CryptographicAttributeObjectCollection: {
 };
 
 
-export type CryptographicAttributeObjectCollection = CryptographicAttributeObjectCollection$instance;
+export type CryptographicAttributeObjectCollection = CryptographicAttributeObjectCollection$instance & { readonly [index: number]: CryptographicAttributeObject; };
 
 export interface CryptographicAttributeObjectEnumerator$instance {
+    readonly __tsonic_type_System_Security_Cryptography_CryptographicAttributeObjectEnumerator: never;
+
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
 
     readonly Current: CryptographicAttributeObject;

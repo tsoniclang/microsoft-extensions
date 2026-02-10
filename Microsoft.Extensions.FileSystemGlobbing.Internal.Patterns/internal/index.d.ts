@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject, String as ClrString, StringComparison } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface PatternBuilder$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_Patterns_PatternBuilder: never;
+
     readonly ComparisonType: StringComparison;
     Build(pattern: string): IPattern;
 }

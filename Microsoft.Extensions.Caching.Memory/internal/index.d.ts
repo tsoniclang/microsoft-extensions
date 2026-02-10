@@ -77,6 +77,8 @@ export interface IMemoryCache$instance extends System_Internal.IDisposable {}
 export type IMemoryCache = IMemoryCache$instance;
 
 export interface MemoryCache$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCache: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_IMemoryCache: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -110,6 +112,8 @@ export type MemoryCache = MemoryCache$instance & __MemoryCache$views;
 
 
 export interface MemoryCacheEntryOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions: never;
+
     AbsoluteExpiration: Nullable_1<DateTimeOffset>;
     AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
     readonly ExpirationTokens: IList_1<IChangeToken>;
@@ -127,7 +131,9 @@ export const MemoryCacheEntryOptions: {
 
 export type MemoryCacheEntryOptions = MemoryCacheEntryOptions$instance;
 
-export interface MemoryCacheOptions$instance {
+export interface MemoryCacheOptions$instance extends Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions> {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheOptions: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
     get Clock(): ISystemClock | undefined;
@@ -154,6 +160,8 @@ export type MemoryCacheOptions = MemoryCacheOptions$instance & __MemoryCacheOpti
 
 
 export interface MemoryCacheStatistics$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheStatistics: never;
+
     CurrentEntryCount: long;
     CurrentEstimatedSize: Nullable_1<System_Internal.Int64>;
     TotalHits: long;
@@ -168,7 +176,9 @@ export const MemoryCacheStatistics: {
 
 export type MemoryCacheStatistics = MemoryCacheStatistics$instance;
 
-export interface MemoryDistributedCacheOptions$instance extends MemoryCacheOptions$instance {
+export interface MemoryDistributedCacheOptions$instance extends MemoryCacheOptions$instance, Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions> {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryDistributedCacheOptions: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
 }
@@ -187,6 +197,8 @@ export type MemoryDistributedCacheOptions = MemoryDistributedCacheOptions$instan
 
 
 export interface PostEvictionCallbackRegistration$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_PostEvictionCallbackRegistration: never;
+
     get EvictionCallback(): PostEvictionDelegate | undefined;
     set EvictionCallback(value: PostEvictionDelegate | undefined);
     get State(): unknown | undefined;

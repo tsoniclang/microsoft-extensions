@@ -48,6 +48,8 @@ export interface IDistributedCache$instance {
 export type IDistributedCache = IDistributedCache$instance;
 
 export interface DistributedCacheEntryOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions: never;
+
     AbsoluteExpiration: Nullable_1<DateTimeOffset>;
     AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
     SlidingExpiration: Nullable_1<TimeSpan>;
@@ -62,6 +64,8 @@ export const DistributedCacheEntryOptions: {
 export type DistributedCacheEntryOptions = DistributedCacheEntryOptions$instance;
 
 export interface MemoryDistributedCache$instance extends IDistributedCache$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Distributed_MemoryDistributedCache: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IDistributedCache: never;
 
     Get(key: string): byte[] | undefined;

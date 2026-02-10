@@ -18,6 +18,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -44,6 +46,8 @@ export type KeyPerFileConfigurationProvider = KeyPerFileConfigurationProvider$in
 
 
 export interface KeyPerFileConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     get FileProvider(): IFileProvider | undefined;

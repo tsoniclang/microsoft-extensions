@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, StringComparison } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CurrentPathSegment$instance extends Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPathSegment$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_CurrentPathSegment: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
 
     readonly CanProduceStem: boolean;
@@ -33,6 +35,8 @@ export type CurrentPathSegment = CurrentPathSegment$instance & __CurrentPathSegm
 
 
 export interface LiteralPathSegment$instance extends Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPathSegment$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_LiteralPathSegment: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
 
     readonly CanProduceStem: boolean;
@@ -56,6 +60,8 @@ export type LiteralPathSegment = LiteralPathSegment$instance & __LiteralPathSegm
 
 
 export interface ParentPathSegment$instance extends Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPathSegment$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_ParentPathSegment: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
 
     readonly CanProduceStem: boolean;
@@ -76,6 +82,8 @@ export type ParentPathSegment = ParentPathSegment$instance & __ParentPathSegment
 
 
 export interface RecursiveWildcardSegment$instance extends Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPathSegment$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_RecursiveWildcardSegment: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
 
     readonly CanProduceStem: boolean;
@@ -96,6 +104,8 @@ export type RecursiveWildcardSegment = RecursiveWildcardSegment$instance & __Rec
 
 
 export interface WildcardPathSegment$instance extends Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPathSegment$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PathSegments_WildcardPathSegment: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPathSegment: never;
 
     readonly BeginsWith: string;

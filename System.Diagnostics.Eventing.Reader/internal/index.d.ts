@@ -97,6 +97,8 @@ export enum StandardEventTask {
 
 
 export interface EventBookmark$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventBookmark: never;
+
     readonly BookmarkXml: string;
 }
 
@@ -109,6 +111,8 @@ export const EventBookmark: {
 export type EventBookmark = EventBookmark$instance;
 
 export interface EventKeyword$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventKeyword: never;
+
     readonly DisplayName: string;
     readonly Name: string;
     readonly Value: long;
@@ -122,6 +126,8 @@ export const EventKeyword: {
 export type EventKeyword = EventKeyword$instance;
 
 export interface EventLevel$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLevel: never;
+
     readonly DisplayName: string;
     readonly Name: string;
     readonly Value: int;
@@ -135,6 +141,8 @@ export const EventLevel: {
 export type EventLevel = EventLevel$instance;
 
 export interface EventLogConfiguration$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogConfiguration: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly IsClassicLog: boolean;
@@ -170,6 +178,8 @@ export const EventLogConfiguration: {
 export type EventLogConfiguration = EventLogConfiguration$instance;
 
 export interface EventLogException$instance extends Exception {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
     readonly Message: string;
@@ -187,6 +197,8 @@ export const EventLogException: {
 export type EventLogException = EventLogException$instance;
 
 export interface EventLogInformation$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogInformation: never;
+
     readonly Attributes: Nullable_1<System_Internal.Int32>;
     readonly CreationTime: Nullable_1<DateTime>;
     readonly FileSize: Nullable_1<System_Internal.Int64>;
@@ -205,6 +217,8 @@ export const EventLogInformation: {
 export type EventLogInformation = EventLogInformation$instance;
 
 export interface EventLogInvalidDataException$instance extends EventLogException {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogInvalidDataException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -220,6 +234,8 @@ export const EventLogInvalidDataException: {
 export type EventLogInvalidDataException = EventLogInvalidDataException$instance;
 
 export interface EventLogLink$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogLink: never;
+
     readonly DisplayName: string;
     readonly IsImported: boolean;
     readonly LogName: string;
@@ -233,6 +249,8 @@ export const EventLogLink: {
 export type EventLogLink = EventLogLink$instance;
 
 export interface EventLogNotFoundException$instance extends EventLogException {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogNotFoundException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -248,6 +266,8 @@ export const EventLogNotFoundException: {
 export type EventLogNotFoundException = EventLogNotFoundException$instance;
 
 export interface EventLogPropertySelector$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogPropertySelector: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
@@ -263,6 +283,8 @@ export const EventLogPropertySelector: {
 export type EventLogPropertySelector = EventLogPropertySelector$instance;
 
 export interface EventLogProviderDisabledException$instance extends EventLogException {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogProviderDisabledException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -278,6 +300,8 @@ export const EventLogProviderDisabledException: {
 export type EventLogProviderDisabledException = EventLogProviderDisabledException$instance;
 
 export interface EventLogQuery$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogQuery: never;
+
     ReverseDirection: boolean;
     Session: EventLogSession;
     TolerateQueryErrors: boolean;
@@ -293,6 +317,8 @@ export const EventLogQuery: {
 export type EventLogQuery = EventLogQuery$instance;
 
 export interface EventLogReader$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogReader: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     BatchSize: int;
@@ -319,6 +345,8 @@ export const EventLogReader: {
 export type EventLogReader = EventLogReader$instance;
 
 export interface EventLogReadingException$instance extends EventLogException {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogReadingException: never;
+
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
 }
@@ -334,6 +362,8 @@ export const EventLogReadingException: {
 export type EventLogReadingException = EventLogReadingException$instance;
 
 export interface EventLogRecord$instance extends EventRecord {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogRecord: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly ActivityId: Nullable_1<Guid>;
@@ -378,6 +408,8 @@ export const EventLogRecord: {
 export type EventLogRecord = EventLogRecord$instance;
 
 export interface EventLogSession$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogSession: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     CancelCurrentOperations(): void;
@@ -406,6 +438,8 @@ export const EventLogSession: {
 export type EventLogSession = EventLogSession$instance;
 
 export interface EventLogStatus$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogStatus: never;
+
     readonly LogName: string;
     readonly StatusCode: int;
 }
@@ -418,6 +452,8 @@ export const EventLogStatus: {
 export type EventLogStatus = EventLogStatus$instance;
 
 export interface EventLogWatcher$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogWatcher: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Enabled: boolean;
@@ -437,6 +473,8 @@ export const EventLogWatcher: {
 export type EventLogWatcher = EventLogWatcher$instance;
 
 export interface EventMetadata$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventMetadata: never;
+
     readonly Description: string;
     readonly Id: long;
     readonly Keywords: IEnumerable_1<EventKeyword>;
@@ -456,6 +494,8 @@ export const EventMetadata: {
 export type EventMetadata = EventMetadata$instance;
 
 export interface EventOpcode$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventOpcode: never;
+
     readonly DisplayName: string;
     readonly Name: string;
     readonly Value: int;
@@ -469,6 +509,8 @@ export const EventOpcode: {
 export type EventOpcode = EventOpcode$instance;
 
 export interface EventProperty$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventProperty: never;
+
     readonly Value: unknown;
 }
 
@@ -480,6 +522,8 @@ export const EventProperty: {
 export type EventProperty = EventProperty$instance;
 
 export interface EventRecord$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventRecord: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly ActivityId: Nullable_1<Guid>;
@@ -521,6 +565,8 @@ export const EventRecord: (abstract new() => EventRecord) & {
 export type EventRecord = EventRecord$instance;
 
 export interface EventRecordWrittenEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventRecordWrittenEventArgs: never;
+
     readonly EventException: Exception;
     readonly EventRecord: EventRecord;
 }
@@ -533,6 +579,8 @@ export const EventRecordWrittenEventArgs: {
 export type EventRecordWrittenEventArgs = EventRecordWrittenEventArgs$instance;
 
 export interface EventTask$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventTask: never;
+
     readonly DisplayName: string;
     readonly EventGuid: Guid;
     readonly Name: string;
@@ -547,6 +595,8 @@ export const EventTask: {
 export type EventTask = EventTask$instance;
 
 export interface ProviderMetadata$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_ProviderMetadata: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly DisplayName: string;

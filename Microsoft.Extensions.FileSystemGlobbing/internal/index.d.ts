@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, IEquatable_1, Int32, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface FilePatternMatch$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_FilePatternMatch: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Path: string;
@@ -31,6 +33,8 @@ export const FilePatternMatch: {
 export type FilePatternMatch = FilePatternMatch$instance;
 
 export interface InMemoryDirectoryInfo$instance extends DirectoryInfoBase {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_InMemoryDirectoryInfo: never;
+
     readonly FullName: string;
     readonly Name: string;
     readonly ParentDirectory: DirectoryInfoBase | undefined;
@@ -48,6 +52,8 @@ export const InMemoryDirectoryInfo: {
 export type InMemoryDirectoryInfo = InMemoryDirectoryInfo$instance;
 
 export interface Matcher$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Matcher: never;
+
     AddExclude(pattern: string): Matcher;
     AddInclude(pattern: string): Matcher;
     Execute(directoryInfo: DirectoryInfoBase): PatternMatchingResult;
@@ -64,6 +70,8 @@ export const Matcher: {
 export type Matcher = Matcher$instance;
 
 export interface PatternMatchingResult$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_PatternMatchingResult: never;
+
     Files: IEnumerable_1<FilePatternMatch>;
     readonly HasMatches: boolean;
 }

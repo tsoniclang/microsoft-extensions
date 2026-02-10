@@ -19,6 +19,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface IniConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -44,6 +46,8 @@ export type IniConfigurationProvider = IniConfigurationProvider$instance & __Ini
 
 
 export interface IniConfigurationSource$instance extends FileConfigurationSource {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
@@ -63,6 +67,8 @@ export type IniConfigurationSource = IniConfigurationSource$instance & __IniConf
 
 
 export interface IniStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
@@ -88,6 +94,8 @@ export type IniStreamConfigurationProvider = IniStreamConfigurationProvider$inst
 
 
 export interface IniStreamConfigurationSource$instance extends StreamConfigurationSource {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Build(builder: IConfigurationBuilder): IConfigurationProvider;

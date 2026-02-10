@@ -30,6 +30,8 @@ export interface ITypedHttpClientFactory_1$instance<TClient> {
 export type ITypedHttpClientFactory_1<TClient> = ITypedHttpClientFactory_1$instance<TClient>;
 
 export interface HttpClientFactoryOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Http_HttpClientFactoryOptions: never;
+
     HandlerLifetime: TimeSpan;
     readonly HttpClientActions: IList_1<Action_1<HttpClient>>;
     readonly HttpMessageHandlerBuilderActions: IList_1<Action_1<HttpMessageHandlerBuilder>>;
@@ -46,6 +48,8 @@ export const HttpClientFactoryOptions: {
 export type HttpClientFactoryOptions = HttpClientFactoryOptions$instance;
 
 export interface HttpMessageHandlerBuilder$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Http_HttpMessageHandlerBuilder: never;
+
     readonly AdditionalHandlers: IList_1<DelegatingHandler>;
     get Name(): string | undefined;
     set Name(value: string | undefined);
