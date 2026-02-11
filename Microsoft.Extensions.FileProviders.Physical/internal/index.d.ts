@@ -28,6 +28,8 @@ export enum ExclusionFilters {
 
 
 export interface PhysicalDirectoryInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance, Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -58,6 +60,8 @@ export type PhysicalDirectoryInfo = PhysicalDirectoryInfo$instance & __PhysicalD
 
 
 export interface PhysicalFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PhysicalFileInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
 
     readonly Exists: boolean;
@@ -83,6 +87,8 @@ export type PhysicalFileInfo = PhysicalFileInfo$instance & __PhysicalFileInfo$vi
 
 
 export interface PhysicalFilesWatcher$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PhysicalFilesWatcher: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     CreateFileChangeToken(filter: string): IChangeToken;
@@ -100,6 +106,8 @@ export const PhysicalFilesWatcher: {
 export type PhysicalFilesWatcher = PhysicalFilesWatcher$instance;
 
 export interface PollingFileChangeToken$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PollingFileChangeToken: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IPollingChangeToken: never;
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
@@ -122,6 +130,8 @@ export type PollingFileChangeToken = PollingFileChangeToken$instance & __Polling
 
 
 export interface PollingWildCardChangeToken$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PollingWildCardChangeToken: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IPollingChangeToken: never;
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 

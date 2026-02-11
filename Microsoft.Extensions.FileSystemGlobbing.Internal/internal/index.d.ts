@@ -72,6 +72,8 @@ export interface IRaggedPattern$instance extends IPattern$instance {}
 export type IRaggedPattern = IRaggedPattern$instance;
 
 export interface PatternTestResult$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternTestResult: never;
+
     readonly IsSuccessful: boolean;
     readonly Stem: string | undefined;
 }
@@ -87,6 +89,8 @@ export const PatternTestResult: {
 export type PatternTestResult = PatternTestResult$instance;
 
 export interface MatcherContext$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_MatcherContext: never;
+
     Execute(): PatternMatchingResult;
 }
 

@@ -10,6 +10,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Attribute, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface PathHelper$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_UserSecrets_PathHelper: never;
+
 }
 
 
@@ -22,6 +24,8 @@ export const PathHelper: {
 export type PathHelper = PathHelper$instance;
 
 export interface UserSecretsIdAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_UserSecrets_UserSecretsIdAttribute: never;
+
     readonly UserSecretsId: string;
 }
 

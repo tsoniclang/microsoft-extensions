@@ -60,6 +60,8 @@ export interface IStringLocalizerFactory$instance {
 export type IStringLocalizerFactory = IStringLocalizerFactory$instance;
 
 export interface LocalizationOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_LocalizationOptions: never;
+
     ResourcesPath: string;
 }
 
@@ -72,6 +74,8 @@ export const LocalizationOptions: {
 export type LocalizationOptions = LocalizationOptions$instance;
 
 export interface LocalizedString$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_LocalizedString: never;
+
     readonly Name: string;
     readonly ResourceNotFound: boolean;
     readonly SearchedLocation: string | undefined;
@@ -90,6 +94,8 @@ export const LocalizedString: {
 export type LocalizedString = LocalizedString$instance;
 
 export interface ResourceLocationAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceLocationAttribute: never;
+
     readonly ResourceLocation: string;
 }
 
@@ -102,6 +108,8 @@ export const ResourceLocationAttribute: {
 export type ResourceLocationAttribute = ResourceLocationAttribute$instance;
 
 export interface ResourceManagerStringLocalizer$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceManagerStringLocalizer: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
 
     get_Item(name: string): LocalizedString;
@@ -123,6 +131,8 @@ export type ResourceManagerStringLocalizer = ResourceManagerStringLocalizer$inst
 
 
 export interface ResourceManagerStringLocalizerFactory$instance extends IStringLocalizerFactory$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceManagerStringLocalizerFactory: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizerFactory: never;
 
     Create(resourceSource: Type): IStringLocalizer;
@@ -150,6 +160,8 @@ export type ResourceManagerStringLocalizerFactory = ResourceManagerStringLocaliz
 
 
 export interface ResourceNamesCache$instance extends IResourceNamesCache$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceNamesCache: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IResourceNamesCache: never;
 
     GetOrAdd(name: string, valueFactory: Func_2<System_Internal.String, IList_1<System_Internal.String>>): IList_1<System_Internal.String> | undefined;
@@ -169,6 +181,8 @@ export type ResourceNamesCache = ResourceNamesCache$instance & __ResourceNamesCa
 
 
 export interface RootNamespaceAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_RootNamespaceAttribute: never;
+
     readonly RootNamespace: string;
 }
 
@@ -181,6 +195,8 @@ export const RootNamespaceAttribute: {
 export type RootNamespaceAttribute = RootNamespaceAttribute$instance;
 
 export interface StringLocalizer_1$instance<TResourceSource> extends IStringLocalizer_1<TResourceSource> {
+    readonly __tsonic_type_Microsoft_Extensions_Localization_StringLocalizer_1: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer_1: never;
 

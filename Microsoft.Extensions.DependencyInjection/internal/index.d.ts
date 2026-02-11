@@ -162,6 +162,8 @@ export interface ISupportRequiredService$instance {
 export type ISupportRequiredService = ISupportRequiredService$instance;
 
 export interface AsyncServiceScope$instance extends IServiceScope$instance, System_Internal.IAsyncDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_AsyncServiceScope: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceScope: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -185,6 +187,8 @@ export type AsyncServiceScope = AsyncServiceScope$instance & __AsyncServiceScope
 
 
 export interface ActivatorUtilitiesConstructorAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ActivatorUtilitiesConstructorAttribute: never;
+
 }
 
 
@@ -195,7 +199,9 @@ export const ActivatorUtilitiesConstructorAttribute: {
 
 export type ActivatorUtilitiesConstructorAttribute = ActivatorUtilitiesConstructorAttribute$instance;
 
-export interface DefaultServiceProviderFactory$instance {
+export interface DefaultServiceProviderFactory$instance extends IServiceProviderFactory_1$instance<IServiceCollection> {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_DefaultServiceProviderFactory: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1: never;
 
     CreateBuilder(services: IServiceCollection): IServiceCollection;
@@ -217,6 +223,8 @@ export type DefaultServiceProviderFactory = DefaultServiceProviderFactory$instan
 
 
 export interface FromKeyedServicesAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_FromKeyedServicesAttribute: never;
+
     readonly Key: unknown | undefined;
     readonly LookupMode: ServiceKeyLookupMode;
 }
@@ -231,6 +239,8 @@ export const FromKeyedServicesAttribute: {
 export type FromKeyedServicesAttribute = FromKeyedServicesAttribute$instance;
 
 export interface ServiceCollection$instance extends IServiceCollection {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceCollection: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceCollection: never;
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -239,7 +249,6 @@ export interface ServiceCollection$instance extends IServiceCollection {
 
     readonly Count: int;
     readonly IsReadOnly: boolean;
-    [index: number]: ServiceDescriptor;
     Clear(): void;
     Contains(item: ServiceDescriptor): boolean;
     CopyTo(array: ServiceDescriptor[], arrayIndex: int): void;
@@ -257,9 +266,11 @@ export const ServiceCollection: {
 };
 
 
-export type ServiceCollection = ServiceCollection$instance;
+export type ServiceCollection = ServiceCollection$instance & { [index: number]: ServiceDescriptor; };
 
 export interface ServiceDescriptor$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceDescriptor: never;
+
     readonly ImplementationFactory: Func_2<IServiceProvider, unknown> | undefined;
     readonly ImplementationInstance: unknown | undefined;
     readonly ImplementationType: Type | undefined;
@@ -319,6 +330,8 @@ export const ServiceDescriptor: {
 export type ServiceDescriptor = ServiceDescriptor$instance;
 
 export interface ServiceKeyAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceKeyAttribute: never;
+
 }
 
 
@@ -330,6 +343,8 @@ export const ServiceKeyAttribute: {
 export type ServiceKeyAttribute = ServiceKeyAttribute$instance;
 
 export interface ServiceProvider$instance extends IKeyedServiceProvider$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IKeyedServiceProvider: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -355,6 +370,8 @@ export type ServiceProvider = ServiceProvider$instance & __ServiceProvider$views
 
 
 export interface ServiceProviderOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceProviderOptions: never;
+
     ValidateOnBuild: boolean;
     ValidateScopes: boolean;
 }

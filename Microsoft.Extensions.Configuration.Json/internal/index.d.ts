@@ -19,6 +19,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface JsonConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -44,6 +46,8 @@ export type JsonConfigurationProvider = JsonConfigurationProvider$instance & __J
 
 
 export interface JsonConfigurationSource$instance extends FileConfigurationSource {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
@@ -63,6 +67,8 @@ export type JsonConfigurationSource = JsonConfigurationSource$instance & __JsonC
 
 
 export interface JsonStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
@@ -87,6 +93,8 @@ export type JsonStreamConfigurationProvider = JsonStreamConfigurationProvider$in
 
 
 export interface JsonStreamConfigurationSource$instance extends StreamConfigurationSource {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Build(builder: IConfigurationBuilder): IConfigurationProvider;

@@ -37,6 +37,8 @@ export type EntryWrittenEventHandler = (sender: unknown, e: EntryWrittenEventArg
 
 
 export interface EntryWrittenEventArgs$instance extends EventArgs {
+    readonly __tsonic_type_System_Diagnostics_EntryWrittenEventArgs: never;
+
     readonly Entry: EventLogEntry;
 }
 
@@ -50,6 +52,8 @@ export const EntryWrittenEventArgs: {
 export type EntryWrittenEventArgs = EntryWrittenEventArgs$instance;
 
 export interface EventInstance$instance {
+    readonly __tsonic_type_System_Diagnostics_EventInstance: never;
+
     CategoryId: int;
     EntryType: EventLogEntryType;
     InstanceId: long;
@@ -65,6 +69,8 @@ export const EventInstance: {
 export type EventInstance = EventInstance$instance;
 
 export interface EventLog$instance extends Component {
+    readonly __tsonic_type_System_Diagnostics_EventLog: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_ComponentModel_ISupportInitialize: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -128,6 +134,8 @@ export const EventLog: {
 export type EventLog = EventLog$instance;
 
 export interface EventLogEntry$instance extends Component {
+    readonly __tsonic_type_System_Diagnostics_EventLogEntry: never;
+
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
@@ -157,11 +165,12 @@ export const EventLogEntry: {
 export type EventLogEntry = EventLogEntry$instance;
 
 export interface EventLogEntryCollection$instance {
+    readonly __tsonic_type_System_Diagnostics_EventLogEntryCollection: never;
+
     readonly __tsonic_iface_System_Collections_ICollection: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    readonly [index: number]: EventLogEntry;
     CopyTo(entries: EventLogEntry[], index: int): void;
     GetEnumerator(): IEnumerator;
 }
@@ -171,9 +180,11 @@ export const EventLogEntryCollection: {
 };
 
 
-export type EventLogEntryCollection = EventLogEntryCollection$instance;
+export type EventLogEntryCollection = EventLogEntryCollection$instance & { readonly [index: number]: EventLogEntry; };
 
 export interface EventLogTraceListener$instance extends TraceListener {
+    readonly __tsonic_type_System_Diagnostics_EventLogTraceListener: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     EventLog: EventLog;
@@ -199,6 +210,8 @@ export const EventLogTraceListener: {
 export type EventLogTraceListener = EventLogTraceListener$instance;
 
 export interface EventSourceCreationData$instance {
+    readonly __tsonic_type_System_Diagnostics_EventSourceCreationData: never;
+
     CategoryCount: int;
     CategoryResourceFile: string;
     LogName: string;

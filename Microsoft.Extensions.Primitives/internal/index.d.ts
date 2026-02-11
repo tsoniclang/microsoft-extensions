@@ -30,6 +30,8 @@ export interface IChangeToken$instance {
 export type IChangeToken = IChangeToken$instance;
 
 export interface InplaceStringBuilder$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_InplaceStringBuilder: never;
+
     Capacity: int;
     Append(value: string): void;
     Append(segment: StringSegment): void;
@@ -47,11 +49,12 @@ export const InplaceStringBuilder: {
 export type InplaceStringBuilder = InplaceStringBuilder$instance;
 
 export interface StringSegment$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_StringSegment: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Buffer: string | undefined;
     readonly HasValue: boolean;
-    readonly [index: number]: char;
     readonly Length: int;
     readonly Offset: int;
     readonly Value: string | undefined;
@@ -96,9 +99,11 @@ export const StringSegment: {
 };
 
 
-export type StringSegment = StringSegment$instance;
+export type StringSegment = StringSegment$instance & { readonly [index: number]: char; };
 
 export interface StringTokenizer$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_StringTokenizer: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
@@ -115,6 +120,8 @@ export const StringTokenizer: {
 export type StringTokenizer = StringTokenizer$instance;
 
 export interface StringTokenizer_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_StringTokenizer_Enumerator: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -134,6 +141,8 @@ export const StringTokenizer_Enumerator: {
 export type StringTokenizer_Enumerator = StringTokenizer_Enumerator$instance;
 
 export interface StringValues$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_StringValues: never;
+
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
@@ -143,7 +152,6 @@ export interface StringValues$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Count: int;
-    readonly [index: number]: string | undefined;
     Equals(other: StringValues): boolean;
     Equals(other: string): boolean;
     Equals(other: string[]): boolean;
@@ -171,9 +179,11 @@ export const StringValues: {
 };
 
 
-export type StringValues = StringValues$instance;
+export type StringValues = StringValues$instance & { readonly [index: number]: string | undefined; };
 
 export interface StringValues_Enumerator$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_StringValues_Enumerator: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -193,6 +203,8 @@ export const StringValues_Enumerator: {
 export type StringValues_Enumerator = StringValues_Enumerator$instance;
 
 export interface CancellationChangeToken$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_CancellationChangeToken: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
     ActiveChangeCallbacks: boolean;
@@ -214,6 +226,8 @@ export type CancellationChangeToken = CancellationChangeToken$instance & __Cance
 
 
 export interface CompositeChangeToken$instance extends IChangeToken$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_CompositeChangeToken: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
     readonly ActiveChangeCallbacks: boolean;
@@ -236,6 +250,8 @@ export type CompositeChangeToken = CompositeChangeToken$instance & __CompositeCh
 
 
 export interface StringSegmentComparer$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Primitives_StringSegmentComparer: never;
+
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEqualityComparer_1: never;
 

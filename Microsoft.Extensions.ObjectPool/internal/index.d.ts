@@ -31,6 +31,8 @@ export interface IResettable$instance {
 export type IResettable = IResettable$instance;
 
 export interface DefaultObjectPool_1$instance<T> extends ObjectPool_1<T> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_DefaultObjectPool_1: never;
+
     Get(): T;
     Return(obj: T): void;
 }
@@ -45,6 +47,8 @@ export const DefaultObjectPool_1: {
 export type DefaultObjectPool_1<T> = DefaultObjectPool_1$instance<T>;
 
 export interface DefaultObjectPoolProvider$instance extends ObjectPoolProvider {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_DefaultObjectPoolProvider: never;
+
     MaximumRetained: int;
     Create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
     Create<T>(): ObjectPool_1<T>;
@@ -59,6 +63,8 @@ export const DefaultObjectPoolProvider: {
 export type DefaultObjectPoolProvider = DefaultObjectPoolProvider$instance;
 
 export interface DefaultPooledObjectPolicy_1$instance<T> extends PooledObjectPolicy_1$instance<T> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_DefaultPooledObjectPolicy_1: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
 
     Create(): T;
@@ -79,6 +85,8 @@ export type DefaultPooledObjectPolicy_1<T> = DefaultPooledObjectPolicy_1$instanc
 
 
 export interface LeakTrackingObjectPool_1$instance<T> extends ObjectPool_1<T> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPool_1: never;
+
     Get(): T;
     Return(obj: T): void;
 }
@@ -92,6 +100,8 @@ export const LeakTrackingObjectPool_1: {
 export type LeakTrackingObjectPool_1<T> = LeakTrackingObjectPool_1$instance<T>;
 
 export interface LeakTrackingObjectPoolProvider$instance extends ObjectPoolProvider {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider: never;
+
     Create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
     Create<T>(): ObjectPool_1<T>;
 }
@@ -105,6 +115,8 @@ export const LeakTrackingObjectPoolProvider: {
 export type LeakTrackingObjectPoolProvider = LeakTrackingObjectPoolProvider$instance;
 
 export interface ObjectPool_1$instance<T> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_ObjectPool_1: never;
+
     Get(): T;
     Return(obj: T): void;
 }
@@ -117,6 +129,8 @@ export const ObjectPool_1: (abstract new<T>() => ObjectPool_1<T>) & {
 export type ObjectPool_1<T> = ObjectPool_1$instance<T>;
 
 export interface ObjectPoolProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_ObjectPoolProvider: never;
+
     Create<T>(): ObjectPool_1<T>;
     Create<T>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
 }
@@ -129,6 +143,8 @@ export const ObjectPoolProvider: (abstract new() => ObjectPoolProvider) & {
 export type ObjectPoolProvider = ObjectPoolProvider$instance;
 
 export interface PooledObjectPolicy_1$instance<T> extends IPooledObjectPolicy_1$instance<T> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_PooledObjectPolicy_1: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
 
     Create(): T;
@@ -148,6 +164,8 @@ export type PooledObjectPolicy_1<T> = PooledObjectPolicy_1$instance<T> & __Poole
 
 
 export interface StringBuilderPooledObjectPolicy$instance extends PooledObjectPolicy_1$instance<StringBuilder> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_StringBuilderPooledObjectPolicy: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
 
     InitialCapacity: int;

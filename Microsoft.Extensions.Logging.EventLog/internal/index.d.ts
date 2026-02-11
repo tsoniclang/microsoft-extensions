@@ -13,6 +13,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_3, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface EventLogLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_EventLog_EventLogLoggerProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ISupportExternalScope: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -39,6 +41,8 @@ export type EventLogLoggerProvider = EventLogLoggerProvider$instance & __EventLo
 
 
 export interface EventLogSettings$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_EventLog_EventLogSettings: never;
+
     get Filter(): Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
     set Filter(value: Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined);
     get LogName(): string | undefined;

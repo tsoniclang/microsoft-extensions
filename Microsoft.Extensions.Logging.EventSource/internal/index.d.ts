@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface EventSourceLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_EventSource_EventSourceLoggerProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -35,6 +37,8 @@ export type EventSourceLoggerProvider = EventSourceLoggerProvider$instance & __E
 
 
 export interface LoggingEventSource$instance extends EventSource {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_EventSource_LoggingEventSource: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     OnEventCommand(command: EventCommandEventArgs): void;

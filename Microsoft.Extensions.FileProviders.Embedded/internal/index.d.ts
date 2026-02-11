@@ -14,6 +14,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, DateTimeOffset, Int64, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface EmbeddedResourceFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Embedded_EmbeddedResourceFileInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
 
     readonly Exists: boolean;

@@ -17,6 +17,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CommandLineConfigurationProvider$instance extends ConfigurationProvider {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_CommandLine_CommandLineConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
@@ -40,6 +42,8 @@ export type CommandLineConfigurationProvider = CommandLineConfigurationProvider$
 
 
 export interface CommandLineConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_CommandLine_CommandLineConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Args: IEnumerable_1<System_Internal.String>;

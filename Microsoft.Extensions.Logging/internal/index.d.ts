@@ -115,6 +115,8 @@ export interface ISupportExternalScope$instance {
 export type ISupportExternalScope = ISupportExternalScope$instance;
 
 export interface EventId$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_EventId: never;
+
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Id: int;
@@ -134,6 +136,8 @@ export const EventId: {
 export type EventId = EventId$instance;
 
 export interface LogDefineOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LogDefineOptions: never;
+
     SkipEnabledCheck: boolean;
 }
 
@@ -146,6 +150,8 @@ export const LogDefineOptions: {
 export type LogDefineOptions = LogDefineOptions$instance;
 
 export interface Logger_1$instance<T> extends ILogger_1$instance<T> {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Logger_1: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
 
@@ -165,6 +171,8 @@ export type Logger_1<T> = Logger_1$instance<T> & __Logger_1$views<T>;
 
 
 export interface LoggerExternalScopeProvider$instance extends IExternalScopeProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerExternalScopeProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_IExternalScopeProvider: never;
 
     ForEachScope<TState>(callback: Action_2<unknown, TState>, state: TState): void;
@@ -185,6 +193,8 @@ export type LoggerExternalScopeProvider = LoggerExternalScopeProvider$instance &
 
 
 export interface LoggerFactory$instance extends ILoggerFactory$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerFactory: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
@@ -214,6 +224,8 @@ export type LoggerFactory = LoggerFactory$instance & __LoggerFactory$views;
 
 
 export interface LoggerFactoryOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerFactoryOptions: never;
+
     ActivityTrackingOptions: ActivityTrackingOptions;
 }
 
@@ -226,6 +238,8 @@ export const LoggerFactoryOptions: {
 export type LoggerFactoryOptions = LoggerFactoryOptions$instance;
 
 export interface LoggerFilterOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerFilterOptions: never;
+
     CaptureScopes: boolean;
     MinLevel: LogLevel;
     readonly Rules: IList_1<LoggerFilterRule>;
@@ -240,6 +254,8 @@ export const LoggerFilterOptions: {
 export type LoggerFilterOptions = LoggerFilterOptions$instance;
 
 export interface LoggerFilterRule$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerFilterRule: never;
+
     readonly CategoryName: string | undefined;
     readonly Filter: Func_4<string | undefined, string | undefined, LogLevel, System_Internal.Boolean> | undefined;
     readonly LogLevel: Nullable_1<LogLevel>;
@@ -256,6 +272,8 @@ export const LoggerFilterRule: {
 export type LoggerFilterRule = LoggerFilterRule$instance;
 
 export interface LoggerMessageAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerMessageAttribute: never;
+
     EventId: int;
     get EventName(): string | undefined;
     set EventName(value: string | undefined);
@@ -277,6 +295,8 @@ export const LoggerMessageAttribute: {
 export type LoggerMessageAttribute = LoggerMessageAttribute$instance;
 
 export interface ProviderAliasAttribute$instance extends Attribute {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_ProviderAliasAttribute: never;
+
     readonly Alias: string;
 }
 

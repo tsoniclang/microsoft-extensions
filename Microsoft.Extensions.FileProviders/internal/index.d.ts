@@ -56,6 +56,8 @@ export interface IFileProvider$instance {
 export type IFileProvider = IFileProvider$instance;
 
 export interface CompositeFileProvider$instance extends IFileProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_CompositeFileProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
 
     readonly FileProviders: IEnumerable_1<IFileProvider>;
@@ -79,6 +81,8 @@ export type CompositeFileProvider = CompositeFileProvider$instance & __Composite
 
 
 export interface EmbeddedFileProvider$instance extends IFileProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_EmbeddedFileProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
 
     GetDirectoryContents(subpath: string): IDirectoryContents;
@@ -101,6 +105,8 @@ export type EmbeddedFileProvider = EmbeddedFileProvider$instance & __EmbeddedFil
 
 
 export interface ManifestEmbeddedFileProvider$instance extends IFileProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_ManifestEmbeddedFileProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
 
     readonly Assembly: Assembly;
@@ -126,6 +132,8 @@ export type ManifestEmbeddedFileProvider = ManifestEmbeddedFileProvider$instance
 
 
 export interface NotFoundDirectoryContents$instance extends IDirectoryContents$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_NotFoundDirectoryContents: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -149,6 +157,8 @@ export type NotFoundDirectoryContents = NotFoundDirectoryContents$instance & __N
 
 
 export interface NotFoundFileInfo$instance extends IFileInfo$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_NotFoundFileInfo: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
 
     readonly Exists: boolean;
@@ -174,6 +184,8 @@ export type NotFoundFileInfo = NotFoundFileInfo$instance & __NotFoundFileInfo$vi
 
 
 export interface NullChangeToken$instance extends Microsoft_Extensions_Primitives_Internal.IChangeToken$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_NullChangeToken: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
     readonly ActiveChangeCallbacks: boolean;
@@ -195,6 +207,8 @@ export type NullChangeToken = NullChangeToken$instance & __NullChangeToken$views
 
 
 export interface NullFileProvider$instance extends IFileProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_NullFileProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
 
     GetDirectoryContents(subpath: string): IDirectoryContents;
@@ -216,6 +230,8 @@ export type NullFileProvider = NullFileProvider$instance & __NullFileProvider$vi
 
 
 export interface PhysicalFileProvider$instance extends IFileProvider$instance, System_Internal.IDisposable {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_PhysicalFileProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 

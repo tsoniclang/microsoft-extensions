@@ -11,6 +11,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface WebEncoderOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_WebEncoders_WebEncoderOptions: never;
+
     get TextEncoderSettings(): TextEncoderSettings | undefined;
     set TextEncoderSettings(value: TextEncoderSettings | undefined);
 }

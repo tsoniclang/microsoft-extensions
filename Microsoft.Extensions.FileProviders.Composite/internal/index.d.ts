@@ -16,6 +16,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface CompositeDirectoryContents$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileProviders_Composite_CompositeDirectoryContents: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;

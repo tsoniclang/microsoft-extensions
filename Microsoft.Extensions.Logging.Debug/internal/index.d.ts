@@ -12,6 +12,8 @@ import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
 export interface DebugLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Debug_DebugLoggerProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 

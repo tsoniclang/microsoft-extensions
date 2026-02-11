@@ -43,6 +43,8 @@ export interface IHttpClientLogger$instance {
 export type IHttpClientLogger = IHttpClientLogger$instance;
 
 export interface LoggingHttpMessageHandler$instance extends DelegatingHandler {
+    readonly __tsonic_type_Microsoft_Extensions_Http_Logging_LoggingHttpMessageHandler: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;
@@ -59,6 +61,8 @@ export const LoggingHttpMessageHandler: {
 export type LoggingHttpMessageHandler = LoggingHttpMessageHandler$instance;
 
 export interface LoggingScopeHttpMessageHandler$instance extends DelegatingHandler {
+    readonly __tsonic_type_Microsoft_Extensions_Http_Logging_LoggingScopeHttpMessageHandler: never;
+
     readonly __tsonic_iface_System_IDisposable: never;
 
     Send(request: HttpRequestMessage, cancellationToken: CancellationToken): HttpResponseMessage;

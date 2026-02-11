@@ -19,7 +19,9 @@ import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/ind
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface MemoryConfigurationProvider$instance extends ConfigurationProvider {
+export interface MemoryConfigurationProvider$instance extends ConfigurationProvider, System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Memory_MemoryConfigurationProvider: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -47,6 +49,8 @@ export type MemoryConfigurationProvider = MemoryConfigurationProvider$instance &
 
 
 export interface MemoryConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_Memory_MemoryConfigurationSource: never;
+
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     get InitialData(): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | undefined;
