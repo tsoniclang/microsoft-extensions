@@ -221,26 +221,6 @@
           "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
           "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1",
-          "clrName": "EnumerateFileSystemInfos",
-          "metadataToken": 0,
-          "canonicalSignature": "():System.Collections.Generic.IEnumerable_1",
-          "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
         }
       ],
       "properties": [

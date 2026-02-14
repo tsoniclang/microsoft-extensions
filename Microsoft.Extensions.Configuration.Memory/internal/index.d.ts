@@ -5,9 +5,6 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
-
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -19,7 +16,7 @@ import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/ind
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface MemoryConfigurationProvider$instance extends ConfigurationProvider, System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> {
+export interface MemoryConfigurationProvider$instance extends ConfigurationProvider, Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance, System_Collections_Generic_Internal.IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Memory_MemoryConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
@@ -27,12 +24,7 @@ export interface MemoryConfigurationProvider$instance extends ConfigurationProvi
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     Add(key: string, value: string): void;
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
     GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
-    GetReloadToken(): IChangeToken;
-    Load(): void;
-    Set(key: string, value: string): void;
-    TryGet(key: string, value: string): boolean;
 }
 
 

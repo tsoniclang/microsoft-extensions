@@ -5,9 +5,6 @@
 // Primitive type aliases from @tsonic/core
 import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
-
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -21,12 +18,8 @@ export interface EnvironmentVariablesConfigurationProvider$instance extends Conf
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
-    GetReloadToken(): IChangeToken;
     Load(): void;
-    Set(key: string, value: string): void;
     ToString(): string;
-    TryGet(key: string, value: string): boolean;
 }
 
 

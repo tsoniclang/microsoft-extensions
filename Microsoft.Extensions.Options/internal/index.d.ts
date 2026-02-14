@@ -148,12 +148,11 @@ export interface __ConfigurationChangeTokenSource_1$views<TOptions> {
 export type ConfigurationChangeTokenSource_1<TOptions> = ConfigurationChangeTokenSource_1$instance<TOptions> & __ConfigurationChangeTokenSource_1$views<TOptions>;
 
 
-export interface ConfigureFromConfigurationOptions_1$instance<TOptions> extends ConfigureOptions_1$instance<TOptions> {
+export interface ConfigureFromConfigurationOptions_1$instance<TOptions> extends ConfigureOptions_1$instance<TOptions>, IConfigureOptions_1$instance<TOptions> {
     readonly __tsonic_type_Microsoft_Extensions_Options_ConfigureFromConfigurationOptions_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    Configure(options: TOptions): void;
 }
 
 
@@ -390,8 +389,6 @@ export interface NamedConfigureFromConfigurationOptions_1$instance<TOptions> ext
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureNamedOptions_1: never;
     readonly __tsonic_iface_Microsoft_Extensions_Options_IConfigureOptions_1: never;
 
-    Configure(name: string, options: TOptions): void;
-    Configure(options: TOptions): void;
 }
 
 

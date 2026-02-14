@@ -134,26 +134,6 @@
           "declaringAssemblyName": "Microsoft.Extensions.Options",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource\u00601"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource\u00602::GetChangeToken():Microsoft.Extensions.Primitives.IChangeToken",
-          "clrName": "GetChangeToken",
-          "metadataToken": 0,
-          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
-          "normalizedSignature": "GetChangeToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "BaseOverload",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource\u00602",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Configuration",
-          "isExtensionMethod": false
         }
       ],
       "properties": [
