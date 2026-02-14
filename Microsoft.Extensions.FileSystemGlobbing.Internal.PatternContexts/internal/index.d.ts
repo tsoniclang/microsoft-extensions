@@ -81,8 +81,6 @@ export interface PatternContextLinear$instance extends PatternContext_1$instance
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(file: FileInfoBase): PatternTestResult;
     Test(directory: DirectoryInfoBase): boolean;
@@ -105,9 +103,6 @@ export interface PatternContextLinearExclude$instance extends PatternContextLine
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    PopDirectory(): void;
-    PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
     Test(file: FileInfoBase): PatternTestResult;
 }
@@ -131,9 +126,6 @@ export interface PatternContextLinearInclude$instance extends PatternContextLine
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    PopDirectory(): void;
-    PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
     Test(file: FileInfoBase): PatternTestResult;
 }
@@ -156,7 +148,6 @@ export interface PatternContextRagged$instance extends PatternContext_1$instance
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
     Test(file: FileInfoBase): PatternTestResult;
@@ -180,9 +171,6 @@ export interface PatternContextRaggedExclude$instance extends PatternContextRagg
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    PopDirectory(): void;
-    PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
     Test(file: FileInfoBase): PatternTestResult;
 }
@@ -206,9 +194,6 @@ export interface PatternContextRaggedInclude$instance extends PatternContextRagg
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
     Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    PopDirectory(): void;
-    PushDirectory(directory: DirectoryInfoBase): void;
     Test(directory: DirectoryInfoBase): boolean;
     Test(file: FileInfoBase): PatternTestResult;
 }

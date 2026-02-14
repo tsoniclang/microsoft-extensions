@@ -170,6 +170,8 @@ export interface StringBuilderPooledObjectPolicy$instance extends PooledObjectPo
 
     InitialCapacity: int;
     MaximumRetainedCapacity: int;
+    Create(): StringBuilder;
+    Return(obj: StringBuilder): boolean;
 }
 
 

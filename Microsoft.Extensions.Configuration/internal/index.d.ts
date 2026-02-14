@@ -405,12 +405,9 @@ export interface FileConfigurationProvider$instance extends ConfigurationProvide
     readonly Source: FileConfigurationSource;
     Dispose(): void;
     Dispose(disposing: boolean): void;
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
-    GetReloadToken(): IChangeToken;
     Load(): void;
-    Set(key: string, value: string): void;
+    Load(stream: Stream): void;
     ToString(): string;
-    TryGet(key: string, value: string): boolean;
 }
 
 
@@ -478,11 +475,8 @@ export interface StreamConfigurationProvider$instance extends ConfigurationProvi
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
     readonly Source: StreamConfigurationSource;
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
-    GetReloadToken(): IChangeToken;
+    Load(stream: Stream): void;
     Load(): void;
-    Set(key: string, value: string): void;
-    TryGet(key: string, value: string): boolean;
 }
 
 

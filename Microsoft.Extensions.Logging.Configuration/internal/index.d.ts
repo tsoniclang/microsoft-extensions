@@ -33,12 +33,11 @@ export interface ILoggerProviderConfigurationFactory$instance {
 
 export type ILoggerProviderConfigurationFactory = ILoggerProviderConfigurationFactory$instance;
 
-export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> extends ConfigurationChangeTokenSource_1<TOptions> {
+export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> extends ConfigurationChangeTokenSource_1<TOptions>, Microsoft_Extensions_Options_Internal.IOptionsChangeTokenSource_1$instance<TOptions> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Configuration_LoggerProviderOptionsChangeTokenSource_2: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1: never;
 
-    GetChangeToken(): IChangeToken;
 }
 
 
