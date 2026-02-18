@@ -15,7 +15,7 @@ import type { ReadOnlyCollection_1 } from "@tsonic/dotnet/System.Collections.Obj
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
 import type { ICollection, IEnumerable, IEnumerator } from "@tsonic/dotnet/System.Collections/internal/index.js";
 import type { X509Certificate2, X509Certificate2Collection, X509ExtensionCollection, X509IncludeOption } from "@tsonic/dotnet/System.Security.Cryptography.X509Certificates/internal/index.js";
-import * as System_Security_Cryptography_Lib from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
+import * as System_Security_Cryptography_Lib_tsonic_dotnet from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
 import type { AsnEncodedData, AsymmetricAlgorithm, CompositeMLDsa, CspParameters, HashAlgorithmName, MLDsa, Oid, PbeParameters, RSA, RSAEncryptionPadding, RSASignaturePadding, SlhDsa } from "@tsonic/dotnet/System.Security.Cryptography/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Span_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
