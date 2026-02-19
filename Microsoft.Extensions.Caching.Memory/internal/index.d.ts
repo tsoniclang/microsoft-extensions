@@ -48,13 +48,17 @@ export interface ICacheEntry$instance extends IDisposable {
     readonly Key: unknown;
     get Value(): unknown | undefined;
     set Value(value: unknown | undefined);
-    AbsoluteExpiration: Nullable_1<DateTimeOffset>;
-    AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
-    SlidingExpiration: Nullable_1<TimeSpan>;
+    get AbsoluteExpiration(): Nullable_1<DateTimeOffset>;
+    set AbsoluteExpiration(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
+    get AbsoluteExpirationRelativeToNow(): Nullable_1<TimeSpan>;
+    set AbsoluteExpirationRelativeToNow(value: Nullable_1<TimeSpan> | TimeSpan);
+    get SlidingExpiration(): Nullable_1<TimeSpan>;
+    set SlidingExpiration(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly ExpirationTokens: IList_1<IChangeToken>;
     readonly PostEvictionCallbacks: IList_1<PostEvictionCallbackRegistration>;
     Priority: CacheItemPriority;
-    Size: Nullable_1<System_Internal.Int64>;
+    get Size(): Nullable_1<System_Internal.Int64>;
+    set Size(value: Nullable_1<System_Internal.Int64> | long);
 }
 
 
@@ -114,13 +118,17 @@ export type MemoryCache = MemoryCache$instance & __MemoryCache$views;
 export interface MemoryCacheEntryOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheEntryOptions: never;
 
-    AbsoluteExpiration: Nullable_1<DateTimeOffset>;
-    AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
+    get AbsoluteExpiration(): Nullable_1<DateTimeOffset>;
+    set AbsoluteExpiration(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
+    get AbsoluteExpirationRelativeToNow(): Nullable_1<TimeSpan>;
+    set AbsoluteExpirationRelativeToNow(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly ExpirationTokens: IList_1<IChangeToken>;
     readonly PostEvictionCallbacks: IList_1<PostEvictionCallbackRegistration>;
     Priority: CacheItemPriority;
-    Size: Nullable_1<System_Internal.Int64>;
-    SlidingExpiration: Nullable_1<TimeSpan>;
+    get Size(): Nullable_1<System_Internal.Int64>;
+    set Size(value: Nullable_1<System_Internal.Int64> | long);
+    get SlidingExpiration(): Nullable_1<TimeSpan>;
+    set SlidingExpiration(value: Nullable_1<TimeSpan> | TimeSpan);
 }
 
 
@@ -141,7 +149,8 @@ export interface MemoryCacheOptions$instance extends Microsoft_Extensions_Option
     CompactionPercentage: double;
     CompactOnMemoryPressure: boolean;
     ExpirationScanFrequency: TimeSpan;
-    SizeLimit: Nullable_1<System_Internal.Int64>;
+    get SizeLimit(): Nullable_1<System_Internal.Int64>;
+    set SizeLimit(value: Nullable_1<System_Internal.Int64> | long);
     TrackLinkedCacheEntries: boolean;
     TrackStatistics: boolean;
 }
@@ -163,7 +172,8 @@ export interface MemoryCacheStatistics$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheStatistics: never;
 
     CurrentEntryCount: long;
-    CurrentEstimatedSize: Nullable_1<System_Internal.Int64>;
+    get CurrentEstimatedSize(): Nullable_1<System_Internal.Int64>;
+    set CurrentEstimatedSize(value: Nullable_1<System_Internal.Int64> | long);
     TotalHits: long;
     TotalMisses: long;
 }

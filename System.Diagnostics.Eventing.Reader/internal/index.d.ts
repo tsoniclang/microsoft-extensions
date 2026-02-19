@@ -156,9 +156,11 @@ export interface EventLogConfiguration$instance {
     readonly OwningProviderName: string;
     readonly ProviderBufferSize: Nullable_1<System_Internal.Int32>;
     readonly ProviderControlGuid: Nullable_1<Guid>;
-    ProviderKeywords: Nullable_1<System_Internal.Int64>;
+    get ProviderKeywords(): Nullable_1<System_Internal.Int64>;
+    set ProviderKeywords(value: Nullable_1<System_Internal.Int64> | long);
     readonly ProviderLatency: Nullable_1<System_Internal.Int32>;
-    ProviderLevel: Nullable_1<System_Internal.Int32>;
+    get ProviderLevel(): Nullable_1<System_Internal.Int32>;
+    set ProviderLevel(value: Nullable_1<System_Internal.Int32> | int);
     readonly ProviderMaximumNumberOfBuffers: Nullable_1<System_Internal.Int32>;
     readonly ProviderMinimumNumberOfBuffers: Nullable_1<System_Internal.Int32>;
     readonly ProviderNames: IEnumerable_1<System_Internal.String>;
