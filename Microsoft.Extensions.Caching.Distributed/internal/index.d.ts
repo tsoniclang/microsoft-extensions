@@ -50,9 +50,12 @@ export type IDistributedCache = IDistributedCache$instance;
 export interface DistributedCacheEntryOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Distributed_DistributedCacheEntryOptions: never;
 
-    AbsoluteExpiration: Nullable_1<DateTimeOffset>;
-    AbsoluteExpirationRelativeToNow: Nullable_1<TimeSpan>;
-    SlidingExpiration: Nullable_1<TimeSpan>;
+    get AbsoluteExpiration(): Nullable_1<DateTimeOffset>;
+    set AbsoluteExpiration(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
+    get AbsoluteExpirationRelativeToNow(): Nullable_1<TimeSpan>;
+    set AbsoluteExpirationRelativeToNow(value: Nullable_1<TimeSpan> | TimeSpan);
+    get SlidingExpiration(): Nullable_1<TimeSpan>;
+    set SlidingExpiration(value: Nullable_1<TimeSpan> | TimeSpan);
 }
 
 

@@ -75,9 +75,12 @@ export type HybridCache = HybridCache$instance;
 export interface HybridCacheEntryOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Hybrid_HybridCacheEntryOptions: never;
 
-    Expiration: Nullable_1<TimeSpan>;
-    Flags: Nullable_1<HybridCacheEntryFlags>;
-    LocalCacheExpiration: Nullable_1<TimeSpan>;
+    get Expiration(): Nullable_1<TimeSpan>;
+    set Expiration(value: Nullable_1<TimeSpan> | TimeSpan);
+    get Flags(): Nullable_1<HybridCacheEntryFlags>;
+    set Flags(value: Nullable_1<HybridCacheEntryFlags> | HybridCacheEntryFlags);
+    get LocalCacheExpiration(): Nullable_1<TimeSpan>;
+    set LocalCacheExpiration(value: Nullable_1<TimeSpan> | TimeSpan);
 }
 
 

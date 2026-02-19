@@ -112,11 +112,13 @@ export type HealthCheckPublisherOptions = HealthCheckPublisherOptions$instance;
 export interface HealthCheckRegistration$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckRegistration: never;
 
-    Delay: Nullable_1<TimeSpan>;
+    get Delay(): Nullable_1<TimeSpan>;
+    set Delay(value: Nullable_1<TimeSpan> | TimeSpan);
     Factory: Func_2<IServiceProvider, IHealthCheck>;
     FailureStatus: HealthStatus;
     Name: string;
-    Period: Nullable_1<TimeSpan>;
+    get Period(): Nullable_1<TimeSpan>;
+    set Period(value: Nullable_1<TimeSpan> | TimeSpan);
     readonly Tags: ISet_1<System_Internal.String>;
     Timeout: TimeSpan;
 }
