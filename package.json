@@ -22,7 +22,7 @@
     "url": "https://github.com/tsoniclang/microsoft-extensions.git"
   },
   "peerDependencies": {
-    "@tsonic/core": "10.0.35",
-    "@tsonic/dotnet": "10.0.35"
+    "@tsonic/core": "10.0.38",
+    "@tsonic/dotnet": "10.0.38"
   }
 }
