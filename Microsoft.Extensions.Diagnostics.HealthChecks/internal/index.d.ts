@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Diagnostics.HealthChecks
 // Assembly: Microsoft.Extensions.Diagnostics.HealthChecks, Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ICollection_1, IEnumerable_1, IReadOnlyDictionary_2, ISet_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -40,18 +41,18 @@ export type IHealthCheckPublisher = IHealthCheckPublisher$instance;
 export interface HealthCheckResult$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult: never;
 
-    readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
-    readonly Description: string | undefined;
-    readonly Exception: Exception | undefined;
+    readonly Data: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    readonly Description: string | null;
+    readonly Exception: Exception | null;
     readonly Status: HealthStatus;
 }
 
 
 export const HealthCheckResult: {
-    new(status: HealthStatus, description: string, exception: Exception, data: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
-    Degraded(description?: string, exception?: Exception, data?: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
-    Healthy(description?: string, data?: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
-    Unhealthy(description?: string, exception?: Exception, data?: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthCheckResult;
+    new(status: HealthStatus, description: string | null, exception: Exception | null, data: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null): HealthCheckResult;
+    Degraded(description?: string | null, exception?: Exception | null, data?: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null): HealthCheckResult;
+    Healthy(description?: string | null, data?: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null): HealthCheckResult;
+    Unhealthy(description?: string | null, exception?: Exception | null, data?: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null): HealthCheckResult;
 };
 
 
@@ -60,18 +61,18 @@ export type HealthCheckResult = HealthCheckResult$instance;
 export interface HealthReportEntry$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry: never;
 
-    readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
-    readonly Description: string | undefined;
+    readonly Data: IReadOnlyDictionary_2<System_Internal.String, JsValue>;
+    readonly Description: string | null;
     readonly Duration: TimeSpan;
-    readonly Exception: Exception | undefined;
+    readonly Exception: Exception | null;
     readonly Status: HealthStatus;
     readonly Tags: IEnumerable_1<System_Internal.String>;
 }
 
 
 export const HealthReportEntry: {
-    new(status: HealthStatus, description: string, duration: TimeSpan, exception: Exception, data: IReadOnlyDictionary_2<System_Internal.String, unknown>): HealthReportEntry;
-    new(status: HealthStatus, description: string, duration: TimeSpan, exception: Exception, data: IReadOnlyDictionary_2<System_Internal.String, unknown>, tags: IEnumerable_1<System_Internal.String>): HealthReportEntry;
+    new(status: HealthStatus, description: string | null, duration: TimeSpan, exception: Exception | null, data: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null): HealthReportEntry;
+    new(status: HealthStatus, description: string | null, duration: TimeSpan, exception: Exception | null, data: IReadOnlyDictionary_2<System_Internal.String, JsValue> | null, tags: IEnumerable_1<System_Internal.String> | null): HealthReportEntry;
 };
 
 
@@ -96,8 +97,8 @@ export interface HealthCheckPublisherOptions$instance {
 
     Delay: TimeSpan;
     Period: TimeSpan;
-    get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined;
-    set Predicate(value: Func_2<HealthCheckRegistration, System_Internal.Boolean> | undefined);
+    get Predicate(): Func_2<HealthCheckRegistration, System_Internal.Boolean> | null;
+    set Predicate(value: Func_2<HealthCheckRegistration, System_Internal.Boolean> | null);
     Timeout: TimeSpan;
 }
 
@@ -125,10 +126,10 @@ export interface HealthCheckRegistration$instance {
 
 
 export const HealthCheckRegistration: {
-    new(name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): HealthCheckRegistration;
-    new(name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: Nullable_1<TimeSpan>): HealthCheckRegistration;
-    new(name: string, factory: Func_2<IServiceProvider, IHealthCheck>, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): HealthCheckRegistration;
-    new(name: string, factory: Func_2<IServiceProvider, IHealthCheck>, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: Nullable_1<TimeSpan>): HealthCheckRegistration;
+    new(name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String> | null): HealthCheckRegistration;
+    new(name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String> | null, timeout: Nullable_1<TimeSpan>): HealthCheckRegistration;
+    new(name: string, factory: Func_2<IServiceProvider, IHealthCheck>, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String> | null): HealthCheckRegistration;
+    new(name: string, factory: Func_2<IServiceProvider, IHealthCheck>, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String> | null, timeout: Nullable_1<TimeSpan>): HealthCheckRegistration;
 };
 
 
@@ -138,7 +139,7 @@ export interface HealthCheckService$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckService: never;
 
     CheckHealthAsync(cancellationToken?: CancellationToken): Task_1<HealthReport>;
-    CheckHealthAsync(predicate: Func_2<HealthCheckRegistration, System_Internal.Boolean>, cancellationToken?: CancellationToken): Task_1<HealthReport>;
+    CheckHealthAsync(predicate: Func_2<HealthCheckRegistration, System_Internal.Boolean> | null, cancellationToken?: CancellationToken): Task_1<HealthReport>;
 }
 
 

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Logging.Abstractions
 // Assembly: Microsoft.Extensions.Logging.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensions.Logging/internal/index.js";
@@ -27,15 +28,15 @@ export interface LogEntry_1$instance<TState> {
 
     readonly Category: string;
     readonly EventId: EventId;
-    readonly Exception: Exception | undefined;
-    readonly Formatter: Func_3<TState, Exception | undefined, System_Internal.String>;
+    readonly Exception: Exception | null;
+    readonly Formatter: Func_3<TState, Exception | null, System_Internal.String>;
     readonly LogLevel: LogLevel;
     readonly State: TState;
 }
 
 
 export const LogEntry_1: {
-    new<TState>(logLevel: LogLevel, category: string, eventId: EventId, state: TState, exception: Exception, formatter: Func_3<TState, Exception, System_Internal.String>): LogEntry_1<TState>;
+    new<TState>(logLevel: LogLevel, category: string, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): LogEntry_1<TState>;
 };
 
 
@@ -46,13 +47,13 @@ export interface BufferedLogRecord$instance {
 
     readonly ActivitySpanId: Nullable_1<ActivitySpanId>;
     readonly ActivityTraceId: Nullable_1<ActivityTraceId>;
-    readonly Attributes: IReadOnlyList_1<KeyValuePair_2<System_Internal.String, unknown>>;
+    readonly Attributes: IReadOnlyList_1<KeyValuePair_2<System_Internal.String, JsValue>>;
     readonly EventId: EventId;
-    readonly Exception: string | undefined;
-    readonly FormattedMessage: string | undefined;
+    readonly Exception: string | null;
+    readonly FormattedMessage: string | null;
     readonly LogLevel: LogLevel;
     readonly ManagedThreadId: Nullable_1<System_Internal.Int32>;
-    readonly MessageTemplate: string | undefined;
+    readonly MessageTemplate: string | null;
     readonly Timestamp: DateTimeOffset;
 }
 
@@ -70,7 +71,7 @@ export interface NullLogger$instance extends Microsoft_Extensions_Logging_Intern
 
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func_3<TState, Exception, System_Internal.String>): void;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
 }
 
 
@@ -94,13 +95,13 @@ export interface NullLogger_1$instance<T> extends ILogger_1<T> {
 
     BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception, formatter: Func_3<TState, Exception, System_Internal.String>): void;
+    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
 }
 
 
 export const NullLogger_1: {
     new<T>(): NullLogger_1<T>;
-    readonly Instance: unknown;
+    readonly Instance: <T>() => NullLogger_1<T>;
 };
 
 

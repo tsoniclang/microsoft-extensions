@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Logging.EventLog
 // Assembly: Microsoft.Extensions.Logging.EventLog
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Logging_Internal from "../../Microsoft.Extensions.Logging/internal/index.js";
@@ -27,7 +28,7 @@ export interface EventLogLoggerProvider$instance extends Microsoft_Extensions_Lo
 
 export const EventLogLoggerProvider: {
     new(): EventLogLoggerProvider;
-    new(settings: EventLogSettings): EventLogLoggerProvider;
+    new(settings: EventLogSettings | null): EventLogLoggerProvider;
     new(options: IOptions_1<EventLogSettings>): EventLogLoggerProvider;
 };
 
@@ -43,14 +44,14 @@ export type EventLogLoggerProvider = EventLogLoggerProvider$instance & __EventLo
 export interface EventLogSettings$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_EventLog_EventLogSettings: never;
 
-    get Filter(): Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined;
-    set Filter(value: Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | undefined);
-    get LogName(): string | undefined;
-    set LogName(value: string | undefined);
-    get MachineName(): string | undefined;
-    set MachineName(value: string | undefined);
-    get SourceName(): string | undefined;
-    set SourceName(value: string | undefined);
+    get Filter(): Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | null;
+    set Filter(value: Func_3<System_Internal.String, LogLevel, System_Internal.Boolean> | null);
+    get LogName(): string | null;
+    set LogName(value: string | null);
+    get MachineName(): string | null;
+    set MachineName(value: string | null);
+    get SourceName(): string | null;
+    set SourceName(value: string | null);
 }
 
 

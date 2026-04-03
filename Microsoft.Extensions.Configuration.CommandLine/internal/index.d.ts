@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Configuration.CommandLine
 // Assembly: Microsoft.Extensions.Configuration.CommandLine
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -23,7 +24,7 @@ export interface CommandLineConfigurationProvider$instance extends Configuration
 
 
 export const CommandLineConfigurationProvider: {
-    new(args: IEnumerable_1<System_Internal.String>, switchMappings: IDictionary_2<System_Internal.String, System_Internal.String>): CommandLineConfigurationProvider;
+    new(args: IEnumerable_1<System_Internal.String>, switchMappings: IDictionary_2<System_Internal.String, System_Internal.String> | null): CommandLineConfigurationProvider;
 };
 
 
@@ -40,8 +41,8 @@ export interface CommandLineConfigurationSource$instance extends Microsoft_Exten
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
     Args: IEnumerable_1<System_Internal.String>;
-    get SwitchMappings(): IDictionary_2<System_Internal.String, System_Internal.String> | undefined;
-    set SwitchMappings(value: IDictionary_2<System_Internal.String, System_Internal.String> | undefined);
+    get SwitchMappings(): IDictionary_2<System_Internal.String, System_Internal.String> | null;
+    set SwitchMappings(value: IDictionary_2<System_Internal.String, System_Internal.String> | null);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

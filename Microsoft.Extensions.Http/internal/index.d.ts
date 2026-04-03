@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Http
 // Assembly: Microsoft.Extensions.Http
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -51,8 +52,8 @@ export interface HttpMessageHandlerBuilder$instance {
     readonly __tsonic_type_Microsoft_Extensions_Http_HttpMessageHandlerBuilder: never;
 
     readonly AdditionalHandlers: IList_1<DelegatingHandler>;
-    get Name(): string | undefined;
-    set Name(value: string | undefined);
+    get Name(): string | null;
+    set Name(value: string | null);
     PrimaryHandler: HttpMessageHandler;
     readonly Services: IServiceProvider;
     Build(): HttpMessageHandler;

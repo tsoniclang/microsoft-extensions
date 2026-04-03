@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileSystemGlobbing.Internal
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { DirectoryInfoBase, FileInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
@@ -75,14 +76,14 @@ export interface PatternTestResult$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternTestResult: never;
 
     readonly IsSuccessful: boolean;
-    readonly Stem: string | undefined;
+    readonly Stem: string | null;
 }
 
 
 export const PatternTestResult: {
     new(): PatternTestResult;
     readonly Failed: PatternTestResult;
-    Success(stem: string): PatternTestResult;
+    Success(stem: string | null): PatternTestResult;
 };
 
 

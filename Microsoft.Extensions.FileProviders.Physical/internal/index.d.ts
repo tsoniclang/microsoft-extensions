@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileProviders.Physical
 // Assembly: Microsoft.Extensions.FileProviders.Physical
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_FileProviders_Internal from "../../Microsoft.Extensions.FileProviders/internal/index.js";
@@ -98,8 +99,8 @@ export interface PhysicalFilesWatcher$instance {
 
 
 export const PhysicalFilesWatcher: {
-    new(root: string, fileSystemWatcher: FileSystemWatcher, pollForChanges: boolean): PhysicalFilesWatcher;
-    new(root: string, fileSystemWatcher: FileSystemWatcher, pollForChanges: boolean, filters: ExclusionFilters): PhysicalFilesWatcher;
+    new(root: string, fileSystemWatcher: FileSystemWatcher | null, pollForChanges: boolean): PhysicalFilesWatcher;
+    new(root: string, fileSystemWatcher: FileSystemWatcher | null, pollForChanges: boolean, filters: ExclusionFilters): PhysicalFilesWatcher;
 };
 
 
@@ -113,7 +114,7 @@ export interface PollingFileChangeToken$instance {
 
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
 }
 
 

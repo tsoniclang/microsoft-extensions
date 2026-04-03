@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.ObjectPool
 // Assembly: Microsoft.Extensions.ObjectPool
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Text_Internal from "@tsonic/dotnet/System.Text/internal/index.js";
@@ -188,7 +189,7 @@ export type StringBuilderPooledObjectPolicy = StringBuilderPooledObjectPolicy$in
 
 
 export abstract class ObjectPool$instance {
-    static Create<T>(policy?: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
+    static Create<T>(policy?: IPooledObjectPolicy_1<T> | null): ObjectPool_1<T>;
 }
 
 

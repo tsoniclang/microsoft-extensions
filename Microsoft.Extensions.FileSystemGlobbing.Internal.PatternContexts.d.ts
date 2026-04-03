@@ -14,10 +14,10 @@ import type { Action, Boolean as ClrBoolean, Int32, Object as ClrObject, String 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { PatternContext_1 as PatternContext } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 export { PatternContextLinear as PatternContextLinear } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
+export { PatternContextLinear_FrameData as PatternContextLinear_FrameData } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 export { PatternContextLinearExclude as PatternContextLinearExclude } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 export { PatternContextLinearInclude as PatternContextLinearInclude } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 export { PatternContextRagged as PatternContextRagged } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
+export { PatternContextRagged_FrameData as PatternContextRagged_FrameData } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 export { PatternContextRaggedExclude as PatternContextRaggedExclude } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
 export { PatternContextRaggedInclude as PatternContextRaggedInclude } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
-export { PatternContextLinear_FrameData as PatternContextLinear_FrameData } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';
-export { PatternContextRagged_FrameData as PatternContextRagged_FrameData } from './Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts/internal/index.js';

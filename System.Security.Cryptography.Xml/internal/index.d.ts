@@ -2,11 +2,9 @@
 // Namespace: System.Security.Cryptography.Xml
 // Assembly: System.Security.Cryptography.Pkcs, System.Security.Cryptography.Xml
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { Collection_1 } from "@tsonic/dotnet/System.Collections.ObjectModel/internal/index.js";
@@ -51,10 +49,10 @@ export type X509IssuerSerial = X509IssuerSerial$instance;
 export interface CipherData$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_CipherData: never;
 
-    get CipherReference(): CipherReference | undefined;
-    set CipherReference(value: CipherReference | undefined);
-    get CipherValue(): byte[] | undefined;
-    set CipherValue(value: byte[] | undefined);
+    get CipherReference(): CipherReference | null;
+    set CipherReference(value: CipherReference | null);
+    get CipherValue(): byte[] | null;
+    set CipherValue(value: byte[] | null);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -107,12 +105,12 @@ export interface DataObject$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_DataObject: never;
 
     Data: XmlNodeList;
-    get Encoding(): string | undefined;
-    set Encoding(value: string | undefined);
-    get Id(): string | undefined;
-    set Id(value: string | undefined);
-    get MimeType(): string | undefined;
-    set MimeType(value: string | undefined);
+    get Encoding(): string | null;
+    set Encoding(value: string | null);
+    get Id(): string | null;
+    set Id(value: string | null);
+    get MimeType(): string | null;
+    set MimeType(value: string | null);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -176,8 +174,8 @@ export type EncryptedData = EncryptedData$instance;
 export interface EncryptedKey$instance extends EncryptedType {
     readonly __tsonic_type_System_Security_Cryptography_Xml_EncryptedKey: never;
 
-    get CarriedKeyName(): string | undefined;
-    set CarriedKeyName(value: string | undefined);
+    get CarriedKeyName(): string | null;
+    set CarriedKeyName(value: string | null);
     Recipient: string;
     readonly ReferenceList: ReferenceList;
     AddReference(dataReference: DataReference): void;
@@ -215,18 +213,18 @@ export interface EncryptedType$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_EncryptedType: never;
 
     CipherData: CipherData;
-    get Encoding(): string | undefined;
-    set Encoding(value: string | undefined);
-    get EncryptionMethod(): EncryptionMethod | undefined;
-    set EncryptionMethod(value: EncryptionMethod | undefined);
+    get Encoding(): string | null;
+    set Encoding(value: string | null);
+    get EncryptionMethod(): EncryptionMethod | null;
+    set EncryptionMethod(value: EncryptionMethod | null);
     readonly EncryptionProperties: EncryptionPropertyCollection;
-    get Id(): string | undefined;
-    set Id(value: string | undefined);
+    get Id(): string | null;
+    set Id(value: string | null);
     KeyInfo: KeyInfo;
-    get MimeType(): string | undefined;
-    set MimeType(value: string | undefined);
-    get Type(): string | undefined;
-    set Type(value: string | undefined);
+    get MimeType(): string | null;
+    set MimeType(value: string | null);
+    get Type(): string | null;
+    set Type(value: string | null);
     AddProperty(ep: EncryptionProperty): void;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -242,27 +240,27 @@ export type EncryptedType = EncryptedType$instance;
 export interface EncryptedXml$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_EncryptedXml: never;
 
-    get DocumentEvidence(): Evidence | undefined;
-    set DocumentEvidence(value: Evidence | undefined);
+    get DocumentEvidence(): Evidence | null;
+    set DocumentEvidence(value: Evidence | null);
     Encoding: Encoding;
     Mode: CipherMode;
     Padding: PaddingMode;
     Recipient: string;
-    get Resolver(): XmlResolver | undefined;
-    set Resolver(value: XmlResolver | undefined);
+    get Resolver(): XmlResolver | null;
+    set Resolver(value: XmlResolver | null);
     XmlDSigSearchDepth: int;
-    AddKeyNameMapping(keyName: string, keyObject: unknown): void;
+    AddKeyNameMapping(keyName: string, keyObject: JsValue): void;
     ClearKeyNameMappings(): void;
     DecryptData(encryptedData: EncryptedData, symmetricAlgorithm: SymmetricAlgorithm): byte[];
     DecryptDocument(): void;
-    DecryptEncryptedKey(encryptedKey: EncryptedKey): byte[] | undefined;
+    DecryptEncryptedKey(encryptedKey: EncryptedKey): byte[] | null;
     Encrypt(inputElement: XmlElement, certificate: X509Certificate2): EncryptedData;
     Encrypt(inputElement: XmlElement, keyName: string): EncryptedData;
     EncryptData(plaintext: byte[], symmetricAlgorithm: SymmetricAlgorithm): byte[];
     EncryptData(inputElement: XmlElement, symmetricAlgorithm: SymmetricAlgorithm, content: boolean): byte[];
-    GetDecryptionIV(encryptedData: EncryptedData, symmetricAlgorithmUri: string): byte[];
-    GetDecryptionKey(encryptedData: EncryptedData, symmetricAlgorithmUri: string): SymmetricAlgorithm | undefined;
-    GetIdElement(document: XmlDocument, idValue: string): XmlElement | undefined;
+    GetDecryptionIV(encryptedData: EncryptedData, symmetricAlgorithmUri: string | null): byte[];
+    GetDecryptionKey(encryptedData: EncryptedData, symmetricAlgorithmUri: string | null): SymmetricAlgorithm | null;
+    GetIdElement(document: XmlDocument, idValue: string): XmlElement | null;
     ReplaceData(inputElement: XmlElement, decryptedData: byte[]): void;
 }
 
@@ -270,7 +268,7 @@ export interface EncryptedXml$instance {
 export const EncryptedXml: {
     new(): EncryptedXml;
     new(document: XmlDocument): EncryptedXml;
-    new(document: XmlDocument, evidence: Evidence): EncryptedXml;
+    new(document: XmlDocument, evidence: Evidence | null): EncryptedXml;
     readonly XmlEncNamespaceUrl: string;
     readonly XmlEncElementUrl: string;
     readonly XmlEncElementContentUrl: string;
@@ -301,8 +299,8 @@ export type EncryptedXml = EncryptedXml$instance;
 export interface EncryptionMethod$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_EncryptionMethod: never;
 
-    get KeyAlgorithm(): string | undefined;
-    set KeyAlgorithm(value: string | undefined);
+    get KeyAlgorithm(): string | null;
+    set KeyAlgorithm(value: string | null);
     KeySize: int;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -311,7 +309,7 @@ export interface EncryptionMethod$instance {
 
 export const EncryptionMethod: {
     new(): EncryptionMethod;
-    new(algorithm: string): EncryptionMethod;
+    new(algorithm: string | null): EncryptionMethod;
 };
 
 
@@ -320,10 +318,10 @@ export type EncryptionMethod = EncryptionMethod$instance;
 export interface EncryptionProperty$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_EncryptionProperty: never;
 
-    readonly Id: string | undefined;
-    get PropertyElement(): XmlElement | undefined;
-    set PropertyElement(value: XmlElement | undefined);
-    readonly Target: string | undefined;
+    readonly Id: string | null;
+    get PropertyElement(): XmlElement | null;
+    set PropertyElement(value: XmlElement | null);
+    readonly Target: string | null;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -348,7 +346,7 @@ export interface EncryptionPropertyCollection$instance {
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(value: EncryptionProperty): int;
     Clear(): void;
     Contains(value: EncryptionProperty): boolean;
@@ -376,8 +374,8 @@ export interface KeyInfo$instance {
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Count: int;
-    get Id(): string | undefined;
-    set Id(value: string | undefined);
+    get Id(): string | null;
+    set Id(value: string | null);
     AddClause(clause: KeyInfoClause): void;
     GetEnumerator(): IEnumerator;
     GetEnumerator(requestedObjectType: Type): IEnumerator;
@@ -410,8 +408,8 @@ export type KeyInfoClause = KeyInfoClause$instance;
 export interface KeyInfoEncryptedKey$instance extends KeyInfoClause {
     readonly __tsonic_type_System_Security_Cryptography_Xml_KeyInfoEncryptedKey: never;
 
-    get EncryptedKey(): EncryptedKey | undefined;
-    set EncryptedKey(value: EncryptedKey | undefined);
+    get EncryptedKey(): EncryptedKey | null;
+    set EncryptedKey(value: EncryptedKey | null);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -428,8 +426,8 @@ export type KeyInfoEncryptedKey = KeyInfoEncryptedKey$instance;
 export interface KeyInfoName$instance extends KeyInfoClause {
     readonly __tsonic_type_System_Security_Cryptography_Xml_KeyInfoName: never;
 
-    get Value(): string | undefined;
-    set Value(value: string | undefined);
+    get Value(): string | null;
+    set Value(value: string | null);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -437,7 +435,7 @@ export interface KeyInfoName$instance extends KeyInfoClause {
 
 export const KeyInfoName: {
     new(): KeyInfoName;
-    new(keyName: string): KeyInfoName;
+    new(keyName: string | null): KeyInfoName;
 };
 
 
@@ -446,8 +444,8 @@ export type KeyInfoName = KeyInfoName$instance;
 export interface KeyInfoNode$instance extends KeyInfoClause {
     readonly __tsonic_type_System_Security_Cryptography_Xml_KeyInfoNode: never;
 
-    get Value(): XmlElement | undefined;
-    set Value(value: XmlElement | undefined);
+    get Value(): XmlElement | null;
+    set Value(value: XmlElement | null);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -464,10 +462,10 @@ export type KeyInfoNode = KeyInfoNode$instance;
 export interface KeyInfoRetrievalMethod$instance extends KeyInfoClause {
     readonly __tsonic_type_System_Security_Cryptography_Xml_KeyInfoRetrievalMethod: never;
 
-    get Type(): string | undefined;
-    set Type(value: string | undefined);
-    get Uri(): string | undefined;
-    set Uri(value: string | undefined);
+    get Type(): string | null;
+    set Type(value: string | null);
+    get Uri(): string | null;
+    set Uri(value: string | null);
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -475,7 +473,7 @@ export interface KeyInfoRetrievalMethod$instance extends KeyInfoClause {
 
 export const KeyInfoRetrievalMethod: {
     new(): KeyInfoRetrievalMethod;
-    new(strUri: string): KeyInfoRetrievalMethod;
+    new(strUri: string | null): KeyInfoRetrievalMethod;
     new(strUri: string, typeName: string): KeyInfoRetrievalMethod;
 };
 
@@ -485,12 +483,12 @@ export type KeyInfoRetrievalMethod = KeyInfoRetrievalMethod$instance;
 export interface KeyInfoX509Data$instance extends KeyInfoClause {
     readonly __tsonic_type_System_Security_Cryptography_Xml_KeyInfoX509Data: never;
 
-    readonly Certificates: ArrayList | undefined;
-    get CRL(): byte[] | undefined;
-    set CRL(value: byte[] | undefined);
-    readonly IssuerSerials: ArrayList | undefined;
-    readonly SubjectKeyIds: ArrayList | undefined;
-    readonly SubjectNames: ArrayList | undefined;
+    readonly Certificates: ArrayList | null;
+    get CRL(): byte[] | null;
+    set CRL(value: byte[] | null);
+    readonly IssuerSerials: ArrayList | null;
+    readonly SubjectKeyIds: ArrayList | null;
+    readonly SubjectNames: ArrayList | null;
     AddCertificate(certificate: X509Certificate): void;
     AddIssuerSerial(issuerName: string, serialNumber: string): void;
     AddSubjectKeyId(subjectKeyId: byte[]): void;
@@ -530,15 +528,15 @@ export interface Reference$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_Reference: never;
 
     DigestMethod: string;
-    get DigestValue(): byte[] | undefined;
-    set DigestValue(value: byte[] | undefined);
-    get Id(): string | undefined;
-    set Id(value: string | undefined);
+    get DigestValue(): byte[] | null;
+    set DigestValue(value: byte[] | null);
+    get Id(): string | null;
+    set Id(value: string | null);
     TransformChain: TransformChain;
-    get Type(): string | undefined;
-    set Type(value: string | undefined);
-    get Uri(): string | undefined;
-    set Uri(value: string | undefined);
+    get Type(): string | null;
+    set Type(value: string | null);
+    get Uri(): string | null;
+    set Uri(value: string | null);
     AddTransform(transform: Transform): void;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -548,7 +546,7 @@ export interface Reference$instance {
 export const Reference: {
     new(): Reference;
     new(stream: Stream): Reference;
-    new(uri: string): Reference;
+    new(uri: string | null): Reference;
 };
 
 
@@ -563,16 +561,16 @@ export interface ReferenceList$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
-    Add(value: unknown): int;
+    readonly SyncRoot: JsValue;
+    Add(value: JsValue | null): int;
     Clear(): void;
-    Contains(value: unknown): boolean;
+    Contains(value: JsValue | null): boolean;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
-    IndexOf(value: unknown): int;
-    Insert(index: int, value: unknown): void;
-    Item(index: int): EncryptedReference | undefined;
-    Remove(value: unknown): void;
+    IndexOf(value: JsValue | null): int;
+    Insert(index: int, value: JsValue | null): void;
+    Item(index: int): EncryptedReference | null;
+    Remove(value: JsValue | null): void;
     RemoveAt(index: int): void;
 }
 
@@ -604,14 +602,14 @@ export type RSAKeyValue = RSAKeyValue$instance;
 export interface Signature$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_Signature: never;
 
-    get Id(): string | undefined;
-    set Id(value: string | undefined);
+    get Id(): string | null;
+    set Id(value: string | null);
     KeyInfo: KeyInfo;
     ObjectList: IList;
-    get SignatureValue(): byte[] | undefined;
-    set SignatureValue(value: byte[] | undefined);
-    get SignedInfo(): SignedInfo | undefined;
-    set SignedInfo(value: SignedInfo | undefined);
+    get SignatureValue(): byte[] | null;
+    set SignatureValue(value: byte[] | null);
+    get SignedInfo(): SignedInfo | null;
+    set SignedInfo(value: SignedInfo | null);
     AddObject(dataObject: DataObject): void;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
@@ -634,16 +632,16 @@ export interface SignedInfo$instance {
     CanonicalizationMethod: string;
     readonly CanonicalizationMethodObject: Transform;
     readonly Count: int;
-    get Id(): string | undefined;
-    set Id(value: string | undefined);
+    get Id(): string | null;
+    set Id(value: string | null);
     readonly IsReadOnly: boolean;
     readonly IsSynchronized: boolean;
     readonly References: ArrayList;
-    get SignatureLength(): string | undefined;
-    set SignatureLength(value: string | undefined);
-    get SignatureMethod(): string | undefined;
-    set SignatureMethod(value: string | undefined);
-    readonly SyncRoot: unknown;
+    get SignatureLength(): string | null;
+    set SignatureLength(value: string | null);
+    get SignatureMethod(): string | null;
+    set SignatureMethod(value: string | null);
+    readonly SyncRoot: JsValue;
     AddReference(reference: Reference): void;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
@@ -668,25 +666,25 @@ export interface SignedXml$instance {
     readonly SafeCanonicalizationMethods: Collection_1<System_Internal.String>;
     readonly Signature: Signature;
     SignatureFormatValidator: Func_2<SignedXml, System_Internal.Boolean>;
-    readonly SignatureLength: string | undefined;
-    readonly SignatureMethod: string | undefined;
-    readonly SignatureValue: byte[] | undefined;
-    readonly SignedInfo: SignedInfo | undefined;
-    get SigningKey(): AsymmetricAlgorithm | undefined;
-    set SigningKey(value: AsymmetricAlgorithm | undefined);
-    get SigningKeyName(): string | undefined;
-    set SigningKeyName(value: string | undefined);
+    readonly SignatureLength: string | null;
+    readonly SignatureMethod: string | null;
+    readonly SignatureValue: byte[] | null;
+    readonly SignedInfo: SignedInfo | null;
+    get SigningKey(): AsymmetricAlgorithm | null;
+    set SigningKey(value: AsymmetricAlgorithm | null);
+    get SigningKeyName(): string | null;
+    set SigningKeyName(value: string | null);
     AddObject(dataObject: DataObject): void;
     AddReference(reference: Reference): void;
     CheckSignature(): boolean;
     CheckSignature(key: AsymmetricAlgorithm): boolean;
     CheckSignature(macAlg: KeyedHashAlgorithm): boolean;
     CheckSignature(certificate: X509Certificate2, verifySignatureOnly: boolean): boolean;
-    CheckSignatureReturningKey(signingKey: AsymmetricAlgorithm): boolean;
+    CheckSignatureReturningKey(signingKey: AsymmetricAlgorithm | null): boolean;
     ComputeSignature(): void;
     ComputeSignature(macAlg: KeyedHashAlgorithm): void;
-    GetIdElement(document: XmlDocument, idValue: string): XmlElement | undefined;
-    GetPublicKey(): AsymmetricAlgorithm | undefined;
+    GetIdElement(document: XmlDocument | null, idValue: string): XmlElement | null;
+    GetPublicKey(): AsymmetricAlgorithm | null;
     GetXml(): XmlElement;
     LoadXml(value: XmlElement): void;
 }
@@ -728,20 +726,20 @@ export type SignedXml = SignedXml$instance;
 export interface Transform$instance {
     readonly __tsonic_type_System_Security_Cryptography_Xml_Transform: never;
 
-    get Algorithm(): string | undefined;
-    set Algorithm(value: string | undefined);
-    get Context(): XmlElement | undefined;
-    set Context(value: XmlElement | undefined);
+    get Algorithm(): string | null;
+    set Algorithm(value: string | null);
+    get Context(): XmlElement | null;
+    set Context(value: XmlElement | null);
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     readonly PropagatedNamespaces: Hashtable;
     GetDigestedOutput(hash: HashAlgorithm): byte[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     GetXml(): XmlElement;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -774,12 +772,12 @@ export interface XmlDecryptionTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     AddExceptUri(uri: string): void;
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
-    IsTargetElement(inputElement: XmlElement, idValue: string): boolean;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
+    IsTargetElement(inputElement: XmlElement | null, idValue: string): boolean;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -795,11 +793,11 @@ export interface XmlDsigBase64Transform$instance extends Transform {
 
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -816,11 +814,11 @@ export interface XmlDsigC14NTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -850,11 +848,11 @@ export interface XmlDsigEnvelopedSignatureTransform$instance extends Transform {
 
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -869,16 +867,16 @@ export type XmlDsigEnvelopedSignatureTransform = XmlDsigEnvelopedSignatureTransf
 export interface XmlDsigExcC14NTransform$instance extends Transform {
     readonly __tsonic_type_System_Security_Cryptography_Xml_XmlDsigExcC14NTransform: never;
 
-    get InclusiveNamespacesPrefixList(): string | undefined;
-    set InclusiveNamespacesPrefixList(value: string | undefined);
+    get InclusiveNamespacesPrefixList(): string | null;
+    set InclusiveNamespacesPrefixList(value: string | null);
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -886,7 +884,7 @@ export const XmlDsigExcC14NTransform: {
     new(): XmlDsigExcC14NTransform;
     new(includeComments: boolean): XmlDsigExcC14NTransform;
     new(inclusiveNamespacesPrefixList: string): XmlDsigExcC14NTransform;
-    new(includeComments: boolean, inclusiveNamespacesPrefixList: string): XmlDsigExcC14NTransform;
+    new(includeComments: boolean, inclusiveNamespacesPrefixList: string | null): XmlDsigExcC14NTransform;
 };
 
 
@@ -911,11 +909,11 @@ export interface XmlDsigXPathTransform$instance extends Transform {
 
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -931,11 +929,11 @@ export interface XmlDsigXsltTransform$instance extends Transform {
 
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 
@@ -950,15 +948,15 @@ export type XmlDsigXsltTransform = XmlDsigXsltTransform$instance;
 export interface XmlLicenseTransform$instance extends Transform {
     readonly __tsonic_type_System_Security_Cryptography_Xml_XmlLicenseTransform: never;
 
-    get Decryptor(): IRelDecryptor | undefined;
-    set Decryptor(value: IRelDecryptor | undefined);
+    get Decryptor(): IRelDecryptor | null;
+    set Decryptor(value: IRelDecryptor | null);
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
-    GetInnerXml(): XmlNodeList | undefined;
-    GetOutput(): unknown;
-    GetOutput(type: Type): unknown;
+    GetInnerXml(): XmlNodeList | null;
+    GetOutput(): JsValue;
+    GetOutput(type: Type): JsValue;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: unknown): void;
+    LoadInput(obj: JsValue): void;
 }
 
 

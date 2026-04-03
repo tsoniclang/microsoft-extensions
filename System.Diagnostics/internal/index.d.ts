@@ -2,8 +2,9 @@
 // Namespace: System.Diagnostics
 // Assembly: System.Diagnostics.DiagnosticSource, System.Diagnostics.EventLog, System.Diagnostics.FileVersionInfo, System.Diagnostics.Process, System.Diagnostics.TextWriterTraceListener, System.Diagnostics.TraceSource, System.Private.CoreLib
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
@@ -33,7 +34,7 @@ export enum OverflowAction {
 }
 
 
-export type EntryWrittenEventHandler = (sender: unknown, e: EntryWrittenEventArgs) => void;
+export type EntryWrittenEventHandler = (sender: JsValue, e: EntryWrittenEventArgs) => void;
 
 
 export interface EntryWrittenEventArgs$instance extends EventArgs {
@@ -97,8 +98,8 @@ export interface EventLog$instance extends Component {
     WriteEntry(message: string, type: EventLogEntryType, eventID: int): void;
     WriteEntry(message: string, type: EventLogEntryType, eventID: int, category: short): void;
     WriteEntry(message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
-    WriteEvent(instance: EventInstance, data: byte[], ...values: unknown[]): void;
-    WriteEvent(instance: EventInstance, ...values: unknown[]): void;
+    WriteEvent(instance: EventInstance, data: byte[], ...values: JsValue[]): void;
+    WriteEvent(instance: EventInstance, ...values: JsValue[]): void;
 }
 
 
@@ -126,8 +127,8 @@ export const EventLog: {
     WriteEntry(source: string, message: string, type: EventLogEntryType, eventID: int): void;
     WriteEntry(source: string, message: string, type: EventLogEntryType): void;
     WriteEntry(source: string, message: string): void;
-    WriteEvent(source: string, instance: EventInstance, data: byte[], ...values: unknown[]): void;
-    WriteEvent(source: string, instance: EventInstance, ...values: unknown[]): void;
+    WriteEvent(source: string, instance: EventInstance, data: byte[], ...values: JsValue[]): void;
+    WriteEvent(source: string, instance: EventInstance, ...values: JsValue[]): void;
 };
 
 
@@ -191,10 +192,10 @@ export interface EventLogTraceListener$instance extends TraceListener {
     Name: string;
     Close(): void;
     Dispose(disposing: boolean): void;
-    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: unknown): void;
-    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: unknown[]): void;
+    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: JsValue): void;
+    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: JsValue[]): void;
     TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, message: string): void;
-    TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, format: string, ...args: unknown[]): void;
+    TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, format: string, ...args: JsValue[]): void;
     Write(message: string): void;
     WriteLine(message: string): void;
 }

@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Extensions.Diagnostics.Metrics
 // Assembly: Microsoft.Extensions.Diagnostics, Microsoft.Extensions.Diagnostics.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { IConfiguration } from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -38,8 +36,8 @@ export interface IMetricsListener$instance {
     readonly Name: string;
     GetMeasurementHandlers(): MeasurementHandlers;
     Initialize(source: IObservableInstrumentsSource): void;
-    InstrumentPublished(instrument: Instrument, userState: unknown): boolean;
-    MeasurementsCompleted(instrument: Instrument, userState: unknown): void;
+    InstrumentPublished(instrument: Instrument, userState: JsValue | null): boolean;
+    MeasurementsCompleted(instrument: Instrument, userState: JsValue | null): void;
 }
 
 
@@ -58,15 +56,15 @@ export interface InstrumentRule$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_Metrics_InstrumentRule: never;
 
     readonly Enable: boolean;
-    readonly InstrumentName: string | undefined;
-    readonly ListenerName: string | undefined;
-    readonly MeterName: string | undefined;
+    readonly InstrumentName: string | null;
+    readonly ListenerName: string | null;
+    readonly MeterName: string | null;
     readonly Scopes: MeterScope;
 }
 
 
 export const InstrumentRule: {
-    new(meterName: string, instrumentName: string, listenerName: string, scopes: MeterScope, enable: boolean): InstrumentRule;
+    new(meterName: string | null, instrumentName: string | null, listenerName: string | null, scopes: MeterScope, enable: boolean): InstrumentRule;
 };
 
 
@@ -75,20 +73,20 @@ export type InstrumentRule = InstrumentRule$instance;
 export interface MeasurementHandlers$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_Metrics_MeasurementHandlers: never;
 
-    get ByteHandler(): MeasurementCallback_1<System_Internal.Byte> | undefined;
-    set ByteHandler(value: MeasurementCallback_1<System_Internal.Byte> | undefined);
-    get DecimalHandler(): MeasurementCallback_1<System_Internal.Decimal> | undefined;
-    set DecimalHandler(value: MeasurementCallback_1<System_Internal.Decimal> | undefined);
-    get DoubleHandler(): MeasurementCallback_1<System_Internal.Double> | undefined;
-    set DoubleHandler(value: MeasurementCallback_1<System_Internal.Double> | undefined);
-    get FloatHandler(): MeasurementCallback_1<System_Internal.Single> | undefined;
-    set FloatHandler(value: MeasurementCallback_1<System_Internal.Single> | undefined);
-    get IntHandler(): MeasurementCallback_1<System_Internal.Int32> | undefined;
-    set IntHandler(value: MeasurementCallback_1<System_Internal.Int32> | undefined);
-    get LongHandler(): MeasurementCallback_1<System_Internal.Int64> | undefined;
-    set LongHandler(value: MeasurementCallback_1<System_Internal.Int64> | undefined);
-    get ShortHandler(): MeasurementCallback_1<System_Internal.Int16> | undefined;
-    set ShortHandler(value: MeasurementCallback_1<System_Internal.Int16> | undefined);
+    get ByteHandler(): MeasurementCallback_1<System_Internal.Byte> | null;
+    set ByteHandler(value: MeasurementCallback_1<System_Internal.Byte> | null);
+    get DecimalHandler(): MeasurementCallback_1<System_Internal.Decimal> | null;
+    set DecimalHandler(value: MeasurementCallback_1<System_Internal.Decimal> | null);
+    get DoubleHandler(): MeasurementCallback_1<System_Internal.Double> | null;
+    set DoubleHandler(value: MeasurementCallback_1<System_Internal.Double> | null);
+    get FloatHandler(): MeasurementCallback_1<System_Internal.Single> | null;
+    set FloatHandler(value: MeasurementCallback_1<System_Internal.Single> | null);
+    get IntHandler(): MeasurementCallback_1<System_Internal.Int32> | null;
+    set IntHandler(value: MeasurementCallback_1<System_Internal.Int32> | null);
+    get LongHandler(): MeasurementCallback_1<System_Internal.Int64> | null;
+    set LongHandler(value: MeasurementCallback_1<System_Internal.Int64> | null);
+    get ShortHandler(): MeasurementCallback_1<System_Internal.Int16> | null;
+    set ShortHandler(value: MeasurementCallback_1<System_Internal.Int16> | null);
 }
 
 
@@ -138,14 +136,14 @@ export abstract class MetricsBuilderExtensions$instance {
     static AddListener(builder: IMetricsBuilder, listener: IMetricsListener): IMetricsBuilder;
     static AddListener<T extends IMetricsListener>(builder: IMetricsBuilder): IMetricsBuilder;
     static ClearListeners(builder: IMetricsBuilder): IMetricsBuilder;
-    static DisableMetrics(builder: IMetricsBuilder, meterName: string, instrumentName?: string, listenerName?: string, scopes?: MeterScope): IMetricsBuilder;
-    static DisableMetrics(builder: IMetricsBuilder, meterName: string): IMetricsBuilder;
-    static DisableMetrics(options: MetricsOptions, meterName: string, instrumentName?: string, listenerName?: string, scopes?: MeterScope): MetricsOptions;
-    static DisableMetrics(options: MetricsOptions, meterName: string): MetricsOptions;
-    static EnableMetrics(builder: IMetricsBuilder, meterName: string, instrumentName?: string, listenerName?: string, scopes?: MeterScope): IMetricsBuilder;
-    static EnableMetrics(builder: IMetricsBuilder, meterName: string): IMetricsBuilder;
-    static EnableMetrics(options: MetricsOptions, meterName: string, instrumentName?: string, listenerName?: string, scopes?: MeterScope): MetricsOptions;
-    static EnableMetrics(options: MetricsOptions, meterName: string): MetricsOptions;
+    static DisableMetrics(builder: IMetricsBuilder, meterName: string | null, instrumentName?: string | null, listenerName?: string | null, scopes?: MeterScope): IMetricsBuilder;
+    static DisableMetrics(builder: IMetricsBuilder, meterName: string | null): IMetricsBuilder;
+    static DisableMetrics(options: MetricsOptions, meterName: string | null, instrumentName?: string | null, listenerName?: string | null, scopes?: MeterScope): MetricsOptions;
+    static DisableMetrics(options: MetricsOptions, meterName: string | null): MetricsOptions;
+    static EnableMetrics(builder: IMetricsBuilder, meterName: string | null, instrumentName?: string | null, listenerName?: string | null, scopes?: MeterScope): IMetricsBuilder;
+    static EnableMetrics(builder: IMetricsBuilder, meterName: string | null): IMetricsBuilder;
+    static EnableMetrics(options: MetricsOptions, meterName: string | null, instrumentName?: string | null, listenerName?: string | null, scopes?: MeterScope): MetricsOptions;
+    static EnableMetrics(options: MetricsOptions, meterName: string | null): MetricsOptions;
 }
 
 

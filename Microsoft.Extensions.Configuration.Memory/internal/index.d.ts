@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Configuration.Memory
 // Assembly: Microsoft.Extensions.Configuration
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -23,7 +24,7 @@ export interface MemoryConfigurationProvider$instance extends ConfigurationProvi
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
-    Add(key: string, value: string): void;
+    Add(key: string, value: string | null): void;
     GetEnumerator(): IEnumerator_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
 }
 
@@ -45,8 +46,8 @@ export interface MemoryConfigurationSource$instance extends Microsoft_Extensions
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get InitialData(): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | undefined;
-    set InitialData(value: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | undefined);
+    get InitialData(): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | null;
+    set InitialData(value: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | null);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
