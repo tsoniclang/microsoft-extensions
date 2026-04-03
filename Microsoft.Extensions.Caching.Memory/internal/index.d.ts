@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Extensions.Caching.Memory
 // Assembly: Microsoft.Extensions.Caching.Abstractions, Microsoft.Extensions.Caching.Memory
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { ISystemClock } from "../../Microsoft.Extensions.Internal/internal/index.js";
@@ -39,15 +37,15 @@ export enum EvictionReason {
 }
 
 
-export type PostEvictionDelegate = (key: unknown, value: unknown, reason: EvictionReason, state: unknown) => void;
+export type PostEvictionDelegate = (key: JsValue, value: JsValue | null, reason: EvictionReason, state: JsValue | null) => void;
 
 
 export interface ICacheEntry$instance extends IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_ICacheEntry: never;
 
-    readonly Key: unknown;
-    get Value(): unknown | undefined;
-    set Value(value: unknown | undefined);
+    readonly Key: JsValue;
+    get Value(): JsValue | null;
+    set Value(value: JsValue | null);
     get AbsoluteExpiration(): Nullable_1<DateTimeOffset>;
     set AbsoluteExpiration(value: Nullable_1<DateTimeOffset> | DateTimeOffset);
     get AbsoluteExpirationRelativeToNow(): Nullable_1<TimeSpan>;
@@ -69,10 +67,10 @@ export type ICacheEntry = ICacheEntry$instance;
 export interface IMemoryCache$instance extends IDisposable {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_IMemoryCache: never;
 
-    CreateEntry(key: unknown): ICacheEntry;
-    GetCurrentStatistics(): MemoryCacheStatistics | undefined;
-    Remove(key: unknown): void;
-    TryGetValue(key: unknown, value: unknown): boolean;
+    CreateEntry(key: JsValue): ICacheEntry;
+    GetCurrentStatistics(): MemoryCacheStatistics | null;
+    Remove(key: JsValue): void;
+    TryGetValue(key: JsValue, value: JsValue | null): boolean;
 }
 
 
@@ -87,18 +85,18 @@ export interface MemoryCache$instance {
     readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Count: int;
-    readonly Keys: IEnumerable_1<unknown>;
+    readonly Keys: IEnumerable_1<JsValue>;
     Clear(): void;
     Compact(percentage: double): void;
-    CreateEntry(key: unknown): ICacheEntry;
+    CreateEntry(key: JsValue): ICacheEntry;
     Dispose(): void;
     Dispose(disposing: boolean): void;
     Finalize(): void;
-    GetCurrentStatistics(): MemoryCacheStatistics | undefined;
-    Remove(key: unknown): void;
-    TryGetValue(key: unknown, result: unknown): boolean;
-    TryGetValue(key: ReadOnlySpan_1<System_Internal.Char>, value: unknown): boolean;
-    TryGetValue<TItem>(key: ReadOnlySpan_1<System_Internal.Char>, value: TItem): boolean;
+    GetCurrentStatistics(): MemoryCacheStatistics | null;
+    Remove(key: JsValue): void;
+    TryGetValue(key: JsValue, result: JsValue | null): boolean;
+    TryGetValue(key: ReadOnlySpan_1<System_Internal.Char>, value: JsValue | null): boolean;
+    TryGetValue<TItem>(key: ReadOnlySpan_1<System_Internal.Char>, value: TItem | null): boolean;
 }
 
 
@@ -144,8 +142,8 @@ export interface MemoryCacheOptions$instance extends Microsoft_Extensions_Option
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
 
-    get Clock(): ISystemClock | undefined;
-    set Clock(value: ISystemClock | undefined);
+    get Clock(): ISystemClock | null;
+    set Clock(value: ISystemClock | null);
     CompactionPercentage: double;
     CompactOnMemoryPressure: boolean;
     ExpirationScanFrequency: TimeSpan;
@@ -209,10 +207,10 @@ export type MemoryDistributedCacheOptions = MemoryDistributedCacheOptions$instan
 export interface PostEvictionCallbackRegistration$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_PostEvictionCallbackRegistration: never;
 
-    get EvictionCallback(): PostEvictionDelegate | undefined;
-    set EvictionCallback(value: PostEvictionDelegate | undefined);
-    get State(): unknown | undefined;
-    set State(value: unknown | undefined);
+    get EvictionCallback(): PostEvictionDelegate | null;
+    set EvictionCallback(value: PostEvictionDelegate | null);
+    get State(): JsValue | null;
+    set State(value: JsValue | null);
 }
 
 
@@ -225,7 +223,7 @@ export type PostEvictionCallbackRegistration = PostEvictionCallbackRegistration$
 
 export abstract class CacheEntryExtensions$instance {
     static AddExpirationToken(entry: ICacheEntry, expirationToken: IChangeToken): ICacheEntry;
-    static RegisterPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate, state: unknown): ICacheEntry;
+    static RegisterPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate, state: JsValue | null): ICacheEntry;
     static RegisterPostEvictionCallback(entry: ICacheEntry, callback: PostEvictionDelegate): ICacheEntry;
     static SetAbsoluteExpiration(entry: ICacheEntry, absolute: DateTimeOffset): ICacheEntry;
     static SetAbsoluteExpiration(entry: ICacheEntry, relative: TimeSpan): ICacheEntry;
@@ -233,25 +231,25 @@ export abstract class CacheEntryExtensions$instance {
     static SetPriority(entry: ICacheEntry, priority: CacheItemPriority): ICacheEntry;
     static SetSize(entry: ICacheEntry, size: long): ICacheEntry;
     static SetSlidingExpiration(entry: ICacheEntry, offset: TimeSpan): ICacheEntry;
-    static SetValue(entry: ICacheEntry, value: unknown): ICacheEntry;
+    static SetValue(entry: ICacheEntry, value: JsValue | null): ICacheEntry;
 }
 
 
 export type CacheEntryExtensions = CacheEntryExtensions$instance;
 
 export abstract class CacheExtensions$instance {
-    static Get(cache: IMemoryCache, key: unknown): unknown | undefined;
-    static Get<TItem>(cache: IMemoryCache, key: unknown): TItem | undefined;
-    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions): TItem | undefined;
-    static GetOrCreate<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, TItem>): TItem | undefined;
-    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, Task_1<TItem>>, createOptions: MemoryCacheEntryOptions): Task_1<TItem | undefined>;
-    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: unknown, factory: Func_2<ICacheEntry, Task_1<TItem>>): Task_1<TItem | undefined>;
-    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, options: MemoryCacheEntryOptions): TItem;
-    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, expirationToken: IChangeToken): TItem;
-    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpiration: DateTimeOffset): TItem;
-    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): TItem;
-    static Set<TItem>(cache: IMemoryCache, key: unknown, value: TItem): TItem;
-    static TryGetValue<TItem>(cache: IMemoryCache, key: unknown, value: TItem): boolean;
+    static Get(cache: IMemoryCache, key: JsValue): JsValue | null;
+    static Get<TItem>(cache: IMemoryCache, key: JsValue): TItem | null;
+    static GetOrCreate<TItem>(cache: IMemoryCache, key: JsValue, factory: Func_2<ICacheEntry, TItem>, createOptions: MemoryCacheEntryOptions | null): TItem | null;
+    static GetOrCreate<TItem>(cache: IMemoryCache, key: JsValue, factory: Func_2<ICacheEntry, TItem>): TItem | null;
+    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: JsValue, factory: Func_2<ICacheEntry, Task_1<TItem>>, createOptions: MemoryCacheEntryOptions | null): Task_1<TItem | null>;
+    static GetOrCreateAsync<TItem>(cache: IMemoryCache, key: JsValue, factory: Func_2<ICacheEntry, Task_1<TItem>>): Task_1<TItem | null>;
+    static Set<TItem>(cache: IMemoryCache, key: JsValue, value: TItem, options: MemoryCacheEntryOptions | null): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: JsValue, value: TItem, expirationToken: IChangeToken): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: JsValue, value: TItem, absoluteExpiration: DateTimeOffset): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: JsValue, value: TItem, absoluteExpirationRelativeToNow: TimeSpan): TItem;
+    static Set<TItem>(cache: IMemoryCache, key: JsValue, value: TItem): TItem;
+    static TryGetValue<TItem>(cache: IMemoryCache, key: JsValue, value: TItem | null): boolean;
 }
 
 
@@ -259,7 +257,7 @@ export type CacheExtensions = CacheExtensions$instance;
 
 export abstract class MemoryCacheEntryExtensions$instance {
     static AddExpirationToken(options: MemoryCacheEntryOptions, expirationToken: IChangeToken): MemoryCacheEntryOptions;
-    static RegisterPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate, state: unknown): MemoryCacheEntryOptions;
+    static RegisterPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate, state: JsValue | null): MemoryCacheEntryOptions;
     static RegisterPostEvictionCallback(options: MemoryCacheEntryOptions, callback: PostEvictionDelegate): MemoryCacheEntryOptions;
     static SetAbsoluteExpiration(options: MemoryCacheEntryOptions, absolute: DateTimeOffset): MemoryCacheEntryOptions;
     static SetAbsoluteExpiration(options: MemoryCacheEntryOptions, relative: TimeSpan): MemoryCacheEntryOptions;

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Configuration.KeyPerFile
 // Assembly: Microsoft.Extensions.Configuration.KeyPerFile
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -43,8 +44,8 @@ export interface KeyPerFileConfigurationSource$instance extends Microsoft_Extens
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider | undefined);
+    get FileProvider(): IFileProvider | null;
+    set FileProvider(value: IFileProvider | null);
     IgnoreCondition: Func_2<System_Internal.String, System_Internal.Boolean>;
     IgnorePrefix: string;
     Optional: boolean;

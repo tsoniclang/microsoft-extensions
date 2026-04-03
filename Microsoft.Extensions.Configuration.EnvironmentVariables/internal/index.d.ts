@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Configuration.EnvironmentVariables
 // Assembly: Microsoft.Extensions.Configuration.EnvironmentVariables
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -25,7 +26,7 @@ export interface EnvironmentVariablesConfigurationProvider$instance extends Conf
 
 export const EnvironmentVariablesConfigurationProvider: {
     new(): EnvironmentVariablesConfigurationProvider;
-    new(prefix: string): EnvironmentVariablesConfigurationProvider;
+    new(prefix: string | null): EnvironmentVariablesConfigurationProvider;
 };
 
 
@@ -41,8 +42,8 @@ export interface EnvironmentVariablesConfigurationSource$instance extends Micros
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get Prefix(): string | undefined;
-    set Prefix(value: string | undefined);
+    get Prefix(): string | null;
+    set Prefix(value: string | null);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 

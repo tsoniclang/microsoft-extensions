@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileSystemGlobbing.Internal.PathSegments
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_FileSystemGlobbing_Internal_Internal from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
@@ -41,7 +42,7 @@ export interface LiteralPathSegment$instance extends Microsoft_Extensions_FileSy
 
     readonly CanProduceStem: boolean;
     readonly Value: string;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
     Match(value: string): boolean;
 }

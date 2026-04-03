@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileSystemGlobbing
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_FileSystemGlobbing_Abstractions_Internal from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
@@ -20,7 +21,7 @@ export interface FilePatternMatch$instance {
     readonly Path: string;
     readonly Stem: string;
     Equals(other: FilePatternMatch): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetHashCode(): int;
 }
 
@@ -37,15 +38,15 @@ export interface InMemoryDirectoryInfo$instance extends DirectoryInfoBase {
 
     readonly FullName: string;
     readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | undefined;
+    readonly ParentDirectory: DirectoryInfoBase | null;
     EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
     GetDirectory(path: string): DirectoryInfoBase;
-    GetFile(path: string): FileInfoBase | undefined;
+    GetFile(path: string): FileInfoBase | null;
 }
 
 
 export const InMemoryDirectoryInfo: {
-    new(rootDir: string, files: IEnumerable_1<System_Internal.String>): InMemoryDirectoryInfo;
+    new(rootDir: string, files: IEnumerable_1<System_Internal.String> | null): InMemoryDirectoryInfo;
 };
 
 
@@ -89,8 +90,8 @@ export abstract class MatcherExtensions$instance {
     static AddExcludePatterns(matcher: Matcher, ...excludePatternsGroups: IEnumerable_1<System_Internal.String>[]): void;
     static AddIncludePatterns(matcher: Matcher, ...includePatternsGroups: IEnumerable_1<System_Internal.String>[]): void;
     static GetResultsInFullPath(matcher: Matcher, directoryPath: string): IEnumerable_1<System_Internal.String>;
-    static Match(matcher: Matcher, files: IEnumerable_1<System_Internal.String>): PatternMatchingResult;
-    static Match(matcher: Matcher, rootDir: string, files: IEnumerable_1<System_Internal.String>): PatternMatchingResult;
+    static Match(matcher: Matcher, files: IEnumerable_1<System_Internal.String> | null): PatternMatchingResult;
+    static Match(matcher: Matcher, rootDir: string, files: IEnumerable_1<System_Internal.String> | null): PatternMatchingResult;
     static Match(matcher: Matcher, rootDir: string, file: string): PatternMatchingResult;
     static Match(matcher: Matcher, file: string): PatternMatchingResult;
 }

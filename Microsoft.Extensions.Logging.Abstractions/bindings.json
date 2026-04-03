@@ -756,7 +756,10 @@
           "isLiteral": false,
           "visibility": "Public",
           "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "emitSemantics": {
+            "callableStaticAccessorKind": "field"
+          }
         }
       ],
       "events": [],

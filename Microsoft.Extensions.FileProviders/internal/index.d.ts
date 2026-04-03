@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileProviders
 // Assembly: Microsoft.Extensions.FileProviders.Abstractions, Microsoft.Extensions.FileProviders.Composite, Microsoft.Extensions.FileProviders.Embedded, Microsoft.Extensions.FileProviders.Physical
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ExclusionFilters } from "../../Microsoft.Extensions.FileProviders.Physical/internal/index.js";
@@ -68,7 +69,7 @@ export interface CompositeFileProvider$instance extends IFileProvider$instance {
 
 
 export const CompositeFileProvider: {
-    new(fileProviders: IFileProvider[]): CompositeFileProvider;
+    new(fileProviders: IFileProvider[] | null): CompositeFileProvider;
     new(fileProviders: IEnumerable_1<IFileProvider>): CompositeFileProvider;
 };
 
@@ -93,7 +94,7 @@ export interface EmbeddedFileProvider$instance extends IFileProvider$instance {
 
 export const EmbeddedFileProvider: {
     new(assembly: Assembly): EmbeddedFileProvider;
-    new(assembly: Assembly, baseNamespace: string): EmbeddedFileProvider;
+    new(assembly: Assembly, baseNamespace: string | null): EmbeddedFileProvider;
 };
 
 
@@ -190,7 +191,7 @@ export interface NullChangeToken$instance extends Microsoft_Extensions_Primitive
 
     readonly ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
 }
 
 

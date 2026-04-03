@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileSystemGlobbing.Abstractions
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -15,8 +16,8 @@ export interface DirectoryInfoBase$instance extends FileSystemInfoBase {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoBase: never;
 
     EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
-    GetDirectory(path: string): DirectoryInfoBase | undefined;
-    GetFile(path: string): FileInfoBase | undefined;
+    GetDirectory(path: string): DirectoryInfoBase | null;
+    GetFile(path: string): FileInfoBase | null;
 }
 
 
@@ -31,9 +32,9 @@ export interface DirectoryInfoWrapper$instance extends DirectoryInfoBase {
 
     readonly FullName: string;
     readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | undefined;
+    readonly ParentDirectory: DirectoryInfoBase | null;
     EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
-    GetDirectory(name: string): DirectoryInfoBase | undefined;
+    GetDirectory(name: string): DirectoryInfoBase | null;
     GetFile(name: string): FileInfoBase;
 }
 
@@ -62,7 +63,7 @@ export interface FileInfoWrapper$instance extends FileInfoBase {
 
     readonly FullName: string;
     readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | undefined;
+    readonly ParentDirectory: DirectoryInfoBase | null;
 }
 
 
@@ -78,7 +79,7 @@ export interface FileSystemInfoBase$instance {
 
     readonly FullName: string;
     readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | undefined;
+    readonly ParentDirectory: DirectoryInfoBase | null;
 }
 
 

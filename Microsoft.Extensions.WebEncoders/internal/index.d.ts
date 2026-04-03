@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.WebEncoders
 // Assembly: Microsoft.Extensions.WebEncoders
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { TextEncoderSettings } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
@@ -13,8 +14,8 @@ import type { Object as ClrObject } from "@tsonic/dotnet/System/internal/index.j
 export interface WebEncoderOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_WebEncoders_WebEncoderOptions: never;
 
-    get TextEncoderSettings(): TextEncoderSettings | undefined;
-    set TextEncoderSettings(value: TextEncoderSettings | undefined);
+    get TextEncoderSettings(): TextEncoderSettings | null;
+    set TextEncoderSettings(value: TextEncoderSettings | null);
 }
 
 

@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Extensions.Logging.Console
 // Assembly: Microsoft.Extensions.Logging.Console
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { IConfiguration } from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -44,7 +42,7 @@ export interface IConsoleLoggerSettings$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
 
     readonly IncludeScopes: boolean;
-    readonly ChangeToken: IChangeToken | undefined;
+    readonly ChangeToken: IChangeToken | null;
     Reload(): IConsoleLoggerSettings;
     TryGetSwitch(name: string, level: LogLevel): boolean;
 }
@@ -57,8 +55,8 @@ export interface ConfigurationConsoleLoggerSettings$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
 
-    get ChangeToken(): IChangeToken | undefined;
-    set ChangeToken(value: IChangeToken | undefined);
+    get ChangeToken(): IChangeToken | null;
+    set ChangeToken(value: IChangeToken | null);
     readonly IncludeScopes: boolean;
     Reload(): IConsoleLoggerSettings;
     TryGetSwitch(name: string, level: LogLevel): boolean;
@@ -81,7 +79,7 @@ export interface ConsoleFormatter$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatter: never;
 
     readonly Name: string;
-    Write<TState>(logEntry: LogEntry_1<TState>, scopeProvider: IExternalScopeProvider, textWriter: TextWriter): void;
+    Write<TState>(logEntry: LogEntry_1<TState>, scopeProvider: IExternalScopeProvider | null, textWriter: TextWriter): void;
 }
 
 
@@ -95,8 +93,8 @@ export interface ConsoleFormatterOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions: never;
 
     IncludeScopes: boolean;
-    get TimestampFormat(): string | undefined;
-    set TimestampFormat(value: string | undefined);
+    get TimestampFormat(): string | null;
+    set TimestampFormat(value: string | null);
     UseUtcTimestamp: boolean;
 }
 
@@ -113,14 +111,14 @@ export interface ConsoleLoggerOptions$instance {
 
     DisableColors: boolean;
     Format: ConsoleLoggerFormat;
-    get FormatterName(): string | undefined;
-    set FormatterName(value: string | undefined);
+    get FormatterName(): string | null;
+    set FormatterName(value: string | null);
     IncludeScopes: boolean;
     LogToStandardErrorThreshold: LogLevel;
     MaxQueueLength: int;
     QueueFullMode: ConsoleLoggerQueueFullMode;
-    get TimestampFormat(): string | undefined;
-    set TimestampFormat(value: string | undefined);
+    get TimestampFormat(): string | null;
+    set TimestampFormat(value: string | null);
     UseUtcTimestamp: boolean;
 }
 
@@ -147,7 +145,7 @@ export interface ConsoleLoggerProvider$instance extends Microsoft_Extensions_Log
 
 export const ConsoleLoggerProvider: {
     new(options: IOptionsMonitor_1<ConsoleLoggerOptions>): ConsoleLoggerProvider;
-    new(options: IOptionsMonitor_1<ConsoleLoggerOptions>, formatters: IEnumerable_1<ConsoleFormatter>): ConsoleLoggerProvider;
+    new(options: IOptionsMonitor_1<ConsoleLoggerOptions>, formatters: IEnumerable_1<ConsoleFormatter> | null): ConsoleLoggerProvider;
 };
 
 
@@ -164,8 +162,8 @@ export interface ConsoleLoggerSettings$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
 
-    get ChangeToken(): IChangeToken | undefined;
-    set ChangeToken(value: IChangeToken | undefined);
+    get ChangeToken(): IChangeToken | null;
+    set ChangeToken(value: IChangeToken | null);
     DisableColors: boolean;
     IncludeScopes: boolean;
     Switches: IDictionary_2<System_Internal.String, LogLevel>;

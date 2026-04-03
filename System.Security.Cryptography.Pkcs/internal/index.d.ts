@@ -2,11 +2,9 @@
 // Namespace: System.Security.Cryptography.Pkcs
 // Assembly: System.Security.Cryptography.Pkcs
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { CryptographicAttributeObject, CryptographicAttributeObjectCollection } from "../../System.Security.Cryptography/internal/index.js";
@@ -82,7 +80,7 @@ export interface CmsRecipient$instance {
 
     readonly Certificate: X509Certificate2;
     readonly RecipientIdentifierType: SubjectIdentifierType;
-    readonly RSAEncryptionPadding: RSAEncryptionPadding | undefined;
+    readonly RSAEncryptionPadding: RSAEncryptionPadding | null;
 }
 
 
@@ -104,7 +102,7 @@ export interface CmsRecipientCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(recipient: CmsRecipient): int;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: CmsRecipient[], index: int): void;
@@ -142,15 +140,15 @@ export type CmsRecipientEnumerator = CmsRecipientEnumerator$instance;
 export interface CmsSigner$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_CmsSigner: never;
 
-    get Certificate(): X509Certificate2 | undefined;
-    set Certificate(value: X509Certificate2 | undefined);
+    get Certificate(): X509Certificate2 | null;
+    set Certificate(value: X509Certificate2 | null);
     readonly Certificates: X509Certificate2Collection;
     DigestAlgorithm: Oid;
     IncludeOption: X509IncludeOption;
-    get PrivateKey(): AsymmetricAlgorithm | undefined;
-    set PrivateKey(value: AsymmetricAlgorithm | undefined);
-    get SignaturePadding(): RSASignaturePadding | undefined;
-    set SignaturePadding(value: RSASignaturePadding | undefined);
+    get PrivateKey(): AsymmetricAlgorithm | null;
+    set PrivateKey(value: AsymmetricAlgorithm | null);
+    get SignaturePadding(): RSASignaturePadding | null;
+    set SignaturePadding(value: RSASignaturePadding | null);
     readonly SignedAttributes: CryptographicAttributeObjectCollection;
     SignerIdentifierType: SubjectIdentifierType;
     readonly UnsignedAttributes: CryptographicAttributeObjectCollection;
@@ -160,14 +158,14 @@ export interface CmsSigner$instance {
 export const CmsSigner: {
     new(): CmsSigner;
     new(signerIdentifierType: SubjectIdentifierType): CmsSigner;
-    new(certificate: X509Certificate2): CmsSigner;
+    new(certificate: X509Certificate2 | null): CmsSigner;
     new(parameters: CspParameters): CmsSigner;
-    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2): CmsSigner;
-    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2, privateKey: AsymmetricAlgorithm): CmsSigner;
-    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2, privateKey: MLDsa): CmsSigner;
-    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2, privateKey: SlhDsa): CmsSigner;
-    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2, privateKey: CompositeMLDsa): CmsSigner;
-    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2, privateKey: RSA, signaturePadding: RSASignaturePadding): CmsSigner;
+    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2 | null): CmsSigner;
+    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2 | null, privateKey: AsymmetricAlgorithm | null): CmsSigner;
+    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2 | null, privateKey: MLDsa | null): CmsSigner;
+    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2 | null, privateKey: SlhDsa | null): CmsSigner;
+    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2 | null, privateKey: CompositeMLDsa | null): CmsSigner;
+    new(signerIdentifierType: SubjectIdentifierType, certificate: X509Certificate2 | null, privateKey: RSA | null, signaturePadding: RSASignaturePadding | null): CmsSigner;
 };
 
 
@@ -206,7 +204,7 @@ export interface EnvelopedCms$instance {
     Decrypt(recipientInfo: RecipientInfo): void;
     Decrypt(recipientInfo: RecipientInfo, extraStore: X509Certificate2Collection): void;
     Decrypt(extraStore: X509Certificate2Collection): void;
-    Decrypt(recipientInfo: RecipientInfo, privateKey: AsymmetricAlgorithm): void;
+    Decrypt(recipientInfo: RecipientInfo, privateKey: AsymmetricAlgorithm | null): void;
     Encode(): byte[];
     Encrypt(recipient: CmsRecipient): void;
     Encrypt(recipients: CmsRecipientCollection): void;
@@ -229,7 +227,7 @@ export interface KeyAgreeRecipientInfo$instance extends RecipientInfo {
     readonly EncryptedKey: byte[];
     readonly KeyEncryptionAlgorithm: AlgorithmIdentifier;
     readonly OriginatorIdentifierOrKey: SubjectIdentifierOrKey;
-    readonly OtherKeyAttribute: CryptographicAttributeObject | undefined;
+    readonly OtherKeyAttribute: CryptographicAttributeObject | null;
     readonly RecipientIdentifier: SubjectIdentifier;
     readonly Version: int;
 }
@@ -261,13 +259,13 @@ export interface Pkcs12Builder$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12Builder: never;
 
     readonly IsSealed: boolean;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: byte[], pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: byte[] | null, pbeParameters: PbeParameters): void;
     AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): void;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: string, pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: string | null, pbeParameters: PbeParameters): void;
     AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): void;
     AddSafeContentsUnencrypted(safeContents: Pkcs12SafeContents): void;
     Encode(): byte[];
-    SealWithMac(password: string, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
+    SealWithMac(password: string | null, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
     SealWithMac(password: ReadOnlySpan_1<System_Internal.Char>, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
     SealWithoutIntegrity(): void;
     TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
@@ -303,7 +301,7 @@ export interface Pkcs12Info$instance {
 
     AuthenticatedSafe: ReadOnlyCollection_1<Pkcs12SafeContents>;
     IntegrityMode: Pkcs12IntegrityMode;
-    VerifyMac(password: string): boolean;
+    VerifyMac(password: string | null): boolean;
     VerifyMac(password: ReadOnlySpan_1<System_Internal.Char>): boolean;
 }
 
@@ -356,13 +354,13 @@ export interface Pkcs12SafeContents$instance {
     AddNestedContents(safeContents: Pkcs12SafeContents): Pkcs12SafeContentsBag;
     AddSafeBag(safeBag: Pkcs12SafeBag): void;
     AddSecret(secretType: Oid, secretValue: ReadOnlyMemory_1<System_Internal.Byte>): Pkcs12SecretBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: byte[], pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
+    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: byte[] | null, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
     AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, password: string, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
+    AddShroudedKey(key: AsymmetricAlgorithm, password: string | null, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
     AddShroudedKey(key: AsymmetricAlgorithm, password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    Decrypt(passwordBytes: byte[]): void;
+    Decrypt(passwordBytes: byte[] | null): void;
     Decrypt(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>): void;
-    Decrypt(password: string): void;
+    Decrypt(password: string | null): void;
     Decrypt(password: ReadOnlySpan_1<System_Internal.Char>): void;
     GetBags(): IEnumerable_1<Pkcs12SafeBag>;
 }
@@ -378,8 +376,8 @@ export type Pkcs12SafeContents = Pkcs12SafeContents$instance;
 export interface Pkcs12SafeContentsBag$instance extends Pkcs12SafeBag {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeContentsBag: never;
 
-    get SafeContents(): Pkcs12SafeContents | undefined;
-    set SafeContents(value: Pkcs12SafeContents | undefined);
+    get SafeContents(): Pkcs12SafeContents | null;
+    set SafeContents(value: Pkcs12SafeContents | null);
 }
 
 
@@ -447,7 +445,7 @@ export type Pkcs8PrivateKeyInfo = Pkcs8PrivateKeyInfo$instance;
 export interface Pkcs9AttributeObject$instance extends AsnEncodedData {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
 
-    readonly Oid: Oid | undefined;
+    readonly Oid: Oid | null;
     CopyFrom(asnEncodedData: AsnEncodedData): void;
 }
 
@@ -599,7 +597,7 @@ export interface RecipientInfoCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: RecipientInfo[], index: int): void;
     GetEnumerator(): RecipientInfoEnumerator;
@@ -634,7 +632,7 @@ export interface Rfc3161TimestampRequest$instance {
 
     readonly HasExtensions: boolean;
     readonly HashAlgorithmId: Oid;
-    readonly RequestedPolicyId: Oid | undefined;
+    readonly RequestedPolicyId: Oid | null;
     readonly RequestSignerCertificate: boolean;
     readonly Version: int;
     Encode(): byte[];
@@ -647,11 +645,11 @@ export interface Rfc3161TimestampRequest$instance {
 
 
 export const Rfc3161TimestampRequest: {
-    CreateFromData(data: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    CreateFromHash(hash: ReadOnlyMemory_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    CreateFromHash(hash: ReadOnlyMemory_1<System_Internal.Byte>, hashAlgorithmId: Oid, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    CreateFromSignerInfo(signerInfo: SignerInfo, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection): Rfc3161TimestampRequest;
-    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, request: Rfc3161TimestampRequest, bytesConsumed: int): boolean;
+    CreateFromData(data: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid | null, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection | null): Rfc3161TimestampRequest;
+    CreateFromHash(hash: ReadOnlyMemory_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid | null, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection | null): Rfc3161TimestampRequest;
+    CreateFromHash(hash: ReadOnlyMemory_1<System_Internal.Byte>, hashAlgorithmId: Oid, requestedPolicyId?: Oid | null, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection | null): Rfc3161TimestampRequest;
+    CreateFromSignerInfo(signerInfo: SignerInfo, hashAlgorithm: HashAlgorithmName, requestedPolicyId?: Oid | null, nonce?: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, requestSignerCertificates?: boolean, extensions?: X509ExtensionCollection | null): Rfc3161TimestampRequest;
+    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, request: Rfc3161TimestampRequest | null, bytesConsumed: int): boolean;
 };
 
 
@@ -662,15 +660,15 @@ export interface Rfc3161TimestampToken$instance {
 
     TokenInfo: Rfc3161TimestampTokenInfo;
     AsSignedCms(): SignedCms;
-    VerifySignatureForData(data: ReadOnlySpan_1<System_Internal.Byte>, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
-    VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
-    VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithmId: Oid, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
-    VerifySignatureForSignerInfo(signerInfo: SignerInfo, signerCertificate: X509Certificate2, extraCandidates?: X509Certificate2Collection): boolean;
+    VerifySignatureForData(data: ReadOnlySpan_1<System_Internal.Byte>, signerCertificate: X509Certificate2 | null, extraCandidates?: X509Certificate2Collection | null): boolean;
+    VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, signerCertificate: X509Certificate2 | null, extraCandidates?: X509Certificate2Collection | null): boolean;
+    VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithmId: Oid, signerCertificate: X509Certificate2 | null, extraCandidates?: X509Certificate2Collection | null): boolean;
+    VerifySignatureForSignerInfo(signerInfo: SignerInfo, signerCertificate: X509Certificate2 | null, extraCandidates?: X509Certificate2Collection | null): boolean;
 }
 
 
 export const Rfc3161TimestampToken: {
-    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, token: Rfc3161TimestampToken, bytesConsumed: int): boolean;
+    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, token: Rfc3161TimestampToken | null, bytesConsumed: int): boolean;
 };
 
 
@@ -697,8 +695,8 @@ export interface Rfc3161TimestampTokenInfo$instance {
 
 
 export const Rfc3161TimestampTokenInfo: {
-    new(policyId: Oid, hashAlgorithmId: Oid, messageHash: ReadOnlyMemory_1<System_Internal.Byte>, serialNumber: ReadOnlyMemory_1<System_Internal.Byte>, timestamp: DateTimeOffset, accuracyInMicroseconds: Nullable_1<System_Internal.Int64>, isOrdering: boolean, nonce: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, timestampAuthorityName: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, extensions: X509ExtensionCollection): Rfc3161TimestampTokenInfo;
-    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, timestampTokenInfo: Rfc3161TimestampTokenInfo, bytesConsumed: int): boolean;
+    new(policyId: Oid, hashAlgorithmId: Oid, messageHash: ReadOnlyMemory_1<System_Internal.Byte>, serialNumber: ReadOnlyMemory_1<System_Internal.Byte>, timestamp: DateTimeOffset, accuracyInMicroseconds: Nullable_1<System_Internal.Int64>, isOrdering: boolean, nonce: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, timestampAuthorityName: Nullable_1<ReadOnlyMemory_1<System_Internal.Byte>>, extensions: X509ExtensionCollection | null): Rfc3161TimestampTokenInfo;
+    TryDecode(encodedBytes: ReadOnlyMemory_1<System_Internal.Byte>, timestampTokenInfo: Rfc3161TimestampTokenInfo | null, bytesConsumed: int): boolean;
 };
 
 
@@ -743,7 +741,7 @@ export type SignedCms = SignedCms$instance;
 export interface SignerInfo$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_SignerInfo: never;
 
-    readonly Certificate: X509Certificate2 | undefined;
+    readonly Certificate: X509Certificate2 | null;
     readonly CounterSignerInfos: SignerInfoCollection;
     readonly DigestAlgorithm: Oid;
     readonly SignatureAlgorithm: Oid;
@@ -778,7 +776,7 @@ export interface SignerInfoCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: SignerInfo[], index: int): void;
     GetEnumerator(): SignerInfoEnumerator;
@@ -812,7 +810,7 @@ export interface SubjectIdentifier$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_SubjectIdentifier: never;
 
     readonly Type: SubjectIdentifierType;
-    readonly Value: unknown | undefined;
+    readonly Value: JsValue | null;
     MatchesCertificate(certificate: X509Certificate2): boolean;
 }
 
@@ -827,7 +825,7 @@ export interface SubjectIdentifierOrKey$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_SubjectIdentifierOrKey: never;
 
     readonly Type: SubjectIdentifierOrKeyType;
-    readonly Value: unknown;
+    readonly Value: JsValue;
 }
 
 

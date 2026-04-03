@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Extensions.Primitives
 // Assembly: Microsoft.Extensions.Primitives
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import * as System_Collections_Generic_Internal from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -23,7 +21,7 @@ export interface IChangeToken$instance {
 
     readonly HasChanged: boolean;
     readonly ActiveChangeCallbacks: boolean;
-    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
 }
 
 
@@ -33,11 +31,11 @@ export interface InplaceStringBuilder$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_InplaceStringBuilder: never;
 
     Capacity: int;
-    Append(value: string): void;
+    Append(value: string | null): void;
     Append(segment: StringSegment): void;
-    Append(value: string, offset: int, count: int): void;
+    Append(value: string | null, offset: int, count: int): void;
     Append(c: char): void;
-    ToString(): string | undefined;
+    ToString(): string | null;
 }
 
 
@@ -53,21 +51,21 @@ export interface StringSegment$instance {
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
-    readonly Buffer: string | undefined;
+    readonly Buffer: string | null;
     readonly HasValue: boolean;
     readonly Length: int;
     readonly Offset: int;
-    readonly Value: string | undefined;
+    readonly Value: string | null;
     AsMemory(): ReadOnlyMemory_1<System_Internal.Char>;
     AsSpan(): ReadOnlySpan_1<System_Internal.Char>;
     AsSpan(start: int): ReadOnlySpan_1<System_Internal.Char>;
     AsSpan(start: int, length: int): ReadOnlySpan_1<System_Internal.Char>;
     EndsWith(text: string, comparisonType: StringComparison): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(obj: JsValue | null): boolean;
     Equals(other: StringSegment): boolean;
     Equals(other: StringSegment, comparisonType: StringComparison): boolean;
-    Equals(text: string): boolean;
-    Equals(text: string, comparisonType: StringComparison): boolean;
+    Equals(text: string | null): boolean;
+    Equals(text: string | null, comparisonType: StringComparison): boolean;
     GetHashCode(): int;
     IndexOf(c: char, start: int, count: int): int;
     IndexOf(c: char, start: int): int;
@@ -90,7 +88,7 @@ export interface StringSegment$instance {
 
 
 export const StringSegment: {
-    new(buffer: string): StringSegment;
+    new(buffer: string | null): StringSegment;
     new(buffer: string, offset: int, length: int): StringSegment;
     readonly Empty: StringSegment;
     Compare(a: StringSegment, b: StringSegment, comparisonType: StringComparison): int;
@@ -153,33 +151,33 @@ export interface StringValues$instance {
 
     readonly Count: int;
     Equals(other: StringValues): boolean;
-    Equals(other: string): boolean;
-    Equals(other: string[]): boolean;
-    Equals(obj: unknown): boolean;
+    Equals(other: string | null): boolean;
+    Equals(other: (string | null)[] | null): boolean;
+    Equals(obj: JsValue | null): boolean;
     GetEnumerator(): StringValues_Enumerator;
     GetHashCode(): int;
-    ToArray(): (string | undefined)[];
+    ToArray(): (string | null)[];
     ToString(): string;
 }
 
 
 export const StringValues: {
-    new(value: string): StringValues;
-    new(values: string[]): StringValues;
+    new(value: string | null): StringValues;
+    new(values: (string | null)[] | null): StringValues;
     readonly Empty: StringValues;
     Concat(values1: StringValues, values2: StringValues): StringValues;
-    Concat(values: StringValues, value: string): StringValues;
-    Concat(value: string, values: StringValues): StringValues;
+    Concat(values: StringValues, value: string | null): StringValues;
+    Concat(value: string | null, values: StringValues): StringValues;
     Equals(left: StringValues, right: StringValues): boolean;
-    Equals(left: StringValues, right: string): boolean;
-    Equals(left: StringValues, right: string[]): boolean;
-    Equals(left: string, right: StringValues): boolean;
-    Equals(left: string[], right: StringValues): boolean;
+    Equals(left: StringValues, right: string | null): boolean;
+    Equals(left: StringValues, right: (string | null)[] | null): boolean;
+    Equals(left: string | null, right: StringValues): boolean;
+    Equals(left: (string | null)[] | null, right: StringValues): boolean;
     IsNullOrEmpty(value: StringValues): boolean;
 };
 
 
-export type StringValues = StringValues$instance & { readonly [index: number]: string | undefined; };
+export type StringValues = StringValues$instance & { readonly [index: number]: string | null; };
 
 export interface StringValues_Enumerator$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_StringValues_Enumerator: never;
@@ -188,10 +186,9 @@ export interface StringValues_Enumerator$instance {
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly Current: string | undefined;
+    readonly Current: string | null;
     Dispose(): void;
     MoveNext(): boolean;
-    Reset(): void;
 }
 
 
@@ -209,7 +206,7 @@ export interface CancellationChangeToken$instance {
 
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
 }
 
 
@@ -233,7 +230,7 @@ export interface CompositeChangeToken$instance extends IChangeToken$instance {
     readonly ActiveChangeCallbacks: boolean;
     readonly ChangeTokens: IReadOnlyList_1<IChangeToken>;
     readonly HasChanged: boolean;
-    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
 }
 
 
@@ -270,8 +267,8 @@ export const StringSegmentComparer: {
 export type StringSegmentComparer = StringSegmentComparer$instance;
 
 export abstract class ChangeToken$instance {
-    static OnChange<TState>(changeTokenProducer: Func_1<IChangeToken>, changeTokenConsumer: Action_1<TState>, state: TState): IDisposable;
-    static OnChange(changeTokenProducer: Func_1<IChangeToken>, changeTokenConsumer: Action): IDisposable;
+    static OnChange<TState>(changeTokenProducer: Func_1<IChangeToken | null>, changeTokenConsumer: Action_1<TState>, state: TState): IDisposable;
+    static OnChange(changeTokenProducer: Func_1<IChangeToken | null>, changeTokenConsumer: Action): IDisposable;
 }
 
 

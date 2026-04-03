@@ -22,8 +22,8 @@ export { InplaceStringBuilder as InplaceStringBuilder } from './Microsoft.Extens
 export { StringSegment as StringSegment } from './Microsoft.Extensions.Primitives/internal/index.js';
 export { StringSegmentComparer as StringSegmentComparer } from './Microsoft.Extensions.Primitives/internal/index.js';
 export { StringTokenizer as StringTokenizer } from './Microsoft.Extensions.Primitives/internal/index.js';
-export { StringValues as StringValues } from './Microsoft.Extensions.Primitives/internal/index.js';
 export { StringTokenizer_Enumerator as StringTokenizer_Enumerator } from './Microsoft.Extensions.Primitives/internal/index.js';
+export { StringValues as StringValues } from './Microsoft.Extensions.Primitives/internal/index.js';
 export { StringValues_Enumerator as StringValues_Enumerator } from './Microsoft.Extensions.Primitives/internal/index.js';
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Primitives as ExtensionMethods } from './__internal/extensions/index.js';

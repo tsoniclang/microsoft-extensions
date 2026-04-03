@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Extensions.Validation
 // Assembly: Microsoft.Extensions.Validation
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { Dictionary_2, IList_1, IReadOnlyList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -20,7 +18,7 @@ import type { Action_1, Attribute, Boolean as ClrBoolean, Int32, Object as ClrOb
 export interface IValidatableInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
-    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -29,8 +27,8 @@ export type IValidatableInfo = IValidatableInfo$instance;
 export interface IValidatableInfoResolver$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfoResolver: never;
 
-    TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
-    TryGetValidatableTypeInfo(type: Type, validatableInfo: IValidatableInfo): boolean;
+    TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo | null): boolean;
+    TryGetValidatableTypeInfo(type: Type, validatableInfo: IValidatableInfo | null): boolean;
 }
 
 
@@ -39,8 +37,8 @@ export type IValidatableInfoResolver = IValidatableInfoResolver$instance;
 export interface ValidationErrorContext$instance {
     readonly __tsonic_type_Microsoft_Extensions_Validation_ValidationErrorContext: never;
 
-    get Container(): unknown | undefined;
-    set Container(value: unknown | undefined);
+    get Container(): JsValue | null;
+    set Container(value: JsValue | null);
     Errors: IReadOnlyList_1<System_Internal.String>;
     Name: string;
     Path: string;
@@ -73,7 +71,7 @@ export interface ValidatableParameterInfo$instance extends IValidatableInfo$inst
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
-    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -94,7 +92,7 @@ export interface ValidatablePropertyInfo$instance extends IValidatableInfo$insta
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
-    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -128,7 +126,7 @@ export interface ValidatableTypeInfo$instance extends IValidatableInfo$instance 
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
-    ValidateAsync(value: unknown, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -149,8 +147,8 @@ export interface ValidateContext$instance {
     CurrentDepth: int;
     CurrentValidationPath: string;
     ValidationContext: ValidationContext;
-    get ValidationErrors(): Dictionary_2<System_Internal.String, string[]> | undefined;
-    set ValidationErrors(value: Dictionary_2<System_Internal.String, string[]> | undefined);
+    get ValidationErrors(): Dictionary_2<System_Internal.String, string[]> | null;
+    set ValidationErrors(value: Dictionary_2<System_Internal.String, string[]> | null);
     ValidationOptions: ValidationOptions;
 }
 
@@ -167,8 +165,8 @@ export interface ValidationOptions$instance {
 
     MaxDepth: int;
     readonly Resolvers: IList_1<IValidatableInfoResolver>;
-    TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo): boolean;
-    TryGetValidatableTypeInfo(type: Type, validatableTypeInfo: IValidatableInfo): boolean;
+    TryGetValidatableParameterInfo(parameterInfo: ParameterInfo, validatableInfo: IValidatableInfo | null): boolean;
+    TryGetValidatableTypeInfo(type: Type, validatableTypeInfo: IValidatableInfo | null): boolean;
 }
 
 

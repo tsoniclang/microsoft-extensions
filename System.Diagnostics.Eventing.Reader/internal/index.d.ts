@@ -2,8 +2,9 @@
 // Namespace: System.Diagnostics.Eventing.Reader
 // Assembly: System.Diagnostics.EventLog
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
@@ -397,8 +398,8 @@ export interface EventLogRecord$instance extends EventRecord {
     Dispose(disposing: boolean): void;
     Dispose(): void;
     FormatDescription(): string;
-    FormatDescription(values: IEnumerable_1<unknown>): string;
-    GetPropertyValues(propertySelector: EventLogPropertySelector): IList_1<unknown>;
+    FormatDescription(values: IEnumerable_1<JsValue>): string;
+    GetPropertyValues(propertySelector: EventLogPropertySelector): IList_1<JsValue>;
     ToXml(): string;
 }
 
@@ -513,7 +514,7 @@ export type EventOpcode = EventOpcode$instance;
 export interface EventProperty$instance {
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventProperty: never;
 
-    readonly Value: unknown;
+    readonly Value: JsValue;
 }
 
 
@@ -555,7 +556,7 @@ export interface EventRecord$instance {
     Dispose(): void;
     Dispose(disposing: boolean): void;
     FormatDescription(): string;
-    FormatDescription(values: IEnumerable_1<unknown>): string;
+    FormatDescription(values: IEnumerable_1<JsValue>): string;
     ToXml(): string;
 }
 

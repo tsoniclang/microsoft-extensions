@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.FileSystemGlobbing.Internal.PatternContexts
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { DirectoryInfoBase, FileInfoBase, FileSystemInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
@@ -13,46 +14,7 @@ import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface PatternContextLinear_FrameData$instance {
-    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_FrameData: never;
-
-    IsNotApplicable: boolean;
-    SegmentIndex: int;
-    InStem: boolean;
-    readonly Stem: string | undefined;
-    readonly StemItems: IList_1<System_Internal.String>;
-}
-
-
-export const PatternContextLinear_FrameData: {
-    new(): PatternContextLinear_FrameData;
-};
-
-
-export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$instance;
-
-export interface PatternContextRagged_FrameData$instance {
-    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData: never;
-
-    IsNotApplicable: boolean;
-    SegmentGroupIndex: int;
-    SegmentGroup: IList_1<IPathSegment>;
-    BacktrackAvailable: int;
-    SegmentIndex: int;
-    InStem: boolean;
-    readonly Stem: string | undefined;
-    readonly StemItems: IList_1<System_Internal.String>;
-}
-
-
-export const PatternContextRagged_FrameData: {
-    new(): PatternContextRagged_FrameData;
-};
-
-
-export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
-
-export interface PatternContext_1$instance<TFrame extends unknown> {
+export interface PatternContext_1$instance<TFrame extends NonNullable<JsValue>> {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
@@ -65,11 +27,11 @@ export interface PatternContext_1$instance<TFrame extends unknown> {
 }
 
 
-export const PatternContext_1: (abstract new<TFrame extends unknown>() => PatternContext_1<TFrame>) & {
+export const PatternContext_1: (abstract new<TFrame extends NonNullable<JsValue>>() => PatternContext_1<TFrame>) & {
 };
 
 
-export interface __PatternContext_1$views<TFrame extends unknown> {
+export interface __PatternContext_1$views<TFrame extends NonNullable<JsValue>> {
     As_IPatternContext(): Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance;
 }
 
@@ -97,6 +59,24 @@ export interface __PatternContextLinear$views {
 
 export type PatternContextLinear = PatternContextLinear$instance & __PatternContextLinear$views;
 
+
+export interface PatternContextLinear_FrameData$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_FrameData: never;
+
+    IsNotApplicable: boolean;
+    SegmentIndex: int;
+    InStem: boolean;
+    readonly Stem: string | null;
+    readonly StemItems: IList_1<System_Internal.String>;
+}
+
+
+export const PatternContextLinear_FrameData: {
+    new(): PatternContextLinear_FrameData;
+};
+
+
+export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$instance;
 
 export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearExclude: never;
@@ -165,6 +145,27 @@ export interface __PatternContextRagged$views {
 
 export type PatternContextRagged = PatternContextRagged$instance & __PatternContextRagged$views;
 
+
+export interface PatternContextRagged_FrameData$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData: never;
+
+    IsNotApplicable: boolean;
+    SegmentGroupIndex: int;
+    SegmentGroup: IList_1<IPathSegment>;
+    BacktrackAvailable: int;
+    SegmentIndex: int;
+    InStem: boolean;
+    readonly Stem: string | null;
+    readonly StemItems: IList_1<System_Internal.String>;
+}
+
+
+export const PatternContextRagged_FrameData: {
+    new(): PatternContextRagged_FrameData;
+};
+
+
+export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
 
 export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedExclude: never;

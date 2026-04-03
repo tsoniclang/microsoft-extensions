@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Hosting
 // Assembly: Microsoft.Extensions.Hosting, Microsoft.Extensions.Hosting.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ConfigurationManager, IConfiguration, IConfigurationBuilder, IConfigurationManager } from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -52,13 +53,13 @@ export type IHost = IHost$instance;
 export interface IHostApplicationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
 
-    readonly Properties: IDictionary_2<unknown, unknown>;
+    readonly Properties: IDictionary_2<JsValue, JsValue>;
     readonly Configuration: IConfigurationManager;
     readonly Environment: IHostEnvironment;
     readonly Logging: ILoggingBuilder;
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
-    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder>): void;
+    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder> | null): void;
 }
 
 
@@ -79,7 +80,7 @@ export type IHostApplicationLifetime = IHostApplicationLifetime$instance;
 export interface IHostBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary_2<unknown, unknown>;
+    readonly Properties: IDictionary_2<JsValue, JsValue>;
     Build(): IHost;
     ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
     ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
@@ -150,7 +151,7 @@ export interface BackgroundService$instance extends IHostedService$instance, Sys
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly ExecuteTask: Task | undefined;
+    readonly ExecuteTask: Task | null;
     Dispose(): void;
     ExecuteAsync(stoppingToken: CancellationToken): Task;
     StartAsync(cancellationToken: CancellationToken): Task;
@@ -193,8 +194,8 @@ export interface HostAbortedException$instance extends Exception {
 
 export const HostAbortedException: {
     new(): HostAbortedException;
-    new(message: string): HostAbortedException;
-    new(message: string, innerException: Exception): HostAbortedException;
+    new(message: string | null): HostAbortedException;
+    new(message: string | null, innerException: Exception | null): HostAbortedException;
 };
 
 
@@ -211,14 +212,14 @@ export interface HostApplicationBuilder$instance {
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
     Build(): IHost;
-    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder>): void;
+    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder> | null): void;
 }
 
 
 export const HostApplicationBuilder: {
     new(): HostApplicationBuilder;
-    new(args: string[]): HostApplicationBuilder;
-    new(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
+    new(args: string[] | null): HostApplicationBuilder;
+    new(settings: HostApplicationBuilderSettings | null): HostApplicationBuilder;
 };
 
 
@@ -232,17 +233,17 @@ export type HostApplicationBuilder = HostApplicationBuilder$instance & __HostApp
 export interface HostApplicationBuilderSettings$instance {
     readonly __tsonic_type_Microsoft_Extensions_Hosting_HostApplicationBuilderSettings: never;
 
-    get ApplicationName(): string | undefined;
-    set ApplicationName(value: string | undefined);
-    get Args(): string[] | undefined;
-    set Args(value: string[] | undefined);
-    get Configuration(): ConfigurationManager | undefined;
-    set Configuration(value: ConfigurationManager | undefined);
-    get ContentRootPath(): string | undefined;
-    set ContentRootPath(value: string | undefined);
+    get ApplicationName(): string | null;
+    set ApplicationName(value: string | null);
+    get Args(): string[] | null;
+    set Args(value: string[] | null);
+    get Configuration(): ConfigurationManager | null;
+    set Configuration(value: ConfigurationManager | null);
+    get ContentRootPath(): string | null;
+    set ContentRootPath(value: string | null);
     DisableDefaults: boolean;
-    get EnvironmentName(): string | undefined;
-    set EnvironmentName(value: string | undefined);
+    get EnvironmentName(): string | null;
+    set EnvironmentName(value: string | null);
 }
 
 
@@ -258,7 +259,7 @@ export interface HostBuilder$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary_2<unknown, unknown>;
+    readonly Properties: IDictionary_2<JsValue, JsValue>;
     Build(): IHost;
     ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
     ConfigureContainer<TContainerBuilder>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
@@ -286,12 +287,12 @@ export interface HostBuilderContext$instance {
 
     Configuration: IConfiguration;
     HostingEnvironment: IHostEnvironment;
-    readonly Properties: IDictionary_2<unknown, unknown>;
+    readonly Properties: IDictionary_2<JsValue, JsValue>;
 }
 
 
 export const HostBuilderContext: {
-    new(properties: IDictionary_2<unknown, unknown>): HostBuilderContext;
+    new(properties: IDictionary_2<JsValue, JsValue>): HostBuilderContext;
 };
 
 
@@ -335,11 +336,11 @@ export type Environments = Environments$instance;
 
 export abstract class Host$instance {
     static CreateApplicationBuilder(): HostApplicationBuilder;
-    static CreateApplicationBuilder(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
-    static CreateApplicationBuilder(args: string[]): HostApplicationBuilder;
+    static CreateApplicationBuilder(settings: HostApplicationBuilderSettings | null): HostApplicationBuilder;
+    static CreateApplicationBuilder(args: string[] | null): HostApplicationBuilder;
     static CreateDefaultBuilder(): IHostBuilder;
-    static CreateDefaultBuilder(args: string[]): IHostBuilder;
-    static CreateEmptyApplicationBuilder(settings: HostApplicationBuilderSettings): HostApplicationBuilder;
+    static CreateDefaultBuilder(args: string[] | null): IHostBuilder;
+    static CreateEmptyApplicationBuilder(settings: HostApplicationBuilderSettings | null): HostApplicationBuilder;
 }
 
 
@@ -397,7 +398,7 @@ export type HostingEnvironmentExtensions = HostingEnvironmentExtensions$instance
 export abstract class HostingHostBuilderExtensions$instance {
     static ConfigureAppConfiguration(hostBuilder: IHostBuilder, configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
     static ConfigureContainer<TContainerBuilder>(hostBuilder: IHostBuilder, configureDelegate: Action_1<TContainerBuilder>): IHostBuilder;
-    static ConfigureDefaults(builder: IHostBuilder, args: string[]): IHostBuilder;
+    static ConfigureDefaults(builder: IHostBuilder, args: string[] | null): IHostBuilder;
     static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action_1<HostOptions>): IHostBuilder;
     static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action_2<HostBuilderContext, HostOptions>): IHostBuilder;
     static ConfigureLogging(hostBuilder: IHostBuilder, configureLogging: Action_1<ILoggingBuilder>): IHostBuilder;

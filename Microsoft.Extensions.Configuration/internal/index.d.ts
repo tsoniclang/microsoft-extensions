@@ -2,11 +2,9 @@
 // Namespace: Microsoft.Extensions.Configuration
 // Assembly: Microsoft.Extensions.Configuration, Microsoft.Extensions.Configuration.Abstractions, Microsoft.Extensions.Configuration.Binder, Microsoft.Extensions.Configuration.CommandLine, Microsoft.Extensions.Configuration.EnvironmentVariables, Microsoft.Extensions.Configuration.FileExtensions, Microsoft.Extensions.Configuration.Ini, Microsoft.Extensions.Configuration.Json, Microsoft.Extensions.Configuration.KeyPerFile, Microsoft.Extensions.Configuration.UserSecrets, Microsoft.Extensions.Configuration.Xml
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
-// Import support types from @tsonic/core
-import type { ptr } from "@tsonic/core/types.js";
 
 // Import types from other namespaces
 import type { CommandLineConfigurationSource } from "../../Microsoft.Extensions.Configuration.CommandLine/internal/index.js";
@@ -34,12 +32,12 @@ export interface IConfiguration$instance {
 }
 
 
-export type IConfiguration = IConfiguration$instance & { [key: string]: string | undefined; };
+export type IConfiguration = IConfiguration$instance & { [key: string]: string | null; };
 
 export interface IConfigurationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
 
-    readonly Properties: IDictionary_2<System_Internal.String, unknown>;
+    readonly Properties: IDictionary_2<System_Internal.String, JsValue>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
     Build(): IConfigurationRoot;
@@ -51,7 +49,7 @@ export type IConfigurationBuilder = IConfigurationBuilder$instance;
 export interface IConfigurationManager$instance extends IConfiguration, IConfigurationBuilder {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationManager: never;
 
-    readonly Properties: IDictionary_2<System_Internal.String, unknown>;
+    readonly Properties: IDictionary_2<System_Internal.String, JsValue>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
     Build(): IConfigurationRoot;
@@ -63,16 +61,16 @@ export interface IConfigurationManager$instance extends IConfiguration, IConfigu
 
 export interface IConfigurationManager$instance extends IConfiguration$instance, IConfigurationBuilder$instance {}
 
-export type IConfigurationManager = IConfigurationManager$instance & { [key: string]: string | undefined; };
+export type IConfigurationManager = IConfigurationManager$instance & { [key: string]: string | null; };
 
 export interface IConfigurationProvider$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string | null): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
-    Set(key: string, value: string): void;
-    TryGet(key: string, value: string): boolean;
+    Set(key: string, value: string | null): void;
+    TryGet(key: string, value: string | null): boolean;
 }
 
 
@@ -91,15 +89,15 @@ export interface IConfigurationRoot$instance extends IConfiguration {
 
 export interface IConfigurationRoot$instance extends IConfiguration$instance {}
 
-export type IConfigurationRoot = IConfigurationRoot$instance & { [key: string]: string | undefined; };
+export type IConfigurationRoot = IConfigurationRoot$instance & { [key: string]: string | null; };
 
 export interface IConfigurationSection$instance extends IConfiguration {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSection: never;
 
     readonly Key: string;
     readonly Path: string;
-    get Value(): string | undefined;
-    set Value(value: string | undefined);
+    get Value(): string | null;
+    set Value(value: string | null);
     GetChildren(): IEnumerable_1<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
@@ -108,7 +106,7 @@ export interface IConfigurationSection$instance extends IConfiguration {
 
 export interface IConfigurationSection$instance extends IConfiguration$instance {}
 
-export type IConfigurationSection = IConfigurationSection$instance & { [key: string]: string | undefined; };
+export type IConfigurationSection = IConfigurationSection$instance & { [key: string]: string | null; };
 
 export interface IConfigurationSource$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
@@ -125,12 +123,12 @@ export interface ConfigurationDebugViewContext$instance {
     readonly ConfigurationProvider: IConfigurationProvider;
     readonly Key: string;
     readonly Path: string;
-    readonly Value: string | undefined;
+    readonly Value: string | null;
 }
 
 
 export const ConfigurationDebugViewContext: {
-    new(path: string, key: string, value: string, configurationProvider: IConfigurationProvider): ConfigurationDebugViewContext;
+    new(path: string, key: string, value: string | null, configurationProvider: IConfigurationProvider): ConfigurationDebugViewContext;
 };
 
 
@@ -159,11 +157,11 @@ export interface ChainedConfigurationProvider$instance extends IConfigurationPro
 
     readonly Configuration: IConfiguration;
     Dispose(): void;
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string | null): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
-    Set(key: string, value: string): void;
-    TryGet(key: string, value: string): boolean;
+    Set(key: string, value: string | null): void;
+    TryGet(key: string, value: string | null): boolean;
 }
 
 
@@ -184,8 +182,8 @@ export interface ChainedConfigurationSource$instance extends IConfigurationSourc
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get Configuration(): IConfiguration | undefined;
-    set Configuration(value: IConfiguration | undefined);
+    get Configuration(): IConfiguration | null;
+    set Configuration(value: IConfiguration | null);
     ShouldDisposeConfiguration: boolean;
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
@@ -208,7 +206,7 @@ export interface ConfigurationBuilder$instance extends IConfigurationBuilder$ins
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
 
-    readonly Properties: IDictionary_2<System_Internal.String, unknown>;
+    readonly Properties: IDictionary_2<System_Internal.String, JsValue>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
     Build(): IConfigurationRoot;
@@ -232,7 +230,7 @@ export interface ConfigurationKeyComparer$instance {
 
     readonly __tsonic_iface_System_Collections_Generic_IComparer_1: never;
 
-    Compare(x: string, y: string): int;
+    Compare(x: string | null, y: string | null): int;
 }
 
 
@@ -285,7 +283,7 @@ export interface __ConfigurationManager$views {
     As_IConfigurationRoot(): IConfigurationRoot$instance;
 }
 
-export type ConfigurationManager = ConfigurationManager$instance & __ConfigurationManager$views & { [key: string]: string | undefined; };
+export type ConfigurationManager = ConfigurationManager$instance & __ConfigurationManager$views & { [key: string]: string | null; };
 
 
 export interface ConfigurationProvider$instance extends IConfigurationProvider$instance {
@@ -293,12 +291,12 @@ export interface ConfigurationProvider$instance extends IConfigurationProvider$i
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string): IEnumerable_1<System_Internal.String>;
+    GetChildKeys(earlierKeys: IEnumerable_1<System_Internal.String>, parentPath: string | null): IEnumerable_1<System_Internal.String>;
     GetReloadToken(): IChangeToken;
     Load(): void;
-    Set(key: string, value: string): void;
+    Set(key: string, value: string | null): void;
     ToString(): string;
-    TryGet(key: string, value: string): boolean;
+    TryGet(key: string, value: string | null): boolean;
 }
 
 
@@ -321,7 +319,7 @@ export interface ConfigurationReloadToken$instance {
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     OnReload(): void;
-    RegisterChangeCallback(callback: Action_1<unknown>, state: unknown): IDisposable;
+    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
 }
 
 
@@ -363,7 +361,7 @@ export interface __ConfigurationRoot$views {
     As_IConfigurationRoot(): IConfigurationRoot$instance;
 }
 
-export type ConfigurationRoot = ConfigurationRoot$instance & __ConfigurationRoot$views & { [key: string]: string | undefined; };
+export type ConfigurationRoot = ConfigurationRoot$instance & __ConfigurationRoot$views & { [key: string]: string | null; };
 
 
 export interface ConfigurationSection$instance {
@@ -374,12 +372,12 @@ export interface ConfigurationSection$instance {
 
     readonly Key: string;
     readonly Path: string;
-    get Value(): string | undefined;
-    set Value(value: string | undefined);
+    get Value(): string | null;
+    set Value(value: string | null);
     GetChildren(): IEnumerable_1<IConfigurationSection>;
     GetReloadToken(): IChangeToken;
     GetSection(key: string): IConfigurationSection;
-    TryGetValue(key: string, value: string): boolean;
+    TryGetValue(key: string | null, value: string | null): boolean;
 }
 
 
@@ -393,7 +391,7 @@ export interface __ConfigurationSection$views {
     As_IConfigurationSection(): IConfigurationSection$instance;
 }
 
-export type ConfigurationSection = ConfigurationSection$instance & __ConfigurationSection$views & { [key: string]: string | undefined; };
+export type ConfigurationSection = ConfigurationSection$instance & __ConfigurationSection$views & { [key: string]: string | null; };
 
 
 export interface FileConfigurationProvider$instance extends ConfigurationProvider$instance, System_Internal.IDisposable {
@@ -427,13 +425,13 @@ export interface FileConfigurationSource$instance extends IConfigurationSource$i
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get FileProvider(): IFileProvider | undefined;
-    set FileProvider(value: IFileProvider | undefined);
-    get OnLoadException(): Action_1<FileLoadExceptionContext> | undefined;
-    set OnLoadException(value: Action_1<FileLoadExceptionContext> | undefined);
+    get FileProvider(): IFileProvider | null;
+    set FileProvider(value: IFileProvider | null);
+    get OnLoadException(): Action_1<FileLoadExceptionContext> | null;
+    set OnLoadException(value: Action_1<FileLoadExceptionContext> | null);
     Optional: boolean;
-    get Path(): string | undefined;
-    set Path(value: string | undefined);
+    get Path(): string | null;
+    set Path(value: string | null);
     ReloadDelay: int;
     ReloadOnChange: boolean;
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
@@ -496,8 +494,8 @@ export interface StreamConfigurationSource$instance extends IConfigurationSource
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    get Stream(): Stream | undefined;
-    set Stream(value: Stream | undefined);
+    get Stream(): Stream | null;
+    set Stream(value: Stream | null);
     Build(builder: IConfigurationBuilder): IConfigurationProvider;
 }
 
@@ -522,8 +520,8 @@ export abstract class ChainedBuilderExtensions$instance {
 export type ChainedBuilderExtensions = ChainedBuilderExtensions$instance;
 
 export abstract class CommandLineConfigurationExtensions$instance {
-    static AddCommandLine(builder: IConfigurationBuilder, configureSource: Action_1<CommandLineConfigurationSource>): IConfigurationBuilder;
-    static AddCommandLine(configurationBuilder: IConfigurationBuilder, args: string[], switchMappings: IDictionary_2<System_Internal.String, System_Internal.String>): IConfigurationBuilder;
+    static AddCommandLine(builder: IConfigurationBuilder, configureSource: Action_1<CommandLineConfigurationSource> | null): IConfigurationBuilder;
+    static AddCommandLine(configurationBuilder: IConfigurationBuilder, args: string[], switchMappings: IDictionary_2<System_Internal.String, System_Internal.String> | null): IConfigurationBuilder;
     static AddCommandLine(configurationBuilder: IConfigurationBuilder, args: string[]): IConfigurationBuilder;
 }
 
@@ -531,28 +529,28 @@ export abstract class CommandLineConfigurationExtensions$instance {
 export type CommandLineConfigurationExtensions = CommandLineConfigurationExtensions$instance;
 
 export abstract class ConfigurationBinder$instance {
-    static Bind(configuration: IConfiguration, instance: unknown, configureOptions: Action_1<BinderOptions>): void;
-    static Bind(configuration: IConfiguration, instance: unknown): void;
-    static Bind(configuration: IConfiguration, key: string, instance: unknown): void;
-    static Get<T>(configuration: IConfiguration, configureOptions: Action_1<BinderOptions>): T | undefined;
-    static Get(configuration: IConfiguration, type: Type, configureOptions: Action_1<BinderOptions>): unknown | undefined;
-    static Get(configuration: IConfiguration, type: Type): unknown | undefined;
-    static Get<T>(configuration: IConfiguration): T | undefined;
-    static GetValue<T>(configuration: IConfiguration, key: string, defaultValue: T): T | undefined;
-    static GetValue<T>(configuration: IConfiguration, key: string): T | undefined;
-    static GetValue(configuration: IConfiguration, type: Type, key: string, defaultValue: unknown): unknown | undefined;
-    static GetValue(configuration: IConfiguration, type: Type, key: string): unknown | undefined;
+    static Bind(configuration: IConfiguration, instance: JsValue | null, configureOptions: Action_1<BinderOptions> | null): void;
+    static Bind(configuration: IConfiguration, instance: JsValue | null): void;
+    static Bind(configuration: IConfiguration, key: string, instance: JsValue | null): void;
+    static Get<T>(configuration: IConfiguration, configureOptions: Action_1<BinderOptions> | null): T | null;
+    static Get(configuration: IConfiguration, type: Type, configureOptions: Action_1<BinderOptions> | null): JsValue | null;
+    static Get(configuration: IConfiguration, type: Type): JsValue | null;
+    static Get<T>(configuration: IConfiguration): T | null;
+    static GetValue<T>(configuration: IConfiguration, key: string, defaultValue: T): T | null;
+    static GetValue<T>(configuration: IConfiguration, key: string): T | null;
+    static GetValue(configuration: IConfiguration, type: Type, key: string, defaultValue: JsValue | null): JsValue | null;
+    static GetValue(configuration: IConfiguration, type: Type, key: string): JsValue | null;
 }
 
 
 export type ConfigurationBinder = ConfigurationBinder$instance;
 
 export abstract class ConfigurationExtensions$instance {
-    static Add<TSource extends IConfigurationSource>(builder: IConfigurationBuilder, configureSource: Action_1<TSource>): IConfigurationBuilder;
+    static Add<TSource extends IConfigurationSource>(builder: IConfigurationBuilder, configureSource: Action_1<TSource> | null): IConfigurationBuilder;
     static AsEnumerable(configuration: IConfiguration, makePathsRelative: boolean): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     static AsEnumerable(configuration: IConfiguration): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
-    static Exists(section: IConfigurationSection): boolean;
-    static GetConnectionString(configuration: IConfiguration, name: string): string | undefined;
+    static Exists(section: IConfigurationSection | null): boolean;
+    static GetConnectionString(configuration: IConfiguration, name: string): string | null;
     static GetRequiredSection(configuration: IConfiguration, key: string): IConfigurationSection;
 }
 
@@ -563,15 +561,15 @@ export abstract class ConfigurationPath$instance {
     static readonly KeyDelimiter: string;
     static Combine(pathSegments: IEnumerable_1<System_Internal.String>): string;
     static Combine(...pathSegments: string[]): string;
-    static GetParentPath(path: string): string | undefined;
-    static GetSectionKey(path: string): string | undefined;
+    static GetParentPath(path: string | null): string | null;
+    static GetSectionKey(path: string | null): string | null;
 }
 
 
 export type ConfigurationPath = ConfigurationPath$instance;
 
 export abstract class ConfigurationRootExtensions$instance {
-    static GetDebugView(root: IConfigurationRoot, processValue: Func_2<ConfigurationDebugViewContext, System_Internal.String>): string;
+    static GetDebugView(root: IConfigurationRoot, processValue: Func_2<ConfigurationDebugViewContext, System_Internal.String> | null): string;
     static GetDebugView(root: IConfigurationRoot): string;
 }
 
@@ -579,8 +577,8 @@ export abstract class ConfigurationRootExtensions$instance {
 export type ConfigurationRootExtensions = ConfigurationRootExtensions$instance;
 
 export abstract class EnvironmentVariablesExtensions$instance {
-    static AddEnvironmentVariables(builder: IConfigurationBuilder, configureSource: Action_1<EnvironmentVariablesConfigurationSource>): IConfigurationBuilder;
-    static AddEnvironmentVariables(configurationBuilder: IConfigurationBuilder, prefix: string): IConfigurationBuilder;
+    static AddEnvironmentVariables(builder: IConfigurationBuilder, configureSource: Action_1<EnvironmentVariablesConfigurationSource> | null): IConfigurationBuilder;
+    static AddEnvironmentVariables(configurationBuilder: IConfigurationBuilder, prefix: string | null): IConfigurationBuilder;
     static AddEnvironmentVariables(configurationBuilder: IConfigurationBuilder): IConfigurationBuilder;
 }
 
@@ -588,7 +586,7 @@ export abstract class EnvironmentVariablesExtensions$instance {
 export type EnvironmentVariablesExtensions = EnvironmentVariablesExtensions$instance;
 
 export abstract class FileConfigurationExtensions$instance {
-    static GetFileLoadExceptionHandler(builder: IConfigurationBuilder): Action_1<FileLoadExceptionContext> | undefined;
+    static GetFileLoadExceptionHandler(builder: IConfigurationBuilder): Action_1<FileLoadExceptionContext> | null;
     static GetFileProvider(builder: IConfigurationBuilder): IFileProvider;
     static SetBasePath(builder: IConfigurationBuilder, basePath: string): IConfigurationBuilder;
     static SetFileLoadExceptionHandler(builder: IConfigurationBuilder, handler: Action_1<FileLoadExceptionContext>): IConfigurationBuilder;
@@ -599,8 +597,8 @@ export abstract class FileConfigurationExtensions$instance {
 export type FileConfigurationExtensions = FileConfigurationExtensions$instance;
 
 export abstract class IniConfigurationExtensions$instance {
-    static AddIniFile(builder: IConfigurationBuilder, provider: IFileProvider, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
-    static AddIniFile(builder: IConfigurationBuilder, configureSource: Action_1<IniConfigurationSource>): IConfigurationBuilder;
+    static AddIniFile(builder: IConfigurationBuilder, provider: IFileProvider | null, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
+    static AddIniFile(builder: IConfigurationBuilder, configureSource: Action_1<IniConfigurationSource> | null): IConfigurationBuilder;
     static AddIniFile(builder: IConfigurationBuilder, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
     static AddIniFile(builder: IConfigurationBuilder, path: string, optional: boolean): IConfigurationBuilder;
     static AddIniFile(builder: IConfigurationBuilder, path: string): IConfigurationBuilder;
@@ -611,8 +609,8 @@ export abstract class IniConfigurationExtensions$instance {
 export type IniConfigurationExtensions = IniConfigurationExtensions$instance;
 
 export abstract class JsonConfigurationExtensions$instance {
-    static AddJsonFile(builder: IConfigurationBuilder, provider: IFileProvider, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
-    static AddJsonFile(builder: IConfigurationBuilder, configureSource: Action_1<JsonConfigurationSource>): IConfigurationBuilder;
+    static AddJsonFile(builder: IConfigurationBuilder, provider: IFileProvider | null, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
+    static AddJsonFile(builder: IConfigurationBuilder, configureSource: Action_1<JsonConfigurationSource> | null): IConfigurationBuilder;
     static AddJsonFile(builder: IConfigurationBuilder, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
     static AddJsonFile(builder: IConfigurationBuilder, path: string, optional: boolean): IConfigurationBuilder;
     static AddJsonFile(builder: IConfigurationBuilder, path: string): IConfigurationBuilder;
@@ -633,7 +631,7 @@ export abstract class KeyPerFileConfigurationBuilderExtensions$instance {
 export type KeyPerFileConfigurationBuilderExtensions = KeyPerFileConfigurationBuilderExtensions$instance;
 
 export abstract class MemoryConfigurationBuilderExtensions$instance {
-    static AddInMemoryCollection(configurationBuilder: IConfigurationBuilder, initialData: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>): IConfigurationBuilder;
+    static AddInMemoryCollection(configurationBuilder: IConfigurationBuilder, initialData: IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>> | null): IConfigurationBuilder;
     static AddInMemoryCollection(configurationBuilder: IConfigurationBuilder): IConfigurationBuilder;
 }
 
@@ -655,8 +653,8 @@ export abstract class UserSecretsConfigurationExtensions$instance {
 export type UserSecretsConfigurationExtensions = UserSecretsConfigurationExtensions$instance;
 
 export abstract class XmlConfigurationExtensions$instance {
-    static AddXmlFile(builder: IConfigurationBuilder, provider: IFileProvider, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
-    static AddXmlFile(builder: IConfigurationBuilder, configureSource: Action_1<XmlConfigurationSource>): IConfigurationBuilder;
+    static AddXmlFile(builder: IConfigurationBuilder, provider: IFileProvider | null, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
+    static AddXmlFile(builder: IConfigurationBuilder, configureSource: Action_1<XmlConfigurationSource> | null): IConfigurationBuilder;
     static AddXmlFile(builder: IConfigurationBuilder, path: string, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
     static AddXmlFile(builder: IConfigurationBuilder, path: string, optional: boolean): IConfigurationBuilder;
     static AddXmlFile(builder: IConfigurationBuilder, path: string): IConfigurationBuilder;

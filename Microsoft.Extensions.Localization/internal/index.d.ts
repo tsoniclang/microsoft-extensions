@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Localization
 // Assembly: Microsoft.Extensions.Localization, Microsoft.Extensions.Localization.Abstractions
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import type { ILogger, ILoggerFactory } from "../../Microsoft.Extensions.Logging/internal/index.js";
@@ -18,7 +19,7 @@ import type { Attribute, Boolean as ClrBoolean, Func_2, Object as ClrObject, Str
 export interface IResourceNamesCache$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IResourceNamesCache: never;
 
-    GetOrAdd(name: string, valueFactory: Func_2<System_Internal.String, IList_1<System_Internal.String>>): IList_1<System_Internal.String> | undefined;
+    GetOrAdd(name: string, valueFactory: Func_2<System_Internal.String, IList_1<System_Internal.String> | null>): IList_1<System_Internal.String> | null;
 }
 
 
@@ -27,7 +28,7 @@ export type IResourceNamesCache = IResourceNamesCache$instance;
 export interface IStringLocalizer$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
 
-    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
+    get_Item2(name: string, ...arguments: JsValue[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
@@ -38,7 +39,7 @@ export type IStringLocalizer = IStringLocalizer$instance;
 export interface IStringLocalizer_1$instance<T> extends IStringLocalizer {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer_1: never;
 
-    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
+    get_Item2(name: string, ...arguments: JsValue[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
     get_Item(name: string): LocalizedString;
@@ -78,7 +79,7 @@ export interface LocalizedString$instance {
 
     readonly Name: string;
     readonly ResourceNotFound: boolean;
-    readonly SearchedLocation: string | undefined;
+    readonly SearchedLocation: string | null;
     readonly Value: string;
     ToString(): string;
 }
@@ -87,7 +88,7 @@ export interface LocalizedString$instance {
 export const LocalizedString: {
     new(name: string, value: string): LocalizedString;
     new(name: string, value: string, resourceNotFound: boolean): LocalizedString;
-    new(name: string, value: string, resourceNotFound: boolean, searchedLocation: string): LocalizedString;
+    new(name: string, value: string, resourceNotFound: boolean, searchedLocation: string | null): LocalizedString;
 };
 
 
@@ -113,7 +114,7 @@ export interface ResourceManagerStringLocalizer$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
 
     get_Item(name: string): LocalizedString;
-    get_Item(name: string, ...arguments: unknown[]): LocalizedString;
+    get_Item(name: string, ...arguments: JsValue[]): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
 
@@ -138,12 +139,12 @@ export interface ResourceManagerStringLocalizerFactory$instance extends IStringL
     Create(resourceSource: Type): IStringLocalizer;
     Create(baseName: string, location: string): IStringLocalizer;
     CreateResourceManagerStringLocalizer(assembly: Assembly, baseName: string): ResourceManagerStringLocalizer;
-    GetResourceLocationAttribute(assembly: Assembly): ResourceLocationAttribute | undefined;
+    GetResourceLocationAttribute(assembly: Assembly): ResourceLocationAttribute | null;
     GetResourcePrefix(typeInfo: TypeInfo): string;
-    GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string, resourcesRelativePath: string): string;
+    GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string | null, resourcesRelativePath: string | null): string;
     GetResourcePrefix(baseResourceName: string, baseNamespace: string): string;
     GetResourcePrefix(location: string, baseName: string, resourceLocation: string): string;
-    GetRootNamespaceAttribute(assembly: Assembly): RootNamespaceAttribute | undefined;
+    GetRootNamespaceAttribute(assembly: Assembly): RootNamespaceAttribute | null;
 }
 
 
@@ -164,7 +165,7 @@ export interface ResourceNamesCache$instance extends IResourceNamesCache$instanc
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IResourceNamesCache: never;
 
-    GetOrAdd(name: string, valueFactory: Func_2<System_Internal.String, IList_1<System_Internal.String>>): IList_1<System_Internal.String> | undefined;
+    GetOrAdd(name: string, valueFactory: Func_2<System_Internal.String, IList_1<System_Internal.String> | null>): IList_1<System_Internal.String> | null;
 }
 
 
@@ -201,7 +202,7 @@ export interface StringLocalizer_1$instance<TResourceSource> extends IStringLoca
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer_1: never;
 
     get_Item(name: string): LocalizedString;
-    get_Item(name: string, ...arguments: unknown[]): LocalizedString;
+    get_Item(name: string, ...arguments: JsValue[]): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
 
@@ -220,7 +221,7 @@ export type StringLocalizer_1<TResourceSource> = StringLocalizer_1$instance<TRes
 
 export abstract class StringLocalizerExtensions$instance {
     static GetAllStrings(stringLocalizer: IStringLocalizer): IEnumerable_1<LocalizedString>;
-    static GetString(stringLocalizer: IStringLocalizer, name: string, ...arguments: unknown[]): LocalizedString;
+    static GetString(stringLocalizer: IStringLocalizer, name: string, ...arguments: JsValue[]): LocalizedString;
     static GetString(stringLocalizer: IStringLocalizer, name: string): LocalizedString;
 }
 

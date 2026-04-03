@@ -2,8 +2,9 @@
 // Namespace: System.Security.Cryptography
 // Assembly: System.Private.CoreLib, System.Security.Cryptography, System.Security.Cryptography.Pkcs
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as System_Collections_Internal from "@tsonic/dotnet/System.Collections/internal/index.js";
@@ -22,7 +23,7 @@ export interface CryptographicAttributeObject$instance {
 
 export const CryptographicAttributeObject: {
     new(oid: Oid): CryptographicAttributeObject;
-    new(oid: Oid, values: AsnEncodedDataCollection): CryptographicAttributeObject;
+    new(oid: Oid, values: AsnEncodedDataCollection | null): CryptographicAttributeObject;
 };
 
 
@@ -36,7 +37,7 @@ export interface CryptographicAttributeObjectCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: unknown;
+    readonly SyncRoot: JsValue;
     Add(asnEncodedData: AsnEncodedData): int;
     Add(attribute: CryptographicAttributeObject): int;
     CopyTo(array: CryptographicAttributeObject[], index: int): void;

@@ -2,8 +2,9 @@
 // Namespace: Microsoft.Extensions.Configuration.Xml
 // Assembly: Microsoft.Extensions.Configuration.Xml
 
-// Primitive type aliases from @tsonic/core
-import type { sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+// Core type aliases from @tsonic/core
+import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
 
 // Import types from other namespaces
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
@@ -63,7 +64,7 @@ export type XmlConfigurationSource = XmlConfigurationSource$instance & __XmlConf
 export interface XmlDocumentDecryptor$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlDocumentDecryptor: never;
 
-    CreateDecryptingXmlReader(input: Stream, settings: XmlReaderSettings): XmlReader;
+    CreateDecryptingXmlReader(input: Stream, settings: XmlReaderSettings | null): XmlReader;
     DecryptDocumentAndCreateXmlReader(document: XmlDocument): XmlReader;
 }
 
@@ -87,7 +88,7 @@ export interface XmlStreamConfigurationProvider$instance extends StreamConfigura
 
 export const XmlStreamConfigurationProvider: {
     new(source: XmlStreamConfigurationSource): XmlStreamConfigurationProvider;
-    Read(stream: Stream, decryptor: XmlDocumentDecryptor): IDictionary_2<System_Internal.String, string | undefined>;
+    Read(stream: Stream, decryptor: XmlDocumentDecryptor): IDictionary_2<System_Internal.String, string | null>;
 };
 
 
