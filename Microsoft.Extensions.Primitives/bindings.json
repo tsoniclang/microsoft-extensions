@@ -1842,6 +1842,26 @@
           "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
           "declaringAssemblyName": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
+        },
+        {
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator::Reset():System.Void",
+          "clrName": "Reset",
+          "metadataToken": 0,
+          "canonicalSignature": "():System.Void",
+          "normalizedSignature": "Reset|():System.Void|static=false",
+          "emitScope": "ClassSurface",
+          "provenance": "Synthesized",
+          "arity": 0,
+          "parameterCount": 0,
+          "isStatic": false,
+          "isAbstract": false,
+          "isVirtual": true,
+          "isOverride": false,
+          "isSealed": false,
+          "visibility": "Public",
+          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
+          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "isExtensionMethod": false
         }
       ],
       "properties": [

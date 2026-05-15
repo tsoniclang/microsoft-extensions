@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -42,7 +42,7 @@ export interface LiteralPathSegment$instance extends Microsoft_Extensions_FileSy
 
     readonly CanProduceStem: boolean;
     readonly Value: string;
-    Equals(obj: JsValue | null): boolean;
+    Equals(obj: unknown | null): boolean;
     GetHashCode(): int;
     Match(value: string): boolean;
 }

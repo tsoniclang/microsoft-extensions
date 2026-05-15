@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.FileProviders.Composite/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IDirectoryContents, IFileInfo, IFileProvider } from './Microsoft.Extensions.FileProviders/internal/index.js';
 import type { IEnumerable as IEnumerable__System_Collections_Generic, IEnumerator, IList } from '@tsonic/dotnet/System.Collections.Generic.js';

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Logging.Configuration/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IConfiguration } from './Microsoft.Extensions.Configuration/internal/index.js';
 import type { IServiceCollection } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
@@ -14,7 +18,7 @@ import type { IChangeToken } from './Microsoft.Extensions.Primitives/internal/in
 import type { Object as ClrObject, String as ClrString, Type, Void } from '@tsonic/dotnet/System.js';
 
 // Public API exports (curated - no internal $instance/$views leakage)
-export type ILoggerProviderConfiguration<T> = Internal.ILoggerProviderConfiguration_1<T>;
+export type ILoggerProviderConfiguration<T extends unknown> = Internal.ILoggerProviderConfiguration_1<T>;
 export type ILoggerProviderConfigurationFactory = Internal.ILoggerProviderConfigurationFactory;
 export { LoggerProviderOptions$instance as LoggerProviderOptions } from './Microsoft.Extensions.Logging.Configuration/internal/index.js';
 export { LoggerProviderOptionsChangeTokenSource_2 as LoggerProviderOptionsChangeTokenSource } from './Microsoft.Extensions.Logging.Configuration/internal/index.js';

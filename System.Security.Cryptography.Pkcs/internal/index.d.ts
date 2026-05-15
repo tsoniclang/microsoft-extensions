@@ -3,7 +3,7 @@
 // Assembly: System.Security.Cryptography.Pkcs
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -102,7 +102,7 @@ export interface CmsRecipientCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: JsValue;
+    readonly SyncRoot: unknown;
     Add(recipient: CmsRecipient): int;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: CmsRecipient[], index: int): void;
@@ -597,7 +597,7 @@ export interface RecipientInfoCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: JsValue;
+    readonly SyncRoot: unknown;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: RecipientInfo[], index: int): void;
     GetEnumerator(): RecipientInfoEnumerator;
@@ -776,7 +776,7 @@ export interface SignerInfoCollection$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: JsValue;
+    readonly SyncRoot: unknown;
     CopyTo(array: ClrArray, index: int): void;
     CopyTo(array: SignerInfo[], index: int): void;
     GetEnumerator(): SignerInfoEnumerator;
@@ -810,7 +810,7 @@ export interface SubjectIdentifier$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_SubjectIdentifier: never;
 
     readonly Type: SubjectIdentifierType;
-    readonly Value: JsValue | null;
+    readonly Value: unknown | null;
     MatchesCertificate(certificate: X509Certificate2): boolean;
 }
 
@@ -825,7 +825,7 @@ export interface SubjectIdentifierOrKey$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_SubjectIdentifierOrKey: never;
 
     readonly Type: SubjectIdentifierOrKeyType;
-    readonly Value: JsValue;
+    readonly Value: unknown;
 }
 
 

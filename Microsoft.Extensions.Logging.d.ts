@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Logging/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IConfiguration } from './Microsoft.Extensions.Configuration/internal/index.js';
 import type { IServiceCollection } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
@@ -52,10 +56,10 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type ILogger<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ILogger :
-  Internal.ILogger_1<T1>;
+  [T1] extends [unknown] ? Internal.ILogger_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Logging as ExtensionMethods } from './__internal/extensions/index.js';

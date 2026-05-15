@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Hosting, Microsoft.Extensions.Hosting.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -53,13 +53,13 @@ export type IHost = IHost$instance;
 export interface IHostApplicationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostApplicationBuilder: never;
 
-    readonly Properties: IDictionary_2<JsValue, JsValue>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     readonly Configuration: IConfigurationManager;
     readonly Environment: IHostEnvironment;
     readonly Logging: ILoggingBuilder;
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
-    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder> | null): void;
+    ConfigureContainer<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder> | null): void;
 }
 
 
@@ -80,12 +80,12 @@ export type IHostApplicationLifetime = IHostApplicationLifetime$instance;
 export interface IHostBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary_2<JsValue, JsValue>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     Build(): IHost;
     ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
     ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
 }
 
 
@@ -212,7 +212,7 @@ export interface HostApplicationBuilder$instance {
     readonly Metrics: IMetricsBuilder;
     readonly Services: IServiceCollection;
     Build(): IHost;
-    ConfigureContainer<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder> | null): void;
+    ConfigureContainer<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>, configure?: Action_1<TContainerBuilder> | null): void;
 }
 
 
@@ -259,14 +259,14 @@ export interface HostBuilder$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostBuilder: never;
 
-    readonly Properties: IDictionary_2<JsValue, JsValue>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
     Build(): IHost;
     ConfigureAppConfiguration(configureDelegate: Action_2<HostBuilderContext, IConfigurationBuilder>): IHostBuilder;
-    ConfigureContainer<TContainerBuilder>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
+    ConfigureContainer<TContainerBuilder extends unknown>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
     ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
     ConfigureServices(configureDelegate: Action_2<HostBuilderContext, IServiceCollection>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
 }
 
 
@@ -287,12 +287,12 @@ export interface HostBuilderContext$instance {
 
     Configuration: IConfiguration;
     HostingEnvironment: IHostEnvironment;
-    readonly Properties: IDictionary_2<JsValue, JsValue>;
+    readonly Properties: IDictionary_2<unknown, unknown>;
 }
 
 
 export const HostBuilderContext: {
-    new(properties: IDictionary_2<JsValue, JsValue>): HostBuilderContext;
+    new(properties: IDictionary_2<unknown, unknown>): HostBuilderContext;
 };
 
 
@@ -397,7 +397,7 @@ export type HostingEnvironmentExtensions = HostingEnvironmentExtensions$instance
 
 export abstract class HostingHostBuilderExtensions$instance {
     static ConfigureAppConfiguration(hostBuilder: IHostBuilder, configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
-    static ConfigureContainer<TContainerBuilder>(hostBuilder: IHostBuilder, configureDelegate: Action_1<TContainerBuilder>): IHostBuilder;
+    static ConfigureContainer<TContainerBuilder extends unknown>(hostBuilder: IHostBuilder, configureDelegate: Action_1<TContainerBuilder>): IHostBuilder;
     static ConfigureDefaults(builder: IHostBuilder, args: string[] | null): IHostBuilder;
     static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action_1<HostOptions>): IHostBuilder;
     static ConfigureHostOptions(hostBuilder: IHostBuilder, configureOptions: Action_2<HostBuilderContext, HostOptions>): IHostBuilder;

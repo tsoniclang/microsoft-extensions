@@ -41,7 +41,7 @@ import * as System_Threading from "@tsonic/dotnet/System.Threading/internal/inde
 import * as System_Threading_Tasks from "@tsonic/dotnet/System.Threading.Tasks/internal/index.js";
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import sticky extension scope helper
@@ -72,7 +72,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Caching_Distributed {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Caching.Distributed
 interface __TsonicExtApplier_Microsoft_Extensions_Caching_Distributed {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Caching_Distributed;
 }
 
@@ -85,21 +85,21 @@ export type ExtensionMethods_Microsoft_Extensions_Caching_Distributed<TShape> =
 interface __TsonicExtMethods_Microsoft_Extensions_Caching_Memory {
   AddExpirationToken(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, expirationToken: Microsoft_Extensions_Primitives.IChangeToken): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
   AddExpirationToken(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, expirationToken: Microsoft_Extensions_Primitives.IChangeToken): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
-  Get(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue): Rewrap<this, JsValue | null>;
-  Get<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue): Rewrap<this, TItem | null>;
-  GetOrCreate<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, TItem>): Rewrap<this, TItem | null>;
-  GetOrCreate<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, TItem>, createOptions: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions | null): Rewrap<this, TItem | null>;
-  GetOrCreateAsync<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, System_Threading_Tasks.Task_1<TItem>>): Rewrap<this, System_Threading_Tasks.Task_1<TItem | null>>;
-  GetOrCreateAsync<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, System_Threading_Tasks.Task_1<TItem>>, createOptions: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions | null): Rewrap<this, System_Threading_Tasks.Task_1<TItem | null>>;
+  Get(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown): Rewrap<this, unknown | null>;
+  Get<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown): Rewrap<this, TItem | null>;
+  GetOrCreate<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, TItem>): Rewrap<this, TItem | null>;
+  GetOrCreate<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, TItem>, createOptions: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions | null): Rewrap<this, TItem | null>;
+  GetOrCreateAsync<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, System_Threading_Tasks.Task_1<TItem>>): Rewrap<this, System_Threading_Tasks.Task_1<TItem | null>>;
+  GetOrCreateAsync<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, factory: System.Func_2<Microsoft_Extensions_Caching_Memory.ICacheEntry, System_Threading_Tasks.Task_1<TItem>>, createOptions: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions | null): Rewrap<this, System_Threading_Tasks.Task_1<TItem | null>>;
   RegisterPostEvictionCallback(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, callback: Microsoft_Extensions_Caching_Memory.PostEvictionDelegate): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
-  RegisterPostEvictionCallback(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, callback: Microsoft_Extensions_Caching_Memory.PostEvictionDelegate, state: JsValue | null): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
+  RegisterPostEvictionCallback(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, callback: Microsoft_Extensions_Caching_Memory.PostEvictionDelegate, state: unknown | null): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
   RegisterPostEvictionCallback(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, callback: Microsoft_Extensions_Caching_Memory.PostEvictionDelegate): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
-  RegisterPostEvictionCallback(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, callback: Microsoft_Extensions_Caching_Memory.PostEvictionDelegate, state: JsValue | null): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
-  Set<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, value: TItem): Rewrap<this, TItem>;
-  Set<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, value: TItem, absoluteExpiration: System.DateTimeOffset): Rewrap<this, TItem>;
-  Set<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, value: TItem, absoluteExpirationRelativeToNow: System.TimeSpan): Rewrap<this, TItem>;
-  Set<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, value: TItem, expirationToken: Microsoft_Extensions_Primitives.IChangeToken): Rewrap<this, TItem>;
-  Set<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, value: TItem, options: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions | null): Rewrap<this, TItem>;
+  RegisterPostEvictionCallback(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, callback: Microsoft_Extensions_Caching_Memory.PostEvictionDelegate, state: unknown | null): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
+  Set<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, value: TItem): Rewrap<this, TItem>;
+  Set<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, value: TItem, absoluteExpiration: System.DateTimeOffset): Rewrap<this, TItem>;
+  Set<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, value: TItem, absoluteExpirationRelativeToNow: System.TimeSpan): Rewrap<this, TItem>;
+  Set<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, value: TItem, expirationToken: Microsoft_Extensions_Primitives.IChangeToken): Rewrap<this, TItem>;
+  Set<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, value: TItem, options: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions | null): Rewrap<this, TItem>;
   SetAbsoluteExpiration(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, relative: System.TimeSpan): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
   SetAbsoluteExpiration(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, absolute: System.DateTimeOffset): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
   SetAbsoluteExpiration(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, relative: System.TimeSpan): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
@@ -111,13 +111,13 @@ interface __TsonicExtMethods_Microsoft_Extensions_Caching_Memory {
   SetSize(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, size: long): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
   SetSlidingExpiration(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, offset: System.TimeSpan): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
   SetSlidingExpiration(this: Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions, offset: System.TimeSpan): Rewrap<this, Microsoft_Extensions_Caching_Memory.MemoryCacheEntryOptions>;
-  SetValue(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, value: JsValue | null): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
-  TryGetValue<TItem>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: JsValue, value: TItem | null): Rewrap<this, boolean>;
+  SetValue(this: Microsoft_Extensions_Caching_Memory.ICacheEntry, value: unknown | null): Rewrap<this, Microsoft_Extensions_Caching_Memory.ICacheEntry>;
+  TryGetValue<TItem extends unknown>(this: Microsoft_Extensions_Caching_Memory.IMemoryCache, key: unknown, value: TItem | null): Rewrap<this, boolean>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Caching.Memory
 interface __TsonicExtApplier_Microsoft_Extensions_Caching_Memory {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Caching_Memory;
 }
 
@@ -128,7 +128,7 @@ export type ExtensionMethods_Microsoft_Extensions_Caching_Memory<TShape> =
 
 // Extension method table for namespace: Microsoft.Extensions.Configuration
 interface __TsonicExtMethods_Microsoft_Extensions_Configuration {
-  Add<TSource extends Microsoft_Extensions_Configuration.IConfigurationSource>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, configureSource: System.Action_1<TSource> | null): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
+  Add<TSource extends unknown & Microsoft_Extensions_Configuration.IConfigurationSource>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, configureSource: System.Action_1<TSource> | null): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddCommandLine(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, args: string[]): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddCommandLine(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, args: string[], switchMappings: System_Collections_Generic.IDictionary_2<System_Internal.String, System_Internal.String> | null): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddCommandLine(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, configureSource: System.Action_1<Microsoft_Extensions_Configuration_CommandLine.CommandLineConfigurationSource> | null): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
@@ -155,9 +155,9 @@ interface __TsonicExtMethods_Microsoft_Extensions_Configuration {
   AddKeyPerFile(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, directoryPath: string, optional: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddKeyPerFile(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, directoryPath: string, optional: boolean, reloadOnChange: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddKeyPerFile(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, configureSource: System.Action_1<Microsoft_Extensions_Configuration_KeyPerFile.KeyPerFileConfigurationSource>): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
-  AddUserSecrets<T>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
-  AddUserSecrets<T>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, optional: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
-  AddUserSecrets<T>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, optional: boolean, reloadOnChange: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
+  AddUserSecrets<T extends (object | null)>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
+  AddUserSecrets<T extends (object | null)>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, optional: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
+  AddUserSecrets<T extends (object | null)>(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, optional: boolean, reloadOnChange: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddUserSecrets(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, assembly: System_Reflection.Assembly): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddUserSecrets(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, assembly: System_Reflection.Assembly, optional: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AddUserSecrets(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, assembly: System_Reflection.Assembly, optional: boolean, reloadOnChange: boolean): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
@@ -171,24 +171,24 @@ interface __TsonicExtMethods_Microsoft_Extensions_Configuration {
   AddXmlStream(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, stream: System_IO.Stream): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   AsEnumerable(this: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, System_Internal.String>>>;
   AsEnumerable(this: Microsoft_Extensions_Configuration.IConfiguration, makePathsRelative: boolean): Rewrap<this, System_Collections_Generic.IEnumerable_1<System_Collections_Generic.KeyValuePair_2<System_Internal.String, System_Internal.String>>>;
-  Bind(this: Microsoft_Extensions_Configuration.IConfiguration, key: string, instance: JsValue | null): Rewrap<this, void>;
-  Bind(this: Microsoft_Extensions_Configuration.IConfiguration, instance: JsValue | null): Rewrap<this, void>;
-  Bind(this: Microsoft_Extensions_Configuration.IConfiguration, instance: JsValue | null, configureOptions: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, void>;
+  Bind(this: Microsoft_Extensions_Configuration.IConfiguration, key: string, instance: unknown | null): Rewrap<this, void>;
+  Bind(this: Microsoft_Extensions_Configuration.IConfiguration, instance: unknown | null): Rewrap<this, void>;
+  Bind(this: Microsoft_Extensions_Configuration.IConfiguration, instance: unknown | null, configureOptions: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, void>;
   Exists(this: Microsoft_Extensions_Configuration.IConfigurationSection | null): Rewrap<this, boolean>;
-  Get<T>(this: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, T | null>;
-  Get<T>(this: Microsoft_Extensions_Configuration.IConfiguration, configureOptions: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, T | null>;
-  Get(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type): Rewrap<this, JsValue | null>;
-  Get(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type, configureOptions: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, JsValue | null>;
+  Get<T extends unknown>(this: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, T | null>;
+  Get<T extends unknown>(this: Microsoft_Extensions_Configuration.IConfiguration, configureOptions: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, T | null>;
+  Get(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type): Rewrap<this, unknown | null>;
+  Get(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type, configureOptions: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, unknown | null>;
   GetConnectionString(this: Microsoft_Extensions_Configuration.IConfiguration, name: string): Rewrap<this, string | null>;
   GetDebugView(this: Microsoft_Extensions_Configuration.IConfigurationRoot): Rewrap<this, string>;
   GetDebugView(this: Microsoft_Extensions_Configuration.IConfigurationRoot, processValue: System.Func_2<Microsoft_Extensions_Configuration.ConfigurationDebugViewContext, System_Internal.String> | null): Rewrap<this, string>;
   GetFileLoadExceptionHandler(this: Microsoft_Extensions_Configuration.IConfigurationBuilder): Rewrap<this, System.Action_1<Microsoft_Extensions_Configuration.FileLoadExceptionContext> | null>;
   GetFileProvider(this: Microsoft_Extensions_Configuration.IConfigurationBuilder): Rewrap<this, Microsoft_Extensions_FileProviders.IFileProvider>;
   GetRequiredSection(this: Microsoft_Extensions_Configuration.IConfiguration, key: string): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationSection>;
-  GetValue<T>(this: Microsoft_Extensions_Configuration.IConfiguration, key: string): Rewrap<this, T | null>;
-  GetValue<T>(this: Microsoft_Extensions_Configuration.IConfiguration, key: string, defaultValue: T): Rewrap<this, T | null>;
-  GetValue(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type, key: string): Rewrap<this, JsValue | null>;
-  GetValue(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type, key: string, defaultValue: JsValue | null): Rewrap<this, JsValue | null>;
+  GetValue<T extends unknown>(this: Microsoft_Extensions_Configuration.IConfiguration, key: string): Rewrap<this, T | null>;
+  GetValue<T extends unknown>(this: Microsoft_Extensions_Configuration.IConfiguration, key: string, defaultValue: T): Rewrap<this, T | null>;
+  GetValue(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type, key: string): Rewrap<this, unknown | null>;
+  GetValue(this: Microsoft_Extensions_Configuration.IConfiguration, type: System.Type, key: string, defaultValue: unknown | null): Rewrap<this, unknown | null>;
   SetBasePath(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, basePath: string): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   SetFileLoadExceptionHandler(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, handler: System.Action_1<Microsoft_Extensions_Configuration.FileLoadExceptionContext>): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
   SetFileProvider(this: Microsoft_Extensions_Configuration.IConfigurationBuilder, fileProvider: Microsoft_Extensions_FileProviders.IFileProvider): Rewrap<this, Microsoft_Extensions_Configuration.IConfigurationBuilder>;
@@ -196,7 +196,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Configuration {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Configuration
 interface __TsonicExtApplier_Microsoft_Extensions_Configuration {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Configuration;
 }
 
@@ -214,8 +214,8 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddAsyncCheck(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, check: System.Func_2<System_Threading.CancellationToken, System_Threading_Tasks.Task_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthCheckResult>>, tags?: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, timeout?: System.Nullable_1<System.TimeSpan>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
   AddCheck(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, instance: Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
   AddCheck(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, instance: Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck, failureStatus?: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags?: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, timeout?: System.Nullable_1<System.TimeSpan>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddCheck<T extends Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddCheck<T extends Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus?: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags?: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, timeout?: System.Nullable_1<System.TimeSpan>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
+  AddCheck<T extends (object | null) & Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
+  AddCheck<T extends (object | null) & Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus?: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags?: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, timeout?: System.Nullable_1<System.TimeSpan>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
   AddCheck(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, check: System.Func_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthCheckResult>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
   AddCheck(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, check: System.Func_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthCheckResult>, tags?: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, timeout?: System.Nullable_1<System.TimeSpan>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
   AddCheck(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, check: System.Func_2<System_Threading.CancellationToken, Microsoft_Extensions_Diagnostics_HealthChecks.HealthCheckResult>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
@@ -224,43 +224,43 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddDistributedMemoryCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddDistributedMemoryCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_Extensions_Caching_Memory.MemoryDistributedCacheOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHealthChecks(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddHostedService<THostedService extends Microsoft_Extensions_Hosting.IHostedService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddHostedService<THostedService extends Microsoft_Extensions_Hosting.IHostedService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, THostedService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHostedService<THostedService extends (object | null) & Microsoft_Extensions_Hosting.IHostedService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHostedService<THostedService extends (object | null) & Microsoft_Extensions_Hosting.IHostedService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, THostedService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHttpClient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddHttpClient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   AddHttpClient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, configureClient: System.Action_1<System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   AddHttpClient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, configureClient: System.Action_2<System.IServiceProvider, System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureClient: System.Action_1<System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureClient: System.Action_2<System.IServiceProvider, System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient, TImplementation extends TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, factory: System.Func_2<System_Net_Http.HttpClient, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient, TImplementation extends TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, factory: System.Func_2<System_Net_Http.HttpClient, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient, TImplementation extends TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, factory: System.Func_3<System_Net_Http.HttpClient, System.IServiceProvider, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpClient<TClient, TImplementation extends TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, factory: System.Func_3<System_Net_Http.HttpClient, System.IServiceProvider, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureClient: System.Action_1<System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureClient: System.Action_2<System.IServiceProvider, System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null), TImplementation extends (object | null) & TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, factory: System.Func_2<System_Net_Http.HttpClient, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null), TImplementation extends (object | null) & TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, factory: System.Func_2<System_Net_Http.HttpClient, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null), TImplementation extends (object | null) & TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, factory: System.Func_3<System_Net_Http.HttpClient, System.IServiceProvider, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddHttpClient<TClient extends (object | null), TImplementation extends (object | null) & TClient>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string, factory: System.Func_3<System_Net_Http.HttpClient, System.IServiceProvider, TImplementation>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   AddHttpMessageHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureHandler: System.Func_1<System_Net_Http.DelegatingHandler>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   AddHttpMessageHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureHandler: System.Func_2<System.IServiceProvider, System_Net_Http.DelegatingHandler>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddHttpMessageHandler<THandler extends System_Net_Http.DelegatingHandler>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, JsValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedScoped<TService, TImplementation extends TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedScoped<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, JsValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton<TService, TImplementation extends TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationInstance: JsValue): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationInstance: TService): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, JsValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedTransient<TService, TImplementation extends TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddKeyedTransient<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddHttpMessageHandler<THandler extends unknown & System_Net_Http.DelegatingHandler>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, unknown>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedScoped<TService extends (object | null), TImplementation extends (object | null) & TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedScoped<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, unknown>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton<TService extends (object | null), TImplementation extends (object | null) & TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationInstance: unknown): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationInstance: TService): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, unknown>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedTransient<TService extends (object | null), TImplementation extends (object | null) & TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddKeyedTransient<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddLocalization(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddLocalization(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_Extensions_Localization.LocalizationOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddLogger(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, httpClientLoggerFactory: System.Func_2<System.IServiceProvider, Microsoft_Extensions_Http_Logging.IHttpClientLogger>, wrapHandlersPipeline?: boolean): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddLogger<TLogger extends Microsoft_Extensions_Http_Logging.IHttpClientLogger>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, wrapHandlersPipeline?: boolean): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddLogger<TLogger extends unknown & Microsoft_Extensions_Http_Logging.IHttpClientLogger>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, wrapHandlersPipeline?: boolean): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   AddLogging(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddLogging(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_Extensions_Logging.ILoggingBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddMemoryCache(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
@@ -268,80 +268,80 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   AddMetrics(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddMetrics(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddOptions(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddOptions<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
-  AddOptions<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
-  AddOptionsWithValidateOnStart<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name?: string | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  AddOptions<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  AddOptions<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  AddOptionsWithValidateOnStart<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name?: string | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
   AddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, JsValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddScoped<TService, TImplementation extends TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, unknown>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddScoped<TService extends (object | null), TImplementation extends (object | null) & TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddScoped<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddScoped<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, JsValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSingleton<TService, TImplementation extends TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, unknown>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSingleton<TService extends (object | null), TImplementation extends (object | null) & TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationInstance: JsValue): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationInstance: TService): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationInstance: unknown): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationInstance: TService): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, JsValue>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddTransient<TService, TImplementation extends TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, unknown>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddTransient<TService extends (object | null), TImplementation extends (object | null) & TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddTransient<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  AddTypeActivatedCheck<T extends Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, ...args: JsValue[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddTypeActivatedCheck<T extends Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, ...args: JsValue[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddTypeActivatedCheck<T extends Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, ...args: JsValue[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddTypeActivatedCheck<T extends Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String>, timeout: System.TimeSpan, ...args: JsValue[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
-  AddTypedClient<TClient>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddTypedClient<TClient>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, factory: System.Func_2<System_Net_Http.HttpClient, TClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  AddTypedClient<TClient>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, factory: System.Func_3<System_Net_Http.HttpClient, System.IServiceProvider, TClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddTransient<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  AddTypeActivatedCheck<T extends (object | null) & Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, ...args: unknown[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
+  AddTypeActivatedCheck<T extends (object | null) & Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, ...args: unknown[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
+  AddTypeActivatedCheck<T extends (object | null) & Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String> | null, ...args: unknown[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
+  AddTypeActivatedCheck<T extends (object | null) & Microsoft_Extensions_Diagnostics_HealthChecks.IHealthCheck>(this: Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder, name: string, failureStatus: System.Nullable_1<Microsoft_Extensions_Diagnostics_HealthChecks.HealthStatus>, tags: System_Collections_Generic.IEnumerable_1<System_Internal.String>, timeout: System.TimeSpan, ...args: unknown[]): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHealthChecksBuilder>;
+  AddTypedClient<TClient extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddTypedClient<TClient extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, factory: System.Func_2<System_Net_Http.HttpClient, TClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  AddTypedClient<TClient extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, factory: System.Func_3<System_Net_Http.HttpClient, System.IServiceProvider, TClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   AddValidation(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions?: System.Action_1<Microsoft_Extensions_Validation.ValidationOptions> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddWebEncoders(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   AddWebEncoders(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, setupAction: System.Action_1<Microsoft_Extensions_WebEncoders.WebEncoderOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Bind<TOptions>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>, config: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
-  Bind<TOptions>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>, config: Microsoft_Extensions_Configuration.IConfiguration, configureBinder: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
-  BindConfiguration<TOptions>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>, configSectionPath: string, configureBinder?: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  Bind<TOptions extends (object | null)>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>, config: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  Bind<TOptions extends (object | null)>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>, config: Microsoft_Extensions_Configuration.IConfiguration, configureBinder: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  BindConfiguration<TOptions extends (object | null)>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>, configSectionPath: string, configureBinder?: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
   BuildServiceProvider(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.ServiceProvider>;
   BuildServiceProvider(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, validateScopes: boolean): Rewrap<this, Microsoft_Extensions_DependencyInjection.ServiceProvider>;
   BuildServiceProvider(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, options: Microsoft_Extensions_DependencyInjection.ServiceProviderOptions): Rewrap<this, Microsoft_Extensions_DependencyInjection.ServiceProvider>;
-  Configure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Configure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Configure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, config: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Configure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, config: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Configure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, config: Microsoft_Extensions_Configuration.IConfiguration, configureBinder: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  Configure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, config: Microsoft_Extensions_Configuration.IConfiguration, configureBinder: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  Configure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  Configure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  Configure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, config: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  Configure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, config: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  Configure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, config: Microsoft_Extensions_Configuration.IConfiguration, configureBinder: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  Configure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, config: Microsoft_Extensions_Configuration.IConfiguration, configureBinder: System.Action_1<Microsoft_Extensions_Configuration.BinderOptions> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   Configure(this: Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder, configure: System.Action_2<System_Net_Http.SocketsHttpHandler, System.IServiceProvider>): Rewrap<this, Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder>;
   Configure(this: Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder, configuration: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder>;
   ConfigureAdditionalHttpMessageHandlers(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureAdditionalHandlers: System.Action_2<System_Collections_Generic.IList_1<System_Net_Http.DelegatingHandler>, System.IServiceProvider>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  ConfigureAll<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  ConfigureAll<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   ConfigureHttpClient(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureClient: System.Action_1<System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   ConfigureHttpClient(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureClient: System.Action_2<System.IServiceProvider, System_Net_Http.HttpClient>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   ConfigureHttpClientDefaults(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configure: System.Action_1<Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   ConfigureHttpMessageHandlerBuilder(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureBuilder: System.Action_1<Microsoft_Extensions_Http.HttpMessageHandlerBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  ConfigureOptions<TConfigureOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  ConfigureOptions<TConfigureOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   ConfigureOptions(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  ConfigureOptions(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureInstance: JsValue): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  ConfigureOptions(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureInstance: unknown): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   ConfigurePrimaryHttpMessageHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureHandler: System.Func_1<System_Net_Http.HttpMessageHandler>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   ConfigurePrimaryHttpMessageHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureHandler: System.Func_2<System.IServiceProvider, System_Net_Http.HttpMessageHandler>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  ConfigurePrimaryHttpMessageHandler<THandler extends System_Net_Http.HttpMessageHandler>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
+  ConfigurePrimaryHttpMessageHandler<THandler extends unknown & System_Net_Http.HttpMessageHandler>(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   ConfigurePrimaryHttpMessageHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureHandler: System.Action_2<System_Net_Http.HttpMessageHandler, System.IServiceProvider>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   CreateAsyncScope(this: Microsoft_Extensions_DependencyInjection.IServiceScopeFactory): Rewrap<this, Microsoft_Extensions_DependencyInjection.AsyncServiceScope>;
   CreateAsyncScope(this: System.IServiceProvider): Rewrap<this, Microsoft_Extensions_DependencyInjection.AsyncServiceScope>;
   CreateScope(this: System.IServiceProvider): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceScope>;
-  GetKeyedService<T>(this: System.IServiceProvider, serviceKey: JsValue | null): Rewrap<this, T | null>;
-  GetKeyedService(this: System.IServiceProvider, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, JsValue | null>;
-  GetKeyedServices<T>(this: System.IServiceProvider, serviceKey: JsValue | null): Rewrap<this, System_Collections_Generic.IEnumerable_1<T>>;
-  GetKeyedServices(this: System.IServiceProvider, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, System_Collections_Generic.IEnumerable_1<JsValue | null>>;
-  GetRequiredKeyedService(this: System.IServiceProvider, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, JsValue>;
-  GetRequiredKeyedService<T>(this: System.IServiceProvider, serviceKey: JsValue | null): Rewrap<this, T>;
-  GetRequiredService(this: System.IServiceProvider, serviceType: System.Type): Rewrap<this, JsValue>;
-  GetRequiredService<T>(this: System.IServiceProvider): Rewrap<this, T>;
-  GetService<T>(this: System.IServiceProvider): Rewrap<this, T | null>;
-  GetServices<T>(this: System.IServiceProvider): Rewrap<this, System_Collections_Generic.IEnumerable_1<T>>;
-  GetServices(this: System.IServiceProvider, serviceType: System.Type): Rewrap<this, System_Collections_Generic.IEnumerable_1<JsValue | null>>;
-  PostConfigure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  PostConfigure<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  PostConfigureAll<TOptions>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  GetKeyedService<T extends unknown>(this: System.IServiceProvider, serviceKey: unknown | null): Rewrap<this, T | null>;
+  GetKeyedService(this: System.IServiceProvider, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, unknown | null>;
+  GetKeyedServices<T extends unknown>(this: System.IServiceProvider, serviceKey: unknown | null): Rewrap<this, System_Collections_Generic.IEnumerable_1<T>>;
+  GetKeyedServices(this: System.IServiceProvider, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, System_Collections_Generic.IEnumerable_1<unknown | null>>;
+  GetRequiredKeyedService(this: System.IServiceProvider, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, unknown>;
+  GetRequiredKeyedService<T extends unknown>(this: System.IServiceProvider, serviceKey: unknown | null): Rewrap<this, T>;
+  GetRequiredService(this: System.IServiceProvider, serviceType: System.Type): Rewrap<this, unknown>;
+  GetRequiredService<T extends unknown>(this: System.IServiceProvider): Rewrap<this, T>;
+  GetService<T extends unknown>(this: System.IServiceProvider): Rewrap<this, T | null>;
+  GetServices<T extends unknown>(this: System.IServiceProvider): Rewrap<this, System_Collections_Generic.IEnumerable_1<T>>;
+  GetServices(this: System.IServiceProvider, serviceType: System.Type): Rewrap<this, System_Collections_Generic.IEnumerable_1<unknown | null>>;
+  PostConfigure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  PostConfigure<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, name: string | null, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  PostConfigureAll<TOptions extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, configureOptions: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   RedactLoggedHeaders(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, shouldRedactHeaderValue: System.Func_2<System_Internal.String, System_Internal.Boolean>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   RedactLoggedHeaders(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, redactedLoggedHeaderNames: System_Collections_Generic.IEnumerable_1<System_Internal.String>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   RemoveAllLoggers(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
@@ -349,13 +349,13 @@ interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection {
   SetHandlerLifetime(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, handlerLifetime: System.TimeSpan): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   UseSocketsHttpHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureHandler?: System.Action_2<System_Net_Http.SocketsHttpHandler, System.IServiceProvider> | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
   UseSocketsHttpHandler(this: Microsoft_Extensions_DependencyInjection.IHttpClientBuilder, configureBuilder: System.Action_1<Microsoft_Extensions_DependencyInjection.ISocketsHttpHandlerBuilder>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IHttpClientBuilder>;
-  ValidateDataAnnotations<TOptions>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
-  ValidateOnStart<TOptions>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  ValidateDataAnnotations<TOptions extends (object | null)>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
+  ValidateOnStart<TOptions extends (object | null)>(this: Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>): Rewrap<this, Microsoft_Extensions_Options.OptionsBuilder_1<TOptions>>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyInjection;
 }
 
@@ -368,52 +368,52 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyInjection<TShape> =
 interface __TsonicExtMethods_Microsoft_Extensions_DependencyInjection_Extensions {
   Add(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptor: Microsoft_Extensions_DependencyInjection.ServiceDescriptor): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   Add(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptors: System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyInjection.ServiceDescriptor>): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  RemoveAll<T>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  RemoveAll<T extends unknown>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   RemoveAll(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  RemoveAllKeyed<T>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
-  RemoveAllKeyed(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: JsValue | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  RemoveAllKeyed<T extends unknown>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
+  RemoveAllKeyed(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceType: System.Type, serviceKey: unknown | null): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   Replace(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptor: Microsoft_Extensions_DependencyInjection.ServiceDescriptor): Rewrap<this, Microsoft_Extensions_DependencyInjection.IServiceCollection>;
   TryAdd(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptor: Microsoft_Extensions_DependencyInjection.ServiceDescriptor): Rewrap<this, void>;
   TryAdd(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptors: System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyInjection.ServiceDescriptor>): Rewrap<this, void>;
   TryAddEnumerable(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptor: Microsoft_Extensions_DependencyInjection.ServiceDescriptor): Rewrap<this, void>;
   TryAddEnumerable(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, descriptors: System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_DependencyInjection.ServiceDescriptor>): Rewrap<this, void>;
-  TryAddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null): Rewrap<this, void>;
-  TryAddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null, implementationType: System.Type): Rewrap<this, void>;
-  TryAddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, JsValue>): Rewrap<this, void>;
-  TryAddKeyedScoped<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, void>;
-  TryAddKeyedScoped<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, TService>): Rewrap<this, void>;
-  TryAddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null): Rewrap<this, void>;
-  TryAddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null, implementationType: System.Type): Rewrap<this, void>;
-  TryAddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, JsValue>): Rewrap<this, void>;
-  TryAddKeyedSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, void>;
-  TryAddKeyedSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, instance: TService): Rewrap<this, void>;
-  TryAddKeyedSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, TService>): Rewrap<this, void>;
-  TryAddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null): Rewrap<this, void>;
-  TryAddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null, implementationType: System.Type): Rewrap<this, void>;
-  TryAddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, JsValue>): Rewrap<this, void>;
-  TryAddKeyedTransient<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null): Rewrap<this, void>;
-  TryAddKeyedTransient<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: JsValue | null, implementationFactory: System.Func_3<System.IServiceProvider, JsValue | null, TService>): Rewrap<this, void>;
+  TryAddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null): Rewrap<this, void>;
+  TryAddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null, implementationType: System.Type): Rewrap<this, void>;
+  TryAddKeyedScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, unknown>): Rewrap<this, void>;
+  TryAddKeyedScoped<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, void>;
+  TryAddKeyedScoped<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, TService>): Rewrap<this, void>;
+  TryAddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null): Rewrap<this, void>;
+  TryAddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null, implementationType: System.Type): Rewrap<this, void>;
+  TryAddKeyedSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, unknown>): Rewrap<this, void>;
+  TryAddKeyedSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, void>;
+  TryAddKeyedSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, instance: TService): Rewrap<this, void>;
+  TryAddKeyedSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, TService>): Rewrap<this, void>;
+  TryAddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null): Rewrap<this, void>;
+  TryAddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null, implementationType: System.Type): Rewrap<this, void>;
+  TryAddKeyedTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, unknown>): Rewrap<this, void>;
+  TryAddKeyedTransient<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null): Rewrap<this, void>;
+  TryAddKeyedTransient<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, serviceKey: unknown | null, implementationFactory: System.Func_3<System.IServiceProvider, unknown | null, TService>): Rewrap<this, void>;
   TryAddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type): Rewrap<this, void>;
   TryAddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationType: System.Type): Rewrap<this, void>;
-  TryAddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, JsValue>): Rewrap<this, void>;
-  TryAddScoped<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, void>;
-  TryAddScoped<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, void>;
+  TryAddScoped(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, unknown>): Rewrap<this, void>;
+  TryAddScoped<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, void>;
+  TryAddScoped<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, void>;
   TryAddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type): Rewrap<this, void>;
   TryAddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationType: System.Type): Rewrap<this, void>;
-  TryAddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, JsValue>): Rewrap<this, void>;
-  TryAddSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, void>;
-  TryAddSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, instance: TService): Rewrap<this, void>;
-  TryAddSingleton<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, void>;
+  TryAddSingleton(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, unknown>): Rewrap<this, void>;
+  TryAddSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, void>;
+  TryAddSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, instance: TService): Rewrap<this, void>;
+  TryAddSingleton<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, void>;
   TryAddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type): Rewrap<this, void>;
   TryAddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationType: System.Type): Rewrap<this, void>;
-  TryAddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, JsValue>): Rewrap<this, void>;
-  TryAddTransient<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, void>;
-  TryAddTransient<TService>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, void>;
+  TryAddTransient(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, service: System.Type, implementationFactory: System.Func_2<System.IServiceProvider, unknown>): Rewrap<this, void>;
+  TryAddTransient<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection): Rewrap<this, void>;
+  TryAddTransient<TService extends (object | null)>(this: Microsoft_Extensions_DependencyInjection.IServiceCollection, implementationFactory: System.Func_2<System.IServiceProvider, TService>): Rewrap<this, void>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.DependencyInjection.Extensions
 interface __TsonicExtApplier_Microsoft_Extensions_DependencyInjection_Extensions {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_DependencyInjection_Extensions;
 }
 
@@ -426,7 +426,7 @@ export type ExtensionMethods_Microsoft_Extensions_DependencyInjection_Extensions
 interface __TsonicExtMethods_Microsoft_Extensions_Diagnostics_Metrics {
   AddConfiguration(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder, configuration: Microsoft_Extensions_Configuration.IConfiguration): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
   AddDebugConsole(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
-  AddListener<T extends Microsoft_Extensions_Diagnostics_Metrics.IMetricsListener>(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
+  AddListener<T extends (object | null) & Microsoft_Extensions_Diagnostics_Metrics.IMetricsListener>(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
   AddListener(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder, listener: Microsoft_Extensions_Diagnostics_Metrics.IMetricsListener): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
   ClearListeners(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
   DisableMetrics(this: Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder, meterName: string | null): Rewrap<this, Microsoft_Extensions_Diagnostics_Metrics.IMetricsBuilder>;
@@ -441,7 +441,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Diagnostics_Metrics {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Diagnostics.Metrics
 interface __TsonicExtApplier_Microsoft_Extensions_Diagnostics_Metrics {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Diagnostics_Metrics;
 }
 
@@ -463,7 +463,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_FileSystemGlobbing {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.FileSystemGlobbing
 interface __TsonicExtApplier_Microsoft_Extensions_FileSystemGlobbing {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_FileSystemGlobbing;
 }
 
@@ -475,7 +475,7 @@ export type ExtensionMethods_Microsoft_Extensions_FileSystemGlobbing<TShape> =
 // Extension method table for namespace: Microsoft.Extensions.Hosting
 interface __TsonicExtMethods_Microsoft_Extensions_Hosting {
   ConfigureAppConfiguration(this: Microsoft_Extensions_Hosting.IHostBuilder, configureDelegate: System.Action_1<Microsoft_Extensions_Configuration.IConfigurationBuilder>): Rewrap<this, Microsoft_Extensions_Hosting.IHostBuilder>;
-  ConfigureContainer<TContainerBuilder>(this: Microsoft_Extensions_Hosting.IHostBuilder, configureDelegate: System.Action_1<TContainerBuilder>): Rewrap<this, Microsoft_Extensions_Hosting.IHostBuilder>;
+  ConfigureContainer<TContainerBuilder extends unknown>(this: Microsoft_Extensions_Hosting.IHostBuilder, configureDelegate: System.Action_1<TContainerBuilder>): Rewrap<this, Microsoft_Extensions_Hosting.IHostBuilder>;
   ConfigureDefaults(this: Microsoft_Extensions_Hosting.IHostBuilder, args: string[] | null): Rewrap<this, Microsoft_Extensions_Hosting.IHostBuilder>;
   ConfigureHostOptions(this: Microsoft_Extensions_Hosting.IHostBuilder, configureOptions: System.Action_2<Microsoft_Extensions_Hosting.HostBuilderContext, Microsoft_Extensions_Hosting.HostOptions>): Rewrap<this, Microsoft_Extensions_Hosting.IHostBuilder>;
   ConfigureHostOptions(this: Microsoft_Extensions_Hosting.IHostBuilder, configureOptions: System.Action_1<Microsoft_Extensions_Hosting.HostOptions>): Rewrap<this, Microsoft_Extensions_Hosting.IHostBuilder>;
@@ -512,7 +512,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Hosting {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Hosting
 interface __TsonicExtApplier_Microsoft_Extensions_Hosting {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Hosting;
 }
 
@@ -525,12 +525,12 @@ export type ExtensionMethods_Microsoft_Extensions_Hosting<TShape> =
 interface __TsonicExtMethods_Microsoft_Extensions_Localization {
   GetAllStrings(this: Microsoft_Extensions_Localization.IStringLocalizer): Rewrap<this, System_Collections_Generic.IEnumerable_1<Microsoft_Extensions_Localization.LocalizedString>>;
   GetString(this: Microsoft_Extensions_Localization.IStringLocalizer, name: string): Rewrap<this, Microsoft_Extensions_Localization.LocalizedString>;
-  GetString(this: Microsoft_Extensions_Localization.IStringLocalizer, name: string, ...arguments: JsValue[]): Rewrap<this, Microsoft_Extensions_Localization.LocalizedString>;
+  GetString(this: Microsoft_Extensions_Localization.IStringLocalizer, name: string, ...arguments: unknown[]): Rewrap<this, Microsoft_Extensions_Localization.LocalizedString>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Localization
 interface __TsonicExtApplier_Microsoft_Extensions_Localization {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Localization;
 }
 
@@ -552,8 +552,8 @@ interface __TsonicExtMethods_Microsoft_Extensions_Logging {
   AddConsole(this: Microsoft_Extensions_Logging.ILoggerFactory): Rewrap<this, Microsoft_Extensions_Logging.ILoggerFactory>;
   AddConsole(this: Microsoft_Extensions_Logging.ILoggingBuilder): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
   AddConsole(this: Microsoft_Extensions_Logging.ILoggingBuilder, configure: System.Action_1<Microsoft_Extensions_Logging_Console.ConsoleLoggerOptions>): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
-  AddConsoleFormatter<TFormatter extends Microsoft_Extensions_Logging_Console.ConsoleFormatter, TOptions extends Microsoft_Extensions_Logging_Console.ConsoleFormatterOptions>(this: Microsoft_Extensions_Logging.ILoggingBuilder): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
-  AddConsoleFormatter<TFormatter extends Microsoft_Extensions_Logging_Console.ConsoleFormatter, TOptions extends Microsoft_Extensions_Logging_Console.ConsoleFormatterOptions>(this: Microsoft_Extensions_Logging.ILoggingBuilder, configure: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
+  AddConsoleFormatter<TFormatter extends unknown & Microsoft_Extensions_Logging_Console.ConsoleFormatter, TOptions extends unknown & Microsoft_Extensions_Logging_Console.ConsoleFormatterOptions>(this: Microsoft_Extensions_Logging.ILoggingBuilder): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
+  AddConsoleFormatter<TFormatter extends unknown & Microsoft_Extensions_Logging_Console.ConsoleFormatter, TOptions extends unknown & Microsoft_Extensions_Logging_Console.ConsoleFormatterOptions>(this: Microsoft_Extensions_Logging.ILoggingBuilder, configure: System.Action_1<TOptions>): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
   AddDebug(this: Microsoft_Extensions_Logging.ILoggerFactory, minLevel: Microsoft_Extensions_Logging.LogLevel): Rewrap<this, Microsoft_Extensions_Logging.ILoggerFactory>;
   AddDebug(this: Microsoft_Extensions_Logging.ILoggerFactory, filter: System.Func_3<System_Internal.String, Microsoft_Extensions_Logging.LogLevel, System_Internal.Boolean>): Rewrap<this, Microsoft_Extensions_Logging.ILoggerFactory>;
   AddDebug(this: Microsoft_Extensions_Logging.ILoggerFactory): Rewrap<this, Microsoft_Extensions_Logging.ILoggerFactory>;
@@ -591,45 +591,45 @@ interface __TsonicExtMethods_Microsoft_Extensions_Logging {
   AddTraceSource(this: Microsoft_Extensions_Logging.ILoggingBuilder, switchName: string, listener: System_Diagnostics.TraceListener): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
   AddTraceSource(this: Microsoft_Extensions_Logging.ILoggingBuilder, sourceSwitch: System_Diagnostics.SourceSwitch): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
   AddTraceSource(this: Microsoft_Extensions_Logging.ILoggingBuilder, sourceSwitch: System_Diagnostics.SourceSwitch, listener: System_Diagnostics.TraceListener): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
-  BeginScope(this: Microsoft_Extensions_Logging.ILogger, messageFormat: string, ...args: (JsValue | null)[]): Rewrap<this, System.IDisposable | null>;
+  BeginScope(this: Microsoft_Extensions_Logging.ILogger, messageFormat: string, ...args: (unknown | null)[]): Rewrap<this, System.IDisposable | null>;
   ClearProviders(this: Microsoft_Extensions_Logging.ILoggingBuilder): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
   Configure(this: Microsoft_Extensions_Logging.ILoggingBuilder, action: System.Action_1<Microsoft_Extensions_Logging.LoggerFactoryOptions>): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
-  CreateLogger<T>(this: Microsoft_Extensions_Logging.ILoggerFactory): Rewrap<this, Microsoft_Extensions_Logging.ILogger_1<T>>;
+  CreateLogger<T extends unknown>(this: Microsoft_Extensions_Logging.ILoggerFactory): Rewrap<this, Microsoft_Extensions_Logging.ILogger_1<T>>;
   CreateLogger(this: Microsoft_Extensions_Logging.ILoggerFactory, type: System.Type): Rewrap<this, Microsoft_Extensions_Logging.ILogger>;
-  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogCritical(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogCritical(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogCritical(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogCritical(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogDebug(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogDebug(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogDebug(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogDebug(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogError(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogError(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogError(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogError(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogInformation(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogInformation(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogInformation(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogInformation(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogTrace(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogTrace(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogTrace(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogTrace(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogWarning(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogWarning(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogWarning(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
-  LogWarning(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (JsValue | null)[]): Rewrap<this, void>;
+  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  Log(this: Microsoft_Extensions_Logging.ILogger, logLevel: Microsoft_Extensions_Logging.LogLevel, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogCritical(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogCritical(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogCritical(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogCritical(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogDebug(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogDebug(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogDebug(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogDebug(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogError(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogError(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogError(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogError(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogInformation(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogInformation(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogInformation(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogInformation(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogTrace(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogTrace(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogTrace(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogTrace(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogWarning(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogWarning(this: Microsoft_Extensions_Logging.ILogger, eventId: Microsoft_Extensions_Logging.EventId, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogWarning(this: Microsoft_Extensions_Logging.ILogger, exception: System.Exception | null, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
+  LogWarning(this: Microsoft_Extensions_Logging.ILogger, message: string | null, ...args: (unknown | null)[]): Rewrap<this, void>;
   SetMinimumLevel(this: Microsoft_Extensions_Logging.ILoggingBuilder, level: Microsoft_Extensions_Logging.LogLevel): Rewrap<this, Microsoft_Extensions_Logging.ILoggingBuilder>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Logging
 interface __TsonicExtApplier_Microsoft_Extensions_Logging {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Logging;
 }
 
@@ -645,7 +645,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Logging_Configuration {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Logging.Configuration
 interface __TsonicExtApplier_Microsoft_Extensions_Logging_Configuration {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Logging_Configuration;
 }
 
@@ -662,7 +662,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_ObjectPool {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.ObjectPool
 interface __TsonicExtApplier_Microsoft_Extensions_ObjectPool {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_ObjectPool;
 }
 
@@ -673,12 +673,12 @@ export type ExtensionMethods_Microsoft_Extensions_ObjectPool<TShape> =
 
 // Extension method table for namespace: Microsoft.Extensions.Options
 interface __TsonicExtMethods_Microsoft_Extensions_Options {
-  OnChange<TOptions>(this: Microsoft_Extensions_Options.IOptionsMonitor_1<TOptions>, listener: System.Action_1<TOptions>): Rewrap<this, System.IDisposable | null>;
+  OnChange<TOptions extends unknown>(this: Microsoft_Extensions_Options.IOptionsMonitor_1<TOptions>, listener: System.Action_1<TOptions>): Rewrap<this, System.IDisposable | null>;
 }
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Options
 interface __TsonicExtApplier_Microsoft_Extensions_Options {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Options;
 }
 
@@ -694,7 +694,7 @@ interface __TsonicExtMethods_Microsoft_Extensions_Primitives {
 
 // Generic helper type for extension methods in namespace: Microsoft.Extensions.Primitives
 interface __TsonicExtApplier_Microsoft_Extensions_Primitives {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_Microsoft_Extensions_Primitives;
 }
 
@@ -711,7 +711,7 @@ interface __TsonicExtMethods_System_Net_Http {
 
 // Generic helper type for extension methods in namespace: System.Net.Http
 interface __TsonicExtApplier_System_Net_Http {
-  __tsonic_shape: JsValue;
+  __tsonic_shape: unknown;
   __tsonic_type: __TsonicExtMethods_System_Net_Http;
 }
 

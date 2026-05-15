@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Diagnostics, Microsoft.Extensions.Diagnostics.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -36,8 +36,8 @@ export interface IMetricsListener$instance {
     readonly Name: string;
     GetMeasurementHandlers(): MeasurementHandlers;
     Initialize(source: IObservableInstrumentsSource): void;
-    InstrumentPublished(instrument: Instrument, userState: JsValue | null): boolean;
-    MeasurementsCompleted(instrument: Instrument, userState: JsValue | null): void;
+    InstrumentPublished(instrument: Instrument, userState: unknown | null): boolean;
+    MeasurementsCompleted(instrument: Instrument, userState: unknown | null): void;
 }
 
 
@@ -134,7 +134,7 @@ export type MetricsBuilderConsoleExtensions = MetricsBuilderConsoleExtensions$in
 
 export abstract class MetricsBuilderExtensions$instance {
     static AddListener(builder: IMetricsBuilder, listener: IMetricsListener): IMetricsBuilder;
-    static AddListener<T extends IMetricsListener>(builder: IMetricsBuilder): IMetricsBuilder;
+    static AddListener<T extends (object | null) & IMetricsListener>(builder: IMetricsBuilder): IMetricsBuilder;
     static ClearListeners(builder: IMetricsBuilder): IMetricsBuilder;
     static DisableMetrics(builder: IMetricsBuilder, meterName: string | null, instrumentName?: string | null, listenerName?: string | null, scopes?: MeterScope): IMetricsBuilder;
     static DisableMetrics(builder: IMetricsBuilder, meterName: string | null): IMetricsBuilder;

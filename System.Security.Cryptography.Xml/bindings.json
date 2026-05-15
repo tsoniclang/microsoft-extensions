@@ -20,7 +20,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.IRelDecryptor::Decrypt(System.Security.Cryptography.Xml.EncryptionMethod,System.Security.Cryptography.Xml.KeyInfo,System.IO.Stream):System.IO.Stream",
           "clrName": "Decrypt",
-          "metadataToken": 100663735,
+          "metadataToken": 100663746,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionMethod,System.Security.Cryptography.Xml.KeyInfo,System.IO.Stream):System.IO.Stream",
           "normalizedSignature": "Decrypt|(System.Security.Cryptography.Xml.EncryptionMethod,System.Security.Cryptography.Xml.KeyInfo,System.IO.Stream):System.IO.Stream|static=false",
           "emitScope": "ClassSurface",
@@ -122,7 +122,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663543,
+          "metadataToken": 100663549,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -142,7 +142,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663545,
+          "metadataToken": 100663551,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -164,7 +164,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::CipherReference:System.Security.Cryptography.Xml.CipherReference",
           "clrName": "CipherReference",
-          "metadataToken": 385876083,
+          "metadataToken": 385876086,
           "canonicalSignature": ":System.Security.Cryptography.Xml.CipherReference",
           "normalizedSignature": "CipherReference|:System.Security.Cryptography.Xml.CipherReference|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -183,7 +183,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::CipherValue:System.Byte[]",
           "clrName": "CipherValue",
-          "metadataToken": 385876084,
+          "metadataToken": 385876087,
           "canonicalSignature": ":System.Byte[]",
           "normalizedSignature": "CipherValue|:System.Byte[]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -205,7 +205,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::.ctor():void",
-          "metadataToken": 100663535,
+          "metadataToken": 100663541,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -216,7 +216,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::.ctor(System.Byte[]):void",
-          "metadataToken": 100663536,
+          "metadataToken": 100663542,
           "canonicalSignature": "(System.Byte[]):void",
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
@@ -227,7 +227,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherData::.ctor(System.Security.Cryptography.Xml.CipherReference):void",
-          "metadataToken": 100663537,
+          "metadataToken": 100663543,
           "canonicalSignature": "(System.Security.Cryptography.Xml.CipherReference):void",
           "normalizedSignature": "constructor|(System.Security.Cryptography.Xml.CipherReference):void|static=false",
           "isStatic": false,
@@ -257,7 +257,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherReference::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663551,
+          "metadataToken": 100663557,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -277,7 +277,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherReference::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663553,
+          "metadataToken": 100663559,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -301,7 +301,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherReference::.ctor():void",
-          "metadataToken": 100663546,
+          "metadataToken": 100663552,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -312,7 +312,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherReference::.ctor(System.String):void",
-          "metadataToken": 100663547,
+          "metadataToken": 100663553,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -323,7 +323,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CipherReference::.ctor(System.String,System.Security.Cryptography.Xml.TransformChain):void",
-          "metadataToken": 100663548,
+          "metadataToken": 100663554,
           "canonicalSignature": "(System.String,System.Security.Cryptography.Xml.TransformChain):void",
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
@@ -362,7 +362,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException::.ctor():void",
-          "metadataToken": 100663554,
+          "metadataToken": 100663560,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -373,7 +373,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException::.ctor(System.String):void",
-          "metadataToken": 100663555,
+          "metadataToken": 100663561,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -384,7 +384,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException::.ctor(System.String,System.Exception):void",
-          "metadataToken": 100663556,
+          "metadataToken": 100663562,
           "canonicalSignature": "(System.String,System.Exception):void",
           "normalizedSignature": "constructor|(System.String,System.Exception):void|static=false",
           "isStatic": false,
@@ -395,7 +395,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-          "metadataToken": 100663557,
+          "metadataToken": 100663563,
           "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
           "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
           "isStatic": false,
@@ -425,7 +425,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663569,
+          "metadataToken": 100663575,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -445,7 +445,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663571,
+          "metadataToken": 100663577,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -467,7 +467,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876086,
+          "metadataToken": 385876089,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -486,7 +486,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::MimeType:System.String",
           "clrName": "MimeType",
-          "metadataToken": 385876087,
+          "metadataToken": 385876090,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MimeType|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -505,7 +505,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::Encoding:System.String",
           "clrName": "Encoding",
-          "metadataToken": 385876088,
+          "metadataToken": 385876091,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Encoding|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -524,7 +524,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::Data:System.Xml.XmlNodeList",
           "clrName": "Data",
-          "metadataToken": 385876089,
+          "metadataToken": 385876092,
           "canonicalSignature": ":System.Xml.XmlNodeList",
           "normalizedSignature": "Data|:System.Xml.XmlNodeList|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -546,7 +546,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::.ctor():void",
-          "metadataToken": 100663558,
+          "metadataToken": 100663564,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -557,7 +557,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataObject::.ctor(System.String,System.String,System.String,System.Xml.XmlElement):void",
-          "metadataToken": 100663559,
+          "metadataToken": 100663565,
           "canonicalSignature": "(System.String,System.String,System.String,System.Xml.XmlElement):void",
           "normalizedSignature": "constructor|(System.String,System.String,System.String,System.Xml.XmlElement):void|static=false",
           "isStatic": false,
@@ -590,7 +590,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataReference::.ctor():void",
-          "metadataToken": 100663572,
+          "metadataToken": 100663578,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -601,7 +601,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataReference::.ctor(System.String):void",
-          "metadataToken": 100663573,
+          "metadataToken": 100663579,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -612,7 +612,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DataReference::.ctor(System.String,System.Security.Cryptography.Xml.TransformChain):void",
-          "metadataToken": 100663574,
+          "metadataToken": 100663580,
           "canonicalSignature": "(System.String,System.Security.Cryptography.Xml.TransformChain):void",
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
@@ -642,7 +642,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DSAKeyValue::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663579,
+          "metadataToken": 100663585,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -662,7 +662,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DSAKeyValue::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663581,
+          "metadataToken": 100663587,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -684,7 +684,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DSAKeyValue::Key:System.Security.Cryptography.DSA",
           "clrName": "Key",
-          "metadataToken": 385876091,
+          "metadataToken": 385876094,
           "canonicalSignature": ":System.Security.Cryptography.DSA",
           "normalizedSignature": "Key|:System.Security.Cryptography.DSA|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -706,7 +706,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DSAKeyValue::.ctor():void",
-          "metadataToken": 100663575,
+          "metadataToken": 100663581,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -717,7 +717,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.DSAKeyValue::.ctor(System.Security.Cryptography.DSA):void",
-          "metadataToken": 100663576,
+          "metadataToken": 100663582,
           "canonicalSignature": "(System.Security.Cryptography.DSA):void",
           "normalizedSignature": "constructor|(System.Security.Cryptography.DSA):void|static=false",
           "isStatic": false,
@@ -747,7 +747,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedData::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663586,
+          "metadataToken": 100663592,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -767,7 +767,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedData::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663587,
+          "metadataToken": 100663593,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -791,7 +791,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedData::.ctor():void",
-          "metadataToken": 100663589,
+          "metadataToken": 100663595,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -821,7 +821,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::AddReference(System.Security.Cryptography.Xml.DataReference):System.Void",
           "clrName": "AddReference",
-          "metadataToken": 100663596,
+          "metadataToken": 100663602,
           "canonicalSignature": "(System.Security.Cryptography.Xml.DataReference):System.Void",
           "normalizedSignature": "AddReference|(System.Security.Cryptography.Xml.DataReference):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -841,7 +841,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::AddReference(System.Security.Cryptography.Xml.KeyReference):System.Void",
           "clrName": "AddReference",
-          "metadataToken": 100663597,
+          "metadataToken": 100663603,
           "canonicalSignature": "(System.Security.Cryptography.Xml.KeyReference):System.Void",
           "normalizedSignature": "AddReference|(System.Security.Cryptography.Xml.KeyReference):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -861,7 +861,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663598,
+          "metadataToken": 100663604,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -881,7 +881,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663599,
+          "metadataToken": 100663605,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -903,7 +903,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::Recipient:System.String",
           "clrName": "Recipient",
-          "metadataToken": 385876092,
+          "metadataToken": 385876095,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Recipient|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -922,7 +922,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::CarriedKeyName:System.String",
           "clrName": "CarriedKeyName",
-          "metadataToken": 385876093,
+          "metadataToken": 385876096,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CarriedKeyName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -941,7 +941,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::ReferenceList:System.Security.Cryptography.Xml.ReferenceList",
           "clrName": "ReferenceList",
-          "metadataToken": 385876094,
+          "metadataToken": 385876097,
           "canonicalSignature": ":System.Security.Cryptography.Xml.ReferenceList",
           "normalizedSignature": "ReferenceList|:System.Security.Cryptography.Xml.ReferenceList|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -963,7 +963,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedKey::.ctor():void",
-          "metadataToken": 100663590,
+          "metadataToken": 100663596,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -993,7 +993,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::AddTransform(System.Security.Cryptography.Xml.Transform):System.Void",
           "clrName": "AddTransform",
-          "metadataToken": 100663608,
+          "metadataToken": 100663614,
           "canonicalSignature": "(System.Security.Cryptography.Xml.Transform):System.Void",
           "normalizedSignature": "AddTransform|(System.Security.Cryptography.Xml.Transform):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1013,7 +1013,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663612,
+          "metadataToken": 100663618,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -1033,7 +1033,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663614,
+          "metadataToken": 100663620,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1055,7 +1055,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::Uri:System.String",
           "clrName": "Uri",
-          "metadataToken": 385876095,
+          "metadataToken": 385876098,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Uri|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1074,7 +1074,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::TransformChain:System.Security.Cryptography.Xml.TransformChain",
           "clrName": "TransformChain",
-          "metadataToken": 385876096,
+          "metadataToken": 385876099,
           "canonicalSignature": ":System.Security.Cryptography.Xml.TransformChain",
           "normalizedSignature": "TransformChain|:System.Security.Cryptography.Xml.TransformChain|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1093,7 +1093,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::ReferenceType:System.String",
           "clrName": "ReferenceType",
-          "metadataToken": 385876097,
+          "metadataToken": 385876100,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ReferenceType|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1112,7 +1112,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::CacheValid:System.Boolean",
           "clrName": "CacheValid",
-          "metadataToken": 385876098,
+          "metadataToken": 385876101,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "CacheValid|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -1134,7 +1134,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor():void",
-          "metadataToken": 100663601,
+          "metadataToken": 100663607,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -1145,7 +1145,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor(System.String):void",
-          "metadataToken": 100663602,
+          "metadataToken": 100663608,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -1156,7 +1156,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor(System.String,System.Security.Cryptography.Xml.TransformChain):void",
-          "metadataToken": 100663603,
+          "metadataToken": 100663609,
           "canonicalSignature": "(System.String,System.Security.Cryptography.Xml.TransformChain):void",
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
@@ -1186,7 +1186,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::AddProperty(System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
           "clrName": "AddProperty",
-          "metadataToken": 100663629,
+          "metadataToken": 100663637,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
           "normalizedSignature": "AddProperty|(System.Security.Cryptography.Xml.EncryptionProperty):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1206,7 +1206,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663632,
+          "metadataToken": 100663640,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1226,7 +1226,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663633,
+          "metadataToken": 100663641,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -1248,7 +1248,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876100,
+          "metadataToken": 385876103,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1267,7 +1267,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::Type:System.String",
           "clrName": "Type",
-          "metadataToken": 385876101,
+          "metadataToken": 385876104,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1286,7 +1286,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::MimeType:System.String",
           "clrName": "MimeType",
-          "metadataToken": 385876102,
+          "metadataToken": 385876105,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MimeType|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1305,7 +1305,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::Encoding:System.String",
           "clrName": "Encoding",
-          "metadataToken": 385876103,
+          "metadataToken": 385876106,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Encoding|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1324,7 +1324,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::KeyInfo:System.Security.Cryptography.Xml.KeyInfo",
           "clrName": "KeyInfo",
-          "metadataToken": 385876104,
+          "metadataToken": 385876107,
           "canonicalSignature": ":System.Security.Cryptography.Xml.KeyInfo",
           "normalizedSignature": "KeyInfo|:System.Security.Cryptography.Xml.KeyInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1343,7 +1343,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::EncryptionMethod:System.Security.Cryptography.Xml.EncryptionMethod",
           "clrName": "EncryptionMethod",
-          "metadataToken": 385876105,
+          "metadataToken": 385876108,
           "canonicalSignature": ":System.Security.Cryptography.Xml.EncryptionMethod",
           "normalizedSignature": "EncryptionMethod|:System.Security.Cryptography.Xml.EncryptionMethod|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1362,7 +1362,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::EncryptionProperties:System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "clrName": "EncryptionProperties",
-          "metadataToken": 385876106,
+          "metadataToken": 385876109,
           "canonicalSignature": ":System.Security.Cryptography.Xml.EncryptionPropertyCollection",
           "normalizedSignature": "EncryptionProperties|:System.Security.Cryptography.Xml.EncryptionPropertyCollection|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -1381,7 +1381,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::CipherData:System.Security.Cryptography.Xml.CipherData",
           "clrName": "CipherData",
-          "metadataToken": 385876107,
+          "metadataToken": 385876110,
           "canonicalSignature": ":System.Security.Cryptography.Xml.CipherData",
           "normalizedSignature": "CipherData|:System.Security.Cryptography.Xml.CipherData|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1403,7 +1403,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::.ctor():void",
-          "metadataToken": 100663634,
+          "metadataToken": 100663642,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -1433,7 +1433,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::GetIdElement(System.Xml.XmlDocument,System.String):System.Xml.XmlElement",
           "clrName": "GetIdElement",
-          "metadataToken": 100663654,
+          "metadataToken": 100663662,
           "canonicalSignature": "(System.Xml.XmlDocument,System.String):System.Xml.XmlElement",
           "normalizedSignature": "GetIdElement|(System.Xml.XmlDocument,System.String):System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -1453,7 +1453,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::GetDecryptionIV(System.Security.Cryptography.Xml.EncryptedData,System.String):System.Byte[]",
           "clrName": "GetDecryptionIV",
-          "metadataToken": 100663655,
+          "metadataToken": 100663663,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptedData,System.String):System.Byte[]",
           "normalizedSignature": "GetDecryptionIV|(System.Security.Cryptography.Xml.EncryptedData,System.String):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -1473,7 +1473,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::GetDecryptionKey(System.Security.Cryptography.Xml.EncryptedData,System.String):System.Security.Cryptography.SymmetricAlgorithm",
           "clrName": "GetDecryptionKey",
-          "metadataToken": 100663656,
+          "metadataToken": 100663664,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptedData,System.String):System.Security.Cryptography.SymmetricAlgorithm",
           "normalizedSignature": "GetDecryptionKey|(System.Security.Cryptography.Xml.EncryptedData,System.String):System.Security.Cryptography.SymmetricAlgorithm|static=false",
           "emitScope": "ClassSurface",
@@ -1493,7 +1493,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::DecryptEncryptedKey(System.Security.Cryptography.Xml.EncryptedKey):System.Byte[]",
           "clrName": "DecryptEncryptedKey",
-          "metadataToken": 100663657,
+          "metadataToken": 100663665,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptedKey):System.Byte[]",
           "normalizedSignature": "DecryptEncryptedKey|(System.Security.Cryptography.Xml.EncryptedKey):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -1513,7 +1513,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::AddKeyNameMapping(System.String,System.Object):System.Void",
           "clrName": "AddKeyNameMapping",
-          "metadataToken": 100663658,
+          "metadataToken": 100663666,
           "canonicalSignature": "(System.String,System.Object):System.Void",
           "normalizedSignature": "AddKeyNameMapping|(System.String,System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1533,7 +1533,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::ClearKeyNameMappings():System.Void",
           "clrName": "ClearKeyNameMappings",
-          "metadataToken": 100663659,
+          "metadataToken": 100663667,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ClearKeyNameMappings|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1553,7 +1553,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Encrypt(System.Xml.XmlElement,System.Security.Cryptography.X509Certificates.X509Certificate2):System.Security.Cryptography.Xml.EncryptedData",
           "clrName": "Encrypt",
-          "metadataToken": 100663660,
+          "metadataToken": 100663668,
           "canonicalSignature": "(System.Xml.XmlElement,System.Security.Cryptography.X509Certificates.X509Certificate2):System.Security.Cryptography.Xml.EncryptedData",
           "normalizedSignature": "Encrypt|(System.Xml.XmlElement,System.Security.Cryptography.X509Certificates.X509Certificate2):System.Security.Cryptography.Xml.EncryptedData|static=false",
           "emitScope": "ClassSurface",
@@ -1573,7 +1573,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Encrypt(System.Xml.XmlElement,System.String):System.Security.Cryptography.Xml.EncryptedData",
           "clrName": "Encrypt",
-          "metadataToken": 100663661,
+          "metadataToken": 100663669,
           "canonicalSignature": "(System.Xml.XmlElement,System.String):System.Security.Cryptography.Xml.EncryptedData",
           "normalizedSignature": "Encrypt|(System.Xml.XmlElement,System.String):System.Security.Cryptography.Xml.EncryptedData|static=false",
           "emitScope": "ClassSurface",
@@ -1593,7 +1593,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::DecryptDocument():System.Void",
           "clrName": "DecryptDocument",
-          "metadataToken": 100663662,
+          "metadataToken": 100663670,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "DecryptDocument|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1613,7 +1613,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::EncryptData(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "clrName": "EncryptData",
-          "metadataToken": 100663663,
+          "metadataToken": 100663671,
           "canonicalSignature": "(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "normalizedSignature": "EncryptData|(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -1633,7 +1633,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::EncryptData(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean):System.Byte[]",
           "clrName": "EncryptData",
-          "metadataToken": 100663664,
+          "metadataToken": 100663672,
           "canonicalSignature": "(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean):System.Byte[]",
           "normalizedSignature": "EncryptData|(System.Xml.XmlElement,System.Security.Cryptography.SymmetricAlgorithm,System.Boolean):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -1653,7 +1653,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::DecryptData(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "clrName": "DecryptData",
-          "metadataToken": 100663665,
+          "metadataToken": 100663673,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "normalizedSignature": "DecryptData|(System.Security.Cryptography.Xml.EncryptedData,System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -1673,7 +1673,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::ReplaceData(System.Xml.XmlElement,System.Byte[]):System.Void",
           "clrName": "ReplaceData",
-          "metadataToken": 100663666,
+          "metadataToken": 100663674,
           "canonicalSignature": "(System.Xml.XmlElement,System.Byte[]):System.Void",
           "normalizedSignature": "ReplaceData|(System.Xml.XmlElement,System.Byte[]):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -1693,7 +1693,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::ReplaceElement(System.Xml.XmlElement,System.Security.Cryptography.Xml.EncryptedData,System.Boolean):System.Void",
           "clrName": "ReplaceElement",
-          "metadataToken": 100663667,
+          "metadataToken": 100663675,
           "canonicalSignature": "(System.Xml.XmlElement,System.Security.Cryptography.Xml.EncryptedData,System.Boolean):System.Void",
           "normalizedSignature": "ReplaceElement|(System.Xml.XmlElement,System.Security.Cryptography.Xml.EncryptedData,System.Boolean):System.Void|static=true",
           "emitScope": "ClassSurface",
@@ -1713,7 +1713,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::EncryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "clrName": "EncryptKey",
-          "metadataToken": 100663668,
+          "metadataToken": 100663676,
           "canonicalSignature": "(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "normalizedSignature": "EncryptKey|(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
@@ -1733,7 +1733,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::EncryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean):System.Byte[]",
           "clrName": "EncryptKey",
-          "metadataToken": 100663669,
+          "metadataToken": 100663677,
           "canonicalSignature": "(System.Byte[],System.Security.Cryptography.RSA,System.Boolean):System.Byte[]",
           "normalizedSignature": "EncryptKey|(System.Byte[],System.Security.Cryptography.RSA,System.Boolean):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
@@ -1753,7 +1753,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::DecryptKey(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "clrName": "DecryptKey",
-          "metadataToken": 100663670,
+          "metadataToken": 100663678,
           "canonicalSignature": "(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]",
           "normalizedSignature": "DecryptKey|(System.Byte[],System.Security.Cryptography.SymmetricAlgorithm):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
@@ -1773,7 +1773,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::DecryptKey(System.Byte[],System.Security.Cryptography.RSA,System.Boolean):System.Byte[]",
           "clrName": "DecryptKey",
-          "metadataToken": 100663671,
+          "metadataToken": 100663679,
           "canonicalSignature": "(System.Byte[],System.Security.Cryptography.RSA,System.Boolean):System.Byte[]",
           "normalizedSignature": "DecryptKey|(System.Byte[],System.Security.Cryptography.RSA,System.Boolean):System.Byte[]|static=true",
           "emitScope": "ClassSurface",
@@ -1795,7 +1795,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlDSigSearchDepth:System.Int32",
           "clrName": "XmlDSigSearchDepth",
-          "metadataToken": 385876108,
+          "metadataToken": 385876111,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "XmlDSigSearchDepth|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1814,7 +1814,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::DocumentEvidence:System.Security.Policy.Evidence",
           "clrName": "DocumentEvidence",
-          "metadataToken": 385876109,
+          "metadataToken": 385876112,
           "canonicalSignature": ":System.Security.Policy.Evidence",
           "normalizedSignature": "DocumentEvidence|:System.Security.Policy.Evidence|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1833,7 +1833,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Resolver:System.Xml.XmlResolver",
           "clrName": "Resolver",
-          "metadataToken": 385876110,
+          "metadataToken": 385876113,
           "canonicalSignature": ":System.Xml.XmlResolver",
           "normalizedSignature": "Resolver|:System.Xml.XmlResolver|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1852,7 +1852,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Padding:System.Security.Cryptography.PaddingMode",
           "clrName": "Padding",
-          "metadataToken": 385876111,
+          "metadataToken": 385876114,
           "canonicalSignature": ":System.Security.Cryptography.PaddingMode",
           "normalizedSignature": "Padding|:System.Security.Cryptography.PaddingMode|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1871,7 +1871,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Mode:System.Security.Cryptography.CipherMode",
           "clrName": "Mode",
-          "metadataToken": 385876112,
+          "metadataToken": 385876115,
           "canonicalSignature": ":System.Security.Cryptography.CipherMode",
           "normalizedSignature": "Mode|:System.Security.Cryptography.CipherMode|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1890,7 +1890,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Encoding:System.Text.Encoding",
           "clrName": "Encoding",
-          "metadataToken": 385876113,
+          "metadataToken": 385876116,
           "canonicalSignature": ":System.Text.Encoding",
           "normalizedSignature": "Encoding|:System.Text.Encoding|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1909,7 +1909,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::Recipient:System.String",
           "clrName": "Recipient",
-          "metadataToken": 385876114,
+          "metadataToken": 385876117,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Recipient|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -1930,7 +1930,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncNamespaceUrlSystem.String",
           "clrName": "XmlEncNamespaceUrl",
-          "metadataToken": 67109051,
+          "metadataToken": 67109058,
           "normalizedSignature": "XmlEncNamespaceUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1942,7 +1942,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncElementUrlSystem.String",
           "clrName": "XmlEncElementUrl",
-          "metadataToken": 67109052,
+          "metadataToken": 67109059,
           "normalizedSignature": "XmlEncElementUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1954,7 +1954,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncElementContentUrlSystem.String",
           "clrName": "XmlEncElementContentUrl",
-          "metadataToken": 67109053,
+          "metadataToken": 67109060,
           "normalizedSignature": "XmlEncElementContentUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1966,7 +1966,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncEncryptedKeyUrlSystem.String",
           "clrName": "XmlEncEncryptedKeyUrl",
-          "metadataToken": 67109054,
+          "metadataToken": 67109061,
           "normalizedSignature": "XmlEncEncryptedKeyUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1978,7 +1978,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncDESUrlSystem.String",
           "clrName": "XmlEncDESUrl",
-          "metadataToken": 67109055,
+          "metadataToken": 67109062,
           "normalizedSignature": "XmlEncDESUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -1990,7 +1990,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncTripleDESUrlSystem.String",
           "clrName": "XmlEncTripleDESUrl",
-          "metadataToken": 67109056,
+          "metadataToken": 67109063,
           "normalizedSignature": "XmlEncTripleDESUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2002,7 +2002,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncAES128UrlSystem.String",
           "clrName": "XmlEncAES128Url",
-          "metadataToken": 67109057,
+          "metadataToken": 67109064,
           "normalizedSignature": "XmlEncAES128Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2014,7 +2014,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncAES256UrlSystem.String",
           "clrName": "XmlEncAES256Url",
-          "metadataToken": 67109058,
+          "metadataToken": 67109065,
           "normalizedSignature": "XmlEncAES256Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2026,7 +2026,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncAES192UrlSystem.String",
           "clrName": "XmlEncAES192Url",
-          "metadataToken": 67109059,
+          "metadataToken": 67109066,
           "normalizedSignature": "XmlEncAES192Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2038,7 +2038,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncRSA15UrlSystem.String",
           "clrName": "XmlEncRSA15Url",
-          "metadataToken": 67109060,
+          "metadataToken": 67109067,
           "normalizedSignature": "XmlEncRSA15Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2050,7 +2050,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncRSAOAEPUrlSystem.String",
           "clrName": "XmlEncRSAOAEPUrl",
-          "metadataToken": 67109061,
+          "metadataToken": 67109068,
           "normalizedSignature": "XmlEncRSAOAEPUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2062,7 +2062,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncTripleDESKeyWrapUrlSystem.String",
           "clrName": "XmlEncTripleDESKeyWrapUrl",
-          "metadataToken": 67109062,
+          "metadataToken": 67109069,
           "normalizedSignature": "XmlEncTripleDESKeyWrapUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2074,7 +2074,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncAES128KeyWrapUrlSystem.String",
           "clrName": "XmlEncAES128KeyWrapUrl",
-          "metadataToken": 67109063,
+          "metadataToken": 67109070,
           "normalizedSignature": "XmlEncAES128KeyWrapUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2086,7 +2086,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncAES256KeyWrapUrlSystem.String",
           "clrName": "XmlEncAES256KeyWrapUrl",
-          "metadataToken": 67109064,
+          "metadataToken": 67109071,
           "normalizedSignature": "XmlEncAES256KeyWrapUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2098,7 +2098,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncAES192KeyWrapUrlSystem.String",
           "clrName": "XmlEncAES192KeyWrapUrl",
-          "metadataToken": 67109065,
+          "metadataToken": 67109072,
           "normalizedSignature": "XmlEncAES192KeyWrapUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2110,7 +2110,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncSHA256UrlSystem.String",
           "clrName": "XmlEncSHA256Url",
-          "metadataToken": 67109066,
+          "metadataToken": 67109073,
           "normalizedSignature": "XmlEncSHA256Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2122,7 +2122,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::XmlEncSHA512UrlSystem.String",
           "clrName": "XmlEncSHA512Url",
-          "metadataToken": 67109067,
+          "metadataToken": 67109074,
           "normalizedSignature": "XmlEncSHA512Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -2136,7 +2136,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::.ctor():void",
-          "metadataToken": 100663635,
+          "metadataToken": 100663643,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -2147,7 +2147,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::.ctor(System.Xml.XmlDocument):void",
-          "metadataToken": 100663636,
+          "metadataToken": 100663644,
           "canonicalSignature": "(System.Xml.XmlDocument):void",
           "normalizedSignature": "constructor|(System.Xml.XmlDocument):void|static=false",
           "isStatic": false,
@@ -2158,7 +2158,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml::.ctor(System.Xml.XmlDocument,System.Security.Policy.Evidence):void",
-          "metadataToken": 100663637,
+          "metadataToken": 100663645,
           "canonicalSignature": "(System.Xml.XmlDocument,System.Security.Policy.Evidence):void",
           "normalizedSignature": "constructor|(System.Xml.XmlDocument,System.Security.Policy.Evidence):void|static=false",
           "isStatic": false,
@@ -2188,7 +2188,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663679,
+          "metadataToken": 100663690,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -2208,7 +2208,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663681,
+          "metadataToken": 100663692,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2230,7 +2230,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::KeySize:System.Int32",
           "clrName": "KeySize",
-          "metadataToken": 385876116,
+          "metadataToken": 385876120,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "KeySize|:System.Int32|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -2249,7 +2249,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::KeyAlgorithm:System.String",
           "clrName": "KeyAlgorithm",
-          "metadataToken": 385876117,
+          "metadataToken": 385876121,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "KeyAlgorithm|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -2271,7 +2271,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::.ctor():void",
-          "metadataToken": 100663672,
+          "metadataToken": 100663683,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -2282,7 +2282,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionMethod::.ctor(System.String):void",
-          "metadataToken": 100663673,
+          "metadataToken": 100663684,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -2312,7 +2312,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663689,
+          "metadataToken": 100663700,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -2332,7 +2332,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663691,
+          "metadataToken": 100663702,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2354,7 +2354,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876118,
+          "metadataToken": 385876122,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2373,7 +2373,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::Target:System.String",
           "clrName": "Target",
-          "metadataToken": 385876119,
+          "metadataToken": 385876123,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Target|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2392,7 +2392,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::PropertyElement:System.Xml.XmlElement",
           "clrName": "PropertyElement",
-          "metadataToken": 385876120,
+          "metadataToken": 385876124,
           "canonicalSignature": ":System.Xml.XmlElement",
           "normalizedSignature": "PropertyElement|:System.Xml.XmlElement|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -2414,7 +2414,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::.ctor():void",
-          "metadataToken": 100663682,
+          "metadataToken": 100663693,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -2425,7 +2425,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionProperty::.ctor(System.Xml.XmlElement):void",
-          "metadataToken": 100663683,
+          "metadataToken": 100663694,
           "canonicalSignature": "(System.Xml.XmlElement):void",
           "normalizedSignature": "constructor|(System.Xml.XmlElement):void|static=false",
           "isStatic": false,
@@ -2469,7 +2469,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::GetEnumerator():System.Collections.IEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100663693,
+          "metadataToken": 100663704,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -2489,7 +2489,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Add(System.Security.Cryptography.Xml.EncryptionProperty):System.Int32",
           "clrName": "Add",
-          "metadataToken": 100663696,
+          "metadataToken": 100663707,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionProperty):System.Int32",
           "normalizedSignature": "Add|(System.Security.Cryptography.Xml.EncryptionProperty):System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -2509,7 +2509,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Clear():System.Void",
           "clrName": "Clear",
-          "metadataToken": 100663697,
+          "metadataToken": 100663708,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2529,7 +2529,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Contains(System.Security.Cryptography.Xml.EncryptionProperty):System.Boolean",
           "clrName": "Contains",
-          "metadataToken": 100663699,
+          "metadataToken": 100663710,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionProperty):System.Boolean",
           "normalizedSignature": "Contains|(System.Security.Cryptography.Xml.EncryptionProperty):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -2549,7 +2549,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::IndexOf(System.Security.Cryptography.Xml.EncryptionProperty):System.Int32",
           "clrName": "IndexOf",
-          "metadataToken": 100663701,
+          "metadataToken": 100663712,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionProperty):System.Int32",
           "normalizedSignature": "IndexOf|(System.Security.Cryptography.Xml.EncryptionProperty):System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -2569,7 +2569,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Insert(System.Int32,System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
           "clrName": "Insert",
-          "metadataToken": 100663703,
+          "metadataToken": 100663714,
           "canonicalSignature": "(System.Int32,System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
           "normalizedSignature": "Insert|(System.Int32,System.Security.Cryptography.Xml.EncryptionProperty):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2589,7 +2589,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Remove(System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
           "clrName": "Remove",
-          "metadataToken": 100663705,
+          "metadataToken": 100663716,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionProperty):System.Void",
           "normalizedSignature": "Remove|(System.Security.Cryptography.Xml.EncryptionProperty):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2609,7 +2609,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::RemoveAt(System.Int32):System.Void",
           "clrName": "RemoveAt",
-          "metadataToken": 100663706,
+          "metadataToken": 100663717,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "RemoveAt|(System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2629,7 +2629,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Item(System.Int32):System.Security.Cryptography.Xml.EncryptionProperty",
           "clrName": "Item",
-          "metadataToken": 100663709,
+          "metadataToken": 100663720,
           "canonicalSignature": "(System.Int32):System.Security.Cryptography.Xml.EncryptionProperty",
           "normalizedSignature": "Item|(System.Int32):System.Security.Cryptography.Xml.EncryptionProperty|static=false",
           "emitScope": "ClassSurface",
@@ -2649,7 +2649,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::CopyTo(System.Array,System.Int32):System.Void",
           "clrName": "CopyTo",
-          "metadataToken": 100663714,
+          "metadataToken": 100663725,
           "canonicalSignature": "(System.Array,System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Array,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2669,7 +2669,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::CopyTo(System.Security.Cryptography.Xml.EncryptionProperty[],System.Int32):System.Void",
           "clrName": "CopyTo",
-          "metadataToken": 100663715,
+          "metadataToken": 100663726,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptionProperty[],System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Security.Cryptography.Xml.EncryptionProperty[],System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2691,7 +2691,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::Count:System.Int32",
           "clrName": "Count",
-          "metadataToken": 385876122,
+          "metadataToken": 385876126,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2710,7 +2710,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::IsFixedSize:System.Boolean",
           "clrName": "IsFixedSize",
-          "metadataToken": 385876123,
+          "metadataToken": 385876127,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsFixedSize|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2729,7 +2729,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::IsReadOnly:System.Boolean",
           "clrName": "IsReadOnly",
-          "metadataToken": 385876124,
+          "metadataToken": 385876128,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsReadOnly|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2748,7 +2748,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::ItemOf[System.Int32]:System.Security.Cryptography.Xml.EncryptionProperty",
           "clrName": "ItemOf",
-          "metadataToken": 385876125,
+          "metadataToken": 385876129,
           "canonicalSignature": "[System.Int32]:System.Security.Cryptography.Xml.EncryptionProperty",
           "normalizedSignature": "ItemOf|[System.Int32]:System.Security.Cryptography.Xml.EncryptionProperty|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -2767,7 +2767,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::SyncRoot:System.Object",
           "clrName": "SyncRoot",
-          "metadataToken": 385876127,
+          "metadataToken": 385876131,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2786,7 +2786,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::IsSynchronized:System.Boolean",
           "clrName": "IsSynchronized",
-          "metadataToken": 385876128,
+          "metadataToken": 385876132,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2808,7 +2808,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptionPropertyCollection::.ctor():void",
-          "metadataToken": 100663692,
+          "metadataToken": 100663703,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -2844,7 +2844,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663739,
+          "metadataToken": 100663750,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -2864,7 +2864,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663741,
+          "metadataToken": 100663752,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2884,7 +2884,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::AddClause(System.Security.Cryptography.Xml.KeyInfoClause):System.Void",
           "clrName": "AddClause",
-          "metadataToken": 100663743,
+          "metadataToken": 100663754,
           "canonicalSignature": "(System.Security.Cryptography.Xml.KeyInfoClause):System.Void",
           "normalizedSignature": "AddClause|(System.Security.Cryptography.Xml.KeyInfoClause):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -2904,7 +2904,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::GetEnumerator():System.Collections.IEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100663744,
+          "metadataToken": 100663755,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -2924,7 +2924,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::GetEnumerator(System.Type):System.Collections.IEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100663745,
+          "metadataToken": 100663756,
           "canonicalSignature": "(System.Type):System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|(System.Type):System.Collections.IEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -2946,7 +2946,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876130,
+          "metadataToken": 385876134,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -2965,7 +2965,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::Count:System.Int32",
           "clrName": "Count",
-          "metadataToken": 385876131,
+          "metadataToken": 385876135,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -2987,7 +2987,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfo::.ctor():void",
-          "metadataToken": 100663736,
+          "metadataToken": 100663747,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3017,7 +3017,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663747,
+          "metadataToken": 100663758,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3037,7 +3037,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663749,
+          "metadataToken": 100663760,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3061,7 +3061,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause::.ctor():void",
-          "metadataToken": 100663746,
+          "metadataToken": 100663757,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3091,7 +3091,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663754,
+          "metadataToken": 100663765,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3111,7 +3111,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663756,
+          "metadataToken": 100663767,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3133,7 +3133,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey::EncryptedKey:System.Security.Cryptography.Xml.EncryptedKey",
           "clrName": "EncryptedKey",
-          "metadataToken": 385876132,
+          "metadataToken": 385876136,
           "canonicalSignature": ":System.Security.Cryptography.Xml.EncryptedKey",
           "normalizedSignature": "EncryptedKey|:System.Security.Cryptography.Xml.EncryptedKey|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3155,7 +3155,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey::.ctor():void",
-          "metadataToken": 100663750,
+          "metadataToken": 100663761,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3166,7 +3166,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey::.ctor(System.Security.Cryptography.Xml.EncryptedKey):void",
-          "metadataToken": 100663751,
+          "metadataToken": 100663762,
           "canonicalSignature": "(System.Security.Cryptography.Xml.EncryptedKey):void",
           "normalizedSignature": "constructor|(System.Security.Cryptography.Xml.EncryptedKey):void|static=false",
           "isStatic": false,
@@ -3196,7 +3196,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoName::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663761,
+          "metadataToken": 100663772,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3216,7 +3216,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoName::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663763,
+          "metadataToken": 100663774,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3238,7 +3238,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoName::Value:System.String",
           "clrName": "Value",
-          "metadataToken": 385876133,
+          "metadataToken": 385876137,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3260,7 +3260,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoName::.ctor():void",
-          "metadataToken": 100663757,
+          "metadataToken": 100663768,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3271,7 +3271,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoName::.ctor(System.String):void",
-          "metadataToken": 100663758,
+          "metadataToken": 100663769,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -3301,7 +3301,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoNode::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663768,
+          "metadataToken": 100663779,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3321,7 +3321,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoNode::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663770,
+          "metadataToken": 100663781,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3343,7 +3343,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoNode::Value:System.Xml.XmlElement",
           "clrName": "Value",
-          "metadataToken": 385876134,
+          "metadataToken": 385876138,
           "canonicalSignature": ":System.Xml.XmlElement",
           "normalizedSignature": "Value|:System.Xml.XmlElement|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3365,7 +3365,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoNode::.ctor():void",
-          "metadataToken": 100663764,
+          "metadataToken": 100663775,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3376,7 +3376,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoNode::.ctor(System.Xml.XmlElement):void",
-          "metadataToken": 100663765,
+          "metadataToken": 100663776,
           "canonicalSignature": "(System.Xml.XmlElement):void",
           "normalizedSignature": "constructor|(System.Xml.XmlElement):void|static=false",
           "isStatic": false,
@@ -3406,7 +3406,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663778,
+          "metadataToken": 100663789,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3426,7 +3426,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663780,
+          "metadataToken": 100663791,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3448,7 +3448,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::Uri:System.String",
           "clrName": "Uri",
-          "metadataToken": 385876135,
+          "metadataToken": 385876139,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Uri|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3467,7 +3467,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::Type:System.String",
           "clrName": "Type",
-          "metadataToken": 385876136,
+          "metadataToken": 385876140,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3489,7 +3489,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::.ctor():void",
-          "metadataToken": 100663771,
+          "metadataToken": 100663782,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3500,7 +3500,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::.ctor(System.String):void",
-          "metadataToken": 100663772,
+          "metadataToken": 100663783,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -3511,7 +3511,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoRetrievalMethod::.ctor(System.String,System.String):void",
-          "metadataToken": 100663773,
+          "metadataToken": 100663784,
           "canonicalSignature": "(System.String,System.String):void",
           "normalizedSignature": "constructor|(System.String,System.String):void|static=false",
           "isStatic": false,
@@ -3541,7 +3541,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::AddCertificate(System.Security.Cryptography.X509Certificates.X509Certificate):System.Void",
           "clrName": "AddCertificate",
-          "metadataToken": 100663786,
+          "metadataToken": 100663797,
           "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate):System.Void",
           "normalizedSignature": "AddCertificate|(System.Security.Cryptography.X509Certificates.X509Certificate):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3561,7 +3561,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::AddSubjectKeyId(System.Byte[]):System.Void",
           "clrName": "AddSubjectKeyId",
-          "metadataToken": 100663788,
+          "metadataToken": 100663799,
           "canonicalSignature": "(System.Byte[]):System.Void",
           "normalizedSignature": "AddSubjectKeyId|(System.Byte[]):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3581,7 +3581,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::AddSubjectKeyId(System.String):System.Void",
           "clrName": "AddSubjectKeyId",
-          "metadataToken": 100663789,
+          "metadataToken": 100663800,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "AddSubjectKeyId|(System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3601,7 +3601,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::AddSubjectName(System.String):System.Void",
           "clrName": "AddSubjectName",
-          "metadataToken": 100663791,
+          "metadataToken": 100663802,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "AddSubjectName|(System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3621,7 +3621,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::AddIssuerSerial(System.String,System.String):System.Void",
           "clrName": "AddIssuerSerial",
-          "metadataToken": 100663793,
+          "metadataToken": 100663804,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "AddIssuerSerial|(System.String,System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3641,7 +3641,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663798,
+          "metadataToken": 100663809,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3661,7 +3661,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663800,
+          "metadataToken": 100663811,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3683,7 +3683,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::Certificates:System.Collections.ArrayList",
           "clrName": "Certificates",
-          "metadataToken": 385876137,
+          "metadataToken": 385876141,
           "canonicalSignature": ":System.Collections.ArrayList",
           "normalizedSignature": "Certificates|:System.Collections.ArrayList|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -3702,7 +3702,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::SubjectKeyIds:System.Collections.ArrayList",
           "clrName": "SubjectKeyIds",
-          "metadataToken": 385876138,
+          "metadataToken": 385876142,
           "canonicalSignature": ":System.Collections.ArrayList",
           "normalizedSignature": "SubjectKeyIds|:System.Collections.ArrayList|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -3721,7 +3721,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::SubjectNames:System.Collections.ArrayList",
           "clrName": "SubjectNames",
-          "metadataToken": 385876139,
+          "metadataToken": 385876143,
           "canonicalSignature": ":System.Collections.ArrayList",
           "normalizedSignature": "SubjectNames|:System.Collections.ArrayList|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -3740,7 +3740,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::IssuerSerials:System.Collections.ArrayList",
           "clrName": "IssuerSerials",
-          "metadataToken": 385876140,
+          "metadataToken": 385876144,
           "canonicalSignature": ":System.Collections.ArrayList",
           "normalizedSignature": "IssuerSerials|:System.Collections.ArrayList|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -3759,7 +3759,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::CRL:System.Byte[]",
           "clrName": "CRL",
-          "metadataToken": 385876141,
+          "metadataToken": 385876145,
           "canonicalSignature": ":System.Byte[]",
           "normalizedSignature": "CRL|:System.Byte[]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3781,7 +3781,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::.ctor():void",
-          "metadataToken": 100663781,
+          "metadataToken": 100663792,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3792,7 +3792,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::.ctor(System.Byte[]):void",
-          "metadataToken": 100663782,
+          "metadataToken": 100663793,
           "canonicalSignature": "(System.Byte[]):void",
           "normalizedSignature": "constructor|(System.Byte[]):void|static=false",
           "isStatic": false,
@@ -3803,7 +3803,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate):void",
-          "metadataToken": 100663783,
+          "metadataToken": 100663794,
           "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate):void",
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate):void|static=false",
           "isStatic": false,
@@ -3814,7 +3814,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoX509Data::.ctor(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption):void",
-          "metadataToken": 100663784,
+          "metadataToken": 100663795,
           "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption):void",
           "normalizedSignature": "constructor|(System.Security.Cryptography.X509Certificates.X509Certificate,System.Security.Cryptography.X509Certificates.X509IncludeOption):void|static=false",
           "isStatic": false,
@@ -3847,7 +3847,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyReference::.ctor():void",
-          "metadataToken": 100663801,
+          "metadataToken": 100663812,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -3858,7 +3858,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyReference::.ctor(System.String):void",
-          "metadataToken": 100663802,
+          "metadataToken": 100663813,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -3869,7 +3869,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyReference::.ctor(System.String,System.Security.Cryptography.Xml.TransformChain):void",
-          "metadataToken": 100663803,
+          "metadataToken": 100663814,
           "canonicalSignature": "(System.String,System.Security.Cryptography.Xml.TransformChain):void",
           "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
           "isStatic": false,
@@ -3899,7 +3899,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663834,
+          "metadataToken": 100663845,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -3919,7 +3919,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663836,
+          "metadataToken": 100663847,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3939,7 +3939,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::AddTransform(System.Security.Cryptography.Xml.Transform):System.Void",
           "clrName": "AddTransform",
-          "metadataToken": 100663837,
+          "metadataToken": 100663848,
           "canonicalSignature": "(System.Security.Cryptography.Xml.Transform):System.Void",
           "normalizedSignature": "AddTransform|(System.Security.Cryptography.Xml.Transform):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -3961,7 +3961,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876142,
+          "metadataToken": 385876146,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3980,7 +3980,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::Uri:System.String",
           "clrName": "Uri",
-          "metadataToken": 385876143,
+          "metadataToken": 385876147,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Uri|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -3999,7 +3999,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::Type:System.String",
           "clrName": "Type",
-          "metadataToken": 385876144,
+          "metadataToken": 385876148,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Type|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4018,7 +4018,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::DigestMethod:System.String",
           "clrName": "DigestMethod",
-          "metadataToken": 385876145,
+          "metadataToken": 385876149,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DigestMethod|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4037,7 +4037,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::DigestValue:System.Byte[]",
           "clrName": "DigestValue",
-          "metadataToken": 385876146,
+          "metadataToken": 385876150,
           "canonicalSignature": ":System.Byte[]",
           "normalizedSignature": "DigestValue|:System.Byte[]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4056,7 +4056,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::TransformChain:System.Security.Cryptography.Xml.TransformChain",
           "clrName": "TransformChain",
-          "metadataToken": 385876147,
+          "metadataToken": 385876151,
           "canonicalSignature": ":System.Security.Cryptography.Xml.TransformChain",
           "normalizedSignature": "TransformChain|:System.Security.Cryptography.Xml.TransformChain|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4078,7 +4078,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::.ctor():void",
-          "metadataToken": 100663814,
+          "metadataToken": 100663825,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -4089,7 +4089,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::.ctor(System.IO.Stream):void",
-          "metadataToken": 100663815,
+          "metadataToken": 100663826,
           "canonicalSignature": "(System.IO.Stream):void",
           "normalizedSignature": "constructor|(System.IO.Stream):void|static=false",
           "isStatic": false,
@@ -4100,7 +4100,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Reference::.ctor(System.String):void",
-          "metadataToken": 100663816,
+          "metadataToken": 100663827,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -4144,7 +4144,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::GetEnumerator():System.Collections.IEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100663842,
+          "metadataToken": 100663853,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -4164,7 +4164,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Add(System.Object):System.Int32",
           "clrName": "Add",
-          "metadataToken": 100663844,
+          "metadataToken": 100663855,
           "canonicalSignature": "(System.Object):System.Int32",
           "normalizedSignature": "Add|(System.Object):System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -4184,7 +4184,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Clear():System.Void",
           "clrName": "Clear",
-          "metadataToken": 100663845,
+          "metadataToken": 100663856,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4204,7 +4204,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Contains(System.Object):System.Boolean",
           "clrName": "Contains",
-          "metadataToken": 100663846,
+          "metadataToken": 100663857,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Contains|(System.Object):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -4224,7 +4224,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::IndexOf(System.Object):System.Int32",
           "clrName": "IndexOf",
-          "metadataToken": 100663847,
+          "metadataToken": 100663858,
           "canonicalSignature": "(System.Object):System.Int32",
           "normalizedSignature": "IndexOf|(System.Object):System.Int32|static=false",
           "emitScope": "ClassSurface",
@@ -4244,7 +4244,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Insert(System.Int32,System.Object):System.Void",
           "clrName": "Insert",
-          "metadataToken": 100663848,
+          "metadataToken": 100663859,
           "canonicalSignature": "(System.Int32,System.Object):System.Void",
           "normalizedSignature": "Insert|(System.Int32,System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4264,7 +4264,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Remove(System.Object):System.Void",
           "clrName": "Remove",
-          "metadataToken": 100663849,
+          "metadataToken": 100663860,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "Remove|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4284,7 +4284,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::RemoveAt(System.Int32):System.Void",
           "clrName": "RemoveAt",
-          "metadataToken": 100663850,
+          "metadataToken": 100663861,
           "canonicalSignature": "(System.Int32):System.Void",
           "normalizedSignature": "RemoveAt|(System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4304,7 +4304,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Item(System.Int32):System.Security.Cryptography.Xml.EncryptedReference",
           "clrName": "Item",
-          "metadataToken": 100663851,
+          "metadataToken": 100663862,
           "canonicalSignature": "(System.Int32):System.Security.Cryptography.Xml.EncryptedReference",
           "normalizedSignature": "Item|(System.Int32):System.Security.Cryptography.Xml.EncryptedReference|static=false",
           "emitScope": "ClassSurface",
@@ -4324,7 +4324,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::CopyTo(System.Array,System.Int32):System.Void",
           "clrName": "CopyTo",
-          "metadataToken": 100663856,
+          "metadataToken": 100663867,
           "canonicalSignature": "(System.Array,System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Array,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4346,7 +4346,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::Count:System.Int32",
           "clrName": "Count",
-          "metadataToken": 385876151,
+          "metadataToken": 385876155,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4365,7 +4365,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::ItemOf[System.Int32]:System.Security.Cryptography.Xml.EncryptedReference",
           "clrName": "ItemOf",
-          "metadataToken": 385876152,
+          "metadataToken": 385876156,
           "canonicalSignature": "[System.Int32]:System.Security.Cryptography.Xml.EncryptedReference",
           "normalizedSignature": "ItemOf|[System.Int32]:System.Security.Cryptography.Xml.EncryptedReference|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4384,7 +4384,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::SyncRoot:System.Object",
           "clrName": "SyncRoot",
-          "metadataToken": 385876156,
+          "metadataToken": 385876160,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4403,7 +4403,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::IsSynchronized:System.Boolean",
           "clrName": "IsSynchronized",
-          "metadataToken": 385876157,
+          "metadataToken": 385876161,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4425,7 +4425,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.ReferenceList::.ctor():void",
-          "metadataToken": 100663841,
+          "metadataToken": 100663852,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -4455,7 +4455,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.RSAKeyValue::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663865,
+          "metadataToken": 100663876,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -4475,7 +4475,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.RSAKeyValue::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663867,
+          "metadataToken": 100663878,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4497,7 +4497,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.RSAKeyValue::Key:System.Security.Cryptography.RSA",
           "clrName": "Key",
-          "metadataToken": 385876158,
+          "metadataToken": 385876162,
           "canonicalSignature": ":System.Security.Cryptography.RSA",
           "normalizedSignature": "Key|:System.Security.Cryptography.RSA|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4519,7 +4519,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.RSAKeyValue::.ctor():void",
-          "metadataToken": 100663861,
+          "metadataToken": 100663872,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -4530,7 +4530,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.RSAKeyValue::.ctor(System.Security.Cryptography.RSA):void",
-          "metadataToken": 100663862,
+          "metadataToken": 100663873,
           "canonicalSignature": "(System.Security.Cryptography.RSA):void",
           "normalizedSignature": "constructor|(System.Security.Cryptography.RSA):void|static=false",
           "isStatic": false,
@@ -4560,7 +4560,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663882,
+          "metadataToken": 100663893,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -4580,7 +4580,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663884,
+          "metadataToken": 100663895,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4600,7 +4600,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::AddObject(System.Security.Cryptography.Xml.DataObject):System.Void",
           "clrName": "AddObject",
-          "metadataToken": 100663885,
+          "metadataToken": 100663896,
           "canonicalSignature": "(System.Security.Cryptography.Xml.DataObject):System.Void",
           "normalizedSignature": "AddObject|(System.Security.Cryptography.Xml.DataObject):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4622,7 +4622,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876160,
+          "metadataToken": 385876164,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4641,7 +4641,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::SignedInfo:System.Security.Cryptography.Xml.SignedInfo",
           "clrName": "SignedInfo",
-          "metadataToken": 385876161,
+          "metadataToken": 385876165,
           "canonicalSignature": ":System.Security.Cryptography.Xml.SignedInfo",
           "normalizedSignature": "SignedInfo|:System.Security.Cryptography.Xml.SignedInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4660,7 +4660,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::SignatureValue:System.Byte[]",
           "clrName": "SignatureValue",
-          "metadataToken": 385876162,
+          "metadataToken": 385876166,
           "canonicalSignature": ":System.Byte[]",
           "normalizedSignature": "SignatureValue|:System.Byte[]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4679,7 +4679,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::KeyInfo:System.Security.Cryptography.Xml.KeyInfo",
           "clrName": "KeyInfo",
-          "metadataToken": 385876163,
+          "metadataToken": 385876167,
           "canonicalSignature": ":System.Security.Cryptography.Xml.KeyInfo",
           "normalizedSignature": "KeyInfo|:System.Security.Cryptography.Xml.KeyInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4698,7 +4698,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::ObjectList:System.Collections.IList",
           "clrName": "ObjectList",
-          "metadataToken": 385876164,
+          "metadataToken": 385876168,
           "canonicalSignature": ":System.Collections.IList",
           "normalizedSignature": "ObjectList|:System.Collections.IList|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4720,7 +4720,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Signature::.ctor():void",
-          "metadataToken": 100663870,
+          "metadataToken": 100663881,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -4760,7 +4760,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::GetEnumerator():System.Collections.IEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100663889,
+          "metadataToken": 100663900,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -4780,7 +4780,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::CopyTo(System.Array,System.Int32):System.Void",
           "clrName": "CopyTo",
-          "metadataToken": 100663890,
+          "metadataToken": 100663901,
           "canonicalSignature": "(System.Array,System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Array,System.Int32):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4800,7 +4800,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663906,
+          "metadataToken": 100663917,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -4820,7 +4820,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663908,
+          "metadataToken": 100663919,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4840,7 +4840,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::AddReference(System.Security.Cryptography.Xml.Reference):System.Void",
           "clrName": "AddReference",
-          "metadataToken": 100663909,
+          "metadataToken": 100663920,
           "canonicalSignature": "(System.Security.Cryptography.Xml.Reference):System.Void",
           "normalizedSignature": "AddReference|(System.Security.Cryptography.Xml.Reference):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -4862,7 +4862,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::Count:System.Int32",
           "clrName": "Count",
-          "metadataToken": 385876167,
+          "metadataToken": 385876171,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4881,7 +4881,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::IsReadOnly:System.Boolean",
           "clrName": "IsReadOnly",
-          "metadataToken": 385876168,
+          "metadataToken": 385876172,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsReadOnly|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4900,7 +4900,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::IsSynchronized:System.Boolean",
           "clrName": "IsSynchronized",
-          "metadataToken": 385876169,
+          "metadataToken": 385876173,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4919,7 +4919,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::SyncRoot:System.Object",
           "clrName": "SyncRoot",
-          "metadataToken": 385876170,
+          "metadataToken": 385876174,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4938,7 +4938,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::Id:System.String",
           "clrName": "Id",
-          "metadataToken": 385876171,
+          "metadataToken": 385876175,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Id|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4957,7 +4957,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::CanonicalizationMethod:System.String",
           "clrName": "CanonicalizationMethod",
-          "metadataToken": 385876172,
+          "metadataToken": 385876176,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CanonicalizationMethod|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -4976,7 +4976,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::CanonicalizationMethodObject:System.Security.Cryptography.Xml.Transform",
           "clrName": "CanonicalizationMethodObject",
-          "metadataToken": 385876173,
+          "metadataToken": 385876177,
           "canonicalSignature": ":System.Security.Cryptography.Xml.Transform",
           "normalizedSignature": "CanonicalizationMethodObject|:System.Security.Cryptography.Xml.Transform|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -4995,7 +4995,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::SignatureMethod:System.String",
           "clrName": "SignatureMethod",
-          "metadataToken": 385876174,
+          "metadataToken": 385876178,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SignatureMethod|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5014,7 +5014,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::SignatureLength:System.String",
           "clrName": "SignatureLength",
-          "metadataToken": 385876175,
+          "metadataToken": 385876179,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SignatureLength|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5033,7 +5033,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::References:System.Collections.ArrayList",
           "clrName": "References",
-          "metadataToken": 385876176,
+          "metadataToken": 385876180,
           "canonicalSignature": ":System.Collections.ArrayList",
           "normalizedSignature": "References|:System.Collections.ArrayList|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5055,7 +5055,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedInfo::.ctor():void",
-          "metadataToken": 100663888,
+          "metadataToken": 100663899,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -5085,7 +5085,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100663932,
+          "metadataToken": 100663943,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -5105,7 +5105,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::LoadXml(System.Xml.XmlElement):System.Void",
           "clrName": "LoadXml",
-          "metadataToken": 100663933,
+          "metadataToken": 100663944,
           "canonicalSignature": "(System.Xml.XmlElement):System.Void",
           "normalizedSignature": "LoadXml|(System.Xml.XmlElement):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -5125,7 +5125,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::AddReference(System.Security.Cryptography.Xml.Reference):System.Void",
           "clrName": "AddReference",
-          "metadataToken": 100663934,
+          "metadataToken": 100663945,
           "canonicalSignature": "(System.Security.Cryptography.Xml.Reference):System.Void",
           "normalizedSignature": "AddReference|(System.Security.Cryptography.Xml.Reference):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -5145,7 +5145,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::AddObject(System.Security.Cryptography.Xml.DataObject):System.Void",
           "clrName": "AddObject",
-          "metadataToken": 100663935,
+          "metadataToken": 100663946,
           "canonicalSignature": "(System.Security.Cryptography.Xml.DataObject):System.Void",
           "normalizedSignature": "AddObject|(System.Security.Cryptography.Xml.DataObject):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -5165,7 +5165,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::CheckSignature():System.Boolean",
           "clrName": "CheckSignature",
-          "metadataToken": 100663936,
+          "metadataToken": 100663947,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "CheckSignature|():System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -5185,7 +5185,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::CheckSignatureReturningKey(System.Security.Cryptography.AsymmetricAlgorithm\u0026):System.Boolean",
           "clrName": "CheckSignatureReturningKey",
-          "metadataToken": 100663937,
+          "metadataToken": 100663948,
           "canonicalSignature": "(System.Security.Cryptography.AsymmetricAlgorithm\u0026):System.Boolean",
           "normalizedSignature": "CheckSignatureReturningKey|(System.Security.Cryptography.AsymmetricAlgorithm\u0026):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -5211,7 +5211,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::CheckSignature(System.Security.Cryptography.AsymmetricAlgorithm):System.Boolean",
           "clrName": "CheckSignature",
-          "metadataToken": 100663938,
+          "metadataToken": 100663949,
           "canonicalSignature": "(System.Security.Cryptography.AsymmetricAlgorithm):System.Boolean",
           "normalizedSignature": "CheckSignature|(System.Security.Cryptography.AsymmetricAlgorithm):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -5231,7 +5231,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::CheckSignature(System.Security.Cryptography.KeyedHashAlgorithm):System.Boolean",
           "clrName": "CheckSignature",
-          "metadataToken": 100663939,
+          "metadataToken": 100663950,
           "canonicalSignature": "(System.Security.Cryptography.KeyedHashAlgorithm):System.Boolean",
           "normalizedSignature": "CheckSignature|(System.Security.Cryptography.KeyedHashAlgorithm):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -5251,7 +5251,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::CheckSignature(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean):System.Boolean",
           "clrName": "CheckSignature",
-          "metadataToken": 100663940,
+          "metadataToken": 100663951,
           "canonicalSignature": "(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean):System.Boolean",
           "normalizedSignature": "CheckSignature|(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Boolean):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -5271,7 +5271,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::ComputeSignature():System.Void",
           "clrName": "ComputeSignature",
-          "metadataToken": 100663941,
+          "metadataToken": 100663952,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "ComputeSignature|():System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -5291,7 +5291,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::ComputeSignature(System.Security.Cryptography.KeyedHashAlgorithm):System.Void",
           "clrName": "ComputeSignature",
-          "metadataToken": 100663942,
+          "metadataToken": 100663953,
           "canonicalSignature": "(System.Security.Cryptography.KeyedHashAlgorithm):System.Void",
           "normalizedSignature": "ComputeSignature|(System.Security.Cryptography.KeyedHashAlgorithm):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -5311,7 +5311,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::GetPublicKey():System.Security.Cryptography.AsymmetricAlgorithm",
           "clrName": "GetPublicKey",
-          "metadataToken": 100663943,
+          "metadataToken": 100663954,
           "canonicalSignature": "():System.Security.Cryptography.AsymmetricAlgorithm",
           "normalizedSignature": "GetPublicKey|():System.Security.Cryptography.AsymmetricAlgorithm|static=false",
           "emitScope": "ClassSurface",
@@ -5331,7 +5331,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::GetIdElement(System.Xml.XmlDocument,System.String):System.Xml.XmlElement",
           "clrName": "GetIdElement",
-          "metadataToken": 100663946,
+          "metadataToken": 100663957,
           "canonicalSignature": "(System.Xml.XmlDocument,System.String):System.Xml.XmlElement",
           "normalizedSignature": "GetIdElement|(System.Xml.XmlDocument,System.String):System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -5353,7 +5353,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SigningKeyName:System.String",
           "clrName": "SigningKeyName",
-          "metadataToken": 385876178,
+          "metadataToken": 385876182,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SigningKeyName|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5372,7 +5372,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::Resolver:System.Xml.XmlResolver",
           "clrName": "Resolver",
-          "metadataToken": 385876179,
+          "metadataToken": 385876183,
           "canonicalSignature": ":System.Xml.XmlResolver",
           "normalizedSignature": "Resolver|:System.Xml.XmlResolver|static=false|accessor=set",
           "emitScope": "ClassSurface",
@@ -5391,7 +5391,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SignatureFormatValidator:System.Func_2[[System.Security.Cryptography.Xml.SignedXml,System.Security.Cryptography.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SignatureFormatValidator",
-          "metadataToken": 385876181,
+          "metadataToken": 385876185,
           "canonicalSignature": ":System.Func_2[[System.Security.Cryptography.Xml.SignedXml,System.Security.Cryptography.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SignatureFormatValidator|:System.Func_2[[System.Security.Cryptography.Xml.SignedXml,System.Security.Cryptography.Xml,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51],[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5410,7 +5410,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SafeCanonicalizationMethods:System.Collections.ObjectModel.Collection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "clrName": "SafeCanonicalizationMethods",
-          "metadataToken": 385876182,
+          "metadataToken": 385876186,
           "canonicalSignature": ":System.Collections.ObjectModel.Collection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SafeCanonicalizationMethods|:System.Collections.ObjectModel.Collection_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5429,7 +5429,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SigningKey:System.Security.Cryptography.AsymmetricAlgorithm",
           "clrName": "SigningKey",
-          "metadataToken": 385876183,
+          "metadataToken": 385876187,
           "canonicalSignature": ":System.Security.Cryptography.AsymmetricAlgorithm",
           "normalizedSignature": "SigningKey|:System.Security.Cryptography.AsymmetricAlgorithm|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5448,7 +5448,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::EncryptedXml:System.Security.Cryptography.Xml.EncryptedXml",
           "clrName": "EncryptedXml",
-          "metadataToken": 385876184,
+          "metadataToken": 385876188,
           "canonicalSignature": ":System.Security.Cryptography.Xml.EncryptedXml",
           "normalizedSignature": "EncryptedXml|:System.Security.Cryptography.Xml.EncryptedXml|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5467,7 +5467,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::Signature:System.Security.Cryptography.Xml.Signature",
           "clrName": "Signature",
-          "metadataToken": 385876185,
+          "metadataToken": 385876189,
           "canonicalSignature": ":System.Security.Cryptography.Xml.Signature",
           "normalizedSignature": "Signature|:System.Security.Cryptography.Xml.Signature|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5486,7 +5486,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SignedInfo:System.Security.Cryptography.Xml.SignedInfo",
           "clrName": "SignedInfo",
-          "metadataToken": 385876186,
+          "metadataToken": 385876190,
           "canonicalSignature": ":System.Security.Cryptography.Xml.SignedInfo",
           "normalizedSignature": "SignedInfo|:System.Security.Cryptography.Xml.SignedInfo|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5505,7 +5505,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SignatureMethod:System.String",
           "clrName": "SignatureMethod",
-          "metadataToken": 385876187,
+          "metadataToken": 385876191,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SignatureMethod|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5524,7 +5524,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SignatureLength:System.String",
           "clrName": "SignatureLength",
-          "metadataToken": 385876188,
+          "metadataToken": 385876192,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "SignatureLength|:System.String|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5543,7 +5543,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::SignatureValue:System.Byte[]",
           "clrName": "SignatureValue",
-          "metadataToken": 385876189,
+          "metadataToken": 385876193,
           "canonicalSignature": ":System.Byte[]",
           "normalizedSignature": "SignatureValue|:System.Byte[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -5562,7 +5562,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::KeyInfo:System.Security.Cryptography.Xml.KeyInfo",
           "clrName": "KeyInfo",
-          "metadataToken": 385876190,
+          "metadataToken": 385876194,
           "canonicalSignature": ":System.Security.Cryptography.Xml.KeyInfo",
           "normalizedSignature": "KeyInfo|:System.Security.Cryptography.Xml.KeyInfo|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -5583,7 +5583,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::m_signatureSystem.Security.Cryptography.Xml.Signature",
           "clrName": "m_signature",
-          "metadataToken": 67109144,
+          "metadataToken": 67109152,
           "normalizedSignature": "m_signature|System.Security.Cryptography.Xml.Signature|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -5595,7 +5595,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::m_strSigningKeyNameSystem.String",
           "clrName": "m_strSigningKeyName",
-          "metadataToken": 67109145,
+          "metadataToken": 67109153,
           "normalizedSignature": "m_strSigningKeyName|System.String|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
@@ -5607,7 +5607,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigNamespaceUrlSystem.String",
           "clrName": "XmlDsigNamespaceUrl",
-          "metadataToken": 67109165,
+          "metadataToken": 67109173,
           "normalizedSignature": "XmlDsigNamespaceUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5619,7 +5619,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigMinimalCanonicalizationUrlSystem.String",
           "clrName": "XmlDsigMinimalCanonicalizationUrl",
-          "metadataToken": 67109166,
+          "metadataToken": 67109174,
           "normalizedSignature": "XmlDsigMinimalCanonicalizationUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5631,7 +5631,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigCanonicalizationUrlSystem.String",
           "clrName": "XmlDsigCanonicalizationUrl",
-          "metadataToken": 67109167,
+          "metadataToken": 67109175,
           "normalizedSignature": "XmlDsigCanonicalizationUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5643,7 +5643,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigCanonicalizationWithCommentsUrlSystem.String",
           "clrName": "XmlDsigCanonicalizationWithCommentsUrl",
-          "metadataToken": 67109168,
+          "metadataToken": 67109176,
           "normalizedSignature": "XmlDsigCanonicalizationWithCommentsUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5655,7 +5655,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigSHA1UrlSystem.String",
           "clrName": "XmlDsigSHA1Url",
-          "metadataToken": 67109169,
+          "metadataToken": 67109177,
           "normalizedSignature": "XmlDsigSHA1Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5667,7 +5667,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigDSAUrlSystem.String",
           "clrName": "XmlDsigDSAUrl",
-          "metadataToken": 67109170,
+          "metadataToken": 67109178,
           "normalizedSignature": "XmlDsigDSAUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5679,7 +5679,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigRSASHA1UrlSystem.String",
           "clrName": "XmlDsigRSASHA1Url",
-          "metadataToken": 67109171,
+          "metadataToken": 67109179,
           "normalizedSignature": "XmlDsigRSASHA1Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5691,7 +5691,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigHMACSHA1UrlSystem.String",
           "clrName": "XmlDsigHMACSHA1Url",
-          "metadataToken": 67109172,
+          "metadataToken": 67109180,
           "normalizedSignature": "XmlDsigHMACSHA1Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5703,7 +5703,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigSHA256UrlSystem.String",
           "clrName": "XmlDsigSHA256Url",
-          "metadataToken": 67109173,
+          "metadataToken": 67109181,
           "normalizedSignature": "XmlDsigSHA256Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5715,7 +5715,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigRSASHA256UrlSystem.String",
           "clrName": "XmlDsigRSASHA256Url",
-          "metadataToken": 67109174,
+          "metadataToken": 67109182,
           "normalizedSignature": "XmlDsigRSASHA256Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5727,7 +5727,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigSHA384UrlSystem.String",
           "clrName": "XmlDsigSHA384Url",
-          "metadataToken": 67109175,
+          "metadataToken": 67109183,
           "normalizedSignature": "XmlDsigSHA384Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5739,7 +5739,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigRSASHA384UrlSystem.String",
           "clrName": "XmlDsigRSASHA384Url",
-          "metadataToken": 67109176,
+          "metadataToken": 67109184,
           "normalizedSignature": "XmlDsigRSASHA384Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5751,7 +5751,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigSHA512UrlSystem.String",
           "clrName": "XmlDsigSHA512Url",
-          "metadataToken": 67109177,
+          "metadataToken": 67109185,
           "normalizedSignature": "XmlDsigSHA512Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5763,7 +5763,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigRSASHA512UrlSystem.String",
           "clrName": "XmlDsigRSASHA512Url",
-          "metadataToken": 67109178,
+          "metadataToken": 67109186,
           "normalizedSignature": "XmlDsigRSASHA512Url|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5775,7 +5775,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigC14NTransformUrlSystem.String",
           "clrName": "XmlDsigC14NTransformUrl",
-          "metadataToken": 67109179,
+          "metadataToken": 67109187,
           "normalizedSignature": "XmlDsigC14NTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5787,7 +5787,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigC14NWithCommentsTransformUrlSystem.String",
           "clrName": "XmlDsigC14NWithCommentsTransformUrl",
-          "metadataToken": 67109180,
+          "metadataToken": 67109188,
           "normalizedSignature": "XmlDsigC14NWithCommentsTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5799,7 +5799,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigExcC14NTransformUrlSystem.String",
           "clrName": "XmlDsigExcC14NTransformUrl",
-          "metadataToken": 67109181,
+          "metadataToken": 67109189,
           "normalizedSignature": "XmlDsigExcC14NTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5811,7 +5811,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigExcC14NWithCommentsTransformUrlSystem.String",
           "clrName": "XmlDsigExcC14NWithCommentsTransformUrl",
-          "metadataToken": 67109182,
+          "metadataToken": 67109190,
           "normalizedSignature": "XmlDsigExcC14NWithCommentsTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5823,7 +5823,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigBase64TransformUrlSystem.String",
           "clrName": "XmlDsigBase64TransformUrl",
-          "metadataToken": 67109183,
+          "metadataToken": 67109191,
           "normalizedSignature": "XmlDsigBase64TransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5835,7 +5835,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigXPathTransformUrlSystem.String",
           "clrName": "XmlDsigXPathTransformUrl",
-          "metadataToken": 67109184,
+          "metadataToken": 67109192,
           "normalizedSignature": "XmlDsigXPathTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5847,7 +5847,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigXsltTransformUrlSystem.String",
           "clrName": "XmlDsigXsltTransformUrl",
-          "metadataToken": 67109185,
+          "metadataToken": 67109193,
           "normalizedSignature": "XmlDsigXsltTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5859,7 +5859,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigEnvelopedSignatureTransformUrlSystem.String",
           "clrName": "XmlDsigEnvelopedSignatureTransformUrl",
-          "metadataToken": 67109186,
+          "metadataToken": 67109194,
           "normalizedSignature": "XmlDsigEnvelopedSignatureTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5871,7 +5871,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDecryptionTransformUrlSystem.String",
           "clrName": "XmlDecryptionTransformUrl",
-          "metadataToken": 67109187,
+          "metadataToken": 67109195,
           "normalizedSignature": "XmlDecryptionTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5883,7 +5883,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlLicenseTransformUrlSystem.String",
           "clrName": "XmlLicenseTransformUrl",
-          "metadataToken": 67109188,
+          "metadataToken": 67109196,
           "normalizedSignature": "XmlLicenseTransformUrl|System.String|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
@@ -5897,7 +5897,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::.ctor():void",
-          "metadataToken": 100663910,
+          "metadataToken": 100663921,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -5908,7 +5908,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::.ctor(System.Xml.XmlDocument):void",
-          "metadataToken": 100663911,
+          "metadataToken": 100663922,
           "canonicalSignature": "(System.Xml.XmlDocument):void",
           "normalizedSignature": "constructor|(System.Xml.XmlDocument):void|static=false",
           "isStatic": false,
@@ -5919,7 +5919,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::.ctor(System.Xml.XmlElement):void",
-          "metadataToken": 100663912,
+          "metadataToken": 100663923,
           "canonicalSignature": "(System.Xml.XmlElement):void",
           "normalizedSignature": "constructor|(System.Xml.XmlElement):void|static=false",
           "isStatic": false,
@@ -5949,7 +5949,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetXml():System.Xml.XmlElement",
           "clrName": "GetXml",
-          "metadataToken": 100664016,
+          "metadataToken": 100664027,
           "canonicalSignature": "():System.Xml.XmlElement",
           "normalizedSignature": "GetXml|():System.Xml.XmlElement|static=false",
           "emitScope": "ClassSurface",
@@ -5969,7 +5969,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664019,
+          "metadataToken": 100664030,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -5989,7 +5989,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664020,
+          "metadataToken": 100664031,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -6009,7 +6009,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664021,
+          "metadataToken": 100664032,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6029,7 +6029,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664022,
+          "metadataToken": 100664033,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6049,7 +6049,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664023,
+          "metadataToken": 100664034,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6069,7 +6069,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::GetDigestedOutput(System.Security.Cryptography.HashAlgorithm):System.Byte[]",
           "clrName": "GetDigestedOutput",
-          "metadataToken": 100664024,
+          "metadataToken": 100664035,
           "canonicalSignature": "(System.Security.Cryptography.HashAlgorithm):System.Byte[]",
           "normalizedSignature": "GetDigestedOutput|(System.Security.Cryptography.HashAlgorithm):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -6091,7 +6091,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::Algorithm:System.String",
           "clrName": "Algorithm",
-          "metadataToken": 385876198,
+          "metadataToken": 385876202,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Algorithm|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -6110,7 +6110,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::Resolver:System.Xml.XmlResolver",
           "clrName": "Resolver",
-          "metadataToken": 385876199,
+          "metadataToken": 385876203,
           "canonicalSignature": ":System.Xml.XmlResolver",
           "normalizedSignature": "Resolver|:System.Xml.XmlResolver|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -6129,7 +6129,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876201,
+          "metadataToken": 385876205,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6148,7 +6148,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876202,
+          "metadataToken": 385876206,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6167,7 +6167,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::Context:System.Xml.XmlElement",
           "clrName": "Context",
-          "metadataToken": 385876203,
+          "metadataToken": 385876207,
           "canonicalSignature": ":System.Xml.XmlElement",
           "normalizedSignature": "Context|:System.Xml.XmlElement|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -6186,7 +6186,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::PropagatedNamespaces:System.Collections.Hashtable",
           "clrName": "PropagatedNamespaces",
-          "metadataToken": 385876204,
+          "metadataToken": 385876208,
           "canonicalSignature": ":System.Collections.Hashtable",
           "normalizedSignature": "PropagatedNamespaces|:System.Collections.Hashtable|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6208,7 +6208,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::.ctor():void",
-          "metadataToken": 100664007,
+          "metadataToken": 100664018,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -6238,7 +6238,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain::Add(System.Security.Cryptography.Xml.Transform):System.Void",
           "clrName": "Add",
-          "metadataToken": 100664029,
+          "metadataToken": 100664040,
           "canonicalSignature": "(System.Security.Cryptography.Xml.Transform):System.Void",
           "normalizedSignature": "Add|(System.Security.Cryptography.Xml.Transform):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6258,7 +6258,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain::GetEnumerator():System.Collections.IEnumerator",
           "clrName": "GetEnumerator",
-          "metadataToken": 100664030,
+          "metadataToken": 100664041,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
           "emitScope": "ClassSurface",
@@ -6280,7 +6280,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain::Count:System.Int32",
           "clrName": "Count",
-          "metadataToken": 385876205,
+          "metadataToken": 385876209,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6299,7 +6299,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain::Item[System.Int32]:System.Security.Cryptography.Xml.Transform",
           "clrName": "Item",
-          "metadataToken": 385876206,
+          "metadataToken": 385876210,
           "canonicalSignature": "[System.Int32]:System.Security.Cryptography.Xml.Transform",
           "normalizedSignature": "Item|[System.Int32]:System.Security.Cryptography.Xml.Transform|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6321,7 +6321,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain::.ctor():void",
-          "metadataToken": 100664028,
+          "metadataToken": 100664039,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -6351,7 +6351,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::IsTargetElement(System.Xml.XmlElement,System.String):System.Boolean",
           "clrName": "IsTargetElement",
-          "metadataToken": 100664084,
+          "metadataToken": 100664095,
           "canonicalSignature": "(System.Xml.XmlElement,System.String):System.Boolean",
           "normalizedSignature": "IsTargetElement|(System.Xml.XmlElement,System.String):System.Boolean|static=false",
           "emitScope": "ClassSurface",
@@ -6371,7 +6371,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::AddExceptUri(System.String):System.Void",
           "clrName": "AddExceptUri",
-          "metadataToken": 100664089,
+          "metadataToken": 100664100,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "AddExceptUri|(System.String):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6391,7 +6391,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664090,
+          "metadataToken": 100664101,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6411,7 +6411,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664091,
+          "metadataToken": 100664102,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -6431,7 +6431,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664092,
+          "metadataToken": 100664103,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6451,7 +6451,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664098,
+          "metadataToken": 100664109,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6471,7 +6471,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664099,
+          "metadataToken": 100664110,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6493,7 +6493,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::EncryptedXml:System.Security.Cryptography.Xml.EncryptedXml",
           "clrName": "EncryptedXml",
-          "metadataToken": 385876208,
+          "metadataToken": 385876212,
           "canonicalSignature": ":System.Security.Cryptography.Xml.EncryptedXml",
           "normalizedSignature": "EncryptedXml|:System.Security.Cryptography.Xml.EncryptedXml|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -6512,7 +6512,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876209,
+          "metadataToken": 385876213,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6531,7 +6531,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876210,
+          "metadataToken": 385876214,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6553,7 +6553,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDecryptionTransform::.ctor():void",
-          "metadataToken": 100664082,
+          "metadataToken": 100664093,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -6583,7 +6583,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664103,
+          "metadataToken": 100664114,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6603,7 +6603,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664104,
+          "metadataToken": 100664115,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -6623,7 +6623,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664105,
+          "metadataToken": 100664116,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6643,7 +6643,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664108,
+          "metadataToken": 100664119,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6663,7 +6663,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664109,
+          "metadataToken": 100664120,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6685,7 +6685,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876211,
+          "metadataToken": 385876215,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6704,7 +6704,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876212,
+          "metadataToken": 385876216,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6726,7 +6726,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigBase64Transform::.ctor():void",
-          "metadataToken": 100664100,
+          "metadataToken": 100664111,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -6756,7 +6756,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664114,
+          "metadataToken": 100664125,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6776,7 +6776,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664115,
+          "metadataToken": 100664126,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -6796,7 +6796,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664116,
+          "metadataToken": 100664127,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -6816,7 +6816,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664117,
+          "metadataToken": 100664128,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6836,7 +6836,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664118,
+          "metadataToken": 100664129,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -6856,7 +6856,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::GetDigestedOutput(System.Security.Cryptography.HashAlgorithm):System.Byte[]",
           "clrName": "GetDigestedOutput",
-          "metadataToken": 100664119,
+          "metadataToken": 100664130,
           "canonicalSignature": "(System.Security.Cryptography.HashAlgorithm):System.Byte[]",
           "normalizedSignature": "GetDigestedOutput|(System.Security.Cryptography.HashAlgorithm):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -6878,7 +6878,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876213,
+          "metadataToken": 385876217,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6897,7 +6897,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876214,
+          "metadataToken": 385876218,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -6919,7 +6919,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::.ctor():void",
-          "metadataToken": 100664110,
+          "metadataToken": 100664121,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -6930,7 +6930,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NTransform::.ctor(System.Boolean):void",
-          "metadataToken": 100664111,
+          "metadataToken": 100664122,
           "canonicalSignature": "(System.Boolean):void",
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
@@ -6963,7 +6963,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform::.ctor():void",
-          "metadataToken": 100664120,
+          "metadataToken": 100664131,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -6993,7 +6993,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664126,
+          "metadataToken": 100664137,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7013,7 +7013,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664127,
+          "metadataToken": 100664138,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -7033,7 +7033,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664128,
+          "metadataToken": 100664139,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7053,7 +7053,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664132,
+          "metadataToken": 100664143,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7073,7 +7073,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664133,
+          "metadataToken": 100664144,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7095,7 +7095,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876216,
+          "metadataToken": 385876220,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7114,7 +7114,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876217,
+          "metadataToken": 385876221,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7136,7 +7136,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::.ctor():void",
-          "metadataToken": 100664122,
+          "metadataToken": 100664133,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -7147,7 +7147,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform::.ctor(System.Boolean):void",
-          "metadataToken": 100664123,
+          "metadataToken": 100664134,
           "canonicalSignature": "(System.Boolean):void",
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
@@ -7177,7 +7177,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664142,
+          "metadataToken": 100664153,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7197,7 +7197,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664143,
+          "metadataToken": 100664154,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7217,7 +7217,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664144,
+          "metadataToken": 100664155,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -7237,7 +7237,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664145,
+          "metadataToken": 100664156,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7257,7 +7257,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664146,
+          "metadataToken": 100664157,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7277,7 +7277,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::GetDigestedOutput(System.Security.Cryptography.HashAlgorithm):System.Byte[]",
           "clrName": "GetDigestedOutput",
-          "metadataToken": 100664147,
+          "metadataToken": 100664158,
           "canonicalSignature": "(System.Security.Cryptography.HashAlgorithm):System.Byte[]",
           "normalizedSignature": "GetDigestedOutput|(System.Security.Cryptography.HashAlgorithm):System.Byte[]|static=false",
           "emitScope": "ClassSurface",
@@ -7299,7 +7299,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::InclusiveNamespacesPrefixList:System.String",
           "clrName": "InclusiveNamespacesPrefixList",
-          "metadataToken": 385876218,
+          "metadataToken": 385876222,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "InclusiveNamespacesPrefixList|:System.String|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -7318,7 +7318,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876219,
+          "metadataToken": 385876223,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7337,7 +7337,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876220,
+          "metadataToken": 385876224,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7359,7 +7359,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::.ctor():void",
-          "metadataToken": 100664134,
+          "metadataToken": 100664145,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -7370,7 +7370,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::.ctor(System.Boolean):void",
-          "metadataToken": 100664135,
+          "metadataToken": 100664146,
           "canonicalSignature": "(System.Boolean):void",
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
@@ -7381,7 +7381,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::.ctor(System.String):void",
-          "metadataToken": 100664136,
+          "metadataToken": 100664147,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -7392,7 +7392,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NTransform::.ctor(System.Boolean,System.String):void",
-          "metadataToken": 100664137,
+          "metadataToken": 100664148,
           "canonicalSignature": "(System.Boolean,System.String):void",
           "normalizedSignature": "constructor|(System.Boolean,System.String):void|static=false",
           "isStatic": false,
@@ -7425,7 +7425,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform::.ctor():void",
-          "metadataToken": 100664148,
+          "metadataToken": 100664159,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -7436,7 +7436,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform::.ctor(System.String):void",
-          "metadataToken": 100664149,
+          "metadataToken": 100664160,
           "canonicalSignature": "(System.String):void",
           "normalizedSignature": "constructor|(System.String):void|static=false",
           "isStatic": false,
@@ -7466,7 +7466,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664153,
+          "metadataToken": 100664164,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7486,7 +7486,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664154,
+          "metadataToken": 100664165,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -7506,7 +7506,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664155,
+          "metadataToken": 100664166,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7526,7 +7526,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664159,
+          "metadataToken": 100664170,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7546,7 +7546,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664160,
+          "metadataToken": 100664171,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7568,7 +7568,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876221,
+          "metadataToken": 385876225,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7587,7 +7587,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876222,
+          "metadataToken": 385876226,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7609,7 +7609,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXPathTransform::.ctor():void",
-          "metadataToken": 100664150,
+          "metadataToken": 100664161,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -7639,7 +7639,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664165,
+          "metadataToken": 100664176,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7659,7 +7659,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664166,
+          "metadataToken": 100664177,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -7679,7 +7679,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664167,
+          "metadataToken": 100664178,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7699,7 +7699,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664168,
+          "metadataToken": 100664179,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7719,7 +7719,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664169,
+          "metadataToken": 100664180,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7741,7 +7741,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876223,
+          "metadataToken": 385876227,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7760,7 +7760,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876224,
+          "metadataToken": 385876228,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7782,7 +7782,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::.ctor():void",
-          "metadataToken": 100664161,
+          "metadataToken": 100664172,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
@@ -7793,7 +7793,7 @@
         },
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlDsigXsltTransform::.ctor(System.Boolean):void",
-          "metadataToken": 100664162,
+          "metadataToken": 100664173,
           "canonicalSignature": "(System.Boolean):void",
           "normalizedSignature": "constructor|(System.Boolean):void|static=false",
           "isStatic": false,
@@ -7823,7 +7823,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::GetInnerXml():System.Xml.XmlNodeList",
           "clrName": "GetInnerXml",
-          "metadataToken": 100664176,
+          "metadataToken": 100664187,
           "canonicalSignature": "():System.Xml.XmlNodeList",
           "normalizedSignature": "GetInnerXml|():System.Xml.XmlNodeList|static=false",
           "emitScope": "ClassSurface",
@@ -7843,7 +7843,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::GetOutput():System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664177,
+          "metadataToken": 100664188,
           "canonicalSignature": "():System.Object",
           "normalizedSignature": "GetOutput|():System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7863,7 +7863,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::GetOutput(System.Type):System.Object",
           "clrName": "GetOutput",
-          "metadataToken": 100664178,
+          "metadataToken": 100664189,
           "canonicalSignature": "(System.Type):System.Object",
           "normalizedSignature": "GetOutput|(System.Type):System.Object|static=false",
           "emitScope": "ClassSurface",
@@ -7883,7 +7883,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::LoadInnerXml(System.Xml.XmlNodeList):System.Void",
           "clrName": "LoadInnerXml",
-          "metadataToken": 100664179,
+          "metadataToken": 100664190,
           "canonicalSignature": "(System.Xml.XmlNodeList):System.Void",
           "normalizedSignature": "LoadInnerXml|(System.Xml.XmlNodeList):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7903,7 +7903,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::LoadInput(System.Object):System.Void",
           "clrName": "LoadInput",
-          "metadataToken": 100664180,
+          "metadataToken": 100664191,
           "canonicalSignature": "(System.Object):System.Void",
           "normalizedSignature": "LoadInput|(System.Object):System.Void|static=false",
           "emitScope": "ClassSurface",
@@ -7925,7 +7925,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::InputTypes:System.Type[]",
           "clrName": "InputTypes",
-          "metadataToken": 385876225,
+          "metadataToken": 385876229,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "InputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7944,7 +7944,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::OutputTypes:System.Type[]",
           "clrName": "OutputTypes",
-          "metadataToken": 385876226,
+          "metadataToken": 385876230,
           "canonicalSignature": ":System.Type[]",
           "normalizedSignature": "OutputTypes|:System.Type[]|static=false|accessor=get",
           "emitScope": "ClassSurface",
@@ -7963,7 +7963,7 @@
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::Decryptor:System.Security.Cryptography.Xml.IRelDecryptor",
           "clrName": "Decryptor",
-          "metadataToken": 385876227,
+          "metadataToken": 385876231,
           "canonicalSignature": ":System.Security.Cryptography.Xml.IRelDecryptor",
           "normalizedSignature": "Decryptor|:System.Security.Cryptography.Xml.IRelDecryptor|static=false|accessor=getset",
           "emitScope": "ClassSurface",
@@ -7985,7 +7985,7 @@
       "constructors": [
         {
           "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.XmlLicenseTransform::.ctor():void",
-          "metadataToken": 100664170,
+          "metadataToken": 100664181,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,

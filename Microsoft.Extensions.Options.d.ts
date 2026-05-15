@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Options/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { BinderOptions, IConfiguration } from './Microsoft.Extensions.Configuration/internal/index.js';
 import type { IServiceCollection } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
@@ -16,17 +20,17 @@ import type { ISerializable } from '@tsonic/dotnet/System.Runtime.Serialization.
 
 // Public API exports (curated - no internal $instance/$views leakage)
 export { ConfigureOptions_1 as ConfigureOptions } from './Microsoft.Extensions.Options/internal/index.js';
-export type IConfigureNamedOptions<TOptions> = Internal.IConfigureNamedOptions_1<TOptions>;
-export type IConfigureOptions<TOptions> = Internal.IConfigureOptions_1<TOptions>;
-export type IOptions<TOptions> = Internal.IOptions_1<TOptions>;
-export type IOptionsChangeTokenSource<TOptions> = Internal.IOptionsChangeTokenSource_1<TOptions>;
-export type IOptionsFactory<TOptions> = Internal.IOptionsFactory_1<TOptions>;
-export type IOptionsMonitor<TOptions> = Internal.IOptionsMonitor_1<TOptions>;
-export type IOptionsMonitorCache<TOptions> = Internal.IOptionsMonitorCache_1<TOptions>;
-export type IOptionsSnapshot<TOptions> = Internal.IOptionsSnapshot_1<TOptions>;
-export type IPostConfigureOptions<TOptions> = Internal.IPostConfigureOptions_1<TOptions>;
+export type IConfigureNamedOptions<TOptions extends (object | null)> = Internal.IConfigureNamedOptions_1<TOptions>;
+export type IConfigureOptions<TOptions extends (object | null)> = Internal.IConfigureOptions_1<TOptions>;
+export type IOptions<TOptions extends (object | null)> = Internal.IOptions_1<TOptions>;
+export type IOptionsChangeTokenSource<TOptions extends unknown> = Internal.IOptionsChangeTokenSource_1<TOptions>;
+export type IOptionsFactory<TOptions extends (object | null)> = Internal.IOptionsFactory_1<TOptions>;
+export type IOptionsMonitor<TOptions extends unknown> = Internal.IOptionsMonitor_1<TOptions>;
+export type IOptionsMonitorCache<TOptions extends (object | null)> = Internal.IOptionsMonitorCache_1<TOptions>;
+export type IOptionsSnapshot<TOptions extends (object | null)> = Internal.IOptionsSnapshot_1<TOptions>;
+export type IPostConfigureOptions<TOptions extends (object | null)> = Internal.IPostConfigureOptions_1<TOptions>;
 export type IStartupValidator = Internal.IStartupValidator;
-export type IValidateOptions<TOptions> = Internal.IValidateOptions_1<TOptions>;
+export type IValidateOptions<TOptions extends (object | null)> = Internal.IValidateOptions_1<TOptions>;
 export { Options$instance as Options } from './Microsoft.Extensions.Options/internal/index.js';
 export { OptionsBuilder_1 as OptionsBuilder } from './Microsoft.Extensions.Options/internal/index.js';
 export { OptionsCache_1 as OptionsCache } from './Microsoft.Extensions.Options/internal/index.js';
@@ -53,49 +57,49 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type ConfigureNamedOptions<
-  T1 = __,
-  T2 = __,
-  T3 = __,
-  T4 = __,
-  T5 = __,
-  T6 = __,
+  T1 extends (object | null) | __ = __,
+  T2 extends (object | null) | __ = __,
+  T3 extends (object | null) | __ = __,
+  T4 extends (object | null) | __ = __,
+  T5 extends (object | null) | __ = __,
+  T6 extends (object | null) | __ = __,
 > =
-  [T2] extends [__] ? Internal.ConfigureNamedOptions_1<T1> :
-  [T3] extends [__] ? Internal.ConfigureNamedOptions_2<T1, T2> :
-  [T4] extends [__] ? Internal.ConfigureNamedOptions_3<T1, T2, T3> :
-  [T5] extends [__] ? Internal.ConfigureNamedOptions_4<T1, T2, T3, T4> :
-  [T6] extends [__] ? Internal.ConfigureNamedOptions_5<T1, T2, T3, T4, T5> :
-  Internal.ConfigureNamedOptions_6<T1, T2, T3, T4, T5, T6>;
+  [T2] extends [__] ? [T1] extends [(object | null)] ? Internal.ConfigureNamedOptions_1<T1> : never :
+  [T3] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? Internal.ConfigureNamedOptions_2<T1, T2> : never : never :
+  [T4] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? Internal.ConfigureNamedOptions_3<T1, T2, T3> : never : never : never :
+  [T5] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? [T4] extends [(object | null)] ? Internal.ConfigureNamedOptions_4<T1, T2, T3, T4> : never : never : never : never :
+  [T6] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? [T4] extends [(object | null)] ? [T5] extends [(object | null)] ? Internal.ConfigureNamedOptions_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
+  [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? [T4] extends [(object | null)] ? [T5] extends [(object | null)] ? [T6] extends [(object | null)] ? Internal.ConfigureNamedOptions_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
 
 export type PostConfigureOptions<
-  T1 = __,
-  T2 = __,
-  T3 = __,
-  T4 = __,
-  T5 = __,
-  T6 = __,
+  T1 extends (object | null) | __ = __,
+  T2 extends (object | null) | __ = __,
+  T3 extends (object | null) | __ = __,
+  T4 extends (object | null) | __ = __,
+  T5 extends (object | null) | __ = __,
+  T6 extends (object | null) | __ = __,
 > =
-  [T2] extends [__] ? Internal.PostConfigureOptions_1<T1> :
-  [T3] extends [__] ? Internal.PostConfigureOptions_2<T1, T2> :
-  [T4] extends [__] ? Internal.PostConfigureOptions_3<T1, T2, T3> :
-  [T5] extends [__] ? Internal.PostConfigureOptions_4<T1, T2, T3, T4> :
-  [T6] extends [__] ? Internal.PostConfigureOptions_5<T1, T2, T3, T4, T5> :
-  Internal.PostConfigureOptions_6<T1, T2, T3, T4, T5, T6>;
+  [T2] extends [__] ? [T1] extends [(object | null)] ? Internal.PostConfigureOptions_1<T1> : never :
+  [T3] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? Internal.PostConfigureOptions_2<T1, T2> : never : never :
+  [T4] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? Internal.PostConfigureOptions_3<T1, T2, T3> : never : never : never :
+  [T5] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? [T4] extends [(object | null)] ? Internal.PostConfigureOptions_4<T1, T2, T3, T4> : never : never : never : never :
+  [T6] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? [T4] extends [(object | null)] ? [T5] extends [(object | null)] ? Internal.PostConfigureOptions_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
+  [T1] extends [(object | null)] ? [T2] extends [(object | null)] ? [T3] extends [(object | null)] ? [T4] extends [(object | null)] ? [T5] extends [(object | null)] ? [T6] extends [(object | null)] ? Internal.PostConfigureOptions_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
 
 export type ValidateOptions<
-  T1 = __,
-  T2 = __,
-  T3 = __,
-  T4 = __,
-  T5 = __,
-  T6 = __,
+  T1 extends (object | null) | __ = __,
+  T2 extends unknown | __ = __,
+  T3 extends unknown | __ = __,
+  T4 extends unknown | __ = __,
+  T5 extends unknown | __ = __,
+  T6 extends unknown | __ = __,
 > =
-  [T2] extends [__] ? Internal.ValidateOptions_1<T1> :
-  [T3] extends [__] ? Internal.ValidateOptions_2<T1, T2> :
-  [T4] extends [__] ? Internal.ValidateOptions_3<T1, T2, T3> :
-  [T5] extends [__] ? Internal.ValidateOptions_4<T1, T2, T3, T4> :
-  [T6] extends [__] ? Internal.ValidateOptions_5<T1, T2, T3, T4, T5> :
-  Internal.ValidateOptions_6<T1, T2, T3, T4, T5, T6>;
+  [T2] extends [__] ? [T1] extends [(object | null)] ? Internal.ValidateOptions_1<T1> : never :
+  [T3] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? Internal.ValidateOptions_2<T1, T2> : never : never :
+  [T4] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? Internal.ValidateOptions_3<T1, T2, T3> : never : never : never :
+  [T5] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? Internal.ValidateOptions_4<T1, T2, T3, T4> : never : never : never : never :
+  [T6] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? Internal.ValidateOptions_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
+  [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? [T6] extends [unknown] ? Internal.ValidateOptions_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Options as ExtensionMethods } from './__internal/extensions/index.js';

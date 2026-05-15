@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Validation
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -18,7 +18,7 @@ import type { Action_1, Attribute, Boolean as ClrBoolean, Int32, Object as ClrOb
 export interface IValidatableInfo$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
-    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -37,8 +37,8 @@ export type IValidatableInfoResolver = IValidatableInfoResolver$instance;
 export interface ValidationErrorContext$instance {
     readonly __tsonic_type_Microsoft_Extensions_Validation_ValidationErrorContext: never;
 
-    get Container(): JsValue | null;
-    set Container(value: JsValue | null);
+    get Container(): unknown | null;
+    set Container(value: unknown | null);
     Errors: IReadOnlyList_1<System_Internal.String>;
     Name: string;
     Path: string;
@@ -71,7 +71,7 @@ export interface ValidatableParameterInfo$instance extends IValidatableInfo$inst
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
-    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -92,7 +92,7 @@ export interface ValidatablePropertyInfo$instance extends IValidatableInfo$insta
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
-    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 
@@ -126,7 +126,7 @@ export interface ValidatableTypeInfo$instance extends IValidatableInfo$instance 
     readonly __tsonic_iface_Microsoft_Extensions_Validation_IValidatableInfo: never;
 
     GetValidationAttributes(): ValidationAttribute[];
-    ValidateAsync(value: JsValue | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
+    ValidateAsync(value: unknown | null, context: ValidateContext, cancellationToken: CancellationToken): Task;
 }
 
 

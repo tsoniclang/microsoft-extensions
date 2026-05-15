@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Logging.Abstractions/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { EventId, ILogger, ILogger_1, ILoggerFactory, ILoggerProvider, LogLevel } from './Microsoft.Extensions.Logging/internal/index.js';
 import type { IEnumerable, IReadOnlyList, KeyValuePair } from '@tsonic/dotnet/System.Collections.Generic.js';
@@ -26,8 +30,8 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type NullLogger<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.NullLogger :
-  Internal.NullLogger_1<T1>;
+  [T1] extends [unknown] ? Internal.NullLogger_1<T1> : never;
 

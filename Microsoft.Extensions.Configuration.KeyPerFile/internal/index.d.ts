@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Configuration.KeyPerFile
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -15,7 +15,7 @@ import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collect
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider, System_Internal.IDisposable {
+export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider, Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;

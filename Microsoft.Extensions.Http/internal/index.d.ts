@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Http
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -21,14 +21,14 @@ export interface IHttpMessageHandlerBuilderFilter$instance {
 
 export type IHttpMessageHandlerBuilderFilter = IHttpMessageHandlerBuilderFilter$instance;
 
-export interface ITypedHttpClientFactory_1$instance<TClient> {
+export interface ITypedHttpClientFactory_1$instance<TClient extends unknown> {
     readonly __tsonic_iface_Microsoft_Extensions_Http_ITypedHttpClientFactory_1: never;
 
     CreateClient(httpClient: HttpClient): TClient;
 }
 
 
-export type ITypedHttpClientFactory_1<TClient> = ITypedHttpClientFactory_1$instance<TClient>;
+export type ITypedHttpClientFactory_1<TClient extends unknown> = ITypedHttpClientFactory_1$instance<TClient>;
 
 export interface HttpClientFactoryOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_Http_HttpClientFactoryOptions: never;

@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Caching.Hybrid/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IBufferWriter, ReadOnlySequence } from '@tsonic/dotnet/System.Buffers.js';
 import type { IEnumerable } from '@tsonic/dotnet/System.Collections.Generic.js';
@@ -17,5 +21,5 @@ import type { ValueTask } from '@tsonic/dotnet/System.Threading.Tasks.js';
 export { HybridCache as HybridCache } from './Microsoft.Extensions.Caching.Hybrid/internal/index.js';
 export { HybridCacheEntryFlags as HybridCacheEntryFlags } from './Microsoft.Extensions.Caching.Hybrid/internal/index.js';
 export { HybridCacheEntryOptions as HybridCacheEntryOptions } from './Microsoft.Extensions.Caching.Hybrid/internal/index.js';
-export type IHybridCacheSerializer<T> = Internal.IHybridCacheSerializer_1<T>;
+export type IHybridCacheSerializer<T extends unknown> = Internal.IHybridCacheSerializer_1<T>;
 export type IHybridCacheSerializerFactory = Internal.IHybridCacheSerializerFactory;

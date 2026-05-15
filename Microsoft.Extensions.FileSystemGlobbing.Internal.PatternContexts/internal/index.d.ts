@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.FileSystemGlobbing
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -14,7 +14,7 @@ import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface PatternContext_1$instance<TFrame extends NonNullable<JsValue>> {
+export interface PatternContext_1$instance<TFrame extends NonNullable<unknown>> {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
@@ -27,15 +27,15 @@ export interface PatternContext_1$instance<TFrame extends NonNullable<JsValue>> 
 }
 
 
-export const PatternContext_1: (abstract new<TFrame extends NonNullable<JsValue>>() => PatternContext_1<TFrame>) & {
+export const PatternContext_1: (abstract new<TFrame extends NonNullable<unknown>>() => PatternContext_1<TFrame>) & {
 };
 
 
-export interface __PatternContext_1$views<TFrame extends NonNullable<JsValue>> {
+export interface __PatternContext_1$views<TFrame extends NonNullable<unknown>> {
     As_IPatternContext(): Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance;
 }
 
-export type PatternContext_1<TFrame> = PatternContext_1$instance<TFrame> & __PatternContext_1$views<TFrame>;
+export type PatternContext_1<TFrame extends NonNullable<unknown>> = PatternContext_1$instance<TFrame> & __PatternContext_1$views<TFrame>;
 
 
 export interface PatternContextLinear$instance extends PatternContext_1$instance<PatternContextLinear_FrameData> {
@@ -78,7 +78,7 @@ export const PatternContextLinear_FrameData: {
 
 export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$instance;
 
-export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
+export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearExclude: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
@@ -100,7 +100,7 @@ export interface __PatternContextLinearExclude$views {
 export type PatternContextLinearExclude = PatternContextLinearExclude$instance & __PatternContextLinearExclude$views;
 
 
-export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance {
+export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearInclude: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
@@ -167,7 +167,7 @@ export const PatternContextRagged_FrameData: {
 
 export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
 
-export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
+export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedExclude: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
@@ -189,7 +189,7 @@ export interface __PatternContextRaggedExclude$views {
 export type PatternContextRaggedExclude = PatternContextRaggedExclude$instance & __PatternContextRaggedExclude$views;
 
 
-export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance {
+export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedInclude: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;

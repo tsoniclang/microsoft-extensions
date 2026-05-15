@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.DependencyInjection.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -16,46 +16,46 @@ export abstract class ServiceCollectionDescriptorExtensions$instance {
     static Add(collection: IServiceCollection, descriptor: ServiceDescriptor): IServiceCollection;
     static Add(collection: IServiceCollection, descriptors: IEnumerable_1<ServiceDescriptor>): IServiceCollection;
     static RemoveAll(collection: IServiceCollection, serviceType: Type): IServiceCollection;
-    static RemoveAll<T>(collection: IServiceCollection): IServiceCollection;
-    static RemoveAllKeyed<T>(collection: IServiceCollection, serviceKey: JsValue | null): IServiceCollection;
-    static RemoveAllKeyed(collection: IServiceCollection, serviceType: Type, serviceKey: JsValue | null): IServiceCollection;
+    static RemoveAll<T extends unknown>(collection: IServiceCollection): IServiceCollection;
+    static RemoveAllKeyed<T extends unknown>(collection: IServiceCollection, serviceKey: unknown | null): IServiceCollection;
+    static RemoveAllKeyed(collection: IServiceCollection, serviceType: Type, serviceKey: unknown | null): IServiceCollection;
     static Replace(collection: IServiceCollection, descriptor: ServiceDescriptor): IServiceCollection;
     static TryAdd(collection: IServiceCollection, descriptor: ServiceDescriptor): void;
     static TryAdd(collection: IServiceCollection, descriptors: IEnumerable_1<ServiceDescriptor>): void;
     static TryAddEnumerable(services: IServiceCollection, descriptor: ServiceDescriptor): void;
     static TryAddEnumerable(services: IServiceCollection, descriptors: IEnumerable_1<ServiceDescriptor>): void;
-    static TryAddKeyedScoped<TService>(services: IServiceCollection, serviceKey: JsValue | null, implementationFactory: Func_3<IServiceProvider, JsValue | null, TService>): void;
-    static TryAddKeyedScoped<TService>(collection: IServiceCollection, serviceKey: JsValue | null): void;
-    static TryAddKeyedScoped(collection: IServiceCollection, service: Type, serviceKey: JsValue | null, implementationFactory: Func_3<IServiceProvider, JsValue | null, JsValue>): void;
-    static TryAddKeyedScoped(collection: IServiceCollection, service: Type, serviceKey: JsValue | null, implementationType: Type): void;
-    static TryAddKeyedScoped(collection: IServiceCollection, service: Type, serviceKey: JsValue | null): void;
-    static TryAddKeyedSingleton<TService>(services: IServiceCollection, serviceKey: JsValue | null, implementationFactory: Func_3<IServiceProvider, JsValue | null, TService>): void;
-    static TryAddKeyedSingleton<TService>(collection: IServiceCollection, serviceKey: JsValue | null, instance: TService): void;
-    static TryAddKeyedSingleton<TService>(collection: IServiceCollection, serviceKey: JsValue | null): void;
-    static TryAddKeyedSingleton(collection: IServiceCollection, service: Type, serviceKey: JsValue | null, implementationFactory: Func_3<IServiceProvider, JsValue | null, JsValue>): void;
-    static TryAddKeyedSingleton(collection: IServiceCollection, service: Type, serviceKey: JsValue | null, implementationType: Type): void;
-    static TryAddKeyedSingleton(collection: IServiceCollection, service: Type, serviceKey: JsValue | null): void;
-    static TryAddKeyedTransient<TService>(services: IServiceCollection, serviceKey: JsValue | null, implementationFactory: Func_3<IServiceProvider, JsValue | null, TService>): void;
-    static TryAddKeyedTransient<TService>(collection: IServiceCollection, serviceKey: JsValue | null): void;
-    static TryAddKeyedTransient(collection: IServiceCollection, service: Type, serviceKey: JsValue | null, implementationFactory: Func_3<IServiceProvider, JsValue | null, JsValue>): void;
-    static TryAddKeyedTransient(collection: IServiceCollection, service: Type, serviceKey: JsValue | null, implementationType: Type): void;
-    static TryAddKeyedTransient(collection: IServiceCollection, service: Type, serviceKey: JsValue | null): void;
-    static TryAddScoped<TService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): void;
-    static TryAddScoped(collection: IServiceCollection, service: Type, implementationFactory: Func_2<IServiceProvider, JsValue>): void;
+    static TryAddKeyedScoped<TService extends (object | null)>(services: IServiceCollection, serviceKey: unknown | null, implementationFactory: Func_3<IServiceProvider, unknown | null, TService>): void;
+    static TryAddKeyedScoped<TService extends (object | null)>(collection: IServiceCollection, serviceKey: unknown | null): void;
+    static TryAddKeyedScoped(collection: IServiceCollection, service: Type, serviceKey: unknown | null, implementationFactory: Func_3<IServiceProvider, unknown | null, unknown>): void;
+    static TryAddKeyedScoped(collection: IServiceCollection, service: Type, serviceKey: unknown | null, implementationType: Type): void;
+    static TryAddKeyedScoped(collection: IServiceCollection, service: Type, serviceKey: unknown | null): void;
+    static TryAddKeyedSingleton<TService extends (object | null)>(services: IServiceCollection, serviceKey: unknown | null, implementationFactory: Func_3<IServiceProvider, unknown | null, TService>): void;
+    static TryAddKeyedSingleton<TService extends (object | null)>(collection: IServiceCollection, serviceKey: unknown | null, instance: TService): void;
+    static TryAddKeyedSingleton<TService extends (object | null)>(collection: IServiceCollection, serviceKey: unknown | null): void;
+    static TryAddKeyedSingleton(collection: IServiceCollection, service: Type, serviceKey: unknown | null, implementationFactory: Func_3<IServiceProvider, unknown | null, unknown>): void;
+    static TryAddKeyedSingleton(collection: IServiceCollection, service: Type, serviceKey: unknown | null, implementationType: Type): void;
+    static TryAddKeyedSingleton(collection: IServiceCollection, service: Type, serviceKey: unknown | null): void;
+    static TryAddKeyedTransient<TService extends (object | null)>(services: IServiceCollection, serviceKey: unknown | null, implementationFactory: Func_3<IServiceProvider, unknown | null, TService>): void;
+    static TryAddKeyedTransient<TService extends (object | null)>(collection: IServiceCollection, serviceKey: unknown | null): void;
+    static TryAddKeyedTransient(collection: IServiceCollection, service: Type, serviceKey: unknown | null, implementationFactory: Func_3<IServiceProvider, unknown | null, unknown>): void;
+    static TryAddKeyedTransient(collection: IServiceCollection, service: Type, serviceKey: unknown | null, implementationType: Type): void;
+    static TryAddKeyedTransient(collection: IServiceCollection, service: Type, serviceKey: unknown | null): void;
+    static TryAddScoped<TService extends (object | null)>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): void;
+    static TryAddScoped(collection: IServiceCollection, service: Type, implementationFactory: Func_2<IServiceProvider, unknown>): void;
     static TryAddScoped(collection: IServiceCollection, service: Type, implementationType: Type): void;
     static TryAddScoped(collection: IServiceCollection, service: Type): void;
-    static TryAddScoped<TService>(collection: IServiceCollection): void;
-    static TryAddSingleton<TService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): void;
-    static TryAddSingleton(collection: IServiceCollection, service: Type, implementationFactory: Func_2<IServiceProvider, JsValue>): void;
+    static TryAddScoped<TService extends (object | null)>(collection: IServiceCollection): void;
+    static TryAddSingleton<TService extends (object | null)>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): void;
+    static TryAddSingleton(collection: IServiceCollection, service: Type, implementationFactory: Func_2<IServiceProvider, unknown>): void;
     static TryAddSingleton(collection: IServiceCollection, service: Type, implementationType: Type): void;
     static TryAddSingleton(collection: IServiceCollection, service: Type): void;
-    static TryAddSingleton<TService>(collection: IServiceCollection, instance: TService): void;
-    static TryAddSingleton<TService>(collection: IServiceCollection): void;
-    static TryAddTransient<TService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): void;
-    static TryAddTransient(collection: IServiceCollection, service: Type, implementationFactory: Func_2<IServiceProvider, JsValue>): void;
+    static TryAddSingleton<TService extends (object | null)>(collection: IServiceCollection, instance: TService): void;
+    static TryAddSingleton<TService extends (object | null)>(collection: IServiceCollection): void;
+    static TryAddTransient<TService extends (object | null)>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, TService>): void;
+    static TryAddTransient(collection: IServiceCollection, service: Type, implementationFactory: Func_2<IServiceProvider, unknown>): void;
     static TryAddTransient(collection: IServiceCollection, service: Type, implementationType: Type): void;
     static TryAddTransient(collection: IServiceCollection, service: Type): void;
-    static TryAddTransient<TService>(collection: IServiceCollection): void;
+    static TryAddTransient<TService extends (object | null)>(collection: IServiceCollection): void;
 }
 
 
