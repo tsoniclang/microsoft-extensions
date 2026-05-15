@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Http/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
 import type { Action, Boolean as ClrBoolean, Func, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan } from '@tsonic/dotnet/System.js';
@@ -14,4 +18,4 @@ import type { DelegatingHandler, HttpClient, HttpMessageHandler } from '@tsonic/
 export { HttpClientFactoryOptions as HttpClientFactoryOptions } from './Microsoft.Extensions.Http/internal/index.js';
 export { HttpMessageHandlerBuilder as HttpMessageHandlerBuilder } from './Microsoft.Extensions.Http/internal/index.js';
 export type IHttpMessageHandlerBuilderFilter = Internal.IHttpMessageHandlerBuilderFilter;
-export type ITypedHttpClientFactory<TClient> = Internal.ITypedHttpClientFactory_1<TClient>;
+export type ITypedHttpClientFactory<TClient extends unknown> = Internal.ITypedHttpClientFactory_1<TClient>;

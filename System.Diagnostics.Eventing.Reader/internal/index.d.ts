@@ -3,7 +3,7 @@
 // Assembly: System.Diagnostics.EventLog
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -398,8 +398,8 @@ export interface EventLogRecord$instance extends EventRecord {
     Dispose(disposing: boolean): void;
     Dispose(): void;
     FormatDescription(): string;
-    FormatDescription(values: IEnumerable_1<JsValue>): string;
-    GetPropertyValues(propertySelector: EventLogPropertySelector): IList_1<JsValue>;
+    FormatDescription(values: IEnumerable_1<unknown>): string;
+    GetPropertyValues(propertySelector: EventLogPropertySelector): IList_1<unknown>;
     ToXml(): string;
 }
 
@@ -514,7 +514,7 @@ export type EventOpcode = EventOpcode$instance;
 export interface EventProperty$instance {
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventProperty: never;
 
-    readonly Value: JsValue;
+    readonly Value: unknown;
 }
 
 
@@ -556,7 +556,7 @@ export interface EventRecord$instance {
     Dispose(): void;
     Dispose(disposing: boolean): void;
     FormatDescription(): string;
-    FormatDescription(values: IEnumerable_1<JsValue>): string;
+    FormatDescription(values: IEnumerable_1<unknown>): string;
     ToXml(): string;
 }
 

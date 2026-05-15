@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Configuration, Microsoft.Extensions.Configuration.Abstractions, Microsoft.Extensions.Configuration.Binder, Microsoft.Extensions.Configuration.CommandLine, Microsoft.Extensions.Configuration.EnvironmentVariables, Microsoft.Extensions.Configuration.FileExtensions, Microsoft.Extensions.Configuration.Ini, Microsoft.Extensions.Configuration.Json, Microsoft.Extensions.Configuration.KeyPerFile, Microsoft.Extensions.Configuration.UserSecrets, Microsoft.Extensions.Configuration.Xml
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -37,7 +37,7 @@ export type IConfiguration = IConfiguration$instance & { [key: string]: string |
 export interface IConfigurationBuilder$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
 
-    readonly Properties: IDictionary_2<System_Internal.String, JsValue>;
+    readonly Properties: IDictionary_2<System_Internal.String, unknown>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
     Build(): IConfigurationRoot;
@@ -49,7 +49,7 @@ export type IConfigurationBuilder = IConfigurationBuilder$instance;
 export interface IConfigurationManager$instance extends IConfiguration, IConfigurationBuilder {
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationManager: never;
 
-    readonly Properties: IDictionary_2<System_Internal.String, JsValue>;
+    readonly Properties: IDictionary_2<System_Internal.String, unknown>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
     Build(): IConfigurationRoot;
@@ -206,7 +206,7 @@ export interface ConfigurationBuilder$instance extends IConfigurationBuilder$ins
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationBuilder: never;
 
-    readonly Properties: IDictionary_2<System_Internal.String, JsValue>;
+    readonly Properties: IDictionary_2<System_Internal.String, unknown>;
     readonly Sources: IList_1<IConfigurationSource>;
     Add(source: IConfigurationSource): IConfigurationBuilder;
     Build(): IConfigurationRoot;
@@ -256,7 +256,7 @@ export const ConfigurationKeyNameAttribute: {
 
 export type ConfigurationKeyNameAttribute = ConfigurationKeyNameAttribute$instance;
 
-export interface ConfigurationManager$instance extends System_Internal.IDisposable {
+export interface ConfigurationManager$instance extends IConfigurationManager$instance, IConfigurationRoot$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationManager: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
@@ -319,7 +319,7 @@ export interface ConfigurationReloadToken$instance {
     ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     OnReload(): void;
-    RegisterChangeCallback(callback: Action_1<JsValue | null>, state: JsValue | null): IDisposable;
+    RegisterChangeCallback(callback: Action_1<unknown | null>, state: unknown | null): IDisposable;
 }
 
 
@@ -335,7 +335,7 @@ export interface __ConfigurationReloadToken$views {
 export type ConfigurationReloadToken = ConfigurationReloadToken$instance & __ConfigurationReloadToken$views;
 
 
-export interface ConfigurationRoot$instance extends System_Internal.IDisposable {
+export interface ConfigurationRoot$instance extends IConfigurationRoot$instance, System_Internal.IDisposable {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationRoot: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
@@ -364,7 +364,7 @@ export interface __ConfigurationRoot$views {
 export type ConfigurationRoot = ConfigurationRoot$instance & __ConfigurationRoot$views & { [key: string]: string | null; };
 
 
-export interface ConfigurationSection$instance {
+export interface ConfigurationSection$instance extends IConfigurationSection$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationSection: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfiguration: never;
@@ -529,24 +529,24 @@ export abstract class CommandLineConfigurationExtensions$instance {
 export type CommandLineConfigurationExtensions = CommandLineConfigurationExtensions$instance;
 
 export abstract class ConfigurationBinder$instance {
-    static Bind(configuration: IConfiguration, instance: JsValue | null, configureOptions: Action_1<BinderOptions> | null): void;
-    static Bind(configuration: IConfiguration, instance: JsValue | null): void;
-    static Bind(configuration: IConfiguration, key: string, instance: JsValue | null): void;
-    static Get<T>(configuration: IConfiguration, configureOptions: Action_1<BinderOptions> | null): T | null;
-    static Get(configuration: IConfiguration, type: Type, configureOptions: Action_1<BinderOptions> | null): JsValue | null;
-    static Get(configuration: IConfiguration, type: Type): JsValue | null;
-    static Get<T>(configuration: IConfiguration): T | null;
-    static GetValue<T>(configuration: IConfiguration, key: string, defaultValue: T): T | null;
-    static GetValue<T>(configuration: IConfiguration, key: string): T | null;
-    static GetValue(configuration: IConfiguration, type: Type, key: string, defaultValue: JsValue | null): JsValue | null;
-    static GetValue(configuration: IConfiguration, type: Type, key: string): JsValue | null;
+    static Bind(configuration: IConfiguration, instance: unknown | null, configureOptions: Action_1<BinderOptions> | null): void;
+    static Bind(configuration: IConfiguration, instance: unknown | null): void;
+    static Bind(configuration: IConfiguration, key: string, instance: unknown | null): void;
+    static Get<T extends unknown>(configuration: IConfiguration, configureOptions: Action_1<BinderOptions> | null): T | null;
+    static Get(configuration: IConfiguration, type: Type, configureOptions: Action_1<BinderOptions> | null): unknown | null;
+    static Get(configuration: IConfiguration, type: Type): unknown | null;
+    static Get<T extends unknown>(configuration: IConfiguration): T | null;
+    static GetValue<T extends unknown>(configuration: IConfiguration, key: string, defaultValue: T): T | null;
+    static GetValue<T extends unknown>(configuration: IConfiguration, key: string): T | null;
+    static GetValue(configuration: IConfiguration, type: Type, key: string, defaultValue: unknown | null): unknown | null;
+    static GetValue(configuration: IConfiguration, type: Type, key: string): unknown | null;
 }
 
 
 export type ConfigurationBinder = ConfigurationBinder$instance;
 
 export abstract class ConfigurationExtensions$instance {
-    static Add<TSource extends IConfigurationSource>(builder: IConfigurationBuilder, configureSource: Action_1<TSource> | null): IConfigurationBuilder;
+    static Add<TSource extends unknown & IConfigurationSource>(builder: IConfigurationBuilder, configureSource: Action_1<TSource> | null): IConfigurationBuilder;
     static AsEnumerable(configuration: IConfiguration, makePathsRelative: boolean): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     static AsEnumerable(configuration: IConfiguration): IEnumerable_1<KeyValuePair_2<System_Internal.String, System_Internal.String>>;
     static Exists(section: IConfigurationSection | null): boolean;
@@ -639,14 +639,14 @@ export abstract class MemoryConfigurationBuilderExtensions$instance {
 export type MemoryConfigurationBuilderExtensions = MemoryConfigurationBuilderExtensions$instance;
 
 export abstract class UserSecretsConfigurationExtensions$instance {
-    static AddUserSecrets<T>(configuration: IConfigurationBuilder, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
-    static AddUserSecrets<T>(configuration: IConfigurationBuilder, optional: boolean): IConfigurationBuilder;
+    static AddUserSecrets<T extends (object | null)>(configuration: IConfigurationBuilder, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
+    static AddUserSecrets<T extends (object | null)>(configuration: IConfigurationBuilder, optional: boolean): IConfigurationBuilder;
     static AddUserSecrets(configuration: IConfigurationBuilder, assembly: Assembly, optional: boolean, reloadOnChange: boolean): IConfigurationBuilder;
     static AddUserSecrets(configuration: IConfigurationBuilder, assembly: Assembly, optional: boolean): IConfigurationBuilder;
     static AddUserSecrets(configuration: IConfigurationBuilder, assembly: Assembly): IConfigurationBuilder;
     static AddUserSecrets(configuration: IConfigurationBuilder, userSecretsId: string, reloadOnChange: boolean): IConfigurationBuilder;
     static AddUserSecrets(configuration: IConfigurationBuilder, userSecretsId: string): IConfigurationBuilder;
-    static AddUserSecrets<T>(configuration: IConfigurationBuilder): IConfigurationBuilder;
+    static AddUserSecrets<T extends (object | null)>(configuration: IConfigurationBuilder): IConfigurationBuilder;
 }
 
 

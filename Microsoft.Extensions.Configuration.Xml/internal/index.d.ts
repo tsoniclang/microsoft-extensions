@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Configuration.Xml
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -40,7 +40,7 @@ export interface __XmlConfigurationProvider$views {
 export type XmlConfigurationProvider = XmlConfigurationProvider$instance & __XmlConfigurationProvider$views;
 
 
-export interface XmlConfigurationSource$instance extends FileConfigurationSource {
+export interface XmlConfigurationSource$instance extends FileConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
@@ -99,7 +99,7 @@ export interface __XmlStreamConfigurationProvider$views {
 export type XmlStreamConfigurationProvider = XmlStreamConfigurationProvider$instance & __XmlStreamConfigurationProvider$views;
 
 
-export interface XmlStreamConfigurationSource$instance extends StreamConfigurationSource {
+export interface XmlStreamConfigurationSource$instance extends StreamConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Configuration.Ini
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -39,7 +39,7 @@ export interface __IniConfigurationProvider$views {
 export type IniConfigurationProvider = IniConfigurationProvider$instance & __IniConfigurationProvider$views;
 
 
-export interface IniConfigurationSource$instance extends FileConfigurationSource {
+export interface IniConfigurationSource$instance extends FileConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
@@ -83,7 +83,7 @@ export interface __IniStreamConfigurationProvider$views {
 export type IniStreamConfigurationProvider = IniStreamConfigurationProvider$instance & __IniStreamConfigurationProvider$views;
 
 
-export interface IniStreamConfigurationSource$instance extends StreamConfigurationSource {
+export interface IniStreamConfigurationSource$instance extends StreamConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;

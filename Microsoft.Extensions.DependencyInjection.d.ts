@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.DependencyInjection/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { MemoryCacheOptions, MemoryDistributedCacheOptions } from './Microsoft.Extensions.Caching.Memory/internal/index.js';
 import type { BinderOptions, IConfiguration } from './Microsoft.Extensions.Configuration/internal/index.js';
@@ -39,7 +43,7 @@ export { FromKeyedServicesAttribute as FromKeyedServicesAttribute } from './Micr
 export type IKeyedServiceProvider = Internal.IKeyedServiceProvider;
 export { KeyedService$instance as KeyedService } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
 export type IServiceCollection = Internal.IServiceCollection;
-export type IServiceProviderFactory<TContainerBuilder> = Internal.IServiceProviderFactory_1<TContainerBuilder>;
+export type IServiceProviderFactory<TContainerBuilder extends unknown> = Internal.IServiceProviderFactory_1<TContainerBuilder>;
 export type IServiceProviderIsKeyedService = Internal.IServiceProviderIsKeyedService;
 export type IServiceProviderIsService = Internal.IServiceProviderIsService;
 export type IServiceScope = Internal.IServiceScope;
@@ -81,10 +85,10 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type ObjectFactory<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? ((() => void) | Internal.ObjectFactory) :
-  (((arg1: T1) => void) | Internal.ObjectFactory_1<T1>);
+  [T1] extends [unknown] ? (((arg1: T1) => void) | Internal.ObjectFactory_1<T1>) : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_DependencyInjection as ExtensionMethods } from './__internal/extensions/index.js';

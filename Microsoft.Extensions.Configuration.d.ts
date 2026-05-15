@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Configuration/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { CommandLineConfigurationSource } from './Microsoft.Extensions.Configuration.CommandLine/internal/index.js';
 import type { EnvironmentVariablesConfigurationSource } from './Microsoft.Extensions.Configuration.EnvironmentVariables/internal/index.js';

@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Configuration.Json
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -39,7 +39,7 @@ export interface __JsonConfigurationProvider$views {
 export type JsonConfigurationProvider = JsonConfigurationProvider$instance & __JsonConfigurationProvider$views;
 
 
-export interface JsonConfigurationSource$instance extends FileConfigurationSource {
+export interface JsonConfigurationSource$instance extends FileConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
@@ -82,7 +82,7 @@ export interface __JsonStreamConfigurationProvider$views {
 export type JsonStreamConfigurationProvider = JsonStreamConfigurationProvider$instance & __JsonStreamConfigurationProvider$views;
 
 
-export interface JsonStreamConfigurationSource$instance extends StreamConfigurationSource {
+export interface JsonStreamConfigurationSource$instance extends StreamConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;

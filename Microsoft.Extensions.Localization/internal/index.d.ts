@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Localization, Microsoft.Extensions.Localization.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -28,7 +28,7 @@ export type IResourceNamesCache = IResourceNamesCache$instance;
 export interface IStringLocalizer$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
 
-    get_Item2(name: string, ...arguments: JsValue[]): LocalizedString;
+    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
@@ -36,19 +36,19 @@ export interface IStringLocalizer$instance {
 
 export type IStringLocalizer = IStringLocalizer$instance;
 
-export interface IStringLocalizer_1$instance<T> extends IStringLocalizer {
+export interface IStringLocalizer_1$instance<T extends unknown> extends IStringLocalizer {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer_1: never;
 
-    get_Item2(name: string, ...arguments: JsValue[]): LocalizedString;
+    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
     get_Item(name: string): LocalizedString;
 }
 
 
-export interface IStringLocalizer_1$instance<T> extends IStringLocalizer$instance {}
+export interface IStringLocalizer_1$instance<T extends unknown> extends IStringLocalizer$instance {}
 
-export type IStringLocalizer_1<T> = IStringLocalizer_1$instance<T>;
+export type IStringLocalizer_1<T extends unknown> = IStringLocalizer_1$instance<T>;
 
 export interface IStringLocalizerFactory$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizerFactory: never;
@@ -108,13 +108,13 @@ export const ResourceLocationAttribute: {
 
 export type ResourceLocationAttribute = ResourceLocationAttribute$instance;
 
-export interface ResourceManagerStringLocalizer$instance {
+export interface ResourceManagerStringLocalizer$instance extends IStringLocalizer$instance {
     readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceManagerStringLocalizer: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
 
     get_Item(name: string): LocalizedString;
-    get_Item(name: string, ...arguments: JsValue[]): LocalizedString;
+    get_Item(name: string, ...arguments: unknown[]): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
 
@@ -195,33 +195,33 @@ export const RootNamespaceAttribute: {
 
 export type RootNamespaceAttribute = RootNamespaceAttribute$instance;
 
-export interface StringLocalizer_1$instance<TResourceSource> extends IStringLocalizer_1<TResourceSource> {
+export interface StringLocalizer_1$instance<TResourceSource extends unknown> extends IStringLocalizer_1<TResourceSource>, IStringLocalizer_1$instance<TResourceSource> {
     readonly __tsonic_type_Microsoft_Extensions_Localization_StringLocalizer_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer_1: never;
 
     get_Item(name: string): LocalizedString;
-    get_Item(name: string, ...arguments: JsValue[]): LocalizedString;
+    get_Item(name: string, ...arguments: unknown[]): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
 
 
 export const StringLocalizer_1: {
-    new<TResourceSource>(factory: IStringLocalizerFactory): StringLocalizer_1<TResourceSource>;
+    new<TResourceSource extends unknown>(factory: IStringLocalizerFactory): StringLocalizer_1<TResourceSource>;
 };
 
 
-export interface __StringLocalizer_1$views<TResourceSource> {
+export interface __StringLocalizer_1$views<TResourceSource extends unknown> {
     As_IStringLocalizer(): IStringLocalizer$instance;
 }
 
-export type StringLocalizer_1<TResourceSource> = StringLocalizer_1$instance<TResourceSource> & __StringLocalizer_1$views<TResourceSource>;
+export type StringLocalizer_1<TResourceSource extends unknown> = StringLocalizer_1$instance<TResourceSource> & __StringLocalizer_1$views<TResourceSource>;
 
 
 export abstract class StringLocalizerExtensions$instance {
     static GetAllStrings(stringLocalizer: IStringLocalizer): IEnumerable_1<LocalizedString>;
-    static GetString(stringLocalizer: IStringLocalizer, name: string, ...arguments: JsValue[]): LocalizedString;
+    static GetString(stringLocalizer: IStringLocalizer, name: string, ...arguments: unknown[]): LocalizedString;
     static GetString(stringLocalizer: IStringLocalizer, name: string): LocalizedString;
 }
 

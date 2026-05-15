@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Caching.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -28,7 +28,7 @@ export enum HybridCacheEntryFlags {
 }
 
 
-export interface IHybridCacheSerializer_1$instance<T> {
+export interface IHybridCacheSerializer_1$instance<T extends unknown> {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Hybrid_IHybridCacheSerializer_1: never;
 
     Deserialize(source: ReadOnlySequence_1<System_Internal.Byte>): T;
@@ -36,12 +36,12 @@ export interface IHybridCacheSerializer_1$instance<T> {
 }
 
 
-export type IHybridCacheSerializer_1<T> = IHybridCacheSerializer_1$instance<T>;
+export type IHybridCacheSerializer_1<T extends unknown> = IHybridCacheSerializer_1$instance<T>;
 
 export interface IHybridCacheSerializerFactory$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Hybrid_IHybridCacheSerializerFactory: never;
 
-    TryCreateSerializer<T>(serializer: IHybridCacheSerializer_1<T> | null): boolean;
+    TryCreateSerializer<T extends unknown>(serializer: IHybridCacheSerializer_1<T> | null): boolean;
 }
 
 
@@ -50,17 +50,17 @@ export type IHybridCacheSerializerFactory = IHybridCacheSerializerFactory$instan
 export interface HybridCache$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Hybrid_HybridCache: never;
 
-    GetOrCreateAsync<TState, T>(key: string, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    GetOrCreateAsync<T>(key: string, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    GetOrCreateAsync<T>(key: ReadOnlySpan_1<System_Internal.Char>, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    GetOrCreateAsync<TState, T>(key: ReadOnlySpan_1<System_Internal.Char>, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    GetOrCreateAsync<T>(key: DefaultInterpolatedStringHandler, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
-    GetOrCreateAsync<TState, T>(key: DefaultInterpolatedStringHandler, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<TState extends unknown, T extends unknown>(key: string, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<T extends unknown>(key: string, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<T extends unknown>(key: ReadOnlySpan_1<System_Internal.Char>, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<TState extends unknown, T extends unknown>(key: ReadOnlySpan_1<System_Internal.Char>, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<T extends unknown>(key: DefaultInterpolatedStringHandler, factory: Func_2<CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
+    GetOrCreateAsync<TState extends unknown, T extends unknown>(key: DefaultInterpolatedStringHandler, state: TState, factory: Func_3<TState, CancellationToken, ValueTask_1<T>>, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask_1<T>;
     RemoveAsync(key: string, cancellationToken?: CancellationToken): ValueTask;
     RemoveAsync(keys: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
     RemoveByTagAsync(tags: IEnumerable_1<System_Internal.String>, cancellationToken?: CancellationToken): ValueTask;
     RemoveByTagAsync(tag: string, cancellationToken?: CancellationToken): ValueTask;
-    SetAsync<T>(key: string, value: T, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask;
+    SetAsync<T extends unknown>(key: string, value: T, options?: HybridCacheEntryOptions | null, tags?: IEnumerable_1<System_Internal.String> | null, cancellationToken?: CancellationToken): ValueTask;
 }
 
 

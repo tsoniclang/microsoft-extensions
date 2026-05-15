@@ -3,7 +3,7 @@
 // Assembly: System.Security.Cryptography.Pkcs, System.Security.Cryptography.Xml
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -249,7 +249,7 @@ export interface EncryptedXml$instance {
     get Resolver(): XmlResolver | null;
     set Resolver(value: XmlResolver | null);
     XmlDSigSearchDepth: int;
-    AddKeyNameMapping(keyName: string, keyObject: JsValue): void;
+    AddKeyNameMapping(keyName: string, keyObject: unknown): void;
     ClearKeyNameMappings(): void;
     DecryptData(encryptedData: EncryptedData, symmetricAlgorithm: SymmetricAlgorithm): byte[];
     DecryptDocument(): void;
@@ -346,7 +346,7 @@ export interface EncryptionPropertyCollection$instance {
     readonly IsFixedSize: boolean;
     readonly IsReadOnly: boolean;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: JsValue;
+    readonly SyncRoot: unknown;
     Add(value: EncryptionProperty): int;
     Clear(): void;
     Contains(value: EncryptionProperty): boolean;
@@ -561,16 +561,16 @@ export interface ReferenceList$instance {
 
     readonly Count: int;
     readonly IsSynchronized: boolean;
-    readonly SyncRoot: JsValue;
-    Add(value: JsValue | null): int;
+    readonly SyncRoot: unknown;
+    Add(value: unknown | null): int;
     Clear(): void;
-    Contains(value: JsValue | null): boolean;
+    Contains(value: unknown | null): boolean;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
-    IndexOf(value: JsValue | null): int;
-    Insert(index: int, value: JsValue | null): void;
+    IndexOf(value: unknown | null): int;
+    Insert(index: int, value: unknown | null): void;
     Item(index: int): EncryptedReference | null;
-    Remove(value: JsValue | null): void;
+    Remove(value: unknown | null): void;
     RemoveAt(index: int): void;
 }
 
@@ -641,7 +641,7 @@ export interface SignedInfo$instance {
     set SignatureLength(value: string | null);
     get SignatureMethod(): string | null;
     set SignatureMethod(value: string | null);
-    readonly SyncRoot: JsValue;
+    readonly SyncRoot: unknown;
     AddReference(reference: Reference): void;
     CopyTo(array: ClrArray, index: int): void;
     GetEnumerator(): IEnumerator;
@@ -735,11 +735,11 @@ export interface Transform$instance {
     readonly PropagatedNamespaces: Hashtable;
     GetDigestedOutput(hash: HashAlgorithm): byte[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     GetXml(): XmlElement;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -773,11 +773,11 @@ export interface XmlDecryptionTransform$instance extends Transform {
     readonly OutputTypes: Type[];
     AddExceptUri(uri: string): void;
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     IsTargetElement(inputElement: XmlElement | null, idValue: string): boolean;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -794,10 +794,10 @@ export interface XmlDsigBase64Transform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -815,10 +815,10 @@ export interface XmlDsigC14NTransform$instance extends Transform {
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -849,10 +849,10 @@ export interface XmlDsigEnvelopedSignatureTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -873,10 +873,10 @@ export interface XmlDsigExcC14NTransform$instance extends Transform {
     readonly OutputTypes: Type[];
     GetDigestedOutput(hash: HashAlgorithm): byte[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -910,10 +910,10 @@ export interface XmlDsigXPathTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -930,10 +930,10 @@ export interface XmlDsigXsltTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 
@@ -953,10 +953,10 @@ export interface XmlLicenseTransform$instance extends Transform {
     readonly InputTypes: Type[];
     readonly OutputTypes: Type[];
     GetInnerXml(): XmlNodeList | null;
-    GetOutput(): JsValue;
-    GetOutput(type: Type): JsValue;
+    GetOutput(): unknown;
+    GetOutput(type: Type): unknown;
     LoadInnerXml(nodeList: XmlNodeList): void;
-    LoadInput(obj: JsValue): void;
+    LoadInput(obj: unknown): void;
 }
 
 

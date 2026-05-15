@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Http
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -19,12 +19,12 @@ import type { Exception, IDisposable, Object as ClrObject, TimeSpan, Void } from
 export interface IHttpClientAsyncLogger$instance extends IHttpClientLogger {
     readonly __tsonic_iface_Microsoft_Extensions_Http_Logging_IHttpClientAsyncLogger: never;
 
-    LogRequestFailed(context: JsValue | null, request: HttpRequestMessage, response: HttpResponseMessage | null, exception: Exception, elapsed: TimeSpan): void;
-    LogRequestFailedAsync(context: JsValue | null, request: HttpRequestMessage, response: HttpResponseMessage | null, exception: Exception, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
-    LogRequestStart(request: HttpRequestMessage): JsValue | null;
-    LogRequestStartAsync(request: HttpRequestMessage, cancellationToken?: CancellationToken): ValueTask_1<JsValue>;
-    LogRequestStop(context: JsValue | null, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
-    LogRequestStopAsync(context: JsValue | null, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
+    LogRequestFailed(context: unknown | null, request: HttpRequestMessage, response: HttpResponseMessage | null, exception: Exception, elapsed: TimeSpan): void;
+    LogRequestFailedAsync(context: unknown | null, request: HttpRequestMessage, response: HttpResponseMessage | null, exception: Exception, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
+    LogRequestStart(request: HttpRequestMessage): unknown | null;
+    LogRequestStartAsync(request: HttpRequestMessage, cancellationToken?: CancellationToken): ValueTask_1<unknown>;
+    LogRequestStop(context: unknown | null, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
+    LogRequestStopAsync(context: unknown | null, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan, cancellationToken?: CancellationToken): ValueTask;
 }
 
 
@@ -35,9 +35,9 @@ export type IHttpClientAsyncLogger = IHttpClientAsyncLogger$instance;
 export interface IHttpClientLogger$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Http_Logging_IHttpClientLogger: never;
 
-    LogRequestFailed(context: JsValue | null, request: HttpRequestMessage, response: HttpResponseMessage | null, exception: Exception, elapsed: TimeSpan): void;
-    LogRequestStart(request: HttpRequestMessage): JsValue | null;
-    LogRequestStop(context: JsValue | null, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
+    LogRequestFailed(context: unknown | null, request: HttpRequestMessage, response: HttpResponseMessage | null, exception: Exception, elapsed: TimeSpan): void;
+    LogRequestStart(request: HttpRequestMessage): unknown | null;
+    LogRequestStop(context: unknown | null, request: HttpRequestMessage, response: HttpResponseMessage, elapsed: TimeSpan): void;
 }
 
 

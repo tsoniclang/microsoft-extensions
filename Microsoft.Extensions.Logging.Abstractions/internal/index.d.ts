@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Logging.Abstractions
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -23,7 +23,7 @@ export interface IBufferedLogger$instance {
 
 export type IBufferedLogger = IBufferedLogger$instance;
 
-export interface LogEntry_1$instance<TState> {
+export interface LogEntry_1$instance<TState extends unknown> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_LogEntry_1: never;
 
     readonly Category: string;
@@ -36,18 +36,18 @@ export interface LogEntry_1$instance<TState> {
 
 
 export const LogEntry_1: {
-    new<TState>(logLevel: LogLevel, category: string, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): LogEntry_1<TState>;
+    new<TState extends unknown>(logLevel: LogLevel, category: string, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): LogEntry_1<TState>;
 };
 
 
-export type LogEntry_1<TState> = LogEntry_1$instance<TState>;
+export type LogEntry_1<TState extends unknown> = LogEntry_1$instance<TState>;
 
 export interface BufferedLogRecord$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_BufferedLogRecord: never;
 
     readonly ActivitySpanId: Nullable_1<ActivitySpanId>;
     readonly ActivityTraceId: Nullable_1<ActivityTraceId>;
-    readonly Attributes: IReadOnlyList_1<KeyValuePair_2<System_Internal.String, JsValue>>;
+    readonly Attributes: IReadOnlyList_1<KeyValuePair_2<System_Internal.String, unknown>>;
     readonly EventId: EventId;
     readonly Exception: string | null;
     readonly FormattedMessage: string | null;
@@ -69,9 +69,9 @@ export interface NullLogger$instance extends Microsoft_Extensions_Logging_Intern
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
 
-    BeginScope<TState>(state: TState): IDisposable;
+    BeginScope<TState extends unknown>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
+    Log<TState extends unknown>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
 }
 
 
@@ -87,29 +87,29 @@ export interface __NullLogger$views {
 export type NullLogger = NullLogger$instance & __NullLogger$views;
 
 
-export interface NullLogger_1$instance<T> extends ILogger_1<T> {
+export interface NullLogger_1$instance<T extends unknown> extends ILogger_1<T>, Microsoft_Extensions_Logging_Internal.ILogger_1$instance<T> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLogger_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
 
-    BeginScope<TState>(state: TState): IDisposable;
+    BeginScope<TState extends unknown>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
+    Log<TState extends unknown>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
 }
 
 
 export const NullLogger_1: {
-    new<T>(): NullLogger_1<T>;
-    readonly Instance: <T>() => NullLogger_1<T>;
+    new<T extends unknown>(): NullLogger_1<T>;
+    readonly Instance: <T extends unknown>() => NullLogger_1<T>;
 };
 
 
-export interface __NullLogger_1$views<T> {
+export interface __NullLogger_1$views<T extends unknown> {
     As_ILogger(): Microsoft_Extensions_Logging_Internal.ILogger$instance;
 }
 
-export type NullLogger_1<T> = NullLogger_1$instance<T> & __NullLogger_1$views<T>;
+export type NullLogger_1<T extends unknown> = NullLogger_1$instance<T> & __NullLogger_1$views<T>;
 
 
 export interface NullLoggerFactory$instance extends Microsoft_Extensions_Logging_Internal.ILoggerFactory$instance {

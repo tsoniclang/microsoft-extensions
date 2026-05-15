@@ -3,7 +3,7 @@
 // Assembly: Microsoft.Extensions.Logging.Configuration
 
 // Core type aliases from @tsonic/core
-import type { JsValue, fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
 
 
 // Import types from other namespaces
@@ -16,14 +16,14 @@ import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/interna
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject, String as ClrString, Type, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface ILoggerProviderConfiguration_1$instance<T> {
+export interface ILoggerProviderConfiguration_1$instance<T extends unknown> {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfiguration_1: never;
 
     readonly Configuration: IConfiguration;
 }
 
 
-export type ILoggerProviderConfiguration_1<T> = ILoggerProviderConfiguration_1$instance<T>;
+export type ILoggerProviderConfiguration_1<T extends unknown> = ILoggerProviderConfiguration_1$instance<T>;
 
 export interface ILoggerProviderConfigurationFactory$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Configuration_ILoggerProviderConfigurationFactory: never;
@@ -34,7 +34,7 @@ export interface ILoggerProviderConfigurationFactory$instance {
 
 export type ILoggerProviderConfigurationFactory = ILoggerProviderConfigurationFactory$instance;
 
-export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> extends ConfigurationChangeTokenSource_1<TOptions>, Microsoft_Extensions_Options_Internal.IOptionsChangeTokenSource_1$instance<TOptions> {
+export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions extends unknown, TProvider extends unknown> extends ConfigurationChangeTokenSource_1<TOptions>, Microsoft_Extensions_Options_Internal.IOptionsChangeTokenSource_1$instance<TOptions> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Configuration_LoggerProviderOptionsChangeTokenSource_2: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptionsChangeTokenSource_1: never;
@@ -43,19 +43,19 @@ export interface LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TPr
 
 
 export const LoggerProviderOptionsChangeTokenSource_2: {
-    new<TOptions, TProvider>(providerConfiguration: ILoggerProviderConfiguration_1<TProvider>): LoggerProviderOptionsChangeTokenSource_2<TOptions, TProvider>;
+    new<TOptions extends unknown, TProvider extends unknown>(providerConfiguration: ILoggerProviderConfiguration_1<TProvider>): LoggerProviderOptionsChangeTokenSource_2<TOptions, TProvider>;
 };
 
 
-export interface __LoggerProviderOptionsChangeTokenSource_2$views<TOptions, TProvider> {
+export interface __LoggerProviderOptionsChangeTokenSource_2$views<TOptions extends unknown, TProvider extends unknown> {
     As_IOptionsChangeTokenSource_1(): Microsoft_Extensions_Options_Internal.IOptionsChangeTokenSource_1$instance<TOptions>;
 }
 
-export type LoggerProviderOptionsChangeTokenSource_2<TOptions, TProvider> = LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> & __LoggerProviderOptionsChangeTokenSource_2$views<TOptions, TProvider>;
+export type LoggerProviderOptionsChangeTokenSource_2<TOptions extends unknown, TProvider extends unknown> = LoggerProviderOptionsChangeTokenSource_2$instance<TOptions, TProvider> & __LoggerProviderOptionsChangeTokenSource_2$views<TOptions, TProvider>;
 
 
 export abstract class LoggerProviderOptions$instance {
-    static RegisterProviderOptions<TOptions, TProvider>(services: IServiceCollection): void;
+    static RegisterProviderOptions<TOptions extends (object | null), TProvider extends unknown>(services: IServiceCollection): void;
 }
 
 

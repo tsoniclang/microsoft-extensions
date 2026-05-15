@@ -5,6 +5,10 @@
 // Import internal declarations
 import * as Internal from './Microsoft.Extensions.Localization/internal/index.js';
 
+// Core type aliases from @tsonic/core
+import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, int128, uint128, half, float, double, decimal, nint, nuint, char } from '@tsonic/core/types.js';
+
+
 // Cross-namespace type imports for constraints
 import type { ILogger, ILoggerFactory } from './Microsoft.Extensions.Logging/internal/index.js';
 import type { IOptions_1 } from './Microsoft.Extensions.Options/internal/index.js';
@@ -34,10 +38,10 @@ declare const __unspecified: unique symbol;
 export type __ = typeof __unspecified;
 
 export type IStringLocalizer<
-  T1 = __,
+  T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IStringLocalizer :
-  Internal.IStringLocalizer_1<T1>;
+  [T1] extends [unknown] ? Internal.IStringLocalizer_1<T1> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Localization as ExtensionMethods } from './__internal/extensions/index.js';
