@@ -70,6 +70,14 @@ declarations, extension buckets, and `bindings.json` compiler metadata:
 The `bindings.json` files preserve CLR identity, overloads, receiver semantics,
 extension methods, nullable/reference metadata, and generic constraints.
 
+## Broad CLR values
+
+Generated CLR object slots are represented with TypeScript `unknown`, not a
+package-specific catch-all value. Dependency injection, configuration, logging,
+and options APIs frequently expose broad CLR values; user code narrows those
+values explicitly before member access. Value-type constraints are represented
+with `NonNullable<unknown>`.
+
 ## Versioning
 
 This repo is versioned by .NET major:
