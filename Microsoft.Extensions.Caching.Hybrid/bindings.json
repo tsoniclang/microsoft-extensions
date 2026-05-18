@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-      "clrName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -17,24 +17,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -42,132 +42,132 @@
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108865,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::NoneMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67108866,
           "normalizedSignature": "None|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableLocalCacheReadMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableLocalCacheRead",
+          "targetName": "DisableLocalCacheRead",
           "metadataToken": 67108867,
           "normalizedSignature": "DisableLocalCacheRead|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableLocalCacheWriteMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableLocalCacheWrite",
+          "targetName": "DisableLocalCacheWrite",
           "metadataToken": 67108868,
           "normalizedSignature": "DisableLocalCacheWrite|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableLocalCacheMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableLocalCache",
+          "targetName": "DisableLocalCache",
           "metadataToken": 67108869,
           "normalizedSignature": "DisableLocalCache|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableDistributedCacheReadMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableDistributedCacheRead",
+          "targetName": "DisableDistributedCacheRead",
           "metadataToken": 67108870,
           "normalizedSignature": "DisableDistributedCacheRead|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableDistributedCacheWriteMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableDistributedCacheWrite",
+          "targetName": "DisableDistributedCacheWrite",
           "metadataToken": 67108871,
           "normalizedSignature": "DisableDistributedCacheWrite|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableDistributedCacheMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableDistributedCache",
+          "targetName": "DisableDistributedCache",
           "metadataToken": 67108872,
           "normalizedSignature": "DisableDistributedCache|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableUnderlyingDataMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableUnderlyingData",
+          "targetName": "DisableUnderlyingData",
           "metadataToken": 67108873,
           "normalizedSignature": "DisableUnderlyingData|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags::DisableCompressionMicrosoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "clrName": "DisableCompression",
+          "targetName": "DisableCompression",
           "metadataToken": 67108874,
           "normalizedSignature": "DisableCompression|Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         }
       ],
       "events": [],
       "constructors": []
     },
     {
-      "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer\u00601",
-      "clrName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer\u00601",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1",
+      "targetName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -180,8 +180,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer\u00601::Deserialize(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
-          "clrName": "Deserialize",
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1::Deserialize(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
+          "targetName": "Deserialize",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T",
           "normalizedSignature": "Deserialize|(System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):T|static=false",
@@ -195,13 +195,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer\u00601::Serialize(T,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
-          "clrName": "Serialize",
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1::Serialize(T,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
+          "targetName": "Serialize",
           "metadataToken": 100663323,
           "canonicalSignature": "(T,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void",
           "normalizedSignature": "Serialize|(T,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Void|static=false",
@@ -215,8 +215,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializer`1",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -227,8 +227,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory",
-      "clrName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -238,11 +238,11 @@
       "arity": 0,
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory::TryCreateSerializer(IHybridCacheSerializer_1\u0026):System.Boolean",
-          "clrName": "TryCreateSerializer",
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory::TryCreateSerializer(IHybridCacheSerializer_1&):System.Boolean",
+          "targetName": "TryCreateSerializer",
           "metadataToken": 100663324,
-          "canonicalSignature": "(IHybridCacheSerializer_1\u0026):System.Boolean",
-          "normalizedSignature": "TryCreateSerializer|(IHybridCacheSerializer_1\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(IHybridCacheSerializer_1&):System.Boolean",
+          "normalizedSignature": "TryCreateSerializer|(IHybridCacheSerializer_1&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -253,8 +253,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.IHybridCacheSerializerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -271,8 +271,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache",
-      "clrName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -282,12 +282,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.String,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "GetOrCreateAsync",
+          "targetName": "GetOrCreateAsync",
           "metadataToken": 100663300,
           "canonicalSignature": "(System.String,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "GetOrCreateAsync|(System.String,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -301,13 +301,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.String,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "GetOrCreateAsync",
+          "targetName": "GetOrCreateAsync",
           "metadataToken": 100663301,
           "canonicalSignature": "(System.String,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "GetOrCreateAsync|(System.String,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -321,13 +321,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "GetOrCreateAsync",
+          "targetName": "GetOrCreateAsync",
           "metadataToken": 100663302,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "GetOrCreateAsync|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -341,13 +341,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "GetOrCreateAsync",
+          "targetName": "GetOrCreateAsync",
           "metadataToken": 100663303,
           "canonicalSignature": "(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
           "normalizedSignature": "GetOrCreateAsync|(System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
@@ -361,16 +361,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler\u0026,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "GetOrCreateAsync",
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
+          "targetName": "GetOrCreateAsync",
           "metadataToken": 100663304,
-          "canonicalSignature": "(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler\u0026,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "normalizedSignature": "GetOrCreateAsync|(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler\u0026,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
+          "canonicalSignature": "(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
+          "normalizedSignature": "GetOrCreateAsync|(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&,Func_2,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 1,
@@ -381,8 +381,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -392,11 +392,11 @@
           ]
         },
         {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler\u0026,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "clrName": "GetOrCreateAsync",
+          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::GetOrCreateAsync(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
+          "targetName": "GetOrCreateAsync",
           "metadataToken": 100663305,
-          "canonicalSignature": "(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler\u0026,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
-          "normalizedSignature": "GetOrCreateAsync|(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler\u0026,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
+          "canonicalSignature": "(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1",
+          "normalizedSignature": "GetOrCreateAsync|(System.Runtime.CompilerServices.DefaultInterpolatedStringHandler&,TState,Func_3,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):ValueTask_1|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 2,
@@ -407,8 +407,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -419,7 +419,7 @@
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::SetAsync(System.String,T,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663306,
           "canonicalSignature": "(System.String,T,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "SetAsync|(System.String,T,Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -433,13 +433,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::RemoveAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "RemoveAsync",
+          "targetName": "RemoveAsync",
           "metadataToken": 100663307,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "RemoveAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -453,13 +453,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::RemoveAsync(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "RemoveAsync",
+          "targetName": "RemoveAsync",
           "metadataToken": 100663308,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "RemoveAsync|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -473,13 +473,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::RemoveByTagAsync(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "RemoveByTagAsync",
+          "targetName": "RemoveByTagAsync",
           "metadataToken": 100663309,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "RemoveByTagAsync|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -493,13 +493,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::RemoveByTagAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "RemoveByTagAsync",
+          "targetName": "RemoveByTagAsync",
           "metadataToken": 100663310,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "RemoveByTagAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -513,8 +513,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -530,15 +530,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
-      "clrName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -548,13 +548,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions::Expiration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Expiration",
+          "targetName": "Expiration",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Expiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -568,12 +568,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions::LocalCacheExpiration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LocalCacheExpiration",
+          "targetName": "LocalCacheExpiration",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LocalCacheExpiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -587,12 +587,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions::Flags:System.Nullable_1[[Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Flags",
+          "targetName": "Flags",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.Nullable_1[[Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Flags|:System.Nullable_1[[Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryFlags,Microsoft.Extensions.Caching.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -606,8 +606,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         }
       ],
       "fields": [],
@@ -621,8 +621,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-      "clrName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-      "assemblyName": "Microsoft.Extensions.Configuration.Json",
+      "targetName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
+      "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,22 +17,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationProvider",
-        "clrName": "Microsoft.Extensions.Configuration.FileConfigurationProvider"
+        "targetName": "Microsoft.Extensions.Configuration.FileConfigurationProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          "targetName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::Load(System.IO.Stream):System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 100663333,
           "canonicalSignature": "(System.IO.Stream):System.Void",
           "normalizedSignature": "Load|(System.IO.Stream):System.Void|static=false",
@@ -46,16 +46,16 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
-          "clrName": "TryGet",
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String&):System.Boolean",
+          "targetName": "TryGet",
           "metadataToken": 100663343,
-          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
-          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.String,System.String&):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String&):System.Boolean|static=false",
           "emitScope": "ViewOnly",
           "provenance": "ExplicitView",
           "arity": 0,
@@ -66,8 +66,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "parameterModifiers": [
@@ -79,7 +79,7 @@
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -93,14 +93,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
-          "clrName": "GetReloadToken",
+          "targetName": "GetReloadToken",
           "metadataToken": 100663345,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
@@ -114,14 +114,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 100663346,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
@@ -135,14 +135,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetChildKeys",
+          "targetName": "GetChildKeys",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -156,14 +156,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider::Load():System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 0,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
@@ -177,8 +177,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
         }
       ],
@@ -194,15 +194,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-      "clrName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-      "assemblyName": "Microsoft.Extensions.Configuration.Json",
+      "targetName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
+      "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -212,18 +212,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationSource",
-        "clrName": "Microsoft.Extensions.Configuration.FileConfigurationSource"
+        "targetName": "Microsoft.Extensions.Configuration.FileConfigurationSource"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
-          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+          "targetName": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
@@ -237,13 +237,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
@@ -257,8 +257,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
@@ -275,15 +275,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-      "clrName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-      "assemblyName": "Microsoft.Extensions.Configuration.Json",
+      "targetName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
+      "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -293,18 +293,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationProvider",
-        "clrName": "Microsoft.Extensions.Configuration.StreamConfigurationProvider"
+        "targetName": "Microsoft.Extensions.Configuration.StreamConfigurationProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          "targetName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::Load(System.IO.Stream):System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 100663337,
           "canonicalSignature": "(System.IO.Stream):System.Void",
           "normalizedSignature": "Load|(System.IO.Stream):System.Void|static=false",
@@ -318,16 +318,16 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
-          "clrName": "TryGet",
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String&):System.Boolean",
+          "targetName": "TryGet",
           "metadataToken": 100663343,
-          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
-          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.String,System.String&):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String&):System.Boolean|static=false",
           "emitScope": "ViewOnly",
           "provenance": "ExplicitView",
           "arity": 0,
@@ -338,8 +338,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "parameterModifiers": [
@@ -351,7 +351,7 @@
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -365,14 +365,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
-          "clrName": "GetReloadToken",
+          "targetName": "GetReloadToken",
           "metadataToken": 100663345,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
@@ -386,14 +386,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 100663346,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
@@ -407,14 +407,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetChildKeys",
+          "targetName": "GetChildKeys",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -428,14 +428,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider::Load():System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 0,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
@@ -449,8 +449,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
         }
       ],
@@ -466,15 +466,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-      "clrName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-      "assemblyName": "Microsoft.Extensions.Configuration.Json",
+      "targetName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
+      "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -484,18 +484,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationSource",
-        "clrName": "Microsoft.Extensions.Configuration.StreamConfigurationSource"
+        "targetName": "Microsoft.Extensions.Configuration.StreamConfigurationSource"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
-          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+          "targetName": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Json:Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
@@ -509,13 +509,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
@@ -529,8 +529,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
@@ -547,8 +547,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Json"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Json.JsonStreamConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Json"
         }
       ]
     }

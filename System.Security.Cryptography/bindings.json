@@ -8,8 +8,8 @@
   "types": [
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject",
-      "clrName": "System.Security.Cryptography.CryptographicAttributeObject",
-      "assemblyName": "System.Security.Cryptography.Pkcs",
+      "targetName": "System.Security.Cryptography.CryptographicAttributeObject",
+      "ownerIdentity": "System.Security.Cryptography.Pkcs",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -19,13 +19,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject::Oid:System.Security.Cryptography.Oid",
-          "clrName": "Oid",
+          "targetName": "Oid",
           "metadataToken": 385876063,
           "canonicalSignature": ":System.Security.Cryptography.Oid",
           "normalizedSignature": "Oid|:System.Security.Cryptography.Oid|static=false|accessor=get",
@@ -39,12 +39,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObject",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject::Values:System.Security.Cryptography.AsnEncodedDataCollection",
-          "clrName": "Values",
+          "targetName": "Values",
           "metadataToken": 385876064,
           "canonicalSignature": ":System.Security.Cryptography.AsnEncodedDataCollection",
           "normalizedSignature": "Values|:System.Security.Cryptography.AsnEncodedDataCollection|static=false|accessor=get",
@@ -58,8 +58,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObject",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         }
       ],
       "fields": [],
@@ -73,8 +73,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObject",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObject::.ctor(System.Security.Cryptography.Oid,System.Security.Cryptography.AsnEncodedDataCollection):void",
@@ -84,15 +84,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObject",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObject",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         }
       ]
     },
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection",
-      "clrName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-      "assemblyName": "System.Security.Cryptography.Pkcs",
+      "targetName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+      "ownerIdentity": "System.Security.Cryptography.Pkcs",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -102,22 +102,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Collections.ICollection",
-          "clrName": "System.Collections.ICollection"
+          "targetName": "System.Collections.ICollection"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Add(System.Security.Cryptography.AsnEncodedData):System.Int32",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663528,
           "canonicalSignature": "(System.Security.Cryptography.AsnEncodedData):System.Int32",
           "normalizedSignature": "Add|(System.Security.Cryptography.AsnEncodedData):System.Int32|static=false",
@@ -131,13 +131,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Add(System.Security.Cryptography.CryptographicAttributeObject):System.Int32",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663529,
           "canonicalSignature": "(System.Security.Cryptography.CryptographicAttributeObject):System.Int32",
           "normalizedSignature": "Add|(System.Security.Cryptography.CryptographicAttributeObject):System.Int32|static=false",
@@ -151,13 +151,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Remove(System.Security.Cryptography.CryptographicAttributeObject):System.Void",
-          "clrName": "Remove",
+          "targetName": "Remove",
           "metadataToken": 100663531,
           "canonicalSignature": "(System.Security.Cryptography.CryptographicAttributeObject):System.Void",
           "normalizedSignature": "Remove|(System.Security.Cryptography.CryptographicAttributeObject):System.Void|static=false",
@@ -171,13 +171,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::GetEnumerator():System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-          "clrName": "GetEnumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663536,
           "canonicalSignature": "():System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Security.Cryptography.CryptographicAttributeObjectEnumerator|static=false",
@@ -191,13 +191,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::CopyTo(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663539,
           "canonicalSignature": "(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Security.Cryptography.CryptographicAttributeObject[],System.Int32):System.Void|static=false",
@@ -211,15 +211,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Item[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385876065,
           "canonicalSignature": "[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject",
           "normalizedSignature": "Item|[System.Int32]:System.Security.Cryptography.CryptographicAttributeObject|static=false|accessor=get",
@@ -233,12 +233,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::Count:System.Int32",
-          "clrName": "Count",
+          "targetName": "Count",
           "metadataToken": 385876066,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
@@ -252,12 +252,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::IsSynchronized:System.Boolean",
-          "clrName": "IsSynchronized",
+          "targetName": "IsSynchronized",
           "metadataToken": 385876067,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "IsSynchronized|:System.Boolean|static=false|accessor=get",
@@ -271,12 +271,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::SyncRoot:System.Object",
-          "clrName": "SyncRoot",
+          "targetName": "SyncRoot",
           "metadataToken": 385876068,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "SyncRoot|:System.Object|static=false|accessor=get",
@@ -290,8 +290,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         }
       ],
       "fields": [],
@@ -305,8 +305,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectCollection::.ctor(System.Security.Cryptography.CryptographicAttributeObject):void",
@@ -316,15 +316,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectCollection",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         }
       ]
     },
     {
       "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-      "clrName": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-      "assemblyName": "System.Security.Cryptography.Pkcs",
+      "targetName": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
+      "ownerIdentity": "System.Security.Cryptography.Pkcs",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -334,18 +334,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
+          "targetName": "System.Collections.IEnumerator"
         }
       ],
       "methods": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
+          "targetName": "MoveNext",
           "metadataToken": 100663543,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "MoveNext|():System.Boolean|static=false",
@@ -359,13 +359,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator::Reset():System.Void",
-          "clrName": "Reset",
+          "targetName": "Reset",
           "metadataToken": 100663544,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
@@ -379,15 +379,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs",
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Security.Cryptography.Pkcs:System.Security.Cryptography.CryptographicAttributeObjectEnumerator::Current:System.Security.Cryptography.CryptographicAttributeObject",
-          "clrName": "Current",
+          "targetName": "Current",
           "metadataToken": 385876069,
           "canonicalSignature": ":System.Security.Cryptography.CryptographicAttributeObject",
           "normalizedSignature": "Current|:System.Security.Cryptography.CryptographicAttributeObject|static=false|accessor=get",
@@ -401,8 +401,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
-          "declaringAssemblyName": "System.Security.Cryptography.Pkcs"
+          "ownerQualifiedName": "System.Security.Cryptography.CryptographicAttributeObjectEnumerator",
+          "ownerIdentity": "System.Security.Cryptography.Pkcs"
         }
       ],
       "fields": [],

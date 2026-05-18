@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
-      "clrName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
-      "assemblyName": "Microsoft.Extensions.Configuration",
+      "targetName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
+      "ownerIdentity": "Microsoft.Extensions.Configuration",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,29 +17,29 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider",
-        "clrName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
+        "targetName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          "targetName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "KeyValuePair_2[[String,String]]"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider::Add(System.String,System.String):System.Void",
-          "clrName": "Add",
+          "targetName": "Add",
           "metadataToken": 100663445,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Add|(System.String,System.String):System.Void|static=false",
@@ -53,13 +53,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider::GetEnumerator():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetEnumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663446,
           "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -73,16 +73,16 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String\u0026):System.Boolean",
-          "clrName": "TryGet",
+          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String&):System.Boolean",
+          "targetName": "TryGet",
           "metadataToken": 100663343,
-          "canonicalSignature": "(System.String,System.String\u0026):System.Boolean",
-          "normalizedSignature": "TryGet|(System.String,System.String\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.String,System.String&):System.Boolean",
+          "normalizedSignature": "TryGet|(System.String,System.String&):System.Boolean|static=false",
           "emitScope": "ViewOnly",
           "provenance": "ExplicitView",
           "arity": 0,
@@ -93,8 +93,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
           "parameterModifiers": [
@@ -106,7 +106,7 @@
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663344,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
@@ -120,14 +120,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
-          "clrName": "GetReloadToken",
+          "targetName": "GetReloadToken",
           "metadataToken": 100663345,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
           "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
@@ -141,14 +141,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
-          "clrName": "Load",
+          "targetName": "Load",
           "metadataToken": 100663346,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Load|():System.Void|static=false",
@@ -162,14 +162,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetChildKeys",
+          "targetName": "GetChildKeys",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -183,8 +183,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
         }
@@ -201,15 +201,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationProvider",
+          "ownerIdentity": "Microsoft.Extensions.Configuration"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
-      "clrName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
-      "assemblyName": "Microsoft.Extensions.Configuration",
+      "targetName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
+      "ownerIdentity": "Microsoft.Extensions.Configuration",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -219,18 +219,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
-          "clrName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+          "targetName": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663450,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
@@ -244,13 +244,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
           "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
@@ -264,8 +264,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.IConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
         }
@@ -273,7 +273,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource::InitialData:System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "InitialData",
+          "targetName": "InitialData",
           "metadataToken": 385876005,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "InitialData|:System.Collections.Generic.IEnumerable_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -287,8 +287,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration"
         }
       ],
       "fields": [],
@@ -302,8 +302,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Configuration"
+          "ownerQualifiedName": "Microsoft.Extensions.Configuration.Memory.MemoryConfigurationSource",
+          "ownerIdentity": "Microsoft.Extensions.Configuration"
         }
       ]
     }

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-      "clrName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "targetName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "stableId": "System.Private.CoreLib:System.IEquatable`1",
+          "targetName": "System.IEquatable`1",
           "typeArguments": [
             "FilePatternMatch"
           ]
@@ -31,7 +31,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Equals(Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663320,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch):System.Boolean|static=false",
@@ -45,13 +45,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -65,13 +65,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663322,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -85,15 +85,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Path:System.String",
-          "clrName": "Path",
+          "targetName": "Path",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=get",
@@ -107,12 +107,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch::Stem:System.String",
-          "clrName": "Stem",
+          "targetName": "Stem",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Stem|:System.String|static=false|accessor=get",
@@ -126,8 +126,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ],
       "fields": [],
@@ -141,15 +141,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-      "clrName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "targetName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -159,12 +159,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
-        "clrName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase"
+        "targetName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::EnumerateFileSystemInfos():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "EnumerateFileSystemInfos",
+          "targetName": "EnumerateFileSystemInfos",
           "metadataToken": 100663329,
           "canonicalSignature": "():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "EnumerateFileSystemInfos|():System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
@@ -178,13 +178,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::GetDirectory(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
-          "clrName": "GetDirectory",
+          "targetName": "GetDirectory",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
           "normalizedSignature": "GetDirectory|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false",
@@ -198,13 +198,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::GetFile(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
-          "clrName": "GetFile",
+          "targetName": "GetFile",
           "metadataToken": 100663332,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
           "normalizedSignature": "GetFile|(System.String):Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase|static=false",
@@ -218,15 +218,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::FullName:System.String",
-          "clrName": "FullName",
+          "targetName": "FullName",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FullName|:System.String|static=false|accessor=get",
@@ -240,12 +240,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -259,12 +259,12 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo::ParentDirectory:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
-          "clrName": "ParentDirectory",
+          "targetName": "ParentDirectory",
           "metadataToken": 385875979,
           "canonicalSignature": ":Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
           "normalizedSignature": "ParentDirectory|:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase|static=false|accessor=get",
@@ -278,8 +278,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ],
       "fields": [],
@@ -293,15 +293,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.InMemoryDirectoryInfo",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher",
-      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "targetName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -311,12 +311,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::AddInclude(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "clrName": "AddInclude",
+          "targetName": "AddInclude",
           "metadataToken": 100663337,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher",
           "normalizedSignature": "AddInclude|(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher|static=false",
@@ -330,13 +330,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::AddExclude(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "clrName": "AddExclude",
+          "targetName": "AddExclude",
           "metadataToken": 100663338,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher",
           "normalizedSignature": "AddExclude|(System.String):Microsoft.Extensions.FileSystemGlobbing.Matcher|static=false",
@@ -350,13 +350,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::Execute(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "clrName": "Execute",
+          "targetName": "Execute",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
           "normalizedSignature": "Execute|(Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=false",
@@ -370,8 +370,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         }
       ],
@@ -387,8 +387,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::.ctor(System.StringComparison):void",
@@ -398,8 +398,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Matcher::.ctor(System.StringComparison,System.Boolean):void",
@@ -409,15 +409,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Matcher",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-      "clrName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "targetName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -427,13 +427,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult::Files:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Files",
+          "targetName": "Files",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Files|:System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=getset",
@@ -447,12 +447,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult::HasMatches:System.Boolean",
-          "clrName": "HasMatches",
+          "targetName": "HasMatches",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasMatches|:System.Boolean|static=false|accessor=get",
@@ -466,8 +466,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ],
       "fields": [],
@@ -481,8 +481,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult::.ctor(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.FileSystemGlobbing.FilePatternMatch,Microsoft.Extensions.FileSystemGlobbing,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Boolean):void",
@@ -492,15 +492,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-      "clrName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "targetName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -510,12 +510,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::AddExcludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void",
-          "clrName": "AddExcludePatterns",
+          "targetName": "AddExcludePatterns",
           "metadataToken": 100663340,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void",
           "normalizedSignature": "AddExcludePatterns|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void|static=true",
@@ -529,13 +529,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::AddIncludePatterns(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void",
-          "clrName": "AddIncludePatterns",
+          "targetName": "AddIncludePatterns",
           "metadataToken": 100663341,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void",
           "normalizedSignature": "AddIncludePatterns|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]][]):System.Void|static=true",
@@ -549,13 +549,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::GetResultsInFullPath(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetResultsInFullPath",
+          "targetName": "GetResultsInFullPath",
           "metadataToken": 100663342,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetResultsInFullPath|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -569,13 +569,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663343,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
           "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
@@ -589,13 +589,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663344,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
           "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.String):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
@@ -609,13 +609,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663345,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
           "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
@@ -629,13 +629,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions::Match(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
-          "clrName": "Match",
+          "targetName": "Match",
           "metadataToken": 100663346,
           "canonicalSignature": "(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult",
           "normalizedSignature": "Match|(Microsoft.Extensions.FileSystemGlobbing.Matcher,System.String,System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):Microsoft.Extensions.FileSystemGlobbing.PatternMatchingResult|static=true",
@@ -649,8 +649,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.MatcherExtensions",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": true
         }
       ],

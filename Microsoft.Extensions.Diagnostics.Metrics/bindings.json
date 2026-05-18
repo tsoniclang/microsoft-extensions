@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -18,24 +18,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -43,51 +43,51 @@
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeterScope::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108881,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeterScope::NoneMicrosoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "clrName": "None",
+          "targetName": "None",
           "metadataToken": 67108882,
           "normalizedSignature": "None|Microsoft.Extensions.Diagnostics.Metrics.MeterScope|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeterScope::GlobalMicrosoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "clrName": "Global",
+          "targetName": "Global",
           "metadataToken": 67108883,
           "normalizedSignature": "Global|Microsoft.Extensions.Diagnostics.Metrics.MeterScope|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeterScope::LocalMicrosoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "clrName": "Local",
+          "targetName": "Local",
           "metadataToken": 67108884,
           "normalizedSignature": "Local|Microsoft.Extensions.Diagnostics.Metrics.MeterScope|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ],
       "events": [],
@@ -95,8 +95,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -108,7 +108,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder::Services:Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875970,
           "canonicalSignature": ":Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
@@ -122,8 +122,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ],
       "fields": [],
@@ -132,8 +132,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -144,7 +144,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener::Initialize(Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource):System.Void",
-          "clrName": "Initialize",
+          "targetName": "Initialize",
           "metadataToken": 100663319,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource):System.Void",
           "normalizedSignature": "Initialize|(Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource):System.Void|static=false",
@@ -158,16 +158,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener::InstrumentPublished(System.Diagnostics.Metrics.Instrument,System.Object\u0026):System.Boolean",
-          "clrName": "InstrumentPublished",
+          "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener::InstrumentPublished(System.Diagnostics.Metrics.Instrument,System.Object&):System.Boolean",
+          "targetName": "InstrumentPublished",
           "metadataToken": 100663320,
-          "canonicalSignature": "(System.Diagnostics.Metrics.Instrument,System.Object\u0026):System.Boolean",
-          "normalizedSignature": "InstrumentPublished|(System.Diagnostics.Metrics.Instrument,System.Object\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Diagnostics.Metrics.Instrument,System.Object&):System.Boolean",
+          "normalizedSignature": "InstrumentPublished|(System.Diagnostics.Metrics.Instrument,System.Object&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -178,8 +178,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -190,7 +190,7 @@
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener::MeasurementsCompleted(System.Diagnostics.Metrics.Instrument,System.Object):System.Void",
-          "clrName": "MeasurementsCompleted",
+          "targetName": "MeasurementsCompleted",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.Diagnostics.Metrics.Instrument,System.Object):System.Void",
           "normalizedSignature": "MeasurementsCompleted|(System.Diagnostics.Metrics.Instrument,System.Object):System.Void|static=false",
@@ -204,13 +204,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener::GetMeasurementHandlers():Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "clrName": "GetMeasurementHandlers",
+          "targetName": "GetMeasurementHandlers",
           "metadataToken": 100663322,
           "canonicalSignature": "():Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
           "normalizedSignature": "GetMeasurementHandlers|():Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers|static=false",
@@ -224,15 +224,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=get",
@@ -246,8 +246,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ],
       "fields": [],
@@ -256,8 +256,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -268,7 +268,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource::RecordObservableInstruments():System.Void",
-          "clrName": "RecordObservableInstruments",
+          "targetName": "RecordObservableInstruments",
           "metadataToken": 100663329,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "RecordObservableInstruments|():System.Void|static=false",
@@ -282,8 +282,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.IObservableInstrumentsSource",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -294,8 +294,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -305,13 +305,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule::MeterName:System.String",
-          "clrName": "MeterName",
+          "targetName": "MeterName",
           "metadataToken": 385875972,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MeterName|:System.String|static=false|accessor=get",
@@ -325,12 +325,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule::InstrumentName:System.String",
-          "clrName": "InstrumentName",
+          "targetName": "InstrumentName",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "InstrumentName|:System.String|static=false|accessor=get",
@@ -344,12 +344,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule::ListenerName:System.String",
-          "clrName": "ListenerName",
+          "targetName": "ListenerName",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ListenerName|:System.String|static=false|accessor=get",
@@ -363,12 +363,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule::Scopes:Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
-          "clrName": "Scopes",
+          "targetName": "Scopes",
           "metadataToken": 385875975,
           "canonicalSignature": ":Microsoft.Extensions.Diagnostics.Metrics.MeterScope",
           "normalizedSignature": "Scopes|:Microsoft.Extensions.Diagnostics.Metrics.MeterScope|static=false|accessor=get",
@@ -382,12 +382,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule::Enable:System.Boolean",
-          "clrName": "Enable",
+          "targetName": "Enable",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "Enable|:System.Boolean|static=false|accessor=get",
@@ -401,8 +401,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ],
       "fields": [],
@@ -416,15 +416,15 @@
           "isStatic": false,
           "parameterCount": 5,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -434,13 +434,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::ByteHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ByteHandler",
+          "targetName": "ByteHandler",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ByteHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -454,12 +454,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::ShortHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ShortHandler",
+          "targetName": "ShortHandler",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ShortHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int16,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -473,12 +473,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::IntHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "IntHandler",
+          "targetName": "IntHandler",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "IntHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -492,12 +492,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::LongHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "LongHandler",
+          "targetName": "LongHandler",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "LongHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Int64,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -511,12 +511,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::FloatHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Single,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "FloatHandler",
+          "targetName": "FloatHandler",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Single,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "FloatHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Single,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -530,12 +530,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::DoubleHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "DoubleHandler",
+          "targetName": "DoubleHandler",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "DoubleHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Double,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -549,12 +549,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers::DecimalHandler:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Decimal,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "DecimalHandler",
+          "targetName": "DecimalHandler",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Diagnostics.Metrics.MeasurementCallback_1[[System.Decimal,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "DecimalHandler|:System.Diagnostics.Metrics.MeasurementCallback_1[[System.Decimal,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -568,8 +568,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ],
       "fields": [],
@@ -583,15 +583,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MeasurementHandlers",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -601,13 +601,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions::Rules:System.Collections.Generic.IList_1[[Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Rules",
+          "targetName": "Rules",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Rules|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Diagnostics.Metrics.InstrumentRule,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -621,8 +621,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ],
       "fields": [],
@@ -636,15 +636,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics",
-      "assemblyName": "Microsoft.Extensions.Diagnostics",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -654,13 +654,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics::DebugListenerName:System.String",
-          "clrName": "DebugListenerName",
+          "targetName": "DebugListenerName",
           "metadataToken": 385875973,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "DebugListenerName|:System.String|static=true|accessor=get",
@@ -674,8 +674,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics"
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.ConsoleMetrics",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics"
         }
       ],
       "fields": [],
@@ -684,8 +684,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions",
-      "assemblyName": "Microsoft.Extensions.Diagnostics",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -695,12 +695,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions::AddConfiguration(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "AddConfiguration",
+          "targetName": "AddConfiguration",
           "metadataToken": 100663321,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "AddConfiguration|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Configuration.IConfiguration):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -714,8 +714,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConfigurationExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": true
         }
       ],
@@ -726,8 +726,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions",
-      "assemblyName": "Microsoft.Extensions.Diagnostics",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -737,12 +737,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions::AddDebugConsole(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "AddDebugConsole",
+          "targetName": "AddDebugConsole",
           "metadataToken": 100663351,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "AddDebugConsole|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -756,8 +756,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderConsoleExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": true
         }
       ],
@@ -768,8 +768,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-      "assemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -779,12 +779,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::AddListener(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "AddListener",
+          "targetName": "AddListener",
           "metadataToken": 100663345,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "AddListener|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -798,13 +798,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::AddListener(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "AddListener",
+          "targetName": "AddListener",
           "metadataToken": 100663346,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "AddListener|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Metrics.IMetricsListener):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -818,13 +818,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::ClearListeners(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "ClearListeners",
+          "targetName": "ClearListeners",
           "metadataToken": 100663347,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "ClearListeners|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -838,13 +838,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::EnableMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "EnableMetrics",
+          "targetName": "EnableMetrics",
           "metadataToken": 100663348,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "EnableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -858,13 +858,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::EnableMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "EnableMetrics",
+          "targetName": "EnableMetrics",
           "metadataToken": 100663349,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "EnableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -878,13 +878,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::EnableMetrics(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-          "clrName": "EnableMetrics",
+          "targetName": "EnableMetrics",
           "metadataToken": 100663350,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
           "normalizedSignature": "EnableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions|static=true",
@@ -898,13 +898,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::EnableMetrics(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-          "clrName": "EnableMetrics",
+          "targetName": "EnableMetrics",
           "metadataToken": 100663351,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
           "normalizedSignature": "EnableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions|static=true",
@@ -918,13 +918,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::DisableMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "DisableMetrics",
+          "targetName": "DisableMetrics",
           "metadataToken": 100663352,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "DisableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -938,13 +938,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::DisableMetrics(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "DisableMetrics",
+          "targetName": "DisableMetrics",
           "metadataToken": 100663353,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "DisableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=true",
@@ -958,13 +958,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::DisableMetrics(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-          "clrName": "DisableMetrics",
+          "targetName": "DisableMetrics",
           "metadataToken": 100663354,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
           "normalizedSignature": "DisableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions|static=true",
@@ -978,13 +978,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Diagnostics.Abstractions:Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions::DisableMetrics(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
-          "clrName": "DisableMetrics",
+          "targetName": "DisableMetrics",
           "metadataToken": 100663355,
           "canonicalSignature": "(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions",
           "normalizedSignature": "DisableMetrics|(Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions,System.String,System.String,System.String,Microsoft.Extensions.Diagnostics.Metrics.MeterScope):Microsoft.Extensions.Diagnostics.Metrics.MetricsOptions|static=true",
@@ -998,8 +998,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.MetricsBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics.Abstractions",
           "isExtensionMethod": true
         }
       ],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo",
-      "clrName": "Microsoft.Extensions.Validation.IValidatableInfo",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.IValidatableInfo",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663298,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.IValidatableInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.IValidatableInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         }
       ],
@@ -44,8 +44,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfoResolver",
-      "clrName": "Microsoft.Extensions.Validation.IValidatableInfoResolver",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.IValidatableInfoResolver",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -55,11 +55,11 @@
       "arity": 0,
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfoResolver::TryGetValidatableTypeInfo(System.Type,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "clrName": "TryGetValidatableTypeInfo",
+          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfoResolver::TryGetValidatableTypeInfo(System.Type,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "targetName": "TryGetValidatableTypeInfo",
           "metadataToken": 100663299,
-          "canonicalSignature": "(System.Type,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "normalizedSignature": "TryGetValidatableTypeInfo|(System.Type,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Type,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "normalizedSignature": "TryGetValidatableTypeInfo|(System.Type,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -70,8 +70,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.IValidatableInfoResolver",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.IValidatableInfoResolver",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -81,11 +81,11 @@
           ]
         },
         {
-          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfoResolver::TryGetValidatableParameterInfo(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "clrName": "TryGetValidatableParameterInfo",
+          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfoResolver::TryGetValidatableParameterInfo(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "targetName": "TryGetValidatableParameterInfo",
           "metadataToken": 100663300,
-          "canonicalSignature": "(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "normalizedSignature": "TryGetValidatableParameterInfo|(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "normalizedSignature": "TryGetValidatableParameterInfo|(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -96,8 +96,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.IValidatableInfoResolver",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.IValidatableInfoResolver",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -114,8 +114,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationErrorContext",
-      "clrName": "Microsoft.Extensions.Validation.ValidationErrorContext",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidationErrorContext",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -125,13 +125,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationErrorContext::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -145,12 +145,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationErrorContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationErrorContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationErrorContext::Path:System.String",
-          "clrName": "Path",
+          "targetName": "Path",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Path|:System.String|static=false|accessor=getset",
@@ -164,12 +164,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationErrorContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationErrorContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationErrorContext::Errors:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Errors",
+          "targetName": "Errors",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Errors|:System.Collections.Generic.IReadOnlyList_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -183,12 +183,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationErrorContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationErrorContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationErrorContext::Container:System.Object",
-          "clrName": "Container",
+          "targetName": "Container",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Object",
           "normalizedSignature": "Container|:System.Object|static=false|accessor=getset",
@@ -202,8 +202,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationErrorContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationErrorContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ],
       "fields": [],
@@ -212,8 +212,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.SkipValidationAttribute",
-      "clrName": "Microsoft.Extensions.Validation.SkipValidationAttribute",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.SkipValidationAttribute",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -223,7 +223,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [],
@@ -238,15 +238,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.SkipValidationAttribute",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.SkipValidationAttribute",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableParameterInfo",
-      "clrName": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -256,18 +256,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo",
-          "clrName": "Microsoft.Extensions.Validation.IValidatableInfo"
+          "targetName": "Microsoft.Extensions.Validation.IValidatableInfo"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableParameterInfo::GetValidationAttributes():System.ComponentModel.DataAnnotations.ValidationAttribute[]",
-          "clrName": "GetValidationAttributes",
+          "targetName": "GetValidationAttributes",
           "metadataToken": 100663316,
           "canonicalSignature": "():System.ComponentModel.DataAnnotations.ValidationAttribute[]",
           "normalizedSignature": "GetValidationAttributes|():System.ComponentModel.DataAnnotations.ValidationAttribute[]|static=false",
@@ -281,13 +281,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableParameterInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663317,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -301,13 +301,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663298,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -321,8 +321,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.IValidatableInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.IValidatableInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Validation.IValidatableInfo"
         }
@@ -339,15 +339,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableParameterInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatablePropertyInfo",
-      "clrName": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -357,18 +357,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo",
-          "clrName": "Microsoft.Extensions.Validation.IValidatableInfo"
+          "targetName": "Microsoft.Extensions.Validation.IValidatableInfo"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatablePropertyInfo::GetValidationAttributes():System.ComponentModel.DataAnnotations.ValidationAttribute[]",
-          "clrName": "GetValidationAttributes",
+          "targetName": "GetValidationAttributes",
           "metadataToken": 100663323,
           "canonicalSignature": "():System.ComponentModel.DataAnnotations.ValidationAttribute[]",
           "normalizedSignature": "GetValidationAttributes|():System.ComponentModel.DataAnnotations.ValidationAttribute[]|static=false",
@@ -382,13 +382,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatablePropertyInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663324,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -402,13 +402,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663298,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -422,8 +422,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.IValidatableInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.IValidatableInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Validation.IValidatableInfo"
         }
@@ -440,15 +440,15 @@
           "isStatic": false,
           "parameterCount": 4,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatablePropertyInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableTypeAttribute",
-      "clrName": "Microsoft.Extensions.Validation.ValidatableTypeAttribute",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidatableTypeAttribute",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -458,7 +458,7 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Attribute",
-        "clrName": "System.Attribute"
+        "targetName": "System.Attribute"
       },
       "methods": [],
       "properties": [],
@@ -473,15 +473,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableTypeAttribute",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableTypeAttribute",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableTypeInfo",
-      "clrName": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -491,18 +491,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo",
-          "clrName": "Microsoft.Extensions.Validation.IValidatableInfo"
+          "targetName": "Microsoft.Extensions.Validation.IValidatableInfo"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableTypeInfo::GetValidationAttributes():System.ComponentModel.DataAnnotations.ValidationAttribute[]",
-          "clrName": "GetValidationAttributes",
+          "targetName": "GetValidationAttributes",
           "metadataToken": 100663328,
           "canonicalSignature": "():System.ComponentModel.DataAnnotations.ValidationAttribute[]",
           "normalizedSignature": "GetValidationAttributes|():System.ComponentModel.DataAnnotations.ValidationAttribute[]|static=false",
@@ -516,13 +516,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidatableTypeInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663331,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -536,13 +536,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.IValidatableInfo::ValidateAsync(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ValidateAsync",
+          "targetName": "ValidateAsync",
           "metadataToken": 100663298,
           "canonicalSignature": "(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ValidateAsync|(System.Object,Microsoft.Extensions.Validation.ValidateContext,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -556,8 +556,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.IValidatableInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.IValidatableInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Validation.IValidatableInfo"
         }
@@ -574,15 +574,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidatableTypeInfo",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext",
-      "clrName": "Microsoft.Extensions.Validation.ValidateContext",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidateContext",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -592,13 +592,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::ValidationContext:System.ComponentModel.DataAnnotations.ValidationContext",
-          "clrName": "ValidationContext",
+          "targetName": "ValidationContext",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.ComponentModel.DataAnnotations.ValidationContext",
           "normalizedSignature": "ValidationContext|:System.ComponentModel.DataAnnotations.ValidationContext|static=false|accessor=getset",
@@ -612,12 +612,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::CurrentValidationPath:System.String",
-          "clrName": "CurrentValidationPath",
+          "targetName": "CurrentValidationPath",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CurrentValidationPath|:System.String|static=false|accessor=getset",
@@ -631,12 +631,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::ValidationOptions:Microsoft.Extensions.Validation.ValidationOptions",
-          "clrName": "ValidationOptions",
+          "targetName": "ValidationOptions",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.Extensions.Validation.ValidationOptions",
           "normalizedSignature": "ValidationOptions|:Microsoft.Extensions.Validation.ValidationOptions|static=false|accessor=getset",
@@ -650,12 +650,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::ValidationErrors:System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ValidationErrors",
+          "targetName": "ValidationErrors",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ValidationErrors|:System.Collections.Generic.Dictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -669,12 +669,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::CurrentDepth:System.Int32",
-          "clrName": "CurrentDepth",
+          "targetName": "CurrentDepth",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CurrentDepth|:System.Int32|static=false|accessor=getset",
@@ -688,21 +688,21 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ],
       "fields": [],
       "events": [
         {
-          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::OnValidationErrorSystem.Action\u00601[[Microsoft.Extensions.Validation.ValidationErrorContext, Microsoft.Extensions.Validation, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "OnValidationError",
+          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidateContext::OnValidationErrorSystem.Action`1[[Microsoft.Extensions.Validation.ValidationErrorContext, Microsoft.Extensions.Validation, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]",
+          "targetName": "OnValidationError",
           "metadataToken": 335544321,
-          "normalizedSignature": "OnValidationError|System.Action\u00601[[Microsoft.Extensions.Validation.ValidationErrorContext, Microsoft.Extensions.Validation, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]|static=false",
+          "normalizedSignature": "OnValidationError|System.Action`1[[Microsoft.Extensions.Validation.ValidationErrorContext, Microsoft.Extensions.Validation, Version=10.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]|static=false",
           "isStatic": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ],
       "constructors": [
@@ -714,15 +714,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidateContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidateContext",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions",
-      "clrName": "Microsoft.Extensions.Validation.ValidationOptions",
-      "assemblyName": "Microsoft.Extensions.Validation",
+      "targetName": "Microsoft.Extensions.Validation.ValidationOptions",
+      "ownerIdentity": "Microsoft.Extensions.Validation",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -732,15 +732,15 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions::TryGetValidatableTypeInfo(System.Type,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "clrName": "TryGetValidatableTypeInfo",
+          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions::TryGetValidatableTypeInfo(System.Type,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "targetName": "TryGetValidatableTypeInfo",
           "metadataToken": 100663364,
-          "canonicalSignature": "(System.Type,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "normalizedSignature": "TryGetValidatableTypeInfo|(System.Type,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Type,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "normalizedSignature": "TryGetValidatableTypeInfo|(System.Type,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -751,8 +751,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationOptions",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -762,11 +762,11 @@
           ]
         },
         {
-          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions::TryGetValidatableParameterInfo(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "clrName": "TryGetValidatableParameterInfo",
+          "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions::TryGetValidatableParameterInfo(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "targetName": "TryGetValidatableParameterInfo",
           "metadataToken": 100663365,
-          "canonicalSignature": "(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean",
-          "normalizedSignature": "TryGetValidatableParameterInfo|(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo\u0026):System.Boolean|static=false",
+          "canonicalSignature": "(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean",
+          "normalizedSignature": "TryGetValidatableParameterInfo|(System.Reflection.ParameterInfo,Microsoft.Extensions.Validation.IValidatableInfo&):System.Boolean|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -777,8 +777,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation",
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationOptions",
+          "ownerIdentity": "Microsoft.Extensions.Validation",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -791,7 +791,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions::Resolvers:System.Collections.Generic.IList_1[[Microsoft.Extensions.Validation.IValidatableInfoResolver,Microsoft.Extensions.Validation,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "Resolvers",
+          "targetName": "Resolvers",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Collections.Generic.IList_1[[Microsoft.Extensions.Validation.IValidatableInfoResolver,Microsoft.Extensions.Validation,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "Resolvers|:System.Collections.Generic.IList_1[[Microsoft.Extensions.Validation.IValidatableInfoResolver,Microsoft.Extensions.Validation,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -805,12 +805,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationOptions",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         },
         {
           "stableId": "Microsoft.Extensions.Validation:Microsoft.Extensions.Validation.ValidationOptions::MaxDepth:System.Int32",
-          "clrName": "MaxDepth",
+          "targetName": "MaxDepth",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MaxDepth|:System.Int32|static=false|accessor=getset",
@@ -824,8 +824,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationOptions",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ],
       "fields": [],
@@ -839,8 +839,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Validation.ValidationOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Validation"
+          "ownerQualifiedName": "Microsoft.Extensions.Validation.ValidationOptions",
+          "ownerIdentity": "Microsoft.Extensions.Validation"
         }
       ]
     }
