@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
-      "clrName": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
-      "assemblyName": "Microsoft.Extensions.Diagnostics",
+      "targetName": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
+      "ownerIdentity": "Microsoft.Extensions.Diagnostics",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Diagnostics:Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory::GetConfiguration(System.String):Microsoft.Extensions.Configuration.IConfiguration",
-          "clrName": "GetConfiguration",
+          "targetName": "GetConfiguration",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Configuration.IConfiguration",
           "normalizedSignature": "GetConfiguration|(System.String):Microsoft.Extensions.Configuration.IConfiguration|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Diagnostics",
+          "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.Metrics.Configuration.IMetricListenerConfigurationFactory",
+          "ownerIdentity": "Microsoft.Extensions.Diagnostics",
           "isExtensionMethod": false
         }
       ],

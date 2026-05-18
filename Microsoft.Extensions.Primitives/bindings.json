@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken",
-      "clrName": "Microsoft.Extensions.Primitives.IChangeToken",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.IChangeToken",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
-          "clrName": "RegisterChangeCallback",
+          "targetName": "RegisterChangeCallback",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
@@ -32,15 +32,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::HasChanged:System.Boolean",
-          "clrName": "HasChanged",
+          "targetName": "HasChanged",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
@@ -54,12 +54,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::ActiveChangeCallbacks:System.Boolean",
-          "clrName": "ActiveChangeCallbacks",
+          "targetName": "ActiveChangeCallbacks",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
@@ -73,8 +73,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
@@ -83,8 +83,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder",
-      "clrName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -94,12 +94,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder::Append(System.String):System.Void",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Append|(System.String):System.Void|static=false",
@@ -113,13 +113,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder::Append(Microsoft.Extensions.Primitives.StringSegment):System.Void",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663348,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment):System.Void",
           "normalizedSignature": "Append|(Microsoft.Extensions.Primitives.StringSegment):System.Void|static=false",
@@ -133,13 +133,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder::Append(System.String,System.Int32,System.Int32):System.Void",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663349,
           "canonicalSignature": "(System.String,System.Int32,System.Int32):System.Void",
           "normalizedSignature": "Append|(System.String,System.Int32,System.Int32):System.Void|static=false",
@@ -153,13 +153,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder::Append(System.Char):System.Void",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663350,
           "canonicalSignature": "(System.Char):System.Void",
           "normalizedSignature": "Append|(System.Char):System.Void|static=false",
@@ -173,13 +173,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663351,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -193,15 +193,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.InplaceStringBuilder::Capacity:System.Int32",
-          "clrName": "Capacity",
+          "targetName": "Capacity",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Capacity|:System.Int32|static=false|accessor=getset",
@@ -215,8 +215,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
@@ -230,15 +230,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.InplaceStringBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment",
-      "clrName": "Microsoft.Extensions.Primitives.StringSegment",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.StringSegment",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -248,19 +248,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "stableId": "System.Private.CoreLib:System.IEquatable`1",
+          "targetName": "System.IEquatable`1",
           "typeArguments": [
             "StringSegment"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "stableId": "System.Private.CoreLib:System.IEquatable`1",
+          "targetName": "System.IEquatable`1",
           "typeArguments": [
             "String"
           ]
@@ -269,7 +269,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::AsSpan():System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AsSpan",
+          "targetName": "AsSpan",
           "metadataToken": 100663362,
           "canonicalSignature": "():System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AsSpan|():System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -283,13 +283,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::AsSpan(System.Int32):System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AsSpan",
+          "targetName": "AsSpan",
           "metadataToken": 100663363,
           "canonicalSignature": "(System.Int32):System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AsSpan|(System.Int32):System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -303,13 +303,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::AsSpan(System.Int32,System.Int32):System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AsSpan",
+          "targetName": "AsSpan",
           "metadataToken": 100663364,
           "canonicalSignature": "(System.Int32,System.Int32):System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AsSpan|(System.Int32,System.Int32):System.ReadOnlySpan_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -323,13 +323,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::AsMemory():System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AsMemory",
+          "targetName": "AsMemory",
           "metadataToken": 100663365,
           "canonicalSignature": "():System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AsMemory|():System.ReadOnlyMemory_1[[System.Char,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -343,13 +343,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Compare(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Int32",
-          "clrName": "Compare",
+          "targetName": "Compare",
           "metadataToken": 100663366,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Int32",
           "normalizedSignature": "Compare|(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Int32|static=true",
@@ -363,13 +363,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663367,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -383,13 +383,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Equals(Microsoft.Extensions.Primitives.StringSegment):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663368,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringSegment):System.Boolean|static=false",
@@ -403,13 +403,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Equals(Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663369,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Boolean|static=false",
@@ -423,13 +423,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Equals(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663370,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment,System.StringComparison):System.Boolean|static=true",
@@ -443,13 +443,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Equals(System.String):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663371,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Equals|(System.String):System.Boolean|static=false",
@@ -463,13 +463,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Equals(System.String,System.StringComparison):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663372,
           "canonicalSignature": "(System.String,System.StringComparison):System.Boolean",
           "normalizedSignature": "Equals|(System.String,System.StringComparison):System.Boolean|static=false",
@@ -483,13 +483,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663373,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -503,13 +503,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::StartsWith(System.String,System.StringComparison):System.Boolean",
-          "clrName": "StartsWith",
+          "targetName": "StartsWith",
           "metadataToken": 100663379,
           "canonicalSignature": "(System.String,System.StringComparison):System.Boolean",
           "normalizedSignature": "StartsWith|(System.String,System.StringComparison):System.Boolean|static=false",
@@ -523,13 +523,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::EndsWith(System.String,System.StringComparison):System.Boolean",
-          "clrName": "EndsWith",
+          "targetName": "EndsWith",
           "metadataToken": 100663380,
           "canonicalSignature": "(System.String,System.StringComparison):System.Boolean",
           "normalizedSignature": "EndsWith|(System.String,System.StringComparison):System.Boolean|static=false",
@@ -543,13 +543,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Substring(System.Int32):System.String",
-          "clrName": "Substring",
+          "targetName": "Substring",
           "metadataToken": 100663381,
           "canonicalSignature": "(System.Int32):System.String",
           "normalizedSignature": "Substring|(System.Int32):System.String|static=false",
@@ -563,13 +563,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Substring(System.Int32,System.Int32):System.String",
-          "clrName": "Substring",
+          "targetName": "Substring",
           "metadataToken": 100663382,
           "canonicalSignature": "(System.Int32,System.Int32):System.String",
           "normalizedSignature": "Substring|(System.Int32,System.Int32):System.String|static=false",
@@ -583,13 +583,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Subsegment(System.Int32):Microsoft.Extensions.Primitives.StringSegment",
-          "clrName": "Subsegment",
+          "targetName": "Subsegment",
           "metadataToken": 100663383,
           "canonicalSignature": "(System.Int32):Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "Subsegment|(System.Int32):Microsoft.Extensions.Primitives.StringSegment|static=false",
@@ -603,13 +603,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Subsegment(System.Int32,System.Int32):Microsoft.Extensions.Primitives.StringSegment",
-          "clrName": "Subsegment",
+          "targetName": "Subsegment",
           "metadataToken": 100663384,
           "canonicalSignature": "(System.Int32,System.Int32):Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "Subsegment|(System.Int32,System.Int32):Microsoft.Extensions.Primitives.StringSegment|static=false",
@@ -623,13 +623,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IndexOf(System.Char,System.Int32,System.Int32):System.Int32",
-          "clrName": "IndexOf",
+          "targetName": "IndexOf",
           "metadataToken": 100663385,
           "canonicalSignature": "(System.Char,System.Int32,System.Int32):System.Int32",
           "normalizedSignature": "IndexOf|(System.Char,System.Int32,System.Int32):System.Int32|static=false",
@@ -643,13 +643,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IndexOf(System.Char,System.Int32):System.Int32",
-          "clrName": "IndexOf",
+          "targetName": "IndexOf",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.Char,System.Int32):System.Int32",
           "normalizedSignature": "IndexOf|(System.Char,System.Int32):System.Int32|static=false",
@@ -663,13 +663,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IndexOf(System.Char):System.Int32",
-          "clrName": "IndexOf",
+          "targetName": "IndexOf",
           "metadataToken": 100663387,
           "canonicalSignature": "(System.Char):System.Int32",
           "normalizedSignature": "IndexOf|(System.Char):System.Int32|static=false",
@@ -683,13 +683,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IndexOfAny(System.Char[],System.Int32,System.Int32):System.Int32",
-          "clrName": "IndexOfAny",
+          "targetName": "IndexOfAny",
           "metadataToken": 100663388,
           "canonicalSignature": "(System.Char[],System.Int32,System.Int32):System.Int32",
           "normalizedSignature": "IndexOfAny|(System.Char[],System.Int32,System.Int32):System.Int32|static=false",
@@ -703,13 +703,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IndexOfAny(System.Char[],System.Int32):System.Int32",
-          "clrName": "IndexOfAny",
+          "targetName": "IndexOfAny",
           "metadataToken": 100663389,
           "canonicalSignature": "(System.Char[],System.Int32):System.Int32",
           "normalizedSignature": "IndexOfAny|(System.Char[],System.Int32):System.Int32|static=false",
@@ -723,13 +723,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IndexOfAny(System.Char[]):System.Int32",
-          "clrName": "IndexOfAny",
+          "targetName": "IndexOfAny",
           "metadataToken": 100663390,
           "canonicalSignature": "(System.Char[]):System.Int32",
           "normalizedSignature": "IndexOfAny|(System.Char[]):System.Int32|static=false",
@@ -743,13 +743,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::LastIndexOf(System.Char):System.Int32",
-          "clrName": "LastIndexOf",
+          "targetName": "LastIndexOf",
           "metadataToken": 100663391,
           "canonicalSignature": "(System.Char):System.Int32",
           "normalizedSignature": "LastIndexOf|(System.Char):System.Int32|static=false",
@@ -763,13 +763,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Trim():Microsoft.Extensions.Primitives.StringSegment",
-          "clrName": "Trim",
+          "targetName": "Trim",
           "metadataToken": 100663392,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "Trim|():Microsoft.Extensions.Primitives.StringSegment|static=false",
@@ -783,13 +783,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::TrimStart():Microsoft.Extensions.Primitives.StringSegment",
-          "clrName": "TrimStart",
+          "targetName": "TrimStart",
           "metadataToken": 100663393,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "TrimStart|():Microsoft.Extensions.Primitives.StringSegment|static=false",
@@ -803,13 +803,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::TrimEnd():Microsoft.Extensions.Primitives.StringSegment",
-          "clrName": "TrimEnd",
+          "targetName": "TrimEnd",
           "metadataToken": 100663394,
           "canonicalSignature": "():Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "TrimEnd|():Microsoft.Extensions.Primitives.StringSegment|static=false",
@@ -823,13 +823,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Split(System.Char[]):Microsoft.Extensions.Primitives.StringTokenizer",
-          "clrName": "Split",
+          "targetName": "Split",
           "metadataToken": 100663395,
           "canonicalSignature": "(System.Char[]):Microsoft.Extensions.Primitives.StringTokenizer",
           "normalizedSignature": "Split|(System.Char[]):Microsoft.Extensions.Primitives.StringTokenizer|static=false",
@@ -843,13 +843,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::IsNullOrEmpty(Microsoft.Extensions.Primitives.StringSegment):System.Boolean",
-          "clrName": "IsNullOrEmpty",
+          "targetName": "IsNullOrEmpty",
           "metadataToken": 100663396,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment):System.Boolean",
           "normalizedSignature": "IsNullOrEmpty|(Microsoft.Extensions.Primitives.StringSegment):System.Boolean|static=true",
@@ -863,13 +863,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663397,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -883,15 +883,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Buffer:System.String",
-          "clrName": "Buffer",
+          "targetName": "Buffer",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Buffer|:System.String|static=false|accessor=get",
@@ -905,12 +905,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Offset:System.Int32",
-          "clrName": "Offset",
+          "targetName": "Offset",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Offset|:System.Int32|static=false|accessor=get",
@@ -924,12 +924,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Length:System.Int32",
-          "clrName": "Length",
+          "targetName": "Length",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Length|:System.Int32|static=false|accessor=get",
@@ -943,12 +943,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Value:System.String",
-          "clrName": "Value",
+          "targetName": "Value",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Value|:System.String|static=false|accessor=get",
@@ -962,12 +962,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::HasValue:System.Boolean",
-          "clrName": "HasValue",
+          "targetName": "HasValue",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasValue|:System.Boolean|static=false|accessor=get",
@@ -981,12 +981,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::Item[System.Int32]:System.Char",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385875991,
           "canonicalSignature": "[System.Int32]:System.Char",
           "normalizedSignature": "Item|[System.Int32]:System.Char|static=false|accessor=get",
@@ -1000,22 +1000,22 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::EmptyMicrosoft.Extensions.Primitives.StringSegment",
-          "clrName": "Empty",
+          "targetName": "Empty",
           "metadataToken": 67108880,
           "normalizedSignature": "Empty|Microsoft.Extensions.Primitives.StringSegment|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "events": [],
@@ -1028,8 +1028,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegment::.ctor(System.String,System.Int32,System.Int32):void",
@@ -1039,15 +1039,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegment",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegment",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer",
-      "clrName": "Microsoft.Extensions.Primitives.StringTokenizer",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.StringTokenizer",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -1057,28 +1057,28 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "StringSegment"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer::GetEnumerator():Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "clrName": "GetEnumerator",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer::GetEnumerator():Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663415,
-          "canonicalSignature": "():Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "normalizedSignature": "GetEnumerator|():Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator|static=false",
+          "canonicalSignature": "():Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "normalizedSignature": "GetEnumerator|():Microsoft.Extensions.Primitives.StringTokenizer+Enumerator|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1089,8 +1089,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
@@ -1106,8 +1106,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer::.ctor(Microsoft.Extensions.Primitives.StringSegment,System.Char[]):void",
@@ -1117,15 +1117,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ]
     },
     {
-      "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-      "clrName": "Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+      "targetName": "Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -1135,29 +1135,29 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator`1",
+          "targetName": "System.Collections.Generic.IEnumerator`1",
           "typeArguments": [
             "StringSegment"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
+          "targetName": "System.Collections.IEnumerator"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer+Enumerator::Dispose():System.Void",
+          "targetName": "Dispose",
           "metadataToken": 100663507,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -1171,13 +1171,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer+Enumerator::MoveNext():System.Boolean",
+          "targetName": "MoveNext",
           "metadataToken": 100663508,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "MoveNext|():System.Boolean|static=false",
@@ -1191,13 +1191,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer+Enumerator::Reset():System.Void",
+          "targetName": "Reset",
           "metadataToken": 100663509,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
@@ -1211,15 +1211,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator::Current:Microsoft.Extensions.Primitives.StringSegment",
-          "clrName": "Current",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer+Enumerator::Current:Microsoft.Extensions.Primitives.StringSegment",
+          "targetName": "Current",
           "metadataToken": 385876000,
           "canonicalSignature": ":Microsoft.Extensions.Primitives.StringSegment",
           "normalizedSignature": "Current|:Microsoft.Extensions.Primitives.StringSegment|static=false|accessor=getset",
@@ -1233,23 +1233,23 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator::.ctor(Microsoft.Extensions.Primitives.StringTokenizer\u0026):void",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringTokenizer+Enumerator::.ctor(Microsoft.Extensions.Primitives.StringTokenizer&):void",
           "metadataToken": 100663503,
-          "canonicalSignature": "(Microsoft.Extensions.Primitives.StringTokenizer\u0026):void",
-          "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringTokenizer\u0026):void|static=false",
+          "canonicalSignature": "(Microsoft.Extensions.Primitives.StringTokenizer&):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringTokenizer&):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringTokenizer\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringTokenizer+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "parameterModifiers": [
             {
               "index": 0,
@@ -1261,8 +1261,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues",
-      "clrName": "Microsoft.Extensions.Primitives.StringValues",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.StringValues",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -1272,65 +1272,65 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList\u00601",
-          "clrName": "System.Collections.Generic.IList\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IList`1",
+          "targetName": "System.Collections.Generic.IList`1",
           "typeArguments": [
             "String"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection\u00601",
-          "clrName": "System.Collections.Generic.ICollection\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.ICollection`1",
+          "targetName": "System.Collections.Generic.ICollection`1",
           "typeArguments": [
             "String"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable\u00601",
-          "clrName": "System.Collections.Generic.IEnumerable\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+          "targetName": "System.Collections.Generic.IEnumerable`1",
           "typeArguments": [
             "String"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList\u00601",
-          "clrName": "System.Collections.Generic.IReadOnlyList\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyList`1",
+          "targetName": "System.Collections.Generic.IReadOnlyList`1",
           "typeArguments": [
             "String"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection\u00601",
-          "clrName": "System.Collections.Generic.IReadOnlyCollection\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IReadOnlyCollection`1",
+          "targetName": "System.Collections.Generic.IReadOnlyCollection`1",
           "typeArguments": [
             "String"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "stableId": "System.Private.CoreLib:System.IEquatable`1",
+          "targetName": "System.IEquatable`1",
           "typeArguments": [
             "StringValues"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "stableId": "System.Private.CoreLib:System.IEquatable`1",
+          "targetName": "System.IEquatable`1",
           "typeArguments": [
             "String"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.IEquatable\u00601",
-          "clrName": "System.IEquatable\u00601",
+          "stableId": "System.Private.CoreLib:System.IEquatable`1",
+          "targetName": "System.IEquatable`1",
           "typeArguments": [
             "String[]"
           ]
@@ -1339,7 +1339,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::ToString():System.String",
-          "clrName": "ToString",
+          "targetName": "ToString",
           "metadataToken": 100663430,
           "canonicalSignature": "():System.String",
           "normalizedSignature": "ToString|():System.String|static=false",
@@ -1353,13 +1353,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::ToArray():System.String[]",
-          "clrName": "ToArray",
+          "targetName": "ToArray",
           "metadataToken": 100663432,
           "canonicalSignature": "():System.String[]",
           "normalizedSignature": "ToArray|():System.String[]|static=false",
@@ -1373,16 +1373,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::GetEnumerator():Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "clrName": "GetEnumerator",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::GetEnumerator():Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663444,
-          "canonicalSignature": "():Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "normalizedSignature": "GetEnumerator|():Microsoft.Extensions.Primitives.StringValues\u002BEnumerator|static=false",
+          "canonicalSignature": "():Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "normalizedSignature": "GetEnumerator|():Microsoft.Extensions.Primitives.StringValues+Enumerator|static=false",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1393,13 +1393,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::IsNullOrEmpty(Microsoft.Extensions.Primitives.StringValues):System.Boolean",
-          "clrName": "IsNullOrEmpty",
+          "targetName": "IsNullOrEmpty",
           "metadataToken": 100663447,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues):System.Boolean",
           "normalizedSignature": "IsNullOrEmpty|(Microsoft.Extensions.Primitives.StringValues):System.Boolean|static=true",
@@ -1413,13 +1413,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Concat(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues):Microsoft.Extensions.Primitives.StringValues",
-          "clrName": "Concat",
+          "targetName": "Concat",
           "metadataToken": 100663448,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues):Microsoft.Extensions.Primitives.StringValues",
           "normalizedSignature": "Concat|(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues):Microsoft.Extensions.Primitives.StringValues|static=true",
@@ -1433,16 +1433,16 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Concat(Microsoft.Extensions.Primitives.StringValues\u0026,System.String):Microsoft.Extensions.Primitives.StringValues",
-          "clrName": "Concat",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Concat(Microsoft.Extensions.Primitives.StringValues&,System.String):Microsoft.Extensions.Primitives.StringValues",
+          "targetName": "Concat",
           "metadataToken": 100663449,
-          "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues\u0026,System.String):Microsoft.Extensions.Primitives.StringValues",
-          "normalizedSignature": "Concat|(Microsoft.Extensions.Primitives.StringValues\u0026,System.String):Microsoft.Extensions.Primitives.StringValues|static=true",
+          "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues&,System.String):Microsoft.Extensions.Primitives.StringValues",
+          "normalizedSignature": "Concat|(Microsoft.Extensions.Primitives.StringValues&,System.String):Microsoft.Extensions.Primitives.StringValues|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1453,8 +1453,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1464,11 +1464,11 @@
           ]
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Concat(System.String,Microsoft.Extensions.Primitives.StringValues\u0026):Microsoft.Extensions.Primitives.StringValues",
-          "clrName": "Concat",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Concat(System.String,Microsoft.Extensions.Primitives.StringValues&):Microsoft.Extensions.Primitives.StringValues",
+          "targetName": "Concat",
           "metadataToken": 100663450,
-          "canonicalSignature": "(System.String,Microsoft.Extensions.Primitives.StringValues\u0026):Microsoft.Extensions.Primitives.StringValues",
-          "normalizedSignature": "Concat|(System.String,Microsoft.Extensions.Primitives.StringValues\u0026):Microsoft.Extensions.Primitives.StringValues|static=true",
+          "canonicalSignature": "(System.String,Microsoft.Extensions.Primitives.StringValues&):Microsoft.Extensions.Primitives.StringValues",
+          "normalizedSignature": "Concat|(System.String,Microsoft.Extensions.Primitives.StringValues&):Microsoft.Extensions.Primitives.StringValues|static=true",
           "emitScope": "ClassSurface",
           "provenance": "Original",
           "arity": 0,
@@ -1479,8 +1479,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false,
           "parameterModifiers": [
             {
@@ -1491,7 +1491,7 @@
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663451,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringValues,Microsoft.Extensions.Primitives.StringValues):System.Boolean|static=true",
@@ -1505,13 +1505,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(Microsoft.Extensions.Primitives.StringValues):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663454,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringValues):System.Boolean|static=false",
@@ -1525,13 +1525,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(System.String,Microsoft.Extensions.Primitives.StringValues):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663455,
           "canonicalSignature": "(System.String,Microsoft.Extensions.Primitives.StringValues):System.Boolean",
           "normalizedSignature": "Equals|(System.String,Microsoft.Extensions.Primitives.StringValues):System.Boolean|static=true",
@@ -1545,13 +1545,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(Microsoft.Extensions.Primitives.StringValues,System.String):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663456,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues,System.String):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringValues,System.String):System.Boolean|static=true",
@@ -1565,13 +1565,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(System.String):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663457,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Equals|(System.String):System.Boolean|static=false",
@@ -1585,13 +1585,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(System.String[],Microsoft.Extensions.Primitives.StringValues):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663458,
           "canonicalSignature": "(System.String[],Microsoft.Extensions.Primitives.StringValues):System.Boolean",
           "normalizedSignature": "Equals|(System.String[],Microsoft.Extensions.Primitives.StringValues):System.Boolean|static=true",
@@ -1605,13 +1605,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(Microsoft.Extensions.Primitives.StringValues,System.String[]):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663459,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues,System.String[]):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringValues,System.String[]):System.Boolean|static=true",
@@ -1625,13 +1625,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(System.String[]):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663460,
           "canonicalSignature": "(System.String[]):System.Boolean",
           "normalizedSignature": "Equals|(System.String[]):System.Boolean|static=false",
@@ -1645,13 +1645,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Equals(System.Object):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663473,
           "canonicalSignature": "(System.Object):System.Boolean",
           "normalizedSignature": "Equals|(System.Object):System.Boolean|static=false",
@@ -1665,13 +1665,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::GetHashCode():System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663474,
           "canonicalSignature": "():System.Int32",
           "normalizedSignature": "GetHashCode|():System.Int32|static=false",
@@ -1685,15 +1685,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Count:System.Int32",
-          "clrName": "Count",
+          "targetName": "Count",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
@@ -1707,12 +1707,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::Item[System.Int32]:System.String",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385875999,
           "canonicalSignature": "[System.Int32]:System.String",
           "normalizedSignature": "Item|[System.Int32]:System.String|static=false|accessor=get",
@@ -1726,22 +1726,22 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::EmptyMicrosoft.Extensions.Primitives.StringValues",
-          "clrName": "Empty",
+          "targetName": "Empty",
           "metadataToken": 67108890,
           "normalizedSignature": "Empty|Microsoft.Extensions.Primitives.StringValues|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "events": [],
@@ -1754,8 +1754,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues::.ctor(System.String[]):void",
@@ -1765,15 +1765,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ]
     },
     {
-      "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-      "clrName": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues+Enumerator",
+      "targetName": "Microsoft.Extensions.Primitives.StringValues+Enumerator",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -1783,29 +1783,29 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator\u00601",
-          "clrName": "System.Collections.Generic.IEnumerator\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerator`1",
+          "targetName": "System.Collections.Generic.IEnumerator`1",
           "typeArguments": [
             "String"
           ]
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerator",
-          "clrName": "System.Collections.IEnumerator"
+          "targetName": "System.Collections.IEnumerator"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator::MoveNext():System.Boolean",
-          "clrName": "MoveNext",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues+Enumerator::MoveNext():System.Boolean",
+          "targetName": "MoveNext",
           "metadataToken": 100663512,
           "canonicalSignature": "():System.Boolean",
           "normalizedSignature": "MoveNext|():System.Boolean|static=false",
@@ -1819,13 +1819,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator::Dispose():System.Void",
-          "clrName": "Dispose",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues+Enumerator::Dispose():System.Void",
+          "targetName": "Dispose",
           "metadataToken": 100663516,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -1839,13 +1839,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator::Reset():System.Void",
-          "clrName": "Reset",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues+Enumerator::Reset():System.Void",
+          "targetName": "Reset",
           "metadataToken": 0,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Reset|():System.Void|static=false",
@@ -1859,15 +1859,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator::Current:System.String",
-          "clrName": "Current",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues+Enumerator::Current:System.String",
+          "targetName": "Current",
           "metadataToken": 385876002,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Current|:System.String|static=false|accessor=get",
@@ -1881,23 +1881,23 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues\u002BEnumerator::.ctor(Microsoft.Extensions.Primitives.StringValues\u0026):void",
+          "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringValues+Enumerator::.ctor(Microsoft.Extensions.Primitives.StringValues&):void",
           "metadataToken": 100663511,
-          "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues\u0026):void",
-          "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringValues\u0026):void|static=false",
+          "canonicalSignature": "(Microsoft.Extensions.Primitives.StringValues&):void",
+          "normalizedSignature": "constructor|(Microsoft.Extensions.Primitives.StringValues&):void|static=false",
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringValues\u002BEnumerator",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringValues+Enumerator",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "parameterModifiers": [
             {
               "index": 0,
@@ -1909,8 +1909,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CancellationChangeToken",
-      "clrName": "Microsoft.Extensions.Primitives.CancellationChangeToken",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.CancellationChangeToken",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1920,18 +1920,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken",
-          "clrName": "Microsoft.Extensions.Primitives.IChangeToken"
+          "targetName": "Microsoft.Extensions.Primitives.IChangeToken"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CancellationChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
-          "clrName": "RegisterChangeCallback",
+          "targetName": "RegisterChangeCallback",
           "metadataToken": 100663327,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
@@ -1945,13 +1945,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CancellationChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CancellationChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
-          "clrName": "RegisterChangeCallback",
+          "targetName": "RegisterChangeCallback",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
@@ -1965,8 +1965,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken"
         }
@@ -1974,7 +1974,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CancellationChangeToken::ActiveChangeCallbacks:System.Boolean",
-          "clrName": "ActiveChangeCallbacks",
+          "targetName": "ActiveChangeCallbacks",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=getset",
@@ -1988,12 +1988,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CancellationChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CancellationChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CancellationChangeToken::HasChanged:System.Boolean",
-          "clrName": "HasChanged",
+          "targetName": "HasChanged",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
@@ -2007,12 +2007,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CancellationChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CancellationChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::HasChanged:System.Boolean",
-          "clrName": "HasChanged",
+          "targetName": "HasChanged",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
@@ -2027,12 +2027,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::ActiveChangeCallbacks:System.Boolean",
-          "clrName": "ActiveChangeCallbacks",
+          "targetName": "ActiveChangeCallbacks",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
@@ -2047,8 +2047,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
@@ -2062,15 +2062,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CancellationChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CancellationChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CompositeChangeToken",
-      "clrName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2080,18 +2080,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken",
-          "clrName": "Microsoft.Extensions.Primitives.IChangeToken"
+          "targetName": "Microsoft.Extensions.Primitives.IChangeToken"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CompositeChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
-          "clrName": "RegisterChangeCallback",
+          "targetName": "RegisterChangeCallback",
           "metadataToken": 100663334,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
@@ -2105,13 +2105,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CompositeChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::RegisterChangeCallback(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
-          "clrName": "RegisterChangeCallback",
+          "targetName": "RegisterChangeCallback",
           "metadataToken": 100663343,
           "canonicalSignature": "(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable",
           "normalizedSignature": "RegisterChangeCallback|(System.Action_1[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Object):System.IDisposable|static=false",
@@ -2125,8 +2125,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken"
         }
@@ -2134,7 +2134,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CompositeChangeToken::ChangeTokens:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "ChangeTokens",
+          "targetName": "ChangeTokens",
           "metadataToken": 385875980,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "ChangeTokens|:System.Collections.Generic.IReadOnlyList_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false|accessor=get",
@@ -2148,12 +2148,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CompositeChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CompositeChangeToken::HasChanged:System.Boolean",
-          "clrName": "HasChanged",
+          "targetName": "HasChanged",
           "metadataToken": 385875981,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
@@ -2167,12 +2167,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CompositeChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.CompositeChangeToken::ActiveChangeCallbacks:System.Boolean",
-          "clrName": "ActiveChangeCallbacks",
+          "targetName": "ActiveChangeCallbacks",
           "metadataToken": 385875982,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
@@ -2186,12 +2186,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CompositeChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::HasChanged:System.Boolean",
-          "clrName": "HasChanged",
+          "targetName": "HasChanged",
           "metadataToken": 385875983,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "HasChanged|:System.Boolean|static=false|accessor=get",
@@ -2206,12 +2206,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.IChangeToken::ActiveChangeCallbacks:System.Boolean",
-          "clrName": "ActiveChangeCallbacks",
+          "targetName": "ActiveChangeCallbacks",
           "metadataToken": 385875984,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
@@ -2226,8 +2226,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringClrType": "Microsoft.Extensions.Primitives.IChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.IChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
@@ -2241,15 +2241,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.CompositeChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.CompositeChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegmentComparer",
-      "clrName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2259,19 +2259,19 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IComparer\u00601",
-          "clrName": "System.Collections.Generic.IComparer\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IComparer`1",
+          "targetName": "System.Collections.Generic.IComparer`1",
           "typeArguments": [
             "StringSegment"
           ]
         },
         {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEqualityComparer\u00601",
-          "clrName": "System.Collections.Generic.IEqualityComparer\u00601",
+          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEqualityComparer`1",
+          "targetName": "System.Collections.Generic.IEqualityComparer`1",
           "typeArguments": [
             "StringSegment"
           ]
@@ -2280,7 +2280,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegmentComparer::Compare(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):System.Int32",
-          "clrName": "Compare",
+          "targetName": "Compare",
           "metadataToken": 100663409,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):System.Int32",
           "normalizedSignature": "Compare|(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):System.Int32|static=false",
@@ -2294,13 +2294,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegmentComparer::Equals(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663410,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):System.Boolean",
           "normalizedSignature": "Equals|(Microsoft.Extensions.Primitives.StringSegment,Microsoft.Extensions.Primitives.StringSegment):System.Boolean|static=false",
@@ -2314,13 +2314,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegmentComparer::GetHashCode(Microsoft.Extensions.Primitives.StringSegment):System.Int32",
-          "clrName": "GetHashCode",
+          "targetName": "GetHashCode",
           "metadataToken": 100663411,
           "canonicalSignature": "(Microsoft.Extensions.Primitives.StringSegment):System.Int32",
           "normalizedSignature": "GetHashCode|(Microsoft.Extensions.Primitives.StringSegment):System.Int32|static=false",
@@ -2334,15 +2334,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegmentComparer::Ordinal:Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "clrName": "Ordinal",
+          "targetName": "Ordinal",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.Extensions.Primitives.StringSegmentComparer",
           "normalizedSignature": "Ordinal|:Microsoft.Extensions.Primitives.StringSegmentComparer|static=true|accessor=get",
@@ -2356,12 +2356,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.StringSegmentComparer::OrdinalIgnoreCase:Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "clrName": "OrdinalIgnoreCase",
+          "targetName": "OrdinalIgnoreCase",
           "metadataToken": 385875993,
           "canonicalSignature": ":Microsoft.Extensions.Primitives.StringSegmentComparer",
           "normalizedSignature": "OrdinalIgnoreCase|:Microsoft.Extensions.Primitives.StringSegmentComparer|static=true|accessor=get",
@@ -2375,8 +2375,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.StringSegmentComparer",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives"
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.StringSegmentComparer",
+          "ownerIdentity": "Microsoft.Extensions.Primitives"
         }
       ],
       "fields": [],
@@ -2385,8 +2385,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.ChangeToken",
-      "clrName": "Microsoft.Extensions.Primitives.ChangeToken",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.ChangeToken",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2396,12 +2396,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.ChangeToken::OnChange(System.Func_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action):System.IDisposable",
-          "clrName": "OnChange",
+          "targetName": "OnChange",
           "metadataToken": 100663328,
           "canonicalSignature": "(System.Func_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action):System.IDisposable",
           "normalizedSignature": "OnChange|(System.Func_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Action):System.IDisposable|static=true",
@@ -2415,13 +2415,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.ChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.ChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.ChangeToken::OnChange(System.Func_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Action_1,TState):System.IDisposable",
-          "clrName": "OnChange",
+          "targetName": "OnChange",
           "metadataToken": 100663329,
           "canonicalSignature": "(System.Func_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Action_1,TState):System.IDisposable",
           "normalizedSignature": "OnChange|(System.Func_1[[Microsoft.Extensions.Primitives.IChangeToken,Microsoft.Extensions.Primitives,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Action_1,TState):System.IDisposable|static=true",
@@ -2435,8 +2435,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.ChangeToken",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.ChangeToken",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": false
         }
       ],
@@ -2447,8 +2447,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.Extensions",
-      "clrName": "Microsoft.Extensions.Primitives.Extensions",
-      "assemblyName": "Microsoft.Extensions.Primitives",
+      "targetName": "Microsoft.Extensions.Primitives.Extensions",
+      "ownerIdentity": "Microsoft.Extensions.Primitives",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2458,12 +2458,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Primitives:Microsoft.Extensions.Primitives.Extensions::Append(System.Text.StringBuilder,Microsoft.Extensions.Primitives.StringSegment):System.Text.StringBuilder",
-          "clrName": "Append",
+          "targetName": "Append",
           "metadataToken": 100663340,
           "canonicalSignature": "(System.Text.StringBuilder,Microsoft.Extensions.Primitives.StringSegment):System.Text.StringBuilder",
           "normalizedSignature": "Append|(System.Text.StringBuilder,Microsoft.Extensions.Primitives.StringSegment):System.Text.StringBuilder|static=true",
@@ -2477,8 +2477,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Primitives.Extensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Primitives",
+          "ownerQualifiedName": "Microsoft.Extensions.Primitives.Extensions",
+          "ownerIdentity": "Microsoft.Extensions.Primitives",
           "isExtensionMethod": true
         }
       ],

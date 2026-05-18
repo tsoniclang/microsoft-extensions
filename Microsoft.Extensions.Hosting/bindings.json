@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-      "clrName": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -18,24 +18,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -43,39 +43,39 @@
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108867,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior::StopHostMicrosoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-          "clrName": "StopHost",
+          "targetName": "StopHost",
           "metadataToken": 67108868,
           "normalizedSignature": "StopHost|Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior::IgnoreMicrosoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-          "clrName": "Ignore",
+          "targetName": "Ignore",
           "metadataToken": 67108869,
           "normalizedSignature": "Ignore|Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ],
       "events": [],
@@ -83,8 +83,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime",
-      "clrName": "Microsoft.Extensions.Hosting.IApplicationLifetime",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -95,7 +95,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::StopApplication():System.Void",
-          "clrName": "StopApplication",
+          "targetName": "StopApplication",
           "metadataToken": 100663353,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "StopApplication|():System.Void|static=false",
@@ -109,15 +109,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::ApplicationStarted:System.Threading.CancellationToken",
-          "clrName": "ApplicationStarted",
+          "targetName": "ApplicationStarted",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -131,12 +131,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::ApplicationStopping:System.Threading.CancellationToken",
-          "clrName": "ApplicationStopping",
+          "targetName": "ApplicationStopping",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -150,12 +150,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IApplicationLifetime::ApplicationStopped:System.Threading.CancellationToken",
-          "clrName": "ApplicationStopped",
+          "targetName": "ApplicationStopped",
           "metadataToken": 385875977,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -169,8 +169,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -179,8 +179,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHost",
-      "clrName": "Microsoft.Extensions.Hosting.IHost",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHost",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -191,13 +191,13 @@
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHost::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StartAsync",
+          "targetName": "StartAsync",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -211,15 +211,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHost",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHost",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHost::Services:System.IServiceProvider",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875978,
           "canonicalSignature": ":System.IServiceProvider",
           "normalizedSignature": "Services|:System.IServiceProvider|static=false|accessor=get",
@@ -233,8 +233,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHost",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHost",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -243,8 +243,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-      "clrName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -255,7 +255,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::ConfigureContainer(IServiceProviderFactory_1,Action_1):System.Void",
-          "clrName": "ConfigureContainer",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663363,
           "canonicalSignature": "(IServiceProviderFactory_1,Action_1):System.Void",
           "normalizedSignature": "ConfigureContainer|(IServiceProviderFactory_1,Action_1):System.Void|static=false",
@@ -269,15 +269,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -291,12 +291,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Configuration:Microsoft.Extensions.Configuration.IConfigurationManager",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfigurationManager",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfigurationManager|static=false|accessor=get",
@@ -310,12 +310,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Environment:Microsoft.Extensions.Hosting.IHostEnvironment",
-          "clrName": "Environment",
+          "targetName": "Environment",
           "metadataToken": 385875981,
           "canonicalSignature": ":Microsoft.Extensions.Hosting.IHostEnvironment",
           "normalizedSignature": "Environment|:Microsoft.Extensions.Hosting.IHostEnvironment|static=false|accessor=get",
@@ -329,12 +329,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Logging:Microsoft.Extensions.Logging.ILoggingBuilder",
-          "clrName": "Logging",
+          "targetName": "Logging",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.Extensions.Logging.ILoggingBuilder",
           "normalizedSignature": "Logging|:Microsoft.Extensions.Logging.ILoggingBuilder|static=false|accessor=get",
@@ -348,12 +348,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Metrics:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "Metrics",
+          "targetName": "Metrics",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "Metrics|:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=false|accessor=get",
@@ -367,12 +367,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Services:Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
@@ -386,8 +386,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -396,8 +396,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime",
-      "clrName": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -408,7 +408,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::StopApplication():System.Void",
-          "clrName": "StopApplication",
+          "targetName": "StopApplication",
           "metadataToken": 100663367,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "StopApplication|():System.Void|static=false",
@@ -422,15 +422,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::ApplicationStarted:System.Threading.CancellationToken",
-          "clrName": "ApplicationStarted",
+          "targetName": "ApplicationStarted",
           "metadataToken": 385875985,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStarted|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -444,12 +444,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::ApplicationStopping:System.Threading.CancellationToken",
-          "clrName": "ApplicationStopping",
+          "targetName": "ApplicationStopping",
           "metadataToken": 385875986,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStopping|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -463,12 +463,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationLifetime::ApplicationStopped:System.Threading.CancellationToken",
-          "clrName": "ApplicationStopped",
+          "targetName": "ApplicationStopped",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Threading.CancellationToken",
           "normalizedSignature": "ApplicationStopped|:System.Threading.CancellationToken|static=false|accessor=get",
@@ -482,8 +482,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -492,8 +492,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder",
-      "clrName": "Microsoft.Extensions.Hosting.IHostBuilder",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostBuilder",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -504,7 +504,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::ConfigureHostConfiguration(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureHostConfiguration",
+          "targetName": "ConfigureHostConfiguration",
           "metadataToken": 100663369,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureHostConfiguration|(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -518,13 +518,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::ConfigureAppConfiguration(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663370,
           "canonicalSignature": "(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -538,13 +538,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::UseServiceProviderFactory(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseServiceProviderFactory",
+          "targetName": "UseServiceProviderFactory",
           "metadataToken": 100663372,
           "canonicalSignature": "(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseServiceProviderFactory|(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -558,13 +558,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::UseServiceProviderFactory(Func_2):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseServiceProviderFactory",
+          "targetName": "UseServiceProviderFactory",
           "metadataToken": 100663373,
           "canonicalSignature": "(Func_2):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseServiceProviderFactory|(Func_2):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -578,13 +578,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::Build():Microsoft.Extensions.Hosting.IHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663375,
           "canonicalSignature": "():Microsoft.Extensions.Hosting.IHost",
           "normalizedSignature": "Build|():Microsoft.Extensions.Hosting.IHost|static=false",
@@ -598,15 +598,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -620,8 +620,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -630,8 +630,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedLifecycleService",
-      "clrName": "Microsoft.Extensions.Hosting.IHostedLifecycleService",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostedLifecycleService",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -642,13 +642,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService",
-          "clrName": "Microsoft.Extensions.Hosting.IHostedService"
+          "targetName": "Microsoft.Extensions.Hosting.IHostedService"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedLifecycleService::StartingAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StartingAsync",
+          "targetName": "StartingAsync",
           "metadataToken": 100663376,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StartingAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -662,8 +662,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostedLifecycleService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostedLifecycleService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -674,8 +674,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService",
-      "clrName": "Microsoft.Extensions.Hosting.IHostedService",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostedService",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -686,7 +686,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StartAsync",
+          "targetName": "StartAsync",
           "metadataToken": 100663380,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -700,8 +700,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostedService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostedService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -712,8 +712,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment",
-      "clrName": "Microsoft.Extensions.Hosting.IHostEnvironment",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostEnvironment",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -725,7 +725,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::EnvironmentName:System.String",
-          "clrName": "EnvironmentName",
+          "targetName": "EnvironmentName",
           "metadataToken": 385875989,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
@@ -739,12 +739,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::ApplicationName:System.String",
-          "clrName": "ApplicationName",
+          "targetName": "ApplicationName",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
@@ -758,12 +758,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::ContentRootPath:System.String",
-          "clrName": "ContentRootPath",
+          "targetName": "ContentRootPath",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
@@ -777,12 +777,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostEnvironment::ContentRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "ContentRootFileProvider",
+          "targetName": "ContentRootFileProvider",
           "metadataToken": 385875992,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -796,8 +796,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -806,8 +806,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment",
-      "clrName": "Microsoft.Extensions.Hosting.IHostingEnvironment",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -819,7 +819,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::EnvironmentName:System.String",
-          "clrName": "EnvironmentName",
+          "targetName": "EnvironmentName",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
@@ -833,12 +833,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::ApplicationName:System.String",
-          "clrName": "ApplicationName",
+          "targetName": "ApplicationName",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
@@ -852,12 +852,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::ContentRootPath:System.String",
-          "clrName": "ContentRootPath",
+          "targetName": "ContentRootPath",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
@@ -871,12 +871,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostingEnvironment::ContentRootFileProvider:Microsoft.Extensions.FileProviders.IFileProvider",
-          "clrName": "ContentRootFileProvider",
+          "targetName": "ContentRootFileProvider",
           "metadataToken": 385875996,
           "canonicalSignature": ":Microsoft.Extensions.FileProviders.IFileProvider",
           "normalizedSignature": "ContentRootFileProvider|:Microsoft.Extensions.FileProviders.IFileProvider|static=false|accessor=getset",
@@ -890,8 +890,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostingEnvironment",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostingEnvironment",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -900,8 +900,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostLifetime",
-      "clrName": "Microsoft.Extensions.Hosting.IHostLifetime",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.IHostLifetime",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -912,7 +912,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostLifetime::WaitForStartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "WaitForStartAsync",
+          "targetName": "WaitForStartAsync",
           "metadataToken": 100663398,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "WaitForStartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -926,8 +926,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostLifetime",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostLifetime",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -938,8 +938,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService",
-      "clrName": "Microsoft.Extensions.Hosting.BackgroundService",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.BackgroundService",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -949,22 +949,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService",
-          "clrName": "Microsoft.Extensions.Hosting.IHostedService"
+          "targetName": "Microsoft.Extensions.Hosting.IHostedService"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::ExecuteAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "ExecuteAsync",
+          "targetName": "ExecuteAsync",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -978,13 +978,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StartAsync",
+          "targetName": "StartAsync",
           "metadataToken": 100663316,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -998,13 +998,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::StopAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StopAsync",
+          "targetName": "StopAsync",
           "metadataToken": 100663317,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StopAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -1018,13 +1018,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663318,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -1038,13 +1038,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostedService::StartAsync(System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "StartAsync",
+          "targetName": "StartAsync",
           "metadataToken": 100663380,
           "canonicalSignature": "(System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "StartAsync|(System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -1058,8 +1058,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostedService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostedService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostedService"
         }
@@ -1067,7 +1067,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.BackgroundService::ExecuteTask:System.Threading.Tasks.Task",
-          "clrName": "ExecuteTask",
+          "targetName": "ExecuteTask",
           "metadataToken": 385875971,
           "canonicalSignature": ":System.Threading.Tasks.Task",
           "normalizedSignature": "ExecuteTask|:System.Threading.Tasks.Task|static=false|accessor=get",
@@ -1081,8 +1081,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -1096,15 +1096,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Hosting.BackgroundService",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.BackgroundService",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
-      "clrName": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1114,13 +1114,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.ConsoleLifetimeOptions::SuppressStatusMessages:System.Boolean",
-          "clrName": "SuppressStatusMessages",
+          "targetName": "SuppressStatusMessages",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "SuppressStatusMessages|:System.Boolean|static=false|accessor=getset",
@@ -1134,8 +1134,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ],
       "fields": [],
@@ -1149,15 +1149,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.ConsoleLifetimeOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostAbortedException",
-      "clrName": "Microsoft.Extensions.Hosting.HostAbortedException",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostAbortedException",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1167,12 +1167,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Exception",
-        "clrName": "System.Exception"
+        "targetName": "System.Exception"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [],
@@ -1188,8 +1188,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostAbortedException",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostAbortedException",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostAbortedException::.ctor(System.String):void",
@@ -1199,8 +1199,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostAbortedException",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostAbortedException",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostAbortedException::.ctor(System.String,System.Exception):void",
@@ -1210,15 +1210,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostAbortedException",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostAbortedException",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder",
-      "clrName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1228,18 +1228,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "clrName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder"
+          "targetName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::ConfigureContainer(IServiceProviderFactory_1,Action_1):System.Void",
-          "clrName": "ConfigureContainer",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663341,
           "canonicalSignature": "(IServiceProviderFactory_1,Action_1):System.Void",
           "normalizedSignature": "ConfigureContainer|(IServiceProviderFactory_1,Action_1):System.Void|static=false",
@@ -1253,13 +1253,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::Build():Microsoft.Extensions.Hosting.IHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663342,
           "canonicalSignature": "():Microsoft.Extensions.Hosting.IHost",
           "normalizedSignature": "Build|():Microsoft.Extensions.Hosting.IHost|static=false",
@@ -1273,13 +1273,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::ConfigureContainer(IServiceProviderFactory_1,Action_1):System.Void",
-          "clrName": "ConfigureContainer",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663363,
           "canonicalSignature": "(IServiceProviderFactory_1,Action_1):System.Void",
           "normalizedSignature": "ConfigureContainer|(IServiceProviderFactory_1,Action_1):System.Void|static=false",
@@ -1293,8 +1293,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder"
         }
@@ -1302,7 +1302,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::Environment:Microsoft.Extensions.Hosting.IHostEnvironment",
-          "clrName": "Environment",
+          "targetName": "Environment",
           "metadataToken": 385875981,
           "canonicalSignature": ":Microsoft.Extensions.Hosting.IHostEnvironment",
           "normalizedSignature": "Environment|:Microsoft.Extensions.Hosting.IHostEnvironment|static=false|accessor=get",
@@ -1316,12 +1316,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::Configuration:Microsoft.Extensions.Configuration.ConfigurationManager",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.ConfigurationManager",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.ConfigurationManager|static=false|accessor=get",
@@ -1335,12 +1335,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::Services:Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
@@ -1354,12 +1354,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::Logging:Microsoft.Extensions.Logging.ILoggingBuilder",
-          "clrName": "Logging",
+          "targetName": "Logging",
           "metadataToken": 385875985,
           "canonicalSignature": ":Microsoft.Extensions.Logging.ILoggingBuilder",
           "normalizedSignature": "Logging|:Microsoft.Extensions.Logging.ILoggingBuilder|static=false|accessor=get",
@@ -1373,12 +1373,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::Metrics:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "Metrics",
+          "targetName": "Metrics",
           "metadataToken": 385875986,
           "canonicalSignature": ":Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "Metrics|:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=false|accessor=get",
@@ -1392,12 +1392,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875979,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -1412,12 +1412,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Configuration:Microsoft.Extensions.Configuration.IConfigurationManager",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385875980,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfigurationManager",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfigurationManager|static=false|accessor=get",
@@ -1432,12 +1432,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Environment:Microsoft.Extensions.Hosting.IHostEnvironment",
-          "clrName": "Environment",
+          "targetName": "Environment",
           "metadataToken": 385875981,
           "canonicalSignature": ":Microsoft.Extensions.Hosting.IHostEnvironment",
           "normalizedSignature": "Environment|:Microsoft.Extensions.Hosting.IHostEnvironment|static=false|accessor=get",
@@ -1452,12 +1452,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Logging:Microsoft.Extensions.Logging.ILoggingBuilder",
-          "clrName": "Logging",
+          "targetName": "Logging",
           "metadataToken": 385875982,
           "canonicalSignature": ":Microsoft.Extensions.Logging.ILoggingBuilder",
           "normalizedSignature": "Logging|:Microsoft.Extensions.Logging.ILoggingBuilder|static=false|accessor=get",
@@ -1472,12 +1472,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Metrics:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
-          "clrName": "Metrics",
+          "targetName": "Metrics",
           "metadataToken": 385875983,
           "canonicalSignature": ":Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder",
           "normalizedSignature": "Metrics|:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder|static=false|accessor=get",
@@ -1492,12 +1492,12 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostApplicationBuilder::Services:Microsoft.Extensions.DependencyInjection.IServiceCollection",
-          "clrName": "Services",
+          "targetName": "Services",
           "metadataToken": 385875984,
           "canonicalSignature": ":Microsoft.Extensions.DependencyInjection.IServiceCollection",
           "normalizedSignature": "Services|:Microsoft.Extensions.DependencyInjection.IServiceCollection|static=false|accessor=get",
@@ -1512,8 +1512,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -1527,8 +1527,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::.ctor(System.String[]):void",
@@ -1538,8 +1538,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilder::.ctor(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):void",
@@ -1549,15 +1549,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-      "clrName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1567,13 +1567,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings::DisableDefaults:System.Boolean",
-          "clrName": "DisableDefaults",
+          "targetName": "DisableDefaults",
           "metadataToken": 385875987,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "DisableDefaults|:System.Boolean|static=false|accessor=getset",
@@ -1587,12 +1587,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings::Args:System.String[]",
-          "clrName": "Args",
+          "targetName": "Args",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.String[]",
           "normalizedSignature": "Args|:System.String[]|static=false|accessor=getset",
@@ -1606,12 +1606,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings::Configuration:Microsoft.Extensions.Configuration.ConfigurationManager",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385875989,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.ConfigurationManager",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.ConfigurationManager|static=false|accessor=getset",
@@ -1625,12 +1625,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings::EnvironmentName:System.String",
-          "clrName": "EnvironmentName",
+          "targetName": "EnvironmentName",
           "metadataToken": 385875990,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "EnvironmentName|:System.String|static=false|accessor=getset",
@@ -1644,12 +1644,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings::ApplicationName:System.String",
-          "clrName": "ApplicationName",
+          "targetName": "ApplicationName",
           "metadataToken": 385875991,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ApplicationName|:System.String|static=false|accessor=getset",
@@ -1663,12 +1663,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostApplicationBuilderSettings::ContentRootPath:System.String",
-          "clrName": "ContentRootPath",
+          "targetName": "ContentRootPath",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ContentRootPath|:System.String|static=false|accessor=getset",
@@ -1682,8 +1682,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ],
       "fields": [],
@@ -1697,15 +1697,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostApplicationBuilderSettings",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder",
-      "clrName": "Microsoft.Extensions.Hosting.HostBuilder",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.HostBuilder",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1715,18 +1715,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "Microsoft.Extensions.Hosting.IHostBuilder"
+          "targetName": "Microsoft.Extensions.Hosting.IHostBuilder"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::ConfigureHostConfiguration(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureHostConfiguration",
+          "targetName": "ConfigureHostConfiguration",
           "metadataToken": 100663361,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureHostConfiguration|(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1740,13 +1740,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::ConfigureAppConfiguration(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663362,
           "canonicalSignature": "(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1760,13 +1760,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::ConfigureServices(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663363,
           "canonicalSignature": "(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureServices|(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1780,13 +1780,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::UseServiceProviderFactory(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseServiceProviderFactory",
+          "targetName": "UseServiceProviderFactory",
           "metadataToken": 100663364,
           "canonicalSignature": "(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseServiceProviderFactory|(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1800,13 +1800,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::UseServiceProviderFactory(Func_2):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseServiceProviderFactory",
+          "targetName": "UseServiceProviderFactory",
           "metadataToken": 100663365,
           "canonicalSignature": "(Func_2):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseServiceProviderFactory|(Func_2):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1820,13 +1820,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::ConfigureContainer(Action_2):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureContainer",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663366,
           "canonicalSignature": "(Action_2):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureContainer|(Action_2):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1840,13 +1840,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::Build():Microsoft.Extensions.Hosting.IHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663367,
           "canonicalSignature": "():Microsoft.Extensions.Hosting.IHost",
           "normalizedSignature": "Build|():Microsoft.Extensions.Hosting.IHost|static=false",
@@ -1860,13 +1860,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::ConfigureHostConfiguration(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureHostConfiguration",
+          "targetName": "ConfigureHostConfiguration",
           "metadataToken": 100663369,
           "canonicalSignature": "(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureHostConfiguration|(System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1880,14 +1880,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::ConfigureAppConfiguration(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663370,
           "canonicalSignature": "(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1901,14 +1901,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::UseServiceProviderFactory(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseServiceProviderFactory",
+          "targetName": "UseServiceProviderFactory",
           "metadataToken": 100663372,
           "canonicalSignature": "(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseServiceProviderFactory|(IServiceProviderFactory_1):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1922,14 +1922,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::UseServiceProviderFactory(Func_2):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseServiceProviderFactory",
+          "targetName": "UseServiceProviderFactory",
           "metadataToken": 100663373,
           "canonicalSignature": "(Func_2):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseServiceProviderFactory|(Func_2):Microsoft.Extensions.Hosting.IHostBuilder|static=false",
@@ -1943,14 +1943,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::Build():Microsoft.Extensions.Hosting.IHost",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663375,
           "canonicalSignature": "():Microsoft.Extensions.Hosting.IHost",
           "normalizedSignature": "Build|():Microsoft.Extensions.Hosting.IHost|static=false",
@@ -1964,8 +1964,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder"
         }
@@ -1973,7 +1973,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostBuilder::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -1987,12 +1987,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.IHostBuilder::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875988,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -2007,8 +2007,8 @@
           "isOverride": false,
           "visibility": "Public",
           "sourceInterface": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringClrType": "Microsoft.Extensions.Hosting.IHostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.IHostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -2022,15 +2022,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilder",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostBuilderContext",
-      "clrName": "Microsoft.Extensions.Hosting.HostBuilderContext",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostBuilderContext",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2040,13 +2040,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostBuilderContext::HostingEnvironment:Microsoft.Extensions.Hosting.IHostEnvironment",
-          "clrName": "HostingEnvironment",
+          "targetName": "HostingEnvironment",
           "metadataToken": 385875972,
           "canonicalSignature": ":Microsoft.Extensions.Hosting.IHostEnvironment",
           "normalizedSignature": "HostingEnvironment|:Microsoft.Extensions.Hosting.IHostEnvironment|static=false|accessor=getset",
@@ -2060,12 +2060,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilderContext",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostBuilderContext::Configuration:Microsoft.Extensions.Configuration.IConfiguration",
-          "clrName": "Configuration",
+          "targetName": "Configuration",
           "metadataToken": 385875973,
           "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfiguration",
           "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfiguration|static=false|accessor=getset",
@@ -2079,12 +2079,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilderContext",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostBuilderContext::Properties:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Properties",
+          "targetName": "Properties",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Properties|:System.Collections.Generic.IDictionary_2[[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -2098,8 +2098,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilderContext",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "fields": [],
@@ -2113,15 +2113,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostBuilderContext",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostBuilderContext",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostOptions",
-      "clrName": "Microsoft.Extensions.Hosting.HostOptions",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.HostOptions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2131,13 +2131,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostOptions::ShutdownTimeout:System.TimeSpan",
-          "clrName": "ShutdownTimeout",
+          "targetName": "ShutdownTimeout",
           "metadataToken": 385875994,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "ShutdownTimeout|:System.TimeSpan|static=false|accessor=getset",
@@ -2151,12 +2151,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostOptions::StartupTimeout:System.TimeSpan",
-          "clrName": "StartupTimeout",
+          "targetName": "StartupTimeout",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.TimeSpan",
           "normalizedSignature": "StartupTimeout|:System.TimeSpan|static=false|accessor=getset",
@@ -2170,12 +2170,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostOptions::ServicesStartConcurrently:System.Boolean",
-          "clrName": "ServicesStartConcurrently",
+          "targetName": "ServicesStartConcurrently",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ServicesStartConcurrently|:System.Boolean|static=false|accessor=getset",
@@ -2189,12 +2189,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostOptions::ServicesStopConcurrently:System.Boolean",
-          "clrName": "ServicesStopConcurrently",
+          "targetName": "ServicesStopConcurrently",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "ServicesStopConcurrently|:System.Boolean|static=false|accessor=getset",
@@ -2208,12 +2208,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostOptions::BackgroundServiceExceptionBehavior:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
-          "clrName": "BackgroundServiceExceptionBehavior",
+          "targetName": "BackgroundServiceExceptionBehavior",
           "metadataToken": 385875998,
           "canonicalSignature": ":Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior",
           "normalizedSignature": "BackgroundServiceExceptionBehavior|:Microsoft.Extensions.Hosting.BackgroundServiceExceptionBehavior|static=false|accessor=getset",
@@ -2227,8 +2227,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ],
       "fields": [],
@@ -2242,15 +2242,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostOptions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.EnvironmentName",
-      "clrName": "Microsoft.Extensions.Hosting.EnvironmentName",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.EnvironmentName",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2260,46 +2260,46 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.EnvironmentName::DevelopmentSystem.String",
-          "clrName": "Development",
+          "targetName": "Development",
           "metadataToken": 67108993,
           "normalizedSignature": "Development|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.EnvironmentName",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.EnvironmentName",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.EnvironmentName::StagingSystem.String",
-          "clrName": "Staging",
+          "targetName": "Staging",
           "metadataToken": 67108994,
           "normalizedSignature": "Staging|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.EnvironmentName",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.EnvironmentName",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.EnvironmentName::ProductionSystem.String",
-          "clrName": "Production",
+          "targetName": "Production",
           "metadataToken": 67108995,
           "normalizedSignature": "Production|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.EnvironmentName",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.EnvironmentName",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "events": [],
@@ -2307,8 +2307,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.Environments",
-      "clrName": "Microsoft.Extensions.Hosting.Environments",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.Environments",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2318,46 +2318,46 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.Environments::DevelopmentSystem.String",
-          "clrName": "Development",
+          "targetName": "Development",
           "metadataToken": 67108996,
           "normalizedSignature": "Development|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Environments",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Environments",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.Environments::StagingSystem.String",
-          "clrName": "Staging",
+          "targetName": "Staging",
           "metadataToken": 67108997,
           "normalizedSignature": "Staging|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Environments",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Environments",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.Environments::ProductionSystem.String",
-          "clrName": "Production",
+          "targetName": "Production",
           "metadataToken": 67108998,
           "normalizedSignature": "Production|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Environments",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Environments",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "events": [],
@@ -2365,8 +2365,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host",
-      "clrName": "Microsoft.Extensions.Hosting.Host",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.Host",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2376,12 +2376,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateDefaultBuilder():Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "CreateDefaultBuilder",
+          "targetName": "CreateDefaultBuilder",
           "metadataToken": 100663323,
           "canonicalSignature": "():Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "CreateDefaultBuilder|():Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -2395,13 +2395,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Host",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Host",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateDefaultBuilder(System.String[]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "CreateDefaultBuilder",
+          "targetName": "CreateDefaultBuilder",
           "metadataToken": 100663324,
           "canonicalSignature": "(System.String[]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "CreateDefaultBuilder|(System.String[]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -2415,13 +2415,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Host",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Host",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateApplicationBuilder():Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "clrName": "CreateApplicationBuilder",
+          "targetName": "CreateApplicationBuilder",
           "metadataToken": 100663325,
           "canonicalSignature": "():Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "normalizedSignature": "CreateApplicationBuilder|():Microsoft.Extensions.Hosting.HostApplicationBuilder|static=true",
@@ -2435,13 +2435,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Host",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Host",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateApplicationBuilder(System.String[]):Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "clrName": "CreateApplicationBuilder",
+          "targetName": "CreateApplicationBuilder",
           "metadataToken": 100663326,
           "canonicalSignature": "(System.String[]):Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "normalizedSignature": "CreateApplicationBuilder|(System.String[]):Microsoft.Extensions.Hosting.HostApplicationBuilder|static=true",
@@ -2455,13 +2455,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Host",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Host",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateApplicationBuilder(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "clrName": "CreateApplicationBuilder",
+          "targetName": "CreateApplicationBuilder",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "normalizedSignature": "CreateApplicationBuilder|(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):Microsoft.Extensions.Hosting.HostApplicationBuilder|static=true",
@@ -2475,13 +2475,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Host",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Host",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.Host::CreateEmptyApplicationBuilder(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):Microsoft.Extensions.Hosting.HostApplicationBuilder",
-          "clrName": "CreateEmptyApplicationBuilder",
+          "targetName": "CreateEmptyApplicationBuilder",
           "metadataToken": 100663328,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):Microsoft.Extensions.Hosting.HostApplicationBuilder",
           "normalizedSignature": "CreateEmptyApplicationBuilder|(Microsoft.Extensions.Hosting.HostApplicationBuilderSettings):Microsoft.Extensions.Hosting.HostApplicationBuilder|static=true",
@@ -2495,8 +2495,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.Host",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.Host",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": false
         }
       ],
@@ -2507,8 +2507,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostDefaults",
-      "clrName": "Microsoft.Extensions.Hosting.HostDefaults",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostDefaults",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2518,46 +2518,46 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [],
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostDefaults::ApplicationKeySystem.String",
-          "clrName": "ApplicationKey",
+          "targetName": "ApplicationKey",
           "metadataToken": 67109002,
           "normalizedSignature": "ApplicationKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostDefaults",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostDefaults",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostDefaults::EnvironmentKeySystem.String",
-          "clrName": "EnvironmentKey",
+          "targetName": "EnvironmentKey",
           "metadataToken": 67109003,
           "normalizedSignature": "EnvironmentKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostDefaults",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostDefaults",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostDefaults::ContentRootKeySystem.String",
-          "clrName": "ContentRootKey",
+          "targetName": "ContentRootKey",
           "metadataToken": 67109004,
           "normalizedSignature": "ContentRootKey|System.String|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostDefaults",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostDefaults",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions"
         }
       ],
       "events": [],
@@ -2565,8 +2565,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
-      "clrName": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2576,12 +2576,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions::IsDevelopment(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
-          "clrName": "IsDevelopment",
+          "targetName": "IsDevelopment",
           "metadataToken": 100663334,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
           "normalizedSignature": "IsDevelopment|(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean|static=true",
@@ -2595,13 +2595,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions::IsStaging(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
-          "clrName": "IsStaging",
+          "targetName": "IsStaging",
           "metadataToken": 100663335,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
           "normalizedSignature": "IsStaging|(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean|static=true",
@@ -2615,13 +2615,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions::IsProduction(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
-          "clrName": "IsProduction",
+          "targetName": "IsProduction",
           "metadataToken": 100663336,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean",
           "normalizedSignature": "IsProduction|(Microsoft.Extensions.Hosting.IHostEnvironment):System.Boolean|static=true",
@@ -2635,13 +2635,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions::IsEnvironment(Microsoft.Extensions.Hosting.IHostEnvironment,System.String):System.Boolean",
-          "clrName": "IsEnvironment",
+          "targetName": "IsEnvironment",
           "metadataToken": 100663337,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostEnvironment,System.String):System.Boolean",
           "normalizedSignature": "IsEnvironment|(Microsoft.Extensions.Hosting.IHostEnvironment,System.String):System.Boolean|static=true",
@@ -2655,8 +2655,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostEnvironmentEnvExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -2667,8 +2667,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
-      "clrName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2678,12 +2678,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions::Start(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHost",
-          "clrName": "Start",
+          "targetName": "Start",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHost",
           "normalizedSignature": "Start|(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHost|static=true",
@@ -2697,13 +2697,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions::StartAsync(Microsoft.Extensions.Hosting.IHostBuilder,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Hosting.IHost,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "clrName": "StartAsync",
+          "targetName": "StartAsync",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Hosting.IHost,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
           "normalizedSignature": "StartAsync|(Microsoft.Extensions.Hosting.IHostBuilder,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[Microsoft.Extensions.Hosting.IHost,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=true",
@@ -2717,8 +2717,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -2729,8 +2729,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-      "clrName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2740,12 +2740,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::Start(Microsoft.Extensions.Hosting.IHost):System.Void",
-          "clrName": "Start",
+          "targetName": "Start",
           "metadataToken": 100663340,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHost):System.Void",
           "normalizedSignature": "Start|(Microsoft.Extensions.Hosting.IHost):System.Void|static=true",
@@ -2759,13 +2759,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::StopAsync(Microsoft.Extensions.Hosting.IHost,System.TimeSpan):System.Threading.Tasks.Task",
-          "clrName": "StopAsync",
+          "targetName": "StopAsync",
           "metadataToken": 100663341,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHost,System.TimeSpan):System.Threading.Tasks.Task",
           "normalizedSignature": "StopAsync|(Microsoft.Extensions.Hosting.IHost,System.TimeSpan):System.Threading.Tasks.Task|static=true",
@@ -2779,13 +2779,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::WaitForShutdown(Microsoft.Extensions.Hosting.IHost):System.Void",
-          "clrName": "WaitForShutdown",
+          "targetName": "WaitForShutdown",
           "metadataToken": 100663342,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHost):System.Void",
           "normalizedSignature": "WaitForShutdown|(Microsoft.Extensions.Hosting.IHost):System.Void|static=true",
@@ -2799,13 +2799,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::Run(Microsoft.Extensions.Hosting.IHost):System.Void",
-          "clrName": "Run",
+          "targetName": "Run",
           "metadataToken": 100663343,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHost):System.Void",
           "normalizedSignature": "Run|(Microsoft.Extensions.Hosting.IHost):System.Void|static=true",
@@ -2819,13 +2819,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::RunAsync(Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RunAsync",
+          "targetName": "RunAsync",
           "metadataToken": 100663344,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RunAsync|(Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -2839,13 +2839,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions::WaitForShutdownAsync(Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "WaitForShutdownAsync",
+          "targetName": "WaitForShutdownAsync",
           "metadataToken": 100663345,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "WaitForShutdownAsync|(Microsoft.Extensions.Hosting.IHost,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -2859,8 +2859,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -2871,8 +2871,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
-      "clrName": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
-      "assemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+      "targetName": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2882,12 +2882,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions::IsDevelopment(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
-          "clrName": "IsDevelopment",
+          "targetName": "IsDevelopment",
           "metadataToken": 100663346,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
           "normalizedSignature": "IsDevelopment|(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean|static=true",
@@ -2901,13 +2901,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions::IsStaging(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
-          "clrName": "IsStaging",
+          "targetName": "IsStaging",
           "metadataToken": 100663347,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
           "normalizedSignature": "IsStaging|(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean|static=true",
@@ -2921,13 +2921,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions::IsProduction(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
-          "clrName": "IsProduction",
+          "targetName": "IsProduction",
           "metadataToken": 100663348,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean",
           "normalizedSignature": "IsProduction|(Microsoft.Extensions.Hosting.IHostingEnvironment):System.Boolean|static=true",
@@ -2941,13 +2941,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting.Abstractions:Microsoft.Extensions.Hosting.HostingEnvironmentExtensions::IsEnvironment(Microsoft.Extensions.Hosting.IHostingEnvironment,System.String):System.Boolean",
-          "clrName": "IsEnvironment",
+          "targetName": "IsEnvironment",
           "metadataToken": 100663349,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostingEnvironment,System.String):System.Boolean",
           "normalizedSignature": "IsEnvironment|(Microsoft.Extensions.Hosting.IHostingEnvironment,System.String):System.Boolean|static=true",
@@ -2961,8 +2961,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingEnvironmentExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -2973,8 +2973,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-      "clrName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-      "assemblyName": "Microsoft.Extensions.Hosting",
+      "targetName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Hosting",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -2984,12 +2984,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseEnvironment(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseEnvironment",
+          "targetName": "UseEnvironment",
           "metadataToken": 100663383,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseEnvironment|(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3003,13 +3003,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseContentRoot(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseContentRoot",
+          "targetName": "UseContentRoot",
           "metadataToken": 100663384,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseContentRoot|(Microsoft.Extensions.Hosting.IHostBuilder,System.String):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3023,13 +3023,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseDefaultServiceProvider(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseDefaultServiceProvider",
+          "targetName": "UseDefaultServiceProvider",
           "metadataToken": 100663385,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseDefaultServiceProvider|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3043,13 +3043,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseDefaultServiceProvider(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseDefaultServiceProvider",
+          "targetName": "UseDefaultServiceProvider",
           "metadataToken": 100663386,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseDefaultServiceProvider|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.DependencyInjection.ServiceProviderOptions,Microsoft.Extensions.DependencyInjection,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3063,13 +3063,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureLogging",
+          "targetName": "ConfigureLogging",
           "metadataToken": 100663387,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureLogging|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3083,13 +3083,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureLogging(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureLogging",
+          "targetName": "ConfigureLogging",
           "metadataToken": 100663388,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureLogging|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Logging.ILoggingBuilder,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3103,13 +3103,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureHostOptions",
+          "targetName": "ConfigureHostOptions",
           "metadataToken": 100663389,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureHostOptions|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3123,13 +3123,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureHostOptions",
+          "targetName": "ConfigureHostOptions",
           "metadataToken": 100663390,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureHostOptions|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.HostOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3143,13 +3143,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureAppConfiguration",
+          "targetName": "ConfigureAppConfiguration",
           "metadataToken": 100663391,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureAppConfiguration|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Configuration.IConfigurationBuilder,Microsoft.Extensions.Configuration.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3163,13 +3163,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureServices(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureServices",
+          "targetName": "ConfigureServices",
           "metadataToken": 100663392,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureServices|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.DependencyInjection.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3183,13 +3183,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureContainer(Microsoft.Extensions.Hosting.IHostBuilder,Action_1):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureContainer",
+          "targetName": "ConfigureContainer",
           "metadataToken": 100663393,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,Action_1):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureContainer|(Microsoft.Extensions.Hosting.IHostBuilder,Action_1):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3203,13 +3203,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureDefaults(Microsoft.Extensions.Hosting.IHostBuilder,System.String[]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureDefaults",
+          "targetName": "ConfigureDefaults",
           "metadataToken": 100663394,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.String[]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureDefaults|(Microsoft.Extensions.Hosting.IHostBuilder,System.String[]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3223,13 +3223,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseConsoleLifetime",
+          "targetName": "UseConsoleLifetime",
           "metadataToken": 100663401,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseConsoleLifetime|(Microsoft.Extensions.Hosting.IHostBuilder):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3243,13 +3243,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "UseConsoleLifetime",
+          "targetName": "UseConsoleLifetime",
           "metadataToken": 100663402,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "UseConsoleLifetime|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3263,13 +3263,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::RunConsoleAsync(Microsoft.Extensions.Hosting.IHostBuilder,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RunConsoleAsync",
+          "targetName": "RunConsoleAsync",
           "metadataToken": 100663403,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RunConsoleAsync|(Microsoft.Extensions.Hosting.IHostBuilder,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -3283,13 +3283,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::RunConsoleAsync(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RunConsoleAsync",
+          "targetName": "RunConsoleAsync",
           "metadataToken": 100663404,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RunConsoleAsync|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Hosting.ConsoleLifetimeOptions,Microsoft.Extensions.Hosting,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -3303,13 +3303,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureMetrics(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureMetrics",
+          "targetName": "ConfigureMetrics",
           "metadataToken": 100663405,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureMetrics|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_1[[Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3323,13 +3323,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Hosting:Microsoft.Extensions.Hosting.HostingHostBuilderExtensions::ConfigureMetrics(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
-          "clrName": "ConfigureMetrics",
+          "targetName": "ConfigureMetrics",
           "metadataToken": 100663406,
           "canonicalSignature": "(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder",
           "normalizedSignature": "ConfigureMetrics|(Microsoft.Extensions.Hosting.IHostBuilder,System.Action_2[[Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Hosting.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60],[Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder,Microsoft.Extensions.Diagnostics.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):Microsoft.Extensions.Hosting.IHostBuilder|static=true",
@@ -3343,8 +3343,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Hosting",
+          "ownerQualifiedName": "Microsoft.Extensions.Hosting.HostingHostBuilderExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Hosting",
           "isExtensionMethod": true
         }
       ],

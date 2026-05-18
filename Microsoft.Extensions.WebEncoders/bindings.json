@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-      "clrName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-      "assemblyName": "Microsoft.Extensions.WebEncoders",
+      "targetName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+      "ownerIdentity": "Microsoft.Extensions.WebEncoders",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,13 +17,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions::TextEncoderSettings:System.Text.Encodings.Web.TextEncoderSettings",
-          "clrName": "TextEncoderSettings",
+          "targetName": "TextEncoderSettings",
           "metadataToken": 385875969,
           "canonicalSignature": ":System.Text.Encodings.Web.TextEncoderSettings",
           "normalizedSignature": "TextEncoderSettings|:System.Text.Encodings.Web.TextEncoderSettings|static=false|accessor=getset",
@@ -37,8 +37,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
+          "ownerQualifiedName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+          "ownerIdentity": "Microsoft.Extensions.WebEncoders"
         }
       ],
       "fields": [],
@@ -52,8 +52,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.WebEncoders"
+          "ownerQualifiedName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+          "ownerIdentity": "Microsoft.Extensions.WebEncoders"
         }
       ]
     }

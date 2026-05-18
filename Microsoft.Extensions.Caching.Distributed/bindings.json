@@ -7,8 +7,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
-      "clrName": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -19,13 +19,13 @@
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "clrName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
+          "targetName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::TryGet(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
-          "clrName": "TryGet",
+          "targetName": "TryGet",
           "metadataToken": 100663347,
           "canonicalSignature": "(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean",
           "normalizedSignature": "TryGet|(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]):System.Boolean|static=false",
@@ -39,13 +39,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::TryGetAsync(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "TryGetAsync",
+          "targetName": "TryGetAsync",
           "metadataToken": 100663348,
           "canonicalSignature": "(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "TryGetAsync|(System.String,System.Buffers.IBufferWriter_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Threading.CancellationToken):System.Threading.Tasks.ValueTask_1[[System.Boolean,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -59,13 +59,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::Set(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663349,
           "canonicalSignature": "(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -79,13 +79,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache::SetAsync(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663350,
           "canonicalSignature": "(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask",
           "normalizedSignature": "SetAsync|(System.String,System.Buffers.ReadOnlySequence_1[[System.Byte,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.ValueTask|static=false",
@@ -99,13 +99,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IBufferDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
-          "clrName": "Get",
+          "targetName": "Get",
           "metadataToken": 100663351,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -119,13 +119,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::GetAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetAsync",
+          "targetName": "GetAsync",
           "metadataToken": 100663352,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -139,13 +139,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663353,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -159,13 +159,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663354,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -179,13 +179,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Refresh(System.String):System.Void",
-          "clrName": "Refresh",
+          "targetName": "Refresh",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Refresh|(System.String):System.Void|static=false",
@@ -199,13 +199,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::RefreshAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RefreshAsync",
+          "targetName": "RefreshAsync",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RefreshAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -219,8 +219,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -231,8 +231,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-      "clrName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -243,7 +243,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
-          "clrName": "Get",
+          "targetName": "Get",
           "metadataToken": 100663351,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -257,13 +257,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::GetAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetAsync",
+          "targetName": "GetAsync",
           "metadataToken": 100663352,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -277,13 +277,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663353,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -297,13 +297,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663354,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -317,13 +317,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Refresh(System.String):System.Void",
-          "clrName": "Refresh",
+          "targetName": "Refresh",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Refresh|(System.String):System.Void|static=false",
@@ -337,13 +337,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::RefreshAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RefreshAsync",
+          "targetName": "RefreshAsync",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RefreshAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -357,8 +357,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -369,8 +369,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-      "clrName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -380,13 +380,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions::AbsoluteExpiration:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AbsoluteExpiration",
+          "targetName": "AbsoluteExpiration",
           "metadataToken": 385875974,
           "canonicalSignature": ":System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AbsoluteExpiration|:System.Nullable_1[[System.DateTimeOffset,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -400,12 +400,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions::AbsoluteExpirationRelativeToNow:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "AbsoluteExpirationRelativeToNow",
+          "targetName": "AbsoluteExpirationRelativeToNow",
           "metadataToken": 385875975,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "AbsoluteExpirationRelativeToNow|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -419,12 +419,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions::SlidingExpiration:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "SlidingExpiration",
+          "targetName": "SlidingExpiration",
           "metadataToken": 385875976,
           "canonicalSignature": ":System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "SlidingExpiration|:System.Nullable_1[[System.TimeSpan,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
@@ -438,8 +438,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         }
       ],
       "fields": [],
@@ -453,15 +453,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-      "clrName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-      "assemblyName": "Microsoft.Extensions.Caching.Memory",
+      "targetName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -471,18 +471,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "clrName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
+          "targetName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Get(System.String):System.Byte[]",
-          "clrName": "Get",
+          "targetName": "Get",
           "metadataToken": 100663318,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -496,13 +496,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::GetAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetAsync",
+          "targetName": "GetAsync",
           "metadataToken": 100663319,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -516,13 +516,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663320,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -536,13 +536,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663321,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -556,13 +556,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Refresh(System.String):System.Void",
-          "clrName": "Refresh",
+          "targetName": "Refresh",
           "metadataToken": 100663322,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Refresh|(System.String):System.Void|static=false",
@@ -576,13 +576,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::RefreshAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RefreshAsync",
+          "targetName": "RefreshAsync",
           "metadataToken": 100663323,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RefreshAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -596,13 +596,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::Remove(System.String):System.Void",
-          "clrName": "Remove",
+          "targetName": "Remove",
           "metadataToken": 100663324,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Remove|(System.String):System.Void|static=false",
@@ -616,13 +616,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::RemoveAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RemoveAsync",
+          "targetName": "RemoveAsync",
           "metadataToken": 100663325,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RemoveAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -636,13 +636,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Get(System.String):System.Byte[]",
-          "clrName": "Get",
+          "targetName": "Get",
           "metadataToken": 100663351,
           "canonicalSignature": "(System.String):System.Byte[]",
           "normalizedSignature": "Get|(System.String):System.Byte[]|static=false",
@@ -656,14 +656,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::GetAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetAsync",
+          "targetName": "GetAsync",
           "metadataToken": 100663352,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.Byte[],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
@@ -677,14 +677,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Set(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663353,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "Set|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=false",
@@ -698,14 +698,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::SetAsync(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663354,
           "canonicalSignature": "(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(System.String,System.Byte[],Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -719,14 +719,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::Refresh(System.String):System.Void",
-          "clrName": "Refresh",
+          "targetName": "Refresh",
           "metadataToken": 100663355,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Refresh|(System.String):System.Void|static=false",
@@ -740,14 +740,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.IDistributedCache::RefreshAsync(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "RefreshAsync",
+          "targetName": "RefreshAsync",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "RefreshAsync|(System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=false",
@@ -761,8 +761,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.IDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Caching.Distributed.IDistributedCache"
         }
@@ -779,8 +779,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory"
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Memory:Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache::.ctor(Microsoft.Extensions.Options.IOptions_1[[Microsoft.Extensions.Caching.Memory.MemoryDistributedCacheOptions,Microsoft.Extensions.Caching.Memory,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]],Microsoft.Extensions.Logging.ILoggerFactory):void",
@@ -790,15 +790,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Memory"
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.MemoryDistributedCache",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Memory"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
-      "clrName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -808,12 +808,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "clrName": "SetAbsoluteExpiration",
+          "targetName": "SetAbsoluteExpiration",
           "metadataToken": 100663325,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "normalizedSignature": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions|static=true",
@@ -827,13 +827,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions::SetAbsoluteExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "clrName": "SetAbsoluteExpiration",
+          "targetName": "SetAbsoluteExpiration",
           "metadataToken": 100663326,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "normalizedSignature": "SetAbsoluteExpiration|(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.DateTimeOffset):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions|static=true",
@@ -847,13 +847,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions::SetSlidingExpiration(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
-          "clrName": "SetSlidingExpiration",
+          "targetName": "SetSlidingExpiration",
           "metadataToken": 100663327,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions",
           "normalizedSignature": "SetSlidingExpiration|(Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.TimeSpan):Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions|static=true",
@@ -867,8 +867,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         }
       ],
@@ -879,8 +879,8 @@
     },
     {
       "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-      "clrName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-      "assemblyName": "Microsoft.Extensions.Caching.Abstractions",
+      "targetName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
       "metadataToken": 0,
       "kind": "StaticNamespace",
       "accessibility": "Public",
@@ -890,12 +890,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::Set(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void",
-          "clrName": "Set",
+          "targetName": "Set",
           "metadataToken": 100663338,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void",
           "normalizedSignature": "Set|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[]):System.Void|static=true",
@@ -909,13 +909,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::SetAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetAsync",
+          "targetName": "SetAsync",
           "metadataToken": 100663339,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[],System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetAsync|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Byte[],System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -929,13 +929,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::SetString(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String):System.Void",
-          "clrName": "SetString",
+          "targetName": "SetString",
           "metadataToken": 100663340,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String):System.Void",
           "normalizedSignature": "SetString|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String):System.Void|static=true",
@@ -949,13 +949,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::SetString(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
-          "clrName": "SetString",
+          "targetName": "SetString",
           "metadataToken": 100663341,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void",
           "normalizedSignature": "SetString|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions):System.Void|static=true",
@@ -969,13 +969,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::SetStringAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetStringAsync",
+          "targetName": "SetStringAsync",
           "metadataToken": 100663342,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetStringAsync|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -989,13 +989,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::SetStringAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
-          "clrName": "SetStringAsync",
+          "targetName": "SetStringAsync",
           "metadataToken": 100663343,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task",
           "normalizedSignature": "SetStringAsync|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.String,Microsoft.Extensions.Caching.Distributed.DistributedCacheEntryOptions,System.Threading.CancellationToken):System.Threading.Tasks.Task|static=true",
@@ -1009,13 +1009,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::GetString(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String):System.String",
-          "clrName": "GetString",
+          "targetName": "GetString",
           "metadataToken": 100663344,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String):System.String",
           "normalizedSignature": "GetString|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String):System.String|static=true",
@@ -1029,13 +1029,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         },
         {
           "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions::GetStringAsync(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "GetStringAsync",
+          "targetName": "GetStringAsync",
           "metadataToken": 100663345,
           "canonicalSignature": "(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "GetStringAsync|(Microsoft.Extensions.Caching.Distributed.IDistributedCache,System.String,System.Threading.CancellationToken):System.Threading.Tasks.Task_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=true",
@@ -1049,8 +1049,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
-          "declaringAssemblyName": "Microsoft.Extensions.Caching.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions",
+          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
           "isExtensionMethod": true
         }
       ],

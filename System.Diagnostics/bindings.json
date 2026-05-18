@@ -12,8 +12,8 @@
   "types": [
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType",
-      "clrName": "System.Diagnostics.EventLogEntryType",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventLogEntryType",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -23,24 +23,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -48,75 +48,75 @@
       "fields": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108867,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryType",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryType",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType::ErrorSystem.Diagnostics.EventLogEntryType",
-          "clrName": "Error",
+          "targetName": "Error",
           "metadataToken": 67108868,
           "normalizedSignature": "Error|System.Diagnostics.EventLogEntryType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryType",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryType",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType::WarningSystem.Diagnostics.EventLogEntryType",
-          "clrName": "Warning",
+          "targetName": "Warning",
           "metadataToken": 67108869,
           "normalizedSignature": "Warning|System.Diagnostics.EventLogEntryType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryType",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryType",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType::InformationSystem.Diagnostics.EventLogEntryType",
-          "clrName": "Information",
+          "targetName": "Information",
           "metadataToken": 67108870,
           "normalizedSignature": "Information|System.Diagnostics.EventLogEntryType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryType",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryType",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType::SuccessAuditSystem.Diagnostics.EventLogEntryType",
-          "clrName": "SuccessAudit",
+          "targetName": "SuccessAudit",
           "metadataToken": 67108871,
           "normalizedSignature": "SuccessAudit|System.Diagnostics.EventLogEntryType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryType",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryType",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryType::FailureAuditSystem.Diagnostics.EventLogEntryType",
-          "clrName": "FailureAudit",
+          "targetName": "FailureAudit",
           "metadataToken": 67108872,
           "normalizedSignature": "FailureAudit|System.Diagnostics.EventLogEntryType|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryType",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryType",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "events": [],
@@ -124,8 +124,8 @@
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.OverflowAction",
-      "clrName": "System.Diagnostics.OverflowAction",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.OverflowAction",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Enum",
       "accessibility": "Public",
@@ -135,24 +135,24 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Enum",
-        "clrName": "System.Enum"
+        "targetName": "System.Enum"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IComparable",
-          "clrName": "System.IComparable"
+          "targetName": "System.IComparable"
         },
         {
           "stableId": "System.Private.CoreLib:System.ISpanFormattable",
-          "clrName": "System.ISpanFormattable"
+          "targetName": "System.ISpanFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IFormattable",
-          "clrName": "System.IFormattable"
+          "targetName": "System.IFormattable"
         },
         {
           "stableId": "System.Private.CoreLib:System.IConvertible",
-          "clrName": "System.IConvertible"
+          "targetName": "System.IConvertible"
         }
       ],
       "methods": [],
@@ -160,51 +160,51 @@
       "fields": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.OverflowAction::value__System.Int32",
-          "clrName": "value__",
+          "targetName": "value__",
           "metadataToken": 67108873,
           "normalizedSignature": "value__|System.Int32|static=false|const=false",
           "isStatic": false,
           "isReadOnly": false,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.OverflowAction",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.OverflowAction",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.OverflowAction::DoNotOverwriteSystem.Diagnostics.OverflowAction",
-          "clrName": "DoNotOverwrite",
+          "targetName": "DoNotOverwrite",
           "metadataToken": 67108874,
           "normalizedSignature": "DoNotOverwrite|System.Diagnostics.OverflowAction|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.OverflowAction",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.OverflowAction",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.OverflowAction::OverwriteAsNeededSystem.Diagnostics.OverflowAction",
-          "clrName": "OverwriteAsNeeded",
+          "targetName": "OverwriteAsNeeded",
           "metadataToken": 67108875,
           "normalizedSignature": "OverwriteAsNeeded|System.Diagnostics.OverflowAction|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.OverflowAction",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.OverflowAction",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.OverflowAction::OverwriteOlderSystem.Diagnostics.OverflowAction",
-          "clrName": "OverwriteOlder",
+          "targetName": "OverwriteOlder",
           "metadataToken": 67108876,
           "normalizedSignature": "OverwriteOlder|System.Diagnostics.OverflowAction|static=true|const=true",
           "isStatic": true,
           "isReadOnly": false,
           "isLiteral": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.OverflowAction",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.OverflowAction",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "events": [],
@@ -212,8 +212,8 @@
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventHandler",
-      "clrName": "System.Diagnostics.EntryWrittenEventHandler",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EntryWrittenEventHandler",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Delegate",
       "accessibility": "Public",
@@ -223,22 +223,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.MulticastDelegate",
-        "clrName": "System.MulticastDelegate"
+        "targetName": "System.MulticastDelegate"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.ICloneable",
-          "clrName": "System.ICloneable"
+          "targetName": "System.ICloneable"
         },
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventHandler::Invoke(System.Object,System.Diagnostics.EntryWrittenEventArgs):System.Void",
-          "clrName": "Invoke",
+          "targetName": "Invoke",
           "metadataToken": 100663356,
           "canonicalSignature": "(System.Object,System.Diagnostics.EntryWrittenEventArgs):System.Void",
           "normalizedSignature": "Invoke|(System.Object,System.Diagnostics.EntryWrittenEventArgs):System.Void|static=false",
@@ -252,13 +252,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventHandler",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventHandler::BeginInvoke(System.Object,System.Diagnostics.EntryWrittenEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult",
-          "clrName": "BeginInvoke",
+          "targetName": "BeginInvoke",
           "metadataToken": 100663357,
           "canonicalSignature": "(System.Object,System.Diagnostics.EntryWrittenEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult",
           "normalizedSignature": "BeginInvoke|(System.Object,System.Diagnostics.EntryWrittenEventArgs,System.AsyncCallback,System.Object):System.IAsyncResult|static=false",
@@ -272,13 +272,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventHandler",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventHandler::EndInvoke(System.IAsyncResult):System.Void",
-          "clrName": "EndInvoke",
+          "targetName": "EndInvoke",
           "metadataToken": 100663358,
           "canonicalSignature": "(System.IAsyncResult):System.Void",
           "normalizedSignature": "EndInvoke|(System.IAsyncResult):System.Void|static=false",
@@ -292,8 +292,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventHandler",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         }
       ],
@@ -309,15 +309,15 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventHandler",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventHandler",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ]
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventArgs",
-      "clrName": "System.Diagnostics.EntryWrittenEventArgs",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EntryWrittenEventArgs",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -327,13 +327,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.EventArgs",
-        "clrName": "System.EventArgs"
+        "targetName": "System.EventArgs"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventArgs::Entry:System.Diagnostics.EventLogEntry",
-          "clrName": "Entry",
+          "targetName": "Entry",
           "metadataToken": 385876011,
           "canonicalSignature": ":System.Diagnostics.EventLogEntry",
           "normalizedSignature": "Entry|:System.Diagnostics.EventLogEntry|static=false|accessor=get",
@@ -347,8 +347,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventArgs",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventArgs",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
@@ -362,8 +362,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventArgs",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventArgs",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EntryWrittenEventArgs::.ctor(System.Diagnostics.EventLogEntry):void",
@@ -373,15 +373,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EntryWrittenEventArgs",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EntryWrittenEventArgs",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ]
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventInstance",
-      "clrName": "System.Diagnostics.EventInstance",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventInstance",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -391,13 +391,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventInstance::CategoryId:System.Int32",
-          "clrName": "CategoryId",
+          "targetName": "CategoryId",
           "metadataToken": 385876012,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CategoryId|:System.Int32|static=false|accessor=getset",
@@ -411,12 +411,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventInstance",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventInstance",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventInstance::EntryType:System.Diagnostics.EventLogEntryType",
-          "clrName": "EntryType",
+          "targetName": "EntryType",
           "metadataToken": 385876013,
           "canonicalSignature": ":System.Diagnostics.EventLogEntryType",
           "normalizedSignature": "EntryType|:System.Diagnostics.EventLogEntryType|static=false|accessor=getset",
@@ -430,12 +430,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventInstance",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventInstance",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventInstance::InstanceId:System.Int64",
-          "clrName": "InstanceId",
+          "targetName": "InstanceId",
           "metadataToken": 385876014,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "InstanceId|:System.Int64|static=false|accessor=getset",
@@ -449,8 +449,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventInstance",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventInstance",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
@@ -464,8 +464,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventInstance",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventInstance",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventInstance::.ctor(System.Int64,System.Int32,System.Diagnostics.EventLogEntryType):void",
@@ -475,15 +475,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventInstance",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventInstance",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ]
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog",
-      "clrName": "System.Diagnostics.EventLog",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventLog",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -493,26 +493,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.ComponentModel.Primitives:System.ComponentModel.Component",
-        "clrName": "System.ComponentModel.Component"
+        "targetName": "System.ComponentModel.Component"
       },
       "interfaces": [
         {
           "stableId": "System.ComponentModel.Primitives:System.ComponentModel.IComponent",
-          "clrName": "System.ComponentModel.IComponent"
+          "targetName": "System.ComponentModel.IComponent"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         },
         {
           "stableId": "System.ComponentModel.Primitives:System.ComponentModel.ISupportInitialize",
-          "clrName": "System.ComponentModel.ISupportInitialize"
+          "targetName": "System.ComponentModel.ISupportInitialize"
         }
       ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::BeginInit():System.Void",
-          "clrName": "BeginInit",
+          "targetName": "BeginInit",
           "metadataToken": 100663389,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "BeginInit|():System.Void|static=false",
@@ -526,13 +526,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Clear():System.Void",
-          "clrName": "Clear",
+          "targetName": "Clear",
           "metadataToken": 100663390,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Clear|():System.Void|static=false",
@@ -546,13 +546,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Close():System.Void",
-          "clrName": "Close",
+          "targetName": "Close",
           "metadataToken": 100663391,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Close|():System.Void|static=false",
@@ -566,13 +566,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::CreateEventSource(System.Diagnostics.EventSourceCreationData):System.Void",
-          "clrName": "CreateEventSource",
+          "targetName": "CreateEventSource",
           "metadataToken": 100663392,
           "canonicalSignature": "(System.Diagnostics.EventSourceCreationData):System.Void",
           "normalizedSignature": "CreateEventSource|(System.Diagnostics.EventSourceCreationData):System.Void|static=true",
@@ -586,13 +586,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::CreateEventSource(System.String,System.String):System.Void",
-          "clrName": "CreateEventSource",
+          "targetName": "CreateEventSource",
           "metadataToken": 100663393,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "CreateEventSource|(System.String,System.String):System.Void|static=true",
@@ -606,13 +606,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::CreateEventSource(System.String,System.String,System.String):System.Void",
-          "clrName": "CreateEventSource",
+          "targetName": "CreateEventSource",
           "metadataToken": 100663394,
           "canonicalSignature": "(System.String,System.String,System.String):System.Void",
           "normalizedSignature": "CreateEventSource|(System.String,System.String,System.String):System.Void|static=true",
@@ -626,13 +626,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Delete(System.String):System.Void",
-          "clrName": "Delete",
+          "targetName": "Delete",
           "metadataToken": 100663395,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Delete|(System.String):System.Void|static=true",
@@ -646,13 +646,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Delete(System.String,System.String):System.Void",
-          "clrName": "Delete",
+          "targetName": "Delete",
           "metadataToken": 100663396,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "Delete|(System.String,System.String):System.Void|static=true",
@@ -666,13 +666,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::DeleteEventSource(System.String):System.Void",
-          "clrName": "DeleteEventSource",
+          "targetName": "DeleteEventSource",
           "metadataToken": 100663397,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "DeleteEventSource|(System.String):System.Void|static=true",
@@ -686,13 +686,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::DeleteEventSource(System.String,System.String):System.Void",
-          "clrName": "DeleteEventSource",
+          "targetName": "DeleteEventSource",
           "metadataToken": 100663398,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "DeleteEventSource|(System.String,System.String):System.Void|static=true",
@@ -706,13 +706,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Dispose(System.Boolean):System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663399,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
@@ -726,13 +726,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::EndInit():System.Void",
-          "clrName": "EndInit",
+          "targetName": "EndInit",
           "metadataToken": 100663400,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "EndInit|():System.Void|static=false",
@@ -746,13 +746,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Exists(System.String):System.Boolean",
-          "clrName": "Exists",
+          "targetName": "Exists",
           "metadataToken": 100663401,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "Exists|(System.String):System.Boolean|static=true",
@@ -766,13 +766,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Exists(System.String,System.String):System.Boolean",
-          "clrName": "Exists",
+          "targetName": "Exists",
           "metadataToken": 100663402,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "Exists|(System.String,System.String):System.Boolean|static=true",
@@ -786,13 +786,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::GetEventLogs():System.Diagnostics.EventLog[]",
-          "clrName": "GetEventLogs",
+          "targetName": "GetEventLogs",
           "metadataToken": 100663403,
           "canonicalSignature": "():System.Diagnostics.EventLog[]",
           "normalizedSignature": "GetEventLogs|():System.Diagnostics.EventLog[]|static=true",
@@ -806,13 +806,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::GetEventLogs(System.String):System.Diagnostics.EventLog[]",
-          "clrName": "GetEventLogs",
+          "targetName": "GetEventLogs",
           "metadataToken": 100663404,
           "canonicalSignature": "(System.String):System.Diagnostics.EventLog[]",
           "normalizedSignature": "GetEventLogs|(System.String):System.Diagnostics.EventLog[]|static=true",
@@ -826,13 +826,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::LogNameFromSourceName(System.String,System.String):System.String",
-          "clrName": "LogNameFromSourceName",
+          "targetName": "LogNameFromSourceName",
           "metadataToken": 100663405,
           "canonicalSignature": "(System.String,System.String):System.String",
           "normalizedSignature": "LogNameFromSourceName|(System.String,System.String):System.String|static=true",
@@ -846,13 +846,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::ModifyOverflowPolicy(System.Diagnostics.OverflowAction,System.Int32):System.Void",
-          "clrName": "ModifyOverflowPolicy",
+          "targetName": "ModifyOverflowPolicy",
           "metadataToken": 100663406,
           "canonicalSignature": "(System.Diagnostics.OverflowAction,System.Int32):System.Void",
           "normalizedSignature": "ModifyOverflowPolicy|(System.Diagnostics.OverflowAction,System.Int32):System.Void|static=false",
@@ -866,13 +866,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::RegisterDisplayName(System.String,System.Int64):System.Void",
-          "clrName": "RegisterDisplayName",
+          "targetName": "RegisterDisplayName",
           "metadataToken": 100663407,
           "canonicalSignature": "(System.String,System.Int64):System.Void",
           "normalizedSignature": "RegisterDisplayName|(System.String,System.Int64):System.Void|static=false",
@@ -886,13 +886,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::SourceExists(System.String):System.Boolean",
-          "clrName": "SourceExists",
+          "targetName": "SourceExists",
           "metadataToken": 100663408,
           "canonicalSignature": "(System.String):System.Boolean",
           "normalizedSignature": "SourceExists|(System.String):System.Boolean|static=true",
@@ -906,13 +906,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::SourceExists(System.String,System.String):System.Boolean",
-          "clrName": "SourceExists",
+          "targetName": "SourceExists",
           "metadataToken": 100663409,
           "canonicalSignature": "(System.String,System.String):System.Boolean",
           "normalizedSignature": "SourceExists|(System.String,System.String):System.Boolean|static=true",
@@ -926,13 +926,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663410,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteEntry|(System.String):System.Void|static=false",
@@ -946,13 +946,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.Diagnostics.EventLogEntryType):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663411,
           "canonicalSignature": "(System.String,System.Diagnostics.EventLogEntryType):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.Diagnostics.EventLogEntryType):System.Void|static=false",
@@ -966,13 +966,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663412,
           "canonicalSignature": "(System.String,System.Diagnostics.EventLogEntryType,System.Int32):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.Diagnostics.EventLogEntryType,System.Int32):System.Void|static=false",
@@ -986,13 +986,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663413,
           "canonicalSignature": "(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16):System.Void|static=false",
@@ -1006,13 +1006,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[]):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663414,
           "canonicalSignature": "(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[]):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[]):System.Void|static=false",
@@ -1026,13 +1026,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.String):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663415,
           "canonicalSignature": "(System.String,System.String):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.String):System.Void|static=true",
@@ -1046,13 +1046,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663416,
           "canonicalSignature": "(System.String,System.String,System.Diagnostics.EventLogEntryType):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.String,System.Diagnostics.EventLogEntryType):System.Void|static=true",
@@ -1066,13 +1066,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663417,
           "canonicalSignature": "(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32):System.Void|static=true",
@@ -1086,13 +1086,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663418,
           "canonicalSignature": "(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16):System.Void|static=true",
@@ -1106,13 +1106,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEntry(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[]):System.Void",
-          "clrName": "WriteEntry",
+          "targetName": "WriteEntry",
           "metadataToken": 100663419,
           "canonicalSignature": "(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[]):System.Void",
           "normalizedSignature": "WriteEntry|(System.String,System.String,System.Diagnostics.EventLogEntryType,System.Int32,System.Int16,System.Byte[]):System.Void|static=true",
@@ -1126,13 +1126,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEvent(System.Diagnostics.EventInstance,System.Byte[],System.Object[]):System.Void",
-          "clrName": "WriteEvent",
+          "targetName": "WriteEvent",
           "metadataToken": 100663420,
           "canonicalSignature": "(System.Diagnostics.EventInstance,System.Byte[],System.Object[]):System.Void",
           "normalizedSignature": "WriteEvent|(System.Diagnostics.EventInstance,System.Byte[],System.Object[]):System.Void|static=false",
@@ -1146,13 +1146,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEvent(System.Diagnostics.EventInstance,System.Object[]):System.Void",
-          "clrName": "WriteEvent",
+          "targetName": "WriteEvent",
           "metadataToken": 100663421,
           "canonicalSignature": "(System.Diagnostics.EventInstance,System.Object[]):System.Void",
           "normalizedSignature": "WriteEvent|(System.Diagnostics.EventInstance,System.Object[]):System.Void|static=false",
@@ -1166,13 +1166,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEvent(System.String,System.Diagnostics.EventInstance,System.Byte[],System.Object[]):System.Void",
-          "clrName": "WriteEvent",
+          "targetName": "WriteEvent",
           "metadataToken": 100663422,
           "canonicalSignature": "(System.String,System.Diagnostics.EventInstance,System.Byte[],System.Object[]):System.Void",
           "normalizedSignature": "WriteEvent|(System.String,System.Diagnostics.EventInstance,System.Byte[],System.Object[]):System.Void|static=true",
@@ -1186,13 +1186,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::WriteEvent(System.String,System.Diagnostics.EventInstance,System.Object[]):System.Void",
-          "clrName": "WriteEvent",
+          "targetName": "WriteEvent",
           "metadataToken": 100663423,
           "canonicalSignature": "(System.String,System.Diagnostics.EventInstance,System.Object[]):System.Void",
           "normalizedSignature": "WriteEvent|(System.String,System.Diagnostics.EventInstance,System.Object[]):System.Void|static=true",
@@ -1206,15 +1206,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::EnableRaisingEvents:System.Boolean",
-          "clrName": "EnableRaisingEvents",
+          "targetName": "EnableRaisingEvents",
           "metadataToken": 385876015,
           "canonicalSignature": ":System.Boolean",
           "normalizedSignature": "EnableRaisingEvents|:System.Boolean|static=false|accessor=getset",
@@ -1228,12 +1228,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Entries:System.Diagnostics.EventLogEntryCollection",
-          "clrName": "Entries",
+          "targetName": "Entries",
           "metadataToken": 385876016,
           "canonicalSignature": ":System.Diagnostics.EventLogEntryCollection",
           "normalizedSignature": "Entries|:System.Diagnostics.EventLogEntryCollection|static=false|accessor=get",
@@ -1247,12 +1247,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Log:System.String",
-          "clrName": "Log",
+          "targetName": "Log",
           "metadataToken": 385876017,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Log|:System.String|static=false|accessor=getset",
@@ -1266,12 +1266,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::LogDisplayName:System.String",
-          "clrName": "LogDisplayName",
+          "targetName": "LogDisplayName",
           "metadataToken": 385876018,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "LogDisplayName|:System.String|static=false|accessor=get",
@@ -1285,12 +1285,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::MachineName:System.String",
-          "clrName": "MachineName",
+          "targetName": "MachineName",
           "metadataToken": 385876019,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MachineName|:System.String|static=false|accessor=getset",
@@ -1304,12 +1304,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::MaximumKilobytes:System.Int64",
-          "clrName": "MaximumKilobytes",
+          "targetName": "MaximumKilobytes",
           "metadataToken": 385876020,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "MaximumKilobytes|:System.Int64|static=false|accessor=getset",
@@ -1323,12 +1323,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::MinimumRetentionDays:System.Int32",
-          "clrName": "MinimumRetentionDays",
+          "targetName": "MinimumRetentionDays",
           "metadataToken": 385876021,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "MinimumRetentionDays|:System.Int32|static=false|accessor=get",
@@ -1342,12 +1342,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::OverflowAction:System.Diagnostics.OverflowAction",
-          "clrName": "OverflowAction",
+          "targetName": "OverflowAction",
           "metadataToken": 385876022,
           "canonicalSignature": ":System.Diagnostics.OverflowAction",
           "normalizedSignature": "OverflowAction|:System.Diagnostics.OverflowAction|static=false|accessor=get",
@@ -1361,12 +1361,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::Source:System.String",
-          "clrName": "Source",
+          "targetName": "Source",
           "metadataToken": 385876023,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Source|:System.String|static=false|accessor=getset",
@@ -1380,12 +1380,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::SynchronizingObject:System.ComponentModel.ISynchronizeInvoke",
-          "clrName": "SynchronizingObject",
+          "targetName": "SynchronizingObject",
           "metadataToken": 385876024,
           "canonicalSignature": ":System.ComponentModel.ISynchronizeInvoke",
           "normalizedSignature": "SynchronizingObject|:System.ComponentModel.ISynchronizeInvoke|static=false|accessor=getset",
@@ -1399,21 +1399,21 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
       "events": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::EntryWrittenSystem.Diagnostics.EntryWrittenEventHandler",
-          "clrName": "EntryWritten",
+          "targetName": "EntryWritten",
           "metadataToken": 335544321,
           "normalizedSignature": "EntryWritten|System.Diagnostics.EntryWrittenEventHandler|static=false",
           "isStatic": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "constructors": [
@@ -1425,8 +1425,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::.ctor(System.String):void",
@@ -1436,8 +1436,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::.ctor(System.String,System.String):void",
@@ -1447,8 +1447,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLog::.ctor(System.String,System.String,System.String):void",
@@ -1458,15 +1458,15 @@
           "isStatic": false,
           "parameterCount": 3,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLog",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLog",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ]
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry",
-      "clrName": "System.Diagnostics.EventLogEntry",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventLogEntry",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1476,26 +1476,26 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.ComponentModel.Primitives:System.ComponentModel.Component",
-        "clrName": "System.ComponentModel.Component"
+        "targetName": "System.ComponentModel.Component"
       },
       "interfaces": [
         {
           "stableId": "System.ComponentModel.Primitives:System.ComponentModel.IComponent",
-          "clrName": "System.ComponentModel.IComponent"
+          "targetName": "System.ComponentModel.IComponent"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         },
         {
           "stableId": "System.Private.CoreLib:System.Runtime.Serialization.ISerializable",
-          "clrName": "System.Runtime.Serialization.ISerializable"
+          "targetName": "System.Runtime.Serialization.ISerializable"
         }
       ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Equals(System.Diagnostics.EventLogEntry):System.Boolean",
-          "clrName": "Equals",
+          "targetName": "Equals",
           "metadataToken": 100663439,
           "canonicalSignature": "(System.Diagnostics.EventLogEntry):System.Boolean",
           "normalizedSignature": "Equals|(System.Diagnostics.EventLogEntry):System.Boolean|static=false",
@@ -1509,15 +1509,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Category:System.String",
-          "clrName": "Category",
+          "targetName": "Category",
           "metadataToken": 385876025,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Category|:System.String|static=false|accessor=get",
@@ -1531,12 +1531,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::CategoryNumber:System.Int16",
-          "clrName": "CategoryNumber",
+          "targetName": "CategoryNumber",
           "metadataToken": 385876026,
           "canonicalSignature": ":System.Int16",
           "normalizedSignature": "CategoryNumber|:System.Int16|static=false|accessor=get",
@@ -1550,12 +1550,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Data:System.Byte[]",
-          "clrName": "Data",
+          "targetName": "Data",
           "metadataToken": 385876027,
           "canonicalSignature": ":System.Byte[]",
           "normalizedSignature": "Data|:System.Byte[]|static=false|accessor=get",
@@ -1569,12 +1569,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::EntryType:System.Diagnostics.EventLogEntryType",
-          "clrName": "EntryType",
+          "targetName": "EntryType",
           "metadataToken": 385876028,
           "canonicalSignature": ":System.Diagnostics.EventLogEntryType",
           "normalizedSignature": "EntryType|:System.Diagnostics.EventLogEntryType|static=false|accessor=get",
@@ -1588,12 +1588,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::EventID:System.Int32",
-          "clrName": "EventID",
+          "targetName": "EventID",
           "metadataToken": 385876029,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "EventID|:System.Int32|static=false|accessor=get",
@@ -1607,12 +1607,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Index:System.Int32",
-          "clrName": "Index",
+          "targetName": "Index",
           "metadataToken": 385876030,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Index|:System.Int32|static=false|accessor=get",
@@ -1626,12 +1626,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::InstanceId:System.Int64",
-          "clrName": "InstanceId",
+          "targetName": "InstanceId",
           "metadataToken": 385876031,
           "canonicalSignature": ":System.Int64",
           "normalizedSignature": "InstanceId|:System.Int64|static=false|accessor=get",
@@ -1645,12 +1645,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::MachineName:System.String",
-          "clrName": "MachineName",
+          "targetName": "MachineName",
           "metadataToken": 385876032,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MachineName|:System.String|static=false|accessor=get",
@@ -1664,12 +1664,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Message:System.String",
-          "clrName": "Message",
+          "targetName": "Message",
           "metadataToken": 385876033,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Message|:System.String|static=false|accessor=get",
@@ -1683,12 +1683,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::ReplacementStrings:System.String[]",
-          "clrName": "ReplacementStrings",
+          "targetName": "ReplacementStrings",
           "metadataToken": 385876034,
           "canonicalSignature": ":System.String[]",
           "normalizedSignature": "ReplacementStrings|:System.String[]|static=false|accessor=get",
@@ -1702,12 +1702,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::Source:System.String",
-          "clrName": "Source",
+          "targetName": "Source",
           "metadataToken": 385876035,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Source|:System.String|static=false|accessor=get",
@@ -1721,12 +1721,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::TimeGenerated:System.DateTime",
-          "clrName": "TimeGenerated",
+          "targetName": "TimeGenerated",
           "metadataToken": 385876036,
           "canonicalSignature": ":System.DateTime",
           "normalizedSignature": "TimeGenerated|:System.DateTime|static=false|accessor=get",
@@ -1740,12 +1740,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::TimeWritten:System.DateTime",
-          "clrName": "TimeWritten",
+          "targetName": "TimeWritten",
           "metadataToken": 385876037,
           "canonicalSignature": ":System.DateTime",
           "normalizedSignature": "TimeWritten|:System.DateTime|static=false|accessor=get",
@@ -1759,12 +1759,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntry::UserName:System.String",
-          "clrName": "UserName",
+          "targetName": "UserName",
           "metadataToken": 385876038,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "UserName|:System.String|static=false|accessor=get",
@@ -1778,8 +1778,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntry",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntry",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
@@ -1788,8 +1788,8 @@
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryCollection",
-      "clrName": "System.Diagnostics.EventLogEntryCollection",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventLogEntryCollection",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1799,22 +1799,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.Collections.ICollection",
-          "clrName": "System.Collections.ICollection"
+          "targetName": "System.Collections.ICollection"
         },
         {
           "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "clrName": "System.Collections.IEnumerable"
+          "targetName": "System.Collections.IEnumerable"
         }
       ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryCollection::CopyTo(System.Diagnostics.EventLogEntry[],System.Int32):System.Void",
-          "clrName": "CopyTo",
+          "targetName": "CopyTo",
           "metadataToken": 100663446,
           "canonicalSignature": "(System.Diagnostics.EventLogEntry[],System.Int32):System.Void",
           "normalizedSignature": "CopyTo|(System.Diagnostics.EventLogEntry[],System.Int32):System.Void|static=false",
@@ -1828,13 +1828,13 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryCollection",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryCollection::GetEnumerator():System.Collections.IEnumerator",
-          "clrName": "GetEnumerator",
+          "targetName": "GetEnumerator",
           "metadataToken": 100663447,
           "canonicalSignature": "():System.Collections.IEnumerator",
           "normalizedSignature": "GetEnumerator|():System.Collections.IEnumerator|static=false",
@@ -1848,15 +1848,15 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryCollection",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryCollection::Count:System.Int32",
-          "clrName": "Count",
+          "targetName": "Count",
           "metadataToken": 385876039,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "Count|:System.Int32|static=false|accessor=get",
@@ -1870,12 +1870,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryCollection",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogEntryCollection::Item[System.Int32]:System.Diagnostics.EventLogEntry",
-          "clrName": "Item",
+          "targetName": "Item",
           "metadataToken": 385876040,
           "canonicalSignature": "[System.Int32]:System.Diagnostics.EventLogEntry",
           "normalizedSignature": "Item|[System.Int32]:System.Diagnostics.EventLogEntry|static=false|accessor=get",
@@ -1889,8 +1889,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogEntryCollection",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogEntryCollection",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
@@ -1899,8 +1899,8 @@
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener",
-      "clrName": "System.Diagnostics.EventLogTraceListener",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventLogTraceListener",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -1910,18 +1910,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Diagnostics.TraceSource:System.Diagnostics.TraceListener",
-        "clrName": "System.Diagnostics.TraceListener"
+        "targetName": "System.Diagnostics.TraceListener"
       },
       "interfaces": [
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::Close():System.Void",
-          "clrName": "Close",
+          "targetName": "Close",
           "metadataToken": 100663456,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Close|():System.Void|static=false",
@@ -1935,13 +1935,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::Dispose(System.Boolean):System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663457,
           "canonicalSignature": "(System.Boolean):System.Void",
           "normalizedSignature": "Dispose|(System.Boolean):System.Void|static=false",
@@ -1955,13 +1955,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Protected",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object):System.Void",
-          "clrName": "TraceData",
+          "targetName": "TraceData",
           "metadataToken": 100663458,
           "canonicalSignature": "(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object):System.Void",
           "normalizedSignature": "TraceData|(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object):System.Void|static=false",
@@ -1975,13 +1975,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[]):System.Void",
-          "clrName": "TraceData",
+          "targetName": "TraceData",
           "metadataToken": 100663459,
           "canonicalSignature": "(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[]):System.Void",
           "normalizedSignature": "TraceData|(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[]):System.Void|static=false",
@@ -1995,13 +1995,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String):System.Void",
-          "clrName": "TraceEvent",
+          "targetName": "TraceEvent",
           "metadataToken": 100663460,
           "canonicalSignature": "(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String):System.Void",
           "normalizedSignature": "TraceEvent|(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String):System.Void|static=false",
@@ -2015,13 +2015,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[]):System.Void",
-          "clrName": "TraceEvent",
+          "targetName": "TraceEvent",
           "metadataToken": 100663461,
           "canonicalSignature": "(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[]):System.Void",
           "normalizedSignature": "TraceEvent|(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[]):System.Void|static=false",
@@ -2035,13 +2035,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::Write(System.String):System.Void",
-          "clrName": "Write",
+          "targetName": "Write",
           "metadataToken": 100663462,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "Write|(System.String):System.Void|static=false",
@@ -2055,13 +2055,13 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::WriteLine(System.String):System.Void",
-          "clrName": "WriteLine",
+          "targetName": "WriteLine",
           "metadataToken": 100663463,
           "canonicalSignature": "(System.String):System.Void",
           "normalizedSignature": "WriteLine|(System.String):System.Void|static=false",
@@ -2075,15 +2075,15 @@
           "isOverride": true,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog",
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::EventLog:System.Diagnostics.EventLog",
-          "clrName": "EventLog",
+          "targetName": "EventLog",
           "metadataToken": 385876043,
           "canonicalSignature": ":System.Diagnostics.EventLog",
           "normalizedSignature": "EventLog|:System.Diagnostics.EventLog|static=false|accessor=getset",
@@ -2097,12 +2097,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::Name:System.String",
-          "clrName": "Name",
+          "targetName": "Name",
           "metadataToken": 385876044,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Name|:System.String|static=false|accessor=getset",
@@ -2116,8 +2116,8 @@
           "isVirtual": true,
           "isOverride": true,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
@@ -2131,8 +2131,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::.ctor(System.Diagnostics.EventLog):void",
@@ -2142,8 +2142,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventLogTraceListener::.ctor(System.String):void",
@@ -2153,15 +2153,15 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventLogTraceListener",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventLogTraceListener",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ]
     },
     {
       "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData",
-      "clrName": "System.Diagnostics.EventSourceCreationData",
-      "assemblyName": "System.Diagnostics.EventLog",
+      "targetName": "System.Diagnostics.EventSourceCreationData",
+      "ownerIdentity": "System.Diagnostics.EventLog",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -2171,13 +2171,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::CategoryCount:System.Int32",
-          "clrName": "CategoryCount",
+          "targetName": "CategoryCount",
           "metadataToken": 385876045,
           "canonicalSignature": ":System.Int32",
           "normalizedSignature": "CategoryCount|:System.Int32|static=false|accessor=getset",
@@ -2191,12 +2191,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::CategoryResourceFile:System.String",
-          "clrName": "CategoryResourceFile",
+          "targetName": "CategoryResourceFile",
           "metadataToken": 385876046,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "CategoryResourceFile|:System.String|static=false|accessor=getset",
@@ -2210,12 +2210,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::LogName:System.String",
-          "clrName": "LogName",
+          "targetName": "LogName",
           "metadataToken": 385876047,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "LogName|:System.String|static=false|accessor=getset",
@@ -2229,12 +2229,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::MachineName:System.String",
-          "clrName": "MachineName",
+          "targetName": "MachineName",
           "metadataToken": 385876048,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MachineName|:System.String|static=false|accessor=getset",
@@ -2248,12 +2248,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::MessageResourceFile:System.String",
-          "clrName": "MessageResourceFile",
+          "targetName": "MessageResourceFile",
           "metadataToken": 385876049,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MessageResourceFile|:System.String|static=false|accessor=getset",
@@ -2267,12 +2267,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::ParameterResourceFile:System.String",
-          "clrName": "ParameterResourceFile",
+          "targetName": "ParameterResourceFile",
           "metadataToken": 385876050,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "ParameterResourceFile|:System.String|static=false|accessor=getset",
@@ -2286,12 +2286,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         },
         {
           "stableId": "System.Diagnostics.EventLog:System.Diagnostics.EventSourceCreationData::Source:System.String",
-          "clrName": "Source",
+          "targetName": "Source",
           "metadataToken": 385876051,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Source|:System.String|static=false|accessor=getset",
@@ -2305,8 +2305,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ],
       "fields": [],
@@ -2320,8 +2320,8 @@
           "isStatic": false,
           "parameterCount": 2,
           "visibility": "Public",
-          "declaringClrType": "System.Diagnostics.EventSourceCreationData",
-          "declaringAssemblyName": "System.Diagnostics.EventLog"
+          "ownerQualifiedName": "System.Diagnostics.EventSourceCreationData",
+          "ownerIdentity": "System.Diagnostics.EventLog"
         }
       ]
     }

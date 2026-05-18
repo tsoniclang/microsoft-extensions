@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-      "clrName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-      "assemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+      "targetName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,12 +17,12 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::Build(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
-          "clrName": "Build",
+          "targetName": "Build",
           "metadataToken": 100663386,
           "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
           "normalizedSignature": "Build|(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern|static=false",
@@ -36,15 +36,15 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing",
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
           "isExtensionMethod": false
         }
       ],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::ComparisonType:System.StringComparison",
-          "clrName": "ComparisonType",
+          "targetName": "ComparisonType",
           "metadataToken": 385875993,
           "canonicalSignature": ":System.StringComparison",
           "normalizedSignature": "ComparisonType|:System.StringComparison|static=false|accessor=get",
@@ -58,8 +58,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ],
       "fields": [],
@@ -73,8 +73,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         },
         {
           "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::.ctor(System.StringComparison):void",
@@ -84,8 +84,8 @@
           "isStatic": false,
           "parameterCount": 1,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "declaringAssemblyName": "Microsoft.Extensions.FileSystemGlobbing"
+          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
         }
       ]
     }

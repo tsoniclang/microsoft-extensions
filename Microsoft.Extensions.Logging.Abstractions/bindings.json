@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.IBufferedLogger",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.IBufferedLogger",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.IBufferedLogger",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Interface",
       "accessibility": "Public",
@@ -18,7 +18,7 @@
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.IBufferedLogger::LogRecords(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
-          "clrName": "LogRecords",
+          "targetName": "LogRecords",
           "metadataToken": 100663494,
           "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void",
           "normalizedSignature": "LogRecords|(System.Collections.Generic.IEnumerable_1[[Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord,Microsoft.Extensions.Logging.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]):System.Void|static=false",
@@ -32,8 +32,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.IBufferedLogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.IBufferedLogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         }
       ],
@@ -43,9 +43,9 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Struct",
       "accessibility": "Public",
@@ -55,7 +55,7 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.ValueType",
-        "clrName": "System.ValueType"
+        "targetName": "System.ValueType"
       },
       "typeParameters": [
         "TState"
@@ -63,8 +63,8 @@
       "methods": [],
       "properties": [
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::LogLevel:Microsoft.Extensions.Logging.LogLevel",
-          "clrName": "LogLevel",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::LogLevel:Microsoft.Extensions.Logging.LogLevel",
+          "targetName": "LogLevel",
           "metadataToken": 385876002,
           "canonicalSignature": ":Microsoft.Extensions.Logging.LogLevel",
           "normalizedSignature": "LogLevel|:Microsoft.Extensions.Logging.LogLevel|static=false|accessor=get",
@@ -78,12 +78,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::Category:System.String",
-          "clrName": "Category",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::Category:System.String",
+          "targetName": "Category",
           "metadataToken": 385876003,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Category|:System.String|static=false|accessor=get",
@@ -97,12 +97,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::EventId:Microsoft.Extensions.Logging.EventId",
-          "clrName": "EventId",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::EventId:Microsoft.Extensions.Logging.EventId",
+          "targetName": "EventId",
           "metadataToken": 385876004,
           "canonicalSignature": ":Microsoft.Extensions.Logging.EventId",
           "normalizedSignature": "EventId|:Microsoft.Extensions.Logging.EventId|static=false|accessor=get",
@@ -116,12 +116,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::State:TState",
-          "clrName": "State",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::State:TState",
+          "targetName": "State",
           "metadataToken": 385876005,
           "canonicalSignature": ":TState",
           "normalizedSignature": "State|:TState|static=false|accessor=get",
@@ -135,12 +135,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::Exception:System.Exception",
-          "clrName": "Exception",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::Exception:System.Exception",
+          "targetName": "Exception",
           "metadataToken": 385876006,
           "canonicalSignature": ":System.Exception",
           "normalizedSignature": "Exception|:System.Exception|static=false|accessor=get",
@@ -154,12 +154,12 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::Formatter:Func_3",
-          "clrName": "Formatter",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::Formatter:Func_3",
+          "targetName": "Formatter",
           "metadataToken": 385876007,
           "canonicalSignature": ":Func_3",
           "normalizedSignature": "Formatter|:Func_3|static=false|accessor=get",
@@ -173,30 +173,30 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ],
       "fields": [],
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601::.ctor(Microsoft.Extensions.Logging.LogLevel,System.String,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):void",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.LogEntry`1::.ctor(Microsoft.Extensions.Logging.LogLevel,System.String,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):void",
           "metadataToken": 100663495,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel,System.String,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):void",
           "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.LogLevel,System.String,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):void|static=false",
           "isStatic": false,
           "parameterCount": 6,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.LogEntry\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.LogEntry`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -206,13 +206,13 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "methods": [],
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::Timestamp:System.DateTimeOffset",
-          "clrName": "Timestamp",
+          "targetName": "Timestamp",
           "metadataToken": 385875992,
           "canonicalSignature": ":System.DateTimeOffset",
           "normalizedSignature": "Timestamp|:System.DateTimeOffset|static=false|accessor=get",
@@ -226,12 +226,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::LogLevel:Microsoft.Extensions.Logging.LogLevel",
-          "clrName": "LogLevel",
+          "targetName": "LogLevel",
           "metadataToken": 385875993,
           "canonicalSignature": ":Microsoft.Extensions.Logging.LogLevel",
           "normalizedSignature": "LogLevel|:Microsoft.Extensions.Logging.LogLevel|static=false|accessor=get",
@@ -245,12 +245,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::EventId:Microsoft.Extensions.Logging.EventId",
-          "clrName": "EventId",
+          "targetName": "EventId",
           "metadataToken": 385875994,
           "canonicalSignature": ":Microsoft.Extensions.Logging.EventId",
           "normalizedSignature": "EventId|:Microsoft.Extensions.Logging.EventId|static=false|accessor=get",
@@ -264,12 +264,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::Exception:System.String",
-          "clrName": "Exception",
+          "targetName": "Exception",
           "metadataToken": 385875995,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "Exception|:System.String|static=false|accessor=get",
@@ -283,12 +283,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::ActivitySpanId:System.Nullable_1[[System.Diagnostics.ActivitySpanId,System.Diagnostics.DiagnosticSource,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "ActivitySpanId",
+          "targetName": "ActivitySpanId",
           "metadataToken": 385875996,
           "canonicalSignature": ":System.Nullable_1[[System.Diagnostics.ActivitySpanId,System.Diagnostics.DiagnosticSource,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "ActivitySpanId|:System.Nullable_1[[System.Diagnostics.ActivitySpanId,System.Diagnostics.DiagnosticSource,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false|accessor=get",
@@ -302,12 +302,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::ActivityTraceId:System.Nullable_1[[System.Diagnostics.ActivityTraceId,System.Diagnostics.DiagnosticSource,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
-          "clrName": "ActivityTraceId",
+          "targetName": "ActivityTraceId",
           "metadataToken": 385875997,
           "canonicalSignature": ":System.Nullable_1[[System.Diagnostics.ActivityTraceId,System.Diagnostics.DiagnosticSource,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]",
           "normalizedSignature": "ActivityTraceId|:System.Nullable_1[[System.Diagnostics.ActivityTraceId,System.Diagnostics.DiagnosticSource,Version=10.0.0.0,Culture=neutral,PublicKeyToken=cc7b13ffcd2ddd51]]|static=false|accessor=get",
@@ -321,12 +321,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::ManagedThreadId:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "ManagedThreadId",
+          "targetName": "ManagedThreadId",
           "metadataToken": 385875998,
           "canonicalSignature": ":System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "ManagedThreadId|:System.Nullable_1[[System.Int32,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -340,12 +340,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::FormattedMessage:System.String",
-          "clrName": "FormattedMessage",
+          "targetName": "FormattedMessage",
           "metadataToken": 385875999,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "FormattedMessage|:System.String|static=false|accessor=get",
@@ -359,12 +359,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::MessageTemplate:System.String",
-          "clrName": "MessageTemplate",
+          "targetName": "MessageTemplate",
           "metadataToken": 385876000,
           "canonicalSignature": ":System.String",
           "normalizedSignature": "MessageTemplate|:System.String|static=false|accessor=get",
@@ -378,12 +378,12 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::Attributes:System.Collections.Generic.IReadOnlyList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "clrName": "Attributes",
+          "targetName": "Attributes",
           "metadataToken": 385876001,
           "canonicalSignature": ":System.Collections.Generic.IReadOnlyList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
           "normalizedSignature": "Attributes|:System.Collections.Generic.IReadOnlyList_1[[System.Collections.Generic.KeyValuePair_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.Object,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
@@ -397,8 +397,8 @@
           "isVirtual": true,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ],
       "fields": [],
@@ -412,15 +412,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Protected",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -430,18 +430,18 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger",
-          "clrName": "Microsoft.Extensions.Logging.ILogger"
+          "targetName": "Microsoft.Extensions.Logging.ILogger"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger::BeginScope(TState):System.IDisposable",
-          "clrName": "BeginScope",
+          "targetName": "BeginScope",
           "metadataToken": 100663504,
           "canonicalSignature": "(TState):System.IDisposable",
           "normalizedSignature": "BeginScope|(TState):System.IDisposable|static=false",
@@ -455,13 +455,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger::IsEnabled(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
-          "clrName": "IsEnabled",
+          "targetName": "IsEnabled",
           "metadataToken": 100663505,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
           "normalizedSignature": "IsEnabled|(Microsoft.Extensions.Logging.LogLevel):System.Boolean|static=false",
@@ -475,13 +475,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger::Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
-          "clrName": "Log",
+          "targetName": "Log",
           "metadataToken": 100663506,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
           "normalizedSignature": "Log|(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void|static=false",
@@ -495,13 +495,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger::Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
-          "clrName": "Log",
+          "targetName": "Log",
           "metadataToken": 100663365,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
           "normalizedSignature": "Log|(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void|static=false",
@@ -515,14 +515,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILogger"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger::IsEnabled(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
-          "clrName": "IsEnabled",
+          "targetName": "IsEnabled",
           "metadataToken": 100663366,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
           "normalizedSignature": "IsEnabled|(Microsoft.Extensions.Logging.LogLevel):System.Boolean|static=false",
@@ -536,14 +536,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILogger"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger::BeginScope(TState):System.IDisposable",
-          "clrName": "BeginScope",
+          "targetName": "BeginScope",
           "metadataToken": 100663367,
           "canonicalSignature": "(TState):System.IDisposable",
           "normalizedSignature": "BeginScope|(TState):System.IDisposable|static=false",
@@ -557,8 +557,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILogger"
         }
@@ -566,7 +566,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger::Instance:Microsoft.Extensions.Logging.Abstractions.NullLogger",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876008,
           "canonicalSignature": ":Microsoft.Extensions.Logging.Abstractions.NullLogger",
           "normalizedSignature": "Instance|:Microsoft.Extensions.Logging.Abstractions.NullLogger|static=true|accessor=get",
@@ -580,8 +580,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ],
       "fields": [],
@@ -589,9 +589,9 @@
       "constructors": []
     },
     {
-      "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -601,19 +601,19 @@
       "arity": 1,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger\u00601",
-          "clrName": "Microsoft.Extensions.Logging.ILogger\u00601",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger`1",
+          "targetName": "Microsoft.Extensions.Logging.ILogger`1",
           "typeArguments": [
             "T"
           ]
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger",
-          "clrName": "Microsoft.Extensions.Logging.ILogger"
+          "targetName": "Microsoft.Extensions.Logging.ILogger"
         }
       ],
       "typeParameters": [
@@ -621,8 +621,8 @@
       ],
       "methods": [
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601::BeginScope(TState):System.IDisposable",
-          "clrName": "BeginScope",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger`1::BeginScope(TState):System.IDisposable",
+          "targetName": "BeginScope",
           "metadataToken": 100663518,
           "canonicalSignature": "(TState):System.IDisposable",
           "normalizedSignature": "BeginScope|(TState):System.IDisposable|static=false",
@@ -636,13 +636,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601::Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
-          "clrName": "Log",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger`1::Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
+          "targetName": "Log",
           "metadataToken": 100663519,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
           "normalizedSignature": "Log|(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void|static=false",
@@ -656,13 +656,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601::IsEnabled(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
-          "clrName": "IsEnabled",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger`1::IsEnabled(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
+          "targetName": "IsEnabled",
           "metadataToken": 100663520,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
           "normalizedSignature": "IsEnabled|(Microsoft.Extensions.Logging.LogLevel):System.Boolean|static=false",
@@ -676,13 +676,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger::Log(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
-          "clrName": "Log",
+          "targetName": "Log",
           "metadataToken": 100663365,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void",
           "normalizedSignature": "Log|(Microsoft.Extensions.Logging.LogLevel,Microsoft.Extensions.Logging.EventId,TState,System.Exception,Func_3):System.Void|static=false",
@@ -696,14 +696,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILogger"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger::IsEnabled(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
-          "clrName": "IsEnabled",
+          "targetName": "IsEnabled",
           "metadataToken": 100663366,
           "canonicalSignature": "(Microsoft.Extensions.Logging.LogLevel):System.Boolean",
           "normalizedSignature": "IsEnabled|(Microsoft.Extensions.Logging.LogLevel):System.Boolean|static=false",
@@ -717,14 +717,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILogger"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILogger::BeginScope(TState):System.IDisposable",
-          "clrName": "BeginScope",
+          "targetName": "BeginScope",
           "metadataToken": 100663367,
           "canonicalSignature": "(TState):System.IDisposable",
           "normalizedSignature": "BeginScope|(TState):System.IDisposable|static=false",
@@ -738,8 +738,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILogger",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILogger",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILogger"
         }
@@ -747,16 +747,16 @@
       "properties": [],
       "fields": [
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601::InstanceNullLogger\u00601",
-          "clrName": "Instance",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger`1::InstanceNullLogger`1",
+          "targetName": "Instance",
           "metadataToken": 67108915,
-          "normalizedSignature": "Instance|NullLogger\u00601|static=true|const=false",
+          "normalizedSignature": "Instance|NullLogger`1|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "emitSemantics": {
             "callableStaticAccessorKind": "field"
           }
@@ -765,22 +765,22 @@
       "events": [],
       "constructors": [
         {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601::.ctor():void",
+          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger`1::.ctor():void",
           "metadataToken": 100663521,
           "canonicalSignature": "():void",
           "normalizedSignature": "constructor|():void|static=false",
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLogger\u00601",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLogger`1",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -790,22 +790,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerFactory",
-          "clrName": "Microsoft.Extensions.Logging.ILoggerFactory"
+          "targetName": "Microsoft.Extensions.Logging.ILoggerFactory"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "clrName": "CreateLogger",
+          "targetName": "CreateLogger",
           "metadataToken": 100663509,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
@@ -819,13 +819,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory::AddProvider(Microsoft.Extensions.Logging.ILoggerProvider):System.Void",
-          "clrName": "AddProvider",
+          "targetName": "AddProvider",
           "metadataToken": 100663510,
           "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggerProvider):System.Void",
           "normalizedSignature": "AddProvider|(Microsoft.Extensions.Logging.ILoggerProvider):System.Void|static=false",
@@ -839,13 +839,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663511,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -859,13 +859,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerFactory::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "clrName": "CreateLogger",
+          "targetName": "CreateLogger",
           "metadataToken": 100663368,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
@@ -879,14 +879,14 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILoggerFactory"
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerFactory::AddProvider(Microsoft.Extensions.Logging.ILoggerProvider):System.Void",
-          "clrName": "AddProvider",
+          "targetName": "AddProvider",
           "metadataToken": 100663369,
           "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggerProvider):System.Void",
           "normalizedSignature": "AddProvider|(Microsoft.Extensions.Logging.ILoggerProvider):System.Void|static=false",
@@ -900,8 +900,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILoggerFactory"
         }
@@ -910,15 +910,15 @@
       "fields": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory::InstanceMicrosoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 67108913,
           "normalizedSignature": "Instance|Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory|static=true|const=false",
           "isStatic": true,
           "isReadOnly": true,
           "isLiteral": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ],
       "events": [],
@@ -931,15 +931,15 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerFactory",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ]
     },
     {
       "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
-      "clrName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
-      "assemblyName": "Microsoft.Extensions.Logging.Abstractions",
+      "targetName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -949,22 +949,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
-          "clrName": "Microsoft.Extensions.Logging.ILoggerProvider"
+          "targetName": "Microsoft.Extensions.Logging.ILoggerProvider"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "clrName": "CreateLogger",
+          "targetName": "CreateLogger",
           "metadataToken": 100663515,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
@@ -978,13 +978,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663516,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -998,13 +998,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "clrName": "CreateLogger",
+          "targetName": "CreateLogger",
           "metadataToken": 100663370,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
@@ -1018,8 +1018,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILoggerProvider"
         }
@@ -1027,7 +1027,7 @@
       "properties": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider::Instance:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
-          "clrName": "Instance",
+          "targetName": "Instance",
           "metadataToken": 385876009,
           "canonicalSignature": ":Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
           "normalizedSignature": "Instance|:Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider|static=true|accessor=get",
@@ -1041,8 +1041,8 @@
           "isVirtual": false,
           "isOverride": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.NullLoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
         }
       ],
       "fields": [],

@@ -6,8 +6,8 @@
   "types": [
     {
       "stableId": "Microsoft.Extensions.Logging.Debug:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
-      "clrName": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
-      "assemblyName": "Microsoft.Extensions.Logging.Debug",
+      "targetName": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
+      "ownerIdentity": "Microsoft.Extensions.Logging.Debug",
       "metadataToken": 0,
       "kind": "Class",
       "accessibility": "Public",
@@ -17,22 +17,22 @@
       "arity": 0,
       "baseType": {
         "stableId": "System.Private.CoreLib:System.Object",
-        "clrName": "System.Object"
+        "targetName": "System.Object"
       },
       "interfaces": [
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
-          "clrName": "Microsoft.Extensions.Logging.ILoggerProvider"
+          "targetName": "Microsoft.Extensions.Logging.ILoggerProvider"
         },
         {
           "stableId": "System.Private.CoreLib:System.IDisposable",
-          "clrName": "System.IDisposable"
+          "targetName": "System.IDisposable"
         }
       ],
       "methods": [
         {
           "stableId": "Microsoft.Extensions.Logging.Debug:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "clrName": "CreateLogger",
+          "targetName": "CreateLogger",
           "metadataToken": 100663315,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
@@ -46,13 +46,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Debug",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Debug",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Debug:Microsoft.Extensions.Logging.Debug.DebugLoggerProvider::Dispose():System.Void",
-          "clrName": "Dispose",
+          "targetName": "Dispose",
           "metadataToken": 100663316,
           "canonicalSignature": "():System.Void",
           "normalizedSignature": "Dispose|():System.Void|static=false",
@@ -66,13 +66,13 @@
           "isOverride": false,
           "isSealed": true,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Debug",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Debug",
           "isExtensionMethod": false
         },
         {
           "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "clrName": "CreateLogger",
+          "targetName": "CreateLogger",
           "metadataToken": 100663370,
           "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
           "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
@@ -86,8 +86,8 @@
           "isOverride": false,
           "isSealed": false,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.ILoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Abstractions",
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
           "isExtensionMethod": false,
           "sourceInterface": "Microsoft.Extensions.Logging.ILoggerProvider"
         }
@@ -104,8 +104,8 @@
           "isStatic": false,
           "parameterCount": 0,
           "visibility": "Public",
-          "declaringClrType": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
-          "declaringAssemblyName": "Microsoft.Extensions.Logging.Debug"
+          "ownerQualifiedName": "Microsoft.Extensions.Logging.Debug.DebugLoggerProvider",
+          "ownerIdentity": "Microsoft.Extensions.Logging.Debug"
         }
       ]
     }
