@@ -1,93 +1,98 @@
 {
-  "namespace": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.FileSystemGlobbing"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-      "targetName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-      "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::Build(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
-          "targetName": "Build",
-          "metadataToken": 100663386,
-          "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
-          "normalizedSignature": "Build|(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::ComparisonType:System.StringComparison",
-          "targetName": "ComparisonType",
-          "metadataToken": 385875993,
-          "canonicalSignature": ":System.StringComparison",
-          "normalizedSignature": "ComparisonType|:System.StringComparison|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::.ctor():void",
-          "metadataToken": 100663383,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns",
+    "ownerIdentities": [
+      "Microsoft.Extensions.FileSystemGlobbing"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+        "targetName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+        "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::.ctor(System.StringComparison):void",
-          "metadataToken": 100663384,
-          "canonicalSignature": "(System.StringComparison):void",
-          "normalizedSignature": "constructor|(System.StringComparison):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
-          "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
-        }
-      ]
-    }
-  ]
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::Build(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
+            "targetName": "Build",
+            "metadataToken": 100663386,
+            "canonicalSignature": "(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern",
+            "normalizedSignature": "Build|(System.String):Microsoft.Extensions.FileSystemGlobbing.Internal.IPattern|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::ComparisonType:System.StringComparison",
+            "targetName": "ComparisonType",
+            "metadataToken": 385875993,
+            "canonicalSignature": ":System.StringComparison",
+            "normalizedSignature": "ComparisonType|:System.StringComparison|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::.ctor():void",
+            "metadataToken": 100663383,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
+          },
+          {
+            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder::.ctor(System.StringComparison):void",
+            "metadataToken": 100663384,
+            "canonicalSignature": "(System.StringComparison):void",
+            "normalizedSignature": "constructor|(System.StringComparison):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns.PatternBuilder",
+            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
+          }
+        ]
+      }
+    ]
+  }
 }

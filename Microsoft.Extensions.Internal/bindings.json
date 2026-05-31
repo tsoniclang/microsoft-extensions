@@ -1,124 +1,129 @@
 {
-  "namespace": "Microsoft.Extensions.Internal",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.Caching.Abstractions"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock",
-      "targetName": "Microsoft.Extensions.Internal.ISystemClock",
-      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock::UtcNow:System.DateTimeOffset",
-          "targetName": "UtcNow",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.DateTimeOffset",
-          "normalizedSignature": "UtcNow|:System.DateTimeOffset|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Internal.ISystemClock",
-          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.SystemClock",
-      "targetName": "Microsoft.Extensions.Internal.SystemClock",
-      "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.Internal",
+    "ownerIdentities": [
+      "Microsoft.Extensions.Caching.Abstractions"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock",
+        "targetName": "Microsoft.Extensions.Internal.ISystemClock",
+        "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock::UtcNow:System.DateTimeOffset",
+            "targetName": "UtcNow",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.DateTimeOffset",
+            "normalizedSignature": "UtcNow|:System.DateTimeOffset|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Internal.ISystemClock",
+            "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock",
-          "targetName": "Microsoft.Extensions.Internal.ISystemClock"
-        }
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.SystemClock::UtcNow:System.DateTimeOffset",
-          "targetName": "UtcNow",
-          "metadataToken": 385875970,
-          "canonicalSignature": ":System.DateTimeOffset",
-          "normalizedSignature": "UtcNow|:System.DateTimeOffset|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Internal.SystemClock",
-          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
+      {
+        "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.SystemClock",
+        "targetName": "Microsoft.Extensions.Internal.SystemClock",
+        "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock::UtcNow:System.DateTimeOffset",
-          "targetName": "UtcNow",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.DateTimeOffset",
-          "normalizedSignature": "UtcNow|:System.DateTimeOffset|static=false|accessor=get",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "sourceInterface": "Microsoft.Extensions.Internal.ISystemClock",
-          "ownerQualifiedName": "Microsoft.Extensions.Internal.ISystemClock",
-          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.SystemClock::.ctor():void",
-          "metadataToken": 100663299,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Internal.SystemClock",
-          "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock",
+            "targetName": "Microsoft.Extensions.Internal.ISystemClock"
+          }
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.SystemClock::UtcNow:System.DateTimeOffset",
+            "targetName": "UtcNow",
+            "metadataToken": 385875970,
+            "canonicalSignature": ":System.DateTimeOffset",
+            "normalizedSignature": "UtcNow|:System.DateTimeOffset|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Internal.SystemClock",
+            "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.ISystemClock::UtcNow:System.DateTimeOffset",
+            "targetName": "UtcNow",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.DateTimeOffset",
+            "normalizedSignature": "UtcNow|:System.DateTimeOffset|static=false|accessor=get",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.Extensions.Internal.ISystemClock",
+            "ownerQualifiedName": "Microsoft.Extensions.Internal.ISystemClock",
+            "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Internal.SystemClock::.ctor():void",
+            "metadataToken": 100663299,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Internal.SystemClock",
+            "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
+          }
+        ]
+      }
+    ]
+  }
 }

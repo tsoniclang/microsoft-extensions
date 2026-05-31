@@ -1,311 +1,316 @@
 {
-  "namespace": "Microsoft.Extensions.Configuration.EnvironmentVariables",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.Configuration.EnvironmentVariables"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
-      "targetName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
-      "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider",
-        "targetName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+    "ownerIdentities": [
+      "Microsoft.Extensions.Configuration.EnvironmentVariables"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
+        "targetName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
+        "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider",
+          "targetName": "Microsoft.Extensions.Configuration.ConfigurationProvider"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "targetName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::Load():System.Void",
+            "targetName": "Load",
+            "metadataToken": 100663302,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "Load|():System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::ToString():System.String",
+            "targetName": "ToString",
+            "metadataToken": 100663303,
+            "canonicalSignature": "():System.String",
+            "normalizedSignature": "ToString|():System.String|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String&):System.Boolean",
+            "targetName": "TryGet",
+            "metadataToken": 100663343,
+            "canonicalSignature": "(System.String,System.String&):System.Boolean",
+            "normalizedSignature": "TryGet|(System.String,System.String&):System.Boolean|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "parameterModifiers": [
+              {
+                "index": 1,
+                "modifier": "out"
+              }
+            ]
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
+            "targetName": "Set",
+            "metadataToken": 100663344,
+            "canonicalSignature": "(System.String,System.String):System.Void",
+            "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
+            "targetName": "GetReloadToken",
+            "metadataToken": 100663345,
+            "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
+            "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "targetName": "GetChildKeys",
+            "metadataToken": 100663347,
+            "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
+            "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 2,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
+            "targetName": "Load",
+            "metadataToken": 100663346,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "Load|():System.Void|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::.ctor():void",
+            "metadataToken": 100663300,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::.ctor(System.String):void",
+            "metadataToken": 100663301,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "targetName": "Microsoft.Extensions.Configuration.IConfigurationProvider"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::Load():System.Void",
-          "targetName": "Load",
-          "metadataToken": 100663302,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Load|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
-          "isExtensionMethod": false
+      {
+        "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
+        "targetName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
+        "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::ToString():System.String",
-          "targetName": "ToString",
-          "metadataToken": 100663303,
-          "canonicalSignature": "():System.String",
-          "normalizedSignature": "ToString|():System.String|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::TryGet(System.String,System.String&):System.Boolean",
-          "targetName": "TryGet",
-          "metadataToken": 100663343,
-          "canonicalSignature": "(System.String,System.String&):System.Boolean",
-          "normalizedSignature": "TryGet|(System.String,System.String&):System.Boolean|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "parameterModifiers": [
-            {
-              "index": 1,
-              "modifier": "out"
-            }
-          ]
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Set(System.String,System.String):System.Void",
-          "targetName": "Set",
-          "metadataToken": 100663344,
-          "canonicalSignature": "(System.String,System.String):System.Void",
-          "normalizedSignature": "Set|(System.String,System.String):System.Void|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetReloadToken():Microsoft.Extensions.Primitives.IChangeToken",
-          "targetName": "GetReloadToken",
-          "metadataToken": 100663345,
-          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
-          "normalizedSignature": "GetReloadToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::GetChildKeys(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "targetName": "GetChildKeys",
-          "metadataToken": 100663347,
-          "canonicalSignature": "(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-          "normalizedSignature": "GetChildKeys|(System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]],System.String):System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 2,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationProvider::Load():System.Void",
-          "targetName": "Load",
-          "metadataToken": 100663346,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Load|():System.Void|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::.ctor():void",
-          "metadataToken": 100663300,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider::.ctor(System.String):void",
-          "metadataToken": 100663301,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationProvider",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
-      "targetName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
-      "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
-          "targetName": "Microsoft.Extensions.Configuration.IConfigurationSource"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "targetName": "Build",
-          "metadataToken": 100663310,
-          "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "targetName": "Build",
-          "metadataToken": 100663354,
-          "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
-          "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationSource",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource::Prefix:System.String",
-          "targetName": "Prefix",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Prefix|:System.String|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource::.ctor():void",
-          "metadataToken": 100663311,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
-          "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource",
+            "targetName": "Microsoft.Extensions.Configuration.IConfigurationSource"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "targetName": "Build",
+            "metadataToken": 100663310,
+            "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.Extensions.Configuration.Abstractions:Microsoft.Extensions.Configuration.IConfigurationSource::Build(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "targetName": "Build",
+            "metadataToken": 100663354,
+            "canonicalSignature": "(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider",
+            "normalizedSignature": "Build|(Microsoft.Extensions.Configuration.IConfigurationBuilder):Microsoft.Extensions.Configuration.IConfigurationProvider|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.IConfigurationSource",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationSource"
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource::Prefix:System.String",
+            "targetName": "Prefix",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Prefix|:System.String|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.Configuration.EnvironmentVariables:Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource::.ctor():void",
+            "metadataToken": 100663311,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Configuration.EnvironmentVariables.EnvironmentVariablesConfigurationSource",
+            "ownerIdentity": "Microsoft.Extensions.Configuration.EnvironmentVariables"
+          }
+        ]
+      }
+    ]
+  }
 }
