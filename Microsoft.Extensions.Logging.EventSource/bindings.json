@@ -1,231 +1,236 @@
 {
-  "namespace": "Microsoft.Extensions.Logging.EventSource",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.Logging.EventSource"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
-      "targetName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
-      "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.Logging.EventSource",
+    "ownerIdentities": [
+      "Microsoft.Extensions.Logging.EventSource"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
+        "targetName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
+        "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
+            "targetName": "Microsoft.Extensions.Logging.ILoggerProvider"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.IDisposable",
+            "targetName": "System.IDisposable"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
+            "targetName": "CreateLogger",
+            "metadataToken": 100663325,
+            "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
+            "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider::Dispose():System.Void",
+            "targetName": "Dispose",
+            "metadataToken": 100663326,
+            "canonicalSignature": "():System.Void",
+            "normalizedSignature": "Dispose|():System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
+            "isExtensionMethod": false
+          },
+          {
+            "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
+            "targetName": "CreateLogger",
+            "metadataToken": 100663370,
+            "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
+            "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.ILoggerProvider",
+            "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Logging.ILoggerProvider"
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider::.ctor(Microsoft.Extensions.Logging.EventSource.LoggingEventSource):void",
+            "metadataToken": 100663324,
+            "canonicalSignature": "(Microsoft.Extensions.Logging.EventSource.LoggingEventSource):void",
+            "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.EventSource.LoggingEventSource):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
+          }
+        ]
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider",
-          "targetName": "Microsoft.Extensions.Logging.ILoggerProvider"
+      {
+        "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource",
+        "targetName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource",
+        "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventSource",
+          "targetName": "System.Diagnostics.Tracing.EventSource"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "targetName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "targetName": "CreateLogger",
-          "metadataToken": 100663325,
-          "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
-          "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider::Dispose():System.Void",
-          "targetName": "Dispose",
-          "metadataToken": 100663326,
-          "canonicalSignature": "():System.Void",
-          "normalizedSignature": "Dispose|():System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
-          "isExtensionMethod": false
-        },
-        {
-          "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.ILoggerProvider::CreateLogger(System.String):Microsoft.Extensions.Logging.ILogger",
-          "targetName": "CreateLogger",
-          "metadataToken": 100663370,
-          "canonicalSignature": "(System.String):Microsoft.Extensions.Logging.ILogger",
-          "normalizedSignature": "CreateLogger|(System.String):Microsoft.Extensions.Logging.ILogger|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.ILoggerProvider",
-          "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Logging.ILoggerProvider"
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider::.ctor(Microsoft.Extensions.Logging.EventSource.LoggingEventSource):void",
-          "metadataToken": 100663324,
-          "canonicalSignature": "(Microsoft.Extensions.Logging.EventSource.LoggingEventSource):void",
-          "normalizedSignature": "constructor|(Microsoft.Extensions.Logging.EventSource.LoggingEventSource):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.EventSourceLoggerProvider",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource",
-      "targetName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource",
-      "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Diagnostics.Tracing.EventSource",
-        "targetName": "System.Diagnostics.Tracing.EventSource"
+        "interfaces": [
+          {
+            "stableId": "System.Private.CoreLib:System.IDisposable",
+            "targetName": "System.IDisposable"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource::OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs):System.Void",
+            "targetName": "OnEventCommand",
+            "metadataToken": 100663343,
+            "canonicalSignature": "(System.Diagnostics.Tracing.EventCommandEventArgs):System.Void",
+            "normalizedSignature": "OnEventCommand|(System.Diagnostics.Tracing.EventCommandEventArgs):System.Void|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": true,
+            "isSealed": false,
+            "visibility": "Protected",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "System.Private.CoreLib:System.IDisposable",
-          "targetName": "System.IDisposable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource::OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs):System.Void",
-          "targetName": "OnEventCommand",
-          "metadataToken": 100663343,
-          "canonicalSignature": "(System.Diagnostics.Tracing.EventCommandEventArgs):System.Void",
-          "normalizedSignature": "OnEventCommand|(System.Diagnostics.Tracing.EventCommandEventArgs):System.Void|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": true,
-          "isSealed": false,
-          "visibility": "Protected",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
-      "targetName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
-      "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [],
-      "fields": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::MetaSystem.Diagnostics.Tracing.EventKeywords",
-          "targetName": "Meta",
-          "metadataToken": 67108898,
-          "normalizedSignature": "Meta|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
+      {
+        "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
+        "targetName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
+        "ownerIdentity": "Microsoft.Extensions.Logging.EventSource",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::MessageSystem.Diagnostics.Tracing.EventKeywords",
-          "targetName": "Message",
-          "metadataToken": 67108899,
-          "normalizedSignature": "Message|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::FormattedMessageSystem.Diagnostics.Tracing.EventKeywords",
-          "targetName": "FormattedMessage",
-          "metadataToken": 67108900,
-          "normalizedSignature": "FormattedMessage|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
-        },
-        {
-          "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::JsonMessageSystem.Diagnostics.Tracing.EventKeywords",
-          "targetName": "JsonMessage",
-          "metadataToken": 67108901,
-          "normalizedSignature": "JsonMessage|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
-          "isStatic": true,
-          "isReadOnly": false,
-          "isLiteral": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
-          "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
-        }
-      ],
-      "events": [],
-      "constructors": []
-    }
-  ]
+        "methods": [],
+        "properties": [],
+        "fields": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::MetaSystem.Diagnostics.Tracing.EventKeywords",
+            "targetName": "Meta",
+            "metadataToken": 67108898,
+            "normalizedSignature": "Meta|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::MessageSystem.Diagnostics.Tracing.EventKeywords",
+            "targetName": "Message",
+            "metadataToken": 67108899,
+            "normalizedSignature": "Message|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::FormattedMessageSystem.Diagnostics.Tracing.EventKeywords",
+            "targetName": "FormattedMessage",
+            "metadataToken": 67108900,
+            "normalizedSignature": "FormattedMessage|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
+          },
+          {
+            "stableId": "Microsoft.Extensions.Logging.EventSource:Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords::JsonMessageSystem.Diagnostics.Tracing.EventKeywords",
+            "targetName": "JsonMessage",
+            "metadataToken": 67108901,
+            "normalizedSignature": "JsonMessage|System.Diagnostics.Tracing.EventKeywords|static=true|const=true",
+            "isStatic": true,
+            "isReadOnly": false,
+            "isLiteral": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.EventSource.LoggingEventSource+Keywords",
+            "ownerIdentity": "Microsoft.Extensions.Logging.EventSource"
+          }
+        ],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

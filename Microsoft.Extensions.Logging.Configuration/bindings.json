@@ -1,262 +1,267 @@
 {
-  "namespace": "Microsoft.Extensions.Logging.Configuration",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.Logging.Configuration"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1",
-      "targetName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1",
-      "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 1,
-      "typeParameters": [
-        "T"
-      ],
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1::Configuration:Microsoft.Extensions.Configuration.IConfiguration",
-          "targetName": "Configuration",
-          "metadataToken": 385875971,
-          "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfiguration",
-          "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfiguration|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1",
-          "ownerIdentity": "Microsoft.Extensions.Logging.Configuration"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
-      "targetName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
-      "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory::GetConfiguration(System.Type):Microsoft.Extensions.Configuration.IConfiguration",
-          "targetName": "GetConfiguration",
-          "metadataToken": 100663325,
-          "canonicalSignature": "(System.Type):Microsoft.Extensions.Configuration.IConfiguration",
-          "normalizedSignature": "GetConfiguration|(System.Type):Microsoft.Extensions.Configuration.IConfiguration|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
-          "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2",
-      "targetName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2",
-      "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 2,
-      "baseType": {
-        "stableId": "Microsoft.Extensions.Options.ConfigurationExtensions:Microsoft.Extensions.Options.ConfigurationChangeTokenSource`1",
-        "targetName": "Microsoft.Extensions.Options.ConfigurationChangeTokenSource`1",
-        "typeArguments": [
-          "TOptions"
-        ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.Logging.Configuration",
+    "ownerIdentities": [
+      "Microsoft.Extensions.Logging.Configuration"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1",
+        "targetName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1",
+        "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 1,
+        "typeParameters": [
+          "T"
+        ],
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1::Configuration:Microsoft.Extensions.Configuration.IConfiguration",
+            "targetName": "Configuration",
+            "metadataToken": 385875971,
+            "canonicalSignature": ":Microsoft.Extensions.Configuration.IConfiguration",
+            "normalizedSignature": "Configuration|:Microsoft.Extensions.Configuration.IConfiguration|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfiguration`1",
+            "ownerIdentity": "Microsoft.Extensions.Logging.Configuration"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
-          "targetName": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
+      {
+        "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
+        "targetName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
+        "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory::GetConfiguration(System.Type):Microsoft.Extensions.Configuration.IConfiguration",
+            "targetName": "GetConfiguration",
+            "metadataToken": 100663325,
+            "canonicalSignature": "(System.Type):Microsoft.Extensions.Configuration.IConfiguration",
+            "normalizedSignature": "GetConfiguration|(System.Type):Microsoft.Extensions.Configuration.IConfiguration|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.ILoggerProviderConfigurationFactory",
+            "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      },
+      {
+        "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2",
+        "targetName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2",
+        "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 2,
+        "baseType": {
+          "stableId": "Microsoft.Extensions.Options.ConfigurationExtensions:Microsoft.Extensions.Options.ConfigurationChangeTokenSource`1",
+          "targetName": "Microsoft.Extensions.Options.ConfigurationChangeTokenSource`1",
           "typeArguments": [
             "TOptions"
           ]
-        }
-      ],
-      "typeParameters": [
-        "TOptions",
-        "TProvider"
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1::GetChangeToken():Microsoft.Extensions.Primitives.IChangeToken",
-          "targetName": "GetChangeToken",
-          "metadataToken": 100663386,
-          "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
-          "normalizedSignature": "GetChangeToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
-          "ownerIdentity": "Microsoft.Extensions.Options",
-          "isExtensionMethod": false,
-          "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1"
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1::Name:System.String",
-          "targetName": "Name",
-          "metadataToken": 385876005,
-          "canonicalSignature": ":System.String",
-          "normalizedSignature": "Name|:System.String|static=false|accessor=get",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
-          "ownerQualifiedName": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
-          "ownerIdentity": "Microsoft.Extensions.Options"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2::.ctor(ILoggerProviderConfiguration_1):void",
-          "metadataToken": 100663332,
-          "canonicalSignature": "(ILoggerProviderConfiguration_1):void",
-          "normalizedSignature": "constructor|(ILoggerProviderConfiguration_1):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2",
-          "ownerIdentity": "Microsoft.Extensions.Logging.Configuration"
-        }
-      ]
-    },
-    {
-      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
-      "targetName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
-      "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+        },
+        "interfaces": [
+          {
+            "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
+            "targetName": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
+            "typeArguments": [
+              "TOptions"
+            ]
+          }
+        ],
+        "typeParameters": [
+          "TOptions",
+          "TProvider"
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1::GetChangeToken():Microsoft.Extensions.Primitives.IChangeToken",
+            "targetName": "GetChangeToken",
+            "metadataToken": 100663386,
+            "canonicalSignature": "():Microsoft.Extensions.Primitives.IChangeToken",
+            "normalizedSignature": "GetChangeToken|():Microsoft.Extensions.Primitives.IChangeToken|static=false",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
+            "ownerIdentity": "Microsoft.Extensions.Options",
+            "isExtensionMethod": false,
+            "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1"
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.Options:Microsoft.Extensions.Options.IOptionsChangeTokenSource`1::Name:System.String",
+            "targetName": "Name",
+            "metadataToken": 385876005,
+            "canonicalSignature": ":System.String",
+            "normalizedSignature": "Name|:System.String|static=false|accessor=get",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
+            "ownerQualifiedName": "Microsoft.Extensions.Options.IOptionsChangeTokenSource`1",
+            "ownerIdentity": "Microsoft.Extensions.Options"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2::.ctor(ILoggerProviderConfiguration_1):void",
+            "metadataToken": 100663332,
+            "canonicalSignature": "(ILoggerProviderConfiguration_1):void",
+            "normalizedSignature": "constructor|(ILoggerProviderConfiguration_1):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptionsChangeTokenSource`2",
+            "ownerIdentity": "Microsoft.Extensions.Logging.Configuration"
+          }
+        ]
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions::RegisterProviderOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
-          "targetName": "RegisterProviderOptions",
-          "metadataToken": 100663328,
-          "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
-          "normalizedSignature": "RegisterProviderOptions|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 2,
-          "parameterCount": 1,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
-          "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
-      "targetName": "Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
-      "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
+        "targetName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
+        "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions::RegisterProviderOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+            "targetName": "RegisterProviderOptions",
+            "metadataToken": 100663328,
+            "canonicalSignature": "(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void",
+            "normalizedSignature": "RegisterProviderOptions|(Microsoft.Extensions.DependencyInjection.IServiceCollection):System.Void|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 2,
+            "parameterCount": 1,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.LoggerProviderOptions",
+            "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions::AddConfiguration(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void",
-          "targetName": "AddConfiguration",
-          "metadataToken": 100663333,
-          "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void",
-          "normalizedSignature": "AddConfiguration|(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
-          "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+      {
+        "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
+        "targetName": "Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
+        "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Logging.Configuration:Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions::AddConfiguration(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void",
+            "targetName": "AddConfiguration",
+            "metadataToken": 100663333,
+            "canonicalSignature": "(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void",
+            "normalizedSignature": "AddConfiguration|(Microsoft.Extensions.Logging.ILoggingBuilder):System.Void|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.Logging.Configuration.LoggingBuilderConfigurationExtensions",
+            "ownerIdentity": "Microsoft.Extensions.Logging.Configuration",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

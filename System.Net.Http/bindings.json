@@ -1,169 +1,174 @@
 {
-  "namespace": "System.Net.Http",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.Http",
-    "System.Net.Http"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpClientFactory",
-      "targetName": "System.Net.Http.IHttpClientFactory",
-      "ownerIdentity": "Microsoft.Extensions.Http",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpClientFactory::CreateClient(System.String):System.Net.Http.HttpClient",
-          "targetName": "CreateClient",
-          "metadataToken": 100663319,
-          "canonicalSignature": "(System.String):System.Net.Http.HttpClient",
-          "normalizedSignature": "CreateClient|(System.String):System.Net.Http.HttpClient|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Net.Http.IHttpClientFactory",
-          "ownerIdentity": "Microsoft.Extensions.Http",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpMessageHandlerFactory",
-      "targetName": "System.Net.Http.IHttpMessageHandlerFactory",
-      "ownerIdentity": "Microsoft.Extensions.Http",
-      "metadataToken": 0,
-      "kind": "Interface",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpMessageHandlerFactory::CreateHandler(System.String):System.Net.Http.HttpMessageHandler",
-          "targetName": "CreateHandler",
-          "metadataToken": 100663320,
-          "canonicalSignature": "(System.String):System.Net.Http.HttpMessageHandler",
-          "normalizedSignature": "CreateHandler|(System.String):System.Net.Http.HttpMessageHandler|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": false,
-          "isAbstract": true,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Net.Http.IHttpMessageHandlerFactory",
-          "ownerIdentity": "Microsoft.Extensions.Http",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions",
-      "targetName": "System.Net.Http.HttpClientFactoryExtensions",
-      "ownerIdentity": "Microsoft.Extensions.Http",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "System.Net.Http",
+    "ownerIdentities": [
+      "Microsoft.Extensions.Http",
+      "System.Net.Http"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpClientFactory",
+        "targetName": "System.Net.Http.IHttpClientFactory",
+        "ownerIdentity": "Microsoft.Extensions.Http",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpClientFactory::CreateClient(System.String):System.Net.Http.HttpClient",
+            "targetName": "CreateClient",
+            "metadataToken": 100663319,
+            "canonicalSignature": "(System.String):System.Net.Http.HttpClient",
+            "normalizedSignature": "CreateClient|(System.String):System.Net.Http.HttpClient|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Net.Http.IHttpClientFactory",
+            "ownerIdentity": "Microsoft.Extensions.Http",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions::CreateClient(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
-          "targetName": "CreateClient",
-          "metadataToken": 100663317,
-          "canonicalSignature": "(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
-          "normalizedSignature": "CreateClient|(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Net.Http.HttpClientFactoryExtensions",
-          "ownerIdentity": "Microsoft.Extensions.Http",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    },
-    {
-      "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions",
-      "targetName": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
-      "ownerIdentity": "Microsoft.Extensions.Http",
-      "metadataToken": 0,
-      "kind": "StaticNamespace",
-      "accessibility": "Public",
-      "isAbstract": true,
-      "isSealed": true,
-      "isStatic": true,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
+      {
+        "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpMessageHandlerFactory",
+        "targetName": "System.Net.Http.IHttpMessageHandlerFactory",
+        "ownerIdentity": "Microsoft.Extensions.Http",
+        "metadataToken": 0,
+        "kind": "Interface",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Http:System.Net.Http.IHttpMessageHandlerFactory::CreateHandler(System.String):System.Net.Http.HttpMessageHandler",
+            "targetName": "CreateHandler",
+            "metadataToken": 100663320,
+            "canonicalSignature": "(System.String):System.Net.Http.HttpMessageHandler",
+            "normalizedSignature": "CreateHandler|(System.String):System.Net.Http.HttpMessageHandler|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": false,
+            "isAbstract": true,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Net.Http.IHttpMessageHandlerFactory",
+            "ownerIdentity": "Microsoft.Extensions.Http",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
       },
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions::CreateHandler(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
-          "targetName": "CreateHandler",
-          "metadataToken": 100663318,
-          "canonicalSignature": "(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
-          "normalizedSignature": "CreateHandler|(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler|static=true",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 1,
-          "isStatic": true,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "isSealed": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
-          "ownerIdentity": "Microsoft.Extensions.Http",
-          "isExtensionMethod": true
-        }
-      ],
-      "properties": [],
-      "fields": [],
-      "events": [],
-      "constructors": []
-    }
-  ]
+      {
+        "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions",
+        "targetName": "System.Net.Http.HttpClientFactoryExtensions",
+        "ownerIdentity": "Microsoft.Extensions.Http",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpClientFactoryExtensions::CreateClient(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
+            "targetName": "CreateClient",
+            "metadataToken": 100663317,
+            "canonicalSignature": "(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient",
+            "normalizedSignature": "CreateClient|(System.Net.Http.IHttpClientFactory):System.Net.Http.HttpClient|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Net.Http.HttpClientFactoryExtensions",
+            "ownerIdentity": "Microsoft.Extensions.Http",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      },
+      {
+        "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions",
+        "targetName": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
+        "ownerIdentity": "Microsoft.Extensions.Http",
+        "metadataToken": 0,
+        "kind": "StaticNamespace",
+        "accessibility": "Public",
+        "isAbstract": true,
+        "isSealed": true,
+        "isStatic": true,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.Http:System.Net.Http.HttpMessageHandlerFactoryExtensions::CreateHandler(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
+            "targetName": "CreateHandler",
+            "metadataToken": 100663318,
+            "canonicalSignature": "(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler",
+            "normalizedSignature": "CreateHandler|(System.Net.Http.IHttpMessageHandlerFactory):System.Net.Http.HttpMessageHandler|static=true",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 1,
+            "isStatic": true,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "isSealed": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "System.Net.Http.HttpMessageHandlerFactoryExtensions",
+            "ownerIdentity": "Microsoft.Extensions.Http",
+            "isExtensionMethod": true
+          }
+        ],
+        "properties": [],
+        "fields": [],
+        "events": [],
+        "constructors": []
+      }
+    ]
+  }
 }

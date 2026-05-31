@@ -1,130 +1,135 @@
 {
-  "namespace": "Microsoft.Extensions.FileProviders.Internal",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.FileProviders.Physical"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
-      "targetName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
-      "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": false,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "interfaces": [
-        {
-          "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents",
-          "targetName": "Microsoft.Extensions.FileProviders.IDirectoryContents"
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.FileProviders.Internal",
+    "ownerIdentities": [
+      "Microsoft.Extensions.FileProviders.Physical"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
+        "targetName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
+        "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": false,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
         },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
-          "targetName": "System.Collections.Generic.IEnumerable`1",
-          "typeArguments": [
-            "IFileInfo"
-          ]
-        },
-        {
-          "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
-          "targetName": "System.Collections.IEnumerable"
-        }
-      ],
-      "methods": [
-        {
-          "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "targetName": "GetEnumerator",
-          "metadataToken": 100663347,
-          "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
-          "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "arity": 0,
-          "parameterCount": 0,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "isSealed": true,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
-          "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical",
-          "isExtensionMethod": false
-        }
-      ],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::Exists:System.Boolean",
-          "targetName": "Exists",
-          "metadataToken": 385875984,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
-          "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical"
-        },
-        {
-          "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents::Exists:System.Boolean",
-          "targetName": "Exists",
-          "metadataToken": 385875971,
-          "canonicalSignature": ":System.Boolean",
-          "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
-          "emitScope": "ViewOnly",
-          "provenance": "ExplicitView",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": false,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": true,
-          "isOverride": false,
-          "visibility": "Public",
-          "sourceInterface": "Microsoft.Extensions.FileProviders.IDirectoryContents",
-          "ownerQualifiedName": "Microsoft.Extensions.FileProviders.IDirectoryContents",
-          "ownerIdentity": "Microsoft.Extensions.FileProviders.Abstractions"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::.ctor(System.String):void",
-          "metadataToken": 100663344,
-          "canonicalSignature": "(System.String):void",
-          "normalizedSignature": "constructor|(System.String):void|static=false",
-          "isStatic": false,
-          "parameterCount": 1,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
-          "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical"
-        },
-        {
-          "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::.ctor(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void",
-          "metadataToken": 100663345,
-          "canonicalSignature": "(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void",
-          "normalizedSignature": "constructor|(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void|static=false",
-          "isStatic": false,
-          "parameterCount": 2,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
-          "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical"
-        }
-      ]
-    }
-  ]
+        "interfaces": [
+          {
+            "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents",
+            "targetName": "Microsoft.Extensions.FileProviders.IDirectoryContents"
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.Collections.Generic.IEnumerable`1",
+            "targetName": "System.Collections.Generic.IEnumerable`1",
+            "typeArguments": [
+              "IFileInfo"
+            ]
+          },
+          {
+            "stableId": "System.Private.CoreLib:System.Collections.IEnumerable",
+            "targetName": "System.Collections.IEnumerable"
+          }
+        ],
+        "methods": [
+          {
+            "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::GetEnumerator():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "targetName": "GetEnumerator",
+            "metadataToken": 100663347,
+            "canonicalSignature": "():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]",
+            "normalizedSignature": "GetEnumerator|():System.Collections.Generic.IEnumerator_1[[Microsoft.Extensions.FileProviders.IFileInfo,Microsoft.Extensions.FileProviders.Abstractions,Version=10.0.0.0,Culture=neutral,PublicKeyToken=adb9793829ddae60]]|static=false",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "arity": 0,
+            "parameterCount": 0,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "isSealed": true,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
+            "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical",
+            "isExtensionMethod": false
+          }
+        ],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::Exists:System.Boolean",
+            "targetName": "Exists",
+            "metadataToken": 385875984,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
+            "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical"
+          },
+          {
+            "stableId": "Microsoft.Extensions.FileProviders.Abstractions:Microsoft.Extensions.FileProviders.IDirectoryContents::Exists:System.Boolean",
+            "targetName": "Exists",
+            "metadataToken": 385875971,
+            "canonicalSignature": ":System.Boolean",
+            "normalizedSignature": "Exists|:System.Boolean|static=false|accessor=get",
+            "emitScope": "ViewOnly",
+            "provenance": "ExplicitView",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": false,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": true,
+            "isOverride": false,
+            "visibility": "Public",
+            "sourceInterface": "Microsoft.Extensions.FileProviders.IDirectoryContents",
+            "ownerQualifiedName": "Microsoft.Extensions.FileProviders.IDirectoryContents",
+            "ownerIdentity": "Microsoft.Extensions.FileProviders.Abstractions"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::.ctor(System.String):void",
+            "metadataToken": 100663344,
+            "canonicalSignature": "(System.String):void",
+            "normalizedSignature": "constructor|(System.String):void|static=false",
+            "isStatic": false,
+            "parameterCount": 1,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
+            "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical"
+          },
+          {
+            "stableId": "Microsoft.Extensions.FileProviders.Physical:Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents::.ctor(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void",
+            "metadataToken": 100663345,
+            "canonicalSignature": "(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void",
+            "normalizedSignature": "constructor|(System.String,Microsoft.Extensions.FileProviders.Physical.ExclusionFilters):void|static=false",
+            "isStatic": false,
+            "parameterCount": 2,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.FileProviders.Internal.PhysicalDirectoryContents",
+            "ownerIdentity": "Microsoft.Extensions.FileProviders.Physical"
+          }
+        ]
+      }
+    ]
+  }
 }

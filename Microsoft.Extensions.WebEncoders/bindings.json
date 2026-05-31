@@ -1,61 +1,66 @@
 {
-  "namespace": "Microsoft.Extensions.WebEncoders",
-  "contributingAssemblies": [
-    "Microsoft.Extensions.WebEncoders"
-  ],
-  "types": [
-    {
-      "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-      "targetName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-      "ownerIdentity": "Microsoft.Extensions.WebEncoders",
-      "metadataToken": 0,
-      "kind": "Class",
-      "accessibility": "Public",
-      "isAbstract": false,
-      "isSealed": true,
-      "isStatic": false,
-      "arity": 0,
-      "baseType": {
-        "stableId": "System.Private.CoreLib:System.Object",
-        "targetName": "System.Object"
-      },
-      "methods": [],
-      "properties": [
-        {
-          "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions::TextEncoderSettings:System.Text.Encodings.Web.TextEncoderSettings",
-          "targetName": "TextEncoderSettings",
-          "metadataToken": 385875969,
-          "canonicalSignature": ":System.Text.Encodings.Web.TextEncoderSettings",
-          "normalizedSignature": "TextEncoderSettings|:System.Text.Encodings.Web.TextEncoderSettings|static=false|accessor=getset",
-          "emitScope": "ClassSurface",
-          "provenance": "Original",
-          "isIndexer": false,
-          "hasGetter": true,
-          "hasSetter": true,
-          "isStatic": false,
-          "isAbstract": false,
-          "isVirtual": false,
-          "isOverride": false,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-          "ownerIdentity": "Microsoft.Extensions.WebEncoders"
-        }
-      ],
-      "fields": [],
-      "events": [],
-      "constructors": [
-        {
-          "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions::.ctor():void",
-          "metadataToken": 100663301,
-          "canonicalSignature": "():void",
-          "normalizedSignature": "constructor|():void|static=false",
-          "isStatic": false,
-          "parameterCount": 0,
-          "visibility": "Public",
-          "ownerQualifiedName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
-          "ownerIdentity": "Microsoft.Extensions.WebEncoders"
-        }
-      ]
-    }
-  ]
+  "schema": "tsonic.bindings",
+  "provider": {
+    "namespace": "Microsoft.Extensions.WebEncoders",
+    "ownerIdentities": [
+      "Microsoft.Extensions.WebEncoders"
+    ]
+  },
+  "targetSurface": {
+    "types": [
+      {
+        "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+        "targetName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+        "ownerIdentity": "Microsoft.Extensions.WebEncoders",
+        "metadataToken": 0,
+        "kind": "Class",
+        "accessibility": "Public",
+        "isAbstract": false,
+        "isSealed": true,
+        "isStatic": false,
+        "arity": 0,
+        "baseType": {
+          "stableId": "System.Private.CoreLib:System.Object",
+          "targetName": "System.Object"
+        },
+        "methods": [],
+        "properties": [
+          {
+            "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions::TextEncoderSettings:System.Text.Encodings.Web.TextEncoderSettings",
+            "targetName": "TextEncoderSettings",
+            "metadataToken": 385875969,
+            "canonicalSignature": ":System.Text.Encodings.Web.TextEncoderSettings",
+            "normalizedSignature": "TextEncoderSettings|:System.Text.Encodings.Web.TextEncoderSettings|static=false|accessor=getset",
+            "emitScope": "ClassSurface",
+            "provenance": "Original",
+            "isIndexer": false,
+            "hasGetter": true,
+            "hasSetter": true,
+            "isStatic": false,
+            "isAbstract": false,
+            "isVirtual": false,
+            "isOverride": false,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+            "ownerIdentity": "Microsoft.Extensions.WebEncoders"
+          }
+        ],
+        "fields": [],
+        "events": [],
+        "constructors": [
+          {
+            "stableId": "Microsoft.Extensions.WebEncoders:Microsoft.Extensions.WebEncoders.WebEncoderOptions::.ctor():void",
+            "metadataToken": 100663301,
+            "canonicalSignature": "():void",
+            "normalizedSignature": "constructor|():void|static=false",
+            "isStatic": false,
+            "parameterCount": 0,
+            "visibility": "Public",
+            "ownerQualifiedName": "Microsoft.Extensions.WebEncoders.WebEncoderOptions",
+            "ownerIdentity": "Microsoft.Extensions.WebEncoders"
+          }
+        ]
+      }
+    ]
+  }
 }
