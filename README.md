@@ -93,7 +93,7 @@ npm install
 ./__build/scripts/generate.sh
 ```
 
-The generation script requires .NET 10, `../tsbindgen`, and `../dotnet`.
+The generation script requires .NET 10, `../dotnet-bindgen`, and `../dotnet`.
 
 ## License
 
