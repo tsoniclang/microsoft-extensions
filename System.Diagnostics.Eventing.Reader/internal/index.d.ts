@@ -17,84 +17,102 @@ import type { SecureString } from "@tsonic/dotnet/System.Security/internal/index
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, DateTime, Enum, EventArgs, EventHandler_1, Exception, Guid, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Uri, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum EventLogIsolation {
-    Application = 0,
-    System = 1,
-    Custom = 2
-}
+export type EventLogIsolation = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogIsolation: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EventLogIsolation: {
+    readonly Application: EventLogIsolation;
+    readonly System: EventLogIsolation;
+    readonly Custom: EventLogIsolation;
+};
 
 
-export enum EventLogMode {
-    Circular = 0,
-    AutoBackup = 1,
-    Retain = 2
-}
+export type EventLogMode = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EventLogMode: {
+    readonly Circular: EventLogMode;
+    readonly AutoBackup: EventLogMode;
+    readonly Retain: EventLogMode;
+};
 
 
-export enum EventLogType {
-    Administrative = 0,
-    Operational = 1,
-    Analytical = 2,
-    Debug = 3
-}
+export type EventLogType = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EventLogType: {
+    readonly Administrative: EventLogType;
+    readonly Operational: EventLogType;
+    readonly Analytical: EventLogType;
+    readonly Debug: EventLogType;
+};
 
 
-export enum PathType {
-    LogName = 1,
-    FilePath = 2
-}
+export type PathType = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_PathType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const PathType: {
+    readonly LogName: PathType;
+    readonly FilePath: PathType;
+};
 
 
-export enum SessionAuthentication {
-    Default = 0,
-    Negotiate = 1,
-    Kerberos = 2,
-    Ntlm = 3
-}
+export type SessionAuthentication = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_SessionAuthentication: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SessionAuthentication: {
+    readonly Default: SessionAuthentication;
+    readonly Negotiate: SessionAuthentication;
+    readonly Kerberos: SessionAuthentication;
+    readonly Ntlm: SessionAuthentication;
+};
 
 
-export enum StandardEventKeywords {
-    None = 0,
-    ResponseTime = 281474976710656,
-    WdiContext = 562949953421312,
-    WdiDiagnostic = 1125899906842624,
-    Sqm = 2251799813685248,
-    AuditFailure = 4503599627370496,
-    CorrelationHint = 4503599627370496,
-    AuditSuccess = 9007199254740992,
-    CorrelationHint2 = 18014398509481984,
-    EventLogClassic = 36028797018963968
-}
+export type StandardEventKeywords = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_StandardEventKeywords: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const StandardEventKeywords: {
+    readonly None: StandardEventKeywords;
+    readonly ResponseTime: StandardEventKeywords;
+    readonly WdiContext: StandardEventKeywords;
+    readonly WdiDiagnostic: StandardEventKeywords;
+    readonly Sqm: StandardEventKeywords;
+    readonly AuditFailure: StandardEventKeywords;
+    readonly CorrelationHint: StandardEventKeywords;
+    readonly AuditSuccess: StandardEventKeywords;
+    readonly CorrelationHint2: StandardEventKeywords;
+    readonly EventLogClassic: StandardEventKeywords;
+};
 
 
-export enum StandardEventLevel {
-    LogAlways = 0,
-    Critical = 1,
-    Error = 2,
-    Warning = 3,
-    Informational = 4,
-    Verbose = 5
-}
+export type StandardEventLevel = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_StandardEventLevel: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const StandardEventLevel: {
+    readonly LogAlways: StandardEventLevel;
+    readonly Critical: StandardEventLevel;
+    readonly Error: StandardEventLevel;
+    readonly Warning: StandardEventLevel;
+    readonly Informational: StandardEventLevel;
+    readonly Verbose: StandardEventLevel;
+};
 
 
-export enum StandardEventOpcode {
-    Info = 0,
-    Start = 1,
-    Stop = 2,
-    DataCollectionStart = 3,
-    DataCollectionStop = 4,
-    Extension = 5,
-    Reply = 6,
-    Resume = 7,
-    Suspend = 8,
-    Send = 9,
-    Receive = 240
-}
+export type StandardEventOpcode = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_StandardEventOpcode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const StandardEventOpcode: {
+    readonly Info: StandardEventOpcode;
+    readonly Start: StandardEventOpcode;
+    readonly Stop: StandardEventOpcode;
+    readonly DataCollectionStart: StandardEventOpcode;
+    readonly DataCollectionStop: StandardEventOpcode;
+    readonly Extension: StandardEventOpcode;
+    readonly Reply: StandardEventOpcode;
+    readonly Resume: StandardEventOpcode;
+    readonly Suspend: StandardEventOpcode;
+    readonly Send: StandardEventOpcode;
+    readonly Receive: StandardEventOpcode;
+};
 
 
-export enum StandardEventTask {
-    None = 0
-}
+export type StandardEventTask = number & { readonly __tsonic_type_System_Diagnostics_Eventing_Reader_StandardEventTask: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const StandardEventTask: {
+    readonly None: StandardEventTask;
+};
 
 
 export interface EventBookmark$instance {
@@ -180,13 +198,13 @@ export const EventLogConfiguration: {
 
 export type EventLogConfiguration = EventLogConfiguration$instance;
 
-export interface EventLogException$instance extends Exception {
+export interface EventLogException$instance extends System_Internal.Exception {
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
-    readonly Message: string;
-    GetObjectData(info: SerializationInfo, context: StreamingContext): void;
+    GetObjectData: System_Internal.Exception["GetObjectData"] & ((info: SerializationInfo, context: StreamingContext) => void);
 }
 
 
@@ -219,8 +237,10 @@ export const EventLogInformation: {
 
 export type EventLogInformation = EventLogInformation$instance;
 
-export interface EventLogInvalidDataException$instance extends EventLogException {
+export interface EventLogInvalidDataException$instance extends EventLogException$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogException: never;
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogInvalidDataException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -251,8 +271,10 @@ export const EventLogLink: {
 
 export type EventLogLink = EventLogLink$instance;
 
-export interface EventLogNotFoundException$instance extends EventLogException {
+export interface EventLogNotFoundException$instance extends EventLogException$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogException: never;
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogNotFoundException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -285,8 +307,10 @@ export const EventLogPropertySelector: {
 
 export type EventLogPropertySelector = EventLogPropertySelector$instance;
 
-export interface EventLogProviderDisabledException$instance extends EventLogException {
+export interface EventLogProviderDisabledException$instance extends EventLogException$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogException: never;
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogProviderDisabledException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -347,8 +371,10 @@ export const EventLogReader: {
 
 export type EventLogReader = EventLogReader$instance;
 
-export interface EventLogReadingException$instance extends EventLogException {
+export interface EventLogReadingException$instance extends EventLogException$instance {
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogException: never;
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogReadingException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -364,43 +390,18 @@ export const EventLogReadingException: {
 
 export type EventLogReadingException = EventLogReadingException$instance;
 
-export interface EventLogRecord$instance extends EventRecord {
+export interface EventLogRecord$instance extends EventRecord$instance {
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventLogRecord: never;
+    readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventRecord: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    readonly ActivityId: Nullable_1<Guid>;
-    readonly Bookmark: EventBookmark;
     readonly ContainerLog: string;
-    readonly Id: int;
-    readonly Keywords: Nullable_1<System_Internal.Int64>;
-    readonly KeywordsDisplayNames: IEnumerable_1<System_Internal.String>;
-    readonly Level: Nullable_1<System_Internal.Byte>;
-    readonly LevelDisplayName: string;
-    readonly LogName: string;
-    readonly MachineName: string;
     readonly MatchedQueryIds: IEnumerable_1<System_Internal.Int32>;
-    readonly Opcode: Nullable_1<System_Internal.Int16>;
-    readonly OpcodeDisplayName: string;
-    readonly ProcessId: Nullable_1<System_Internal.Int32>;
-    readonly Properties: IList_1<EventProperty>;
-    readonly ProviderId: Nullable_1<Guid>;
-    readonly ProviderName: string;
-    readonly Qualifiers: Nullable_1<System_Internal.Int32>;
-    readonly RecordId: Nullable_1<System_Internal.Int64>;
-    readonly RelatedActivityId: Nullable_1<Guid>;
-    readonly Task: Nullable_1<System_Internal.Int32>;
-    readonly TaskDisplayName: string;
-    readonly ThreadId: Nullable_1<System_Internal.Int32>;
-    readonly TimeCreated: Nullable_1<DateTime>;
-    readonly UserId: SecurityIdentifier;
-    readonly Version: Nullable_1<System_Internal.Byte>;
-    Dispose(disposing: boolean): void;
-    Dispose(): void;
-    FormatDescription(): string;
-    FormatDescription(values: IEnumerable_1<unknown>): string;
+    Dispose: EventRecord$instance["Dispose"] & (() => void) & ((disposing: boolean) => void);
+    FormatDescription: EventRecord$instance["FormatDescription"] & (() => string) & ((values: IEnumerable_1<unknown>) => string);
     GetPropertyValues(propertySelector: EventLogPropertySelector): IList_1<unknown>;
-    ToXml(): string;
+    ToXml: EventRecord$instance["ToXml"] & (() => string);
 }
 
 
@@ -561,14 +562,15 @@ export interface EventRecord$instance {
 }
 
 
-export const EventRecord: (abstract new() => EventRecord) & {
+export const EventRecord: {
 };
 
 
 export type EventRecord = EventRecord$instance;
 
-export interface EventRecordWrittenEventArgs$instance extends EventArgs {
+export interface EventRecordWrittenEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_System_Diagnostics_Eventing_Reader_EventRecordWrittenEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly EventException: Exception;
     readonly EventRecord: EventRecord;

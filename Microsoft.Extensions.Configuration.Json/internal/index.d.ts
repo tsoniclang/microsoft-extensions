@@ -11,19 +11,20 @@ import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Ex
 import type { FileConfigurationProvider, FileConfigurationSource, FileLoadExceptionContext, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource, StreamConfigurationProvider, StreamConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface JsonConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
+export interface JsonConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.FileConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Load(stream: Stream): void;
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.FileConfigurationProvider$instance["Load"] & (() => void) & ((stream: Stream) => void);
 }
 
 
@@ -39,12 +40,13 @@ export interface __JsonConfigurationProvider$views {
 export type JsonConfigurationProvider = JsonConfigurationProvider$instance & __JsonConfigurationProvider$views;
 
 
-export interface JsonConfigurationSource$instance extends FileConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface JsonConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.FileConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationSource: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build: Microsoft_Extensions_Configuration_Internal.FileConfigurationSource$instance["Build"] & ((builder: IConfigurationBuilder) => IConfigurationProvider);
 }
 
 
@@ -60,13 +62,14 @@ export interface __JsonConfigurationSource$views {
 export type JsonConfigurationSource = JsonConfigurationSource$instance & __JsonConfigurationSource$views;
 
 
-export interface JsonStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+export interface JsonStreamConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.StreamConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    Load(stream: Stream): void;
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.StreamConfigurationProvider$instance["Load"] & (() => void) & ((stream: Stream) => void);
 }
 
 
@@ -82,12 +85,13 @@ export interface __JsonStreamConfigurationProvider$views {
 export type JsonStreamConfigurationProvider = JsonStreamConfigurationProvider$instance & __JsonStreamConfigurationProvider$views;
 
 
-export interface JsonStreamConfigurationSource$instance extends StreamConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface JsonStreamConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.StreamConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Json_JsonStreamConfigurationSource: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build: Microsoft_Extensions_Configuration_Internal.StreamConfigurationSource$instance["Build"] & ((builder: IConfigurationBuilder) => IConfigurationProvider);
 }
 
 

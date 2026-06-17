@@ -251,26 +251,6 @@
             "ownerQualifiedName": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
             "ownerIdentity": "Microsoft.Extensions.Http",
             "isExtensionMethod": false
-          },
-          {
-            "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::CreateHandlerPipeline(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):System.Net.Http.HttpMessageHandler",
-            "targetName": "CreateHandlerPipeline",
-            "metadataToken": 100663506,
-            "canonicalSignature": "(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):System.Net.Http.HttpMessageHandler",
-            "normalizedSignature": "CreateHandlerPipeline|(System.Net.Http.HttpMessageHandler,System.Collections.Generic.IEnumerable_1[[System.Net.Http.DelegatingHandler,System.Net.Http,Version=10.0.0.0,Culture=neutral,PublicKeyToken=b03f5f7f11d50a3a]]):System.Net.Http.HttpMessageHandler|static=true",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 2,
-            "isStatic": true,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
-            "ownerIdentity": "Microsoft.Extensions.Http",
-            "isExtensionMethod": false
           }
         ],
         "properties": [
@@ -353,19 +333,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Http:Microsoft.Extensions.Http.HttpMessageHandlerBuilder::.ctor():void",
-            "metadataToken": 100663507,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Http.HttpMessageHandlerBuilder",
-            "ownerIdentity": "Microsoft.Extensions.Http"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

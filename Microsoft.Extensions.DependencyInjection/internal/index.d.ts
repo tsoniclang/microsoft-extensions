@@ -31,18 +31,22 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, AsyncCallback, Attribute, Boolean as ClrBoolean, Enum, Func_1, Func_2, Func_3, IAsyncDisposable, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, IntPtr, IServiceProvider, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ServiceKeyLookupMode {
-    InheritKey = 0,
-    NullKey = 1,
-    ExplicitKey = 2
-}
+export type ServiceKeyLookupMode = number & { readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceKeyLookupMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ServiceKeyLookupMode: {
+    readonly InheritKey: ServiceKeyLookupMode;
+    readonly NullKey: ServiceKeyLookupMode;
+    readonly ExplicitKey: ServiceKeyLookupMode;
+};
 
 
-export enum ServiceLifetime {
-    Singleton = 0,
-    Scoped = 1,
-    Transient = 2
-}
+export type ServiceLifetime = number & { readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceLifetime: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ServiceLifetime: {
+    readonly Singleton: ServiceLifetime;
+    readonly Scoped: ServiceLifetime;
+    readonly Transient: ServiceLifetime;
+};
 
 
 export type ObjectFactory = (serviceProvider: IServiceProvider, arguments: (unknown | null)[] | null) => unknown;
@@ -71,24 +75,25 @@ export interface IHttpClientBuilder$instance {
 
 export type IHttpClientBuilder = IHttpClientBuilder$instance;
 
-export interface IKeyedServiceProvider$instance extends IServiceProvider {
+export interface IKeyedServiceProvider$instance {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IKeyedServiceProvider: never;
+    readonly __tsonic_iface_System_IServiceProvider: never;
 
     GetKeyedService(serviceType: Type, serviceKey: unknown | null): unknown | null;
 }
 
 
-export interface IKeyedServiceProvider$instance extends System_Internal.IServiceProvider {}
-
 export type IKeyedServiceProvider = IKeyedServiceProvider$instance;
 
-export interface IServiceCollection$instance extends IList_1<ServiceDescriptor>, ICollection_1<ServiceDescriptor>, IEnumerable_1<ServiceDescriptor>, IEnumerable {
+export interface IServiceCollection$instance {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceCollection: never;
+    readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_Generic_IList_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
 }
 
-
-export interface IServiceCollection$instance extends System_Collections_Generic_Internal.ICollection_1<ServiceDescriptor>, System_Collections_Generic_Internal.IEnumerable_1<ServiceDescriptor>, System_Collections_Generic_Internal.IList_1<ServiceDescriptor> {}
 
 export type IServiceCollection = IServiceCollection$instance;
 
@@ -102,8 +107,9 @@ export interface IServiceProviderFactory_1$instance<TContainerBuilder extends un
 
 export type IServiceProviderFactory_1<TContainerBuilder extends unknown> = IServiceProviderFactory_1$instance<TContainerBuilder>;
 
-export interface IServiceProviderIsKeyedService$instance extends IServiceProviderIsService {
+export interface IServiceProviderIsKeyedService$instance {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceProviderIsKeyedService: never;
+    readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceProviderIsService: never;
 
     IsKeyedService(serviceType: Type, serviceKey: unknown | null): boolean;
     IsService(serviceType: Type): boolean;
@@ -123,14 +129,13 @@ export interface IServiceProviderIsService$instance {
 
 export type IServiceProviderIsService = IServiceProviderIsService$instance;
 
-export interface IServiceScope$instance extends IDisposable {
+export interface IServiceScope$instance {
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceScope: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     readonly ServiceProvider: IServiceProvider;
 }
 
-
-export interface IServiceScope$instance extends System_Internal.IDisposable {}
 
 export type IServiceScope = IServiceScope$instance;
 
@@ -162,8 +167,9 @@ export interface ISupportRequiredService$instance {
 
 export type ISupportRequiredService = ISupportRequiredService$instance;
 
-export interface AsyncServiceScope$instance extends IServiceScope$instance, System_Internal.IAsyncDisposable {
+export interface AsyncServiceScope$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_AsyncServiceScope: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceScope: never;
     readonly __tsonic_iface_System_IAsyncDisposable: never;
@@ -187,8 +193,9 @@ export interface __AsyncServiceScope$views {
 export type AsyncServiceScope = AsyncServiceScope$instance & __AsyncServiceScope$views;
 
 
-export interface ActivatorUtilitiesConstructorAttribute$instance extends Attribute {
+export interface ActivatorUtilitiesConstructorAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ActivatorUtilitiesConstructorAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -200,7 +207,7 @@ export const ActivatorUtilitiesConstructorAttribute: {
 
 export type ActivatorUtilitiesConstructorAttribute = ActivatorUtilitiesConstructorAttribute$instance;
 
-export interface DefaultServiceProviderFactory$instance extends IServiceProviderFactory_1$instance<IServiceCollection> {
+export interface DefaultServiceProviderFactory$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_DefaultServiceProviderFactory: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory_1: never;
@@ -223,8 +230,9 @@ export interface __DefaultServiceProviderFactory$views {
 export type DefaultServiceProviderFactory = DefaultServiceProviderFactory$instance & __DefaultServiceProviderFactory$views;
 
 
-export interface FromKeyedServicesAttribute$instance extends Attribute {
+export interface FromKeyedServicesAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_FromKeyedServicesAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Key: unknown | null;
     readonly LookupMode: ServiceKeyLookupMode;
@@ -239,7 +247,7 @@ export const FromKeyedServicesAttribute: {
 
 export type FromKeyedServicesAttribute = FromKeyedServicesAttribute$instance;
 
-export interface ServiceCollection$instance extends IServiceCollection {
+export interface ServiceCollection$instance extends IServiceCollection$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceCollection: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IServiceCollection: never;
@@ -330,8 +338,9 @@ export const ServiceDescriptor: {
 
 export type ServiceDescriptor = ServiceDescriptor$instance;
 
-export interface ServiceKeyAttribute$instance extends Attribute {
+export interface ServiceKeyAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceKeyAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
 }
 
@@ -343,7 +352,7 @@ export const ServiceKeyAttribute: {
 
 export type ServiceKeyAttribute = ServiceKeyAttribute$instance;
 
-export interface ServiceProvider$instance extends IKeyedServiceProvider$instance, System_Internal.IAsyncDisposable, System_Internal.IDisposable {
+export interface ServiceProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_DependencyInjection_ServiceProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_DependencyInjection_IKeyedServiceProvider: never;
@@ -408,12 +417,12 @@ export type EncoderServiceCollectionExtensions = EncoderServiceCollectionExtensi
 export abstract class HealthChecksBuilderAddCheckExtensions$instance {
     static AddCheck(builder: IHealthChecksBuilder, name: string, instance: IHealthCheck, failureStatus?: Nullable_1<HealthStatus>, tags?: IEnumerable_1<System_Internal.String> | null, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
     static AddCheck(builder: IHealthChecksBuilder, name: string, instance: IHealthCheck, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
-    static AddCheck<T extends (object | null) & IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus?: Nullable_1<HealthStatus>, tags?: IEnumerable_1<System_Internal.String> | null, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
-    static AddCheck<T extends (object | null) & IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends (object | null) & IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String> | null, ...args: unknown[]): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends (object | null) & IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: TimeSpan, ...args: unknown[]): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends (object | null) & IHealthCheck>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, ...args: unknown[]): IHealthChecksBuilder;
-    static AddTypeActivatedCheck<T extends (object | null) & IHealthCheck>(builder: IHealthChecksBuilder, name: string, ...args: unknown[]): IHealthChecksBuilder;
+    static AddCheck<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never }>(builder: IHealthChecksBuilder, name: string, failureStatus?: Nullable_1<HealthStatus>, tags?: IEnumerable_1<System_Internal.String> | null, timeout?: Nullable_1<TimeSpan>): IHealthChecksBuilder;
+    static AddCheck<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never }>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never }>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String> | null, ...args: unknown[]): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never }>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, tags: IEnumerable_1<System_Internal.String>, timeout: TimeSpan, ...args: unknown[]): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never }>(builder: IHealthChecksBuilder, name: string, failureStatus: Nullable_1<HealthStatus>, ...args: unknown[]): IHealthChecksBuilder;
+    static AddTypeActivatedCheck<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_HealthChecks_IHealthCheck: never }>(builder: IHealthChecksBuilder, name: string, ...args: unknown[]): IHealthChecksBuilder;
 }
 
 
@@ -445,8 +454,8 @@ export abstract class HttpClientBuilderExtensions$instance {
     static AddDefaultLogger(builder: IHttpClientBuilder): IHttpClientBuilder;
     static AddHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_1<DelegatingHandler>): IHttpClientBuilder;
     static AddHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_2<IServiceProvider, DelegatingHandler>): IHttpClientBuilder;
-    static AddHttpMessageHandler<THandler extends unknown & DelegatingHandler>(builder: IHttpClientBuilder): IHttpClientBuilder;
-    static AddLogger<TLogger extends unknown & IHttpClientLogger>(builder: IHttpClientBuilder, wrapHandlersPipeline?: boolean): IHttpClientBuilder;
+    static AddHttpMessageHandler<THandler extends unknown & { readonly __tsonic_type_System_Net_Http_DelegatingHandler: never } & { readonly __tsonic_type_System_Net_Http_HttpMessageHandler: never }>(builder: IHttpClientBuilder): IHttpClientBuilder;
+    static AddLogger<TLogger extends unknown & { readonly __tsonic_iface_Microsoft_Extensions_Http_Logging_IHttpClientLogger: never }>(builder: IHttpClientBuilder, wrapHandlersPipeline?: boolean): IHttpClientBuilder;
     static AddLogger(builder: IHttpClientBuilder, httpClientLoggerFactory: Func_2<IServiceProvider, IHttpClientLogger>, wrapHandlersPipeline?: boolean): IHttpClientBuilder;
     static AddTypedClient<TClient extends (object | null)>(builder: IHttpClientBuilder, factory: Func_2<HttpClient, TClient>): IHttpClientBuilder;
     static AddTypedClient<TClient extends (object | null)>(builder: IHttpClientBuilder, factory: Func_3<HttpClient, IServiceProvider, TClient>): IHttpClientBuilder;
@@ -458,7 +467,7 @@ export abstract class HttpClientBuilderExtensions$instance {
     static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Action_2<HttpMessageHandler, IServiceProvider>): IHttpClientBuilder;
     static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_1<HttpMessageHandler>): IHttpClientBuilder;
     static ConfigurePrimaryHttpMessageHandler(builder: IHttpClientBuilder, configureHandler: Func_2<IServiceProvider, HttpMessageHandler>): IHttpClientBuilder;
-    static ConfigurePrimaryHttpMessageHandler<THandler extends unknown & HttpMessageHandler>(builder: IHttpClientBuilder): IHttpClientBuilder;
+    static ConfigurePrimaryHttpMessageHandler<THandler extends unknown & { readonly __tsonic_type_System_Net_Http_HttpMessageHandler: never }>(builder: IHttpClientBuilder): IHttpClientBuilder;
     static RedactLoggedHeaders(builder: IHttpClientBuilder, redactedLoggedHeaderNames: IEnumerable_1<System_Internal.String>): IHttpClientBuilder;
     static RedactLoggedHeaders(builder: IHttpClientBuilder, shouldRedactHeaderValue: Func_2<System_Internal.String, System_Internal.Boolean>): IHttpClientBuilder;
     static RemoveAllLoggers(builder: IHttpClientBuilder): IHttpClientBuilder;
@@ -592,8 +601,8 @@ export abstract class ServiceCollectionContainerBuilderExtensions$instance {
 export type ServiceCollectionContainerBuilderExtensions = ServiceCollectionContainerBuilderExtensions$instance;
 
 export abstract class ServiceCollectionHostedServiceExtensions$instance {
-    static AddHostedService<THostedService extends (object | null) & IHostedService>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, THostedService>): IServiceCollection;
-    static AddHostedService<THostedService extends (object | null) & IHostedService>(services: IServiceCollection): IServiceCollection;
+    static AddHostedService<THostedService extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never }>(services: IServiceCollection, implementationFactory: Func_2<IServiceProvider, THostedService>): IServiceCollection;
+    static AddHostedService<THostedService extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never }>(services: IServiceCollection): IServiceCollection;
 }
 
 

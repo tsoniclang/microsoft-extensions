@@ -19,29 +19,34 @@ import type { Task_1 } from "@tsonic/dotnet/System.Threading.Tasks/internal/inde
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Char, DateTimeOffset, Double, Enum, Func_2, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Nullable_1, Object as ClrObject, ReadOnlySpan_1, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum CacheItemPriority {
-    Low = 0,
-    Normal = 1,
-    High = 2,
-    NeverRemove = 3
-}
+export type CacheItemPriority = number & { readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_CacheItemPriority: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const CacheItemPriority: {
+    readonly Low: CacheItemPriority;
+    readonly Normal: CacheItemPriority;
+    readonly High: CacheItemPriority;
+    readonly NeverRemove: CacheItemPriority;
+};
 
 
-export enum EvictionReason {
-    None = 0,
-    Removed = 1,
-    Replaced = 2,
-    Expired = 3,
-    TokenExpired = 4,
-    Capacity = 5
-}
+export type EvictionReason = number & { readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_EvictionReason: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EvictionReason: {
+    readonly None: EvictionReason;
+    readonly Removed: EvictionReason;
+    readonly Replaced: EvictionReason;
+    readonly Expired: EvictionReason;
+    readonly TokenExpired: EvictionReason;
+    readonly Capacity: EvictionReason;
+};
 
 
 export type PostEvictionDelegate = (key: unknown, value: unknown | null, reason: EvictionReason, state: unknown | null) => void;
 
 
-export interface ICacheEntry$instance extends IDisposable {
+export interface ICacheEntry$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_ICacheEntry: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Key: unknown;
     get Value(): unknown | null;
@@ -60,12 +65,11 @@ export interface ICacheEntry$instance extends IDisposable {
 }
 
 
-export interface ICacheEntry$instance extends System_Internal.IDisposable {}
-
 export type ICacheEntry = ICacheEntry$instance;
 
-export interface IMemoryCache$instance extends IDisposable {
+export interface IMemoryCache$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Memory_IMemoryCache: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     CreateEntry(key: unknown): ICacheEntry;
     GetCurrentStatistics(): MemoryCacheStatistics | null;
@@ -73,8 +77,6 @@ export interface IMemoryCache$instance extends IDisposable {
     TryGetValue(key: unknown, value: unknown | null): boolean;
 }
 
-
-export interface IMemoryCache$instance extends System_Internal.IDisposable {}
 
 export type IMemoryCache = IMemoryCache$instance;
 
@@ -94,8 +96,8 @@ export interface MemoryCache$instance {
     Finalize(): void;
     GetCurrentStatistics(): MemoryCacheStatistics | null;
     Remove(key: unknown): void;
-    TryGetValue(key: unknown, result: unknown | null): boolean;
     TryGetValue(key: ReadOnlySpan_1<System_Internal.Char>, value: unknown | null): boolean;
+    TryGetValue(key: unknown, result: unknown | null): boolean;
     TryGetValue<TItem extends unknown>(key: ReadOnlySpan_1<System_Internal.Char>, value: TItem | null): boolean;
 }
 
@@ -137,7 +139,7 @@ export const MemoryCacheEntryOptions: {
 
 export type MemoryCacheEntryOptions = MemoryCacheEntryOptions$instance;
 
-export interface MemoryCacheOptions$instance extends Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions> {
+export interface MemoryCacheOptions$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheOptions: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;
@@ -184,7 +186,8 @@ export const MemoryCacheStatistics: {
 
 export type MemoryCacheStatistics = MemoryCacheStatistics$instance;
 
-export interface MemoryDistributedCacheOptions$instance extends MemoryCacheOptions$instance, Microsoft_Extensions_Options_Internal.IOptions_1$instance<MemoryCacheOptions> {
+export interface MemoryDistributedCacheOptions$instance extends MemoryCacheOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryCacheOptions: never;
     readonly __tsonic_type_Microsoft_Extensions_Caching_Memory_MemoryDistributedCacheOptions: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Options_IOptions_1: never;

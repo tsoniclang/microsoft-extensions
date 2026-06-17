@@ -13,16 +13,15 @@ import * as System_Text_Encodings_Web_Internal from "@tsonic/dotnet/System.Text.
 import type { HtmlEncoder, JavaScriptEncoder, UrlEncoder } from "@tsonic/dotnet/System.Text.Encodings.Web/internal/index.js";
 import type { Boolean as ClrBoolean, Char, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface HtmlTestEncoder$instance extends HtmlEncoder {
+export interface HtmlTestEncoder$instance extends System_Text_Encodings_Web_Internal.HtmlEncoder {
     readonly __tsonic_type_Microsoft_Extensions_WebEncoders_Testing_HtmlTestEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_HtmlEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_TextEncoder: never;
 
-    readonly MaxOutputCharactersPerInputCharacter: int;
-    Encode(value: string): string;
-    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    WillEncode(unicodeScalar: int): boolean;
+    Encode: System_Text_Encodings_Web_Internal.HtmlEncoder["Encode"] & ((output: TextWriter, value: char[], startIndex: int, characterCount: int) => void) & ((output: TextWriter, value: string, startIndex: int, characterCount: int) => void) & ((value: string) => string);
+    FindFirstCharacterToEncode: System_Text_Encodings_Web_Internal.HtmlEncoder["FindFirstCharacterToEncode"] & ((text: ptr<char>, textLength: int) => int);
+    TryEncodeUnicodeScalar: System_Text_Encodings_Web_Internal.HtmlEncoder["TryEncodeUnicodeScalar"] & ((unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int) => boolean);
+    WillEncode: System_Text_Encodings_Web_Internal.HtmlEncoder["WillEncode"] & ((unicodeScalar: int) => boolean);
 }
 
 
@@ -33,16 +32,15 @@ export const HtmlTestEncoder: {
 
 export type HtmlTestEncoder = HtmlTestEncoder$instance;
 
-export interface JavaScriptTestEncoder$instance extends JavaScriptEncoder {
+export interface JavaScriptTestEncoder$instance extends System_Text_Encodings_Web_Internal.JavaScriptEncoder {
     readonly __tsonic_type_Microsoft_Extensions_WebEncoders_Testing_JavaScriptTestEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_JavaScriptEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_TextEncoder: never;
 
-    readonly MaxOutputCharactersPerInputCharacter: int;
-    Encode(value: string): string;
-    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    WillEncode(unicodeScalar: int): boolean;
+    Encode: System_Text_Encodings_Web_Internal.JavaScriptEncoder["Encode"] & ((output: TextWriter, value: char[], startIndex: int, characterCount: int) => void) & ((output: TextWriter, value: string, startIndex: int, characterCount: int) => void) & ((value: string) => string);
+    FindFirstCharacterToEncode: System_Text_Encodings_Web_Internal.JavaScriptEncoder["FindFirstCharacterToEncode"] & ((text: ptr<char>, textLength: int) => int);
+    TryEncodeUnicodeScalar: System_Text_Encodings_Web_Internal.JavaScriptEncoder["TryEncodeUnicodeScalar"] & ((unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int) => boolean);
+    WillEncode: System_Text_Encodings_Web_Internal.JavaScriptEncoder["WillEncode"] & ((unicodeScalar: int) => boolean);
 }
 
 
@@ -53,16 +51,15 @@ export const JavaScriptTestEncoder: {
 
 export type JavaScriptTestEncoder = JavaScriptTestEncoder$instance;
 
-export interface UrlTestEncoder$instance extends UrlEncoder {
+export interface UrlTestEncoder$instance extends System_Text_Encodings_Web_Internal.UrlEncoder {
     readonly __tsonic_type_Microsoft_Extensions_WebEncoders_Testing_UrlTestEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_TextEncoder: never;
+    readonly __tsonic_type_System_Text_Encodings_Web_UrlEncoder: never;
 
-    readonly MaxOutputCharactersPerInputCharacter: int;
-    Encode(value: string): string;
-    Encode(output: TextWriter, value: char[], startIndex: int, characterCount: int): void;
-    Encode(output: TextWriter, value: string, startIndex: int, characterCount: int): void;
-    FindFirstCharacterToEncode(text: ptr<char>, textLength: int): int;
-    TryEncodeUnicodeScalar(unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int): boolean;
-    WillEncode(unicodeScalar: int): boolean;
+    Encode: System_Text_Encodings_Web_Internal.UrlEncoder["Encode"] & ((output: TextWriter, value: char[], startIndex: int, characterCount: int) => void) & ((output: TextWriter, value: string, startIndex: int, characterCount: int) => void) & ((value: string) => string);
+    FindFirstCharacterToEncode: System_Text_Encodings_Web_Internal.UrlEncoder["FindFirstCharacterToEncode"] & ((text: ptr<char>, textLength: int) => int);
+    TryEncodeUnicodeScalar: System_Text_Encodings_Web_Internal.UrlEncoder["TryEncodeUnicodeScalar"] & ((unicodeScalar: int, buffer: ptr<char>, bufferLength: int, numberOfCharactersWritten: int) => boolean);
+    WillEncode: System_Text_Encodings_Web_Internal.UrlEncoder["WillEncode"] & ((unicodeScalar: int) => boolean);
 }
 
 

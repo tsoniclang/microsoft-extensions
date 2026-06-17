@@ -13,11 +13,13 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Enum, Exception, Func_2, IComparable, IConvertible, IFormattable, Int32, IServiceProvider, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, ValueType } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum HealthStatus {
-    Unhealthy = 0,
-    Degraded = 1,
-    Healthy = 2
-}
+export type HealthStatus = number & { readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthStatus: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const HealthStatus: {
+    readonly Unhealthy: HealthStatus;
+    readonly Degraded: HealthStatus;
+    readonly Healthy: HealthStatus;
+};
 
 
 export interface IHealthCheck$instance {
@@ -40,6 +42,7 @@ export type IHealthCheckPublisher = IHealthCheckPublisher$instance;
 
 export interface HealthCheckResult$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthCheckResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Description: string | null;
@@ -60,6 +63,7 @@ export type HealthCheckResult = HealthCheckResult$instance;
 
 export interface HealthReportEntry$instance {
     readonly __tsonic_type_Microsoft_Extensions_Diagnostics_HealthChecks_HealthReportEntry: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Data: IReadOnlyDictionary_2<System_Internal.String, unknown>;
     readonly Description: string | null;
@@ -143,7 +147,7 @@ export interface HealthCheckService$instance {
 }
 
 
-export const HealthCheckService: (abstract new() => HealthCheckService) & {
+export const HealthCheckService: {
 };
 
 

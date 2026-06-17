@@ -31,11 +31,12 @@ export interface IResettable$instance {
 
 export type IResettable = IResettable$instance;
 
-export interface DefaultObjectPool_1$instance<T extends (object | null)> extends ObjectPool_1<T> {
+export interface DefaultObjectPool_1$instance<T extends (object | null)> extends ObjectPool_1$instance<T> {
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_DefaultObjectPool_1: never;
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_ObjectPool_1: never;
 
-    Get(): T;
-    Return(obj: T): void;
+    Get: ObjectPool_1$instance<T>["Get"] & (() => T);
+    Return: ObjectPool_1$instance<T>["Return"] & ((obj: T) => void);
 }
 
 
@@ -47,12 +48,12 @@ export const DefaultObjectPool_1: {
 
 export type DefaultObjectPool_1<T extends (object | null)> = DefaultObjectPool_1$instance<T>;
 
-export interface DefaultObjectPoolProvider$instance extends ObjectPoolProvider {
+export interface DefaultObjectPoolProvider$instance extends ObjectPoolProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_DefaultObjectPoolProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_ObjectPoolProvider: never;
 
     MaximumRetained: int;
-    Create<T extends (object | null)>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
-    Create<T extends (object | null)>(): ObjectPool_1<T>;
+    Create: ObjectPoolProvider$instance["Create"] & (<T extends (object | null)>() => ObjectPool_1<T>) & (<T extends (object | null)>(policy: IPooledObjectPolicy_1<T>) => ObjectPool_1<T>);
 }
 
 
@@ -63,13 +64,14 @@ export const DefaultObjectPoolProvider: {
 
 export type DefaultObjectPoolProvider = DefaultObjectPoolProvider$instance;
 
-export interface DefaultPooledObjectPolicy_1$instance<T extends (object | null)> extends PooledObjectPolicy_1$instance<T>, IPooledObjectPolicy_1$instance<T> {
+export interface DefaultPooledObjectPolicy_1$instance<T extends (object | null)> extends PooledObjectPolicy_1$instance<T> {
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_DefaultPooledObjectPolicy_1: never;
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_PooledObjectPolicy_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
 
-    Create(): T;
-    Return(obj: T): boolean;
+    Create: PooledObjectPolicy_1$instance<T>["Create"] & (() => T);
+    Return: PooledObjectPolicy_1$instance<T>["Return"] & ((obj: T) => boolean);
 }
 
 
@@ -85,11 +87,12 @@ export interface __DefaultPooledObjectPolicy_1$views<T extends (object | null)> 
 export type DefaultPooledObjectPolicy_1<T extends (object | null)> = DefaultPooledObjectPolicy_1$instance<T> & __DefaultPooledObjectPolicy_1$views<T>;
 
 
-export interface LeakTrackingObjectPool_1$instance<T extends (object | null)> extends ObjectPool_1<T> {
+export interface LeakTrackingObjectPool_1$instance<T extends (object | null)> extends ObjectPool_1$instance<T> {
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPool_1: never;
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_ObjectPool_1: never;
 
-    Get(): T;
-    Return(obj: T): void;
+    Get: ObjectPool_1$instance<T>["Get"] & (() => T);
+    Return: ObjectPool_1$instance<T>["Return"] & ((obj: T) => void);
 }
 
 
@@ -100,11 +103,11 @@ export const LeakTrackingObjectPool_1: {
 
 export type LeakTrackingObjectPool_1<T extends (object | null)> = LeakTrackingObjectPool_1$instance<T>;
 
-export interface LeakTrackingObjectPoolProvider$instance extends ObjectPoolProvider {
+export interface LeakTrackingObjectPoolProvider$instance extends ObjectPoolProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_LeakTrackingObjectPoolProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_ObjectPoolProvider: never;
 
-    Create<T extends (object | null)>(policy: IPooledObjectPolicy_1<T>): ObjectPool_1<T>;
-    Create<T extends (object | null)>(): ObjectPool_1<T>;
+    Create: ObjectPoolProvider$instance["Create"] & (<T extends (object | null)>() => ObjectPool_1<T>) & (<T extends (object | null)>(policy: IPooledObjectPolicy_1<T>) => ObjectPool_1<T>);
 }
 
 
@@ -123,7 +126,7 @@ export interface ObjectPool_1$instance<T extends (object | null)> {
 }
 
 
-export const ObjectPool_1: (abstract new<T extends (object | null)>() => ObjectPool_1<T>) & {
+export const ObjectPool_1: {
 };
 
 
@@ -137,13 +140,13 @@ export interface ObjectPoolProvider$instance {
 }
 
 
-export const ObjectPoolProvider: (abstract new() => ObjectPoolProvider) & {
+export const ObjectPoolProvider: {
 };
 
 
 export type ObjectPoolProvider = ObjectPoolProvider$instance;
 
-export interface PooledObjectPolicy_1$instance<T extends unknown> extends IPooledObjectPolicy_1$instance<T> {
+export interface PooledObjectPolicy_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_PooledObjectPolicy_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
@@ -153,7 +156,7 @@ export interface PooledObjectPolicy_1$instance<T extends unknown> extends IPoole
 }
 
 
-export const PooledObjectPolicy_1: (abstract new<T extends unknown>() => PooledObjectPolicy_1<T>) & {
+export const PooledObjectPolicy_1: {
 };
 
 
@@ -164,15 +167,16 @@ export interface __PooledObjectPolicy_1$views<T extends unknown> {
 export type PooledObjectPolicy_1<T extends unknown> = PooledObjectPolicy_1$instance<T> & __PooledObjectPolicy_1$views<T>;
 
 
-export interface StringBuilderPooledObjectPolicy$instance extends PooledObjectPolicy_1$instance<StringBuilder>, IPooledObjectPolicy_1$instance<StringBuilder> {
+export interface StringBuilderPooledObjectPolicy$instance extends PooledObjectPolicy_1$instance<StringBuilder> {
+    readonly __tsonic_type_Microsoft_Extensions_ObjectPool_PooledObjectPolicy_1: never;
     readonly __tsonic_type_Microsoft_Extensions_ObjectPool_StringBuilderPooledObjectPolicy: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_ObjectPool_IPooledObjectPolicy_1: never;
 
     InitialCapacity: int;
     MaximumRetainedCapacity: int;
-    Create(): StringBuilder;
-    Return(obj: StringBuilder): boolean;
+    Create: PooledObjectPolicy_1$instance<StringBuilder>["Create"] & (() => StringBuilder);
+    Return: PooledObjectPolicy_1$instance<StringBuilder>["Return"] & ((obj: StringBuilder) => boolean);
 }
 
 

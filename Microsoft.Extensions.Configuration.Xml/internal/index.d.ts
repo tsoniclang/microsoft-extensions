@@ -17,14 +17,15 @@ import type { XmlDocument, XmlReader, XmlReaderSettings } from "@tsonic/dotnet/S
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface XmlConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
+export interface XmlConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.FileConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Load(stream: Stream): void;
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.FileConfigurationProvider$instance["Load"] & (() => void) & ((stream: Stream) => void);
 }
 
 
@@ -40,12 +41,13 @@ export interface __XmlConfigurationProvider$views {
 export type XmlConfigurationProvider = XmlConfigurationProvider$instance & __XmlConfigurationProvider$views;
 
 
-export interface XmlConfigurationSource$instance extends FileConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface XmlConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.FileConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationSource: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build: Microsoft_Extensions_Configuration_Internal.FileConfigurationSource$instance["Build"] & ((builder: IConfigurationBuilder) => IConfigurationProvider);
 }
 
 
@@ -69,20 +71,21 @@ export interface XmlDocumentDecryptor$instance {
 }
 
 
-export const XmlDocumentDecryptor: (abstract new() => XmlDocumentDecryptor) & {
+export const XmlDocumentDecryptor: {
     readonly Instance: XmlDocumentDecryptor;
 };
 
 
 export type XmlDocumentDecryptor = XmlDocumentDecryptor$instance;
 
-export interface XmlStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+export interface XmlStreamConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.StreamConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    Load(stream: Stream): void;
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.StreamConfigurationProvider$instance["Load"] & (() => void) & ((stream: Stream) => void);
 }
 
 
@@ -99,12 +102,13 @@ export interface __XmlStreamConfigurationProvider$views {
 export type XmlStreamConfigurationProvider = XmlStreamConfigurationProvider$instance & __XmlStreamConfigurationProvider$views;
 
 
-export interface XmlStreamConfigurationSource$instance extends StreamConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface XmlStreamConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.StreamConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationSource: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Xml_XmlStreamConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build: Microsoft_Extensions_Configuration_Internal.StreamConfigurationSource$instance["Build"] & ((builder: IConfigurationBuilder) => IConfigurationProvider);
 }
 
 

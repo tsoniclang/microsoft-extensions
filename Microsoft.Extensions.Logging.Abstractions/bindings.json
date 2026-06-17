@@ -407,19 +407,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord::.ctor():void",
-            "metadataToken": 100663493,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Logging.Abstractions.BufferedLogRecord",
-            "ownerIdentity": "Microsoft.Extensions.Logging.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Logging.Abstractions:Microsoft.Extensions.Logging.Abstractions.NullLogger",

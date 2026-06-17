@@ -88,19 +88,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase::.ctor():void",
-            "metadataToken": 100663467,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoBase",
-            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.DirectoryInfoWrapper",
@@ -273,19 +261,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase::.ctor():void",
-            "metadataToken": 100663476,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoBase",
-            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileInfoWrapper",
@@ -455,19 +431,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.FileSystemGlobbing:Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase::.ctor():void",
-            "metadataToken": 100663484,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.FileSystemGlobbing.Abstractions.FileSystemInfoBase",
-            "ownerIdentity": "Microsoft.Extensions.FileSystemGlobbing"
-          }
-        ]
+        "constructors": []
       }
     ]
   }

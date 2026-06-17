@@ -10,6 +10,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Cross-namespace type imports for constraints
+import type { MemoryCacheOptions } from './Microsoft.Extensions.Caching.Memory/internal/index.js';
 import type { BinderOptions, IConfiguration } from './Microsoft.Extensions.Configuration/internal/index.js';
 import type { IServiceCollection } from './Microsoft.Extensions.DependencyInjection/internal/index.js';
 import type { IChangeToken } from './Microsoft.Extensions.Primitives/internal/index.js';
@@ -95,11 +96,11 @@ export type ValidateOptions<
   T6 extends unknown | __ = __,
 > =
   [T2] extends [__] ? [T1] extends [(object | null)] ? Internal.ValidateOptions_1<T1> : never :
-  [T3] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? Internal.ValidateOptions_2<T1, T2> : never : never :
-  [T4] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? Internal.ValidateOptions_3<T1, T2, T3> : never : never : never :
-  [T5] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? Internal.ValidateOptions_4<T1, T2, T3, T4> : never : never : never : never :
-  [T6] extends [__] ? [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? Internal.ValidateOptions_5<T1, T2, T3, T4, T5> : never : never : never : never : never :
-  [T1] extends [(object | null)] ? [T2] extends [unknown] ? [T3] extends [unknown] ? [T4] extends [unknown] ? [T5] extends [unknown] ? [T6] extends [unknown] ? Internal.ValidateOptions_6<T1, T2, T3, T4, T5, T6> : never : never : never : never : never : never;
+  [T3] extends [__] ? [T1] extends [(object | null)] ? Internal.ValidateOptions_2<T1, T2> : never :
+  [T4] extends [__] ? [T1] extends [(object | null)] ? Internal.ValidateOptions_3<T1, T2, T3> : never :
+  [T5] extends [__] ? [T1] extends [(object | null)] ? Internal.ValidateOptions_4<T1, T2, T3, T4> : never :
+  [T6] extends [__] ? [T1] extends [(object | null)] ? Internal.ValidateOptions_5<T1, T2, T3, T4, T5> : never :
+  [T1] extends [(object | null)] ? Internal.ValidateOptions_6<T1, T2, T3, T4, T5, T6> : never;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Options as ExtensionMethods } from './__internal/extensions/index.js';

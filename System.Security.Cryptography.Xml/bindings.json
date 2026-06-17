@@ -396,17 +396,6 @@
             "visibility": "Public",
             "ownerQualifiedName": "System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException",
             "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663563,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.CryptoSignedXmlRecursionException",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
           }
         ]
       },
@@ -1093,83 +1082,11 @@
             "visibility": "Public",
             "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedReference",
             "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::ReferenceType:System.String",
-            "targetName": "ReferenceType",
-            "metadataToken": 385876100,
-            "canonicalSignature": ":System.String",
-            "normalizedSignature": "ReferenceType|:System.String|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedReference",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::CacheValid:System.Boolean",
-            "targetName": "CacheValid",
-            "metadataToken": 385876101,
-            "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "CacheValid|:System.Boolean|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "ProtectedInternal",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedReference",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
           }
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor():void",
-            "metadataToken": 100663607,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedReference",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor(System.String):void",
-            "metadataToken": 100663608,
-            "canonicalSignature": "(System.String):void",
-            "normalizedSignature": "constructor|(System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedReference",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedReference::.ctor(System.String,System.Security.Cryptography.Xml.TransformChain):void",
-            "metadataToken": 100663609,
-            "canonicalSignature": "(System.String,System.Security.Cryptography.Xml.TransformChain):void",
-            "normalizedSignature": "constructor|(System.String,System.Security.Cryptography.Xml.TransformChain):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedReference",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType",
@@ -1404,19 +1321,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedType::.ctor():void",
-            "metadataToken": 100663642,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.EncryptedType",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.EncryptedXml",
@@ -3062,19 +2967,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoClause::.ctor():void",
-            "metadataToken": 100663757,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.KeyInfoClause",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.KeyInfoEncryptedKey",
@@ -5585,30 +5478,6 @@
         ],
         "fields": [
           {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::m_signatureSystem.Security.Cryptography.Xml.Signature",
-            "targetName": "m_signature",
-            "metadataToken": 67109152,
-            "normalizedSignature": "m_signature|System.Security.Cryptography.Xml.Signature|static=false|const=false",
-            "isStatic": false,
-            "isReadOnly": false,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.SignedXml",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::m_strSigningKeyNameSystem.String",
-            "targetName": "m_strSigningKeyName",
-            "metadataToken": 67109153,
-            "normalizedSignature": "m_strSigningKeyName|System.String|static=false|const=false",
-            "isStatic": false,
-            "isReadOnly": false,
-            "isLiteral": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.SignedXml",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          },
-          {
             "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.SignedXml::XmlDsigNamespaceUrlSystem.String",
             "targetName": "XmlDsigNamespaceUrl",
             "metadataToken": 67109173,
@@ -6116,17 +5985,17 @@
             "targetName": "Resolver",
             "metadataToken": 385876203,
             "canonicalSignature": ":System.Xml.XmlResolver",
-            "normalizedSignature": "Resolver|:System.Xml.XmlResolver|static=false|accessor=getset",
+            "normalizedSignature": "Resolver|:System.Xml.XmlResolver|static=false|accessor=set",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
-            "hasGetter": true,
+            "hasGetter": false,
             "hasSetter": true,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": false,
             "isOverride": false,
-            "visibility": "Internal",
+            "visibility": "Public",
             "ownerQualifiedName": "System.Security.Cryptography.Xml.Transform",
             "ownerIdentity": "System.Security.Cryptography.Xml"
           },
@@ -6209,19 +6078,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.Transform::.ctor():void",
-            "metadataToken": 100664018,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Security.Cryptography.Xml.Transform",
-            "ownerIdentity": "System.Security.Cryptography.Xml"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Security.Cryptography.Xml:System.Security.Cryptography.Xml.TransformChain",

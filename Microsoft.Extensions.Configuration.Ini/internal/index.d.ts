@@ -16,14 +16,15 @@ import type { Stream } from "@tsonic/dotnet/System.IO/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, IDisposable, Int32, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IniConfigurationProvider$instance extends FileConfigurationProvider, System_Internal.IDisposable {
+export interface IniConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.FileConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Load(stream: Stream): void;
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.FileConfigurationProvider$instance["Load"] & (() => void) & ((stream: Stream) => void);
 }
 
 
@@ -39,12 +40,13 @@ export interface __IniConfigurationProvider$views {
 export type IniConfigurationProvider = IniConfigurationProvider$instance & __IniConfigurationProvider$views;
 
 
-export interface IniConfigurationSource$instance extends FileConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface IniConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.FileConfigurationSource$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_FileConfigurationSource: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build: Microsoft_Extensions_Configuration_Internal.FileConfigurationSource$instance["Build"] & ((builder: IConfigurationBuilder) => IConfigurationProvider);
 }
 
 
@@ -60,13 +62,14 @@ export interface __IniConfigurationSource$views {
 export type IniConfigurationSource = IniConfigurationSource$instance & __IniConfigurationSource$views;
 
 
-export interface IniStreamConfigurationProvider$instance extends StreamConfigurationProvider {
+export interface IniStreamConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.StreamConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    Load(stream: Stream): void;
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.StreamConfigurationProvider$instance["Load"] & (() => void) & ((stream: Stream) => void);
 }
 
 
@@ -83,12 +86,13 @@ export interface __IniStreamConfigurationProvider$views {
 export type IniStreamConfigurationProvider = IniStreamConfigurationProvider$instance & __IniStreamConfigurationProvider$views;
 
 
-export interface IniStreamConfigurationSource$instance extends StreamConfigurationSource, Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface IniStreamConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.StreamConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_Ini_IniStreamConfigurationSource: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_StreamConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;
 
-    Build(builder: IConfigurationBuilder): IConfigurationProvider;
+    Build: Microsoft_Extensions_Configuration_Internal.StreamConfigurationSource$instance["Build"] & ((builder: IConfigurationBuilder) => IConfigurationProvider);
 }
 
 

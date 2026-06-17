@@ -19,14 +19,14 @@ import type { Assembly } from "@tsonic/dotnet/System.Reflection/internal/index.j
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, DateTimeOffset, IDisposable, Int64, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IDirectoryContents$instance extends IEnumerable_1<IFileInfo>, IEnumerable {
+export interface IDirectoryContents$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
+    readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
+    readonly __tsonic_iface_System_Collections_IEnumerable: never;
 
     readonly Exists: boolean;
 }
 
-
-export interface IDirectoryContents$instance extends System_Collections_Generic_Internal.IEnumerable_1<IFileInfo> {}
 
 export type IDirectoryContents = IDirectoryContents$instance;
 
@@ -56,7 +56,7 @@ export interface IFileProvider$instance {
 
 export type IFileProvider = IFileProvider$instance;
 
-export interface CompositeFileProvider$instance extends IFileProvider$instance {
+export interface CompositeFileProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_CompositeFileProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
@@ -81,7 +81,7 @@ export interface __CompositeFileProvider$views {
 export type CompositeFileProvider = CompositeFileProvider$instance & __CompositeFileProvider$views;
 
 
-export interface EmbeddedFileProvider$instance extends IFileProvider$instance {
+export interface EmbeddedFileProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_EmbeddedFileProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
@@ -105,7 +105,7 @@ export interface __EmbeddedFileProvider$views {
 export type EmbeddedFileProvider = EmbeddedFileProvider$instance & __EmbeddedFileProvider$views;
 
 
-export interface ManifestEmbeddedFileProvider$instance extends IFileProvider$instance {
+export interface ManifestEmbeddedFileProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_ManifestEmbeddedFileProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
@@ -132,7 +132,7 @@ export interface __ManifestEmbeddedFileProvider$views {
 export type ManifestEmbeddedFileProvider = ManifestEmbeddedFileProvider$instance & __ManifestEmbeddedFileProvider$views;
 
 
-export interface NotFoundDirectoryContents$instance extends IDirectoryContents$instance {
+export interface NotFoundDirectoryContents$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_NotFoundDirectoryContents: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
@@ -157,7 +157,7 @@ export interface __NotFoundDirectoryContents$views {
 export type NotFoundDirectoryContents = NotFoundDirectoryContents$instance & __NotFoundDirectoryContents$views;
 
 
-export interface NotFoundFileInfo$instance extends IFileInfo$instance {
+export interface NotFoundFileInfo$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_NotFoundFileInfo: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
@@ -184,7 +184,7 @@ export interface __NotFoundFileInfo$views {
 export type NotFoundFileInfo = NotFoundFileInfo$instance & __NotFoundFileInfo$views;
 
 
-export interface NullChangeToken$instance extends Microsoft_Extensions_Primitives_Internal.IChangeToken$instance {
+export interface NullChangeToken$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_NullChangeToken: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
@@ -207,7 +207,7 @@ export interface __NullChangeToken$views {
 export type NullChangeToken = NullChangeToken$instance & __NullChangeToken$views;
 
 
-export interface NullFileProvider$instance extends IFileProvider$instance {
+export interface NullFileProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_NullFileProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;
@@ -230,7 +230,7 @@ export interface __NullFileProvider$views {
 export type NullFileProvider = NullFileProvider$instance & __NullFileProvider$views;
 
 
-export interface PhysicalFileProvider$instance extends IFileProvider$instance, System_Internal.IDisposable {
+export interface PhysicalFileProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_PhysicalFileProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileProvider: never;

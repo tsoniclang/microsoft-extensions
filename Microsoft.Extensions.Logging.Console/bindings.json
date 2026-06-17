@@ -474,12 +474,12 @@
             "targetName": "ChangeToken",
             "metadataToken": 385875992,
             "canonicalSignature": ":Microsoft.Extensions.Primitives.IChangeToken",
-            "normalizedSignature": "ChangeToken|:Microsoft.Extensions.Primitives.IChangeToken|static=false|accessor=getset",
+            "normalizedSignature": "ChangeToken|:Microsoft.Extensions.Primitives.IChangeToken|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -630,19 +630,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatter::.ctor(System.String):void",
-            "metadataToken": 100663436,
-            "canonicalSignature": "(System.String):void",
-            "normalizedSignature": "constructor|(System.String):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Logging.Console.ConsoleFormatter",
-            "ownerIdentity": "Microsoft.Extensions.Logging.Console"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Logging.Console:Microsoft.Extensions.Logging.Console.ConsoleFormatterOptions",

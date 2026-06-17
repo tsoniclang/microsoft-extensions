@@ -17,27 +17,31 @@ import type { SourceSwitch, TraceListener } from "@tsonic/dotnet/System.Diagnost
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, Action_3, Action_4, Action_5, Action_6, Action_7, Action_8, Attribute, Boolean as ClrBoolean, Enum, Exception, Func_2, Func_3, Func_4, Func_5, Func_6, Func_7, Func_8, IComparable, IConvertible, IDisposable, IEquatable_1, IFormattable, Int32, ISpanFormattable, Nullable_1, Object as ClrObject, String as ClrString, Type, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ActivityTrackingOptions {
-    None = 0,
-    SpanId = 1,
-    TraceId = 2,
-    ParentId = 4,
-    TraceState = 8,
-    TraceFlags = 16,
-    Tags = 32,
-    Baggage = 64
-}
+export type ActivityTrackingOptions = number & { readonly __tsonic_type_Microsoft_Extensions_Logging_ActivityTrackingOptions: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ActivityTrackingOptions: {
+    readonly None: ActivityTrackingOptions;
+    readonly SpanId: ActivityTrackingOptions;
+    readonly TraceId: ActivityTrackingOptions;
+    readonly ParentId: ActivityTrackingOptions;
+    readonly TraceState: ActivityTrackingOptions;
+    readonly TraceFlags: ActivityTrackingOptions;
+    readonly Tags: ActivityTrackingOptions;
+    readonly Baggage: ActivityTrackingOptions;
+};
 
 
-export enum LogLevel {
-    Trace = 0,
-    Debug = 1,
-    Information = 2,
-    Warning = 3,
-    Error = 4,
-    Critical = 5,
-    None = 6
-}
+export type LogLevel = number & { readonly __tsonic_type_Microsoft_Extensions_Logging_LogLevel: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const LogLevel: {
+    readonly Trace: LogLevel;
+    readonly Debug: LogLevel;
+    readonly Information: LogLevel;
+    readonly Warning: LogLevel;
+    readonly Error: LogLevel;
+    readonly Critical: LogLevel;
+    readonly None: LogLevel;
+};
 
 
 export interface IExternalScopeProvider$instance {
@@ -61,14 +65,13 @@ export interface ILogger$instance {
 
 export type ILogger = ILogger$instance;
 
-export interface ILogger_1$instance<TCategoryName extends unknown> extends ILogger {
+export interface ILogger_1$instance<TCategoryName extends unknown> {
+    readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger_1: never;
 
     BeginScope<TState extends unknown>(state: TState): IDisposable;
-    BeginScope<TState>(state: TState): IDisposable;
     IsEnabled(logLevel: LogLevel): boolean;
     Log<TState extends unknown>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
-    Log<TState>(logLevel: LogLevel, eventId: EventId, state: TState, exception: Exception | null, formatter: Func_3<TState, Exception | null, System_Internal.String>): void;
 }
 
 
@@ -76,26 +79,24 @@ export interface ILogger_1$instance<TCategoryName extends unknown> extends ILogg
 
 export type ILogger_1<TCategoryName extends unknown> = ILogger_1$instance<TCategoryName>;
 
-export interface ILoggerFactory$instance extends IDisposable {
+export interface ILoggerFactory$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     AddProvider(provider: ILoggerProvider): void;
     CreateLogger(categoryName: string): ILogger;
 }
 
 
-export interface ILoggerFactory$instance extends System_Internal.IDisposable {}
-
 export type ILoggerFactory = ILoggerFactory$instance;
 
-export interface ILoggerProvider$instance extends IDisposable {
+export interface ILoggerProvider$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     CreateLogger(categoryName: string): ILogger;
 }
 
-
-export interface ILoggerProvider$instance extends System_Internal.IDisposable {}
 
 export type ILoggerProvider = ILoggerProvider$instance;
 
@@ -119,13 +120,14 @@ export type ISupportExternalScope = ISupportExternalScope$instance;
 
 export interface EventId$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_EventId: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Id: int;
     readonly Name: string | null;
-    Equals(other: EventId): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: EventId): boolean;
     GetHashCode(): int;
     ToString(): string;
 }
@@ -152,7 +154,7 @@ export const LogDefineOptions: {
 
 export type LogDefineOptions = LogDefineOptions$instance;
 
-export interface Logger_1$instance<T extends unknown> extends ILogger_1$instance<T> {
+export interface Logger_1$instance<T extends unknown> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Logger_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
@@ -173,7 +175,7 @@ export interface __Logger_1$views<T extends unknown> {
 export type Logger_1<T extends unknown> = Logger_1$instance<T> & __Logger_1$views<T>;
 
 
-export interface LoggerExternalScopeProvider$instance extends IExternalScopeProvider$instance {
+export interface LoggerExternalScopeProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerExternalScopeProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_IExternalScopeProvider: never;
@@ -195,7 +197,7 @@ export interface __LoggerExternalScopeProvider$views {
 export type LoggerExternalScopeProvider = LoggerExternalScopeProvider$instance & __LoggerExternalScopeProvider$views;
 
 
-export interface LoggerFactory$instance extends ILoggerFactory$instance {
+export interface LoggerFactory$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerFactory: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
@@ -274,8 +276,9 @@ export const LoggerFilterRule: {
 
 export type LoggerFilterRule = LoggerFilterRule$instance;
 
-export interface LoggerMessageAttribute$instance extends Attribute {
+export interface LoggerMessageAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_Logging_LoggerMessageAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     EventId: int;
     get EventName(): string | null;
@@ -297,8 +300,9 @@ export const LoggerMessageAttribute: {
 
 export type LoggerMessageAttribute = LoggerMessageAttribute$instance;
 
-export interface ProviderAliasAttribute$instance extends Attribute {
+export interface ProviderAliasAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_Logging_ProviderAliasAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly Alias: string;
 }
@@ -322,8 +326,8 @@ export abstract class ConsoleLoggerExtensions$instance {
     static AddConsole(factory: ILoggerFactory): ILoggerFactory;
     static AddConsole(builder: ILoggingBuilder, configure: Action_1<ConsoleLoggerOptions>): ILoggingBuilder;
     static AddConsole(builder: ILoggingBuilder): ILoggingBuilder;
-    static AddConsoleFormatter<TFormatter extends unknown & ConsoleFormatter, TOptions extends unknown & ConsoleFormatterOptions>(builder: ILoggingBuilder, configure: Action_1<TOptions>): ILoggingBuilder;
-    static AddConsoleFormatter<TFormatter extends unknown & ConsoleFormatter, TOptions extends unknown & ConsoleFormatterOptions>(builder: ILoggingBuilder): ILoggingBuilder;
+    static AddConsoleFormatter<TFormatter extends unknown & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatter: never }, TOptions extends unknown & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions: never }>(builder: ILoggingBuilder, configure: Action_1<TOptions>): ILoggingBuilder;
+    static AddConsoleFormatter<TFormatter extends unknown & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatter: never }, TOptions extends unknown & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions: never }>(builder: ILoggingBuilder): ILoggingBuilder;
     static AddJsonConsole(builder: ILoggingBuilder, configure: Action_1<JsonConsoleFormatterOptions>): ILoggingBuilder;
     static AddJsonConsole(builder: ILoggingBuilder): ILoggingBuilder;
     static AddSimpleConsole(builder: ILoggingBuilder, configure: Action_1<SimpleConsoleFormatterOptions>): ILoggingBuilder;

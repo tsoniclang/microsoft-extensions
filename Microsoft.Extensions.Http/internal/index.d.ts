@@ -7,7 +7,7 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import type { DelegatingHandler, HttpClient, HttpMessageHandler } from "@tsonic/dotnet/System.Net.Http/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, Func_2, IServiceProvider, Object as ClrObject, String as ClrString, TimeSpan } from "@tsonic/dotnet/System/internal/index.js";
@@ -60,8 +60,7 @@ export interface HttpMessageHandlerBuilder$instance {
 }
 
 
-export const HttpMessageHandlerBuilder: (abstract new() => HttpMessageHandlerBuilder) & {
-    CreateHandlerPipeline(primaryHandler: HttpMessageHandler, additionalHandlers: IEnumerable_1<DelegatingHandler>): HttpMessageHandler;
+export const HttpMessageHandlerBuilder: {
 };
 
 

@@ -11,19 +11,20 @@ import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Ex
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IFileProvider } from "../../Microsoft.Extensions.FileProviders/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_2, IDisposable, Int32, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface KeyPerFileConfigurationProvider$instance extends ConfigurationProvider, Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance, System_Internal.IDisposable {
+export interface KeyPerFileConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
     Dispose(): void;
-    Load(): void;
-    ToString(): string;
+    Load: Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance["Load"] & (() => void);
+    ToString: Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance["ToString"] & (() => string);
 }
 
 
@@ -39,7 +40,7 @@ export interface __KeyPerFileConfigurationProvider$views {
 export type KeyPerFileConfigurationProvider = KeyPerFileConfigurationProvider$instance & __KeyPerFileConfigurationProvider$views;
 
 
-export interface KeyPerFileConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface KeyPerFileConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_KeyPerFile_KeyPerFileConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;

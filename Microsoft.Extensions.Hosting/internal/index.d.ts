@@ -20,10 +20,12 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Action_2, Boolean as ClrBoolean, Enum, Exception, Func_2, IComparable, IConvertible, IDisposable, IFormattable, Int32, IServiceProvider, ISpanFormattable, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum BackgroundServiceExceptionBehavior {
-    StopHost = 0,
-    Ignore = 1
-}
+export type BackgroundServiceExceptionBehavior = number & { readonly __tsonic_type_Microsoft_Extensions_Hosting_BackgroundServiceExceptionBehavior: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const BackgroundServiceExceptionBehavior: {
+    readonly StopHost: BackgroundServiceExceptionBehavior;
+    readonly Ignore: BackgroundServiceExceptionBehavior;
+};
 
 
 export interface IApplicationLifetime$instance {
@@ -38,15 +40,14 @@ export interface IApplicationLifetime$instance {
 
 export type IApplicationLifetime = IApplicationLifetime$instance;
 
-export interface IHost$instance extends IDisposable {
+export interface IHost$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHost: never;
+    readonly __tsonic_iface_System_IDisposable: never;
 
     readonly Services: IServiceProvider;
     StartAsync(cancellationToken?: CancellationToken): Task;
 }
 
-
-export interface IHost$instance extends System_Internal.IDisposable {}
 
 export type IHost = IHost$instance;
 
@@ -91,8 +92,9 @@ export interface IHostBuilder$instance {
 
 export type IHostBuilder = IHostBuilder$instance;
 
-export interface IHostedLifecycleService$instance extends IHostedService {
+export interface IHostedLifecycleService$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedLifecycleService: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
 
     StartingAsync(cancellationToken: CancellationToken): Task;
     StartAsync(cancellationToken: CancellationToken): Task;
@@ -145,7 +147,7 @@ export interface IHostLifetime$instance {
 
 export type IHostLifetime = IHostLifetime$instance;
 
-export interface BackgroundService$instance extends IHostedService$instance, System_Internal.IDisposable {
+export interface BackgroundService$instance {
     readonly __tsonic_type_Microsoft_Extensions_Hosting_BackgroundService: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostedService: never;
@@ -159,7 +161,7 @@ export interface BackgroundService$instance extends IHostedService$instance, Sys
 }
 
 
-export const BackgroundService: (abstract new() => BackgroundService) & {
+export const BackgroundService: {
 };
 
 
@@ -184,8 +186,9 @@ export const ConsoleLifetimeOptions: {
 
 export type ConsoleLifetimeOptions = ConsoleLifetimeOptions$instance;
 
-export interface HostAbortedException$instance extends Exception {
+export interface HostAbortedException$instance extends System_Internal.Exception {
     readonly __tsonic_type_Microsoft_Extensions_Hosting_HostAbortedException: never;
+    readonly __tsonic_type_System_Exception: never;
 
     readonly __tsonic_iface_System_Runtime_Serialization_ISerializable: never;
 
@@ -265,8 +268,8 @@ export interface HostBuilder$instance {
     ConfigureContainer<TContainerBuilder extends unknown>(configureDelegate: Action_2<HostBuilderContext, TContainerBuilder>): IHostBuilder;
     ConfigureHostConfiguration(configureDelegate: Action_1<IConfigurationBuilder>): IHostBuilder;
     ConfigureServices(configureDelegate: Action_2<HostBuilderContext, IServiceCollection>): IHostBuilder;
-    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
     UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: Func_2<HostBuilderContext, IServiceProviderFactory_1<TContainerBuilder>>): IHostBuilder;
+    UseServiceProviderFactory<TContainerBuilder extends unknown>(factory: IServiceProviderFactory_1<TContainerBuilder>): IHostBuilder;
 }
 
 

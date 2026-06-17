@@ -19,7 +19,7 @@ export interface ISystemClock$instance {
 
 export type ISystemClock = ISystemClock$instance;
 
-export interface SystemClock$instance extends ISystemClock$instance {
+export interface SystemClock$instance {
     readonly __tsonic_type_Microsoft_Extensions_Internal_SystemClock: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Internal_ISystemClock: never;
