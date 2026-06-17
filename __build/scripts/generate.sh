@@ -3,7 +3,7 @@
 #
 # Prerequisites:
 #   - .NET 10 SDK installed
-#   - tsbindgen repository cloned at ../tsbindgen (sibling directory)
+#   - dotnet-bindgen repository cloned at ../dotnet-bindgen (sibling directory)
 #   - @tsonic/dotnet cloned at ../dotnet (sibling directory)
 #
 # Usage:
@@ -13,14 +13,36 @@ set -e
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
-TSBINDGEN_DIR="$PROJECT_DIR/../tsbindgen"
+DOTNET_BINDGEN_DIR="$PROJECT_DIR/../dotnet-bindgen"
 DOTNET_MAJOR="${DOTNET_MAJOR:-10}"
 DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 
-DOTNET_VERSION="${DOTNET_VERSION:-10.0.1}"
-DOTNET_HOME="${DOTNET_HOME:-$HOME/.dotnet}"
-NETCORE_RUNTIME_PATH="$DOTNET_HOME/shared/Microsoft.NETCore.App/$DOTNET_VERSION"
-ASPNET_RUNTIME_PATH="$DOTNET_HOME/shared/Microsoft.AspNetCore.App/$DOTNET_VERSION"
+resolve_shared_framework_path() {
+    local framework="$1"
+    local version="${DOTNET_VERSION:-}"
+    if [ -n "$version" ]; then
+        local explicit
+        explicit="$(dotnet --list-runtimes | awk -v framework="$framework" -v version="$version" '$1 == framework && $2 == version { root=$3; gsub(/^\[/, "", root); gsub(/\]$/, "", root); print root "/" $2; exit }')"
+        if [ -n "$explicit" ]; then
+            echo "$explicit"
+            return
+        fi
+        echo "${DOTNET_HOME:-$HOME/.dotnet}/shared/$framework/$version"
+        return
+    fi
+
+    local resolved
+    resolved="$(dotnet --list-runtimes | awk -v framework="$framework" -v major="$DOTNET_MAJOR" '$1 == framework && index($2, major ".") == 1 { root=$3; gsub(/^\[/, "", root); gsub(/\]$/, "", root); print $2 "|" root }' | sort -t '|' -k1,1V | tail -1)"
+    if [ -z "$resolved" ]; then
+        echo "ERROR: No installed $framework runtime found for .NET major $DOTNET_MAJOR" >&2
+        exit 1
+    fi
+
+    echo "${resolved#*|}/${resolved%%|*}"
+}
+
+NETCORE_RUNTIME_PATH="$(resolve_shared_framework_path Microsoft.NETCore.App)"
+ASPNET_RUNTIME_PATH="$(resolve_shared_framework_path Microsoft.AspNetCore.App)"
 
 echo "================================================================"
 echo "Generating Microsoft.Extensions.* TypeScript Declarations"
@@ -30,7 +52,7 @@ echo "Configuration:"
 echo "  .NET Runtime:      $NETCORE_RUNTIME_PATH"
 echo "  ASP.NET Runtime:   $ASPNET_RUNTIME_PATH"
 echo "  BCL Library:       $DOTNET_LIB (external reference)"
-echo "  tsbindgen:         $TSBINDGEN_DIR"
+echo "  dotnet-bindgen:         $DOTNET_BINDGEN_DIR"
 echo "  Output:            $PROJECT_DIR"
 echo "  Naming:            CLR (no transforms)"
 echo ""
@@ -48,9 +70,9 @@ if [ ! -d "$ASPNET_RUNTIME_PATH" ]; then
     exit 1
 fi
 
-if [ ! -d "$TSBINDGEN_DIR" ]; then
-    echo "ERROR: tsbindgen not found at $TSBINDGEN_DIR"
-    echo "Clone it: git clone https://github.com/tsoniclang/tsbindgen ../tsbindgen"
+if [ ! -d "$DOTNET_BINDGEN_DIR" ]; then
+    echo "ERROR: dotnet-bindgen not found at $DOTNET_BINDGEN_DIR"
+    echo "Clone it: git clone https://github.com/tsoniclang/dotnet-bindgen ../dotnet-bindgen"
     exit 1
 fi
 
@@ -79,10 +101,10 @@ rm -rf __internal Internal internal 2>/dev/null || true
 
 echo "  Done"
 
-# Build tsbindgen
-echo "[2/3] Building tsbindgen..."
-cd "$TSBINDGEN_DIR"
-dotnet build src/tsbindgen/tsbindgen.csproj -c Release --verbosity quiet
+# Build dotnet-bindgen
+echo "[2/3] Building dotnet-bindgen..."
+cd "$DOTNET_BINDGEN_DIR"
+dotnet build src/DotnetBindgen/DotnetBindgen.csproj -c Release --verbosity quiet
 echo "  Done"
 
 # Collect all Microsoft.Extensions.* assemblies from the ASP.NET shared framework
@@ -110,7 +132,7 @@ for dll in "${FILTERED_DLLS[@]}"; do
     GEN_ARGS+=( -a "$dll" )
 done
 
-dotnet run --project src/tsbindgen/tsbindgen.csproj --no-build -c Release -- \
+dotnet run --project src/DotnetBindgen/DotnetBindgen.csproj --no-build -c Release -- \
     generate "${GEN_ARGS[@]}" -d "$NETCORE_RUNTIME_PATH" -o "$PROJECT_DIR" \
     --lib "$DOTNET_LIB"
 
