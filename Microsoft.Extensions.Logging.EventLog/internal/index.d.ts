@@ -61,4 +61,3 @@ export const EventLogSettings: {
 
 
 export type EventLogSettings = EventLogSettings$instance;
-

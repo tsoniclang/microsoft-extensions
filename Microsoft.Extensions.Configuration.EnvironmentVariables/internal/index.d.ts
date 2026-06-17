@@ -58,5 +58,3 @@ export interface __EnvironmentVariablesConfigurationSource$views {
 }
 
 export type EnvironmentVariablesConfigurationSource = EnvironmentVariablesConfigurationSource$instance & __EnvironmentVariablesConfigurationSource$views;
-
-

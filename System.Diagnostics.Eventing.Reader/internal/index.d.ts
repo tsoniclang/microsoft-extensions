@@ -627,4 +627,3 @@ export const ProviderMetadata: {
 
 
 export type ProviderMetadata = ProviderMetadata$instance;
-

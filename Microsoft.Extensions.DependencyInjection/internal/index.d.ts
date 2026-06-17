@@ -679,4 +679,3 @@ export abstract class ValidationServiceCollectionExtensions$instance {
 
 
 export type ValidationServiceCollectionExtensions = ValidationServiceCollectionExtensions$instance;
-

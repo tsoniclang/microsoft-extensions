@@ -202,4 +202,3 @@ export abstract class ObjectPoolProviderExtensions$instance {
 
 
 export type ObjectPoolProviderExtensions = ObjectPoolProviderExtensions$instance;
-

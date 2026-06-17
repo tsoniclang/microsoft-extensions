@@ -118,4 +118,3 @@ export abstract class DistributedCacheExtensions$instance {
 
 
 export type DistributedCacheExtensions = DistributedCacheExtensions$instance;
-

@@ -17,10 +17,32 @@ DOTNET_BINDGEN_DIR="$PROJECT_DIR/../dotnet-bindgen"
 DOTNET_MAJOR="${DOTNET_MAJOR:-10}"
 DOTNET_LIB="$PROJECT_DIR/../dotnet/versions/$DOTNET_MAJOR"
 
-DOTNET_VERSION="${DOTNET_VERSION:-10.0.1}"
-DOTNET_HOME="${DOTNET_HOME:-$HOME/.dotnet}"
-NETCORE_RUNTIME_PATH="$DOTNET_HOME/shared/Microsoft.NETCore.App/$DOTNET_VERSION"
-ASPNET_RUNTIME_PATH="$DOTNET_HOME/shared/Microsoft.AspNetCore.App/$DOTNET_VERSION"
+resolve_shared_framework_path() {
+    local framework="$1"
+    local version="${DOTNET_VERSION:-}"
+    if [ -n "$version" ]; then
+        local explicit
+        explicit="$(dotnet --list-runtimes | awk -v framework="$framework" -v version="$version" '$1 == framework && $2 == version { root=$3; gsub(/^\[/, "", root); gsub(/\]$/, "", root); print root "/" $2; exit }')"
+        if [ -n "$explicit" ]; then
+            echo "$explicit"
+            return
+        fi
+        echo "${DOTNET_HOME:-$HOME/.dotnet}/shared/$framework/$version"
+        return
+    fi
+
+    local resolved
+    resolved="$(dotnet --list-runtimes | awk -v framework="$framework" -v major="$DOTNET_MAJOR" '$1 == framework && index($2, major ".") == 1 { root=$3; gsub(/^\[/, "", root); gsub(/\]$/, "", root); print $2 "|" root }' | sort -t '|' -k1,1V | tail -1)"
+    if [ -z "$resolved" ]; then
+        echo "ERROR: No installed $framework runtime found for .NET major $DOTNET_MAJOR" >&2
+        exit 1
+    fi
+
+    echo "${resolved#*|}/${resolved%%|*}"
+}
+
+NETCORE_RUNTIME_PATH="$(resolve_shared_framework_path Microsoft.NETCore.App)"
+ASPNET_RUNTIME_PATH="$(resolve_shared_framework_path Microsoft.AspNetCore.App)"
 
 echo "================================================================"
 echo "Generating Microsoft.Extensions.* TypeScript Declarations"

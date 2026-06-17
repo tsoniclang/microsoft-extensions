@@ -25,4 +25,3 @@ export const WebEncoderOptions: {
 
 
 export type WebEncoderOptions = WebEncoderOptions$instance;
-

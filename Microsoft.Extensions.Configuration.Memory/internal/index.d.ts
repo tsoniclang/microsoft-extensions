@@ -62,5 +62,3 @@ export interface __MemoryConfigurationSource$views {
 }
 
 export type MemoryConfigurationSource = MemoryConfigurationSource$instance & __MemoryConfigurationSource$views;
-
-

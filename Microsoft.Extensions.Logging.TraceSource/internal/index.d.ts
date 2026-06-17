@@ -35,5 +35,3 @@ export interface __TraceSourceLoggerProvider$views {
 }
 
 export type TraceSourceLoggerProvider = TraceSourceLoggerProvider$instance & __TraceSourceLoggerProvider$views;
-
-

@@ -67,4 +67,3 @@ export abstract class LoggingBuilderConfigurationExtensions$instance {
 
 
 export type LoggingBuilderConfigurationExtensions = LoggingBuilderConfigurationExtensions$instance;
-

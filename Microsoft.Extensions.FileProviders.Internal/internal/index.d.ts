@@ -40,5 +40,3 @@ export interface __PhysicalDirectoryContents$views {
 }
 
 export type PhysicalDirectoryContents = PhysicalDirectoryContents$instance & __PhysicalDirectoryContents$views;
-
-

@@ -88,4 +88,3 @@ export const FileSystemInfoBase: (abstract new() => FileSystemInfoBase) & {
 
 
 export type FileSystemInfoBase = FileSystemInfoBase$instance;
-

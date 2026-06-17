@@ -221,4 +221,3 @@ export abstract class ConsoleFormatterNames$instance {
 
 
 export type ConsoleFormatterNames = ConsoleFormatterNames$instance;
-

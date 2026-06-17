@@ -148,4 +148,3 @@ export abstract class MetricsBuilderExtensions$instance {
 
 
 export type MetricsBuilderExtensions = MetricsBuilderExtensions$instance;
-

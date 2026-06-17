@@ -19,4 +19,3 @@ export interface IMetricListenerConfigurationFactory$instance {
 
 
 export type IMetricListenerConfigurationFactory = IMetricListenerConfigurationFactory$instance;
-

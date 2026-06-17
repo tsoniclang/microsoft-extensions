@@ -999,4 +999,3 @@ export abstract class OptionsMonitorExtensions$instance {
 
 
 export type OptionsMonitorExtensions = OptionsMonitorExtensions$instance;
-

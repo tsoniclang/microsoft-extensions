@@ -26,4 +26,3 @@ export const PatternBuilder: {
 
 
 export type PatternBuilder = PatternBuilder$instance;
-

@@ -60,4 +60,3 @@ export abstract class ServiceCollectionDescriptorExtensions$instance {
 
 
 export type ServiceCollectionDescriptorExtensions = ServiceCollectionDescriptorExtensions$instance;
-

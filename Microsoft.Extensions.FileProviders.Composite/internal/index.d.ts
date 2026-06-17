@@ -38,5 +38,3 @@ export interface __CompositeDirectoryContents$views {
 }
 
 export type CompositeDirectoryContents = CompositeDirectoryContents$instance & __CompositeDirectoryContents$views;
-
-

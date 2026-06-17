@@ -481,4 +481,3 @@ export abstract class TraceSourceFactoryExtensions$instance {
 
 
 export type TraceSourceFactoryExtensions = TraceSourceFactoryExtensions$instance;
-

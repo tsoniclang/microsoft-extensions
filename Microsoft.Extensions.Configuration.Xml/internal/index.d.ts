@@ -118,5 +118,3 @@ export interface __XmlStreamConfigurationSource$views {
 }
 
 export type XmlStreamConfigurationSource = XmlStreamConfigurationSource$instance & __XmlStreamConfigurationSource$views;
-
-

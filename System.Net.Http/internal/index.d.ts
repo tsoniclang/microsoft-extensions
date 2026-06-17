@@ -42,4 +42,3 @@ export abstract class HttpMessageHandlerFactoryExtensions$instance {
 
 
 export type HttpMessageHandlerFactoryExtensions = HttpMessageHandlerFactoryExtensions$instance;
-

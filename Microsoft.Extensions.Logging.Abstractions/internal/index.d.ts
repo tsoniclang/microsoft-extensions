@@ -158,5 +158,3 @@ export interface __NullLoggerProvider$views {
 }
 
 export type NullLoggerProvider = NullLoggerProvider$instance & __NullLoggerProvider$views;
-
-

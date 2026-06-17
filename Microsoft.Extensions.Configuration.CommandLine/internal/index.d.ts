@@ -57,5 +57,3 @@ export interface __CommandLineConfigurationSource$views {
 }
 
 export type CommandLineConfigurationSource = CommandLineConfigurationSource$instance & __CommandLineConfigurationSource$views;
-
-

@@ -210,5 +210,3 @@ export interface __PatternContextRaggedInclude$views {
 }
 
 export type PatternContextRaggedInclude = PatternContextRaggedInclude$instance & __PatternContextRaggedInclude$views;
-
-

@@ -72,4 +72,3 @@ export const UrlTestEncoder: {
 
 
 export type UrlTestEncoder = UrlTestEncoder$instance;
-

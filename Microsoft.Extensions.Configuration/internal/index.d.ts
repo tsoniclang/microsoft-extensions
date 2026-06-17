@@ -663,4 +663,3 @@ export abstract class XmlConfigurationExtensions$instance {
 
 
 export type XmlConfigurationExtensions = XmlConfigurationExtensions$instance;
-

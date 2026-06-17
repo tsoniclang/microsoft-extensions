@@ -227,4 +227,3 @@ export abstract class StringLocalizerExtensions$instance {
 
 
 export type StringLocalizerExtensions = StringLocalizerExtensions$instance;
-

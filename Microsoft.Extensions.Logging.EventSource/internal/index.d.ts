@@ -61,4 +61,3 @@ export abstract class LoggingEventSource_Keywords$instance {
 
 
 export type LoggingEventSource_Keywords = LoggingEventSource_Keywords$instance;
-

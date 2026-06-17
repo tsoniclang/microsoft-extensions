@@ -39,5 +39,3 @@ export interface __EmbeddedResourceFileInfo$views {
 }
 
 export type EmbeddedResourceFileInfo = EmbeddedResourceFileInfo$instance & __EmbeddedResourceFileInfo$views;
-
-

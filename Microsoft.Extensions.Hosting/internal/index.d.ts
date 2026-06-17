@@ -418,4 +418,3 @@ export abstract class HostingHostBuilderExtensions$instance {
 
 
 export type HostingHostBuilderExtensions = HostingHostBuilderExtensions$instance;
-

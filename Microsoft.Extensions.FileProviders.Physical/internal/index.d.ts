@@ -152,5 +152,3 @@ export interface __PollingWildCardChangeToken$views {
 }
 
 export type PollingWildCardChangeToken = PollingWildCardChangeToken$instance & __PollingWildCardChangeToken$views;
-
-

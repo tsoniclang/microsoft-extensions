@@ -33,5 +33,3 @@ export interface __DebugLoggerProvider$views {
 }
 
 export type DebugLoggerProvider = DebugLoggerProvider$instance & __DebugLoggerProvider$views;
-
-

@@ -98,4 +98,3 @@ export abstract class MatcherExtensions$instance {
 
 
 export type MatcherExtensions = MatcherExtensions$instance;
-

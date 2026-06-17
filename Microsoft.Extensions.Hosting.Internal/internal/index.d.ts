@@ -94,5 +94,3 @@ export interface __HostingEnvironment$views {
 }
 
 export type HostingEnvironment = HostingEnvironment$instance & __HostingEnvironment$views;
-
-

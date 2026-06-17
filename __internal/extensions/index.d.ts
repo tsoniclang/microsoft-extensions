@@ -719,4 +719,3 @@ export type ExtensionMethods_System_Net_Http<TShape> =
   TShape extends null | undefined ? TShape
   : TShape extends void ? void
   : TShape & __TsonicWithExt<TShape, "System.Net.Http", __TsonicExtApplier_System_Net_Http> & __TsonicExtMethods_System_Net_Http;
-

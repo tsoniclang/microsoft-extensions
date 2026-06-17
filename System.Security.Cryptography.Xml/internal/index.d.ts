@@ -966,4 +966,3 @@ export const XmlLicenseTransform: {
 
 
 export type XmlLicenseTransform = XmlLicenseTransform$instance;
-

@@ -66,5 +66,3 @@ export interface __KeyPerFileConfigurationSource$views {
 }
 
 export type KeyPerFileConfigurationSource = KeyPerFileConfigurationSource$instance & __KeyPerFileConfigurationSource$views;
-
-

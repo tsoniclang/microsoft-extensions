@@ -128,5 +128,3 @@ export interface __WildcardPathSegment$views {
 }
 
 export type WildcardPathSegment = WildcardPathSegment$instance & __WildcardPathSegment$views;
-
-

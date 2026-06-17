@@ -229,4 +229,3 @@ export const EventSourceCreationData: {
 
 
 export type EventSourceCreationData = EventSourceCreationData$instance;
-

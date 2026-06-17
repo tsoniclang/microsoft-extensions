@@ -268,4 +268,3 @@ export abstract class MemoryCacheEntryExtensions$instance {
 
 
 export type MemoryCacheEntryExtensions = MemoryCacheEntryExtensions$instance;
-

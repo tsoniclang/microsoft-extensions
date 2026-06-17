@@ -38,5 +38,3 @@ export interface __SystemClock$views {
 }
 
 export type SystemClock = SystemClock$instance & __SystemClock$views;
-
-

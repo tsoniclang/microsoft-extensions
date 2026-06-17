@@ -102,5 +102,3 @@ export interface __IniStreamConfigurationSource$views {
 }
 
 export type IniStreamConfigurationSource = IniStreamConfigurationSource$instance & __IniStreamConfigurationSource$views;
-
-

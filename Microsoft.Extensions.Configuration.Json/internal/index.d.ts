@@ -101,5 +101,3 @@ export interface __JsonStreamConfigurationSource$views {
 }
 
 export type JsonStreamConfigurationSource = JsonStreamConfigurationSource$instance & __JsonStreamConfigurationSource$views;
-
-
