@@ -680,19 +680,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPool`1::.ctor():void",
-            "metadataToken": 100663328,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.ObjectPool.ObjectPool`1",
-            "ownerIdentity": "Microsoft.Extensions.ObjectPool"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
@@ -754,19 +742,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.ObjectPoolProvider::.ctor():void",
-            "metadataToken": 100663332,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.ObjectPool.ObjectPoolProvider",
-            "ownerIdentity": "Microsoft.Extensions.ObjectPool"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy`1",
@@ -882,19 +858,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.PooledObjectPolicy`1::.ctor():void",
-            "metadataToken": 100663337,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.ObjectPool.PooledObjectPolicy`1",
-            "ownerIdentity": "Microsoft.Extensions.ObjectPool"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.ObjectPool:Microsoft.Extensions.ObjectPool.StringBuilderPooledObjectPolicy",

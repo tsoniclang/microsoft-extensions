@@ -19,23 +19,29 @@ import type { JsonWriterOptions } from "@tsonic/dotnet/System.Text.Json/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ConsoleLoggerFormat {
-    Default = 0,
-    Systemd = 1
-}
+export type ConsoleLoggerFormat = number & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleLoggerFormat: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConsoleLoggerFormat: {
+    readonly Default: ConsoleLoggerFormat;
+    readonly Systemd: ConsoleLoggerFormat;
+};
 
 
-export enum ConsoleLoggerQueueFullMode {
-    Wait = 0,
-    DropWrite = 1
-}
+export type ConsoleLoggerQueueFullMode = number & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleLoggerQueueFullMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ConsoleLoggerQueueFullMode: {
+    readonly Wait: ConsoleLoggerQueueFullMode;
+    readonly DropWrite: ConsoleLoggerQueueFullMode;
+};
 
 
-export enum LoggerColorBehavior {
-    Default = 0,
-    Enabled = 1,
-    Disabled = 2
-}
+export type LoggerColorBehavior = number & { readonly __tsonic_type_Microsoft_Extensions_Logging_Console_LoggerColorBehavior: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const LoggerColorBehavior: {
+    readonly Default: LoggerColorBehavior;
+    readonly Enabled: LoggerColorBehavior;
+    readonly Disabled: LoggerColorBehavior;
+};
 
 
 export interface IConsoleLoggerSettings$instance {
@@ -55,8 +61,7 @@ export interface ConfigurationConsoleLoggerSettings$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_Console_IConsoleLoggerSettings: never;
 
-    get ChangeToken(): IChangeToken | null;
-    set ChangeToken(value: IChangeToken | null);
+    readonly ChangeToken: IChangeToken | null;
     readonly IncludeScopes: boolean;
     Reload(): IConsoleLoggerSettings;
     TryGetSwitch(name: string, level: LogLevel): boolean;
@@ -83,7 +88,7 @@ export interface ConsoleFormatter$instance {
 }
 
 
-export const ConsoleFormatter: (abstract new(name: string) => ConsoleFormatter) & {
+export const ConsoleFormatter: {
 };
 
 
@@ -130,7 +135,7 @@ export const ConsoleLoggerOptions: {
 
 export type ConsoleLoggerOptions = ConsoleLoggerOptions$instance;
 
-export interface ConsoleLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {
+export interface ConsoleLoggerProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleLoggerProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
@@ -184,7 +189,8 @@ export interface __ConsoleLoggerSettings$views {
 export type ConsoleLoggerSettings = ConsoleLoggerSettings$instance & __ConsoleLoggerSettings$views;
 
 
-export interface JsonConsoleFormatterOptions$instance extends ConsoleFormatterOptions {
+export interface JsonConsoleFormatterOptions$instance extends ConsoleFormatterOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions: never;
     readonly __tsonic_type_Microsoft_Extensions_Logging_Console_JsonConsoleFormatterOptions: never;
 
     JsonWriterOptions: JsonWriterOptions;
@@ -198,7 +204,8 @@ export const JsonConsoleFormatterOptions: {
 
 export type JsonConsoleFormatterOptions = JsonConsoleFormatterOptions$instance;
 
-export interface SimpleConsoleFormatterOptions$instance extends ConsoleFormatterOptions {
+export interface SimpleConsoleFormatterOptions$instance extends ConsoleFormatterOptions$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Logging_Console_ConsoleFormatterOptions: never;
     readonly __tsonic_type_Microsoft_Extensions_Logging_Console_SimpleConsoleFormatterOptions: never;
 
     ColorBehavior: LoggerColorBehavior;

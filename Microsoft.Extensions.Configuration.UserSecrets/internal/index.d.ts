@@ -24,8 +24,9 @@ export const PathHelper: {
 
 export type PathHelper = PathHelper$instance;
 
-export interface UserSecretsIdAttribute$instance extends Attribute {
+export interface UserSecretsIdAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_UserSecrets_UserSecretsIdAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly UserSecretsId: string;
 }

@@ -19,16 +19,18 @@ import type { DirectoryInfo, FileInfo, FileSystemWatcher, Stream } from "@tsonic
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_1, Boolean as ClrBoolean, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IDisposable, IFormattable, Int32, Int64, ISpanFormattable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum ExclusionFilters {
-    Sensitive = 7,
-    DotPrefixed = 1,
-    Hidden = 2,
-    System = 4,
-    None = 0
-}
+export type ExclusionFilters = number & { readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_ExclusionFilters: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const ExclusionFilters: {
+    readonly Sensitive: ExclusionFilters;
+    readonly DotPrefixed: ExclusionFilters;
+    readonly Hidden: ExclusionFilters;
+    readonly System: ExclusionFilters;
+    readonly None: ExclusionFilters;
+};
 
 
-export interface PhysicalDirectoryInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance, Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
+export interface PhysicalDirectoryInfo$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;
@@ -60,7 +62,7 @@ export interface __PhysicalDirectoryInfo$views {
 export type PhysicalDirectoryInfo = PhysicalDirectoryInfo$instance & __PhysicalDirectoryInfo$views;
 
 
-export interface PhysicalFileInfo$instance extends Microsoft_Extensions_FileProviders_Internal.IFileInfo$instance {
+export interface PhysicalFileInfo$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_Physical_PhysicalFileInfo: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IFileInfo: never;
@@ -112,7 +114,7 @@ export interface PollingFileChangeToken$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IPollingChangeToken: never;
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
-    ActiveChangeCallbacks: boolean;
+    readonly ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     RegisterChangeCallback(callback: Action_1<unknown | null>, state: unknown | null): IDisposable;
 }
@@ -136,7 +138,7 @@ export interface PollingWildCardChangeToken$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IPollingChangeToken: never;
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
-    ActiveChangeCallbacks: boolean;
+    readonly ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     GetLastWriteUtc(path: string): DateTime;
 }

@@ -59,7 +59,7 @@ export type ILogger<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.ILogger :
-  [T1] extends [unknown] ? Internal.ILogger_1<T1> : never;
+  Internal.ILogger_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Logging as ExtensionMethods } from './__internal/extensions/index.js';

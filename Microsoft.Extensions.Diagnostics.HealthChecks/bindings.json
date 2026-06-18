@@ -926,19 +926,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService::.ctor():void",
-            "metadataToken": 100663363,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckService",
-            "ownerIdentity": "Microsoft.Extensions.Diagnostics.HealthChecks"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Diagnostics.HealthChecks:Microsoft.Extensions.Diagnostics.HealthChecks.HealthCheckServiceOptions",

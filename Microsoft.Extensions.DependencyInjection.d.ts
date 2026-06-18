@@ -88,7 +88,7 @@ export type ObjectFactory<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? ((() => void) | Internal.ObjectFactory) :
-  [T1] extends [unknown] ? (((arg1: T1) => void) | Internal.ObjectFactory_1<T1>) : never;
+  (((arg1: T1) => void) | Internal.ObjectFactory_1<T1>);
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_DependencyInjection as ExtensionMethods } from './__internal/extensions/index.js';

@@ -17,7 +17,7 @@ import type { IEnumerable } from "@tsonic/dotnet/System.Collections/internal/ind
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface PhysicalDirectoryContents$instance extends Microsoft_Extensions_FileProviders_Internal.IDirectoryContents$instance {
+export interface PhysicalDirectoryContents$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileProviders_Internal_PhysicalDirectoryContents: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileProviders_IDirectoryContents: never;

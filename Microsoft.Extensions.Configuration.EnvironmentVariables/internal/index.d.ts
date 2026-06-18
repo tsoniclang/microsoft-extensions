@@ -10,17 +10,18 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import * as Microsoft_Extensions_Configuration_Internal from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { ConfigurationProvider, IConfigurationBuilder, IConfigurationProvider, IConfigurationSource } from "../../Microsoft.Extensions.Configuration/internal/index.js";
 import type { IChangeToken } from "../../Microsoft.Extensions.Primitives/internal/index.js";
-import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
+import type { IEnumerable_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface EnvironmentVariablesConfigurationProvider$instance extends ConfigurationProvider, Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance {
+export interface EnvironmentVariablesConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance {
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
     readonly __tsonic_type_Microsoft_Extensions_Configuration_EnvironmentVariables_EnvironmentVariablesConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    Load(): void;
-    ToString(): string;
+    Load: Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance["Load"] & (() => void);
+    ToString: Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance["ToString"] & (() => string);
 }
 
 
@@ -37,7 +38,7 @@ export interface __EnvironmentVariablesConfigurationProvider$views {
 export type EnvironmentVariablesConfigurationProvider = EnvironmentVariablesConfigurationProvider$instance & __EnvironmentVariablesConfigurationProvider$views;
 
 
-export interface EnvironmentVariablesConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface EnvironmentVariablesConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_EnvironmentVariables_EnvironmentVariablesConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;

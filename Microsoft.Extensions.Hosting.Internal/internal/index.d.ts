@@ -17,7 +17,7 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface ApplicationLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IApplicationLifetime$instance, Microsoft_Extensions_Hosting_Internal.IHostApplicationLifetime$instance {
+export interface ApplicationLifetime$instance {
     readonly __tsonic_type_Microsoft_Extensions_Hosting_Internal_ApplicationLifetime: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IApplicationLifetime: never;
@@ -45,7 +45,7 @@ export interface __ApplicationLifetime$views {
 export type ApplicationLifetime = ApplicationLifetime$instance & __ApplicationLifetime$views;
 
 
-export interface ConsoleLifetime$instance extends Microsoft_Extensions_Hosting_Internal.IHostLifetime$instance, System_Internal.IDisposable {
+export interface ConsoleLifetime$instance {
     readonly __tsonic_type_Microsoft_Extensions_Hosting_Internal_ConsoleLifetime: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostLifetime: never;
@@ -70,7 +70,7 @@ export interface __ConsoleLifetime$views {
 export type ConsoleLifetime = ConsoleLifetime$instance & __ConsoleLifetime$views;
 
 
-export interface HostingEnvironment$instance extends Microsoft_Extensions_Hosting_Internal.IHostEnvironment$instance, Microsoft_Extensions_Hosting_Internal.IHostingEnvironment$instance {
+export interface HostingEnvironment$instance {
     readonly __tsonic_type_Microsoft_Extensions_Hosting_Internal_HostingEnvironment: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Hosting_IHostEnvironment: never;

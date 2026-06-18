@@ -1748,28 +1748,6 @@
             "ownerIdentity": "System.Diagnostics.EventLog"
           },
           {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogException::.ctor(System.Int32):void",
-            "metadataToken": 100663521,
-            "canonicalSignature": "(System.Int32):void",
-            "normalizedSignature": "constructor|(System.Int32):void|static=false",
-            "isStatic": false,
-            "parameterCount": 1,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogException",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          },
-          {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663522,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogException",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          },
-          {
             "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogException::.ctor(System.String):void",
             "metadataToken": 100663523,
             "canonicalSignature": "(System.String):void",
@@ -2005,17 +1983,6 @@
             "ownerIdentity": "System.Diagnostics.EventLog"
           },
           {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663537,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogInvalidDataException",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          },
-          {
             "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogInvalidDataException::.ctor(System.String):void",
             "metadataToken": 100663538,
             "canonicalSignature": "(System.String):void",
@@ -2152,17 +2119,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogNotFoundException",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          },
-          {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogNotFoundException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663545,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogNotFoundException",
             "ownerIdentity": "System.Diagnostics.EventLog"
           },
@@ -2304,17 +2260,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          },
-          {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663552,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException",
             "ownerIdentity": "System.Diagnostics.EventLog"
           },
@@ -2750,17 +2695,6 @@
             "isStatic": false,
             "parameterCount": 0,
             "visibility": "Public",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogReadingException",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          },
-          {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventLogReadingException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "metadataToken": 100663579,
-            "canonicalSignature": "(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void",
-            "normalizedSignature": "constructor|(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext):void|static=false",
-            "isStatic": false,
-            "parameterCount": 2,
-            "visibility": "Protected",
             "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventLogReadingException",
             "ownerIdentity": "System.Diagnostics.EventLog"
           },
@@ -4853,19 +4787,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventRecord::.ctor():void",
-            "metadataToken": 100663659,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "System.Diagnostics.Eventing.Reader.EventRecord",
-            "ownerIdentity": "System.Diagnostics.EventLog"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "System.Diagnostics.EventLog:System.Diagnostics.Eventing.Reader.EventRecordWrittenEventArgs",

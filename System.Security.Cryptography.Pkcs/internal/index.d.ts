@@ -18,43 +18,53 @@ import type { AsnEncodedData, AsymmetricAlgorithm, CompositeMLDsa, CspParameters
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Array as ClrArray, Boolean as ClrBoolean, Byte, Char, DateTime, DateTimeOffset, Enum, IComparable, IConvertible, IFormattable, Int32, Int64, ISpanFormattable, Nullable_1, Object as ClrObject, ReadOnlyMemory_1, ReadOnlySpan_1, Span_1, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum Pkcs12ConfidentialityMode {
-    Unknown = 0,
-    None = 1,
-    Password = 2,
-    PublicKey = 3
-}
+export type Pkcs12ConfidentialityMode = number & { readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12ConfidentialityMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const Pkcs12ConfidentialityMode: {
+    readonly Unknown: Pkcs12ConfidentialityMode;
+    readonly None: Pkcs12ConfidentialityMode;
+    readonly Password: Pkcs12ConfidentialityMode;
+    readonly PublicKey: Pkcs12ConfidentialityMode;
+};
 
 
-export enum Pkcs12IntegrityMode {
-    Unknown = 0,
-    None = 1,
-    Password = 2,
-    PublicKey = 3
-}
+export type Pkcs12IntegrityMode = number & { readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12IntegrityMode: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const Pkcs12IntegrityMode: {
+    readonly Unknown: Pkcs12IntegrityMode;
+    readonly None: Pkcs12IntegrityMode;
+    readonly Password: Pkcs12IntegrityMode;
+    readonly PublicKey: Pkcs12IntegrityMode;
+};
 
 
-export enum RecipientInfoType {
-    Unknown = 0,
-    KeyTransport = 1,
-    KeyAgreement = 2
-}
+export type RecipientInfoType = number & { readonly __tsonic_type_System_Security_Cryptography_Pkcs_RecipientInfoType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const RecipientInfoType: {
+    readonly Unknown: RecipientInfoType;
+    readonly KeyTransport: RecipientInfoType;
+    readonly KeyAgreement: RecipientInfoType;
+};
 
 
-export enum SubjectIdentifierOrKeyType {
-    Unknown = 0,
-    IssuerAndSerialNumber = 1,
-    SubjectKeyIdentifier = 2,
-    PublicKeyInfo = 3
-}
+export type SubjectIdentifierOrKeyType = number & { readonly __tsonic_type_System_Security_Cryptography_Pkcs_SubjectIdentifierOrKeyType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SubjectIdentifierOrKeyType: {
+    readonly Unknown: SubjectIdentifierOrKeyType;
+    readonly IssuerAndSerialNumber: SubjectIdentifierOrKeyType;
+    readonly SubjectKeyIdentifier: SubjectIdentifierOrKeyType;
+    readonly PublicKeyInfo: SubjectIdentifierOrKeyType;
+};
 
 
-export enum SubjectIdentifierType {
-    Unknown = 0,
-    IssuerAndSerialNumber = 1,
-    SubjectKeyIdentifier = 2,
-    NoSignature = 3
-}
+export type SubjectIdentifierType = number & { readonly __tsonic_type_System_Security_Cryptography_Pkcs_SubjectIdentifierType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const SubjectIdentifierType: {
+    readonly Unknown: SubjectIdentifierType;
+    readonly IssuerAndSerialNumber: SubjectIdentifierType;
+    readonly SubjectKeyIdentifier: SubjectIdentifierType;
+    readonly NoSignature: SubjectIdentifierType;
+};
 
 
 export interface AlgorithmIdentifier$instance {
@@ -192,18 +202,18 @@ export type ContentInfo = ContentInfo$instance;
 export interface EnvelopedCms$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_EnvelopedCms: never;
 
-    Certificates: X509Certificate2Collection;
-    ContentEncryptionAlgorithm: AlgorithmIdentifier;
-    ContentInfo: ContentInfo;
+    readonly Certificates: X509Certificate2Collection;
+    readonly ContentEncryptionAlgorithm: AlgorithmIdentifier;
+    readonly ContentInfo: ContentInfo;
     readonly RecipientInfos: RecipientInfoCollection;
-    UnprotectedAttributes: CryptographicAttributeObjectCollection;
-    Version: int;
-    Decode(encodedMessage: byte[]): void;
+    readonly UnprotectedAttributes: CryptographicAttributeObjectCollection;
+    readonly Version: int;
     Decode(encodedMessage: ReadOnlySpan_1<System_Internal.Byte>): void;
+    Decode(encodedMessage: byte[]): void;
     Decrypt(): void;
+    Decrypt(extraStore: X509Certificate2Collection): void;
     Decrypt(recipientInfo: RecipientInfo): void;
     Decrypt(recipientInfo: RecipientInfo, extraStore: X509Certificate2Collection): void;
-    Decrypt(extraStore: X509Certificate2Collection): void;
     Decrypt(recipientInfo: RecipientInfo, privateKey: AsymmetricAlgorithm | null): void;
     Encode(): byte[];
     Encrypt(recipient: CmsRecipient): void;
@@ -220,16 +230,13 @@ export const EnvelopedCms: {
 
 export type EnvelopedCms = EnvelopedCms$instance;
 
-export interface KeyAgreeRecipientInfo$instance extends RecipientInfo {
+export interface KeyAgreeRecipientInfo$instance extends RecipientInfo$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_KeyAgreeRecipientInfo: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_RecipientInfo: never;
 
     readonly Date: DateTime;
-    readonly EncryptedKey: byte[];
-    readonly KeyEncryptionAlgorithm: AlgorithmIdentifier;
     readonly OriginatorIdentifierOrKey: SubjectIdentifierOrKey;
     readonly OtherKeyAttribute: CryptographicAttributeObject | null;
-    readonly RecipientIdentifier: SubjectIdentifier;
-    readonly Version: int;
 }
 
 
@@ -239,13 +246,10 @@ export const KeyAgreeRecipientInfo: {
 
 export type KeyAgreeRecipientInfo = KeyAgreeRecipientInfo$instance;
 
-export interface KeyTransRecipientInfo$instance extends RecipientInfo {
+export interface KeyTransRecipientInfo$instance extends RecipientInfo$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_KeyTransRecipientInfo: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_RecipientInfo: never;
 
-    readonly EncryptedKey: byte[];
-    readonly KeyEncryptionAlgorithm: AlgorithmIdentifier;
-    readonly RecipientIdentifier: SubjectIdentifier;
-    readonly Version: int;
 }
 
 
@@ -259,14 +263,14 @@ export interface Pkcs12Builder$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12Builder: never;
 
     readonly IsSealed: boolean;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: byte[] | null, pbeParameters: PbeParameters): void;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): void;
-    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: string | null, pbeParameters: PbeParameters): void;
     AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, password: string | null, pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): void;
+    AddSafeContentsEncrypted(safeContents: Pkcs12SafeContents, passwordBytes: byte[] | null, pbeParameters: PbeParameters): void;
     AddSafeContentsUnencrypted(safeContents: Pkcs12SafeContents): void;
     Encode(): byte[];
-    SealWithMac(password: string | null, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
     SealWithMac(password: ReadOnlySpan_1<System_Internal.Char>, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
+    SealWithMac(password: string | null, hashAlgorithm: HashAlgorithmName, iterationCount: int): void;
     SealWithoutIntegrity(): void;
     TryEncode(destination: Span_1<System_Internal.Byte>, bytesWritten: int): boolean;
 }
@@ -279,8 +283,9 @@ export const Pkcs12Builder: {
 
 export type Pkcs12Builder = Pkcs12Builder$instance;
 
-export interface Pkcs12CertBag$instance extends Pkcs12SafeBag {
+export interface Pkcs12CertBag$instance extends Pkcs12SafeBag$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12CertBag: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeBag: never;
 
     readonly EncodedCertificate: ReadOnlyMemory_1<System_Internal.Byte>;
     readonly IsX509Certificate: boolean;
@@ -299,10 +304,10 @@ export type Pkcs12CertBag = Pkcs12CertBag$instance;
 export interface Pkcs12Info$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12Info: never;
 
-    AuthenticatedSafe: ReadOnlyCollection_1<Pkcs12SafeContents>;
-    IntegrityMode: Pkcs12IntegrityMode;
-    VerifyMac(password: string | null): boolean;
+    readonly AuthenticatedSafe: ReadOnlyCollection_1<Pkcs12SafeContents>;
+    readonly IntegrityMode: Pkcs12IntegrityMode;
     VerifyMac(password: ReadOnlySpan_1<System_Internal.Char>): boolean;
+    VerifyMac(password: string | null): boolean;
 }
 
 
@@ -313,8 +318,9 @@ export const Pkcs12Info: {
 
 export type Pkcs12Info = Pkcs12Info$instance;
 
-export interface Pkcs12KeyBag$instance extends Pkcs12SafeBag {
+export interface Pkcs12KeyBag$instance extends Pkcs12SafeBag$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12KeyBag: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeBag: never;
 
     readonly Pkcs8PrivateKey: ReadOnlyMemory_1<System_Internal.Byte>;
 }
@@ -330,7 +336,7 @@ export type Pkcs12KeyBag = Pkcs12KeyBag$instance;
 export interface Pkcs12SafeBag$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeBag: never;
 
-    Attributes: CryptographicAttributeObjectCollection;
+    readonly Attributes: CryptographicAttributeObjectCollection;
     readonly EncodedBagValue: ReadOnlyMemory_1<System_Internal.Byte>;
     Encode(): byte[];
     GetBagId(): Oid;
@@ -338,7 +344,7 @@ export interface Pkcs12SafeBag$instance {
 }
 
 
-export const Pkcs12SafeBag: (abstract new(bagIdValue: string, encodedBagValue: ReadOnlyMemory_1<System_Internal.Byte>, skipCopy: boolean) => Pkcs12SafeBag) & {
+export const Pkcs12SafeBag: {
 };
 
 
@@ -347,21 +353,21 @@ export type Pkcs12SafeBag = Pkcs12SafeBag$instance;
 export interface Pkcs12SafeContents$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeContents: never;
 
-    ConfidentialityMode: Pkcs12ConfidentialityMode;
+    readonly ConfidentialityMode: Pkcs12ConfidentialityMode;
     readonly IsReadOnly: boolean;
     AddCertificate(certificate: X509Certificate2): Pkcs12CertBag;
     AddKeyUnencrypted(key: AsymmetricAlgorithm): Pkcs12KeyBag;
     AddNestedContents(safeContents: Pkcs12SafeContents): Pkcs12SafeContentsBag;
     AddSafeBag(safeBag: Pkcs12SafeBag): void;
     AddSecret(secretType: Oid, secretValue: ReadOnlyMemory_1<System_Internal.Byte>): Pkcs12SecretBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: byte[] | null, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    AddShroudedKey(key: AsymmetricAlgorithm, password: string | null, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
     AddShroudedKey(key: AsymmetricAlgorithm, password: ReadOnlySpan_1<System_Internal.Char>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
-    Decrypt(passwordBytes: byte[] | null): void;
-    Decrypt(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>): void;
-    Decrypt(password: string | null): void;
+    AddShroudedKey(key: AsymmetricAlgorithm, password: string | null, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
+    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: ReadOnlySpan_1<System_Internal.Byte>, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
+    AddShroudedKey(key: AsymmetricAlgorithm, passwordBytes: byte[] | null, pbeParameters: PbeParameters): Pkcs12ShroudedKeyBag;
     Decrypt(password: ReadOnlySpan_1<System_Internal.Char>): void;
+    Decrypt(password: string | null): void;
+    Decrypt(passwordBytes: ReadOnlySpan_1<System_Internal.Byte>): void;
+    Decrypt(passwordBytes: byte[] | null): void;
     GetBags(): IEnumerable_1<Pkcs12SafeBag>;
 }
 
@@ -373,11 +379,11 @@ export const Pkcs12SafeContents: {
 
 export type Pkcs12SafeContents = Pkcs12SafeContents$instance;
 
-export interface Pkcs12SafeContentsBag$instance extends Pkcs12SafeBag {
+export interface Pkcs12SafeContentsBag$instance extends Pkcs12SafeBag$instance {
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeBag: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeContentsBag: never;
 
-    get SafeContents(): Pkcs12SafeContents | null;
-    set SafeContents(value: Pkcs12SafeContents | null);
+    readonly SafeContents: Pkcs12SafeContents | null;
 }
 
 
@@ -387,7 +393,8 @@ export const Pkcs12SafeContentsBag: {
 
 export type Pkcs12SafeContentsBag = Pkcs12SafeContentsBag$instance;
 
-export interface Pkcs12SecretBag$instance extends Pkcs12SafeBag {
+export interface Pkcs12SecretBag$instance extends Pkcs12SafeBag$instance {
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeBag: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SecretBag: never;
 
     readonly SecretValue: ReadOnlyMemory_1<System_Internal.Byte>;
@@ -401,7 +408,8 @@ export const Pkcs12SecretBag: {
 
 export type Pkcs12SecretBag = Pkcs12SecretBag$instance;
 
-export interface Pkcs12ShroudedKeyBag$instance extends Pkcs12SafeBag {
+export interface Pkcs12ShroudedKeyBag$instance extends Pkcs12SafeBag$instance {
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12SafeBag: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs12ShroudedKeyBag: never;
 
     readonly EncryptedPkcs8PrivateKey: ReadOnlyMemory_1<System_Internal.Byte>;
@@ -442,11 +450,11 @@ export const Pkcs8PrivateKeyInfo: {
 
 export type Pkcs8PrivateKeyInfo = Pkcs8PrivateKeyInfo$instance;
 
-export interface Pkcs9AttributeObject$instance extends AsnEncodedData {
+export interface Pkcs9AttributeObject$instance extends System_Security_Cryptography_Lib_tsonic_dotnet.AsnEncodedData {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
 
-    readonly Oid: Oid | null;
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: System_Security_Cryptography_Lib_tsonic_dotnet.AsnEncodedData["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -460,11 +468,13 @@ export const Pkcs9AttributeObject: {
 
 export type Pkcs9AttributeObject = Pkcs9AttributeObject$instance;
 
-export interface Pkcs9ContentType$instance extends Pkcs9AttributeObject {
+export interface Pkcs9ContentType$instance extends Pkcs9AttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9ContentType: never;
 
     readonly ContentType: Oid;
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: Pkcs9AttributeObject$instance["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -475,11 +485,13 @@ export const Pkcs9ContentType: {
 
 export type Pkcs9ContentType = Pkcs9ContentType$instance;
 
-export interface Pkcs9DocumentDescription$instance extends Pkcs9AttributeObject {
+export interface Pkcs9DocumentDescription$instance extends Pkcs9AttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9DocumentDescription: never;
 
     readonly DocumentDescription: string;
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: Pkcs9AttributeObject$instance["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -492,11 +504,13 @@ export const Pkcs9DocumentDescription: {
 
 export type Pkcs9DocumentDescription = Pkcs9DocumentDescription$instance;
 
-export interface Pkcs9DocumentName$instance extends Pkcs9AttributeObject {
+export interface Pkcs9DocumentName$instance extends Pkcs9AttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9DocumentName: never;
 
     readonly DocumentName: string;
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: Pkcs9AttributeObject$instance["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -509,11 +523,13 @@ export const Pkcs9DocumentName: {
 
 export type Pkcs9DocumentName = Pkcs9DocumentName$instance;
 
-export interface Pkcs9LocalKeyId$instance extends Pkcs9AttributeObject {
+export interface Pkcs9LocalKeyId$instance extends Pkcs9AttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9LocalKeyId: never;
 
     readonly KeyId: ReadOnlyMemory_1<System_Internal.Byte>;
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: Pkcs9AttributeObject$instance["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -526,11 +542,13 @@ export const Pkcs9LocalKeyId: {
 
 export type Pkcs9LocalKeyId = Pkcs9LocalKeyId$instance;
 
-export interface Pkcs9MessageDigest$instance extends Pkcs9AttributeObject {
+export interface Pkcs9MessageDigest$instance extends Pkcs9AttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9MessageDigest: never;
 
     readonly MessageDigest: byte[];
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: Pkcs9AttributeObject$instance["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -541,11 +559,13 @@ export const Pkcs9MessageDigest: {
 
 export type Pkcs9MessageDigest = Pkcs9MessageDigest$instance;
 
-export interface Pkcs9SigningTime$instance extends Pkcs9AttributeObject {
+export interface Pkcs9SigningTime$instance extends Pkcs9AttributeObject$instance {
+    readonly __tsonic_type_System_Security_Cryptography_AsnEncodedData: never;
+    readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9AttributeObject: never;
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Pkcs9SigningTime: never;
 
     readonly SigningTime: DateTime;
-    CopyFrom(asnEncodedData: AsnEncodedData): void;
+    CopyFrom: Pkcs9AttributeObject$instance["CopyFrom"] & ((asnEncodedData: AsnEncodedData) => void);
 }
 
 
@@ -658,7 +678,7 @@ export type Rfc3161TimestampRequest = Rfc3161TimestampRequest$instance;
 export interface Rfc3161TimestampToken$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_Rfc3161TimestampToken: never;
 
-    TokenInfo: Rfc3161TimestampTokenInfo;
+    readonly TokenInfo: Rfc3161TimestampTokenInfo;
     AsSignedCms(): SignedCms;
     VerifySignatureForData(data: ReadOnlySpan_1<System_Internal.Byte>, signerCertificate: X509Certificate2 | null, extraCandidates?: X509Certificate2Collection | null): boolean;
     VerifySignatureForHash(hash: ReadOnlySpan_1<System_Internal.Byte>, hashAlgorithm: HashAlgorithmName, signerCertificate: X509Certificate2 | null, extraCandidates?: X509Certificate2Collection | null): boolean;
@@ -706,19 +726,19 @@ export interface SignedCms$instance {
     readonly __tsonic_type_System_Security_Cryptography_Pkcs_SignedCms: never;
 
     readonly Certificates: X509Certificate2Collection;
-    ContentInfo: ContentInfo;
-    Detached: boolean;
+    readonly ContentInfo: ContentInfo;
+    readonly Detached: boolean;
     readonly SignerInfos: SignerInfoCollection;
-    Version: int;
+    readonly Version: int;
     AddCertificate(certificate: X509Certificate2): void;
     CheckHash(): void;
-    CheckSignature(verifySignatureOnly: boolean): void;
     CheckSignature(extraStore: X509Certificate2Collection, verifySignatureOnly: boolean): void;
+    CheckSignature(verifySignatureOnly: boolean): void;
     ComputeSignature(): void;
     ComputeSignature(signer: CmsSigner): void;
     ComputeSignature(signer: CmsSigner, silent: boolean): void;
-    Decode(encodedMessage: byte[]): void;
     Decode(encodedMessage: ReadOnlySpan_1<System_Internal.Byte>): void;
+    Decode(encodedMessage: byte[]): void;
     Encode(): byte[];
     RemoveCertificate(certificate: X509Certificate2): void;
     RemoveSignature(index: int): void;
@@ -751,13 +771,13 @@ export interface SignerInfo$instance {
     readonly Version: int;
     AddUnsignedAttribute(unsignedAttribute: AsnEncodedData): void;
     CheckHash(): void;
-    CheckSignature(verifySignatureOnly: boolean): void;
     CheckSignature(extraStore: X509Certificate2Collection, verifySignatureOnly: boolean): void;
+    CheckSignature(verifySignatureOnly: boolean): void;
     ComputeCounterSignature(): void;
     ComputeCounterSignature(signer: CmsSigner): void;
     GetSignature(): byte[];
-    RemoveCounterSignature(index: int): void;
     RemoveCounterSignature(counterSignerInfo: SignerInfo): void;
+    RemoveCounterSignature(index: int): void;
     RemoveUnsignedAttribute(unsignedAttribute: AsnEncodedData): void;
 }
 

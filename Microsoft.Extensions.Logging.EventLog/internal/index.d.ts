@@ -13,7 +13,7 @@ import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/ind
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Func_3, IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface EventLogLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance, Microsoft_Extensions_Logging_Internal.ISupportExternalScope$instance {
+export interface EventLogLoggerProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_EventLog_EventLogLoggerProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;

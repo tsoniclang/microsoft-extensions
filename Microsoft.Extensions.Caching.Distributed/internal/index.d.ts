@@ -16,8 +16,9 @@ import type { CancellationToken } from "@tsonic/dotnet/System.Threading/internal
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, DateTimeOffset, Nullable_1, Object as ClrObject, String as ClrString, TimeSpan, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface IBufferDistributedCache$instance extends IDistributedCache {
+export interface IBufferDistributedCache$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IBufferDistributedCache: never;
+    readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IDistributedCache: never;
 
     Get(key: string): byte[] | null;
     GetAsync(key: string, token?: CancellationToken): Task_1<byte[] | null>;
@@ -67,7 +68,7 @@ export const DistributedCacheEntryOptions: {
 
 export type DistributedCacheEntryOptions = DistributedCacheEntryOptions$instance;
 
-export interface MemoryDistributedCache$instance extends IDistributedCache$instance {
+export interface MemoryDistributedCache$instance {
     readonly __tsonic_type_Microsoft_Extensions_Caching_Distributed_MemoryDistributedCache: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Caching_Distributed_IDistributedCache: never;

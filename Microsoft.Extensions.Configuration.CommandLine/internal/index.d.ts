@@ -14,12 +14,13 @@ import type { IDictionary_2, IEnumerable_1 } from "@tsonic/dotnet/System.Collect
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface CommandLineConfigurationProvider$instance extends ConfigurationProvider, Microsoft_Extensions_Configuration_Internal.IConfigurationProvider$instance {
+export interface CommandLineConfigurationProvider$instance extends Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_CommandLine_CommandLineConfigurationProvider: never;
+    readonly __tsonic_type_Microsoft_Extensions_Configuration_ConfigurationProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationProvider: never;
 
-    Load(): void;
+    Load: Microsoft_Extensions_Configuration_Internal.ConfigurationProvider$instance["Load"] & (() => void);
 }
 
 
@@ -35,7 +36,7 @@ export interface __CommandLineConfigurationProvider$views {
 export type CommandLineConfigurationProvider = CommandLineConfigurationProvider$instance & __CommandLineConfigurationProvider$views;
 
 
-export interface CommandLineConfigurationSource$instance extends Microsoft_Extensions_Configuration_Internal.IConfigurationSource$instance {
+export interface CommandLineConfigurationSource$instance {
     readonly __tsonic_type_Microsoft_Extensions_Configuration_CommandLine_CommandLineConfigurationSource: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Configuration_IConfigurationSource: never;

@@ -525,19 +525,7 @@
         "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCache::.ctor():void",
-            "metadataToken": 100663311,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Caching.Hybrid.HybridCache",
-            "ownerIdentity": "Microsoft.Extensions.Caching.Abstractions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Caching.Abstractions:Microsoft.Extensions.Caching.Hybrid.HybridCacheEntryOptions",

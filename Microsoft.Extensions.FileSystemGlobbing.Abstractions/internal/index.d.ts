@@ -12,8 +12,9 @@ import type { DirectoryInfo, FileInfo } from "@tsonic/dotnet/System.IO/internal/
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Object as ClrObject, String as ClrString } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface DirectoryInfoBase$instance extends FileSystemInfoBase {
+export interface DirectoryInfoBase$instance extends FileSystemInfoBase$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoBase: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase: never;
 
     EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
     GetDirectory(path: string): DirectoryInfoBase | null;
@@ -21,21 +22,20 @@ export interface DirectoryInfoBase$instance extends FileSystemInfoBase {
 }
 
 
-export const DirectoryInfoBase: (abstract new() => DirectoryInfoBase) & {
+export const DirectoryInfoBase: {
 };
 
 
 export type DirectoryInfoBase = DirectoryInfoBase$instance;
 
-export interface DirectoryInfoWrapper$instance extends DirectoryInfoBase {
+export interface DirectoryInfoWrapper$instance extends DirectoryInfoBase$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoBase: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoWrapper: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase: never;
 
-    readonly FullName: string;
-    readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | null;
-    EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
-    GetDirectory(name: string): DirectoryInfoBase | null;
-    GetFile(name: string): FileInfoBase;
+    EnumerateFileSystemInfos: DirectoryInfoBase$instance["EnumerateFileSystemInfos"] & (() => IEnumerable_1<FileSystemInfoBase>);
+    GetDirectory: DirectoryInfoBase$instance["GetDirectory"] & ((name: string) => DirectoryInfoBase | null);
+    GetFile: DirectoryInfoBase$instance["GetFile"] & ((name: string) => FileInfoBase);
 }
 
 
@@ -46,24 +46,24 @@ export const DirectoryInfoWrapper: {
 
 export type DirectoryInfoWrapper = DirectoryInfoWrapper$instance;
 
-export interface FileInfoBase$instance extends FileSystemInfoBase {
+export interface FileInfoBase$instance extends FileSystemInfoBase$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoBase: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase: never;
 
 }
 
 
-export const FileInfoBase: (abstract new() => FileInfoBase) & {
+export const FileInfoBase: {
 };
 
 
 export type FileInfoBase = FileInfoBase$instance;
 
-export interface FileInfoWrapper$instance extends FileInfoBase {
+export interface FileInfoWrapper$instance extends FileInfoBase$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoBase: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileInfoWrapper: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase: never;
 
-    readonly FullName: string;
-    readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | null;
 }
 
 
@@ -83,7 +83,7 @@ export interface FileSystemInfoBase$instance {
 }
 
 
-export const FileSystemInfoBase: (abstract new() => FileSystemInfoBase) & {
+export const FileSystemInfoBase: {
 };
 
 

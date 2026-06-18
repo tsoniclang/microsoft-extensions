@@ -33,5 +33,5 @@ export type NullLogger<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.NullLogger :
-  [T1] extends [unknown] ? Internal.NullLogger_1<T1> : never;
+  Internal.NullLogger_1<T1>;
 

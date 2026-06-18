@@ -2275,26 +2275,6 @@
             "isExtensionMethod": false
           },
           {
-            "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::OnReload():System.Void",
-            "targetName": "OnReload",
-            "metadataToken": 100663376,
-            "canonicalSignature": "():System.Void",
-            "normalizedSignature": "OnReload|():System.Void|static=false",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "arity": 0,
-            "parameterCount": 0,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "isSealed": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.ConfigurationProvider",
-            "ownerIdentity": "Microsoft.Extensions.Configuration",
-            "isExtensionMethod": false
-          },
-          {
             "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::ToString():System.String",
             "targetName": "ToString",
             "metadataToken": 100663377,
@@ -2426,42 +2406,10 @@
             "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::Data:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "Data",
-            "metadataToken": 385875986,
-            "canonicalSignature": ":System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "Data|:System.Collections.Generic.IDictionary_2[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e],[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=getset",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": true,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.ConfigurationProvider",
-            "ownerIdentity": "Microsoft.Extensions.Configuration"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationProvider::.ctor():void",
-            "metadataToken": 100663367,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.ConfigurationProvider",
-            "ownerIdentity": "Microsoft.Extensions.Configuration"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ConfigurationReloadToken",
@@ -2553,12 +2501,12 @@
             "targetName": "ActiveChangeCallbacks",
             "metadataToken": 385875987,
             "canonicalSignature": ":System.Boolean",
-            "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=getset",
+            "normalizedSignature": "ActiveChangeCallbacks|:System.Boolean|static=false|accessor=get",
             "emitScope": "ClassSurface",
             "provenance": "Original",
             "isIndexer": false,
             "hasGetter": true,
-            "hasSetter": true,
+            "hasSetter": false,
             "isStatic": false,
             "isAbstract": false,
             "isVirtual": true,
@@ -3761,19 +3709,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileConfigurationSource::.ctor():void",
-            "metadataToken": 100663346,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.FileConfigurationSource",
-            "ownerIdentity": "Microsoft.Extensions.Configuration.FileExtensions"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Configuration.FileExtensions:Microsoft.Extensions.Configuration.FileLoadExceptionContext",
@@ -4164,19 +4100,7 @@
         ],
         "fields": [],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.StreamConfigurationSource::.ctor():void",
-            "metadataToken": 100663443,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.StreamConfigurationSource",
-            "ownerIdentity": "Microsoft.Extensions.Configuration"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Configuration:Microsoft.Extensions.Configuration.ChainedBuilderExtensions",

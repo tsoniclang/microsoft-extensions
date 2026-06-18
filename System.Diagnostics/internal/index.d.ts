@@ -18,27 +18,32 @@ import type { ISerializable } from "@tsonic/dotnet/System.Runtime.Serialization/
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { AsyncCallback, Boolean as ClrBoolean, Byte, DateTime, Enum, EventArgs, IAsyncResult, ICloneable, IComparable, IConvertible, IDisposable, IFormattable, Int16, Int32, Int64, IntPtr, ISpanFormattable, MulticastDelegate, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum EventLogEntryType {
-    Error = 1,
-    Warning = 2,
-    Information = 4,
-    SuccessAudit = 8,
-    FailureAudit = 16
-}
+export type EventLogEntryType = number & { readonly __tsonic_type_System_Diagnostics_EventLogEntryType: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const EventLogEntryType: {
+    readonly Error: EventLogEntryType;
+    readonly Warning: EventLogEntryType;
+    readonly Information: EventLogEntryType;
+    readonly SuccessAudit: EventLogEntryType;
+    readonly FailureAudit: EventLogEntryType;
+};
 
 
-export enum OverflowAction {
-    DoNotOverwrite = -1,
-    OverwriteAsNeeded = 0,
-    OverwriteOlder = 1
-}
+export type OverflowAction = number & { readonly __tsonic_type_System_Diagnostics_OverflowAction: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const OverflowAction: {
+    readonly DoNotOverwrite: OverflowAction;
+    readonly OverwriteAsNeeded: OverflowAction;
+    readonly OverwriteOlder: OverflowAction;
+};
 
 
 export type EntryWrittenEventHandler = (sender: unknown, e: EntryWrittenEventArgs) => void;
 
 
-export interface EntryWrittenEventArgs$instance extends EventArgs {
+export interface EntryWrittenEventArgs$instance extends System_Internal.EventArgs {
     readonly __tsonic_type_System_Diagnostics_EntryWrittenEventArgs: never;
+    readonly __tsonic_type_System_EventArgs: never;
 
     readonly Entry: EventLogEntry;
 }
@@ -69,8 +74,10 @@ export const EventInstance: {
 
 export type EventInstance = EventInstance$instance;
 
-export interface EventLog$instance extends Component {
+export interface EventLog$instance extends System_ComponentModel_Internal.Component {
+    readonly __tsonic_type_System_ComponentModel_Component: never;
     readonly __tsonic_type_System_Diagnostics_EventLog: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_ComponentModel_ISupportInitialize: never;
@@ -89,7 +96,7 @@ export interface EventLog$instance extends Component {
     BeginInit(): void;
     Clear(): void;
     Close(): void;
-    Dispose(disposing: boolean): void;
+    Dispose: System_ComponentModel_Internal.Component["Dispose"] & ((disposing: boolean) => void);
     EndInit(): void;
     ModifyOverflowPolicy(action: OverflowAction, retentionDays: int): void;
     RegisterDisplayName(resourceFile: string, resourceId: long): void;
@@ -98,8 +105,8 @@ export interface EventLog$instance extends Component {
     WriteEntry(message: string, type: EventLogEntryType, eventID: int): void;
     WriteEntry(message: string, type: EventLogEntryType, eventID: int, category: short): void;
     WriteEntry(message: string, type: EventLogEntryType, eventID: int, category: short, rawData: byte[]): void;
-    WriteEvent(instance: EventInstance, data: byte[], ...values: unknown[]): void;
     WriteEvent(instance: EventInstance, ...values: unknown[]): void;
+    WriteEvent(instance: EventInstance, data: byte[], ...values: unknown[]): void;
 }
 
 
@@ -134,8 +141,10 @@ export const EventLog: {
 
 export type EventLog = EventLog$instance;
 
-export interface EventLogEntry$instance extends Component {
+export interface EventLogEntry$instance extends System_ComponentModel_Internal.Component {
+    readonly __tsonic_type_System_ComponentModel_Component: never;
     readonly __tsonic_type_System_Diagnostics_EventLogEntry: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_ComponentModel_IComponent: never;
     readonly __tsonic_iface_System_IDisposable: never;
@@ -183,21 +192,20 @@ export const EventLogEntryCollection: {
 
 export type EventLogEntryCollection = EventLogEntryCollection$instance & { readonly [index: number]: EventLogEntry; };
 
-export interface EventLogTraceListener$instance extends TraceListener {
+export interface EventLogTraceListener$instance extends System_Diagnostics_Internal.TraceListener {
     readonly __tsonic_type_System_Diagnostics_EventLogTraceListener: never;
+    readonly __tsonic_type_System_Diagnostics_TraceListener: never;
+    readonly __tsonic_type_System_MarshalByRefObject: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
     EventLog: EventLog;
-    Name: string;
-    Close(): void;
-    Dispose(disposing: boolean): void;
-    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: unknown): void;
-    TraceData(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: unknown[]): void;
-    TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, message: string): void;
-    TraceEvent(eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, format: string, ...args: unknown[]): void;
-    Write(message: string): void;
-    WriteLine(message: string): void;
+    Close: System_Diagnostics_Internal.TraceListener["Close"] & (() => void);
+    Dispose: System_Diagnostics_Internal.TraceListener["Dispose"] & ((disposing: boolean) => void);
+    TraceData: System_Diagnostics_Internal.TraceListener["TraceData"] & ((eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, ...data: unknown[]) => void) & ((eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, data: unknown) => void);
+    TraceEvent: System_Diagnostics_Internal.TraceListener["TraceEvent"] & ((eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, format: string, ...args: unknown[]) => void) & ((eventCache: TraceEventCache, source: string, severity: TraceEventType, id: int, message: string) => void);
+    Write: System_Diagnostics_Internal.TraceListener["Write"] & ((message: string) => void);
+    WriteLine: System_Diagnostics_Internal.TraceListener["WriteLine"] & ((message: string) => void);
 }
 
 

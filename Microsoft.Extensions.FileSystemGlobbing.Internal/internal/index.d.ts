@@ -13,8 +13,9 @@ import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.G
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Boolean as ClrBoolean, Object as ClrObject, String as ClrString, StringComparison, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface ILinearPattern$instance extends IPattern {
+export interface ILinearPattern$instance {
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_ILinearPattern: never;
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern: never;
 
     readonly Segments: IList_1<IPathSegment>;
     CreatePatternContextForInclude(): IPatternContext;
@@ -57,7 +58,8 @@ export interface IPatternContext$instance {
 
 export type IPatternContext = IPatternContext$instance;
 
-export interface IRaggedPattern$instance extends IPattern {
+export interface IRaggedPattern$instance {
+    readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPattern: never;
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IRaggedPattern: never;
 
     readonly Segments: IList_1<IPathSegment>;
@@ -74,6 +76,7 @@ export type IRaggedPattern = IRaggedPattern$instance;
 
 export interface PatternTestResult$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternTestResult: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly IsSuccessful: boolean;
     readonly Stem: string | null;

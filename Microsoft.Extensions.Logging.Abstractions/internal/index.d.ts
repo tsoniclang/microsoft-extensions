@@ -25,6 +25,7 @@ export type IBufferedLogger = IBufferedLogger$instance;
 
 export interface LogEntry_1$instance<TState extends unknown> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_LogEntry_1: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly Category: string;
     readonly EventId: EventId;
@@ -58,13 +59,13 @@ export interface BufferedLogRecord$instance {
 }
 
 
-export const BufferedLogRecord: (abstract new() => BufferedLogRecord) & {
+export const BufferedLogRecord: {
 };
 
 
 export type BufferedLogRecord = BufferedLogRecord$instance;
 
-export interface NullLogger$instance extends Microsoft_Extensions_Logging_Internal.ILogger$instance {
+export interface NullLogger$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLogger: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
@@ -87,7 +88,7 @@ export interface __NullLogger$views {
 export type NullLogger = NullLogger$instance & __NullLogger$views;
 
 
-export interface NullLogger_1$instance<T extends unknown> extends ILogger_1<T>, Microsoft_Extensions_Logging_Internal.ILogger_1$instance<T> {
+export interface NullLogger_1$instance<T extends unknown> extends Microsoft_Extensions_Logging_Internal.ILogger_1$instance<T> {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLogger_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILogger: never;
@@ -112,7 +113,7 @@ export interface __NullLogger_1$views<T extends unknown> {
 export type NullLogger_1<T extends unknown> = NullLogger_1$instance<T> & __NullLogger_1$views<T>;
 
 
-export interface NullLoggerFactory$instance extends Microsoft_Extensions_Logging_Internal.ILoggerFactory$instance {
+export interface NullLoggerFactory$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLoggerFactory: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerFactory: never;
@@ -137,7 +138,7 @@ export interface __NullLoggerFactory$views {
 export type NullLoggerFactory = NullLoggerFactory$instance & __NullLoggerFactory$views;
 
 
-export interface NullLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
+export interface NullLoggerProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_Abstractions_NullLoggerProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;

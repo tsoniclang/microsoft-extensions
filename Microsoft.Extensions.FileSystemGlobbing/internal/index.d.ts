@@ -15,13 +15,14 @@ import type { Boolean as ClrBoolean, IEquatable_1, Int32, Object as ClrObject, S
 
 export interface FilePatternMatch$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_FilePatternMatch: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Path: string;
     readonly Stem: string;
-    Equals(other: FilePatternMatch): boolean;
     Equals(obj: unknown | null): boolean;
+    Equals(other: FilePatternMatch): boolean;
     GetHashCode(): int;
 }
 
@@ -33,15 +34,14 @@ export const FilePatternMatch: {
 
 export type FilePatternMatch = FilePatternMatch$instance;
 
-export interface InMemoryDirectoryInfo$instance extends DirectoryInfoBase {
+export interface InMemoryDirectoryInfo$instance extends Microsoft_Extensions_FileSystemGlobbing_Abstractions_Internal.DirectoryInfoBase$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_DirectoryInfoBase: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Abstractions_FileSystemInfoBase: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_InMemoryDirectoryInfo: never;
 
-    readonly FullName: string;
-    readonly Name: string;
-    readonly ParentDirectory: DirectoryInfoBase | null;
-    EnumerateFileSystemInfos(): IEnumerable_1<FileSystemInfoBase>;
-    GetDirectory(path: string): DirectoryInfoBase;
-    GetFile(path: string): FileInfoBase | null;
+    EnumerateFileSystemInfos: Microsoft_Extensions_FileSystemGlobbing_Abstractions_Internal.DirectoryInfoBase$instance["EnumerateFileSystemInfos"] & (() => IEnumerable_1<FileSystemInfoBase>);
+    GetDirectory: Microsoft_Extensions_FileSystemGlobbing_Abstractions_Internal.DirectoryInfoBase$instance["GetDirectory"] & ((path: string) => DirectoryInfoBase);
+    GetFile: Microsoft_Extensions_FileSystemGlobbing_Abstractions_Internal.DirectoryInfoBase$instance["GetFile"] & ((path: string) => FileInfoBase | null);
 }
 
 

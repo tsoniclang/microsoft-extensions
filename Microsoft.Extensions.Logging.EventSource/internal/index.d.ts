@@ -14,7 +14,7 @@ import type { EventCommandEventArgs, EventKeywords, EventSource } from "@tsonic/
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { IDisposable, Object as ClrObject, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface EventSourceLoggerProvider$instance extends Microsoft_Extensions_Logging_Internal.ILoggerProvider$instance {
+export interface EventSourceLoggerProvider$instance {
     readonly __tsonic_type_Microsoft_Extensions_Logging_EventSource_EventSourceLoggerProvider: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Logging_ILoggerProvider: never;
@@ -37,12 +37,13 @@ export interface __EventSourceLoggerProvider$views {
 export type EventSourceLoggerProvider = EventSourceLoggerProvider$instance & __EventSourceLoggerProvider$views;
 
 
-export interface LoggingEventSource$instance extends EventSource {
+export interface LoggingEventSource$instance extends System_Diagnostics_Tracing_Internal.EventSource {
     readonly __tsonic_type_Microsoft_Extensions_Logging_EventSource_LoggingEventSource: never;
+    readonly __tsonic_type_System_Diagnostics_Tracing_EventSource: never;
 
     readonly __tsonic_iface_System_IDisposable: never;
 
-    OnEventCommand(command: EventCommandEventArgs): void;
+    OnEventCommand: System_Diagnostics_Tracing_Internal.EventSource["OnEventCommand"] & ((command: EventCommandEventArgs) => void);
 }
 
 

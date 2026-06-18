@@ -357,19 +357,7 @@
           }
         ],
         "events": [],
-        "constructors": [
-          {
-            "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor::.ctor():void",
-            "metadataToken": 100663349,
-            "canonicalSignature": "():void",
-            "normalizedSignature": "constructor|():void|static=false",
-            "isStatic": false,
-            "parameterCount": 0,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.Xml.XmlDocumentDecryptor",
-            "ownerIdentity": "Microsoft.Extensions.Configuration.Xml"
-          }
-        ]
+        "constructors": []
       },
       {
         "stableId": "Microsoft.Extensions.Configuration.Xml:Microsoft.Extensions.Configuration.Xml.XmlStreamConfigurationProvider",

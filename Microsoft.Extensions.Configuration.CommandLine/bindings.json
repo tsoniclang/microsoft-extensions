@@ -162,27 +162,7 @@
             "sourceInterface": "Microsoft.Extensions.Configuration.IConfigurationProvider"
           }
         ],
-        "properties": [
-          {
-            "stableId": "Microsoft.Extensions.Configuration.CommandLine:Microsoft.Extensions.Configuration.CommandLine.CommandLineConfigurationProvider::Args:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "targetName": "Args",
-            "metadataToken": 385875973,
-            "canonicalSignature": ":System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]",
-            "normalizedSignature": "Args|:System.Collections.Generic.IEnumerable_1[[System.String,System.Private.CoreLib,Version=10.0.0.0,Culture=neutral,PublicKeyToken=7cec85d7bea7798e]]|static=false|accessor=get",
-            "emitScope": "ClassSurface",
-            "provenance": "Original",
-            "isIndexer": false,
-            "hasGetter": true,
-            "hasSetter": false,
-            "isStatic": false,
-            "isAbstract": false,
-            "isVirtual": false,
-            "isOverride": false,
-            "visibility": "Protected",
-            "ownerQualifiedName": "Microsoft.Extensions.Configuration.CommandLine.CommandLineConfigurationProvider",
-            "ownerIdentity": "Microsoft.Extensions.Configuration.CommandLine"
-          }
-        ],
+        "properties": [],
         "fields": [],
         "events": [],
         "constructors": [

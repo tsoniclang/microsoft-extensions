@@ -14,11 +14,13 @@ import type { Instrument, MeasurementCallback_1 } from "@tsonic/dotnet/System.Di
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Boolean as ClrBoolean, Byte, Decimal, Double, Enum, IComparable, IConvertible, IFormattable, Int16, Int32, Int64, ISpanFormattable, Object as ClrObject, Single, String as ClrString, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export enum MeterScope {
-    None = 0,
-    Global = 1,
-    Local = 2
-}
+export type MeterScope = number & { readonly __tsonic_type_Microsoft_Extensions_Diagnostics_Metrics_MeterScope: never } & { readonly __tsonic_type_System_Enum: never } & { readonly __tsonic_type_System_ValueType: never };
+
+export const MeterScope: {
+    readonly None: MeterScope;
+    readonly Global: MeterScope;
+    readonly Local: MeterScope;
+};
 
 
 export interface IMetricsBuilder$instance {
@@ -134,7 +136,7 @@ export type MetricsBuilderConsoleExtensions = MetricsBuilderConsoleExtensions$in
 
 export abstract class MetricsBuilderExtensions$instance {
     static AddListener(builder: IMetricsBuilder, listener: IMetricsListener): IMetricsBuilder;
-    static AddListener<T extends (object | null) & IMetricsListener>(builder: IMetricsBuilder): IMetricsBuilder;
+    static AddListener<T extends (object | null) & { readonly __tsonic_iface_Microsoft_Extensions_Diagnostics_Metrics_IMetricsListener: never }>(builder: IMetricsBuilder): IMetricsBuilder;
     static ClearListeners(builder: IMetricsBuilder): IMetricsBuilder;
     static DisableMetrics(builder: IMetricsBuilder, meterName: string | null, instrumentName?: string | null, listenerName?: string | null, scopes?: MeterScope): IMetricsBuilder;
     static DisableMetrics(builder: IMetricsBuilder, meterName: string | null): IMetricsBuilder;

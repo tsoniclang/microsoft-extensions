@@ -13,7 +13,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { ILogger, ILoggerFactory } from './Microsoft.Extensions.Logging/internal/index.js';
 import type { IOptions_1 } from './Microsoft.Extensions.Options/internal/index.js';
 import type { IEnumerable, IList } from '@tsonic/dotnet/System.Collections.Generic.js';
-import type { CultureInfo } from '@tsonic/dotnet/System.Globalization.js';
 import type { Attribute, Boolean as ClrBoolean, Func, Object as ClrObject, String as ClrString, Type } from '@tsonic/dotnet/System.js';
 import type { Assembly, TypeInfo } from '@tsonic/dotnet/System.Reflection.js';
 import type { ResourceManager } from '@tsonic/dotnet/System.Resources.js';
@@ -41,7 +40,7 @@ export type IStringLocalizer<
   T1 extends unknown | __ = __,
 > =
   [T1] extends [__] ? Internal.IStringLocalizer :
-  [T1] extends [unknown] ? Internal.IStringLocalizer_1<T1> : never;
+  Internal.IStringLocalizer_1<T1>;
 
 // Extension methods (C# using semantics)
 export type { ExtensionMethods_Microsoft_Extensions_Localization as ExtensionMethods } from './__internal/extensions/index.js';

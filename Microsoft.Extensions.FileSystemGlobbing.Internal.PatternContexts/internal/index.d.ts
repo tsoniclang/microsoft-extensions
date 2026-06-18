@@ -7,14 +7,14 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 
 
 // Import types from other namespaces
-import type { DirectoryInfoBase, FileInfoBase, FileSystemInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
+import type { DirectoryInfoBase, FileInfoBase } from "../../Microsoft.Extensions.FileSystemGlobbing.Abstractions/internal/index.js";
 import * as Microsoft_Extensions_FileSystemGlobbing_Internal_Internal from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
 import type { ILinearPattern, IPathSegment, IPatternContext, IRaggedPattern, PatternTestResult } from "../../Microsoft.Extensions.FileSystemGlobbing.Internal/internal/index.js";
 import type { IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
 import type { Action_2, Boolean as ClrBoolean, Int32, Object as ClrObject, String as ClrString, ValueType, Void } from "@tsonic/dotnet/System/internal/index.js";
 
-export interface PatternContext_1$instance<TFrame extends NonNullable<unknown>> {
+export interface PatternContext_1$instance<TFrame extends { readonly __tsonic_type_System_ValueType: never }> {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
@@ -22,30 +22,30 @@ export interface PatternContext_1$instance<TFrame extends NonNullable<unknown>> 
     Declare(declare: Action_2<IPathSegment, System_Internal.Boolean>): void;
     PopDirectory(): void;
     PushDirectory(directory: DirectoryInfoBase): void;
-    Test(file: FileInfoBase): PatternTestResult;
     Test(directory: DirectoryInfoBase): boolean;
+    Test(file: FileInfoBase): PatternTestResult;
 }
 
 
-export const PatternContext_1: (abstract new<TFrame extends NonNullable<unknown>>() => PatternContext_1<TFrame>) & {
+export const PatternContext_1: {
 };
 
 
-export interface __PatternContext_1$views<TFrame extends NonNullable<unknown>> {
+export interface __PatternContext_1$views<TFrame extends { readonly __tsonic_type_System_ValueType: never }> {
     As_IPatternContext(): Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance;
 }
 
-export type PatternContext_1<TFrame extends NonNullable<unknown>> = PatternContext_1$instance<TFrame> & __PatternContext_1$views<TFrame>;
+export type PatternContext_1<TFrame extends { readonly __tsonic_type_System_ValueType: never }> = PatternContext_1$instance<TFrame> & __PatternContext_1$views<TFrame>;
 
 
 export interface PatternContextLinear$instance extends PatternContext_1$instance<PatternContextLinear_FrameData> {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    PushDirectory(directory: DirectoryInfoBase): void;
-    Test(file: FileInfoBase): PatternTestResult;
-    Test(directory: DirectoryInfoBase): boolean;
+    PushDirectory: PatternContext_1$instance<PatternContextLinear_FrameData>["PushDirectory"] & ((directory: DirectoryInfoBase) => void);
+    Test: PatternContext_1$instance<PatternContextLinear_FrameData>["Test"] & ((directory: DirectoryInfoBase) => boolean) & ((file: FileInfoBase) => PatternTestResult);
 }
 
 
@@ -62,6 +62,7 @@ export type PatternContextLinear = PatternContextLinear$instance & __PatternCont
 
 export interface PatternContextLinear_FrameData$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear_FrameData: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     IsNotApplicable: boolean;
     SegmentIndex: int;
@@ -78,13 +79,14 @@ export const PatternContextLinear_FrameData: {
 
 export type PatternContextLinear_FrameData = PatternContextLinear_FrameData$instance;
 
-export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
+export interface PatternContextLinearExclude$instance extends PatternContextLinear$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearExclude: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Test(directory: DirectoryInfoBase): boolean;
-    Test(file: FileInfoBase): PatternTestResult;
+    Test: PatternContextLinear$instance["Test"] & ((directory: DirectoryInfoBase) => boolean) & ((file: FileInfoBase) => PatternTestResult);
 }
 
 
@@ -100,14 +102,15 @@ export interface __PatternContextLinearExclude$views {
 export type PatternContextLinearExclude = PatternContextLinearExclude$instance & __PatternContextLinearExclude$views;
 
 
-export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
+export interface PatternContextLinearInclude$instance extends PatternContextLinear$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinear: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextLinearInclude: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    Test(directory: DirectoryInfoBase): boolean;
-    Test(file: FileInfoBase): PatternTestResult;
+    Declare: PatternContextLinear$instance["Declare"] & ((onDeclare: Action_2<IPathSegment, System_Internal.Boolean>) => void);
+    Test: PatternContextLinear$instance["Test"] & ((directory: DirectoryInfoBase) => boolean) & ((file: FileInfoBase) => PatternTestResult);
 }
 
 
@@ -125,13 +128,13 @@ export type PatternContextLinearInclude = PatternContextLinearInclude$instance &
 
 export interface PatternContextRagged$instance extends PatternContext_1$instance<PatternContextRagged_FrameData> {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    PopDirectory(): void;
-    PushDirectory(directory: DirectoryInfoBase): void;
-    Test(file: FileInfoBase): PatternTestResult;
-    Test(directory: DirectoryInfoBase): boolean;
+    PopDirectory: PatternContext_1$instance<PatternContextRagged_FrameData>["PopDirectory"] & (() => void);
+    PushDirectory: PatternContext_1$instance<PatternContextRagged_FrameData>["PushDirectory"] & ((directory: DirectoryInfoBase) => void);
+    Test: PatternContext_1$instance<PatternContextRagged_FrameData>["Test"] & ((directory: DirectoryInfoBase) => boolean) & ((file: FileInfoBase) => PatternTestResult);
 }
 
 
@@ -148,6 +151,7 @@ export type PatternContextRagged = PatternContextRagged$instance & __PatternCont
 
 export interface PatternContextRagged_FrameData$instance {
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged_FrameData: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     IsNotApplicable: boolean;
     SegmentGroupIndex: int;
@@ -167,13 +171,14 @@ export const PatternContextRagged_FrameData: {
 
 export type PatternContextRagged_FrameData = PatternContextRagged_FrameData$instance;
 
-export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
+export interface PatternContextRaggedExclude$instance extends PatternContextRagged$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedExclude: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Test(directory: DirectoryInfoBase): boolean;
-    Test(file: FileInfoBase): PatternTestResult;
+    Test: PatternContextRagged$instance["Test"] & ((directory: DirectoryInfoBase) => boolean) & ((file: FileInfoBase) => PatternTestResult);
 }
 
 
@@ -189,14 +194,15 @@ export interface __PatternContextRaggedExclude$views {
 export type PatternContextRaggedExclude = PatternContextRaggedExclude$instance & __PatternContextRaggedExclude$views;
 
 
-export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance, Microsoft_Extensions_FileSystemGlobbing_Internal_Internal.IPatternContext$instance {
+export interface PatternContextRaggedInclude$instance extends PatternContextRagged$instance {
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRagged: never;
     readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContextRaggedInclude: never;
+    readonly __tsonic_type_Microsoft_Extensions_FileSystemGlobbing_Internal_PatternContexts_PatternContext_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_FileSystemGlobbing_Internal_IPatternContext: never;
 
-    Declare(onDeclare: Action_2<IPathSegment, System_Internal.Boolean>): void;
-    Test(directory: DirectoryInfoBase): boolean;
-    Test(file: FileInfoBase): PatternTestResult;
+    Declare: PatternContextRagged$instance["Declare"] & ((onDeclare: Action_2<IPathSegment, System_Internal.Boolean>) => void);
+    Test: PatternContextRagged$instance["Test"] & ((directory: DirectoryInfoBase) => boolean) & ((file: FileInfoBase) => PatternTestResult);
 }
 
 

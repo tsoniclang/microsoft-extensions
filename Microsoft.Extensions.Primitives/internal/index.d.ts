@@ -29,12 +29,13 @@ export type IChangeToken = IChangeToken$instance;
 
 export interface InplaceStringBuilder$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_InplaceStringBuilder: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     Capacity: int;
-    Append(value: string | null): void;
-    Append(segment: StringSegment): void;
-    Append(value: string | null, offset: int, count: int): void;
     Append(c: char): void;
+    Append(segment: StringSegment): void;
+    Append(value: string | null): void;
+    Append(value: string | null, offset: int, count: int): void;
     ToString(): string | null;
 }
 
@@ -48,6 +49,7 @@ export type InplaceStringBuilder = InplaceStringBuilder$instance;
 
 export interface StringSegment$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_StringSegment: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_IEquatable_1: never;
 
@@ -67,12 +69,12 @@ export interface StringSegment$instance {
     Equals(text: string | null): boolean;
     Equals(text: string | null, comparisonType: StringComparison): boolean;
     GetHashCode(): int;
-    IndexOf(c: char, start: int, count: int): int;
-    IndexOf(c: char, start: int): int;
     IndexOf(c: char): int;
-    IndexOfAny(anyOf: char[], startIndex: int, count: int): int;
-    IndexOfAny(anyOf: char[], startIndex: int): int;
+    IndexOf(c: char, start: int): int;
+    IndexOf(c: char, start: int, count: int): int;
     IndexOfAny(anyOf: char[]): int;
+    IndexOfAny(anyOf: char[], startIndex: int): int;
+    IndexOfAny(anyOf: char[], startIndex: int, count: int): int;
     LastIndexOf(value: char): int;
     Split(chars: char[]): StringTokenizer;
     StartsWith(text: string, comparisonType: StringComparison): boolean;
@@ -101,6 +103,7 @@ export type StringSegment = StringSegment$instance & { readonly [index: number]:
 
 export interface StringTokenizer$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_StringTokenizer: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerable: never;
@@ -119,12 +122,13 @@ export type StringTokenizer = StringTokenizer$instance;
 
 export interface StringTokenizer_Enumerator$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_StringTokenizer_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
     readonly __tsonic_iface_System_IDisposable: never;
 
-    Current: StringSegment;
+    readonly Current: StringSegment;
     Dispose(): void;
     MoveNext(): boolean;
     Reset(): void;
@@ -140,6 +144,7 @@ export type StringTokenizer_Enumerator = StringTokenizer_Enumerator$instance;
 
 export interface StringValues$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_StringValues: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_ICollection_1: never;
     readonly __tsonic_iface_System_Collections_Generic_IEnumerable_1: never;
@@ -150,10 +155,10 @@ export interface StringValues$instance {
     readonly __tsonic_iface_System_IEquatable_1: never;
 
     readonly Count: int;
+    Equals(obj: unknown | null): boolean;
+    Equals(other: (string | null)[] | null): boolean;
     Equals(other: StringValues): boolean;
     Equals(other: string | null): boolean;
-    Equals(other: (string | null)[] | null): boolean;
-    Equals(obj: unknown | null): boolean;
     GetEnumerator(): StringValues_Enumerator;
     GetHashCode(): int;
     ToArray(): (string | null)[];
@@ -181,6 +186,7 @@ export type StringValues = StringValues$instance & { readonly [index: number]: s
 
 export interface StringValues_Enumerator$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_StringValues_Enumerator: never;
+    readonly __tsonic_type_System_ValueType: never;
 
     readonly __tsonic_iface_System_Collections_Generic_IEnumerator_1: never;
     readonly __tsonic_iface_System_Collections_IEnumerator: never;
@@ -205,7 +211,7 @@ export interface CancellationChangeToken$instance {
 
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;
 
-    ActiveChangeCallbacks: boolean;
+    readonly ActiveChangeCallbacks: boolean;
     readonly HasChanged: boolean;
     RegisterChangeCallback(callback: Action_1<unknown | null>, state: unknown | null): IDisposable;
 }
@@ -223,7 +229,7 @@ export interface __CancellationChangeToken$views {
 export type CancellationChangeToken = CancellationChangeToken$instance & __CancellationChangeToken$views;
 
 
-export interface CompositeChangeToken$instance extends IChangeToken$instance {
+export interface CompositeChangeToken$instance {
     readonly __tsonic_type_Microsoft_Extensions_Primitives_CompositeChangeToken: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Primitives_IChangeToken: never;

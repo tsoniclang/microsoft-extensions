@@ -10,7 +10,6 @@ import type { fnptr, ptr, sbyte, byte, short, ushort, int, uint, long, ulong, in
 import type { ILogger, ILoggerFactory } from "../../Microsoft.Extensions.Logging/internal/index.js";
 import type { IOptions_1 } from "../../Microsoft.Extensions.Options/internal/index.js";
 import type { IEnumerable_1, IList_1 } from "@tsonic/dotnet/System.Collections.Generic/internal/index.js";
-import type { CultureInfo } from "@tsonic/dotnet/System.Globalization/internal/index.js";
 import type { Assembly, TypeInfo } from "@tsonic/dotnet/System.Reflection/internal/index.js";
 import type { ResourceManager } from "@tsonic/dotnet/System.Resources/internal/index.js";
 import * as System_Internal from "@tsonic/dotnet/System/internal/index.js";
@@ -28,19 +27,20 @@ export type IResourceNamesCache = IResourceNamesCache$instance;
 export interface IStringLocalizer$instance {
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
 
-    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
+    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
 }
 
 
 export type IStringLocalizer = IStringLocalizer$instance;
 
-export interface IStringLocalizer_1$instance<T extends unknown> extends IStringLocalizer {
+export interface IStringLocalizer_1$instance<T extends unknown> {
+    readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer_1: never;
 
-    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     get_Item2(name: string): LocalizedString;
+    get_Item2(name: string, ...arguments: unknown[]): LocalizedString;
     GetAllStrings(includeParentCultures: boolean): IEnumerable_1<LocalizedString>;
     get_Item(name: string): LocalizedString;
 }
@@ -94,8 +94,9 @@ export const LocalizedString: {
 
 export type LocalizedString = LocalizedString$instance;
 
-export interface ResourceLocationAttribute$instance extends Attribute {
+export interface ResourceLocationAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceLocationAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly ResourceLocation: string;
 }
@@ -108,7 +109,7 @@ export const ResourceLocationAttribute: {
 
 export type ResourceLocationAttribute = ResourceLocationAttribute$instance;
 
-export interface ResourceManagerStringLocalizer$instance extends IStringLocalizer$instance {
+export interface ResourceManagerStringLocalizer$instance {
     readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceManagerStringLocalizer: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
@@ -131,19 +132,19 @@ export interface __ResourceManagerStringLocalizer$views {
 export type ResourceManagerStringLocalizer = ResourceManagerStringLocalizer$instance & __ResourceManagerStringLocalizer$views;
 
 
-export interface ResourceManagerStringLocalizerFactory$instance extends IStringLocalizerFactory$instance {
+export interface ResourceManagerStringLocalizerFactory$instance {
     readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceManagerStringLocalizerFactory: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizerFactory: never;
 
-    Create(resourceSource: Type): IStringLocalizer;
     Create(baseName: string, location: string): IStringLocalizer;
+    Create(resourceSource: Type): IStringLocalizer;
     CreateResourceManagerStringLocalizer(assembly: Assembly, baseName: string): ResourceManagerStringLocalizer;
     GetResourceLocationAttribute(assembly: Assembly): ResourceLocationAttribute | null;
-    GetResourcePrefix(typeInfo: TypeInfo): string;
-    GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string | null, resourcesRelativePath: string | null): string;
     GetResourcePrefix(baseResourceName: string, baseNamespace: string): string;
     GetResourcePrefix(location: string, baseName: string, resourceLocation: string): string;
+    GetResourcePrefix(typeInfo: TypeInfo): string;
+    GetResourcePrefix(typeInfo: TypeInfo, baseNamespace: string | null, resourcesRelativePath: string | null): string;
     GetRootNamespaceAttribute(assembly: Assembly): RootNamespaceAttribute | null;
 }
 
@@ -160,7 +161,7 @@ export interface __ResourceManagerStringLocalizerFactory$views {
 export type ResourceManagerStringLocalizerFactory = ResourceManagerStringLocalizerFactory$instance & __ResourceManagerStringLocalizerFactory$views;
 
 
-export interface ResourceNamesCache$instance extends IResourceNamesCache$instance {
+export interface ResourceNamesCache$instance {
     readonly __tsonic_type_Microsoft_Extensions_Localization_ResourceNamesCache: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IResourceNamesCache: never;
@@ -181,8 +182,9 @@ export interface __ResourceNamesCache$views {
 export type ResourceNamesCache = ResourceNamesCache$instance & __ResourceNamesCache$views;
 
 
-export interface RootNamespaceAttribute$instance extends Attribute {
+export interface RootNamespaceAttribute$instance extends System_Internal.Attribute {
     readonly __tsonic_type_Microsoft_Extensions_Localization_RootNamespaceAttribute: never;
+    readonly __tsonic_type_System_Attribute: never;
 
     readonly RootNamespace: string;
 }
@@ -195,7 +197,7 @@ export const RootNamespaceAttribute: {
 
 export type RootNamespaceAttribute = RootNamespaceAttribute$instance;
 
-export interface StringLocalizer_1$instance<TResourceSource extends unknown> extends IStringLocalizer_1<TResourceSource>, IStringLocalizer_1$instance<TResourceSource> {
+export interface StringLocalizer_1$instance<TResourceSource extends unknown> extends IStringLocalizer_1$instance<TResourceSource> {
     readonly __tsonic_type_Microsoft_Extensions_Localization_StringLocalizer_1: never;
 
     readonly __tsonic_iface_Microsoft_Extensions_Localization_IStringLocalizer: never;
